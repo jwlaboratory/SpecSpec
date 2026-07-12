@@ -1,0 +1,10 @@
+# DFlash domain benchmark — pinned to the versions the model was evaluated with.
+# A CUDA build of torch is required (the pinned version ships CUDA wheels on Linux).
+torch==2.9.1
+transformers==4.57.3
+accelerate>=1.0.0
+# The model's bundled utils.py imports `datasets` at module import time, so it is
+# required just to LOAD the drafter with trust_remote_code=True.
+datasets>=3.0.0
+# Optional: faster attention (skip on GPUs without support; scripts default to sdpa)
+# flash-attn>=2.6.0

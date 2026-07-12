@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+
+# Virtualenv (local, ~1GB)
+.venv/
+venv/
+
+# Third-party clone (clone separately: git clone https://github.com/sgl-project/SpecForge.git)
+SpecForge/
+
+# Training / run artifacts
+outputs/
+cache/
+wandb/
+*.pt
+*.safetensors
