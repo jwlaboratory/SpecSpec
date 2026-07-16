@@ -109,6 +109,74 @@ def run_benchmark(
     return {"report": report, "csv": csv_text, "jsonl": jsonl_text, "run_name": run_name}
 
 
+@app.function(
+    image=image,
+    gpu=GPU,
+    timeout=TIMEOUT_S,
+    volumes={"/data": results_vol, "/cache": hf_cache_vol},
+)
+def run_shard(categories: list, limit: int, max_new_tokens: int, run_name: str, shard_id: int):
+    """One container handles a subset of categories, writing its own shard file."""
+    import torch
+    shard_run = f"{run_name}_shard{shard_id}"
+    print(f"[shard {shard_id}] {torch.cuda.get_device_name(0)} -> {categories}", flush=True)
+    cmd = [
+        "python", "/root/benchmark.py",
+        "--run-name", shard_run,
+        "--limit", str(limit),
+        "--max-new-tokens", str(max_new_tokens),
+        "--out-dir", "/data/results",
+        "--resume",
+        "--categories", *categories,
+    ]
+    subprocess.run(cmd, cwd="/root", check=True)
+    results_vol.commit()
+    return shard_run
+
+
+@app.function(image=image, timeout=1800, volumes={"/data": results_vol})
+def merge_and_aggregate(run_name: str):
+    """Concatenate all shard JSONLs into one file and run aggregate.py over it."""
+    import glob
+    results_vol.reload()
+    out_dir = "/data/results"
+    shard_files = sorted(glob.glob(f"{out_dir}/{run_name}_shard*.jsonl"))
+    merged = f"{out_dir}/{run_name}.jsonl"
+    n = 0
+    with open(merged, "w") as fout:
+        for sf in shard_files:
+            with open(sf) as fin:
+                for line in fin:
+                    if line.strip():
+                        fout.write(line)
+                        n += 1
+    print(f"[merge] {len(shard_files)} shards -> {merged} ({n} rows)")
+    subprocess.run(["python", "/root/aggregate.py", merged], cwd="/root", check=True)
+    results_vol.commit()
+    with open(f"{out_dir}/{run_name}_report.md") as f:
+        report = f.read()
+    with open(f"{out_dir}/{run_name}_by_category.csv") as f:
+        csv_text = f.read()
+    with open(merged) as f:
+        jsonl_text = f.read()
+    print("\n" + report)
+    return {"report": report, "csv": csv_text, "jsonl": jsonl_text, "run_name": run_name}
+
+
+def _save_local(out):
+    import os
+    os.makedirs("results", exist_ok=True)
+    rn = out["run_name"]
+    for name, key in [(f"results/{rn}_report.md", "report"),
+                      (f"results/{rn}_by_category.csv", "csv"),
+                      (f"results/{rn}.jsonl", "jsonl")]:
+        with open(name, "w") as f:
+            f.write(out[key])
+        print("[local] wrote", name)
+    print("\nAll results also persisted to Modal volume 'dflash-bench-results' (/data/results).")
+    print("Re-download later with:  modal volume get dflash-bench-results results ./")
+
+
 @app.local_entrypoint()
 def main(
     limit: int = 100,
@@ -118,17 +186,33 @@ def main(
     no_baseline: bool = False,
     resume: bool = True,
 ):
-    import os
+    """Single-container run (good for smoke tests / subsets)."""
     out = run_benchmark.remote(
         limit=limit, max_new_tokens=max_new_tokens, categories=categories,
         run_name=run_name, no_baseline=no_baseline, resume=resume,
     )
-    # Save everything locally too (in addition to the durable Modal volume).
-    os.makedirs("results", exist_ok=True)
-    for ext, key in [("report.md", "report"), ("by_category.csv", "csv"), (".jsonl", "jsonl")]:
-        name = f"results/{out['run_name']}_{ext}" if not ext.startswith(".") else f"results/{out['run_name']}{ext}"
-        with open(name, "w") as f:
-            f.write(out[key])
-        print("[local] wrote", name)
-    print("\nAll results also persisted to Modal volume 'dflash-bench-results' (/data/results).")
-    print("Re-download later with:  modal volume get dflash-bench-results results ./")
+    _save_local(out)
+
+
+@app.local_entrypoint()
+def full(
+    limit: int = 100,
+    max_new_tokens: int = 512,
+    run_name: str = "dflash_bench",
+    shards: int = 7,
+):
+    """Parallel run: shard all 28 domains across `shards` GPU containers, then merge."""
+    from prompts import build_prompts
+    all_cats = list(build_prompts(1).keys())
+    groups = [all_cats[i::shards] for i in range(shards)]          # round-robin shard
+    groups = [g for g in groups if g]
+    print(f"[full] {len(all_cats)} domains x {limit} prompts across {len(groups)} shards:")
+    for i, g in enumerate(groups):
+        print(f"   shard {i}: {g}")
+
+    tasks = [(g, limit, max_new_tokens, run_name, i) for i, g in enumerate(groups)]
+    done = list(run_shard.starmap(tasks))                          # runs shards in parallel
+    print(f"[full] shards complete: {done}")
+
+    out = merge_and_aggregate.remote(run_name)
+    _save_local(out)
