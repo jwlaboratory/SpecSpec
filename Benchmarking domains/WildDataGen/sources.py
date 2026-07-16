@@ -80,12 +80,21 @@ def _sql_context(row):
     return f"Write a SQL query to answer: {q}"
 
 
+def _indian_legal(row):
+    # Indian-legal-data-v3: `instruction` is a self-contained legal question,
+    # `output` is the long-form answer (we regenerate answers with the target, so
+    # only the instruction is used as the prompt).
+    return _clean(row.get("instruction")) or None
+
+
 # domain -> source spec.  (dataset, config, split, extract fn)
 SOURCES = OrderedDict([
     ("ood_medical",   ("keivalya/MedQuAD-MedicalQnADataset", None, "train", _medquad)),
     ("ood_financial", ("gbharti/finance-alpaca",             None, "train", _finance_alpaca)),
     ("ood_legal",     ("nguha/legalbench", "consumer_contracts_qa", "test", _legal_contract)),
     ("code_sql",      ("b-mc2/sql-create-context",           None, "train", _sql_context)),
+    ("ood_indian_legal", ("kaushik-harsh-99/Indian-legal-data-v3",
+                          "context_less_than_4096", "train", _indian_legal)),
 ])
 
 
@@ -163,9 +172,21 @@ def main():
 
     DATA_DIR.mkdir(parents=True, exist_ok=True)
     man_path = DATA_DIR / "sources_manifest.json"
+    # merge into any existing manifest so running a subset of domains doesn't drop
+    # the others (each domain records its own split sizes, since they can differ).
+    existing = {}
+    if man_path.exists():
+        try:
+            for d in json.loads(man_path.read_text(encoding="utf-8")).get("domains", []):
+                existing[d["domain"]] = d
+        except Exception:
+            existing = {}
+    for r in results:
+        r["splits"] = {"train": args.splits[0], "val": args.splits[1], "test": args.splits[2]}
+        existing[r["domain"]] = r
     man_path.write_text(json.dumps(
-        {"splits": {"train": args.splits[0], "val": args.splits[1], "test": args.splits[2]},
-         "seed": SEED, "domains": results}, indent=2, ensure_ascii=False), encoding="utf-8")
+        {"seed": SEED, "domains": list(existing.values())},
+        indent=2, ensure_ascii=False), encoding="utf-8")
     print(f"\n[done] {len(results)} domains from dedicated datasets.")
     print(f"Manifest: {man_path}")
 

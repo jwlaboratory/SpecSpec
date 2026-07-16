@@ -1,9 +1,4 @@
 {
-  "splits": {
-    "train": 800,
-    "val": 100,
-    "test": 100
-  },
   "seed": 1234,
   "domains": [
     {
@@ -37,6 +32,19 @@
       "train": 800,
       "val": 100,
       "test": 100
+    },
+    {
+      "domain": "ood_indian_legal",
+      "dataset": "kaushik-harsh-99/Indian-legal-data-v3",
+      "collected": 1000,
+      "train": 800,
+      "val": 100,
+      "test": 100,
+      "splits": {
+        "train": 800,
+        "val": 100,
+        "test": 100
+      }
     }
   ]
 }
