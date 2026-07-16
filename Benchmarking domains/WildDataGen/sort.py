@@ -35,9 +35,11 @@ from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 DATAGEN = HERE.parent / "DataGen"
-# Shared top-level data/ folder (sibling of DataGen/WildDataGen); downloaded real
-# prompts go in the downloaded/ subtree, alongside data/synthetic/ from DataGen.
-DATA_DIR = HERE.parent / "data" / "downloaded"
+# Shared top-level data/ folder. Three sibling subtrees:
+#   data/synthetic/   Claude-generated (DataGen)
+#   data/wild/        sorted WildChat prompts (this script)
+#   data/downloaded/  straight from purpose-built HF datasets (sources.py)
+DATA_DIR = HERE.parent / "data" / "wild"
 
 sys.path.insert(0, str(HERE))
 sys.path.insert(0, str(DATAGEN))

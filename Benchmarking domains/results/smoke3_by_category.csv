@@ -1,4 +1,0 @@
-category,n,acceptance_rate_pooled,acceptance_rate,mean_accept_length,forward_steps,gen_tokens,spec_tok_s,baseline_tok_s,speedup,agreement_frac,exact_match_rate,n_suspicious,mean_divergence_gap,max_divergence_gap
-code_python,3,0.4,0.4215,7.3225,29.3333,205.3333,118.6394,22.7538,5.2275,0.3967,0.0,0,0.125,0.25
-task_math_reasoning,3,0.3716,0.3962,6.9428,31.3333,206.0,113.6006,22.7469,4.9928,0.6883,0.6667,0,0.0,0.0
-lang_english,3,0.1054,0.0977,2.4662,47.6667,123.0,41.2536,23.0476,1.7868,0.8059,0.3333,0,0.125,0.25

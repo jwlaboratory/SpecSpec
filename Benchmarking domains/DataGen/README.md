@@ -83,8 +83,9 @@ proportionally rather than failing.
 ## Output layout
 
 Datasets are written to the **shared top-level `data/` folder** (a sibling of
-`DataGen/`), under the `synthetic/` subtree — `data/downloaded/` is the WildChat control
-set from `../WildDataGen`.
+`DataGen/`), under the `synthetic/` subtree. The real-prompt controls live alongside
+it: `data/wild/` (sorted WildChat) and `data/downloaded/` (HF datasets), both from
+`../WildDataGen`.
 
 ```
 ../data/synthetic/

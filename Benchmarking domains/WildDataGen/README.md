@@ -1,9 +1,14 @@
-# WildDataGen — real-prompt control set from WildChat
+# WildDataGen — real-prompt control sets
 
-Sorts genuine human prompts from **WildChat** into the same 51 domains as
-`DataGen/`, producing the identical split layout in the shared top-level data
-folder at `../data/downloaded/<domain>/{train,val,test}.jsonl` (alongside
-`../data/synthetic/` from DataGen).
+Two collectors that produce real-human-prompt datasets in the same 51-domain layout
+as `DataGen/`, as controls for the synthetic set (`../data/synthetic/`):
+
+- **`sort.py`** sorts genuine **WildChat** prompts into the domains → `../data/wild/`
+- **`sources.py`** pulls purpose-built **HF datasets** (medical, legal, financial,
+  SQL) straight in → `../data/downloaded/`
+
+Both write `<domain>/{train,val,test}.jsonl`, so `benchmark.py` reads them
+identically. They write to **separate** subtrees, so there's no ordering dependency.
 
 It exists to answer the "are the synthetic prompts representative?" question: the
 Claude-generated `DataGen` prompts are clean and low-perplexity, which can inflate
@@ -59,11 +64,11 @@ python sources.py                         # fill all dedicated domains into ../d
 python sources.py --domains ood_medical  # just one
 ```
 
-Writes to the same `../data/downloaded/<domain>/` tree as the WildChat sort — **run it
-after `sort.py`** so the dedicated (higher-quality) data overwrites WildChat's thin
-versions for those domains. Add more domains by dropping an entry in `SOURCES`
-(e.g. `bitext/...` for customer support, `openai_humaneval` for code, `HuggingFaceH4/no_robots`
-for general human prompts).
+Writes to `../data/downloaded/` (separate from `sort.py`'s `../data/wild/`), so the
+two are independent — `data/downloaded` is the clean, purpose-built set for these
+specialised domains, `data/wild` is what WildChat happened to contain. Add more
+domains by dropping an entry in `SOURCES` (e.g. `bitext/...` for customer support,
+`openai_humaneval` for code, `HuggingFaceH4/no_robots` for general human prompts).
 
 ## Two classifiers
 
@@ -80,24 +85,23 @@ proportionally); the manifest records per-domain counts.
 
 ## Benchmark it (same as DataGen)
 
-`benchmark.py` is source-agnostic — just point it at the `data/downloaded` dir:
+`benchmark.py` is source-agnostic — point it at either real subtree:
 
 ```bash
 cd ../scripts
-python benchmark.py --datagen-dir ../data/downloaded --split test \
-    --run-name dflash_dl --categories all
-python aggregate.py ../results/dflash_dl.jsonl
-python make_charts.py ../results/dflash_dl_by_category.csv
+python benchmark.py --datagen-dir ../data/wild       --split test --run-name dflash_wild
+python benchmark.py --datagen-dir ../data/downloaded --split test --run-name dflash_downloaded
+python aggregate.py ../results/dflash_wild.jsonl && python make_charts.py ../results/dflash_wild_by_category.csv
 ```
 
-Then compare `dflash_dl` (real) vs `dflash_bench` (synthetic) per domain: if they
-track, the synthetic set is validated; where synthetic acceptance is much higher,
-you've quantified the inflation.
+Then compare `dflash_wild` / `dflash_downloaded` (real) vs `dflash_synthetic` per
+domain: if they track, the synthetic set is validated; where synthetic acceptance is
+much higher, you've quantified the inflation.
 
 ## Files
 
 | File | Purpose |
 |---|---|
-| `sort.py` | stream WildChat → route → split → write |
+| `sort.py` | stream WildChat → route → split → write → `../data/wild` |
+| `sources.py` | pull purpose-built HF datasets → `../data/downloaded` |
 | `router.py` | domain classifiers (heuristic + Claude), taxonomy from `../DataGen/domains` |
-| `../data/downloaded/` | the sorted real prompts (generated, in the shared data folder) |

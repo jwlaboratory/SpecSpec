@@ -1,0 +1,800 @@
+{"prompt": "Mình mới tập nấu ăn, bạn có thể hướng dẫn cách nấu canh chua cá lóc đơn giản cho người mới bắt đầu không?", "domain": "lang_vietnamese"}
+{"prompt": "Chỉ mình cách tự sửa vòi nước bị rò rỉ tại nhà mà không cần gọi thợ.", "domain": "lang_vietnamese"}
+{"prompt": "Có nên đầu tư Bitcoin bây giờ không?", "domain": "lang_vietnamese"}
+{"prompt": "Em muốn hỏi vì sao khi học ngoại ngữ mới, việc nghe hiểu thường khó hơn nhiều so với việc đọc hiểu cùng một nội dung?", "domain": "lang_vietnamese"}
+{"prompt": "Em đang muốn học cách quản lý thời gian hiệu quả hơn khi vừa đi làm vừa học thêm, anh gợi ý phương pháp cụ thể giúp em.", "domain": "lang_vietnamese"}
+{"prompt": "Em đang thắc mắc về cách tính lãi suất kép khi gửi tiết kiệm ngân hàng dài hạn, anh giải thích giúp em không?", "domain": "lang_vietnamese"}
+{"prompt": "Mình muốn viết một đoạn văn ngắn kể về kỷ niệm tuổi thơ ở quê để đăng vào trang cá nhân, bạn gợi ý giúp mình dàn ý được không?", "domain": "lang_vietnamese"}
+{"prompt": "Mình đang cãi nhau với người yêu vì chuyện tiền bạc, nên giải quyết thế nào cho êm đẹp?", "domain": "lang_vietnamese"}
+{"prompt": "Bạn giúp mình phân tích ưu nhược điểm của việc kết hôn sớm và kết hôn muộn hơn để ổn định sự nghiệp trước?", "domain": "lang_vietnamese"}
+{"prompt": "Bạn giải thích giúp mình hiện tượng nhật thực xảy ra như thế nào?", "domain": "lang_vietnamese"}
+{"prompt": "Bạn có thể giải thích khái niệm blockchain một cách dễ hiểu cho người mới không?", "domain": "lang_vietnamese"}
+{"prompt": "Cho mình hỏi tại sao khi ăn cay mình lại đổ mồ hôi nhiều như vậy?", "domain": "lang_vietnamese"}
+{"prompt": "Vì sao nước biển mặn?", "domain": "lang_vietnamese"}
+{"prompt": "Bạn hướng dẫn mình từng bước cách lập kế hoạch chi tiêu cá nhân trong một tháng với mức lương 8 triệu đồng được không?", "domain": "lang_vietnamese"}
+{"prompt": "Mình đang cân nhắc chuyển từ công việc ổn định sang khởi nghiệp riêng, bạn có thể giúp mình liệt kê các rủi ro tài chính cần chuẩn bị trước khi quyết định không?", "domain": "lang_vietnamese"}
+{"prompt": "Bạn nghĩ sao về việc yêu xa, có nên duy trì mối quan hệ như vậy không?", "domain": "lang_vietnamese"}
+{"prompt": "Giữa việc mua nhà cũ để sửa lại và mua nhà mới xây sẵn, phương án nào tiết kiệm chi phí hơn về lâu dài?", "domain": "lang_vietnamese"}
+{"prompt": "Tại sao lúc ngủ dậy mình hay bị mỏi cổ, có cách nào khắc phục không", "domain": "lang_vietnamese"}
+{"prompt": "Anh giúp em so sánh giữa việc học thêm tiếng Anh online và học tại trung tâm, cái nào hiệu quả hơn cho người mất gốc?", "domain": "lang_vietnamese"}
+{"prompt": "Mình muốn biết các bước để nộp đơn xin học bổng du học Hàn Quốc dành cho sinh viên đại học.", "domain": "lang_vietnamese"}
+{"prompt": "Bạn có thể giải thích tại sao Trái Đất lại có bốn mùa rõ rệt và điều này liên quan như thế nào đến độ nghiêng của trục quay không?", "domain": "lang_vietnamese"}
+{"prompt": "Bạn có thể gợi ý cách sắp xếp bàn thờ gia tiên đúng phong tục miền Trung không?", "domain": "lang_vietnamese"}
+{"prompt": "Mình đang cân nhắc học thêm tiếng Nhật hay tiếng Trung, bạn thấy cái nào hữu ích hơn cho công việc sau này?", "domain": "lang_vietnamese"}
+{"prompt": "So sánh giúp mình iPhone và Samsung dòng tầm trung xem cái nào đáng mua hơn.", "domain": "lang_vietnamese"}
+{"prompt": "Mình muốn viết một email xin lỗi khách hàng vì giao hàng trễ ba ngày, vừa thể hiện sự chuyên nghiệp vừa giữ được mối quan hệ hợp tác lâu dài, bạn giúp mình soạn với giọng văn lịch sự nhưng không quá rườm rà nhé.", "domain": "lang_vietnamese"}
+{"prompt": "Phân tích nguyên nhân sâu xa dẫn đến cuộc khủng hoảng tài chính châu Á năm 1997 và vai trò của IMF trong việc giải quyết", "domain": "lang_vietnamese"}
+{"prompt": "Phân tích ưu nhược điểm của kiến trúc vi dịch vụ (microservices) so với kiến trúc nguyên khối (monolithic) khi xây dựng hệ thống backend lớn", "domain": "lang_vietnamese"}
+{"prompt": "Em đang chuẩn bị phỏng vấn xin việc vị trí nhân viên marketing, anh giúp em luyện tập trả lời câu hỏi 'Điểm yếu lớn nhất của bạn là gì?' được không?", "domain": "lang_vietnamese"}
+{"prompt": "Mình muốn học cách quản lý thời gian hiệu quả hơn, bạn có mẹo nào đơn giản không?", "domain": "lang_vietnamese"}
+{"prompt": "Tại sao khi đứng gần biển lại nghe thấy tiếng sóng vỗ liên tục vậy anh?", "domain": "lang_vietnamese"}
+{"prompt": "Tại sao khi máy bay cất cánh tai chúng ta lại bị ù, và có cách nào để giảm cảm giác này khi đi máy bay đường dài không?", "domain": "lang_vietnamese"}
+{"prompt": "Tại sao khi bị cảm cúm cơ thể lại sốt cao, bạn có thể giải thích cơ chế miễn dịch đằng sau hiện tượng này không?", "domain": "lang_vietnamese"}
+{"prompt": "Anh so sánh giúp em nên gửi tiết kiệm ngân hàng hay mua vàng tích trữ trong bối cảnh lạm phát hiện nay thì có lợi hơn?", "domain": "lang_vietnamese"}
+{"prompt": "Chỉ em cách lập kế hoạch tài chính cá nhân theo từng bước để tiết kiệm được 30% lương mỗi tháng.", "domain": "lang_vietnamese"}
+{"prompt": "Dạo này mình hay mất ngủ, có cách nào giúp ngủ ngon hơn không?", "domain": "lang_vietnamese"}
+{"prompt": "Tại sao một số người khi uống sữa lại bị đau bụng hoặc tiêu chảy, đó có phải là dị ứng lactose không?", "domain": "lang_vietnamese"}
+{"prompt": "Mình đang học nấu ăn và muốn thử làm món phở bò truyền thống, bạn có thể hướng dẫn từng bước từ chuẩn bị nguyên liệu đến nấu nước dùng sao cho đậm đà không?", "domain": "lang_vietnamese"}
+{"prompt": "Mình mới nhận công việc quản lý nhóm nhỏ 5 người lần đầu tiên, bạn có thể chia sẻ vài nguyên tắc cơ bản để giao việc hiệu quả và giữ được sự gắn kết trong nhóm không?", "domain": "lang_vietnamese"}
+{"prompt": "Phân tích giúp mình sự khác biệt giữa văn hóa làm việc của người Nhật và người Việt, đặc biệt trong cách quản lý thời gian và ra quyết định.", "domain": "lang_vietnamese"}
+{"prompt": "Tại sao lá cây lại chuyển màu vào mùa thu?", "domain": "lang_vietnamese"}
+{"prompt": "Cho mình hỏi vì sao một số loài cá như cá hồi lại có thể bơi ngược dòng nước để sinh sản?", "domain": "lang_vietnamese"}
+{"prompt": "Theo anh, nên tiết kiệm tiền gửi ngân hàng hay bỏ vào chứng khoán để sinh lời tốt hơn?", "domain": "lang_vietnamese"}
+{"prompt": "Cho mình hỏi tại sao càng lớn tuổi con người càng khó học ngôn ngữ mới hơn so với trẻ nhỏ, có phải do cấu trúc não bộ thay đổi theo thời gian không?", "domain": "lang_vietnamese"}
+{"prompt": "Gợi ý vài món quà sinh nhật cho mẹ.", "domain": "lang_vietnamese"}
+{"prompt": "Ai là người sáng lập Google?", "domain": "lang_vietnamese"}
+{"prompt": "Có nên học thêm chứng chỉ tin học văn phòng để dễ xin việc hơn không", "domain": "lang_vietnamese"}
+{"prompt": "Mình đang tìm hiểu về chế độ ăn keto, bạn nghĩ có phù hợp với người Việt không?", "domain": "lang_vietnamese"}
+{"prompt": "Tại sao cơ thể con người lại cần ngủ đủ 7-8 giờ mỗi ngày, nếu thiếu ngủ lâu dài sẽ ảnh hưởng gì đến não bộ?", "domain": "lang_vietnamese"}
+{"prompt": "Em muốn biết cách tiết kiệm điện trong nhà để giảm hóa đơn hàng tháng, anh có gợi ý nào không?", "domain": "lang_vietnamese"}
+{"prompt": "Anh so sánh giúp em máy lạnh inverter và máy lạnh thường, cái nào tiết kiệm điện hơn khi dùng lâu dài cho gia đình?", "domain": "lang_vietnamese"}
+{"prompt": "Bạn thấy việc giảm cân bằng nhịn ăn có hiệu quả và an toàn không?", "domain": "lang_vietnamese"}
+{"prompt": "Cách tính BMI như thế nào?", "domain": "lang_vietnamese"}
+{"prompt": "Tại sao khi để chai nước có ga trong tủ lạnh quá lâu rồi mở ra lại bị xì bọt trào ra ngoài vậy anh?", "domain": "lang_vietnamese"}
+{"prompt": "Em đang cần viết một email xin lỗi khách hàng vì giao hàng trễ, anh giúp em soạn được không?", "domain": "lang_vietnamese"}
+{"prompt": "Con mình năm nay lên lớp 6 nhưng có vẻ mất tập trung khi học ở nhà, anh/chị có thể gợi ý giúp em một số phương pháp giúp bé tập trung hơn, kèm theo cách bố trí góc học tập hợp lý và lịch học phù hợp với lứa tuổi không?", "domain": "lang_vietnamese"}
+{"prompt": "Hãy phân tích tác động của chính sách nới lỏng định lượng (QE) của Fed đến thị trường chứng khoán toàn cầu trong giai đoạn 2020-2022", "domain": "lang_vietnamese"}
+{"prompt": "Mình đang tìm hiểu về nghề làm giấy dó truyền thống ở làng Bưởi, bạn có thể kể sơ lược quy trình không?", "domain": "lang_vietnamese"}
+{"prompt": "Anh ơi cho em hỏi tại sao nghệ thuật hát xẩm ngày xưa lại thường gắn với người khiếm thị vậy?", "domain": "lang_vietnamese"}
+{"prompt": "Giúp mình lên kế hoạch du lịch ba ngày ở Đà Lạt với ngân sách tiết kiệm.", "domain": "lang_vietnamese"}
+{"prompt": "Em đang phân vân nên học nấu ăn chuyên nghiệp hay học marketing để mở quán ăn, anh khuyên gì?", "domain": "lang_vietnamese"}
+{"prompt": "Mình đang phân vân có nên học thạc sĩ ngay sau khi tốt nghiệp đại học không?", "domain": "lang_vietnamese"}
+{"prompt": "Giữa nấu ăn ở nhà và đặt đồ ăn ngoài mỗi ngày, cái nào thực sự tiết kiệm hơn nếu tính cả thời gian và công sức?", "domain": "lang_vietnamese"}
+{"prompt": "Tại sao khi ngủ trong phòng có nhiều cây xanh vào ban đêm lại không tốt như người ta tưởng?", "domain": "lang_vietnamese"}
+{"prompt": "Mình nên chọn ngành sư phạm hay ngành marketing để dễ tìm việc hơn?", "domain": "lang_vietnamese"}
+{"prompt": "Mình muốn hiểu sâu về thuật toán học sâu Transformer, cụ thể cơ chế self-attention hoạt động như thế nào trong việc xử lý ngôn ngữ tự nhiên", "domain": "lang_vietnamese"}
+{"prompt": "Bạn trai mình hay nhắn tin trả lời nhạt nhạt, có phải ảnh hết yêu mình rồi không", "domain": "lang_vietnamese"}
+{"prompt": "Mình đang học tiếng Anh nhưng phát âm rất kém, bạn có gợi ý cách luyện phát âm cho người mới không?", "domain": "lang_vietnamese"}
+{"prompt": "Cho mình hỏi giữa việc làm việc tại nhà và đến văn phòng mỗi ngày, cái nào tốt hơn cho năng suất và sức khỏe tinh thần?", "domain": "lang_vietnamese"}
+{"prompt": "Mình đang muốn tìm hiểu về tục ăn trầu của người Việt xưa, bạn kể giúp mình ý nghĩa văn hóa được không?", "domain": "lang_vietnamese"}
+{"prompt": "Cách chữa nấc cụt nhanh nhất?", "domain": "lang_vietnamese"}
+{"prompt": "Soạn giúp mình một bản đề xuất dự án xin tài trợ từ quỹ đầu tư mạo hiểm cho ứng dụng công nghệ giáo dục", "domain": "lang_vietnamese"}
+{"prompt": "Bạn có thể gợi ý cách trồng rau thủy sinh trong nhà không cần đất mà vẫn phát triển tốt không?", "domain": "lang_vietnamese"}
+{"prompt": "Cách pha cà phê sữa đá ngon.", "domain": "lang_vietnamese"}
+{"prompt": "Em muốn học cách thiền định để giảm stress, anh hướng dẫn từng bước cho người mới bắt đầu được không?", "domain": "lang_vietnamese"}
+{"prompt": "Cho em hỏi sự khác biệt giữa cổ phiếu ưu đãi và cổ phiếu phổ thông là gì, nhà đầu tư mới nên chọn loại nào?", "domain": "lang_vietnamese"}
+{"prompt": "Em muốn tự học lập trình Python để chuyển nghề trong vòng 6 tháng, anh có thể gợi ý cho em một lộ trình học chi tiết theo từng tháng, tài liệu nên tham khảo và cách luyện tập hiệu quả không?", "domain": "lang_vietnamese"}
+{"prompt": "Làm sao để thương lượng tăng lương với sếp một cách khéo léo mà không gây căng thẳng?", "domain": "lang_vietnamese"}
+{"prompt": "Giải thích giúp mình khái niệm trí tuệ nhân tạo cho người mới bắt đầu tìm hiểu.", "domain": "lang_vietnamese"}
+{"prompt": "Cách nấu phở bò truyền thống?", "domain": "lang_vietnamese"}
+{"prompt": "Em muốn lên kế hoạch cho một buổi tiệc sinh nhật nhỏ tại nhà, anh có thể gợi ý vài ý tưởng không?", "domain": "lang_vietnamese"}
+{"prompt": "Bạn giúp mình so sánh việc dùng máy lọc nước tại nhà và mua nước đóng bình mỗi tuần, cái nào tiết kiệm và an toàn hơn?", "domain": "lang_vietnamese"}
+{"prompt": "Chỉ mình cách viết một email xin nghỉ việc lịch sự và chuyên nghiệp gửi cho sếp trực tiếp.", "domain": "lang_vietnamese"}
+{"prompt": "Mình mới nuôi cá cảnh, bạn có thể hướng dẫn cách thay nước bể cá đúng cách không?", "domain": "lang_vietnamese"}
+{"prompt": "Ba mẹ mình cứ hối cưới hoài, mình chưa muốn, phải nói sao cho khéo bây giờ", "domain": "lang_vietnamese"}
+{"prompt": "Cho mình hỏi kỹ thuật ủ men rượu cần của người Tây Nguyên có gì đặc biệt so với rượu gạo thông thường?", "domain": "lang_vietnamese"}
+{"prompt": "Bạn giải thích giúp mình vì sao một số ngôi chùa cổ ở Huế lại được xây theo hướng phong thủy đặc biệt?", "domain": "lang_vietnamese"}
+{"prompt": "Giải thích chi tiết quá trình hình thành lỗ đen và tại sao ánh sáng không thể thoát ra khỏi chân trời sự kiện", "domain": "lang_vietnamese"}
+{"prompt": "Bạn giải thích đơn giản giúp mình lãi suất ngân hàng hoạt động như thế nào được không?", "domain": "lang_vietnamese"}
+{"prompt": "Em muốn học cách viết một truyện ngắn hay, chỉ em quy trình từ lên ý tưởng đến hoàn thiện bản thảo.", "domain": "lang_vietnamese"}
+{"prompt": "Mình muốn tìm hiểu về cơ chế hoạt động của lỗ đen và tại sao ánh sáng không thể thoát ra khỏi nó, bạn giải thích theo cách dễ hiểu được không?", "domain": "lang_vietnamese"}
+{"prompt": "Cho mình hỏi tại sao nước biển lại có vị mặn còn nước sông thì không?", "domain": "lang_vietnamese"}
+{"prompt": "Mình muốn viết thư xin lỗi bạn thân vì đã hiểu lầm, giúp mình soạn nhé.", "domain": "lang_vietnamese"}
+{"prompt": "Vì sao đôi khi mình ngủ đủ giờ nhưng vẫn cảm thấy mệt mỏi khi thức dậy?", "domain": "lang_vietnamese"}
+{"prompt": "Mình bị mất ngủ kéo dài, phải làm sao?", "domain": "lang_vietnamese"}
+{"prompt": "Bạn có biết vì sao tục nhuộm răng đen của người Việt xưa lại phổ biến đến vậy không, ý nghĩa văn hóa của nó là gì?", "domain": "lang_vietnamese"}
+{"prompt": "Kể cho mình một mẩu chuyện cười ngắn để giải trí một chút đi.", "domain": "lang_vietnamese"}
+{"prompt": "Theo bạn, có nên mua bảo hiểm nhân thọ khi còn trẻ và chưa có gia đình không?", "domain": "lang_vietnamese"}
+{"prompt": "Anh giúp em so sánh học đại học trong nước và du học tự túc, cái nào phù hợp hơn với gia đình có tài chính trung bình?", "domain": "lang_vietnamese"}
+{"prompt": "Mình muốn hiểu sâu hơn về lạm phát đình trệ (stagflation) và tại sao nó lại khó xử lý hơn lạm phát thông thường đối với các nhà hoạch định chính sách.", "domain": "lang_vietnamese"}
+{"prompt": "Bạn viết giúp mình một lời chúc mừng sinh nhật dành cho mẹ, khoảng 4-5 câu, có phần xúc động một chút không?", "domain": "lang_vietnamese"}
+{"prompt": "Hướng dẫn mình cách làm sạch máy giặt tại nhà để loại bỏ mùi hôi và cặn bẩn.", "domain": "lang_vietnamese"}
+{"prompt": "Cho mình hỏi sự khác biệt giữa cổ phiếu ưu đãi và cổ phiếu thường khi công ty phá sản, ai được ưu tiên nhận tài sản trước?", "domain": "lang_vietnamese"}
+{"prompt": "Bạn có thể giải thích nguồn gốc của tục lệ cúng ông Công ông Táo vào 23 tháng Chạp không?", "domain": "lang_vietnamese"}
+{"prompt": "Bạn giải thích giúp mình khái niệm quỹ ETF khác gì với quỹ mở truyền thống?", "domain": "lang_vietnamese"}
+{"prompt": "Cho mình hỏi uống cà phê mỗi ngày có tốt cho sức khỏe không?", "domain": "lang_vietnamese"}
+{"prompt": "Bạn nghĩ nuôi mèo hay nuôi chó phù hợp hơn với người sống một mình?", "domain": "lang_vietnamese"}
+{"prompt": "Bạn giải thích giúp mình sự khác nhau giữa virus và vi khuẩn được không?", "domain": "lang_vietnamese"}
+{"prompt": "Cho em hỏi vì sao có người bị say xe khi ngồi ô tô lâu còn người khác thì không?", "domain": "lang_vietnamese"}
+{"prompt": "Cho em hỏi vì sao khi luộc trứng để lâu vỏ trứng lại có màu xanh xám ở lòng đỏ vậy ạ?", "domain": "lang_vietnamese"}
+{"prompt": "Em muốn lập một kế hoạch chi tiêu tiết kiệm cho tháng lương thấp điểm, anh có gợi ý nào không?", "domain": "lang_vietnamese"}
+{"prompt": "Bạn giải thích giúp mình vì sao sao Kim lại là hành tinh nóng nhất trong hệ Mặt Trời chứ không phải sao Thủy?", "domain": "lang_vietnamese"}
+{"prompt": "Hướng dẫn em cách chăm sóc cây hoa hồng trong chậu để cây ra hoa đều đặn theo mùa.", "domain": "lang_vietnamese"}
+{"prompt": "Cách viết CV xin việc.", "domain": "lang_vietnamese"}
+{"prompt": "Vì sao một số loài động vật có thể ngủ đông suốt cả mùa lạnh mà không cần ăn uống, cơ thể chúng hoạt động như thế nào trong giai đoạn đó?", "domain": "lang_vietnamese"}
+{"prompt": "Vì sao khi trời lạnh mình lại hay bị chảy nước mũi nhiều hơn bình thường?", "domain": "lang_vietnamese"}
+{"prompt": "Mình cần soạn một email thương lượng lại điều khoản hợp đồng thuê văn phòng với chủ nhà một cách chuyên nghiệp nhưng vẫn giữ được mối quan hệ tốt, giúp mình viết chi tiết.", "domain": "lang_vietnamese"}
+{"prompt": "Cho em hỏi vì sao khi ngồi máy bay lúc cất cánh tai lại bị ù và đau nhẹ vậy ạ?", "domain": "lang_vietnamese"}
+{"prompt": "Mình muốn viết một email xin nghỉ phép dài hạn gửi sếp, bạn viết giúp mình được không?", "domain": "lang_vietnamese"}
+{"prompt": "Cho mình hỏi cách bảo quản thịt bò trong tủ đông sao cho khi rã đông không bị mất chất và vẫn tươi ngon?", "domain": "lang_vietnamese"}
+{"prompt": "Bạn nghĩ sao về việc để con tự lập từ nhỏ bằng cách cho tiền tiêu vặt hàng tuần?", "domain": "lang_vietnamese"}
+{"prompt": "Mình muốn biết các bước cơ bản để bắt đầu đầu tư vào quỹ mở cho người mới chưa có kinh nghiệm.", "domain": "lang_vietnamese"}
+{"prompt": "Giải thích giúp mình vì sao trời lại có màu xanh vào ban ngày?", "domain": "lang_vietnamese"}
+{"prompt": "Em muốn viết một bài thơ ngắn về mùa thu Hà Nội, anh có thể sáng tác giúp em không?", "domain": "lang_vietnamese"}
+{"prompt": "Làm thế nào để giữ mối quan hệ yêu xa lâu dài mà không bị nhạt dần theo thời gian?", "domain": "lang_vietnamese"}
+{"prompt": "Bạn có thể giải thích hiện tượng 'mưa cá' từng xảy ra ở một số nơi trên thế giới không, nguyên nhân khoa học là gì?", "domain": "lang_vietnamese"}
+{"prompt": "Bạn giải thích giúp mình cơ chế hoạt động của vắc xin mRNA khác gì so với vắc xin truyền thống, và vì sao công nghệ này lại được coi là bước đột phá trong y học hiện đại?", "domain": "lang_vietnamese"}
+{"prompt": "Ngủ trưa bao lâu là tốt nhất?", "domain": "lang_vietnamese"}
+{"prompt": "Bạn giải thích giúp mình vì sao chỉ số lạm phát ở Việt Nam năm nay lại tăng cao hơn các năm trước, và điều này ảnh hưởng thế nào đến giá cả hàng hóa tiêu dùng hằng ngày của người dân?", "domain": "lang_vietnamese"}
+{"prompt": "Viết giúp một status chia tay nhẹ nhàng.", "domain": "lang_vietnamese"}
+{"prompt": "Anh giúp em so sánh chế độ ăn chay và ăn thịt về mặt dinh dưỡng lâu dài, cái nào tốt hơn cho người tập thể hình?", "domain": "lang_vietnamese"}
+{"prompt": "Tại sao khi trời lạnh mình lại thấy đói nhanh hơn bình thường vậy anh?", "domain": "lang_vietnamese"}
+{"prompt": "Em đang cân nhắc giữa Honda và Yamaha cho chiếc xe máy đầu tiên, anh khuyên em nên chọn hãng nào?", "domain": "lang_vietnamese"}
+{"prompt": "Bạn giải thích giúp mình sự khác nhau giữa lãi suất thả nổi và lãi suất cố định khi vay mua nhà, ví dụ cụ thể với khoản vay 1 tỷ trong 20 năm được không?", "domain": "lang_vietnamese"}
+{"prompt": "Em muốn cai nghiện điện thoại di động, anh có thể chỉ cho em quy trình từng bước để thực hiện không?", "domain": "lang_vietnamese"}
+{"prompt": "Anh giải thích giúp em nguồn gốc của tục ăn trầu của người Việt xưa được không?", "domain": "lang_vietnamese"}
+{"prompt": "Anh ơi tại sao khi bay lên cao bằng máy bay tai mình lại bị ù và đau nhức vậy?", "domain": "lang_vietnamese"}
+{"prompt": "Ăn gì để hạ sốt nhanh?", "domain": "lang_vietnamese"}
+{"prompt": "Em muốn nấu một món chay đơn giản cho bữa tối, anh có gợi ý món nào dễ làm không?", "domain": "lang_vietnamese"}
+{"prompt": "Hướng dẫn mình cách bảo quản thực phẩm trong tủ lạnh để giữ độ tươi lâu hơn.", "domain": "lang_vietnamese"}
+{"prompt": "Anh giúp em tóm tắt nội dung chính của cuộc khởi nghĩa Hai Bà Trưng trong khoảng 5 câu được không?", "domain": "lang_vietnamese"}
+{"prompt": "Mình muốn nấu món canh chua cá lóc, chỉ mình công thức chi tiết nhé.", "domain": "lang_vietnamese"}
+{"prompt": "Bạn thấy việc làm thêm ngoài giờ có ảnh hưởng xấu đến sức khỏe không?", "domain": "lang_vietnamese"}
+{"prompt": "Cho mình hỏi ăn nhiều rau củ có thực sự giúp giảm cân hiệu quả không?", "domain": "lang_vietnamese"}
+{"prompt": "Hướng dẫn từng bước cách backup dữ liệu điện thoại Android lên Google Drive an toàn.", "domain": "lang_vietnamese"}
+{"prompt": "Bạn có thể giải thích vì sao một số loài thực vật ăn thịt như cây bắt mồi lại tiến hóa để bắt côn trùng không?", "domain": "lang_vietnamese"}
+{"prompt": "Anh có thể giải thích cho em hiểu vì sao đồng tiền mất giá theo thời gian, hiện tượng lạm phát ảnh hưởng thế nào đến người gửi tiết kiệm không?", "domain": "lang_vietnamese"}
+{"prompt": "Cho mình hỏi tại sao lãi suất ngân hàng trung ương tăng lại có thể khiến giá bất động sản giảm, cơ chế truyền dẫn cụ thể là gì?", "domain": "lang_vietnamese"}
+{"prompt": "Bạn có thể giúp mình soạn một đoạn giới thiệu bản thân ngắn gọn để đăng lên hồ sơ xin việc không?", "domain": "lang_vietnamese"}
+{"prompt": "Chỉ em từng bước để chuẩn bị cho một buổi thuyết trình thuyết phục sếp về dự án mới.", "domain": "lang_vietnamese"}
+{"prompt": "Cách trồng rau sạch trên sân thượng?", "domain": "lang_vietnamese"}
+{"prompt": "Bạn giải thích giúp mình vì sao chuồn chuồn có thể bay lượn linh hoạt theo nhiều hướng khác nhau như vậy?", "domain": "lang_vietnamese"}
+{"prompt": "Giữa việc chọn công việc lương cao nhưng áp lực lớn và công việc lương thấp nhưng nhẹ nhàng, anh nghĩ nên chọn thế nào?", "domain": "lang_vietnamese"}
+{"prompt": "Bạn có thể giải thích khái niệm lạm phát cho mình một cách đơn giản, kèm theo ví dụ thực tế về việc nó ảnh hưởng đến đời sống người dân như thế nào không?", "domain": "lang_vietnamese"}
+{"prompt": "Cho em hỏi vì sao tàu vũ trụ khi bay ra ngoài khí quyển lại không cần đốt nhiên liệu liên tục để duy trì tốc độ?", "domain": "lang_vietnamese"}
+{"prompt": "Bạn giúp mình viết một đoạn tin nhắn xin lỗi bạn gái sau khi cãi nhau được không?", "domain": "lang_vietnamese"}
+{"prompt": "Nên chọn ngành nào để dễ xin việc sau này?", "domain": "lang_vietnamese"}
+{"prompt": "Mình đang cân nhắc chuyển công tác sang thành phố khác, bạn thấy có nên không?", "domain": "lang_vietnamese"}
+{"prompt": "Mình đang muốn học một ngôn ngữ mới ngoài tiếng Anh, bạn nghĩ nên học tiếng gì thì hữu ích?", "domain": "lang_vietnamese"}
+{"prompt": "Em muốn biết vì sao trong tiếng Việt cổ có nhiều từ Hán Việt mang nghĩa khác hẳn so với tiếng Hán hiện đại?", "domain": "lang_vietnamese"}
+{"prompt": "Giải thích chi tiết sự khác nhau giữa các loại hợp đồng tương lai, hợp đồng quyền chọn và hợp đồng hoán đổi trong tài chính phái sinh", "domain": "lang_vietnamese"}
+{"prompt": "Cho mình vài mẹo giúp tập trung học bài hiệu quả hơn vào ban đêm.", "domain": "lang_vietnamese"}
+{"prompt": "Em đang muốn viết một câu chuyện ngắn về một cô gái trở về làng quê sau nhiều năm sống ở thành phố, anh có thể giúp em phát triển cốt truyện và một vài tình tiết cảm động không?", "domain": "lang_vietnamese"}
+{"prompt": "Hướng dẫn mình cách viết một bức thư xin lỗi chân thành gửi cho người bạn thân sau khi cãi vã.", "domain": "lang_vietnamese"}
+{"prompt": "Mình mới tập thể dục, bạn có thể gợi ý một bài tập khởi động cơ bản trong 10 phút không?", "domain": "lang_vietnamese"}
+{"prompt": "Tại sao khi nấu cơm bằng nồi cơm điện, cơm ở đáy nồi thường bị cháy nhẹ dù nồi có chế độ tự ngắt vậy anh?", "domain": "lang_vietnamese"}
+{"prompt": "Mình đang phân vân giữa mua xe máy số và xe tay ga, bạn có thể so sánh ưu nhược điểm giúp mình không?", "domain": "lang_vietnamese"}
+{"prompt": "Bạn giúp mình viết một lời chúc mừng năm mới gửi cho khách hàng công ty.", "domain": "lang_vietnamese"}
+{"prompt": "Cho mình hỏi vì sao khi bị cảm cúm người ta thường khuyên nên uống nhiều nước ấm?", "domain": "lang_vietnamese"}
+{"prompt": "Làm sao để cai nghiện điện thoại vào ban đêm và ngủ sớm hơn, có phương pháp cụ thể nào không?", "domain": "lang_vietnamese"}
+{"prompt": "Bạn có thể giải thích sự khác biệt giữa nợ xấu và nợ quá hạn trong hệ thống ngân hàng, cũng như cách các ngân hàng xử lý nợ xấu hiện nay không?", "domain": "lang_vietnamese"}
+{"prompt": "Anh có thể giải thích cho em hiểu về công nghệ blockchain một cách đơn giản, dễ hiểu cho người không chuyên về công nghệ, kèm ví dụ minh họa trong đời sống thực tế không?", "domain": "lang_vietnamese"}
+{"prompt": "Cho mình hỏi ăn nhiều đường có ảnh hưởng gì đến sức khỏe không?", "domain": "lang_vietnamese"}
+{"prompt": "Giúp mình soạn một bức thư xin việc vị trí quản lý dự án, nhấn mạnh kinh nghiệm quản lý ngân sách và đội ngũ đa quốc gia trong ba năm gần đây.", "domain": "lang_vietnamese"}
+{"prompt": "Giúp mình tóm tắt nhanh nội dung cuốn Nhà Giả Kim để mình hiểu ý chính.", "domain": "lang_vietnamese"}
+{"prompt": "Cho mình hỏi cách nhận biết đàn tranh và đàn nguyệt khác nhau ở điểm nào về âm thanh và hình dáng?", "domain": "lang_vietnamese"}
+{"prompt": "Cho em hỏi về ý nghĩa của Tết Trung Thu trong văn hóa Việt Nam, nguồn gốc của ngày lễ này và những phong tục truyền thống nào vẫn còn được giữ đến ngày nay?", "domain": "lang_vietnamese"}
+{"prompt": "Hướng dẫn từng bước cách backup dữ liệu điện thoại Android trước khi cập nhật hệ điều hành mới.", "domain": "lang_vietnamese"}
+{"prompt": "Em đang tìm hiểu về lịch sử Việt Nam thời Hai Bà Trưng, anh có thể kể ngắn gọn cho em nghe không?", "domain": "lang_vietnamese"}
+{"prompt": "Tại sao khi trời sắp mưa, một số loài kiến lại di chuyển đàn lên cao?", "domain": "lang_vietnamese"}
+{"prompt": "Giải thích hiện tượng sao băng cho mình.", "domain": "lang_vietnamese"}
+{"prompt": "Giải thích ngắn gọn về lạm phát.", "domain": "lang_vietnamese"}
+{"prompt": "Mình muốn biết cách chăm sóc cây cảnh trong nhà sao cho không bị héo, bạn hướng dẫn giúp mình không?", "domain": "lang_vietnamese"}
+{"prompt": "Làm sao để giúp con nhỏ vượt qua nỗi sợ khi đi học mẫu giáo ngày đầu tiên?", "domain": "lang_vietnamese"}
+{"prompt": "Em nên học lái xe ô tô ngay bây giờ hay đợi khi có điều kiện mua xe rồi học cho tiện?", "domain": "lang_vietnamese"}
+{"prompt": "Mình muốn biết quy trình đăng ký kinh doanh online cho một shop bán quần áo nhỏ, cần thủ tục gì?", "domain": "lang_vietnamese"}
+{"prompt": "Mình đang tìm hiểu về lịch sử triều Nguyễn, bạn có thể tóm tắt những sự kiện quan trọng nhất từ khi vua Gia Long lên ngôi đến khi triều đại này sụp đổ không, kèm theo ý nghĩa lịch sử của từng giai đoạn?", "domain": "lang_vietnamese"}
+{"prompt": "Làm sao để tự tin hơn khi nói chuyện?", "domain": "lang_vietnamese"}
+{"prompt": "Mình đang chuẩn bị đàm phán tăng lương với sếp, bạn có thể gợi ý cho mình cách trình bày luận điểm thuyết phục dựa trên hiệu suất công việc trong năm qua không?", "domain": "lang_vietnamese"}
+{"prompt": "Làm sao để viết một bản CV xin việc chuyên nghiệp, anh chỉ em các bước cụ thể nhé?", "domain": "lang_vietnamese"}
+{"prompt": "Mình cảm thấy áp lực công việc quá lớn đến mức thường xuyên mất ngủ và cáu gắt vô cớ, bạn nghĩ đây có phải dấu hiệu của burnout không và mình nên làm gì để cân bằng lại?", "domain": "lang_vietnamese"}
+{"prompt": "Bạn cho mình biết sự khác nhau giữa văn hóa miền Bắc và miền Nam Việt Nam là gì?", "domain": "lang_vietnamese"}
+{"prompt": "Bạn giải thích cho mình hiện tượng nhật thực và nguyệt thực khác nhau như thế nào.", "domain": "lang_vietnamese"}
+{"prompt": "Bạn có thể giải thích vì sao hiện tượng nóng lên toàn cầu lại gây ra những đợt nắng nóng cực đoan và mưa bão bất thường như hiện nay không?", "domain": "lang_vietnamese"}
+{"prompt": "Mình nên mua nhà trả góp ngay hay tiếp tục thuê nhà và tiết kiệm thêm vài năm?", "domain": "lang_vietnamese"}
+{"prompt": "Mình đang tìm hiểu lịch sử ngày Giải phóng miền Nam 30 tháng 4, bạn có thể tóm tắt ngắn gọn ý nghĩa của ngày này không?", "domain": "lang_vietnamese"}
+{"prompt": "Cho mình hỏi sự khác biệt giữa hợp đồng tương lai và hợp đồng quyền chọn trong giao dịch tài chính, và rủi ro của từng loại.", "domain": "lang_vietnamese"}
+{"prompt": "Tại sao khi bị cảm lạnh mình lại hay bị sổ mũi và ho, cơ thể phản ứng như thế nào vậy anh?", "domain": "lang_vietnamese"}
+{"prompt": "Cho mình hỏi giữa việc học một ngoại ngữ chuyên sâu và học nhiều ngôn ngữ cùng lúc ở mức cơ bản, cái nào hữu ích hơn cho công việc quốc tế?", "domain": "lang_vietnamese"}
+{"prompt": "Em muốn biết cách nấu phở bò đơn giản tại nhà cho người mới học nấu ăn được không?", "domain": "lang_vietnamese"}
+{"prompt": "Em muốn biết trồng cây trong nhà bằng đất và trồng thủy sinh khác nhau thế nào, cái nào dễ chăm hơn cho người mới?", "domain": "lang_vietnamese"}
+{"prompt": "Cho em hỏi tại sao núi lửa lại phun trào và có cách nào để con người dự đoán trước được thời điểm phun trào không, mong được giải thích một cách khoa học nhưng dễ hiểu.", "domain": "lang_vietnamese"}
+{"prompt": "Cho mình hỏi tại sao khi đốt nến trong phòng kín lâu lại thấy khó thở, có liên quan đến oxy trong phòng không?", "domain": "lang_vietnamese"}
+{"prompt": "Tóm tắt Truyện Kiều giúp mình.", "domain": "lang_vietnamese"}
+{"prompt": "Viết một đoạn văn ngắn tả cảnh hoàng hôn trên biển cho bài văn của em mình", "domain": "lang_vietnamese"}
+{"prompt": "Món ăn nào tốt cho người đau dạ dày?", "domain": "lang_vietnamese"}
+{"prompt": "Giải thích ngắn gọn khái niệm lạm phát cho người không biết gì về kinh tế", "domain": "lang_vietnamese"}
+{"prompt": "Em có nên nghỉ công việc ổn định để theo đuổi đam mê kinh doanh riêng không, anh nghĩ sao?", "domain": "lang_vietnamese"}
+{"prompt": "Có cách nào tiết kiệm điện trong nhà vào mùa hè oi bức không?", "domain": "lang_vietnamese"}
+{"prompt": "Mình đang không biết chọn giữa yêu xa và tìm người yêu gần để dễ gặp gỡ hơn, bạn có lời khuyên nào không?", "domain": "lang_vietnamese"}
+{"prompt": "Bạn nghĩ nên chọn học ngành công nghệ thông tin hay kinh tế nếu mình thích cả hai?", "domain": "lang_vietnamese"}
+{"prompt": "Mình muốn hiểu rõ cơ chế sinh học của quá trình lão hóa da và những phương pháp khoa học đã được chứng minh giúp làm chậm quá trình này.", "domain": "lang_vietnamese"}
+{"prompt": "Cách trị mụn ẩn hiệu quả?", "domain": "lang_vietnamese"}
+{"prompt": "Em đang tính mua xe máy điện thay cho xe xăng để đi làm, quãng đường mỗi ngày khoảng 20km, anh tư vấn giúp em loại xe nào phù hợp và tiết kiệm chi phí?", "domain": "lang_vietnamese"}
+{"prompt": "Con mình 5 tuổi hay bị chảy máu cam vào buổi tối, mình nên làm gì để xử lý ngay lúc đó và có cần đưa đi khám không?", "domain": "lang_vietnamese"}
+{"prompt": "Bạn có thể giải thích đơn giản khái niệm lạm phát là gì và nó ảnh hưởng thế nào đến đời sống hằng ngày không?", "domain": "lang_vietnamese"}
+{"prompt": "Theo anh, ăn chay có thực sự tốt cho sức khỏe hơn ăn thịt không hay chỉ là xu hướng nhất thời?", "domain": "lang_vietnamese"}
+{"prompt": "Giữa việc đọc sách giấy truyền thống và đọc ebook trên điện thoại, cái nào giúp mình tập trung và nhớ nội dung lâu hơn?", "domain": "lang_vietnamese"}
+{"prompt": "Bạn so sánh giúp mình ưu nhược điểm giữa xe máy điện và xe máy xăng.", "domain": "lang_vietnamese"}
+{"prompt": "Viết giúp mình một email xin nghỉ phép.", "domain": "lang_vietnamese"}
+{"prompt": "Bạn giải thích giúp mình vì sao núi lửa Phú Sĩ dù đang ở trạng thái ngủ nhưng vẫn được các nhà khoa học theo dõi liên tục?", "domain": "lang_vietnamese"}
+{"prompt": "Mình đang bị mất ngủ kéo dài gần một tháng nay, hay tỉnh giấc giữa đêm và khó ngủ lại, bạn có thể giải thích nguyên nhân có thể gây ra tình trạng này và gợi ý vài cách cải thiện tự nhiên trước khi mình đi khám bác sĩ không?", "domain": "lang_vietnamese"}
+{"prompt": "Ý tưởng viết truyện ngắn tình yêu.", "domain": "lang_vietnamese"}
+{"prompt": "Em đang tò mò về nghề làm nón lá truyền thống ở Huế, anh có thể kể sơ lược quy trình làm không?", "domain": "lang_vietnamese"}
+{"prompt": "Cho mình hỏi tại sao một số vùng biển lại có hiện tượng thủy triều đỏ gây chết cá hàng loạt?", "domain": "lang_vietnamese"}
+{"prompt": "Mình muốn biết cơ chế vì sao muối biển tự nhiên lại có màu hồng ở một số vùng như Himalaya?", "domain": "lang_vietnamese"}
+{"prompt": "Cho mình hỏi cách bảo quản rau củ trong tủ lạnh để giữ tươi lâu hơn?", "domain": "lang_vietnamese"}
+{"prompt": "Làm thế nào để bắt đầu học thiền và thực hành mỗi ngày mà không cảm thấy nhàm chán?", "domain": "lang_vietnamese"}
+{"prompt": "Bạn có thể viết giúp mình một đoạn giới thiệu ngắn về bản thân để đăng lên hồ sơ mạng xã hội chuyên nghiệp không?", "domain": "lang_vietnamese"}
+{"prompt": "Em đang phân vân giữa việc ở lại thành phố lớn hay về quê lập nghiệp, anh có lời khuyên nào không?", "domain": "lang_vietnamese"}
+{"prompt": "Phân tích giúp mình lý do tại sao lãi suất ngân hàng trung ương tăng lại có thể khiến thị trường chứng khoán giảm mạnh trong ngắn hạn.", "domain": "lang_vietnamese"}
+{"prompt": "Phân tích giúp mình sự khác biệt giữa chiến lược marketing truyền thống và marketing dựa trên dữ liệu trong thời đại số hiện nay.", "domain": "lang_vietnamese"}
+{"prompt": "Bạn có thể giải thích giúp mình cách hoạt động của tủ lạnh là như thế nào không?", "domain": "lang_vietnamese"}
+{"prompt": "Mình đang phân vân giữa mua iPhone đời cũ giá rẻ hơn hay Android đời mới, bạn phân tích giúp mình về độ bền và khả năng cập nhật phần mềm không?", "domain": "lang_vietnamese"}
+{"prompt": "Bạn hãy phân tích các yếu tố tâm lý khiến con người dễ rơi vào bẫy chi tiêu quá mức khi mua hàng trả góp hoặc dùng thẻ tín dụng.", "domain": "lang_vietnamese"}
+{"prompt": "Mình mới chuyển nhà, có cách nào sắp xếp đồ đạc gọn mà tiết kiệm diện tích không", "domain": "lang_vietnamese"}
+{"prompt": "Làm sao để hết stress công việc?", "domain": "lang_vietnamese"}
+{"prompt": "Bạn bè mình toàn đi du lịch còn mình kẹt tiền, cảm thấy hơi tủi thân, cho mình lời khuyên", "domain": "lang_vietnamese"}
+{"prompt": "Mình cần lập kế hoạch tài chính cá nhân cho gia đình có hai con nhỏ với mục tiêu tích lũy quỹ giáo dục trong mười năm tới, bạn có thể gợi ý chiến lược cụ thể không?", "domain": "lang_vietnamese"}
+{"prompt": "Anh có nghĩ việc để con cái tự lập từ sớm là tốt hay nên bảo bọc thêm một thời gian?", "domain": "lang_vietnamese"}
+{"prompt": "Mình đang lên kế hoạch tiết kiệm 100 triệu trong 1 năm với lương 15 triệu mỗi tháng, bạn có gợi ý cách phân bổ chi tiêu hợp lý không?", "domain": "lang_vietnamese"}
+{"prompt": "Bạn có thể kể ngắn gọn về nguồn gốc của món phở Hà Nội và vì sao nó lại trở thành biểu tượng ẩm thực Việt Nam không?", "domain": "lang_vietnamese"}
+{"prompt": "Tại sao bầu trời đêm có sao?", "domain": "lang_vietnamese"}
+{"prompt": "Em muốn tự học cách chơi cờ vua từ cơ bản đến nâng cao, anh chỉ em lộ trình học từng giai đoạn.", "domain": "lang_vietnamese"}
+{"prompt": "Mình đang muốn tìm hiểu cách nuôi tổ yến trong nhà, chi phí đầu tư ban đầu khoảng bao nhiêu?", "domain": "lang_vietnamese"}
+{"prompt": "Làm thế nào để tự thay dầu nhớt xe máy tại nhà, anh chỉ em từng bước an toàn nhé?", "domain": "lang_vietnamese"}
+{"prompt": "Anh ơi bạn thân em vừa chia sẻ chuyện gia đình đang gặp khó khăn về tài chính, em nên nói gì để an ủi mà không làm bạn ấy cảm thấy bị thương hại?", "domain": "lang_vietnamese"}
+{"prompt": "Mình muốn biết tại sao gạo nếp khi nấu xôi lại dẻo hơn gạo tẻ, sự khác biệt về tinh bột là gì?", "domain": "lang_vietnamese"}
+{"prompt": "Mình vừa được thăng chức làm trưởng nhóm nhưng lại thiếu kinh nghiệm quản lý, bạn có thể chia sẻ những kỹ năng lãnh đạo cơ bản mà mình cần trang bị ngay không?", "domain": "lang_vietnamese"}
+{"prompt": "Theo anh, việc học online có thể thay thế hoàn toàn học trực tiếp trong tương lai không?", "domain": "lang_vietnamese"}
+{"prompt": "Em đang cảm thấy áp lực công việc quá nhiều, anh có lời khuyên nào giúp em giảm căng thẳng không?", "domain": "lang_vietnamese"}
+{"prompt": "Bạn giải thích giúp mình sự khác nhau giữa cổ phiếu ưu đãi và cổ phiếu thường trên sàn chứng khoán?", "domain": "lang_vietnamese"}
+{"prompt": "Mình thấy nhiều người nói ăn chay giúp sống lâu hơn, điều này có cơ sở khoa học không, và nếu ăn chay hoàn toàn thì cần bổ sung dưỡng chất gì để tránh thiếu chất?", "domain": "lang_vietnamese"}
+{"prompt": "Em đang định học thêm chứng chỉ kế toán hay chứng chỉ marketing để dễ xin việc hơn, anh khuyên gì?", "domain": "lang_vietnamese"}
+{"prompt": "Anh giúp em so sánh việc học lái xe ô tô số sàn và số tự động, cái nào phù hợp hơn cho người mới lấy bằng lần đầu?", "domain": "lang_vietnamese"}
+{"prompt": "Cho em hỏi tại sao lá cây lại có màu xanh vậy ạ?", "domain": "lang_vietnamese"}
+{"prompt": "Chỉ mình cách thiền cơ bản.", "domain": "lang_vietnamese"}
+{"prompt": "Bạn có thể giải thích đơn giản khái niệm lạm phát là gì không?", "domain": "lang_vietnamese"}
+{"prompt": "Tại sao con người lại mơ khi ngủ và những giấc mơ đó có ý nghĩa gì không?", "domain": "lang_vietnamese"}
+{"prompt": "Tại sao khi trời mưa mình lại cảm thấy buồn ngủ nhiều hơn bình thường?", "domain": "lang_vietnamese"}
+{"prompt": "Mình mới sinh con đầu lòng và đang rất lo lắng về việc cho con ăn dặm đúng cách, bạn có thể gợi ý thực đơn ăn dặm cho bé 6 tháng tuổi trong một tuần không?", "domain": "lang_vietnamese"}
+{"prompt": "Cho em hỏi tại sao trời lại có màu xanh vào ban ngày mà chuyển sang màu đỏ cam lúc hoàng hôn ạ?", "domain": "lang_vietnamese"}
+{"prompt": "Bạn có thể giải thích chi tiết về thuyết tương đối hẹp của Einstein và tại sao thời gian lại co giãn khi vật thể di chuyển gần tốc độ ánh sáng?", "domain": "lang_vietnamese"}
+{"prompt": "Bạn có thể giải thích sự khác nhau giữa học máy có giám sát, không giám sát và học tăng cường, kèm ví dụ ứng dụng thực tế cho mỗi loại không?", "domain": "lang_vietnamese"}
+{"prompt": "Bạn nghĩ sao về việc học đại học tại chức có giá trị tương đương đại học chính quy không?", "domain": "lang_vietnamese"}
+{"prompt": "Mình đang phân vân nên đi du lịch một mình để tự do khám phá hay đi cùng nhóm bạn để có người chia sẻ, bạn nghĩ sao?", "domain": "lang_vietnamese"}
+{"prompt": "Em muốn biết vì sao tranh Đông Hồ thường sử dụng giấy dó chứ không phải giấy thường?", "domain": "lang_vietnamese"}
+{"prompt": "Tại sao đàn tranh Việt Nam lại có số dây khác nhau tùy theo từng loại vậy anh?", "domain": "lang_vietnamese"}
+{"prompt": "Anh ơi cho em hỏi giữa hai loại vay ngân hàng là vay tín chấp và vay thế chấp thì cái nào phù hợp hơn cho người mới ra trường muốn mua xe máy, và rủi ro của mỗi loại là gì?", "domain": "lang_vietnamese"}
+{"prompt": "Cho em hỏi sự khác biệt giữa cách mạng công nghiệp lần thứ nhất và lần thứ tư là gì, và tại sao cách mạng công nghiệp 4.0 lại được coi là bước ngoặt lớn đối với nhân loại?", "domain": "lang_vietnamese"}
+{"prompt": "Cho mình hỏi tại sao có người bị say xe còn có người thì không dù đi cùng một chuyến xe?", "domain": "lang_vietnamese"}
+{"prompt": "Anh thấy việc học đại học có còn thực sự cần thiết trong thời đại này không?", "domain": "lang_vietnamese"}
+{"prompt": "Viết một bài thơ về mùa thu.", "domain": "lang_vietnamese"}
+{"prompt": "Mình đang muốn tập thể dục buổi sáng nhưng hay lười, bạn có mẹo nào giúp duy trì thói quen này không?", "domain": "lang_vietnamese"}
+{"prompt": "Sao dạo này mình hay bị đau lưng dưới sau khi ngồi làm việc lâu, có phải do ngồi sai tư thế không, và bạn có thể gợi ý vài bài tập kéo giãn đơn giản có thể làm ngay tại bàn làm việc không?", "domain": "lang_vietnamese"}
+{"prompt": "Làm sao để hết hôi miệng?", "domain": "lang_vietnamese"}
+{"prompt": "Anh giúp em viết một đoạn caption ngắn cho bức ảnh chụp hoàng hôn ở biển Vũng Tàu để đăng Facebook được không?", "domain": "lang_vietnamese"}
+{"prompt": "Phân tích giúp mình những rủi ro pháp lý khi ký hợp đồng hợp tác kinh doanh với đối tác nước ngoài mà không có luật sư tư vấn trước.", "domain": "lang_vietnamese"}
+{"prompt": "So sánh iPhone và Samsung hiện tại.", "domain": "lang_vietnamese"}
+{"prompt": "Theo bạn, nên tổ chức đám cưới đơn giản hay hoành tráng để đáng nhớ hơn?", "domain": "lang_vietnamese"}
+{"prompt": "Mình đang lên kế hoạch cho chuyến du lịch Đà Lạt bốn ngày ba đêm cùng gia đình, bạn có thể gợi ý lịch trình chi tiết bao gồm địa điểm tham quan, ăn uống và nghỉ ngơi không?", "domain": "lang_vietnamese"}
+{"prompt": "Bạn giải thích giúp mình sự khác biệt giữa trí tuệ nhân tạo tổng quát (AGI) và trí tuệ nhân tạo hẹp (Narrow AI) hiện nay đang phát triển tới đâu.", "domain": "lang_vietnamese"}
+{"prompt": "Mình đang tập viết CV xin việc, bạn có thể góp ý cách trình bày sao cho chuyên nghiệp không?", "domain": "lang_vietnamese"}
+{"prompt": "Mình đang học tiếng Anh, bạn có thể gợi ý cách học từ vựng nhanh và nhớ lâu không?", "domain": "lang_vietnamese"}
+{"prompt": "Em muốn viết một tin nhắn chúc mừng sinh nhật cho bạn thân sao cho vui vẻ và ý nghĩa, anh giúp em không?", "domain": "lang_vietnamese"}
+{"prompt": "Mình mới lập gia đình, bạn có thể gợi ý cách chia sẻ việc nhà công bằng giữa hai vợ chồng không?", "domain": "lang_vietnamese"}
+{"prompt": "Mình đang viết luận văn về tác động của mạng xã hội đến sức khỏe tâm lý thanh thiếu niên, bạn có thể gợi ý cấu trúc bài và các nguồn tài liệu tham khảo uy tín không?", "domain": "lang_vietnamese"}
+{"prompt": "Bạn có thể so sánh sâu về ưu nhược điểm giữa kiến trúc vi dịch vụ (microservices) và kiến trúc nguyên khối (monolithic) trong phát triển phần mềm doanh nghiệp không?", "domain": "lang_vietnamese"}
+{"prompt": "Giải thích chi tiết sự khác biệt giữa suy thoái kinh tế và khủng hoảng kinh tế, cùng các chỉ báo để nhận biết sớm", "domain": "lang_vietnamese"}
+{"prompt": "Bạn có thể gợi ý vài cách đơn giản để cải thiện chất lượng giấc ngủ vào ban đêm không?", "domain": "lang_vietnamese"}
+{"prompt": "Theo bạn, có nên tin vào tướng số và phong thủy khi chọn ngày cưới không?", "domain": "lang_vietnamese"}
+{"prompt": "Cách viết đơn xin việc chuẩn nhất?", "domain": "lang_vietnamese"}
+{"prompt": "Sếp mình vừa gửi email góp ý là báo cáo quý ba của mình 'thiếu chiều sâu phân tích', bạn giúp mình soạn một email trả lời vừa lịch sự vừa thể hiện mình sẽ chỉnh sửa lại không?", "domain": "lang_vietnamese"}
+{"prompt": "Em nên chọn ngành công nghệ thông tin hay ngành y để có tương lai ổn định hơn theo quan điểm của anh?", "domain": "lang_vietnamese"}
+{"prompt": "Viết email xin nghỉ phép.", "domain": "lang_vietnamese"}
+{"prompt": "Mình muốn viết một đoạn văn cảm ơn gửi đến người thầy cũ đã dạy mình nhiều năm trước, thể hiện sự trân trọng và những kỷ niệm đáng nhớ, bạn có thể giúp mình soạn không?", "domain": "lang_vietnamese"}
+{"prompt": "Có nên vay tiền ngân hàng để mua nhà lúc lãi suất còn cao không", "domain": "lang_vietnamese"}
+{"prompt": "Bạn nghĩ có nên công khai chuyện tình cảm trên mạng xã hội không?", "domain": "lang_vietnamese"}
+{"prompt": "Mình muốn viết một email xin nghỉ phép công ty vì lý do gia đình, bạn giúp mình soạn được không?", "domain": "lang_vietnamese"}
+{"prompt": "Bạn giải thích giúp mình sự khác nhau giữa bảo hiểm nhân thọ và bảo hiểm sức khỏe, mình nên mua loại nào trước ở tuổi 30?", "domain": "lang_vietnamese"}
+{"prompt": "Hãy giải thích cặn kẽ nguyên lý hoạt động của động cơ đốt trong bốn kỳ và lý do vì sao xe điện dần thay thế được nó", "domain": "lang_vietnamese"}
+{"prompt": "Mình đang định mua laptop mới, bạn khuyên nên chọn MacBook hay laptop Windows?", "domain": "lang_vietnamese"}
+{"prompt": "Anh nghĩ có nên cho con học trường quốc tế từ nhỏ không, dù học phí khá cao?", "domain": "lang_vietnamese"}
+{"prompt": "Cho mình biết sự khác nhau giữa sữa tươi và sữa đặc có đường", "domain": "lang_vietnamese"}
+{"prompt": "So sánh iPhone và Samsung.", "domain": "lang_vietnamese"}
+{"prompt": "Cho em hỏi vì sao tiếng đàn bầu chỉ có một dây mà vẫn tạo ra nhiều cung bậc âm thanh khác nhau vậy ạ?", "domain": "lang_vietnamese"}
+{"prompt": "Tại sao trẻ con hay quấy khóc ban đêm?", "domain": "lang_vietnamese"}
+{"prompt": "Giải thích đơn giản giúp mình về lạm phát là gì và vì sao giá cả tăng vậy?", "domain": "lang_vietnamese"}
+{"prompt": "Bạn có thể giải thích cho mình sự khác biệt giữa virus và vi khuẩn không?", "domain": "lang_vietnamese"}
+{"prompt": "Em nên chọn công việc văn phòng ổn định hay công việc bán hàng có hoa hồng cao nhưng bất định?", "domain": "lang_vietnamese"}
+{"prompt": "Viết cho mình kịch bản chi tiết một buổi thuyết trình xin đầu tư gọi vốn vòng seed cho sản phẩm phần mềm quản lý nhân sự", "domain": "lang_vietnamese"}
+{"prompt": "Giữa việc nuôi chó và nuôi mèo trong căn hộ chung cư nhỏ, con vật nào phù hợp hơn về mặt chăm sóc và không gian?", "domain": "lang_vietnamese"}
+{"prompt": "Tại sao khi bị say xe, nhìn ra xa lại giúp giảm cảm giác buồn nôn hơn?", "domain": "lang_vietnamese"}
+{"prompt": "Kể một câu chuyện ngắn về cô bé bán diêm theo phong cách hiện đại đi", "domain": "lang_vietnamese"}
+{"prompt": "Cho mình hỏi ý nghĩa của tục thả cá chép ngày 23 tháng Chạp có liên quan gì đến Táo Quân không?", "domain": "lang_vietnamese"}
+{"prompt": "Theo bạn, việc nuôi con theo phương pháp kỷ luật tích cực khác gì so với phương pháp truyền thống dùng đòn roi, và cái nào hiệu quả hơn về lâu dài?", "domain": "lang_vietnamese"}
+{"prompt": "Em đang đọc thấy giá vàng SJC hôm nay là 82 triệu/lượng, anh giải thích giúp em vì sao giá vàng trong nước lại cao hơn giá vàng thế giới nhiều vậy?", "domain": "lang_vietnamese"}
+{"prompt": "Bạn nghĩ có nên công khai mức lương với đồng nghiệp để tạo sự minh bạch trong công ty không?", "domain": "lang_vietnamese"}
+{"prompt": "Mình đang tìm hiểu về nghệ thuật hát xẩm, bạn có thể kể nguồn gốc và đặc điểm của loại hình này không?", "domain": "lang_vietnamese"}
+{"prompt": "Bạn giúp mình phân tích ưu nhược điểm của việc dùng tiền mặt và ví điện tử trong chi tiêu hàng ngày ở Việt Nam hiện nay?", "domain": "lang_vietnamese"}
+{"prompt": "Có cách nào để cai nghiện điện thoại vào buổi tối trước khi ngủ không?", "domain": "lang_vietnamese"}
+{"prompt": "Tại sao khi bị cảm cúm người ta thường khuyên xông lá sả, lá bưởi, cơ chế có thực sự hiệu quả không?", "domain": "lang_vietnamese"}
+{"prompt": "Theo anh, phụ nữ sau sinh nên nghỉ việc để chăm con hay tiếp tục đi làm sớm để giữ sự nghiệp?", "domain": "lang_vietnamese"}
+{"prompt": "Hướng dẫn em cách làm sạch máy giặt để loại bỏ mùi hôi và nấm mốc theo đúng quy trình.", "domain": "lang_vietnamese"}
+{"prompt": "Giữa việc học thạc sĩ ngay sau đại học và đi làm vài năm rồi học tiếp, phương án nào hợp lý hơn cho ngành kinh tế?", "domain": "lang_vietnamese"}
+{"prompt": "Mình với bạn thân cãi nhau vì một chuyện hiểu lầm nhỏ nhưng đã hai tuần chưa ai chủ động làm lành, bạn nghĩ mình nên nhắn tin trước hay chờ đợi, và nên nói gì để không khiến tình huống tệ hơn?", "domain": "lang_vietnamese"}
+{"prompt": "Anh giải thích giúp em vì sao khi ngủ mơ mình lại không thể kiểm soát được hành động trong mơ?", "domain": "lang_vietnamese"}
+{"prompt": "Cho em hỏi cách phân biệt giữa cảm cúm thông thường và cảm lạnh, vì cả hai đều có triệu chứng ho và sổ mũi?", "domain": "lang_vietnamese"}
+{"prompt": "Em đang tìm hiểu về nghi lễ rước dâu truyền thống của người Tày, anh có thể kể sơ lược không?", "domain": "lang_vietnamese"}
+{"prompt": "Theo bạn, có nên cho con học trường quốc tế thay vì trường công không?", "domain": "lang_vietnamese"}
+{"prompt": "Cho mình hỏi tại sao một số loài nấm phát quang trong đêm, cơ chế sinh học đằng sau đó là gì?", "domain": "lang_vietnamese"}
+{"prompt": "Giúp mình soạn một email xin nghỉ phép gửi sếp vì lý do gia đình được không?", "domain": "lang_vietnamese"}
+{"prompt": "Anh giải thích giúp em vì sao khi trời sắp mưa thì kiến thường bò ra khỏi tổ vậy?", "domain": "lang_vietnamese"}
+{"prompt": "Em đang học tiếng Anh nhưng hay quên từ vựng, anh có cách nào giúp em nhớ lâu hơn không?", "domain": "lang_vietnamese"}
+{"prompt": "Mình muốn học nấu món phở bò tại nhà, có công thức đơn giản không", "domain": "lang_vietnamese"}
+{"prompt": "Mình muốn viết một lời chúc sinh nhật ngắn gọn cho bạn thân, bạn giúp mình với nhé?", "domain": "lang_vietnamese"}
+{"prompt": "Mình muốn biết quy trình xin cấp lại căn cước công dân bị mất, cần đến đâu và mất bao lâu?", "domain": "lang_vietnamese"}
+{"prompt": "Gợi ý địa điểm du lịch Đà Lạt.", "domain": "lang_vietnamese"}
+{"prompt": "Mình có một câu chuyện ngắn muốn viết về một cô bé bán diêm hiện đại giữa thành phố, bạn gợi ý giúp mình mở đầu câu chuyện được không?", "domain": "lang_vietnamese"}
+{"prompt": "Bệnh gout kiêng ăn gì?", "domain": "lang_vietnamese"}
+{"prompt": "Tại sao con người cần ngủ đủ giấc, nếu thiếu ngủ lâu ngày sẽ ảnh hưởng gì đến cơ thể vậy anh?", "domain": "lang_vietnamese"}
+{"prompt": "Anh nghĩ sao về việc du lịch một mình, có an toàn và đáng thử với phụ nữ không?", "domain": "lang_vietnamese"}
+{"prompt": "Chỉ mình cách nấu canh chua cá lóc kiểu miền Tây với, mình nấu hoài mà không ra vị chuẩn", "domain": "lang_vietnamese"}
+{"prompt": "Bạn giải thích đơn giản giúp mình về nguyên lý hoạt động của tủ lạnh.", "domain": "lang_vietnamese"}
+{"prompt": "Hướng dẫn em từng bước cách nấu phở bò chuẩn vị Bắc tại nhà được không?", "domain": "lang_vietnamese"}
+{"prompt": "Bạn thấy có nên đi xem bói trước khi quyết định việc lớn trong đời không?", "domain": "lang_vietnamese"}
+{"prompt": "Bạn so sánh giúp mình ưu nhược điểm giữa việc mua nhà trả góp và thuê nhà ở lâu dài tại thành phố lớn không?", "domain": "lang_vietnamese"}
+{"prompt": "Hướng dẫn em các bước để kiểm tra và bảo dưỡng điều hòa trước khi vào mùa nóng.", "domain": "lang_vietnamese"}
+{"prompt": "Phân tích giúp mình nguyên nhân sâu xa dẫn đến sự sụp đổ của nhà Nguyễn trong bối cảnh thực dân Pháp xâm lược, đặc biệt là các sai lầm về chính sách đối ngoại.", "domain": "lang_vietnamese"}
+{"prompt": "Theo bạn, ăn chay có thực sự tốt cho sức khỏe hơn ăn thịt không?", "domain": "lang_vietnamese"}
+{"prompt": "Viết cho mình vài câu chúc mừng đám cưới.", "domain": "lang_vietnamese"}
+{"prompt": "Viết lời chúc mừng đám cưới.", "domain": "lang_vietnamese"}
+{"prompt": "Bạn so sánh giúp mình việc sống chung với bạn cùng phòng để giảm chi phí và sống một mình để có không gian riêng?", "domain": "lang_vietnamese"}
+{"prompt": "Cho mình hỏi giữa việc tự lái xe đi làm và đi xe buýt công cộng, cái nào hợp lý hơn nếu tính cả yếu tố môi trường và chi phí?", "domain": "lang_vietnamese"}
+{"prompt": "Theo bạn, biến đổi khí hậu sẽ ảnh hưởng như thế nào đến sản lượng lúa gạo ở đồng bằng sông Cửu Long trong ba mươi năm tới?", "domain": "lang_vietnamese"}
+{"prompt": "Em đang phân vân giữa nấu ăn tại nhà và đặt đồ ăn ngoài, cái nào thực sự tiết kiệm hơn nếu tính đủ chi phí và thời gian?", "domain": "lang_vietnamese"}
+{"prompt": "Làm thế nào để thiết lập một trang web bán hàng online từ đầu, chỉ em các bước cơ bản nhất?", "domain": "lang_vietnamese"}
+{"prompt": "Mình muốn viết một truyện ngắn về người lính trở về sau chiến tranh và cuộc sống hậu chiến đầy khó khăn, giúp mình phát triển cốt truyện chi tiết.", "domain": "lang_vietnamese"}
+{"prompt": "Bạn viết cho mình một đoạn văn ngắn cảm ơn khách hàng đã ủng hộ shop online.", "domain": "lang_vietnamese"}
+{"prompt": "Kể cho mình vài sự thật thú vị về loài mèo mà ít người biết", "domain": "lang_vietnamese"}
+{"prompt": "Mình muốn cải thiện kỹ năng viết tiếng Anh trong công việc, bạn có thể gợi ý phương pháp học hiệu quả cũng như các nguồn tài liệu phù hợp cho người đi làm không?", "domain": "lang_vietnamese"}
+{"prompt": "Mình nên tiết kiệm bao nhiêu phần trăm lương mỗi tháng?", "domain": "lang_vietnamese"}
+{"prompt": "Mình muốn viết một đoạn văn ngắn cảm ơn cô giáo cũ nhân ngày 20 tháng 11, bạn giúp mình được không?", "domain": "lang_vietnamese"}
+{"prompt": "Theo bạn, có nên ly hôn khi hai vợ chồng không còn tình cảm nhưng vẫn sống chung vì con?", "domain": "lang_vietnamese"}
+{"prompt": "Có cách nào để tăng khả năng tập trung khi làm việc ở nhà không", "domain": "lang_vietnamese"}
+{"prompt": "Cho mình hỏi cách phân biệt gốm Bát Tràng thật và hàng nhái trên thị trường hiện nay?", "domain": "lang_vietnamese"}
+{"prompt": "Theo bạn, có nên đầu tư vào vàng lúc này hay chờ giá giảm thêm?", "domain": "lang_vietnamese"}
+{"prompt": "Theo bạn, có nên nuôi con một mình nếu không tìm được người phù hợp để kết hôn?", "domain": "lang_vietnamese"}
+{"prompt": "Mình bị đau lưng khi ngồi làm việc lâu, có bài tập nào giúp giảm đau không?", "domain": "lang_vietnamese"}
+{"prompt": "Mình muốn tìm hiểu về lịch sử áo dài Việt Nam, bạn kể mình nghe được không?", "domain": "lang_vietnamese"}
+{"prompt": "Em nghe nói uống nước chanh mật ong mỗi sáng có thể giảm cân, điều này có đúng về mặt khoa học không hay chỉ là lời đồn, anh có thể phân tích rõ giúp em không?", "domain": "lang_vietnamese"}
+{"prompt": "Phân tích các yếu tố tâm lý học hành vi ảnh hưởng đến quyết định đầu tư của nhà đầu tư cá nhân, đặc biệt là hiệu ứng bầy đàn", "domain": "lang_vietnamese"}
+{"prompt": "Bạn có thể so sánh giúp mình ưu nhược điểm của việc mua nhà trả góp so với thuê nhà dài hạn trong bối cảnh giá nhà đất ở thành phố lớn hiện nay không?", "domain": "lang_vietnamese"}
+{"prompt": "Theo bạn, tại sao một số quốc gia giàu tài nguyên thiên nhiên lại có nền kinh tế kém phát triển hơn các nước nghèo tài nguyên?", "domain": "lang_vietnamese"}
+{"prompt": "Có nên uống nước đá sau khi ăn không?", "domain": "lang_vietnamese"}
+{"prompt": "Cho em hỏi sự khác nhau giữa hợp đồng lao động xác định thời hạn và không xác định thời hạn theo luật lao động Việt Nam là gì?", "domain": "lang_vietnamese"}
+{"prompt": "Mình muốn mở một tài khoản tiết kiệm ngân hàng lần đầu, cần chuẩn bị giấy tờ gì và nên chọn loại kỳ hạn nào?", "domain": "lang_vietnamese"}
+{"prompt": "Cho mình hỏi cách nấu phở bò truyền thống sao cho nước dùng trong và thơm nhé?", "domain": "lang_vietnamese"}
+{"prompt": "Mất ngủ nên làm sao?", "domain": "lang_vietnamese"}
+{"prompt": "Tại sao khi trời mưa lâu ngày không có nắng, đồ giặt phơi trong nhà lại có mùi hôi khó chịu vậy anh?", "domain": "lang_vietnamese"}
+{"prompt": "Bạn có thể giải thích tại sao giá xăng dầu trên thế giới lại biến động mạnh trong thời gian gần đây và điều này ảnh hưởng như thế nào đến nền kinh tế Việt Nam không?", "domain": "lang_vietnamese"}
+{"prompt": "Tại sao một số người có thể nhớ rất rõ những chuyện xảy ra từ nhiều năm trước nhưng lại quên mất việc vừa làm hôm qua, đây có phải vấn đề về trí nhớ ngắn hạn không?", "domain": "lang_vietnamese"}
+{"prompt": "Mình muốn viết một đoạn hội thoại kịch bản cho video quảng cáo sản phẩm sữa hạt hướng đến người ăn chay, giúp mình phát triển ý tưởng chi tiết.", "domain": "lang_vietnamese"}
+{"prompt": "Chỉ mình từng bước cách tự thay dầu nhớt xe máy tại nhà để tiết kiệm chi phí.", "domain": "lang_vietnamese"}
+{"prompt": "Giải thích chi tiết nguyên lý hoạt động của pin lithium-ion và tại sao chúng bị chai pin theo thời gian sử dụng", "domain": "lang_vietnamese"}
+{"prompt": "Mình muốn biết lịch sử hình thành chợ nổi Cái Răng ở miền Tây, chợ này có từ khi nào và phát triển ra sao?", "domain": "lang_vietnamese"}
+{"prompt": "Mình mới nhận việc quản lý nhóm 5 người, có bạn trong nhóm hay đi làm muộn, bạn khuyên mình nên nói chuyện với bạn đó thế nào để không làm mất hòa khí?", "domain": "lang_vietnamese"}
+{"prompt": "Mình đang phân vân giữa mua xe máy điện hay xe số, cho mình lời khuyên", "domain": "lang_vietnamese"}
+{"prompt": "Giải thích ngắn gọn lạm phát là gì.", "domain": "lang_vietnamese"}
+{"prompt": "Hướng dẫn mình cách pha một ly cà phê sữa đá đúng chuẩn quán cà phê Việt Nam.", "domain": "lang_vietnamese"}
+{"prompt": "Tóm tắt nhanh chiến tranh Việt Nam giúp mình.", "domain": "lang_vietnamese"}
+{"prompt": "Làm thế nào để bắt đầu đầu tư vào quỹ mở cho người mới, anh chỉ em các bước cần chuẩn bị trước tiên?", "domain": "lang_vietnamese"}
+{"prompt": "Bạn hãy phân tích tác động của trí tuệ nhân tạo đến thị trường lao động ngành dịch vụ khách hàng trong mười năm tới.", "domain": "lang_vietnamese"}
+{"prompt": "Theo anh, có nên nghỉ hẳn mạng xã hội một thời gian để cải thiện sức khỏe tinh thần không?", "domain": "lang_vietnamese"}
+{"prompt": "Em đang có mâu thuẫn với người yêu vì hai đứa hay tranh cãi chuyện ai lo tài chính chính trong nhà, anh có lời khuyên nào giúp em không?", "domain": "lang_vietnamese"}
+{"prompt": "Cho mình hỏi về lịch sử hình thành của triều đại nhà Nguyễn, những đóng góp và hạn chế của triều đại này đối với sự phát triển của Việt Nam là gì?", "domain": "lang_vietnamese"}
+{"prompt": "Mình muốn biết giữa việc học online tại nhà và đến lớp học trực tiếp, cái nào giúp trẻ nhỏ tiếp thu kiến thức tốt hơn?", "domain": "lang_vietnamese"}
+{"prompt": "Em đang chuẩn bị một buổi thuyết trình về biến đổi khí hậu cho lớp học, anh có thể giúp em tóm tắt những nguyên nhân chính và hậu quả nghiêm trọng nhất một cách dễ hiểu không?", "domain": "lang_vietnamese"}
+{"prompt": "Làm sao để giao tiếp hiệu quả hơn với đồng nghiệp khó tính trong công việc hàng ngày?", "domain": "lang_vietnamese"}
+{"prompt": "Em đang có khoản tiết kiệm 200 triệu và muốn đầu tư để sinh lời trong 5 năm tới, anh có thể phân tích ưu nhược điểm giữa gửi tiết kiệm ngân hàng, mua vàng, đầu tư chứng khoán và bất động sản không, kèm gợi ý phân bổ tỷ lệ hợp lý?", "domain": "lang_vietnamese"}
+{"prompt": "Mình đang muốn khởi nghiệp kinh doanh nhỏ về đồ ăn vặt online, bạn có thể tư vấn các bước cần chuẩn bị từ nguồn vốn, marketing đến quản lý đơn hàng không?", "domain": "lang_vietnamese"}
+{"prompt": "Tại sao người già thường bị đau khớp nhiều hơn người trẻ vậy anh?", "domain": "lang_vietnamese"}
+{"prompt": "Tại sao người Nhật lại có tục lệ cúi chào theo nhiều góc độ khác nhau tùy vào mối quan hệ vậy ạ?", "domain": "lang_vietnamese"}
+{"prompt": "Mình muốn bắt đầu tập gym nhưng không biết nên tập bao nhiêu buổi mỗi tuần thì hợp lý?", "domain": "lang_vietnamese"}
+{"prompt": "Em đang tìm cách cải thiện kỹ năng giao tiếp khi làm việc nhóm, anh có gợi ý nào không?", "domain": "lang_vietnamese"}
+{"prompt": "Làm thế nào để bắt đầu chạy bộ đúng cách cho người mới tập, anh chỉ em lộ trình từng tuần?", "domain": "lang_vietnamese"}
+{"prompt": "Dạo này công việc của em căng thẳng quá, tối về không ngủ được mà đầu óc lúc nào cũng nghĩ về deadline, anh có thể chia sẻ vài cách để tách bạch công việc và cuộc sống cá nhân, cũng như cách thư giãn hiệu quả sau giờ làm không?", "domain": "lang_vietnamese"}
+{"prompt": "Mình muốn viết một email xin nghỉ phép gửi cho quản lý, bạn giúp mình soạn với được không?", "domain": "lang_vietnamese"}
+{"prompt": "Mình muốn viết một bài thơ ngắn về tình bạn để tặng bạn cùng lớp", "domain": "lang_vietnamese"}
+{"prompt": "Chỉ mình cách trình bày báo cáo tài chính cuối năm sao cho rõ ràng và dễ hiểu với cấp trên.", "domain": "lang_vietnamese"}
+{"prompt": "Em nên ưu tiên trả hết nợ trước hay bắt đầu đầu tư song song, anh nghĩ cách nào hợp lý hơn?", "domain": "lang_vietnamese"}
+{"prompt": "Cho mình hỏi vì sao đàn cá mập lại có thể phát hiện ra mùi máu từ khoảng cách rất xa dưới nước?", "domain": "lang_vietnamese"}
+{"prompt": "Bạn giải thích giúp mình hiện tượng nhật thực xảy ra như thế nào với?", "domain": "lang_vietnamese"}
+{"prompt": "Em muốn viết một lá thư ngắn gửi cho người bạn thân lâu ngày không gặp, anh giúp em phần mở đầu được không?", "domain": "lang_vietnamese"}
+{"prompt": "Cách bảo quản thực phẩm lâu hư?", "domain": "lang_vietnamese"}
+{"prompt": "Giải thích đơn giản cho mình hiểu blockchain là gì, đừng dùng từ chuyên môn khó quá", "domain": "lang_vietnamese"}
+{"prompt": "Theo bạn, tại sao giấc ngủ REM lại quan trọng đối với quá trình ghi nhớ và học tập của não bộ?", "domain": "lang_vietnamese"}
+{"prompt": "Mình đang mâu thuẫn với chồng vì chuyện chi tiêu trong nhà, anh ấy thường chi tiêu vượt kế hoạch mà không bàn trước, bạn có lời khuyên nào để hai vợ chồng có thể nói chuyện thẳng thắn mà không gây tổn thương nhau không?", "domain": "lang_vietnamese"}
+{"prompt": "Tại sao khi leo núi cao người ta lại dễ bị khó thở và chóng mặt, bạn có thể giải thích hiện tượng này liên quan đến áp suất không khí và oxy như thế nào không?", "domain": "lang_vietnamese"}
+{"prompt": "Cách quản lý thời gian hiệu quả hơn?", "domain": "lang_vietnamese"}
+{"prompt": "Tại sao khi ăn sầu riêng lại không nên uống rượu cùng lúc, có thật là nguy hiểm không?", "domain": "lang_vietnamese"}
+{"prompt": "Vì sao giá xăng tăng liên tục?", "domain": "lang_vietnamese"}
+{"prompt": "Tại sao một số người dễ bị say xe trong khi người khác thì không, bạn có thể giải thích nguyên nhân sinh học đằng sau hiện tượng này không?", "domain": "lang_vietnamese"}
+{"prompt": "Mình đang học tiếng Anh để thi IELTS mục tiêu 7.0, bạn có thể gợi ý lộ trình học trong 3 tháng bao gồm cả bốn kỹ năng nghe nói đọc viết không?", "domain": "lang_vietnamese"}
+{"prompt": "Mình tò mò về tục ăn trầu cau của người Việt xưa, tại sao trầu cau lại gắn liền với lễ cưới hỏi?", "domain": "lang_vietnamese"}
+{"prompt": "Mình đang học cách trồng rau sạch trên sân thượng, bạn có thể gợi ý loại rau dễ trồng cho người mới bắt đầu không?", "domain": "lang_vietnamese"}
+{"prompt": "Có nên cho trẻ nhỏ dùng điện thoại từ sớm không hay nên hạn chế tối đa?", "domain": "lang_vietnamese"}
+{"prompt": "Giải thích giúp mình vì sao lãi suất ngân hàng tăng lại ảnh hưởng đến giá nhà đất?", "domain": "lang_vietnamese"}
+{"prompt": "Lãi suất ngân hàng nào cao nhất?", "domain": "lang_vietnamese"}
+{"prompt": "Tại sao khi bị stress lâu ngày người ta lại dễ rụng tóc hơn?", "domain": "lang_vietnamese"}
+{"prompt": "Cho em hỏi vì sao người Việt Nam thường kiêng cắt tóc vào đầu năm mới, quan niệm này bắt nguồn từ đâu và có còn phù hợp với xã hội hiện đại không?", "domain": "lang_vietnamese"}
+{"prompt": "Bạn hãy viết một bức thư xin lỗi chân thành gửi cho một người bạn thân sau khi mình vô tình làm tổn thương họ bằng lời nói.", "domain": "lang_vietnamese"}
+{"prompt": "Bạn có thể giải thích tại sao một số người dễ bị nghiện mạng xã hội hơn người khác dưới góc độ tâm lý học hành vi không?", "domain": "lang_vietnamese"}
+{"prompt": "Mình muốn học cách viết một bài văn nghị luận xã hội đạt điểm cao trong kỳ thi tốt nghiệp THPT.", "domain": "lang_vietnamese"}
+{"prompt": "Em vừa đọc tin công ty áp dụng chính sách làm việc 4 ngày/tuần nhưng tăng giờ làm mỗi ngày, anh nghĩ mô hình này có thực sự hiệu quả không?", "domain": "lang_vietnamese"}
+{"prompt": "Giữa việc học vẽ truyền thống và học vẽ trên máy tính bảng, cái nào phù hợp hơn cho người muốn theo nghề thiết kế?", "domain": "lang_vietnamese"}
+{"prompt": "Chỉ em cách xử lý khi bị mất căn cước công dân, cần làm những thủ tục gì theo thứ tự.", "domain": "lang_vietnamese"}
+{"prompt": "Mình muốn tự học lập trình Python từ con số không để chuyển ngành sang công nghệ thông tin, bạn có thể vạch ra lộ trình học trong 6 tháng và gợi ý vài dự án nhỏ để thực hành không?", "domain": "lang_vietnamese"}
+{"prompt": "Cho em hỏi vì sao một số loài đom đóm lại phát sáng theo nhịp đồng bộ khi tụ tập đông vậy ạ?", "domain": "lang_vietnamese"}
+{"prompt": "Bạn có thể giúp mình soạn hợp đồng cho thuê nhà ngắn hạn với đầy đủ các điều khoản về đặt cọc, trách nhiệm sửa chữa và chấm dứt hợp đồng sớm không?", "domain": "lang_vietnamese"}
+{"prompt": "Mình đang nợ thẻ tín dụng, nên trả dần hay vay chỗ khác để trả hết một lần?", "domain": "lang_vietnamese"}
+{"prompt": "Anh có thể so sánh giữa việc học đại học trong nước và du học ở nước ngoài về chi phí, chất lượng giáo dục và cơ hội việc làm sau khi ra trường không, để em có cái nhìn tổng quan hơn trước khi quyết định?", "domain": "lang_vietnamese"}
+{"prompt": "Cho mình hỏi công thức tính lãi kép hoạt động thế nào, ví dụ mình gửi 50 triệu với lãi suất 6%/năm trong 10 năm thì cuối cùng được bao nhiêu?", "domain": "lang_vietnamese"}
+{"prompt": "Em muốn học cách quản lý thời gian hiệu quả hơn khi vừa đi làm vừa học thêm, anh có lời khuyên nào không?", "domain": "lang_vietnamese"}
+{"prompt": "Mình đang xây dựng mô hình danh mục đầu tư cân bằng giữa cổ phiếu, trái phiếu và vàng cho người có mức chấp nhận rủi ro trung bình, bạn có thể gợi ý tỷ trọng phân bổ cụ thể và lý do không?", "domain": "lang_vietnamese"}
+{"prompt": "Anh giải thích giúp em tại sao trong tiếng Việt lại có sự phân biệt giữa 'anh/chị/em' phức tạp hơn nhiều so với tiếng Anh chỉ dùng 'you'?", "domain": "lang_vietnamese"}
+{"prompt": "Tại sao khi đi máy bay lúc cất cánh và hạ cánh tai lại bị ù, có cách nào giảm cảm giác đó không?", "domain": "lang_vietnamese"}
+{"prompt": "Cho em hỏi vì sao một số người bị dị ứng hải sản nhưng lại ăn được cá bình thường vậy ạ?", "domain": "lang_vietnamese"}
+{"prompt": "Giữa việc dùng mạng xã hội nhiều để quảng bá bản thân và giữ sự riêng tư kín đáo, cách nào tốt hơn cho người làm nội dung?", "domain": "lang_vietnamese"}
+{"prompt": "Anh ơi giải thích giúp em vì sao người ta lại kiêng quét nhà vào ngày mùng một Tết?", "domain": "lang_vietnamese"}
+{"prompt": "Bạn có thể so sánh giữa việc học đại học trong nước và du học nước ngoài về chi phí, chất lượng giáo dục và cơ hội việc làm sau khi ra trường không?", "domain": "lang_vietnamese"}
+{"prompt": "Dạo này mối quan hệ giữa mình và bạn trai có nhiều mâu thuẫn nhỏ nhặt, bạn có thể gợi ý một số cách giao tiếp hiệu quả để giải quyết xung đột mà không làm tổn thương nhau không?", "domain": "lang_vietnamese"}
+{"prompt": "Bạn nghĩ sao về việc dùng mạng xã hội quá nhiều ảnh hưởng đến tâm lý người trẻ?", "domain": "lang_vietnamese"}
+{"prompt": "Mình hay bị đau đầu vào buổi chiều, nguyên nhân có thể là gì nhỉ?", "domain": "lang_vietnamese"}
+{"prompt": "Giải thích chi tiết sự khác nhau giữa các loại hình bảo hiểm nhân thọ, bảo hiểm sức khỏe và bảo hiểm liên kết đầu tư hiện có trên thị trường", "domain": "lang_vietnamese"}
+{"prompt": "Người yêu em hay giận dỗi vì em bận công việc không có thời gian quan tâm, em nên làm gì để cân bằng giữa sự nghiệp và tình cảm mà không làm tổn thương đối phương, mong anh cho vài lời khuyên thực tế.", "domain": "lang_vietnamese"}
+{"prompt": "Mình muốn biết các bước cụ thể để xin visa du lịch Nhật Bản từ Việt Nam, cần chuẩn bị giấy tờ gì trước?", "domain": "lang_vietnamese"}
+{"prompt": "Giải thích chi tiết cơ chế miễn dịch của cơ thể khi tiêm vắc-xin mRNA, so sánh với vắc-xin bất hoạt truyền thống về mặt hiệu quả và độ an toàn.", "domain": "lang_vietnamese"}
+{"prompt": "Cho em hỏi sự khác nhau giữa vitamin C và vitamin D là gì và nên uống loại nào vào buổi sáng?", "domain": "lang_vietnamese"}
+{"prompt": "Dạo này mình hay mất ngủ, có cách nào tự nhiên giúp ngủ ngon hơn không?", "domain": "lang_vietnamese"}
+{"prompt": "Mình muốn hiểu rõ hơn về cách hoạt động của điều hòa nhiệt độ, bạn giải thích giúp mình không?", "domain": "lang_vietnamese"}
+{"prompt": "Em đang chuẩn bị viết bài phát biểu cho lễ tốt nghiệp đại học, anh có thể giúp em viết một đoạn mở đầu ấn tượng và một đoạn kết đầy cảm hứng không?", "domain": "lang_vietnamese"}
+{"prompt": "Mình muốn biết các bước để đăng ký hộ chiếu lần đầu tại Việt Nam, cần chuẩn bị gì trước khi đi?", "domain": "lang_vietnamese"}
+{"prompt": "Mình muốn biết sự khác nhau giữa việc tiết kiệm tiền mỗi tháng và đầu tư chứng khoán ngay từ đầu, cái nào phù hợp với người mới đi làm?", "domain": "lang_vietnamese"}
+{"prompt": "Mình nên chọn công việc lương cao nhưng áp lực hay lương thấp nhưng thoải mái?", "domain": "lang_vietnamese"}
+{"prompt": "Mình mới ra trường, lương tháng 8 triệu thì nên chia ra sao để có dư mỗi tháng", "domain": "lang_vietnamese"}
+{"prompt": "Giữa việc tiết kiệm tiền để mua nhà sớm và dùng tiền đó để đầu tư kinh doanh, bạn nghĩ hướng nào khả thi hơn ở độ tuổi 25?", "domain": "lang_vietnamese"}
+{"prompt": "Làm sao để vượt qua nỗi sợ nói trước đông người?", "domain": "lang_vietnamese"}
+{"prompt": "Tại sao một số loài chim di cư có thể bay hàng ngàn km mà không bị lạc đường, chúng định hướng bằng cách nào?", "domain": "lang_vietnamese"}
+{"prompt": "Theo bạn, có nên cho trẻ em dùng điện thoại thông minh trước 10 tuổi không?", "domain": "lang_vietnamese"}
+{"prompt": "Giúp mình viết một bài phát biểu ngắn cho lễ kỷ niệm thành lập công ty mười năm, nhấn mạnh vào những thành tựu và định hướng phát triển tương lai.", "domain": "lang_vietnamese"}
+{"prompt": "Bạn giải thích giúp mình hiện tượng nhật thực và nguyệt thực khác nhau như thế nào?", "domain": "lang_vietnamese"}
+{"prompt": "Tại sao khi leo núi cao lại khó thở hơn ở đồng bằng vậy?", "domain": "lang_vietnamese"}
+{"prompt": "Theo bạn, có nên học thêm bằng lái ô tô ngay khi còn là sinh viên không?", "domain": "lang_vietnamese"}
+{"prompt": "Em đang phân vân giữa việc chuyển công ty mới lương cao hơn hay giữ công việc cũ ổn định, anh có lời khuyên nào không?", "domain": "lang_vietnamese"}
+{"prompt": "Anh có thể giải thích cho em cơ chế hoạt động của vắc xin, tại sao sau khi tiêm vắc xin cơ thể lại có khả năng chống lại bệnh tật trong tương lai không?", "domain": "lang_vietnamese"}
+{"prompt": "Cách viết CV xin việc part-time?", "domain": "lang_vietnamese"}
+{"prompt": "Anh có thể giải thích đơn giản về blockchain là gì cho người không rành công nghệ như em không?", "domain": "lang_vietnamese"}
+{"prompt": "Mình đang định mua bảo hiểm y tế, bạn có thể giải thích các loại bảo hiểm phổ biến hiện nay không?", "domain": "lang_vietnamese"}
+{"prompt": "Ông bà em hay kể về thời kỳ bao cấp ở Việt Nam nhưng em chưa hiểu rõ, anh có thể giải thích thời kỳ đó diễn ra khi nào, đời sống người dân ra sao và vì sao Việt Nam sau đó chuyển sang kinh tế thị trường không?", "domain": "lang_vietnamese"}
+{"prompt": "Mình đang muốn khởi nghiệp bán đồ ăn online quy mô nhỏ, bạn có thể tư vấn giúp mình các bước cần chuẩn bị từ vốn, giấy phép kinh doanh đến cách tiếp cận khách hàng đầu tiên không?", "domain": "lang_vietnamese"}
+{"prompt": "Viết giúp mình một bài thơ ngắn về mùa thu Hà Nội được không?", "domain": "lang_vietnamese"}
+{"prompt": "Giữa việc sử dụng bếp gas và bếp từ trong nấu ăn hàng ngày, cái nào an toàn và tiết kiệm điện hơn?", "domain": "lang_vietnamese"}
+{"prompt": "Mình đang học tiếng Anh mà cứ quên từ vựng hoài, có phương pháp nào hiệu quả không", "domain": "lang_vietnamese"}
+{"prompt": "Giải thích cơ chế quang hợp ở thực vật C4 khác với C3 như thế nào và tại sao nó giúp cây chịu hạn tốt hơn", "domain": "lang_vietnamese"}
+{"prompt": "Cho em hỏi giữa việc tiết kiệm tiền mặt và đầu tư chứng khoán dài hạn, cái nào phù hợp hơn cho người có mục tiêu nghỉ hưu sớm?", "domain": "lang_vietnamese"}
+{"prompt": "Em mới bắt đầu tập gym, anh có thể chỉ em cách tập đúng để không bị chấn thương không?", "domain": "lang_vietnamese"}
+{"prompt": "Mình đang chọn giữa laptop mỏng nhẹ pin lâu và laptop cấu hình mạnh nhưng nặng hơn, bạn tư vấn giúp mình theo nhu cầu làm văn phòng không?", "domain": "lang_vietnamese"}
+{"prompt": "Bạn hãy phân tích chi tiết cơ chế hoạt động của vắc-xin mRNA và so sánh với vắc-xin truyền thống dùng virus bất hoạt, kèm ưu nhược điểm của từng loại.", "domain": "lang_vietnamese"}
+{"prompt": "Có cách nào để bớt lo âu trước khi đi thi không, mình cứ hồi hộp quá mức", "domain": "lang_vietnamese"}
+{"prompt": "Mình muốn hiểu rõ hơn về nguyên lý hoạt động của xe điện so với xe chạy xăng, đặc biệt là về pin, hiệu suất và tác động đến môi trường, bạn có thể giải thích một cách dễ hiểu không?", "domain": "lang_vietnamese"}
+{"prompt": "Cách chăm sóc cây mai ngày Tết.", "domain": "lang_vietnamese"}
+{"prompt": "Mình muốn biết cách bảo quản rau củ trong tủ lạnh để giữ được lâu hơn, bạn có gợi ý không?", "domain": "lang_vietnamese"}
+{"prompt": "Cho em quy trình các bước xin nghỉ phép dài hạn ở công ty mà vẫn giữ được quan hệ tốt với sếp.", "domain": "lang_vietnamese"}
+{"prompt": "Tại sao khi nấu cơm bằng nồi cơm điện lại ngon hơn nấu bằng nồi thường trên bếp gas, có liên quan gì đến cơ chế giữ nhiệt và áp suất không, mong anh giải thích chi tiết.", "domain": "lang_vietnamese"}
+{"prompt": "Em muốn viết một đoạn văn ngắn kể về kỷ niệm đáng nhớ trong gia đình, anh có thể giúp em không?", "domain": "lang_vietnamese"}
+{"prompt": "Cách trị mụn hiệu quả?", "domain": "lang_vietnamese"}
+{"prompt": "Mình đang chuẩn bị phỏng vấn cho vị trí trưởng phòng nhân sự, bạn có thể đưa ra vài câu hỏi khó thường gặp và gợi ý cách trả lời thông minh không?", "domain": "lang_vietnamese"}
+{"prompt": "Bạn có thể giúp mình soạn một bản kế hoạch marketing sản phẩm mỹ phẩm hữu cơ hướng đến khách hàng nữ từ 25 đến 35 tuổi tại thành phố lớn không?", "domain": "lang_vietnamese"}
+{"prompt": "Bạn thấy làm việc từ xa có tốt hơn đến công ty mỗi ngày không?", "domain": "lang_vietnamese"}
+{"prompt": "Tại sao trời có màu xanh?", "domain": "lang_vietnamese"}
+{"prompt": "Cho mình vài câu ca dao hay.", "domain": "lang_vietnamese"}
+{"prompt": "Theo bạn, phụ nữ sau sinh có nên đi làm sớm hay nghỉ dài hơn để chăm con?", "domain": "lang_vietnamese"}
+{"prompt": "Giải thích chi tiết cơ chế lạm phát đình trệ (stagflation) từng xảy ra ở Mỹ thập niên 1970 và bài học rút ra cho chính sách tiền tệ hiện nay", "domain": "lang_vietnamese"}
+{"prompt": "Em đang cần lời khuyên để hòa giải mâu thuẫn nhỏ với đồng nghiệp trong công việc, anh có gợi ý nào không?", "domain": "lang_vietnamese"}
+{"prompt": "Bạn có thể giải thích giúp mình vì sao Việt Nam có ba miền Bắc Trung Nam với khí hậu khác nhau như vậy không?", "domain": "lang_vietnamese"}
+{"prompt": "Cho mình hỏi tại sao lá cây lại chuyển sang màu vàng và đỏ vào mùa thu?", "domain": "lang_vietnamese"}
+{"prompt": "Cho mình hỏi sự khác nhau giữa cổ phiếu và trái phiếu về mức độ rủi ro và lợi nhuận, người mới bắt đầu đầu tư nên ưu tiên loại nào trước?", "domain": "lang_vietnamese"}
+{"prompt": "Em muốn viết một đoạn văn ngắn giới thiệu về món phở Hà Nội cho khách du lịch nước ngoài, anh viết giúp em bằng tiếng Việt đơn giản được không?", "domain": "lang_vietnamese"}
+{"prompt": "Mình đang chuẩn bị phỏng vấn xin việc, bạn cho mình vài câu hỏi thường gặp nhé.", "domain": "lang_vietnamese"}
+{"prompt": "Em đang tìm hiểu về lịch sử hình thành chợ nổi ở miền Tây Nam Bộ, anh có thể tóm tắt không?", "domain": "lang_vietnamese"}
+{"prompt": "Mình muốn biết giữa học đại học truyền thống và học nghề ngắn hạn, con đường nào phù hợp hơn cho người muốn đi làm sớm?", "domain": "lang_vietnamese"}
+{"prompt": "Em muốn biết quy trình đăng ký kết hôn ở Việt Nam gồm những bước nào và cần giấy tờ gì.", "domain": "lang_vietnamese"}
+{"prompt": "Cho mình xin công thức nấu phở bò truyền thống.", "domain": "lang_vietnamese"}
+{"prompt": "Bạn có thể giải thích giúp mình vì sao biến đổi khí hậu lại khiến các hiện tượng thời tiết cực đoan như bão lũ xảy ra thường xuyên hơn ở Việt Nam trong những năm gần đây không?", "domain": "lang_vietnamese"}
+{"prompt": "Cho em hỏi vì sao khi đánh răng xong ăn cam lại có cảm giác đắng vậy ạ?", "domain": "lang_vietnamese"}
+{"prompt": "Cho mình vài lời khuyên để cải thiện kỹ năng giao tiếp khi đi làm.", "domain": "lang_vietnamese"}
+{"prompt": "Mình nên chọn du lịch Đà Lạt hay Phú Quốc vào dịp lễ này, bạn gợi ý giúp mình nhé.", "domain": "lang_vietnamese"}
+{"prompt": "Bạn viết giúp mình một bài đăng Facebook ngắn để thông báo cửa hàng quần áo của mình sẽ giảm giá 30% cuối tuần này được không?", "domain": "lang_vietnamese"}
+{"prompt": "Kể cho mình nghe một câu chuyện ngắn về tình bạn thời học sinh đi.", "domain": "lang_vietnamese"}
+{"prompt": "Chỉ em quy trình đăng ký thành lập doanh nghiệp tư nhân tại Việt Nam gồm những bước nào.", "domain": "lang_vietnamese"}
+{"prompt": "Cho mình hỏi giữa việc trồng rau sạch tại nhà và mua rau ở siêu thị, cái nào thực sự an toàn và tiết kiệm hơn về lâu dài?", "domain": "lang_vietnamese"}
+{"prompt": "Mình đang gặp khó khăn trong việc dạy con học online, bạn có thể gợi ý cách tạo động lực học tập cho trẻ trong môi trường học từ xa không?", "domain": "lang_vietnamese"}
+{"prompt": "Cho em hỏi cách chăm sóc cây lưỡi hổ trong nhà, vì lá cây em trồng đang bị vàng ở phần gốc?", "domain": "lang_vietnamese"}
+{"prompt": "Mình đang tìm hiểu cách phân biệt sữa tươi và sữa tiệt trùng, hai loại này khác nhau ở điểm nào?", "domain": "lang_vietnamese"}
+{"prompt": "Giải thích hiệu ứng nhà kính.", "domain": "lang_vietnamese"}
+{"prompt": "Cách nói không với đồng nghiệp khi bị nhờ việc quá nhiều?", "domain": "lang_vietnamese"}
+{"prompt": "Tại sao bầu trời màu xanh?", "domain": "lang_vietnamese"}
+{"prompt": "Bí quyết ngủ ngon hơn?", "domain": "lang_vietnamese"}
+{"prompt": "Dạo gần đây em thấy da mặt mình nổi mụn nhiều hơn, có phải do stress hay do chế độ ăn uống không hợp lý, anh có thể phân tích nguyên nhân và gợi ý cách chăm sóc da phù hợp không?", "domain": "lang_vietnamese"}
+{"prompt": "Có cách nào để quản lý thời gian tốt hơn khi vừa đi làm vừa học thêm không?", "domain": "lang_vietnamese"}
+{"prompt": "Mình muốn viết một bài phát biểu ngắn cho lễ tốt nghiệp đại học, truyền cảm hứng cho các bạn sinh viên sắp ra trường.", "domain": "lang_vietnamese"}
+{"prompt": "Theo anh, nên chọn công việc lương cao nhưng áp lực hay lương thấp mà thoải mái hơn?", "domain": "lang_vietnamese"}
+{"prompt": "Bạn có thể so sánh chi tiết giữa hệ thống giáo dục Phần Lan và Việt Nam, chỉ ra những điểm mà Việt Nam có thể học hỏi để cải thiện chất lượng dạy học không?", "domain": "lang_vietnamese"}
+{"prompt": "Mình đang chuẩn bị cho buổi phỏng vấn xin việc vào vị trí quản lý dự án, bạn có thể gợi ý những câu hỏi thường gặp và cách trả lời sao cho ấn tượng với nhà tuyển dụng không?", "domain": "lang_vietnamese"}
+{"prompt": "Làm sao để bắt đầu tập thể dục buổi sáng đều đặn mà không bị bỏ cuộc sau vài ngày?", "domain": "lang_vietnamese"}
+{"prompt": "Mình muốn tổ chức một chuyến từ thiện nhỏ cho trẻ em vùng cao vào cuối năm, bạn có thể gợi ý cách lên kế hoạch, kêu gọi quyên góp và những vật phẩm nên chuẩn bị không?", "domain": "lang_vietnamese"}
+{"prompt": "Bạn có thể giải thích khái niệm GDP là gì cho người mới học kinh tế không?", "domain": "lang_vietnamese"}
+{"prompt": "Mình bị căng thẳng công việc kéo dài, có cách nào để thư giãn nhanh không?", "domain": "lang_vietnamese"}
+{"prompt": "Anh nghĩ gì về việc cho trẻ em dùng điện thoại từ nhỏ, có nên cấm hoàn toàn không?", "domain": "lang_vietnamese"}
+{"prompt": "Cho mình hỏi cách phân biệt trứng gà tươi và trứng gà để lâu như thế nào?", "domain": "lang_vietnamese"}
+{"prompt": "Mình muốn viết một bài luận ngắn về ảnh hưởng của mạng xã hội đến giới trẻ hiện nay, bạn có thể giúp mình lập dàn ý chi tiết không?", "domain": "lang_vietnamese"}
+{"prompt": "Giải thích giúp mình cơ chế gây nghiện của mạng xã hội đối với não bộ con người, đặc biệt là vai trò của dopamine trong việc kích thích hành vi lặp lại.", "domain": "lang_vietnamese"}
+{"prompt": "Bạn giải thích giúp mình cơ chế đông máu của cơ thể diễn ra như thế nào khi bị thương, và vai trò của tiểu cầu trong quá trình đó.", "domain": "lang_vietnamese"}
+{"prompt": "Em đang phân vân giữa việc mua nhà trả góp 20 năm với lãi suất 9%/năm hoặc thuê nhà rồi đầu tư số tiền đó, anh phân tích giúp em cái nào lợi hơn?", "domain": "lang_vietnamese"}
+{"prompt": "Mình muốn biết vì sao một số người bị dị ứng với nọc kiến ba khoang lại nổi mụn nước, cơ chế là gì?", "domain": "lang_vietnamese"}
+{"prompt": "Viết cho mình một email xin nghỉ phép 3 ngày vì lý do gia đình, giọng lịch sự nha", "domain": "lang_vietnamese"}
+{"prompt": "Mình đang phân vân giữa việc nghỉ việc để theo đuổi đam mê và tiếp tục công việc ổn định hiện tại, bạn nghĩ nên cân nhắc điều gì trước?", "domain": "lang_vietnamese"}
+{"prompt": "Giải thích giúp mình quy trình xử lý nước thải công nghiệp trước khi thải ra môi trường, bao gồm các giai đoạn xử lý sinh học và hóa học.", "domain": "lang_vietnamese"}
+{"prompt": "Anh có thể giải thích khác biệt giữa internet và wifi cho em hiểu dễ dàng hơn không?", "domain": "lang_vietnamese"}
+{"prompt": "Em đang cân nhắc giữa thuê nhà trọn năm và ở ghép cùng bạn để tiết kiệm chi phí, anh phân tích ưu nhược điểm giúp em được không?", "domain": "lang_vietnamese"}
+{"prompt": "Anh nghĩ gì về việc kết hôn muộn, có ảnh hưởng nhiều đến cuộc sống sau này không?", "domain": "lang_vietnamese"}
+{"prompt": "Em muốn biết sự khác biệt giữa làm việc từ xa và làm việc tại văn phòng ảnh hưởng thế nào đến hiệu suất công việc?", "domain": "lang_vietnamese"}
+{"prompt": "Chỉ em các bước để sửa lỗi máy tính bị treo màn hình xanh khi khởi động.", "domain": "lang_vietnamese"}
+{"prompt": "Cho em hỏi sự khác nhau giữa sữa tươi và sữa đặc có đường là gì ạ?", "domain": "lang_vietnamese"}
+{"prompt": "Bạn nghĩ có nên nghỉ việc để khởi nghiệp riêng khi chưa có nhiều vốn không?", "domain": "lang_vietnamese"}
+{"prompt": "Bạn giải thích giúp mình hiện tượng 'ảo ảnh nhiệt' trên đường nhựa vào buổi trưa nắng gắt được không?", "domain": "lang_vietnamese"}
+{"prompt": "Giữa học tiếng Anh qua ứng dụng miễn phí và thuê gia sư riêng, cái nào hiệu quả hơn nếu mình chỉ có 6 tháng để chuẩn bị thi IELTS?", "domain": "lang_vietnamese"}
+{"prompt": "Cho em hỏi về nguồn gốc của trò chơi ô ăn quan trong văn hóa dân gian Việt Nam?", "domain": "lang_vietnamese"}
+{"prompt": "Giải thích khác biệt giữa Tết Nguyên Đán và Tết Dương Lịch cho người nước ngoài dễ hiểu", "domain": "lang_vietnamese"}
+{"prompt": "Bạn ơi, tại sao lá cây lại có màu xanh vậy?", "domain": "lang_vietnamese"}
+{"prompt": "Em muốn viết một email xin nghỉ việc chuyên nghiệp, lịch sự nhưng vẫn giữ được mối quan hệ tốt với công ty cũ, anh có thể soạn giúp em một mẫu email như vậy được không, trong đó có nêu lý do cá nhân và lời cảm ơn công ty?", "domain": "lang_vietnamese"}
+{"prompt": "Bạn giúp mình viết một lá thư gửi cho bản thân trong 10 năm nữa, nói về những ước mơ hiện tại và những điều mình muốn nhắc nhở chính mình đừng quên.", "domain": "lang_vietnamese"}
+{"prompt": "Bạn giải thích giúp mình cơ chế hoạt động của vắc xin mRNA khác gì với vắc xin truyền thống dùng virus bất hoạt?", "domain": "lang_vietnamese"}
+{"prompt": "So sánh giúp mình gửi tiết kiệm ngân hàng với mua vàng, cái nào an toàn hơn bây giờ", "domain": "lang_vietnamese"}
+{"prompt": "Cho em hỏi giữa việc dùng thẻ tín dụng và thẻ ghi nợ để chi tiêu hàng ngày, cái nào giúp kiểm soát tài chính tốt hơn?", "domain": "lang_vietnamese"}
+{"prompt": "Anh ơi, sếp em vừa nhắn 'Em chuẩn bị báo cáo doanh thu quý 3 trước 5h chiều nay nhé', em nên trả lời tin nhắn đó như thế nào cho lịch sự mà vẫn xin thêm thời gian?", "domain": "lang_vietnamese"}
+{"prompt": "Em đang cân nhắc chuyển từ Hà Nội vào Sài Gòn làm việc, anh nghĩ có nên không?", "domain": "lang_vietnamese"}
+{"prompt": "Có nên đầu tư vào vàng lúc này không hay đợi giá giảm rồi mua?", "domain": "lang_vietnamese"}
+{"prompt": "Mình muốn học nấu ăn cơ bản, nên bắt đầu từ món gì dễ làm nhất?", "domain": "lang_vietnamese"}
+{"prompt": "Em đang cân nhắc giữa việc kết hôn sớm hay tập trung phát triển sự nghiệp trước, anh có góc nhìn nào chia sẻ giúp em không?", "domain": "lang_vietnamese"}
+{"prompt": "Bạn có thể gợi ý cho mình vài món ăn đơn giản để nấu cho bữa tối trong 30 phút không?", "domain": "lang_vietnamese"}
+{"prompt": "Em đang định mua iPhone hay Samsung, anh thấy dòng nào đáng tiền hơn ở phân khúc tầm trung?", "domain": "lang_vietnamese"}
+{"prompt": "Mình đang cân nhắc giữa việc học thêm kỹ năng mới hay tập trung nâng cao chuyên môn hiện tại, bạn nghĩ nên ưu tiên cái nào?", "domain": "lang_vietnamese"}
+{"prompt": "Mình cần hiểu chi tiết quy trình xét duyệt hồ sơ vay mua nhà tại ngân hàng, các loại giấy tờ và tiêu chí thẩm định thu nhập", "domain": "lang_vietnamese"}
+{"prompt": "Em đang học về thuế thu nhập cá nhân, cho em hỏi nếu lương tháng là 15 triệu thì sau khi trừ các khoản giảm trừ gia cảnh em phải đóng thuế bao nhiêu?", "domain": "lang_vietnamese"}
+{"prompt": "Công ty em đang có mâu thuẫn giữa hai đồng nghiệp trong nhóm, là trưởng nhóm em nên xử lý tình huống này như thế nào để không làm ảnh hưởng đến tinh thần làm việc chung, mong anh cho vài gợi ý cụ thể.", "domain": "lang_vietnamese"}
+{"prompt": "Có nên học thêm một ngôn ngữ mới không?", "domain": "lang_vietnamese"}
+{"prompt": "Cho mình hỏi sự khác biệt giữa lãi suất cố định và lãi suất thả nổi khi vay mua nhà là gì, trường hợp nào nên chọn loại nào, và có ví dụ tính toán cụ thể cho khoản vay 1 tỷ trong 15 năm không?", "domain": "lang_vietnamese"}
+{"prompt": "Bạn có thể giải thích ngắn gọn cách hoạt động của tủ lạnh không?", "domain": "lang_vietnamese"}
+{"prompt": "Em đang thắc mắc tại sao tiền polymer ở Việt Nam lại khó bị rách hơn tiền giấy trước đây?", "domain": "lang_vietnamese"}
+{"prompt": "Tại sao khi trời mưa lâu ngày không có nắng thì đồ giặt phơi trong nhà lại có mùi hôi vậy anh?", "domain": "lang_vietnamese"}
+{"prompt": "Mình có đoạn code Python này chạy bị lỗi 'list index out of range' ở dòng for i in range(len(data)+1), bạn xem giúp mình sai ở đâu và sửa lại không?", "domain": "lang_vietnamese"}
+{"prompt": "Giải thích chi tiết cơ chế bệnh lý của tiểu đường type 2 và vai trò của insulin resistance trong quá trình phát triển bệnh", "domain": "lang_vietnamese"}
+{"prompt": "Mình đang học tiếng Anh mà cứ quên từ vựng liên tục, có cách nào khắc phục không?", "domain": "lang_vietnamese"}
+{"prompt": "Mình đang phân vân giữa học thạc sĩ trong nước hay đi làm luôn, bạn nghĩ sao?", "domain": "lang_vietnamese"}
+{"prompt": "Cho mình hỏi lịch sử hình thành của chữ Quốc ngữ có liên quan gì đến các giáo sĩ phương Tây không?", "domain": "lang_vietnamese"}
+{"prompt": "Anh có nghĩ là nên học thêm ngoại ngữ thứ hai ngoài tiếng Anh không, và nếu có thì nên chọn ngôn ngữ nào?", "domain": "lang_vietnamese"}
+{"prompt": "Bạn giúp mình soạn một đoạn tin nhắn xin nghỉ phép gửi cho quản lý vì mình cần về quê gấp do gia đình có việc không?", "domain": "lang_vietnamese"}
+{"prompt": "Em có bảng chi tiêu tháng này: tiền nhà 3 triệu, ăn uống 2.5 triệu, xăng xe 500 nghìn, giải trí 1 triệu, tổng lương 10 triệu, anh xem giúp em nên cắt giảm khoản nào để tiết kiệm hơn?", "domain": "lang_vietnamese"}
+{"prompt": "Mình đang đọc về cuộc khởi nghĩa Hai Bà Trưng, bạn tóm tắt giúp mình diễn biến chính và ý nghĩa lịch sử trong khoảng 200 chữ không?", "domain": "lang_vietnamese"}
+{"prompt": "Mình nên tiết kiệm tiền để mua ô tô hay đầu tư vào chứng khoán trước?", "domain": "lang_vietnamese"}
+{"prompt": "Hướng dẫn em cách làm bánh trung thu truyền thống tại nhà từ khâu chuẩn bị nguyên liệu đến nướng bánh.", "domain": "lang_vietnamese"}
+{"prompt": "Bạn nghĩ sao về việc sử dụng công nghệ deepfake trong ngành giải trí, liệu có nên có luật quản lý chặt chẽ hơn không?", "domain": "lang_vietnamese"}
+{"prompt": "Cho mình hỏi nuôi chó và nuôi mèo, loại nào phù hợp hơn với người sống một mình trong căn hộ nhỏ?", "domain": "lang_vietnamese"}
+{"prompt": "Cách nấu phở bò chuẩn vị?", "domain": "lang_vietnamese"}
+{"prompt": "Mình đang muốn tìm hiểu sâu về tác động của biến đổi khí hậu đến ngành nông nghiệp đồng bằng sông Cửu Long trong hai mươi năm tới, bạn có phân tích chi tiết không?", "domain": "lang_vietnamese"}
+{"prompt": "Cho mình biết cách bảo quản rau củ trong tủ lạnh để lâu bị hư", "domain": "lang_vietnamese"}
+{"prompt": "Mình muốn hiểu rõ nguyên nhân và cách phòng tránh bệnh tiểu đường type 2 ở người trẻ tuổi.", "domain": "lang_vietnamese"}
+{"prompt": "Cách phân biệt mật ong thật và giả?", "domain": "lang_vietnamese"}
+{"prompt": "Em đang cân nhắc mua bảo hiểm nhân thọ, anh thấy có thực sự cần thiết ở tuổi hai mươi lăm không?", "domain": "lang_vietnamese"}
+{"prompt": "Mình muốn biết cách nhận biết các dấu hiệu cảnh báo của bệnh tiểu đường type 2 sớm để có thể phòng ngừa kịp thời, bạn có thể liệt kê chi tiết không?", "domain": "lang_vietnamese"}
+{"prompt": "Cho mình hỏi giữa việc mua bảo hiểm ô tô toàn diện và chỉ mua bảo hiểm bắt buộc, cái nào hợp lý hơn cho người mới lái xe?", "domain": "lang_vietnamese"}
+{"prompt": "Anh giải thích giúp em cơ chế vì sao lá cây phong lại chuyển màu đỏ vào mùa thu chứ không chỉ vàng như lá khác được không?", "domain": "lang_vietnamese"}
+{"prompt": "Tại sao một số loài cá có thể sống được cả ở nước ngọt và nước lợ vậy anh?", "domain": "lang_vietnamese"}
+{"prompt": "Anh hướng dẫn giúp em cách trồng rau sạch trên sân thượng theo từng giai đoạn từ gieo hạt đến thu hoạch.", "domain": "lang_vietnamese"}
+{"prompt": "Mình đang xây dựng danh mục đầu tư cân bằng giữa cổ phiếu, vàng và bất động sản với số vốn 500 triệu đồng, bạn có thể đề xuất một chiến lược phân bổ tài sản cụ thể theo mức độ rủi ro trung bình không?", "domain": "lang_vietnamese"}
+{"prompt": "Bạn kể giúp mình vài nét chính về Tết Trung thu của người Việt và ý nghĩa của việc rước đèn ông sao không?", "domain": "lang_vietnamese"}
+{"prompt": "Giúp mình viết một status cảm ơn đồng nghiệp cũ trước khi chuyển công tác.", "domain": "lang_vietnamese"}
+{"prompt": "Anh nghĩ có nên đầu tư vào bất động sản vùng ven lúc này hay chờ thị trường ổn định hơn?", "domain": "lang_vietnamese"}
+{"prompt": "Tại sao lá cây vào mùa thu lại chuyển sang màu vàng và đỏ trước khi rụng?", "domain": "lang_vietnamese"}
+{"prompt": "Mình đang định chuyển từ công việc văn phòng sang làm freelance thiết kế đồ họa, bạn nghĩ mình cần chuẩn bị những gì về tài chính trước khi nghỉ việc?", "domain": "lang_vietnamese"}
+{"prompt": "Mình đang chuẩn bị đi xin việc lần đầu, bạn có thể gợi ý cách trả lời câu hỏi phỏng vấn về điểm yếu của bản thân không?", "domain": "lang_vietnamese"}
+{"prompt": "Mình muốn viết một bản kế hoạch kinh doanh chi tiết cho quán cà phê nhỏ ở khu vực đông sinh viên, bao gồm phân tích thị trường, chi phí ban đầu và dự báo doanh thu ba năm.", "domain": "lang_vietnamese"}
+{"prompt": "Cho mình hỏi cách nấu phở bò chuẩn vị Bắc mà không bị đục nước dùng?", "domain": "lang_vietnamese"}
+{"prompt": "Bạn có thể giải thích tại sao muối lại giúp bảo quản thực phẩm lâu hơn không?", "domain": "lang_vietnamese"}
+{"prompt": "Tại sao khi ngủ không đủ giấc lại khiến mình mệt mỏi cả ngày?", "domain": "lang_vietnamese"}
+{"prompt": "Em đang chuẩn bị phỏng vấn xin việc vào vị trí marketing, anh có thể giúp em soạn một số câu trả lời mẫu cho các câu hỏi phổ biến như điểm mạnh điểm yếu, và mục tiêu nghề nghiệp không?", "domain": "lang_vietnamese"}
+{"prompt": "Làm sao để tổ chức một buổi tiệc sinh nhật bất ngờ cho bạn thân, anh gợi ý các bước chuẩn bị giúp em?", "domain": "lang_vietnamese"}
+{"prompt": "Cho mình vài gợi ý quà sinh nhật cho mẹ tuổi năm mươi lăm nha.", "domain": "lang_vietnamese"}
+{"prompt": "Mình muốn viết một email xin nghỉ việc chuyên nghiệp nhưng vẫn giữ được mối quan hệ tốt với công ty cũ, bạn có thể soạn giúp mình một mẫu email vừa lịch sự vừa thể hiện lòng biết ơn không?", "domain": "lang_vietnamese"}
+{"prompt": "Mình muốn mua một chiếc laptop để làm đồ họa, bạn gợi ý giúp mình vài mẫu phù hợp.", "domain": "lang_vietnamese"}
+{"prompt": "Em muốn viết một đoạn văn ngắn cảm ơn thầy giáo cũ nhân ngày 20/11, anh giúp em được không?", "domain": "lang_vietnamese"}
+{"prompt": "Em đang bị đau bụng âm ỉ ở vùng dưới bên phải kèm sốt nhẹ 37.8 độ, anh nghĩ đây có thể là dấu hiệu của bệnh gì và em nên làm gì tiếp theo?", "domain": "lang_vietnamese"}
+{"prompt": "Bạn có thể giải thích quá trình hình thành của một cơn bão nhiệt đới, từ khi bắt đầu đến khi đổ bộ vào đất liền không?", "domain": "lang_vietnamese"}
+{"prompt": "Em muốn viết một lá thư xin lỗi gửi cho bạn thân vì đã hiểu lầm và cãi nhau, anh có thể giúp em viết sao cho chân thành mà không quá sến không?", "domain": "lang_vietnamese"}
+{"prompt": "Giải thích chi tiết cơ chế hoạt động của công nghệ blockchain và sự khác biệt giữa proof of work và proof of stake", "domain": "lang_vietnamese"}
+{"prompt": "Chỉ mình từng bước cách cài đặt và sử dụng ứng dụng quản lý chi tiêu trên điện thoại.", "domain": "lang_vietnamese"}
+{"prompt": "Mình muốn biết sự khác biệt giữa năng lượng mặt trời và năng lượng gió trong việc phát điện gia đình, cái nào tiết kiệm chi phí lắp đặt hơn?", "domain": "lang_vietnamese"}
+{"prompt": "Mình đang cân nhắc mở quán cà phê nhỏ, bạn nghĩ thời điểm này có phù hợp để kinh doanh không?", "domain": "lang_vietnamese"}
+{"prompt": "Làm thế nào để mình có thể học cách nấu phở bò chuẩn vị miền Bắc, chỉ mình các bước chi tiết nhé?", "domain": "lang_vietnamese"}
+{"prompt": "Em đang muốn tiết kiệm tiền mỗi tháng nhưng không biết bắt đầu từ đâu, anh có gợi ý nào không?", "domain": "lang_vietnamese"}
+{"prompt": "Cho em hỏi vì sao khi bị đứt tay lại có cảm giác đau nhói hơn so với khi bị bỏng nhẹ vậy ạ?", "domain": "lang_vietnamese"}
+{"prompt": "Cho mình hỏi sự khác nhau giữa nước cất và nước lọc thông thường là gì?", "domain": "lang_vietnamese"}
+{"prompt": "Mình đang tìm hiểu về tục thờ cá Ông của ngư dân miền Trung, bạn có thể kể sơ lược nguồn gốc phong tục này không?", "domain": "lang_vietnamese"}
+{"prompt": "Mình bị stress vì công việc dồn dập, bạn có cách nào giúp thư giãn đầu óc không?", "domain": "lang_vietnamese"}
+{"prompt": "Uống cà phê mỗi sáng có hại cho tim không, mình uống hơi nhiều", "domain": "lang_vietnamese"}
+{"prompt": "Học tiếng Anh sao cho nhanh?", "domain": "lang_vietnamese"}
+{"prompt": "Bạn có thể giải thích chi tiết cơ chế hoạt động của vắc-xin mRNA, so sánh với vắc-xin truyền thống về mặt hiệu quả, thời gian nghiên cứu và tác dụng phụ có thể gặp phải không?", "domain": "lang_vietnamese"}
+{"prompt": "Theo anh thì em nên chọn học thạc sĩ trong nước hay đi du học nếu tài chính chỉ đủ ở mức trung bình?", "domain": "lang_vietnamese"}
+{"prompt": "Tại sao Trái Đất quay quanh Mặt Trời?", "domain": "lang_vietnamese"}
+{"prompt": "Cho mình hỏi sự khác nhau giữa sạc nhanh và sạc thường cho điện thoại là gì?", "domain": "lang_vietnamese"}
+{"prompt": "Gợi ý lịch trình du lịch Đà Lạt 3 ngày.", "domain": "lang_vietnamese"}
+{"prompt": "Anh ơi giải thích giúp em vì sao khi bị stress kéo dài lại dễ dẫn đến rụng tóc nhiều hơn bình thường?", "domain": "lang_vietnamese"}
+{"prompt": "Theo bạn, đầu tư vào vàng có an toàn hơn gửi tiết kiệm ngân hàng không?", "domain": "lang_vietnamese"}
+{"prompt": "Bạn có thể gợi ý cho mình vài mẹo tiết kiệm tiền điện trong nhà vào mùa nóng không?", "domain": "lang_vietnamese"}
+{"prompt": "Cách tiết kiệm tiền hiệu quả mỗi tháng?", "domain": "lang_vietnamese"}
+{"prompt": "Mình muốn tìm hiểu sâu về hội chứng ruột kích thích (IBS), nguyên nhân, các yếu tố kích hoạt và chế độ ăn uống phù hợp để kiểm soát triệu chứng lâu dài.", "domain": "lang_vietnamese"}
+{"prompt": "Mình đang định mua xe máy điện để đi làm hằng ngày, bạn có thể so sánh giúp mình về chi phí vận hành, độ bền pin và độ an toàn so với xe máy chạy xăng thông thường không?", "domain": "lang_vietnamese"}
+{"prompt": "Bạn có thể viết giúp mình một bài phát biểu ngắn cho buổi lễ tốt nghiệp đại học, thể hiện sự biết ơn đối với thầy cô và gia đình, đồng thời truyền cảm hứng cho các bạn cùng lớp không?", "domain": "lang_vietnamese"}
+{"prompt": "Cho em các bước để chuẩn bị hồ sơ xin visa du lịch châu Âu một cách đầy đủ nhất.", "domain": "lang_vietnamese"}
+{"prompt": "Bạn hãy viết một email trang trọng gửi đối tác nước ngoài để đề xuất gia hạn hợp đồng hợp tác thêm hai năm với điều khoản điều chỉnh giá.", "domain": "lang_vietnamese"}
+{"prompt": "Em muốn biết cách bảo quản mứt tết để không bị chảy nước trong thời gian dài, anh có gợi ý nào không?", "domain": "lang_vietnamese"}
+{"prompt": "Phân tích nguyên nhân sụp đổ của triều đại nhà Nguyễn dưới góc nhìn kinh tế, chính trị và ảnh hưởng của thực dân Pháp", "domain": "lang_vietnamese"}
+{"prompt": "Tại sao ở một số vùng núi phía Bắc người dân vẫn giữ tục 'bắt vợ' trong lễ cưới, ý nghĩa thực sự của nó là gì?", "domain": "lang_vietnamese"}
+{"prompt": "Mình muốn hiểu rõ hơn về cách tính lãi suất vay ngân hàng khi mua trả góp, bạn giải thích giúp mình được không?", "domain": "lang_vietnamese"}
+{"prompt": "Tại sao đôi khi mình cảm thấy chán mọi thứ dù không có chuyện gì buồn cả", "domain": "lang_vietnamese"}
+{"prompt": "Em mới lập gia đình và đang lo lắng về việc quản lý tài chính chung với chồng, anh có thể gợi ý cách chia sẻ trách nhiệm tài chính trong gia đình sao cho công bằng và tránh mâu thuẫn không?", "domain": "lang_vietnamese"}
+{"prompt": "Anh nghĩ gì về việc dùng mạng xã hội quá nhiều, có nên hạn chế thời gian sử dụng không?", "domain": "lang_vietnamese"}
+{"prompt": "Theo bạn, có nên cho trẻ con dùng điện thoại từ nhỏ để học tiếng Anh không?", "domain": "lang_vietnamese"}
+{"prompt": "Anh ơi, con em 5 tuổi cứ hay cắn bút chì khi học bài, em nên xử lý thói quen này như thế nào cho phù hợp?", "domain": "lang_vietnamese"}
+{"prompt": "Bạn phân tích giúp mình nguyên nhân dẫn đến cuộc khủng hoảng tài chính toàn cầu năm 2008 và những bài học rút ra cho hệ thống ngân hàng hiện nay.", "domain": "lang_vietnamese"}
+{"prompt": "Mình đang muốn tiết kiệm tiền mỗi tháng, bạn có gợi ý cách nào đơn giản để bắt đầu không?", "domain": "lang_vietnamese"}
+{"prompt": "Cách xin lỗi sếp khi làm sai việc?", "domain": "lang_vietnamese"}
+{"prompt": "Mình muốn viết một đoạn văn ngắn tưởng niệm cho người thân vừa mất, bạn giúp mình với được không?", "domain": "lang_vietnamese"}
+{"prompt": "Mình đang tìm hiểu về thiền định, bạn có thể giải thích các bước cơ bản để bắt đầu thiền cho người mới và lợi ích của nó đối với sức khỏe tinh thần không?", "domain": "lang_vietnamese"}
+{"prompt": "Giải thích lạm phát là gì.", "domain": "lang_vietnamese"}
+{"prompt": "Cho em hỏi cách bảo quản thức ăn thừa trong tủ lạnh sao cho an toàn, vì em thường để cơm nguội qua đêm rồi hôm sau mới ăn?", "domain": "lang_vietnamese"}
+{"prompt": "Mình đang cần phân tích sâu về ưu nhược điểm của việc đầu tư vào bất động sản cho thuê so với gửi tiết kiệm dài hạn trong bối cảnh lãi suất hiện tại.", "domain": "lang_vietnamese"}
+{"prompt": "Hướng dẫn em cách pha một ly cà phê cold brew ngon đúng chuẩn theo từng công đoạn.", "domain": "lang_vietnamese"}
+{"prompt": "Em muốn viết một email xin lỗi khách hàng vì giao hàng trễ, anh giúp em soạn theo đúng cấu trúc chuẩn.", "domain": "lang_vietnamese"}
+{"prompt": "Con mình sắp vào lớp một, bạn có thể tư vấn cách chuẩn bị tâm lý cho bé cũng như những kỹ năng cần thiết trước khi bắt đầu năm học đầu tiên không?", "domain": "lang_vietnamese"}
+{"prompt": "Cho em các bước để backup và khôi phục dữ liệu trên máy tính Windows khi bị lỗi hệ thống.", "domain": "lang_vietnamese"}
+{"prompt": "Cho mình hỏi ăn nhiều đường có thực sự gây tiểu đường không hay chỉ là hiểu lầm phổ biến?", "domain": "lang_vietnamese"}
+{"prompt": "Mình muốn biết tại sao lươn lại có thể sống được cả trên bùn lẫn dưới nước sâu?", "domain": "lang_vietnamese"}
+{"prompt": "Bạn có thể giải thích sự khác nhau giữa cổ phiếu và trái phiếu cho người mới bắt đầu đầu tư, kèm theo ví dụ cụ thể để dễ hiểu không?", "domain": "lang_vietnamese"}
+{"prompt": "Mình muốn viết một bài đăng Facebook giới thiệu sản phẩm mỹ phẩm mới, bạn giúp mình với.", "domain": "lang_vietnamese"}
+{"prompt": "Anh so sánh giúp em ưu và nhược điểm của việc làm freelance so với đi làm công ty full-time về mặt ổn định thu nhập?", "domain": "lang_vietnamese"}
+{"prompt": "Mình muốn viết một câu chuyện ngắn khoảng năm trăm chữ về một cô gái trẻ rời quê lên thành phố lập nghiệp và những khó khăn cô ấy gặp phải, bạn có thể sáng tác giúp mình không?", "domain": "lang_vietnamese"}
+{"prompt": "Cho mình hỏi ăn nhiều đường có thực sự gây bệnh tiểu đường không?", "domain": "lang_vietnamese"}
+{"prompt": "Cho mình hỏi phong tục cúng ông Công ông Táo vào ngày 23 tháng Chạp có ý nghĩa gì trong văn hóa người Việt, và lễ vật cần chuẩn bị gồm những gì?", "domain": "lang_vietnamese"}
+{"prompt": "Cho em hỏi giữa việc để tiền trong tài khoản ngân hàng và đầu tư vào quỹ mở, cái nào an toàn hơn cho người mới đầu tư?", "domain": "lang_vietnamese"}
+{"prompt": "Giải thích hiệu ứng nhà kính đơn giản.", "domain": "lang_vietnamese"}
+{"prompt": "Em muốn tự học vẽ tranh màu nước, anh hướng dẫn các bước cơ bản từ dụng cụ đến kỹ thuật pha màu.", "domain": "lang_vietnamese"}
+{"prompt": "Tại sao một số loài rắn biển lại không cần lên bờ để đẻ trứng?", "domain": "lang_vietnamese"}
+{"prompt": "Các bước để chuẩn bị một bài thuyết trình bằng PowerPoint thu hút và dễ hiểu là gì?", "domain": "lang_vietnamese"}
+{"prompt": "Cho em hỏi giữa việc mua bảo hiểm ô tô toàn diện và bảo hiểm bắt buộc tối thiểu, nên chọn loại nào để tiết kiệm mà vẫn an toàn?", "domain": "lang_vietnamese"}
+{"prompt": "Chỉ mình từng bước cách tạo CV xin việc chuyên nghiệp cho sinh viên mới ra trường chưa có kinh nghiệm.", "domain": "lang_vietnamese"}
+{"prompt": "Cho em các bước cụ thể để chuẩn bị phỏng vấn xin việc vào ngành ngân hàng.", "domain": "lang_vietnamese"}
+{"prompt": "Cho mình hỏi sự khác biệt giữa lãi suất kép và lãi suất đơn khi gửi tiết kiệm ngân hàng?", "domain": "lang_vietnamese"}
+{"prompt": "Dạo này em hay cảm thấy lo âu vô cớ, không rõ nguyên nhân, đây có phải là dấu hiệu của rối loạn lo âu không và khi nào thì nên đi khám bác sĩ tâm lý?", "domain": "lang_vietnamese"}
+{"prompt": "Mình muốn học cách quản lý chi tiêu cá nhân hàng tháng, bạn có gợi ý phương pháp nào dễ áp dụng không?", "domain": "lang_vietnamese"}
+{"prompt": "Vì sao lá cây đổi màu vào mùa thu?", "domain": "lang_vietnamese"}
+{"prompt": "Theo anh, nuôi chó hay nuôi mèo phù hợp hơn với người sống một mình và bận công việc?", "domain": "lang_vietnamese"}
+{"prompt": "Công ty mình đang cân nhắc chuyển toàn bộ hệ thống dữ liệu lên cloud, bạn có thể so sánh ưu nhược điểm giữa AWS, Google Cloud và Azure về mặt chi phí, độ an toàn và khả năng mở rộng không?", "domain": "lang_vietnamese"}
+{"prompt": "Đặt tên hay cho bé trai.", "domain": "lang_vietnamese"}
+{"prompt": "Nên chọn làm việc tại công ty lớn ổn định hay startup nhỏ nhiều thử thách hơn, bạn cho mình vài góc nhìn để quyết định không?", "domain": "lang_vietnamese"}
+{"prompt": "Cách pha trà sữa trân châu tại nhà?", "domain": "lang_vietnamese"}
+{"prompt": "Viết giúp mình lời chúc mừng đám cưới cho bạn thân, tình cảm một chút nha", "domain": "lang_vietnamese"}
+{"prompt": "Mình đang cân nhắc mua xe máy điện hay xe máy xăng, bạn so sánh giúp mình về chi phí vận hành lâu dài và độ tiện lợi khi di chuyển trong thành phố?", "domain": "lang_vietnamese"}
+{"prompt": "Uống cà phê nhiều có hại không?", "domain": "lang_vietnamese"}
+{"prompt": "Theo bạn, có nên uống cà phê mỗi sáng hay nó gây hại về lâu dài?", "domain": "lang_vietnamese"}
+{"prompt": "Bạn có thể tư vấn giúp mình cách xây dựng thói quen đọc sách đều đặn mỗi ngày cho người bận rộn với công việc văn phòng tám giờ không?", "domain": "lang_vietnamese"}
+{"prompt": "Tại sao tim lại đập nhanh hơn khi mình hồi hộp vậy bạn?", "domain": "lang_vietnamese"}
+{"prompt": "Vàng có nên mua lúc này không?", "domain": "lang_vietnamese"}
+{"prompt": "Tại sao khi trời mưa lại có cầu vồng xuất hiện vậy anh?", "domain": "lang_vietnamese"}
+{"prompt": "Cho em hỏi sự khác biệt giữa quỹ mở và quỹ đóng trong đầu tư chứng khoán là gì ạ?", "domain": "lang_vietnamese"}
+{"prompt": "Mình muốn viết một truyện ngắn khoảng 500 từ về một cô gái trở về quê sau nhiều năm xa cách và nhận ra những thay đổi trong ngôi làng cũ, bạn viết giúp mình với văn phong nhẹ nhàng, hoài niệm được không?", "domain": "lang_vietnamese"}
+{"prompt": "Tại sao một số loại rượu vang để lâu năm lại có giá trị cao hơn, cơ chế lên men có gì đặc biệt?", "domain": "lang_vietnamese"}
+{"prompt": "Cho mình hỏi vì sao khi trời nắng gắt bóng của các vật lại ngắn hơn so với lúc chiều tà?", "domain": "lang_vietnamese"}
+{"prompt": "Theo anh, việc yêu xa có nên duy trì lâu dài không hay chỉ nên là giải pháp tạm thời?", "domain": "lang_vietnamese"}
+{"prompt": "Bạn giải thích giúp mình cơ chế hoạt động của la bàn từ trên tàu biển ngày xưa như thế nào?", "domain": "lang_vietnamese"}
+{"prompt": "Cho em hỏi sự khác nhau giữa bảo hiểm nhân thọ và bảo hiểm sức khỏe, nên mua loại nào trước nếu tài chính còn hạn chế?", "domain": "lang_vietnamese"}
+{"prompt": "Theo bạn, việc áp dụng thuế carbon có thực sự hiệu quả trong việc giảm phát thải khí nhà kính ở các nước đang phát triển như Việt Nam không?", "domain": "lang_vietnamese"}
+{"prompt": "Nên đầu tư vàng hay chứng khoán bây giờ?", "domain": "lang_vietnamese"}
+{"prompt": "Mình bị đau lưng dưới mỗi khi ngồi làm việc quá 2 giờ liên tục, bạn gợi ý vài bài tập giãn cơ đơn giản có thể làm ngay tại bàn làm việc không?", "domain": "lang_vietnamese"}
+{"prompt": "Mình muốn học nấu món chay đơn giản cho bữa tối, gợi ý giúp mình vài món nha.", "domain": "lang_vietnamese"}
+{"prompt": "Cho mình hỏi cơ chế nào khiến các ngân hàng trung ương có thể kiểm soát lượng cung tiền trong nền kinh tế thông qua nghiệp vụ thị trường mở?", "domain": "lang_vietnamese"}
+{"prompt": "Làm thế nào để sắp xếp lại tủ quần áo nhỏ trong phòng trọ sao cho gọn gàng và tiết kiệm diện tích?", "domain": "lang_vietnamese"}
+{"prompt": "Bạn so sánh giúp mình giữa việc tiêm vắc-xin đầy đủ theo khuyến cáo và chỉ tiêm khi cần thiết, cái nào an toàn hơn cho sức khỏe lâu dài?", "domain": "lang_vietnamese"}
+{"prompt": "Mình muốn viết một bản kế hoạch kinh doanh chi tiết cho quán cà phê take-away theo mô hình nhượng quyền, bao gồm phân tích chi phí, doanh thu dự kiến và điểm hòa vốn.", "domain": "lang_vietnamese"}
+{"prompt": "Anh giúp em so sánh việc sinh con ở bệnh viện công và bệnh viện tư về chi phí và chất lượng dịch vụ?", "domain": "lang_vietnamese"}
+{"prompt": "Theo bạn, có nên đầu tư vào tiền điện tử khi thị trường đang biến động mạnh không?", "domain": "lang_vietnamese"}
+{"prompt": "Tại sao lại có hiện tượng nhật thực?", "domain": "lang_vietnamese"}
+{"prompt": "Mình muốn một bảng phân tích SWOT chi tiết cho việc mở rộng kinh doanh chuỗi cà phê ra thị trường miền Trung", "domain": "lang_vietnamese"}
+{"prompt": "Giải thích giúp mình vì sao trời mưa mà đôi khi có sấm sét, đôi khi không", "domain": "lang_vietnamese"}
+{"prompt": "Em muốn biết giữa việc dùng ví điện tử và tiền mặt trong chi tiêu hàng ngày, cái nào giúp quản lý tài chính tốt hơn?", "domain": "lang_vietnamese"}
+{"prompt": "Anh nghĩ gì về việc sống thử trước khi kết hôn, có nên hay không theo quan điểm của anh?", "domain": "lang_vietnamese"}
+{"prompt": "Vì sao mèo thích ngủ nhiều?", "domain": "lang_vietnamese"}
+{"prompt": "Viết một đoạn văn ngắn về tình bạn.", "domain": "lang_vietnamese"}
+{"prompt": "Em có đoạn code Python bị lỗi 'IndentationError: unexpected indent' ở dòng thứ 5, anh xem giúp em sửa được không?", "domain": "lang_vietnamese"}
+{"prompt": "Cho mình hỏi hiện tượng 'sao đổi ngôi' mà người ta thường thấy vào ban đêm thực chất là gì trong thiên văn học?", "domain": "lang_vietnamese"}
+{"prompt": "Nên học ngoại ngữ nào dễ xin việc?", "domain": "lang_vietnamese"}
+{"prompt": "Viết cho mình một bài luận phân tích tác phẩm Chí Phèo của Nam Cao dưới góc nhìn tâm lý học xã hội", "domain": "lang_vietnamese"}
+{"prompt": "Mình đang học tiếng Anh, nên bắt đầu luyện nghe bằng nguồn nào cho dễ tiếp thu?", "domain": "lang_vietnamese"}
+{"prompt": "Bạn giúp mình soạn một bài phát biểu ngắn khoảng 2 phút để cảm ơn đồng nghiệp trong buổi tiệc chia tay khi mình chuyển sang công ty mới, giọng văn nên ấm áp và có chút hài hước.", "domain": "lang_vietnamese"}
+{"prompt": "Bạn có thể tóm tắt ngắn gọn diễn biến chính của cuộc kháng chiến chống Pháp giai đoạn 1946-1954 không?", "domain": "lang_vietnamese"}
+{"prompt": "Cho em hỏi giữa việc học online tự học và tham gia khóa học có giảng viên trực tiếp, cái nào hiệu quả hơn để thi lấy chứng chỉ?", "domain": "lang_vietnamese"}
+{"prompt": "Mình đang lo lắng về việc tăng cân sau khi sinh con, có cách nào giảm cân an toàn cho phụ nữ sau sinh không?", "domain": "lang_vietnamese"}
+{"prompt": "Cho em hỏi nuôi con bằng sữa mẹ hoàn toàn và kết hợp sữa công thức khác nhau thế nào về lợi ích sức khỏe cho bé?", "domain": "lang_vietnamese"}
+{"prompt": "Theo anh, có nên tin vào các ứng dụng hẹn hò để tìm người yêu nghiêm túc không?", "domain": "lang_vietnamese"}
+{"prompt": "Mình muốn biết quy trình các bước để mở một tài khoản tiết kiệm online tại ngân hàng, có phức tạp không?", "domain": "lang_vietnamese"}
+{"prompt": "Ý nghĩa của hoa sen trong văn hóa Việt.", "domain": "lang_vietnamese"}
+{"prompt": "Bạn có thể viết giúp mình một bức thư gửi cho bản thân mười năm sau, thể hiện những hy vọng và mục tiêu mình muốn đạt được không?", "domain": "lang_vietnamese"}
+{"prompt": "Có nên học thạc sĩ ngay sau đại học?", "domain": "lang_vietnamese"}
+{"prompt": "Mình muốn biết cách phân loại rác tại nhà sao cho đúng, bạn hướng dẫn giúp mình không?", "domain": "lang_vietnamese"}
+{"prompt": "Tóm tắt giúp mình nội dung chính của cuộc khởi nghĩa Hai Bà Trưng được không?", "domain": "lang_vietnamese"}
+{"prompt": "Giải thích giúp mình sự khác nhau giữa virus và vi khuẩn với.", "domain": "lang_vietnamese"}
+{"prompt": "Cho em hỏi vay mua nhà trả góp 20 năm và tích lũy dần để mua nhà sau 5 năm, phương án nào an toàn hơn về tài chính?", "domain": "lang_vietnamese"}
+{"prompt": "Cho em hỏi tại sao trong lập trình, biến kiểu float lại có thể gây sai số khi so sánh bằng dấu ==, ví dụ 0.1 + 0.2 không bằng chính xác 0.3?", "domain": "lang_vietnamese"}
+{"prompt": "Món chay dễ làm là gì?", "domain": "lang_vietnamese"}
+{"prompt": "Mình muốn tổ chức một buổi tiệc sinh nhật bất ngờ cho mẹ, bạn có thể gợi ý ý tưởng trang trí, thực đơn và các hoạt động phù hợp với người lớn tuổi không?", "domain": "lang_vietnamese"}
+{"prompt": "Cho em hỏi tại sao khi ăn đồ cay lại làm mình đổ mồ hôi và mặt nóng lên, cơ thể phản ứng như thế nào với các chất cay trong thực phẩm?", "domain": "lang_vietnamese"}
+{"prompt": "Tại sao khi trời nắng nóng mình lại đổ mồ hôi nhiều hơn?", "domain": "lang_vietnamese"}
+{"prompt": "Giữa việc chọn ở gần gia đình để dễ chăm sóc cha mẹ và chuyển đến thành phố lớn để phát triển sự nghiệp, bạn nghĩ nên ưu tiên điều gì?", "domain": "lang_vietnamese"}
+{"prompt": "Làm sao để tự học tiếng Anh giao tiếp hiệu quả trong ba tháng, anh vạch ra lộ trình từng bước giúp em?", "domain": "lang_vietnamese"}
+{"prompt": "Mình muốn viết một đoạn văn miêu tả cảnh chợ quê ngày Tết, giúp mình với.", "domain": "lang_vietnamese"}
+{"prompt": "Em đang cân nhắc giữa việc học nấu ăn chuyên nghiệp và tự học qua video, cái nào giúp em tiến bộ nhanh hơn để mở quán nhỏ?", "domain": "lang_vietnamese"}
+{"prompt": "Cho mình hỏi vì sao khi luộc trứng cho thêm muối vào nước lại giúp trứng dễ bóc vỏ hơn?", "domain": "lang_vietnamese"}
+{"prompt": "Bạn có thể so sánh giữa việc nuôi mèo và nuôi chó về mặt chi phí, thời gian chăm sóc và mức độ phù hợp với người sống một mình không?", "domain": "lang_vietnamese"}
+{"prompt": "Giữa việc đọc sách giấy và đọc ebook, cái nào giúp em tập trung và nhớ nội dung lâu hơn theo nghiên cứu khoa học?", "domain": "lang_vietnamese"}
+{"prompt": "Theo anh, có nên uống cà phê mỗi sáng không hay việc đó gây hại nhiều hơn lợi về lâu dài?", "domain": "lang_vietnamese"}
+{"prompt": "Bạn nghĩ gì về việc dùng AI để viết luận văn tốt nghiệp?", "domain": "lang_vietnamese"}
+{"prompt": "Tại sao một số loài chim di cư có thể bay hàng ngàn cây số mà không bị lạc đường vậy anh?", "domain": "lang_vietnamese"}
+{"prompt": "Cho em quy trình các bước để nộp hồ sơ thuế thu nhập cá nhân online.", "domain": "lang_vietnamese"}
+{"prompt": "Mình đang phân vân giữa mua xe máy điện hay xe máy xăng, bạn khuyên nên chọn loại nào?", "domain": "lang_vietnamese"}
+{"prompt": "Mình muốn tiết kiệm mỗi tháng khoảng hai triệu, nên bắt đầu từ đâu nhỉ?", "domain": "lang_vietnamese"}
+{"prompt": "Giải thích cơ chế hoạt động của công nghệ blockchain và tại sao nó lại được coi là an toàn, có thể minh họa bằng một ví dụ giao dịch cụ thể không?", "domain": "lang_vietnamese"}
+{"prompt": "Ý nghĩa của việc thiền định là gì?", "domain": "lang_vietnamese"}
+{"prompt": "Tại sao khi bị cảm cúm, người ta thường khuyên nên ăn cháo hành tía tô vậy anh?", "domain": "lang_vietnamese"}
+{"prompt": "Em đang cân nhắc chuyển từ công việc văn phòng sang làm freelancer, anh có thể phân tích ưu nhược điểm của hai lựa chọn này về thu nhập, sự ổn định và thời gian tự do không?", "domain": "lang_vietnamese"}
+{"prompt": "Bạn nghĩ sao về việc làm việc từ xa so với đi làm tại văn phòng?", "domain": "lang_vietnamese"}
+{"prompt": "Mình có một chậu cây lưỡi hổ để trong phòng ngủ nhưng lá đang bị vàng ở gốc, bạn đoán giúp mình nguyên nhân và cách chữa được không?", "domain": "lang_vietnamese"}
+{"prompt": "Hãy giải thích cơ chế kháng thuốc kháng sinh ở vi khuẩn và tại sao việc lạm dụng kháng sinh gây nguy hiểm cho y tế cộng đồng toàn cầu", "domain": "lang_vietnamese"}
+{"prompt": "Cho mình hỏi giữa việc học thêm bằng thạc sĩ trong nước và du học nước ngoài, cái nào mang lại giá trị thực tế hơn cho công việc sau này?", "domain": "lang_vietnamese"}
+{"prompt": "Giữa việc tự học lập trình qua video miễn phí và đăng ký khóa học có giảng viên, cái nào giúp mình tiến bộ nhanh hơn?", "domain": "lang_vietnamese"}
+{"prompt": "Sếp mình hôm nay la mình trước mặt cả phòng, mình buồn quá, có nên nghỉ việc không ta", "domain": "lang_vietnamese"}
+{"prompt": "Cho em hỏi ăn chuối vào buổi sáng có tốt cho tiêu hóa không ạ?", "domain": "lang_vietnamese"}
+{"prompt": "Hướng dẫn em cách trang điểm cơ bản cho người mới bắt đầu theo từng bước đơn giản.", "domain": "lang_vietnamese"}
+{"prompt": "Vì sao khi đi máy bay tai mình lại bị ù trong lúc cất cánh và hạ cánh?", "domain": "lang_vietnamese"}
+{"prompt": "Hãy phân tích tác động của chiến tranh thương mại Mỹ-Trung đến chuỗi cung ứng sản xuất toàn cầu, đặc biệt là ngành điện tử", "domain": "lang_vietnamese"}
+{"prompt": "Cho mình hỏi sự khác nhau giữa sữa tươi và sữa đặc là gì?", "domain": "lang_vietnamese"}
+{"prompt": "Tại sao một số người có thể nhớ rất tốt trong khi người khác lại dễ quên, cơ chế ghi nhớ của não bộ hoạt động như thế nào và có cách nào để cải thiện trí nhớ không?", "domain": "lang_vietnamese"}
+{"prompt": "Tại sao uống nhiều nước ngọt có ga lại không tốt cho sức khỏe vậy anh?", "domain": "lang_vietnamese"}
+{"prompt": "Tại sao khi hâm lại cơm bằng lò vi sóng cơm hay bị khô cứng, có cách nào giữ cơm mềm như mới nấu không?", "domain": "lang_vietnamese"}
+{"prompt": "Phân tích sự khác biệt giữa hệ thống pháp luật Common Law và Civil Law, áp dụng cụ thể vào trường hợp Việt Nam", "domain": "lang_vietnamese"}
+{"prompt": "Em muốn tổ chức một buổi tiệc sinh nhật bất ngờ cho bạn thân vào cuối tuần này, anh có thể gợi ý cho em ý tưởng trang trí, thực đơn đơn giản mà ngon và cách giữ bí mật cho đến ngày tổ chức không?", "domain": "lang_vietnamese"}
+{"prompt": "Em muốn bắt đầu tập gym nhưng chưa biết bắt đầu từ đâu, anh có thể lên cho em một lịch tập cơ bản trong tuần đầu tiên cho người mới, kèm lưu ý về dinh dưỡng không?", "domain": "lang_vietnamese"}
+{"prompt": "Mình muốn tổ chức một buổi sinh nhật bất ngờ cho bạn gái tại nhà với khoảng 15 người bạn, bạn có thể gợi ý ý tưởng trang trí, món ăn và trò chơi phù hợp không?", "domain": "lang_vietnamese"}
+{"prompt": "Cách bảo quản rau củ tươi lâu hơn?", "domain": "lang_vietnamese"}
+{"prompt": "Tại sao mưa lại có sấm sét kèm theo vậy bạn?", "domain": "lang_vietnamese"}
+{"prompt": "Tại sao con người lại mơ khi ngủ?", "domain": "lang_vietnamese"}
+{"prompt": "Em đang có mâu thuẫn với mẹ chồng về cách chăm sóc con nhỏ, anh có thể gợi ý cách nói chuyện khéo léo để giải quyết bất đồng mà không làm mối quan hệ căng thẳng thêm không?", "domain": "lang_vietnamese"}
+{"prompt": "Mình đang cảm thấy chán nản với công việc hiện tại nhưng chưa biết nên nghỉ việc hay tiếp tục cố gắng, bạn có thể giúp mình liệt kê các yếu tố cần xem xét trước khi quyết định không?", "domain": "lang_vietnamese"}
+{"prompt": "Anh thấy có nên đầu tư vào vàng lúc này không hay nên chờ giá giảm rồi mới mua?", "domain": "lang_vietnamese"}
+{"prompt": "Mình cần một bảng so sánh chi tiết giữa các nền tảng đầu tư chứng khoán quốc tế phổ biến hiện nay về phí giao dịch và tính bảo mật", "domain": "lang_vietnamese"}
+{"prompt": "Cho mình hỏi uống nước chanh mỗi sáng có thực sự giúp giảm cân không hay chỉ là lời truyền miệng?", "domain": "lang_vietnamese"}
+{"prompt": "Cho em hỏi vì sao một số loại gốm sứ Bát Tràng lại có hoa văn rạn men đặc trưng như vậy?", "domain": "lang_vietnamese"}
+{"prompt": "Bạn giải thích giúp mình khái niệm lạm phát đình trệ (stagflation) khác gì với lạm phát thông thường?", "domain": "lang_vietnamese"}
+{"prompt": "Em muốn biết cách tính lãi suất ngân hàng đơn giản khi gửi tiết kiệm có kỳ hạn là như thế nào?", "domain": "lang_vietnamese"}
+{"prompt": "Cho mình cách trồng rau sạch tại nhà trong không gian nhỏ được không?", "domain": "lang_vietnamese"}

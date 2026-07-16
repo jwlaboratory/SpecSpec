@@ -86,8 +86,8 @@ def run_benchmark(
     """Runs benchmark.py + aggregate.py + make_charts.py inside the GPU container.
 
     Benchmarks the `split` (default: held-out test) of each domain in the chosen
-    `source` (synthetic = DataGen, downloaded = WildChat + dedicated datasets),
-    writing to the durable volume.
+    `source` selects the data/ subtree: synthetic (DataGen/Claude), wild (sorted
+    WildChat), or downloaded (purpose-built HF datasets). Writes to the durable volume.
     """
     import torch
 

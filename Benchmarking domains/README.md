@@ -20,14 +20,18 @@ measured by acceptance rate, mean accept length, and speedup.
 ```
 Benchmarking domains/
 ├── data/             # the datasets (shared, top-level — the actual data)
-│   ├── synthetic/<domain>/   train.jsonl · val.jsonl · test.jsonl   (from DataGen)
-│   └── downloaded/<domain>/        train.jsonl · val.jsonl · test.jsonl   (from WildDataGen)
-├── DataGen/          # generator for the synthetic set  ->  ../data/synthetic
+│   ├── synthetic/<domain>/    Claude-generated prompts        (from DataGen)
+│   ├── wild/<domain>/         sorted real WildChat prompts    (WildDataGen/sort.py)
+│   └── downloaded/<domain>/   straight from HF datasets       (WildDataGen/sources.py)
+│                              …each with train.jsonl · val.jsonl · test.jsonl
+├── DataGen/          # Claude generator                 ->  ../data/synthetic
 │   ├── generate.py       Claude-based prompt-dataset generator
 │   ├── domains.py        the 51-domain registry
 │   └── README.md
-├── WildDataGen/      # sorts real WildChat prompts       ->  ../data/downloaded
-│   ├── sort.py · router.py   stream WildChat -> route into the 51 domains
+├── WildDataGen/      # real-prompt collectors
+│   ├── sort.py           sort WildChat into domains     ->  ../data/wild
+│   ├── sources.py        pull purpose-built HF datasets ->  ../data/downloaded
+│   ├── router.py         domain classifiers
 │   └── README.md
 ├── scripts/          # everything that runs the benchmark
 │   ├── benchmark.py      loads both models, runs spec + baseline per prompt
@@ -95,11 +99,13 @@ python make_charts.py ../results/dflash_bench_by_category.csv
 (`languages`/`coding`/`tasks`/`ood`/`all`). Pass `--prompt-source legacy` to use the
 old deterministic `prompts.py` instead.
 
-**Real-prompt control.** `WildDataGen/` sorts genuine WildChat prompts into the same
-domains/layout under `data/downloaded`. Run the same benchmark against it (`--datagen-dir
-../data/downloaded`) and compare per-domain acceptance vs the synthetic set — this
-checks whether the clean, low-perplexity synthetic prompts inflate acceptance or
-hide the drafter's failure modes. See `WildDataGen/README.md`.
+**Real-prompt controls.** `WildDataGen/` produces two real-prompt sets to compare
+against the synthetic one: `data/wild` (genuine WildChat prompts, sorted into the
+domains) and `data/downloaded` (straight from purpose-built HF datasets — medical,
+legal, financial, SQL). Run the same benchmark against each (`--datagen-dir
+../data/wild` or `../data/downloaded`) and compare per-domain acceptance vs
+synthetic — this checks whether the clean, low-perplexity synthetic prompts inflate
+acceptance or hide the drafter's failure modes. See `WildDataGen/README.md`.
 
 ## 3 · Read the results
 
