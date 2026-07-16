@@ -116,12 +116,18 @@ _LEGACY_CACHE = None
 
 
 def _load_legacy():
-    """Load ../prompts.py:build_prompts(100) once; return {category: [prompt]}."""
+    """Load prompts.py:build_prompts(100) once; return {category: [prompt]}.
+
+    Looks for prompts.py in ../scripts (post-reorg) and .. (legacy layout).
+    """
     global _LEGACY_CACHE
     if _LEGACY_CACHE is not None:
         return _LEGACY_CACHE
     try:
-        sys.path.insert(0, str(BENCH_DIR))
+        for cand in (BENCH_DIR / "scripts", BENCH_DIR):
+            if (cand / "prompts.py").exists():
+                sys.path.insert(0, str(cand))
+                break
         import prompts as legacy  # noqa: E402
         _LEGACY_CACHE = legacy.build_prompts(100)
     except Exception as e:  # pragma: no cover - seeding is best-effort
@@ -326,6 +332,8 @@ def parse_args():
                         "use claude-sonnet-5 for a cheaper bulk run)")
     p.add_argument("--batch-size", type=int, default=40,
                    help="prompts requested per API call (default: 40)")
+    p.add_argument("--concurrency", type=int, default=1,
+                   help="number of domains to build in parallel (default: 1)")
     p.add_argument("--overwrite", action="store_true",
                    help="regenerate domains even if splits already exist")
     p.add_argument("--dry-run", action="store_true",
@@ -356,10 +364,20 @@ def main():
           f"{'  [DRY RUN]' if args.dry_run else ''}\n")
 
     client = None if args.dry_run else _build_client()
+    _load_legacy()  # warm the shared seed cache before any threads start
 
     results = []
-    for key in keys:
-        results.append(build_domain(client, key, REGISTRY[key], args))
+    if args.concurrency > 1 and not args.dry_run:
+        from concurrent.futures import ThreadPoolExecutor, as_completed
+        print(f"(building up to {args.concurrency} domains in parallel)\n")
+        with ThreadPoolExecutor(max_workers=args.concurrency) as pool:
+            futs = {pool.submit(build_domain, client, k, REGISTRY[k], args): k
+                    for k in keys}
+            for fut in as_completed(futs):
+                results.append(fut.result())
+    else:
+        for key in keys:
+            results.append(build_domain(client, key, REGISTRY[key], args))
 
     if not args.dry_run:
         DATA_DIR.mkdir(parents=True, exist_ok=True)

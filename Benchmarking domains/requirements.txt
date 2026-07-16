@@ -10,3 +10,5 @@ datasets>=3.0.0
 # flash-attn>=2.6.0
 # DataGen/ prompt-dataset generator (calls the Claude API).
 anthropic>=0.40
+# scripts/make_charts.py — result charts (CPU only, optional).
+matplotlib>=3.7

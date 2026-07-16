@@ -1,0 +1,6 @@
+# Python
+__pycache__/
+*.pyc
+
+# DataGen build logs (transient)
+DataGen/build.log
