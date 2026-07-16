@@ -1,0 +1,4 @@
+variant,n,acceptance_rate_pooled,mean_accept_length,mean_forward_steps,spec_tok_s,baseline_tok_s,speedup,exact_match_rate
+base_dflash,150,0.1093,2.6701,96.0600,73.9895,38.1007,1.9425,0.1800
+full_finetune,150,0.1111,2.6981,95.0400,91.7056,46.9177,1.9550,0.1800
+lora,150,0.1345,3.0919,84.1133,104.2116,49.3502,2.1117,0.1800

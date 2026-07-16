@@ -76,15 +76,34 @@ Re-aggregate only (results already on the volume): `modal run finetuning/pipelin
 
 → `results/code_sql/charts/summary.png`, `distribution.png`
 
-**ood_indian_legal** (kaushik-harsh-99/Indian-legal-data-v3, 8000 train · 300 test): _run in progress._
+**ood_indian_legal** (kaushik-harsh-99/Indian-legal-data-v3, 8000 train · 150 test):
+
+| variant | accept rate | mean accept len | speedup | exact-match |
+|---|--:|--:|--:|--:|
+| base (pretrained) | 10.9% | 2.67 | 1.94× | 18% |
+| full fine-tune | 11.1% (+0.2pp) | 2.70 (+0.03) | 1.96× | 18% |
+| **LoRA** | **13.5% (+2.5pp)** | **3.09 (+0.42)** | **2.11× (+0.17)** | 18% |
+
+→ `results/ood_indian_legal/charts/summary.png`, `distribution.png`, `results/charts/cross_domain.png`
 
 ### Takeaway
 
-**LoRA specializes the drafter; full fine-tune ≈ base at small data.** LoRA trains
-~2M params, so ~800 short SQL examples (~75K supervised tokens) is enough to move
-the needle without forgetting. Full fine-tune moves ~1.05B params on the same data
-and can't — it's data-starved and less regularized. The legal run scales to 8000
-longer examples partly to give full fine-tune a fairer shot.
+**Same pattern in both domains: LoRA specializes the drafter; full fine-tune ≈ base.**
+LoRA trains ~2M params, so it moves the needle (+3.4pp acceptance on SQL, +2.5pp on
+legal) without forgetting. Full fine-tune moves ~1.05B params and lands on top of
+base in both — even on legal's 8000 longer examples (~2M supervised tokens vs SQL's
+~75K), full couldn't pull ahead. Legal's absolute acceptance is much lower than SQL
+(~11–13% vs ~25–28%): free-form legal prose is far less predictable than templated
+SQL, so the drafter tracks the target on fewer tokens regardless of tuning.
+
+Net: for domain-adapting a speculative-decoding drafter, **LoRA is the better tool**;
+full fine-tune only becomes worth it with substantially more data than either run here.
+
+### Pipeline performance (per run)
+
+vLLM prep (continuous batching) + H200 + train batch-12 took the whole legal run
+(8000 train, 3 epochs, 150-prompt bench) from a projected ~4–5h to **~35 min** — prep
+alone went from ~95 min (HF `generate`) to **89 s** (~60× on an H200).
 
 Temperature 0 ⇒ DFlash is lossless: the adapter changes **speed**, not correctness
 (exact-match is identical across variants; it's <100% only from benign bf16
