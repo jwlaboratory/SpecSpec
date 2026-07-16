@@ -47,18 +47,24 @@ def load_csv(path):
     return label, data
 
 
-# metric column -> (chart title, x-axis label, output stem, is_percent)
+# metric column -> (chart title, x-axis label, filename suffix, is_percent)
 _METRICS = OrderedDict([
     ("acceptance_rate_pooled",
-     ("Speculator acceptance by domain", "Pooled acceptance rate", "compare_acceptance", True)),
+     ("Speculator acceptance by domain", "Pooled acceptance rate", "acceptance", True)),
     ("mean_accept_length",
      ("Speculator mean accept length by domain", "Tokens committed per target pass",
-      "compare_mean_len", False)),
+      "mean_len", False)),
 ])
 
 
-def _plot_metric(plt, runs, all_domains, col, out_dir):
-    title, xlabel, stem, is_pct = _METRICS[col]
+def _source_tag(labels):
+    """If all run labels (<method>_<source>) share one source, return it, else 'all'."""
+    sources = {lab.split("_", 1)[1] for lab in labels if "_" in lab}
+    return sources.pop() if len(sources) == 1 else "all"
+
+
+def _plot_metric(plt, runs, all_domains, col, out_dir, tag):
+    title, xlabel, suffix, is_pct = _METRICS[col]
     n_runs = len(runs)
     y = range(len(all_domains))
     bar_h = 0.8 / n_runs
@@ -76,8 +82,9 @@ def _plot_metric(plt, runs, all_domains, col, out_dir):
     ax.set_title(title, fontsize=12, fontweight="bold")
     ax.grid(axis="x", alpha=0.3)
     ax.legend(loc="lower right", fontsize=9, framealpha=0.9)
+    fig.set_size_inches(10, max(4.0, 0.30 * len(all_domains)))
     fig.tight_layout()
-    out = out_dir / f"{stem}.png"
+    out = out_dir / f"compare_{tag}_{suffix}.png"
     fig.savefig(out, dpi=140)
     plt.close(fig)
     print(f"[wrote] {out}")
@@ -111,8 +118,9 @@ def main():
 
     out_dir = Path(sys.argv[1]).resolve().parent / "charts"
     out_dir.mkdir(exist_ok=True)
+    tag = _source_tag(runs.keys())
     for col in _METRICS:
-        _plot_metric(plt, runs, all_domains, col, out_dir)
+        _plot_metric(plt, runs, all_domains, col, out_dir, tag)
 
     print("\nPer speculator over shared domains (acceptance / mean accept length):")
     shared = set.intersection(*[set(d) for d in runs.values()])
