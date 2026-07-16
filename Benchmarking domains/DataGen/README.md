@@ -72,8 +72,8 @@ Useful flags:
    and passing recent prompts to avoid to reduce near-duplicates. Everything is
    deduped (whitespace/case-normalised).
 3. **Split** deterministically (fixed seed) into `train` / `val` / `test`.
-4. **Write** `data/<domain>/{train,val,test}.jsonl` and a `data/manifest.json`
-   summary (per-domain counts, model, seed).
+4. **Write** `../data/synthetic/<domain>/{train,val,test}.jsonl` and a
+   `../data/synthetic/manifest.json` summary (per-domain counts, model, seed).
 
 Generation is **per-domain and resumable**: a domain whose splits already exist
 at the requested sizes is skipped, so you can stop and restart, or build one
@@ -82,8 +82,12 @@ proportionally rather than failing.
 
 ## Output layout
 
+Datasets are written to the **shared top-level `data/` folder** (a sibling of
+`DataGen/`), under the `synthetic/` subtree — `data/wild/` is the WildChat control
+set from `../WildDataGen`.
+
 ```
-data/
+../data/synthetic/
   manifest.json
   lang_english/   train.jsonl  val.jsonl  test.jsonl
   code_python/    train.jsonl  val.jsonl  test.jsonl

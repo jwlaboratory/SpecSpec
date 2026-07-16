@@ -1,7 +1,9 @@
 # WildDataGen — real-prompt control set from WildChat
 
 Sorts genuine human prompts from **WildChat** into the same 51 domains as
-`DataGen/`, producing the identical `data/<domain>/{train,val,test}.jsonl` layout.
+`DataGen/`, producing the identical split layout in the shared top-level data
+folder at `../data/wild/<domain>/{train,val,test}.jsonl` (alongside
+`../data/synthetic/` from DataGen).
 
 It exists to answer the "are the synthetic prompts representative?" question: the
 Claude-generated `DataGen` prompts are clean and low-perplexity, which can inflate
@@ -53,11 +55,11 @@ proportionally); the manifest records per-domain counts.
 
 ## Benchmark it (same as DataGen)
 
-`benchmark.py` is source-agnostic — just point it at this `data/` dir:
+`benchmark.py` is source-agnostic — just point it at the `data/wild` dir:
 
 ```bash
 cd ../scripts
-python benchmark.py --datagen-dir ../WildDataGen/data --split test \
+python benchmark.py --datagen-dir ../data/wild --split test \
     --run-name dflash_wild --categories all
 python aggregate.py ../results/dflash_wild.jsonl
 python make_charts.py ../results/dflash_wild_by_category.csv
@@ -73,4 +75,4 @@ you've quantified the inflation.
 |---|---|
 | `sort.py` | stream WildChat → route → split → write |
 | `router.py` | domain classifiers (heuristic + Claude), taxonomy from `../DataGen/domains` |
-| `data/` | the sorted real prompts (generated) |
+| `../data/wild/` | the sorted real prompts (generated, in the shared data folder) |

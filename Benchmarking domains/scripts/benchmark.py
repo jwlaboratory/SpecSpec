@@ -57,7 +57,9 @@ TARGET_MODEL = "Qwen/Qwen3-8B"
 # "Benchmarking domains" root, which holds DataGen/ and results/.
 _ROOT = Path(__file__).resolve().parent.parent
 DEFAULT_OUT_DIR = _ROOT / "results"
-DEFAULT_DATAGEN_DIR = _ROOT / "DataGen" / "data"
+# Shared top-level data/ folder; default to the synthetic (DataGen) subtree.
+# Point --datagen-dir at data/wild to benchmark the WildChat control set.
+DEFAULT_DATAGEN_DIR = _ROOT / "data" / "synthetic"
 
 # DataGen domain-key prefixes -> group name, for --categories languages/coding/...
 _DATAGEN_GROUP_PREFIX = OrderedDict([

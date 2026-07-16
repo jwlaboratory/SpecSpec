@@ -35,7 +35,9 @@ from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 DATAGEN = HERE.parent / "DataGen"
-DATA_DIR = HERE / "data"
+# Shared top-level data/ folder (sibling of DataGen/WildDataGen); wild prompts go
+# in the wild/ subtree, alongside data/synthetic/ from DataGen.
+DATA_DIR = HERE.parent / "data" / "wild"
 
 sys.path.insert(0, str(HERE))
 sys.path.insert(0, str(DATAGEN))

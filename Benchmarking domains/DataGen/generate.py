@@ -44,7 +44,10 @@ from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 BENCH_DIR = HERE.parent               # ".../Benchmarking domains"
-DATA_DIR = HERE / "data"
+# Datasets live in the shared top-level data/ folder (not inside DataGen/), with
+# synthetic (Claude-generated) and wild (WildChat) kept in separate subtrees so
+# the benchmark can compare them per domain.
+DATA_DIR = BENCH_DIR / "data" / "synthetic"
 SEED = 1234
 
 sys.path.insert(0, str(HERE))
