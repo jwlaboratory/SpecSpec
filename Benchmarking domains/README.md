@@ -34,13 +34,16 @@ Benchmarking domains/
 │   ├── router.py         domain classifiers
 │   └── README.md
 ├── scripts/          # everything that runs the benchmark
-│   ├── benchmark.py      loads both models, runs spec + baseline per prompt
-│   ├── aggregate.py      JSONL -> per-domain CSV + markdown report
-│   ├── make_charts.py    CSV -> charts (PNG)
-│   ├── spec_patch.py     instrumented DFlash spec_generate (per-step accepts)
-│   ├── modal_run.py      run it on Modal (GPU in the cloud), sharded
-│   ├── prompts.py        legacy deterministic generator (kept as a seed source)
-│   ├── run.sh            local one-command runner
+│   ├── benchmark_vllm.py   PRIMARY: unified vLLM runner, both speculators, batched
+│   ├── modal_run_vllm.py   run the vLLM benchmark on Modal (per method × source)
+│   ├── compare_charts.py   overlay speculators per domain (grouped bars)
+│   ├── make_charts.py      CSV -> per-run charts (PNG)
+│   ├── benchmark.py        REFERENCE: transformers DFlash runner (batch=1, lossless check)
+│   ├── spec_patch.py       instrumented DFlash spec_generate (per-step accepts)
+│   ├── aggregate.py        JSONL -> per-domain CSV + report (transformers path)
+│   ├── modal_run.py        Modal runner for the transformers path (sharded)
+│   ├── prompts.py          legacy deterministic generator (kept as a seed source)
+│   ├── run.sh              local one-command runner (transformers path)
 │   └── colab_dflash_benchmark.ipynb
 ├── results/          # the report, charts, and results data
 │   ├── <run>.jsonl               one JSON line per prompt (raw metrics)
@@ -67,37 +70,55 @@ per domain) across **51 domains** (16 natural languages, 15 programming language
 11 general tasks, 9 specialised/OOD domains). Rows are prompt-only:
 `{"prompt": ..., "domain": ...}`. Resumable per domain.
 
-## 2 · Run the benchmark  (needs a CUDA GPU, ~20 GB VRAM)
+## 2 · Run the benchmark  (needs a CUDA GPU)
 
-The benchmark reads each domain's **held-out `test` split** and runs the drafter +
-target over it. It does **not** run on Mac/Apple Silicon (custom CUDA kernels).
+Two **speculators** are benchmarked against the same target `Qwen/Qwen3-8B`:
 
-**On Modal (recommended — GPU in the cloud, sharded):**
+| Speculator | method | model |
+|---|---|---|
+| DFlash | `dflash` | `z-lab/Qwen3-8B-DFlash-b16` (block-diffusion, 15 spec tokens) |
+| EAGLE3 | `eagle3` | `RedHatAI/Qwen3-8B-speculator.eagle3` (3 spec tokens) |
 
-```bash
-cd scripts
-modal run modal_run.py::full --run-name dflash_bench          # all domains, test split, sharded
-# smoke test first (name the entrypoint explicitly with ::main):
-modal run modal_run.py::main --categories "lang_english lang_french" --limit 5 --run-name smoke
-# run over the WildChat control set instead of synthetic:
-modal run modal_run.py::full --run-name dflash_dl --source downloaded
-```
+Both run through **one vLLM setup** — the *same* domain test prompts, batched, both
+speculators, one stack — recording per-domain **acceptance rate** and **mean accept
+length** (the batch-independent, generalizable numbers; we don't chase speedup).
 
-**On a local/rented GPU box (RunPod, Vast, Lambda, Colab):**
+**Primary path — unified vLLM on Modal:**
 
 ```bash
 cd scripts
-./run.sh                        # RUN_NAME/LIMIT/SPLIT/CATEGORIES/EXTRA_ARGS via env
-# or directly:
-python benchmark.py --run-name dflash_bench --split test --categories all
-python aggregate.py ../results/dflash_bench.jsonl
-python make_charts.py ../results/dflash_bench_by_category.csv
+# one (method, source):
+modal run modal_run_vllm.py::main --method eagle3 --source synthetic
+modal run modal_run_vllm.py::main --method dflash --source wild
+# smoke test first:
+modal run modal_run_vllm.py::main --method eagle3 --source downloaded --limit 5
+# everything — both speculators × all three sources, in parallel:
+modal run modal_run_vllm.py::all
 ```
 
-`benchmark.py` reads from `data/synthetic` by default (`--prompt-source datagen
---split test`); `--categories` accepts domain keys or a group
-(`languages`/`coding`/`tasks`/`ood`/`all`). Pass `--prompt-source legacy` to use the
-old deterministic `prompts.py` instead.
+Each run writes `results/<method>_<source>_by_category.csv` + `_report.md`, and
+`make_charts.py` renders the per-domain charts. Then overlay the speculators:
+
+```bash
+python compare_charts.py ../results/dflash_synthetic_by_category.csv \
+                         ../results/eagle3_synthetic_by_category.csv
+# -> results/charts/compare_acceptance.png  (grouped bars, per domain)
+```
+
+vLLM **nightly** is required (DFlash's `method: "dflash"` support); the Modal image
+installs it. `benchmark_vllm.py` reads `data/<source>/<domain>/test.jsonl` batched
+and reads acceptance from vLLM's spec-decode counters.
+
+**Reference path — transformers (DFlash only, batch=1).** `benchmark.py` +
+`spec_patch.py` run DFlash through HuggingFace transformers one prompt at a time.
+Slower and DFlash-only, but it also does the temp-0 **lossless correctness check**
+(`suspicious` divergences) that the vLLM path doesn't expose. Keep it for validation:
+
+```bash
+cd scripts
+python benchmark.py --run-name dflash_ref --split test --categories all   # needs a GPU
+# or ./run.sh ; or  modal run modal_run.py::full --run-name dflash_ref
+```
 
 **Real-prompt controls.** `WildDataGen/` produces two real-prompt sets to compare
 against the synthetic one: `data/wild` (genuine WildChat prompts, sorted into the

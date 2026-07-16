@@ -12,3 +12,7 @@ datasets>=3.0.0
 anthropic>=0.40
 # scripts/make_charts.py — result charts (CPU only, optional).
 matplotlib>=3.7
+# scripts/benchmark_vllm.py — unified vLLM speculator runner. GPU only; DFlash
+# needs the vLLM nightly build. Not installed here / not for Mac — the Modal
+# image (scripts/modal_run_vllm.py) installs it:
+#   pip install -U vllm --extra-index-url https://wheels.vllm.ai/nightly
