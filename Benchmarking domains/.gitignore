@@ -2,5 +2,5 @@
 __pycache__/
 *.pyc
 
-# DataGen build logs (transient)
-DataGen/build.log
+# Generator / sort logs (transient)
+*.log

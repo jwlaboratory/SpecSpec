@@ -55,7 +55,8 @@ datasets** instead — no classification needed, the whole dataset *is* the doma
 
 ```bash
 python sources.py --list                 # show the registry
-python sources.py --group all            # fill all dedicated domains into ../data/wild
+python sources.py                         # fill all dedicated domains into ../data/wild
+python sources.py --domains ood_medical  # just one
 ```
 
 Writes to the same `../data/wild/<domain>/` tree as the WildChat sort — **run it

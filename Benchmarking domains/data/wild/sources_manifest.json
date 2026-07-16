@@ -1,0 +1,42 @@
+{
+  "splits": {
+    "train": 800,
+    "val": 100,
+    "test": 100
+  },
+  "seed": 1234,
+  "domains": [
+    {
+      "domain": "ood_medical",
+      "dataset": "keivalya/MedQuAD-MedicalQnADataset",
+      "collected": 1000,
+      "train": 800,
+      "val": 100,
+      "test": 100
+    },
+    {
+      "domain": "ood_financial",
+      "dataset": "gbharti/finance-alpaca",
+      "collected": 1000,
+      "train": 800,
+      "val": 100,
+      "test": 100
+    },
+    {
+      "domain": "ood_legal",
+      "dataset": "nguha/legalbench",
+      "collected": 300,
+      "train": 240,
+      "val": 30,
+      "test": 30
+    },
+    {
+      "domain": "code_sql",
+      "dataset": "b-mc2/sql-create-context",
+      "collected": 1000,
+      "train": 800,
+      "val": 100,
+      "test": 100
+    }
+  ]
+}

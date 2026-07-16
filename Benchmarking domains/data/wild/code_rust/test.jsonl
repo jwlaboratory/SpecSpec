@@ -1,0 +1,1 @@
+{"prompt": "// main.rs:\nlet my_global_struct: MyGlobalStruct<_> = MyGlobalStruct::from_files(file_paths).unwrap();\nprintln!(“{:?}”, my_global_struct.hashset);\n/error: src/main.rs:25: type annotations needed\nerror: src/main.rs:25: cannot infer type of the type parameter T declared on the struct MyGlobalStruct/", "domain": "code_rust"}

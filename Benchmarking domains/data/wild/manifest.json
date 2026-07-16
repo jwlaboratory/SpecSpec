@@ -1,0 +1,370 @@
+{
+  "source": "allenai/WildChat-1M",
+  "classifier": "heuristic",
+  "splits": {
+    "train": 800,
+    "val": 100,
+    "test": 100
+  },
+  "seed": 1234,
+  "scanned": 150000,
+  "domains": [
+    {
+      "domain": "lang_english",
+      "collected": 1000,
+      "train": 800,
+      "val": 100,
+      "test": 100
+    },
+    {
+      "domain": "lang_spanish",
+      "collected": 1000,
+      "train": 800,
+      "val": 100,
+      "test": 100
+    },
+    {
+      "domain": "lang_french",
+      "collected": 1000,
+      "train": 800,
+      "val": 100,
+      "test": 100
+    },
+    {
+      "domain": "lang_german",
+      "collected": 1000,
+      "train": 800,
+      "val": 100,
+      "test": 100
+    },
+    {
+      "domain": "lang_portuguese",
+      "collected": 1000,
+      "train": 800,
+      "val": 100,
+      "test": 100
+    },
+    {
+      "domain": "lang_hindi",
+      "collected": 0,
+      "train": 0,
+      "val": 0,
+      "test": 0
+    },
+    {
+      "domain": "lang_chinese",
+      "collected": 1000,
+      "train": 800,
+      "val": 100,
+      "test": 100
+    },
+    {
+      "domain": "lang_japanese",
+      "collected": 370,
+      "train": 296,
+      "val": 37,
+      "test": 37
+    },
+    {
+      "domain": "lang_russian",
+      "collected": 1000,
+      "train": 800,
+      "val": 100,
+      "test": 100
+    },
+    {
+      "domain": "lang_arabic",
+      "collected": 564,
+      "train": 451,
+      "val": 56,
+      "test": 57
+    },
+    {
+      "domain": "lang_korean",
+      "collected": 90,
+      "train": 72,
+      "val": 9,
+      "test": 9
+    },
+    {
+      "domain": "lang_italian",
+      "collected": 956,
+      "train": 765,
+      "val": 96,
+      "test": 95
+    },
+    {
+      "domain": "lang_turkish",
+      "collected": 759,
+      "train": 607,
+      "val": 76,
+      "test": 76
+    },
+    {
+      "domain": "lang_vietnamese",
+      "collected": 578,
+      "train": 462,
+      "val": 58,
+      "test": 58
+    },
+    {
+      "domain": "lang_polish",
+      "collected": 698,
+      "train": 558,
+      "val": 70,
+      "test": 70
+    },
+    {
+      "domain": "lang_swahili",
+      "collected": 104,
+      "train": 83,
+      "val": 10,
+      "test": 11
+    },
+    {
+      "domain": "code_python",
+      "collected": 388,
+      "train": 310,
+      "val": 39,
+      "test": 39
+    },
+    {
+      "domain": "code_javascript",
+      "collected": 480,
+      "train": 384,
+      "val": 48,
+      "test": 48
+    },
+    {
+      "domain": "code_sql",
+      "collected": 98,
+      "train": 78,
+      "val": 10,
+      "test": 10
+    },
+    {
+      "domain": "code_cpp",
+      "collected": 78,
+      "train": 62,
+      "val": 8,
+      "test": 8
+    },
+    {
+      "domain": "code_ruby",
+      "collected": 1,
+      "train": 1,
+      "val": 0,
+      "test": 0
+    },
+    {
+      "domain": "code_rust",
+      "collected": 16,
+      "train": 13,
+      "val": 2,
+      "test": 1
+    },
+    {
+      "domain": "code_go",
+      "collected": 10,
+      "train": 8,
+      "val": 1,
+      "test": 1
+    },
+    {
+      "domain": "code_bash",
+      "collected": 1,
+      "train": 1,
+      "val": 0,
+      "test": 0
+    },
+    {
+      "domain": "code_java",
+      "collected": 32,
+      "train": 26,
+      "val": 3,
+      "test": 3
+    },
+    {
+      "domain": "code_typescript",
+      "collected": 69,
+      "train": 55,
+      "val": 7,
+      "test": 7
+    },
+    {
+      "domain": "code_c",
+      "collected": 157,
+      "train": 126,
+      "val": 16,
+      "test": 15
+    },
+    {
+      "domain": "code_kotlin",
+      "collected": 36,
+      "train": 29,
+      "val": 4,
+      "test": 3
+    },
+    {
+      "domain": "code_swift",
+      "collected": 1,
+      "train": 1,
+      "val": 0,
+      "test": 0
+    },
+    {
+      "domain": "code_haskell",
+      "collected": 0,
+      "train": 0,
+      "val": 0,
+      "test": 0
+    },
+    {
+      "domain": "code_r",
+      "collected": 27,
+      "train": 22,
+      "val": 3,
+      "test": 2
+    },
+    {
+      "domain": "task_summarization",
+      "collected": 1000,
+      "train": 800,
+      "val": 100,
+      "test": 100
+    },
+    {
+      "domain": "task_question_answering",
+      "collected": 1000,
+      "train": 800,
+      "val": 100,
+      "test": 100
+    },
+    {
+      "domain": "task_json_extraction",
+      "collected": 19,
+      "train": 15,
+      "val": 2,
+      "test": 2
+    },
+    {
+      "domain": "task_translation",
+      "collected": 809,
+      "train": 647,
+      "val": 81,
+      "test": 81
+    },
+    {
+      "domain": "task_creative_writing",
+      "collected": 1000,
+      "train": 800,
+      "val": 100,
+      "test": 100
+    },
+    {
+      "domain": "task_email_writing",
+      "collected": 197,
+      "train": 158,
+      "val": 20,
+      "test": 19
+    },
+    {
+      "domain": "task_roleplay_chat",
+      "collected": 1000,
+      "train": 800,
+      "val": 100,
+      "test": 100
+    },
+    {
+      "domain": "task_math_reasoning",
+      "collected": 259,
+      "train": 207,
+      "val": 26,
+      "test": 26
+    },
+    {
+      "domain": "task_logic_reasoning",
+      "collected": 30,
+      "train": 24,
+      "val": 3,
+      "test": 3
+    },
+    {
+      "domain": "task_tabular_data",
+      "collected": 125,
+      "train": 100,
+      "val": 12,
+      "test": 13
+    },
+    {
+      "domain": "task_data_generation",
+      "collected": 2,
+      "train": 2,
+      "val": 0,
+      "test": 0
+    },
+    {
+      "domain": "ood_medical",
+      "collected": 228,
+      "train": 182,
+      "val": 23,
+      "test": 23
+    },
+    {
+      "domain": "ood_financial",
+      "collected": 400,
+      "train": 320,
+      "val": 40,
+      "test": 40
+    },
+    {
+      "domain": "ood_legal",
+      "collected": 79,
+      "train": 63,
+      "val": 8,
+      "test": 8
+    },
+    {
+      "domain": "ood_customer_support",
+      "collected": 52,
+      "train": 42,
+      "val": 5,
+      "test": 5
+    },
+    {
+      "domain": "ood_chemistry",
+      "collected": 163,
+      "train": 130,
+      "val": 16,
+      "test": 17
+    },
+    {
+      "domain": "ood_regex",
+      "collected": 51,
+      "train": 41,
+      "val": 5,
+      "test": 5
+    },
+    {
+      "domain": "ood_shell",
+      "collected": 191,
+      "train": 153,
+      "val": 19,
+      "test": 19
+    },
+    {
+      "domain": "ood_poetry",
+      "collected": 27,
+      "train": 22,
+      "val": 3,
+      "test": 2
+    },
+    {
+      "domain": "ood_ascii_art",
+      "collected": 20,
+      "train": 16,
+      "val": 2,
+      "test": 2
+    }
+  ]
+}
