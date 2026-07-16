@@ -4,3 +4,6 @@ __pycache__/
 
 # Generator / sort logs (transient)
 *.log
+
+# trained speculators (weights live outside git)
+trained_models/
