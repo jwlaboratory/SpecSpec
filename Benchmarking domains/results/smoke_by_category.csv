@@ -1,3 +1,4 @@
-category,n,acceptance_rate_pooled,acceptance_rate,mean_accept_length,forward_steps,gen_tokens,spec_tok_s,baseline_tok_s,speedup,lossless_match_rate,n_mismatches
-code_python,3,0.4,0.4215,7.3225,29.3333,205.3333,144.0049,27.7499,5.1824,0.0,3
-lang_english,3,0.1054,0.0977,2.4662,47.6667,123.0,49.792,27.6197,1.8029,0.3333,2
+category,n,acceptance_rate_pooled,acceptance_rate,mean_accept_length,forward_steps,gen_tokens,spec_tok_s,baseline_tok_s,speedup,agreement_frac,exact_match_rate,n_suspicious,mean_divergence_gap,max_divergence_gap
+code_python,3,0.4,0.4215,7.3225,29.3333,205.3333,144.0049,27.7499,5.1824,0.0,,0,,
+lang_french,5,0.1139,0.115,2.7255,95.4,258.4,49.2277,24.3781,2.0201,0.4961,0.2,0,0.0938,0.25
+lang_english,5,0.1034,0.0994,2.4915,69.4,177.0,47.7099,26.262,1.8178,0.6797,0.0,0,0.0,0.0

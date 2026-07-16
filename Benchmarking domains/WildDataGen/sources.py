@@ -10,12 +10,12 @@ domain, so we just extract each row's user-facing prompt.
 
 Output goes to the same shared control tree the WildChat sort writes to:
 
-    ../data/wild/<domain>/{train,val,test}.jsonl
+    ../data/downloaded/<domain>/{train,val,test}.jsonl
 
 so benchmark.py treats it identically:
 
     cd ../scripts
-    python benchmark.py --datagen-dir ../data/wild --split test --run-name dflash_wild
+    python benchmark.py --datagen-dir ../data/downloaded --split test --run-name dflash_dl
 
 Each SOURCE maps one domain to (HF dataset, config, split, extract). `extract(row)`
 returns a self-contained prompt string (or None to skip). All are real human /
@@ -33,7 +33,7 @@ from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 DATAGEN = HERE.parent / "DataGen"
-DATA_DIR = HERE.parent / "data" / "wild"
+DATA_DIR = HERE.parent / "data" / "downloaded"
 
 sys.path.insert(0, str(HERE))
 sys.path.insert(0, str(DATAGEN))

@@ -2,7 +2,7 @@
 
 Sorts genuine human prompts from **WildChat** into the same 51 domains as
 `DataGen/`, producing the identical split layout in the shared top-level data
-folder at `../data/wild/<domain>/{train,val,test}.jsonl` (alongside
+folder at `../data/downloaded/<domain>/{train,val,test}.jsonl` (alongside
 `../data/synthetic/` from DataGen).
 
 It exists to answer the "are the synthetic prompts representative?" question: the
@@ -55,11 +55,11 @@ datasets** instead — no classification needed, the whole dataset *is* the doma
 
 ```bash
 python sources.py --list                 # show the registry
-python sources.py                         # fill all dedicated domains into ../data/wild
+python sources.py                         # fill all dedicated domains into ../data/downloaded
 python sources.py --domains ood_medical  # just one
 ```
 
-Writes to the same `../data/wild/<domain>/` tree as the WildChat sort — **run it
+Writes to the same `../data/downloaded/<domain>/` tree as the WildChat sort — **run it
 after `sort.py`** so the dedicated (higher-quality) data overwrites WildChat's thin
 versions for those domains. Add more domains by dropping an entry in `SOURCES`
 (e.g. `bitext/...` for customer support, `openai_humaneval` for code, `HuggingFaceH4/no_robots`
@@ -80,17 +80,17 @@ proportionally); the manifest records per-domain counts.
 
 ## Benchmark it (same as DataGen)
 
-`benchmark.py` is source-agnostic — just point it at the `data/wild` dir:
+`benchmark.py` is source-agnostic — just point it at the `data/downloaded` dir:
 
 ```bash
 cd ../scripts
-python benchmark.py --datagen-dir ../data/wild --split test \
-    --run-name dflash_wild --categories all
-python aggregate.py ../results/dflash_wild.jsonl
-python make_charts.py ../results/dflash_wild_by_category.csv
+python benchmark.py --datagen-dir ../data/downloaded --split test \
+    --run-name dflash_dl --categories all
+python aggregate.py ../results/dflash_dl.jsonl
+python make_charts.py ../results/dflash_dl_by_category.csv
 ```
 
-Then compare `dflash_wild` (real) vs `dflash_bench` (synthetic) per domain: if they
+Then compare `dflash_dl` (real) vs `dflash_bench` (synthetic) per domain: if they
 track, the synthetic set is validated; where synthetic acceptance is much higher,
 you've quantified the inflation.
 
@@ -100,4 +100,4 @@ you've quantified the inflation.
 |---|---|
 | `sort.py` | stream WildChat → route → split → write |
 | `router.py` | domain classifiers (heuristic + Claude), taxonomy from `../DataGen/domains` |
-| `../data/wild/` | the sorted real prompts (generated, in the shared data folder) |
+| `../data/downloaded/` | the sorted real prompts (generated, in the shared data folder) |

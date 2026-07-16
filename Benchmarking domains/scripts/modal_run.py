@@ -33,7 +33,7 @@ TIMEOUT_S = 8 * 60 * 60    # 8h ceiling; a full run with baseline can be long
 
 _HERE = Path(__file__).resolve().parent          # .../Benchmarking domains/scripts
 _ROOT = _HERE.parent                              # .../Benchmarking domains
-_DATA_ROOT = _ROOT / "data"                       # shared datasets: synthetic/ + wild/
+_DATA_ROOT = _ROOT / "data"                       # shared datasets: synthetic/ + downloaded/
 _RESULTS_DIR = _ROOT / "results"                  # where local copies land
 _CONTAINER_DATA = "/root/data"                    # shipped data root in the image
 
@@ -56,7 +56,7 @@ image = (
     .add_local_file(str(_HERE / "benchmark.py"), "/root/benchmark.py")
     .add_local_file(str(_HERE / "aggregate.py"), "/root/aggregate.py")
     .add_local_file(str(_HERE / "make_charts.py"), "/root/make_charts.py")
-    # ship the shared datasets (data/synthetic + data/wild) so the benchmark can
+    # ship the shared datasets (data/synthetic + data/downloaded) so the benchmark can
     # read the per-domain test splits inside the container
     .add_local_dir(str(_DATA_ROOT), _CONTAINER_DATA)
 )
@@ -86,7 +86,8 @@ def run_benchmark(
     """Runs benchmark.py + aggregate.py + make_charts.py inside the GPU container.
 
     Benchmarks the `split` (default: held-out test) of each domain in the chosen
-    `source` (synthetic = DataGen, wild = WildChat), writing to the durable volume.
+    `source` (synthetic = DataGen, downloaded = WildChat + dedicated datasets),
+    writing to the durable volume.
     """
     import torch
 

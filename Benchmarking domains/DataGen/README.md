@@ -83,7 +83,7 @@ proportionally rather than failing.
 ## Output layout
 
 Datasets are written to the **shared top-level `data/` folder** (a sibling of
-`DataGen/`), under the `synthetic/` subtree — `data/wild/` is the WildChat control
+`DataGen/`), under the `synthetic/` subtree — `data/downloaded/` is the WildChat control
 set from `../WildDataGen`.
 
 ```

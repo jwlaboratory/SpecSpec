@@ -21,12 +21,12 @@ measured by acceptance rate, mean accept length, and speedup.
 Benchmarking domains/
 ├── data/             # the datasets (shared, top-level — the actual data)
 │   ├── synthetic/<domain>/   train.jsonl · val.jsonl · test.jsonl   (from DataGen)
-│   └── wild/<domain>/        train.jsonl · val.jsonl · test.jsonl   (from WildDataGen)
+│   └── downloaded/<domain>/        train.jsonl · val.jsonl · test.jsonl   (from WildDataGen)
 ├── DataGen/          # generator for the synthetic set  ->  ../data/synthetic
 │   ├── generate.py       Claude-based prompt-dataset generator
 │   ├── domains.py        the 51-domain registry
 │   └── README.md
-├── WildDataGen/      # sorts real WildChat prompts       ->  ../data/wild
+├── WildDataGen/      # sorts real WildChat prompts       ->  ../data/downloaded
 │   ├── sort.py · router.py   stream WildChat -> route into the 51 domains
 │   └── README.md
 ├── scripts/          # everything that runs the benchmark
@@ -76,7 +76,7 @@ modal run modal_run.py::full --run-name dflash_bench          # all domains, tes
 # smoke test first (name the entrypoint explicitly with ::main):
 modal run modal_run.py::main --categories "lang_english lang_french" --limit 5 --run-name smoke
 # run over the WildChat control set instead of synthetic:
-modal run modal_run.py::full --run-name dflash_wild --source wild
+modal run modal_run.py::full --run-name dflash_dl --source downloaded
 ```
 
 **On a local/rented GPU box (RunPod, Vast, Lambda, Colab):**
@@ -96,8 +96,8 @@ python make_charts.py ../results/dflash_bench_by_category.csv
 old deterministic `prompts.py` instead.
 
 **Real-prompt control.** `WildDataGen/` sorts genuine WildChat prompts into the same
-domains/layout under `data/wild`. Run the same benchmark against it (`--datagen-dir
-../data/wild`) and compare per-domain acceptance vs the synthetic set — this
+domains/layout under `data/downloaded`. Run the same benchmark against it (`--datagen-dir
+../data/downloaded`) and compare per-domain acceptance vs the synthetic set — this
 checks whether the clean, low-perplexity synthetic prompts inflate acceptance or
 hide the drafter's failure modes. See `WildDataGen/README.md`.
 
