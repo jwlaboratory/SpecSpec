@@ -33,23 +33,17 @@ Benchmarking domains/
 │   ├── sources.py        pull purpose-built HF datasets ->  ../data/downloaded
 │   ├── router.py         domain classifiers
 │   └── README.md
-├── scripts/          # everything that runs the benchmark
-│   ├── benchmark_vllm.py   PRIMARY: unified vLLM runner, both speculators, batched
-│   ├── modal_run_vllm.py   run the vLLM benchmark on Modal (per method × source)
-│   ├── compare_charts.py   overlay speculators per domain (grouped bars)
+├── scripts/          # the vLLM speculator benchmark
+│   ├── benchmark_vllm.py   unified vLLM runner: both speculators, batched, per-domain
+│   ├── modal_run_vllm.py   run it on Modal (per method × source; ::all for everything)
 │   ├── make_charts.py      CSV -> per-run charts (PNG)
-│   ├── benchmark.py        REFERENCE: transformers DFlash runner (batch=1, lossless check)
-│   ├── spec_patch.py       instrumented DFlash spec_generate (per-step accepts)
-│   ├── aggregate.py        JSONL -> per-domain CSV + report (transformers path)
-│   ├── modal_run.py        Modal runner for the transformers path (sharded)
-│   ├── prompts.py          legacy deterministic generator (kept as a seed source)
-│   ├── run.sh              local one-command runner (transformers path)
-│   └── colab_dflash_benchmark.ipynb
-├── results/          # the report, charts, and results data
-│   ├── <run>.jsonl               one JSON line per prompt (raw metrics)
-│   ├── <run>_by_category.csv     one row per domain
-│   ├── <run>_report.md           ranked human-readable report
-│   └── charts/                   per-domain + distribution PNGs (and screenshots)
+│   ├── compare_charts.py   overlay speculators per domain (accept rate + mean len)
+│   ├── overview_chart.py   all sources × both speculators (grouped bars)
+│   └── prompts.py          legacy deterministic prompts (DataGen seed source)
+├── results/          # the results data + charts
+│   ├── <method>_<source>_by_category.csv   one row per domain
+│   ├── <method>_<source>_report.md         ranked human-readable report
+│   └── charts/                             per-domain, compare, and overview PNGs
 ├── README.md
 └── requirements.txt
 ```
@@ -100,70 +94,59 @@ Each run writes `results/<method>_<source>_by_category.csv` + `_report.md`, and
 `make_charts.py` renders the per-domain charts. Then overlay the speculators:
 
 ```bash
+# per-domain overlay of the two speculators (acceptance rate + mean accept length):
 python compare_charts.py ../results/dflash_synthetic_by_category.csv \
                          ../results/eagle3_synthetic_by_category.csv
-# -> results/charts/compare_acceptance.png  (grouped bars, per domain)
+# all sources × both speculators in one view:
+python overview_chart.py ../results/*_by_category.csv
 ```
 
-vLLM **nightly** is required (DFlash's `method: "dflash"` support); the Modal image
-installs it. `benchmark_vllm.py` reads `data/<source>/<domain>/test.jsonl` batched
-and reads acceptance from vLLM's spec-decode counters.
+vLLM **nightly** is required for DFlash's `method: "dflash"` support; the Modal image
+installs it. `benchmark_vllm.py` reads `data/<source>/<domain>/test.jsonl` batched and
+reads acceptance from vLLM's spec-decode counters (`get_metrics()`).
 
-**Reference path — transformers (DFlash only, batch=1).** `benchmark.py` +
-`spec_patch.py` run DFlash through HuggingFace transformers one prompt at a time.
-Slower and DFlash-only, but it also does the temp-0 **lossless correctness check**
-(`suspicious` divergences) that the vLLM path doesn't expose. Keep it for validation:
-
-```bash
-cd scripts
-python benchmark.py --run-name dflash_ref --split test --categories all   # needs a GPU
-# or ./run.sh ; or  modal run modal_run.py::full --run-name dflash_ref
-```
-
-**Real-prompt controls.** `WildDataGen/` produces two real-prompt sets to compare
-against the synthetic one: `data/wild` (genuine WildChat prompts, sorted into the
-domains) and `data/downloaded` (straight from purpose-built HF datasets — medical,
-legal, financial, SQL). Run the same benchmark against each (`--datagen-dir
-../data/wild` or `../data/downloaded`) and compare per-domain acceptance vs
-synthetic — this checks whether the clean, low-perplexity synthetic prompts inflate
-acceptance or hide the drafter's failure modes. See `WildDataGen/README.md`.
+**Real-prompt controls.** Beyond `data/synthetic`, `WildDataGen/` produces two
+real-prompt sets in the same layout: `data/wild` (genuine WildChat prompts, sorted
+into the domains) and `data/downloaded` (straight from purpose-built HF datasets —
+medical, legal, financial, SQL). Benchmark each source and compare per-domain
+acceptance vs synthetic — this checks whether the clean, low-perplexity synthetic
+prompts inflate acceptance or hide a speculator's failure modes. See
+`WildDataGen/README.md`.
 
 ## 3 · Read the results
 
 Everything lands in `results/`:
 
-- `<run>_report.md` — overall numbers, all-domains table ranked by acceptance,
-  best/worst-tracked domains, and a ⚠️ section for any correctness mismatches.
-- `<run>_by_category.csv` — one row per domain.
-- `charts/` — acceptance-by-domain, mean-length, speedup, group summary, and the
-  acceptance distribution (coloured by domain group). Drop screenshots here too.
+- `<method>_<source>_report.md` — domains ranked by acceptance rate.
+- `<method>_<source>_by_category.csv` — one row per domain.
+- `charts/` — per-run (acceptance/mean-length/group/distribution), `compare_*`
+  (DFlash vs EAGLE3 per domain), and `overview_*` (all sources × both speculators).
 
 ## Metrics
 
+Per domain, for each speculator:
+
 | Metric | Meaning |
 |---|---|
-| **acceptance rate (%)** | accepted draft tokens ÷ proposed draft tokens (15/step). The headline "does the drafter agree with the target" number. |
-| **mean accept length** | tokens committed per target forward pass (accepted + 1 bonus), 1..16. Drives speed. |
-| **forward steps** | number of target verification passes. |
-| **speedup** | spec throughput ÷ target-only greedy throughput, same GPU. |
-| **agreement_frac** | fraction of tokens matching sequential-greedy target before first divergence. |
-| **suspicious** | a divergence where the target's top-2 logits were far apart (not a bf16 tie). The real inference-bug signal — should be **0**. |
+| **acceptance rate** | accepted draft tokens ÷ proposed draft tokens. The batch-independent, generalizable "does the speculator predict the target's next token" number. **The fair cross-speculator metric** — it normalises for the fact that DFlash proposes 15 tokens/step and EAGLE3 proposes 3. |
+| **mean accept length** | tokens committed per target forward pass (accepted + 1 bonus). Higher = fewer target passes. Not directly comparable across speculators (DFlash's ceiling is ~16, EAGLE3's ~4) — read it as a within-speculator speed proxy. |
+| **forward steps** | number of target verification passes (`num_drafts`). |
 
-**On correctness.** At temperature 0 DFlash greedy is lossless *in exact arithmetic*,
-but bit-exact equality with HF sequential greedy is **not** expected in bf16 and that's
-fine. The correctness gate is not "100% exact match" — it's **zero `suspicious`
-(large-logit-gap) divergences**. A genuine bug (wrong positions, cache mishandling,
-off-by-one) corrupts tokens with a large logit gap, which `suspicious` flags.
+Speculative decoding is lossless at temperature 0, so the emitted text equals the
+target's greedy output regardless of speculator — we don't measure output quality,
+only how well each speculator's proposals match the target.
 
-**Reading it.** High acceptance % + high mean length (usually English, code, math) →
-the drafter generalises there; big speedups. Low acceptance % (often low-resource
-scripts / specialised OOD domains) → the drafter mispredicts the target frequently;
-small or no speedup — the "where does a tiny speculator fail to generalise" signal we
-want.
+**Reading it.** High acceptance (usually English, code, math) → the speculator
+generalises to that domain. Low acceptance (often low-resource scripts / specialised
+OOD domains) → it mispredicts the target frequently. Comparing sources
+(synthetic vs wild vs downloaded) shows whether clean synthetic prompts overstate the
+numbers vs real ones.
 
 ## GPU notes
 
-Needs a CUDA GPU with **~20 GB+ VRAM** (Qwen3-8B target ≈16 GB + DFlash drafter ≈2 GB
-+ KV cache, all bf16). The free Colab T4 (16 GB) OOMs. Cheapest realistic paths: a
-24 GB GPU on RunPod/Vast (~$0.30/hr), Colab Pro (L4/A100), or Modal (`scripts/modal_run.py`).
-A full test-split run (100 prompts × 51 domains) is a few GPU-hours.
+The benchmark runs on Modal (`scripts/modal_run_vllm.py`) — an `A100-40GB` per
+(method, source), which comfortably holds the Qwen3-8B target + 1B speculator + KV
+cache in bf16. A full test-split run (100 prompts × ~49 domains) is ~10–15 min per
+source, batched. To run on your own GPU box instead, install vLLM (`pip install -U
+vllm --extra-index-url https://wheels.vllm.ai/nightly`) and call `benchmark_vllm.py`
+directly.

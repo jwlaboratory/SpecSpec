@@ -1,18 +1,14 @@
-# DFlash domain benchmark — pinned to the versions the model was evaluated with.
-# A CUDA build of torch is required (the pinned version ships CUDA wheels on Linux).
-torch==2.9.1
-transformers==4.57.3
-accelerate>=1.0.0
-# The model's bundled utils.py imports `datasets` at module import time, so it is
-# required just to LOAD the drafter with trust_remote_code=True.
-datasets>=3.0.0
-# Optional: faster attention (skip on GPUs without support; scripts default to sdpa)
-# flash-attn>=2.6.0
-# DataGen/ prompt-dataset generator (calls the Claude API).
+# Local (CPU) tooling for the DFlash / EAGLE3 domain benchmark.
+# The GPU benchmark itself runs on Modal (scripts/modal_run_vllm.py), which builds
+# its own vLLM image — nothing GPU is installed here.
+
+# DataGen/ — Claude-based prompt-dataset generator.
 anthropic>=0.40
-# scripts/make_charts.py — result charts (CPU only, optional).
+# WildDataGen/ — stream Hugging Face datasets (WildChat + dedicated sources).
+datasets>=3.0.0
+# scripts/*_charts.py — result charts.
 matplotlib>=3.7
-# scripts/benchmark_vllm.py — unified vLLM speculator runner. GPU only; DFlash
-# needs the vLLM nightly build. Not installed here / not for Mac — the Modal
-# image (scripts/modal_run_vllm.py) installs it:
+
+# GPU speculator benchmark (scripts/benchmark_vllm.py) is Modal-only; the Modal
+# image installs vLLM (nightly-capable) + transformers itself:
 #   pip install -U vllm --extra-index-url https://wheels.vllm.ai/nightly
