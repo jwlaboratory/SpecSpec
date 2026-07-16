@@ -23,14 +23,20 @@ Usage (from the "Benchmarking domains" folder):
   modal volume get  dflash-bench-results results ./   # re-download everything
 """
 import subprocess
+from pathlib import Path
 
 import modal
 
 APP_NAME = "dflash-domain-benchmark"
 GPU = "A100-40GB"          # 40GB: comfortably fits 8B target + 1B drafter + KV cache
-TIMEOUT_S = 8 * 60 * 60    # 8h ceiling; a full 100x28 run with baseline can be long
+TIMEOUT_S = 8 * 60 * 60    # 8h ceiling; a full run with baseline can be long
 
-# Pinned to the versions the model card was evaluated with (+ datasets, needed at import).
+_HERE = Path(__file__).resolve().parent          # .../Benchmarking domains/scripts
+_DATAGEN_DATA = _HERE.parent / "DataGen" / "data"  # the generated datasets
+_CONTAINER_DATAGEN = "/root/datagen_data"
+
+# Pinned to the versions the model card was evaluated with (+ datasets, needed at
+# import; + matplotlib to render charts inside the run).
 image = (
     modal.Image.debian_slim(python_version="3.11")
     .pip_install(
@@ -38,13 +44,19 @@ image = (
         "transformers==4.57.3",
         "accelerate>=1.0.0",
         "datasets>=3.0.0",
+        "matplotlib>=3.7",
     )
     .env({"HF_HOME": "/cache", "HF_HUB_ENABLE_HF_TRANSFER": "0"})
-    # ship the benchmark scripts into the image
-    .add_local_file("prompts.py", "/root/prompts.py")
-    .add_local_file("spec_patch.py", "/root/spec_patch.py")
-    .add_local_file("benchmark.py", "/root/benchmark.py")
-    .add_local_file("aggregate.py", "/root/aggregate.py")
+    # ship the benchmark scripts into the image (paths are absolute, so this
+    # works no matter which directory `modal run` is invoked from)
+    .add_local_file(str(_HERE / "prompts.py"), "/root/prompts.py")
+    .add_local_file(str(_HERE / "spec_patch.py"), "/root/spec_patch.py")
+    .add_local_file(str(_HERE / "benchmark.py"), "/root/benchmark.py")
+    .add_local_file(str(_HERE / "aggregate.py"), "/root/aggregate.py")
+    .add_local_file(str(_HERE / "make_charts.py"), "/root/make_charts.py")
+    # ship the generated datasets (DataGen/data) so the benchmark can read the
+    # per-domain test splits inside the container
+    .add_local_dir(str(_DATAGEN_DATA), _CONTAINER_DATAGEN)
 )
 
 results_vol = modal.Volume.from_name("dflash-bench-results", create_if_missing=True)
@@ -64,10 +76,15 @@ def run_benchmark(
     max_new_tokens: int = 512,
     categories: str = "all",
     run_name: str = "dflash_bench",
+    split: str = "test",
     no_baseline: bool = False,
     resume: bool = True,
 ):
-    """Runs benchmark.py + aggregate.py inside the GPU container, writing to /data."""
+    """Runs benchmark.py + aggregate.py + make_charts.py inside the GPU container.
+
+    Benchmarks the DataGen `split` (default: the held-out test set) of each domain,
+    writing all results to the durable /data volume.
+    """
     import torch
 
     print("GPU:", torch.cuda.get_device_name(0),
@@ -81,6 +98,9 @@ def run_benchmark(
         "--limit", str(limit),
         "--max-new-tokens", str(max_new_tokens),
         "--out-dir", out_dir,
+        "--prompt-source", "datagen",
+        "--split", split,
+        "--datagen-dir", _CONTAINER_DATAGEN,
         "--categories", *categories.split(),
     ]
     if no_baseline:
@@ -95,6 +115,8 @@ def run_benchmark(
 
     jsonl = f"{out_dir}/{run_name}.jsonl"
     subprocess.run(["python", "/root/aggregate.py", jsonl], cwd="/root", check=True)
+    subprocess.run(["python", "/root/make_charts.py",
+                    f"{out_dir}/{run_name}_by_category.csv"], cwd="/root", check=False)
     results_vol.commit()
 
     report_path = f"{out_dir}/{run_name}_report.md"
@@ -115,8 +137,9 @@ def run_benchmark(
     timeout=TIMEOUT_S,
     volumes={"/data": results_vol, "/cache": hf_cache_vol},
 )
-def run_shard(categories: list, limit: int, max_new_tokens: int, run_name: str, shard_id: int):
-    """One container handles a subset of categories, writing its own shard file."""
+def run_shard(categories: list, limit: int, max_new_tokens: int, run_name: str,
+              shard_id: int, split: str = "test"):
+    """One container handles a subset of domains, writing its own shard file."""
     import torch
     shard_run = f"{run_name}_shard{shard_id}"
     print(f"[shard {shard_id}] {torch.cuda.get_device_name(0)} -> {categories}", flush=True)
@@ -126,6 +149,9 @@ def run_shard(categories: list, limit: int, max_new_tokens: int, run_name: str, 
         "--limit", str(limit),
         "--max-new-tokens", str(max_new_tokens),
         "--out-dir", "/data/results",
+        "--prompt-source", "datagen",
+        "--split", split,
+        "--datagen-dir", _CONTAINER_DATAGEN,
         "--resume",
         "--categories", *categories,
     ]
@@ -152,6 +178,8 @@ def merge_and_aggregate(run_name: str):
                         n += 1
     print(f"[merge] {len(shard_files)} shards -> {merged} ({n} rows)")
     subprocess.run(["python", "/root/aggregate.py", merged], cwd="/root", check=True)
+    subprocess.run(["python", "/root/make_charts.py",
+                    f"{out_dir}/{run_name}_by_category.csv"], cwd="/root", check=False)
     results_vol.commit()
     with open(f"{out_dir}/{run_name}_report.md") as f:
         report = f.read()
@@ -177,19 +205,29 @@ def _save_local(out):
     print("Re-download later with:  modal volume get dflash-bench-results results ./")
 
 
+def _datagen_domains():
+    """Domain names = subdirectories of DataGen/data (must be generated first)."""
+    if not _DATAGEN_DATA.exists():
+        raise SystemExit(
+            f"No datasets at {_DATAGEN_DATA}.\n"
+            f"Generate them first:  cd ../DataGen && python generate.py --group all")
+    return sorted(p.name for p in _DATAGEN_DATA.iterdir() if p.is_dir())
+
+
 @app.local_entrypoint()
 def main(
     limit: int = 100,
     max_new_tokens: int = 512,
     categories: str = "all",
     run_name: str = "dflash_bench",
+    split: str = "test",
     no_baseline: bool = False,
     resume: bool = True,
 ):
     """Single-container run (good for smoke tests / subsets)."""
     out = run_benchmark.remote(
         limit=limit, max_new_tokens=max_new_tokens, categories=categories,
-        run_name=run_name, no_baseline=no_baseline, resume=resume,
+        run_name=run_name, split=split, no_baseline=no_baseline, resume=resume,
     )
     _save_local(out)
 
@@ -199,18 +237,19 @@ def full(
     limit: int = 100,
     max_new_tokens: int = 512,
     run_name: str = "dflash_bench",
-    shards: int = 7,
+    split: str = "test",
+    shards: int = 8,
 ):
-    """Parallel run: shard all 28 domains across `shards` GPU containers, then merge."""
-    from prompts import build_prompts
-    all_cats = list(build_prompts(1).keys())
+    """Parallel run: shard all DataGen domains across `shards` GPU containers, then merge."""
+    all_cats = _datagen_domains()
     groups = [all_cats[i::shards] for i in range(shards)]          # round-robin shard
     groups = [g for g in groups if g]
-    print(f"[full] {len(all_cats)} domains x {limit} prompts across {len(groups)} shards:")
+    print(f"[full] {len(all_cats)} domains x {limit} prompts across {len(groups)} shards "
+          f"(split={split}):")
     for i, g in enumerate(groups):
         print(f"   shard {i}: {g}")
 
-    tasks = [(g, limit, max_new_tokens, run_name, i) for i, g in enumerate(groups)]
+    tasks = [(g, limit, max_new_tokens, run_name, i, split) for i, g in enumerate(groups)]
     done = list(run_shard.starmap(tasks))                          # runs shards in parallel
     print(f"[full] shards complete: {done}")
 

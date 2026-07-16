@@ -41,6 +41,8 @@ import argparse
 import json
 import os
 import time
+from collections import OrderedDict
+from pathlib import Path
 
 import torch
 
@@ -50,15 +52,78 @@ from spec_patch import make_instrumented_spec_generate
 DRAFT_MODEL = "z-lab/Qwen3-8B-DFlash-b16"
 TARGET_MODEL = "Qwen/Qwen3-8B"
 
+# Paths are resolved relative to this file so the script works from any CWD,
+# including after it was moved into scripts/.  scripts/ -> parent is the
+# "Benchmarking domains" root, which holds DataGen/ and results/.
+_ROOT = Path(__file__).resolve().parent.parent
+DEFAULT_OUT_DIR = _ROOT / "results"
+DEFAULT_DATAGEN_DIR = _ROOT / "DataGen" / "data"
+
+# DataGen domain-key prefixes -> group name, for --categories languages/coding/...
+_DATAGEN_GROUP_PREFIX = OrderedDict([
+    ("lang_", "languages"),
+    ("code_", "coding"),
+    ("task_", "tasks"),
+    ("ood_", "ood"),
+])
+
+
+def datagen_groups(all_cats):
+    """Build a {group: [domain,...]} map from DataGen domain keys by prefix."""
+    groups = OrderedDict((g, []) for g in _DATAGEN_GROUP_PREFIX.values())
+    for c in all_cats:
+        for pref, g in _DATAGEN_GROUP_PREFIX.items():
+            if c.startswith(pref):
+                groups[g].append(c)
+                break
+    return OrderedDict((g, v) for g, v in groups.items() if v)
+
+
+def load_datagen_prompts(datagen_dir, split):
+    """Read DataGen/data/<domain>/<split>.jsonl for every domain.
+
+    Returns an OrderedDict {domain: [prompt, ...]}.  This is the intended
+    source for the benchmark: run the drafter+target over the held-out test
+    split of each generated domain.
+    """
+    base = Path(datagen_dir)
+    if not base.exists():
+        raise SystemExit(
+            f"DataGen dir not found: {base}\n"
+            f"Generate datasets first:  cd ../DataGen && python generate.py --group all")
+    data = OrderedDict()
+    for domain_dir in sorted(p for p in base.iterdir() if p.is_dir()):
+        f = domain_dir / f"{split}.jsonl"
+        if not f.exists():
+            continue
+        prompts = []
+        with f.open(encoding="utf-8") as fh:
+            for line in fh:
+                line = line.strip()
+                if line:
+                    prompts.append(json.loads(line)["prompt"])
+        if prompts:
+            data[domain_dir.name] = prompts
+    if not data:
+        raise SystemExit(f"No <domain>/{split}.jsonl files under {base}")
+    return data
+
 
 def parse_args():
     p = argparse.ArgumentParser(description="DFlash domain benchmark")
     p.add_argument("--draft-model", default=DRAFT_MODEL)
     p.add_argument("--target-model", default=TARGET_MODEL)
+    p.add_argument("--prompt-source", choices=["datagen", "legacy"], default="datagen",
+                   help="datagen = DataGen/data/<domain>/<split>.jsonl (default); "
+                        "legacy = the deterministic prompts.py generator")
+    p.add_argument("--split", choices=["train", "val", "test"], default="test",
+                   help="which DataGen split to benchmark (default: test)")
+    p.add_argument("--datagen-dir", default=str(DEFAULT_DATAGEN_DIR),
+                   help="path to DataGen/data (default: resolved next to this script)")
     p.add_argument("--limit", type=int, default=100,
-                   help="prompts per category (max 100)")
+                   help="prompts per category (max = split size)")
     p.add_argument("--categories", nargs="*", default=None,
-                   help="subset of category names, or a group: languages/coding/tasks/all")
+                   help="subset of domain names, or a group: languages/coding/tasks/ood/all")
     p.add_argument("--max-new-tokens", type=int, default=512)
     p.add_argument("--temperature", type=float, default=0.0,
                    help="0.0 => greedy/lossless (enables correctness check)")
@@ -69,25 +134,25 @@ def parse_args():
                    help="attention implementation for both models")
     p.add_argument("--device", default="cuda:0")
     p.add_argument("--run-name", default="dflash_bench")
-    p.add_argument("--out-dir", default="results")
+    p.add_argument("--out-dir", default=str(DEFAULT_OUT_DIR))
     p.add_argument("--warmup", type=int, default=2, help="warmup generations before timing")
     p.add_argument("--resume", action="store_true",
                    help="skip (category,idx) pairs already present in the output file")
     return p.parse_args()
 
 
-def resolve_categories(all_cats, requested):
+def resolve_categories(all_cats, requested, groups):
     if not requested or requested == ["all"]:
         return list(all_cats)
     out = []
     for r in requested:
-        if r in CATEGORY_GROUPS:
-            out.extend(CATEGORY_GROUPS[r])
+        if r in groups:
+            out.extend(groups[r])
         elif r in all_cats:
             out.append(r)
         else:
             raise SystemExit(f"Unknown category/group: {r!r}. "
-                             f"Groups: {list(CATEGORY_GROUPS)}. "
+                             f"Groups: {list(groups)}. "
                              f"Categories: {list(all_cats)}")
     # de-dup, keep order
     seen, uniq = set(), []
@@ -228,10 +293,17 @@ def main():
         mode = "a"
         print(f"[resume] {len(done)} results already present, appending")
 
-    all_prompts = build_prompts(100)
-    cats = resolve_categories(all_prompts, args.categories)
-    limit = min(args.limit, 100)
-    print(f"[plan] {len(cats)} categories x {limit} prompts = {len(cats) * limit} prompts")
+    if args.prompt_source == "datagen":
+        all_prompts = load_datagen_prompts(args.datagen_dir, args.split)
+        groups = datagen_groups(all_prompts.keys())
+        print(f"[data] DataGen split '{args.split}' from {args.datagen_dir} "
+              f"({len(all_prompts)} domains)")
+    else:
+        all_prompts = build_prompts(100)
+        groups = CATEGORY_GROUPS
+    cats = resolve_categories(all_prompts, args.categories, groups)
+    limit = args.limit
+    print(f"[plan] {len(cats)} categories x up to {limit} prompts")
     print(f"[plan] baseline={'off' if args.no_baseline else 'on'} "
           f"max_new_tokens={args.max_new_tokens} temp={args.temperature} attn={args.attn}")
 
