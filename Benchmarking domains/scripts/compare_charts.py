@@ -48,16 +48,14 @@ def load_csv(path):
 
 
 # metric column -> (chart title, x-axis label, filename suffix, is_percent)
-# mean_accept_length is framed as SPEEDUP: it's tokens committed per 8B target
-# forward pass, i.e. the factor by which the speculator cuts target passes vs
-# target-only greedy (which commits 1 token/pass = 1.0x). Same target for both
-# speculators, so it's directly comparable; batch/hardware independent.
+# Two plain metrics — NOT speedup: mean accept length ignores the drafter's launch/
+# overhead latency, so it isn't a true speed number.
 _METRICS = OrderedDict([
     ("acceptance_rate_pooled",
-     ("Speculator acceptance rate by domain", "Pooled acceptance rate", "acceptance", True)),
+     ("Speculator acceptance rate by domain", "Mean acceptance rate", "acceptance", True)),
     ("mean_accept_length",
-     ("Speculator speedup by domain (8B target passes saved)",
-      "Speedup ×  (tokens per target pass; target-only = 1.0×)", "speedup", False)),
+     ("Speculator mean length accepted by domain",
+      "Mean length accepted (tokens per target pass)", "mean_len", False)),
 ])
 
 
@@ -79,8 +77,6 @@ def _plot_metric(plt, runs, all_domains, col, out_dir, tag):
         vals = [data.get(c, {}).get(col, 0.0) for c in all_domains]
         ax.barh(offs, vals, height=bar_h, label=label,
                 color=_RUN_COLORS[ri % len(_RUN_COLORS)])
-    if col == "mean_accept_length":  # target-only baseline reference
-        ax.axvline(1.0, color="gray", ls="--", lw=1, alpha=0.7, zorder=0)
     ax.set_yticks(list(y))
     ax.set_yticklabels(all_domains, fontsize=7)
     ax.invert_yaxis()

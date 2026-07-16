@@ -22,15 +22,14 @@ METHOD_COLORS = {"dflash": "#4E79A7", "eagle3": "#E15759"}
 SOURCE_ORDER = ["synthetic", "wild", "downloaded"]
 
 # metric -> (title, y-label, output stem, is_percent)
-# mean_accept_length is shown as SPEEDUP = tokens per 8B target pass = the factor
-# by which the speculator cuts expensive target passes (target-only greedy = 1.0x).
+# Two plain metrics — NOT speedup (mean accept length ignores drafter launch/overhead).
 _METRICS = OrderedDict([
     ("acceptance_rate_pooled",
-     ("Acceptance rate by source & speculator", "Mean pooled acceptance rate",
+     ("Acceptance rate by source & speculator", "Mean acceptance rate",
       "overview_acceptance", True)),
     ("mean_accept_length",
-     ("Speedup by source & speculator (8B target passes saved)",
-      "Speedup ×  (target-only = 1.0×)", "overview_speedup", False)),
+     ("Mean length accepted by source & speculator", "Mean length accepted (tokens/pass)",
+      "overview_mean_len", False)),
 ])
 
 
@@ -93,11 +92,8 @@ def main():
             ax.bar(offs, vals, width=bar_w, label=method,
                    color=METHOD_COLORS.get(method, f"C{mi}"))
             for xo, v in zip(offs, vals):
-                ax.text(xo, v, f"{v*100:.0f}%" if is_pct else f"{v:.2f}×",
+                ax.text(xo, v, f"{v*100:.0f}%" if is_pct else f"{v:.2f}",
                         ha="center", va="bottom", fontsize=8)
-        if col == "mean_accept_length":  # target-only baseline
-            ax.axhline(1.0, color="gray", ls="--", lw=1, alpha=0.7,
-                       label="target-only (1.0×)")
         ax.set_xticks(list(x))
         ax.set_xticklabels(sources)
         ax.set_ylabel(ylabel)
