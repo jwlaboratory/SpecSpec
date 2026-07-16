@@ -106,7 +106,38 @@ def main():
         plt.close(fig)
         print(f"[wrote] {out}")
 
-    print("\nOverall means (acceptance / mean accept length):")
+    # combined: both metrics overlaid — acceptance as bars (left axis),
+    # mean length accepted as diamond markers (right axis).
+    n_m = len(methods)
+    x = range(len(sources))
+    bar_w = 0.8 / n_m
+    fig, ax1 = plt.subplots(figsize=(max(6, 1.9 * len(sources) + 2), 5))
+    ax2 = ax1.twinx()
+    for mi, method in enumerate(methods):
+        offs = [i + (mi - (n_m - 1) / 2) * bar_w for i in x]
+        acc = [scores["acceptance_rate_pooled"][s].get(method, 0.0) for s in sources]
+        mln = [scores["mean_accept_length"][s].get(method, 0.0) for s in sources]
+        color = METHOD_COLORS.get(method, f"C{mi}")
+        ax1.bar(offs, acc, width=bar_w, color=color, alpha=0.85,
+                label=f"{method} — acceptance")
+        ax2.plot(offs, mln, "D", color=color, markersize=11, markeredgecolor="black",
+                 markeredgewidth=0.8, label=f"{method} — mean length")
+    ax1.set_xticks(list(x))
+    ax1.set_xticklabels(sources)
+    ax1.set_ylabel("Acceptance rate  (bars)")
+    ax2.set_ylabel("Mean length accepted, tokens/pass  (diamonds)")
+    ax1.set_title("Acceptance rate + mean length accepted — by source & speculator",
+                  fontsize=12, fontweight="bold")
+    ax1.grid(axis="y", alpha=0.3)
+    h1, l1 = ax1.get_legend_handles_labels()
+    h2, l2 = ax2.get_legend_handles_labels()
+    ax1.legend(h1 + h2, l1 + l2, fontsize=8, loc="upper left")
+    fig.tight_layout()
+    fig.savefig(out_dir / "overview_combined.png", dpi=140)
+    plt.close(fig)
+    print(f"[wrote] {out_dir / 'overview_combined.png'}")
+
+    print("\nOverall means (acceptance / mean length accepted):")
     for s in sources:
         for m in methods:
             a = scores["acceptance_rate_pooled"][s].get(m)
