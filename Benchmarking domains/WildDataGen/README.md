@@ -40,6 +40,30 @@ Flags: `--splits TRAIN VAL TEST` (default `800 100 100`), `--n N` (8:1:1 shortha
 `--domains`/`--group`, `--classifier {heuristic,claude}`, `--model`, `--max-scan`,
 `--min-len`/`--max-len`, `--keep-toxic`, `--dataset`, `--overwrite`, `--dry-run`.
 
+## Dedicated sources for specialised domains (`sources.py`)
+
+WildChat is general chat, so its **specialised** buckets (medical, legal, financial,
+SQL/data-analysis) come up thin. `sources.py` fills those from **purpose-built public
+datasets** instead — no classification needed, the whole dataset *is* the domain:
+
+| Domain | Dataset |
+|---|---|
+| `ood_medical` | `keivalya/MedQuAD-MedicalQnADataset` (real medical Q&A) |
+| `ood_financial` | `gbharti/finance-alpaca` |
+| `ood_legal` | `nguha/legalbench` (consumer-contract Q&A) |
+| `code_sql` | `b-mc2/sql-create-context` (text-to-SQL with schema) |
+
+```bash
+python sources.py --list                 # show the registry
+python sources.py --group all            # fill all dedicated domains into ../data/wild
+```
+
+Writes to the same `../data/wild/<domain>/` tree as the WildChat sort — **run it
+after `sort.py`** so the dedicated (higher-quality) data overwrites WildChat's thin
+versions for those domains. Add more domains by dropping an entry in `SOURCES`
+(e.g. `bitext/...` for customer support, `openai_humaneval` for code, `HuggingFaceH4/no_robots`
+for general human prompts).
+
 ## Two classifiers
 
 | | Heuristic (default) | Claude (`--classifier claude`) |
