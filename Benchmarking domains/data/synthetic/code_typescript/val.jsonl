@@ -1,0 +1,100 @@
+{"prompt": "why does this throw 'possibly undefined': const x = obj?.a.b", "domain": "code_typescript"}
+{"prompt": "What is the difference between an interface extending another interface versus a class implementing an interface?", "domain": "code_typescript"}
+{"prompt": "Explain the difference between `unknown` and `any` when narrowing types inside a function, with an example showing why `unknown` is safer.", "domain": "code_typescript"}
+{"prompt": "Should I prefer `readonly` arrays and tuples throughout my domain models, or is that overkill for most projects?", "domain": "code_typescript"}
+{"prompt": "Here's a function that's supposed to debounce calls but it fires immediately every time: `function debounce(fn: Function, ms: number) { let t: any; return (...args: any[]) => { clearTimeout(t); fn(...args); t = setTimeout(() => {}, ms); }; }` Can you fix it and add proper types?", "domain": "code_typescript"}
+{"prompt": "I want to implement a simple pub-sub system with typed topics, where subscribing to `'order:created'` gives me an `Order` object and subscribing to `'user:deleted'` gives me a `{ userId: string }` object. Can you design the types and the `subscribe`/`publish` API so mismatched payloads are compile-time errors?", "domain": "code_typescript"}
+{"prompt": "Write a function that merges two sorted arrays, typed with generics.", "domain": "code_typescript"}
+{"prompt": "Walk me through writing a TypeScript function that validates an object shape at runtime and narrows its type accordingly.", "domain": "code_typescript"}
+{"prompt": "I'm trying to loop over an object's properties in TypeScript but keep getting type errors. Can you show the correct way to do this?\n```ts\nconst config = { debug: true, retries: 3 };\nfor (const key in config) {\n  console.log(config[key]);\n}\n```", "domain": "code_typescript"}
+{"prompt": "Explain the difference between `unknown`, `any`, and `never` in TypeScript with concrete examples of where each is the correct choice in a real API client.", "domain": "code_typescript"}
+{"prompt": "Write a typed singleton pattern in TypeScript.", "domain": "code_typescript"}
+{"prompt": "How does the `satisfies` operator differ from a type annotation? Show an example where using `satisfies` catches an error that a plain annotation would miss.", "domain": "code_typescript"}
+{"prompt": "Write a custom type guard function `isNonNullable<T>` and demonstrate how using it inside `.filter()` correctly narrows the resulting array type from `(T | null | undefined)[]` to `T[]`.", "domain": "code_typescript"}
+{"prompt": "Walk me through converting this Promise-chain code into async/await while preserving the original error handling behavior.", "domain": "code_typescript"}
+{"prompt": "This event listener setup seems to be leaking memory over time — can you spot the bug and fix it?\n```ts\nclass Widget {\n  constructor(private el: HTMLElement) {\n    window.addEventListener('resize', this.onResize);\n  }\n  onResize = () => console.log('resized', this.el);\n}\n```", "domain": "code_typescript"}
+{"prompt": "Write a TypeScript implementation of a LRU cache class with `get` and `put` methods running in O(1) time.", "domain": "code_typescript"}
+{"prompt": "Can you show how to use template literal types to enforce that a string matches a specific pattern, like a hex color code `#RRGGBB`?", "domain": "code_typescript"}
+{"prompt": "I just enabled strictNullChecks and now dozens of errors appeared across the codebase — what's the general strategy for fixing this incrementally?", "domain": "code_typescript"}
+{"prompt": "Explain the difference between `readonly` arrays and regular arrays.", "domain": "code_typescript"}
+{"prompt": "Write a rate limiter class in TypeScript using the token bucket algorithm, with a method that returns whether a request is allowed, and include comments explaining the refill logic.", "domain": "code_typescript"}
+{"prompt": "Can you show me step by step how to debug this TypeScript error: 'Type 'string | undefined' is not assignable to type 'string'' when reading from `process.env.API_KEY`?", "domain": "code_typescript"}
+{"prompt": "fix this: const arr: number[] = ['1','2']", "domain": "code_typescript"}
+{"prompt": "write a typed event emitter class where the event map is defined generically and emit/on are fully type-safe", "domain": "code_typescript"}
+{"prompt": "Implement a LRU cache class with a generic key/value type.", "domain": "code_typescript"}
+{"prompt": "I want to model a graph as an adjacency list in TypeScript and implement both breadth-first and depth-first traversal functions that return the visited nodes in order. Can you write this with generics so it works for any node type, not just numbers or strings?", "domain": "code_typescript"}
+{"prompt": "How do function overloads work in TypeScript? Write overloaded signatures for a `parseInput` function that returns a `number` when given a numeric string and a `Date` when given a date string.", "domain": "code_typescript"}
+{"prompt": "what's the cleanest way to discriminate between multiple response types from an api call using typescript unions", "domain": "code_typescript"}
+{"prompt": "how would you type a function overload set for a parse function that returns a number when given a numeric string and a string otherwise", "domain": "code_typescript"}
+{"prompt": "Should I use `as const` assertions or explicit literal types when defining configuration objects? Explain the differences with an example.", "domain": "code_typescript"}
+{"prompt": "Can you write unit tests using Vitest for this utility function, covering edge cases like empty arrays and duplicate values?\n```ts\nfunction unique<T>(arr: T[]): T[] {\n  return [...new Set(arr)];\n}\n```", "domain": "code_typescript"}
+{"prompt": "I'm getting an error when trying to use `this` inside a standalone function meant to be used as a method. How do I type the `this` parameter correctly?\n```ts\nfunction greet() {\n  return `Hello, ${this.name}`;\n}\n```", "domain": "code_typescript"}
+{"prompt": "Write a generic `Result<T, E>` type with `ok` and `err` helper constructors, and show how to use it to replace throwing exceptions in an async function that fetches user data.", "domain": "code_typescript"}
+{"prompt": "Fix the type error on this line: `const x: string = 5;`", "domain": "code_typescript"}
+{"prompt": "What does the question mark mean in this function parameter, and how does it behave differently from a normal parameter?\n\nfunction greet(name?: string) {\n  console.log(name);\n}", "domain": "code_typescript"}
+{"prompt": "can you explain why this type guard function isn't narrowing properly: function isString(x: unknown): boolean { return typeof x === 'string'; }", "domain": "code_typescript"}
+{"prompt": "Debug why this async function returns `Promise<void>` instead of the value.", "domain": "code_typescript"}
+{"prompt": "write a generic memoize function in TypeScript that preserves the original function's parameter and return types", "domain": "code_typescript"}
+{"prompt": "how do I create a mapped type that makes all properties of an object readonly except for one specified key", "domain": "code_typescript"}
+{"prompt": "Can you walk me through fixing this bug where a closure inside a loop captures the wrong variable? `for (var i = 0; i < 3; i++) { setTimeout(() => console.log(i), 100); }`", "domain": "code_typescript"}
+{"prompt": "What's your opinion on using `satisfies` versus explicit type annotations for config objects in TypeScript 4.9+?", "domain": "code_typescript"}
+{"prompt": "Refactor this switch statement into a more idiomatic TypeScript pattern using a discriminated union and exhaustive checking with 'never', so the compiler warns me if I forget a case.\n\nfunction area(shape: any) {\n  switch (shape.kind) {\n    case 'circle': return Math.PI * shape.radius ** 2;\n    case 'square': return shape.side * shape.side;\n  }\n}", "domain": "code_typescript"}
+{"prompt": "Write a function to detect a cycle in a singly linked list using Floyd's algorithm, with proper TypeScript generics for the node type.", "domain": "code_typescript"}
+{"prompt": "I'm confused about why `this` parameter typing is needed in some function signatures. Can you show an example where declaring `this: void` prevents a bug?", "domain": "code_typescript"}
+{"prompt": "I have a large union type of over twenty string literals representing event names, and I want to generate a mapped object type where each key is one of those events and the value is a handler function type. Can you show how to do this concisely without repeating the union?", "domain": "code_typescript"}
+{"prompt": "how do I use module augmentation to add a custom property to the Express Request interface", "domain": "code_typescript"}
+{"prompt": "How can I add strict typing to this Express route handler that currently uses `req: any, res: any`?", "domain": "code_typescript"}
+{"prompt": "Show me step by step how to set up a typed reducer function for a simple counter using discriminated unions for actions.", "domain": "code_typescript"}
+{"prompt": "What's the correct way to type a React component's children prop?", "domain": "code_typescript"}
+{"prompt": "How would I approach writing a generic `deepClone` function in TypeScript that preserves types for nested objects and arrays, step by step?", "domain": "code_typescript"}
+{"prompt": "I have an array of mixed types and want to filter out only the numbers with correct TypeScript typing. Can you show how?\n```ts\nconst items = [1, 'two', 3, 'four', 5];\n```", "domain": "code_typescript"}
+{"prompt": "I'm torn between Prisma and TypeORM for a typed database layer. Can you compare their approaches to type generation and query safety?", "domain": "code_typescript"}
+{"prompt": "Can you explain template literal types with an example that extracts route parameters from a string like `/users/:id/posts/:postId`?", "domain": "code_typescript"}
+{"prompt": "Compare GraphQL Codegen and manually written TypeScript types for keeping frontend types in sync with a GraphQL schema.", "domain": "code_typescript"}
+{"prompt": "write a function to flatten a nested array with correct typing", "domain": "code_typescript"}
+{"prompt": "write a utility type that extracts the keys of an object whose values are functions", "domain": "code_typescript"}
+{"prompt": "Refactor this callback-based function into an async/await version with proper typed error handling: `function fetchUser(id: string, cb: (err: Error | null, user?: User) => void) { db.get(id, cb); }`", "domain": "code_typescript"}
+{"prompt": "Can you explain the difference between `Record<string, T>` and using a `Map<string, T>` in TypeScript, including performance considerations, iteration order guarantees, and when you'd prefer one over the other for something like a cache?", "domain": "code_typescript"}
+{"prompt": "explain satisfies keyword", "domain": "code_typescript"}
+{"prompt": "Why is this union type not narrowing inside the if block?\n```ts\nfunction f(x: string | number) {\n  if (typeof x === 'string') {\n    x.toFixed(2);\n  }\n}\n```", "domain": "code_typescript"}
+{"prompt": "Write a typed implementation of a simple dependency injection container in TypeScript, supporting registering singletons and transient services, and resolving them by a string token or class constructor.", "domain": "code_typescript"}
+{"prompt": "Walk me through, step by step, how TypeScript's structural typing determines whether two object types are compatible, and give a concrete example where two differently-named interfaces are still assignable to each other.", "domain": "code_typescript"}
+{"prompt": "fix this: interface Props { onClick: () => void, children } — TS is complaining about children", "domain": "code_typescript"}
+{"prompt": "Refactor this switch statement into a lookup object.", "domain": "code_typescript"}
+{"prompt": "I have two files that import from each other and TypeScript compiles fine but at runtime one of the imported values is undefined. Can you explain why this happens with ES modules and how to restructure the code to fix it?\n\n// a.ts\nimport { b } from './b';\nexport const a = 'A' + b;\n\n// b.ts\nimport { a } from './a';\nexport const b = 'B' + a;", "domain": "code_typescript"}
+{"prompt": "Write a simple TypeScript type alias for a `Point` with x and y coordinates, and a function `distance` that calculates the distance between two points.", "domain": "code_typescript"}
+{"prompt": "How do project references work in a TypeScript monorepo, and what's the minimal tsconfig setup for two packages that depend on each other?", "domain": "code_typescript"}
+{"prompt": "I need to implement a binary search tree in TypeScript with `insert`, `contains`, and an in-order traversal that returns a sorted array. Please make it generic over a comparable value type and include a brief explanation of the time complexity of each operation.", "domain": "code_typescript"}
+{"prompt": "What's the practical difference between using `interface` versus `type` for defining object shapes in a large TypeScript codebase, and when would you pick one over the other?", "domain": "code_typescript"}
+{"prompt": "Explain the performance and type-safety trade-offs between `JSON.parse` with a manual cast versus a schema-validated parse using a library like `io-ts`.", "domain": "code_typescript"}
+{"prompt": "Convert this JS class to TypeScript with strict types.", "domain": "code_typescript"}
+{"prompt": "write a typed implementation of a trie data structure with insert and search methods for autocomplete", "domain": "code_typescript"}
+{"prompt": "I want a function that checks if a number is even. Can you write it in TypeScript with proper types?", "domain": "code_typescript"}
+{"prompt": "how do I type a React component that accepts children and an optional className prop", "domain": "code_typescript"}
+{"prompt": "Should this TypeScript project use `unknown` for catch block error typing instead of `any`, and how would you refactor it?", "domain": "code_typescript"}
+{"prompt": "Explain the difference between `interface` and `type`.", "domain": "code_typescript"}
+{"prompt": "My TypeScript code throws 'Property does not exist on type' when I try to add a new field to an object. Can you explain why and show the fix?\n```ts\nconst user = { name: 'Alice' };\nuser.age = 30;\n```", "domain": "code_typescript"}
+{"prompt": "Write a typed LRU cache class in TypeScript with a configurable max size, using a `Map` under the hood.", "domain": "code_typescript"}
+{"prompt": "fix the circular import issue in these two files", "domain": "code_typescript"}
+{"prompt": "Walk me through converting this JavaScript reducer to TypeScript with a discriminated union for the action types. The actions are `{ type: 'increment', payload: number }`, `{ type: 'decrement', payload: number }`, and `{ type: 'reset' }`. I want exhaustive switch checking so that if I add a new action type later, TypeScript forces me to handle it.", "domain": "code_typescript"}
+{"prompt": "write a function to deep clone an object in TypeScript, handling nested arrays and objects", "domain": "code_typescript"}
+{"prompt": "Write a debounce function whose TypeScript signature preserves the exact parameter types and return type of the wrapped function, including overloads if needed.", "domain": "code_typescript"}
+{"prompt": "What's the difference between `interface` and `type` in TypeScript for defining object shapes, and are there cases where one is strictly required over the other? Please give concrete examples involving declaration merging and union types.", "domain": "code_typescript"}
+{"prompt": "What's wrong with this generic constraint: `function foo<T extends object>(x: T): T {}`?", "domain": "code_typescript"}
+{"prompt": "can you convert this Redux reducer to use Redux Toolkit's createSlice with proper action typing: function reducer(state = initialState, action) { switch(action.type) { case 'INCREMENT': return {...state, count: state.count + 1}; default: return state; } }", "domain": "code_typescript"}
+{"prompt": "Write a generic 'Result<T, E>' type for error handling without exceptions, plus helper functions 'ok' and 'err'.", "domain": "code_typescript"}
+{"prompt": "Walk me through building a simple pub-sub system with typed topics and payloads, from interface design to implementation.", "domain": "code_typescript"}
+{"prompt": "Here's a type error I don't understand: `const arr: readonly number[] = [1, 2, 3]; arr.push(4);` TypeScript says `push` doesn't exist on type `readonly number[]`. Can you explain why readonly arrays don't have mutating methods and what the recommended pattern is if I need to derive a new array instead?", "domain": "code_typescript"}
+{"prompt": "Step by step, help me understand this conditional type and why it resolves differently than expected: `type ElementType<T> = T extends (infer U)[] ? U : T;`", "domain": "code_typescript"}
+{"prompt": "this generic function isn't inferring the return type correctly, can you take a look? function wrap<T>(val: T) { return { value: val }; }", "domain": "code_typescript"}
+{"prompt": "What would you recommend for handling circular type references between two modules that both need to reference each other's types?", "domain": "code_typescript"}
+{"prompt": "I want a type-safe `pipe` function that composes multiple typed transformation functions left to right. How would you type it?", "domain": "code_typescript"}
+{"prompt": "Explain how the `infer` keyword works inside conditional types, with a concrete example extracting the return type of a function.", "domain": "code_typescript"}
+{"prompt": "Write a recursive factorial function with proper typing.", "domain": "code_typescript"}
+{"prompt": "how do I type a React useState hook for an array of objects", "domain": "code_typescript"}
+{"prompt": "refactor this promise chain into async/await syntax: getUser().then(u => getPosts(u.id)).then(posts => render(posts));", "domain": "code_typescript"}
+{"prompt": "I wrote a quicksort implementation but it's failing on arrays with duplicate values and I can't figure out why. Can you find the bug and fix it?\n\nfunction quicksort(arr: number[]): number[] {\n  if (arr.length <= 1) return arr;\n  const pivot = arr[0];\n  const left = arr.filter(x => x < pivot);\n  const right = arr.filter(x => x > pivot);\n  return [...quicksort(left), pivot, ...quicksort(right)];\n}", "domain": "code_typescript"}
+{"prompt": "write a type-safe event emitter class", "domain": "code_typescript"}
+{"prompt": "I need to decide between `Omit<T, K>` and manually redefining a type without certain fields. What are the maintainability trade-offs?", "domain": "code_typescript"}
+{"prompt": "Explain the concept of type guards versus type assertions in TypeScript, and rewrite this function to use a proper user-defined type guard instead of an unsafe `as` cast.\n```ts\nfunction processInput(input: unknown) {\n  const str = input as string;\n  return str.toUpperCase();\n}\n```", "domain": "code_typescript"}
+{"prompt": "I want to strongly type a Redux-style reducer using a discriminated union of actions. Can you write an example with `ADD_TODO` and `REMOVE_TODO` action types?", "domain": "code_typescript"}

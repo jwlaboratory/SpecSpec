@@ -1,0 +1,100 @@
+{"prompt": "What's the easiest way in Kotlin to convert a list of numbers into a comma-separated string? Can you show me using `joinToString`?", "domain": "code_kotlin"}
+{"prompt": "I'm new to Kotlin — can you explain what `when` does and how it's different from a `switch` statement in other languages?", "domain": "code_kotlin"}
+{"prompt": "write a function that checks if two strings are anagrams of each other", "domain": "code_kotlin"}
+{"prompt": "How do I properly use sealed classes with generics to model a Either<L, R> type in Kotlin, including map and flatMap functions?", "domain": "code_kotlin"}
+{"prompt": "What's the difference between 'val' and 'var' in Kotlin, and can you show a quick example of when using 'val' prevents a bug?", "domain": "code_kotlin"}
+{"prompt": "Implement a thread-safe LRU cache in Kotlin using a `LinkedHashMap` with `accessOrder` set to true, wrapped with a `Mutex` from kotlinx.coroutines.", "domain": "code_kotlin"}
+{"prompt": "Should I favor composition over inheritance when designing this class hierarchy in Kotlin, and if so, how would you refactor it?\n```kotlin\nopen class Animal { open fun speak() = println(\"...\") }\nclass Dog : Animal() { override fun speak() = println(\"Woof\") }\nclass RobotDog : Dog() { override fun speak() = println(\"Beep\") }\n```", "domain": "code_kotlin"}
+{"prompt": "Here's my attempt at a binary search implementation but it never returns for some inputs: fun binarySearch(arr: IntArray, target: Int): Int { var lo = 0; var hi = arr.size; while (lo <= hi) { val mid = (lo+hi)/2; if (arr[mid]==target) return mid; if (arr[mid]<target) lo=mid; else hi=mid }; return -1 } — can you find the bug and fix it?", "domain": "code_kotlin"}
+{"prompt": "Write a function to compute factorial using tail recursion.", "domain": "code_kotlin"}
+{"prompt": "Write a Kotlin function that detects a cycle in a singly linked list using Floyd's cycle detection algorithm.", "domain": "code_kotlin"}
+{"prompt": "Walk me through, step by step, how to implement a thread-safe singleton in Kotlin using object declaration versus the double-checked locking pattern.", "domain": "code_kotlin"}
+{"prompt": "Write a Kotlin function that removes duplicate elements from a list while preserving order.", "domain": "code_kotlin"}
+{"prompt": "can you write unit tests for this simple stack implementation using JUnit?\n```kotlin\nclass Stack<T> {\n    private val items = mutableListOf<T>()\n    fun push(item: T) = items.add(item)\n    fun pop(): T = items.removeAt(items.size - 1)\n    fun peek(): T = items.last()\n}\n```", "domain": "code_kotlin"}
+{"prompt": "Explain the difference between 'launch' and 'async'.", "domain": "code_kotlin"}
+{"prompt": "Refactor this nested null-check pyramid into a cleaner version using scope functions: if (user != null) { if (user.address != null) { if (user.address.city != null) { println(user.address.city) } } }", "domain": "code_kotlin"}
+{"prompt": "why is my Room database query returning stale data even after insert?\n```kotlin\n@Query(\"SELECT * FROM users\")\nfun getAllUsers(): List<User>\n```", "domain": "code_kotlin"}
+{"prompt": "Compare using Kotlin's `Any?` with `is` checks versus generics with reified type parameters for writing a type-safe event bus.", "domain": "code_kotlin"}
+{"prompt": "Explain the difference between 'lazy' delegation modes (SYNCHRONIZED, PUBLICATION, NONE) in Kotlin and when you'd pick each one in a multithreaded context.", "domain": "code_kotlin"}
+{"prompt": "Can you show how to use `runCatching` to chain multiple operations that might throw, and then handle both success and failure cases with `fold`?", "domain": "code_kotlin"}
+{"prompt": "Can you explain what default arguments are in Kotlin functions, and rewrite this function to use one instead of overloading it twice?\n```kotlin\nfun greet(name: String) = println(\"Hello, $name!\")\nfun greet() = println(\"Hello, there!\")\n```", "domain": "code_kotlin"}
+{"prompt": "Explain star projection in Kotlin generics — why does 'List<*>' behave differently from 'List<Any?>', and when should I use each?", "domain": "code_kotlin"}
+{"prompt": "I'm getting a `StackOverflowError` in this recursive data class `toString` override — can you spot the issue?\n```kotlin\ndata class Node(val value: Int, val parent: Node?) {\n    override fun toString(): String = \"Node($value, parent=${parent})\"\n}", "domain": "code_kotlin"}
+{"prompt": "Add logging to this function without changing its return type.\nfun divide(a: Int, b: Int) = a / b", "domain": "code_kotlin"}
+{"prompt": "Walk me through debugging this Kotlin code that throws a `NullPointerException` even though I used a nullable type:\n```kotlin\nval name: String? = getName()\nprintln(name.length)\n```", "domain": "code_kotlin"}
+{"prompt": "How do I write a custom Kotlin DSL builder for constructing HTML-like markup, similar to kotlinx.html, using lambda receivers?", "domain": "code_kotlin"}
+{"prompt": "how do I sort a list of custom objects by two fields, first by age then by name, in Kotlin?", "domain": "code_kotlin"}
+{"prompt": "Explain sealed classes vs enum classes.", "domain": "code_kotlin"}
+{"prompt": "Explain the difference between `SharedFlow` and `StateFlow`.", "domain": "code_kotlin"}
+{"prompt": "Write a Kotlin implementation of a binary search tree with insert, delete, and in-order traversal functions.", "domain": "code_kotlin"}
+{"prompt": "can you convert this java code to kotlin? public int square(int x) { return x * x; }", "domain": "code_kotlin"}
+{"prompt": "can you find the bug in this code? it should reverse a linked list but it's looping forever", "domain": "code_kotlin"}
+{"prompt": "What's better for concurrency in a Kotlin backend service: coroutines with structured concurrency, or traditional thread pools with `ExecutorService`? Discuss trade-offs.", "domain": "code_kotlin"}
+{"prompt": "What's the difference between 'in' and 'out' variance annotations in Kotlin generics, and why does this fail to compile?\nclass Box<out T>(val value: T) { fun set(item: T) { } }", "domain": "code_kotlin"}
+{"prompt": "Optimize this recursive Fibonacci function that's exponential time: fun fib(n: Int): Long = if (n < 2) n.toLong() else fib(n-1) + fib(n-2), using memoization idiomatically in Kotlin.", "domain": "code_kotlin"}
+{"prompt": "I need a Kotlin extension function on List<Int> that returns the second largest element, can you write it?", "domain": "code_kotlin"}
+{"prompt": "Explain context receivers in Kotlin (the experimental feature) and rewrite this function that takes a Logger as a parameter to instead use a context receiver.", "domain": "code_kotlin"}
+{"prompt": "Can you show me how to build a simple builder pattern in Kotlin using an idiomatic approach with apply or a DSL-style function, for constructing a complex HttpRequest object with optional headers, body, and query params?", "domain": "code_kotlin"}
+{"prompt": "I have this coroutine flow that emits duplicate values in rapid succession from a Room DAO observer, how can I refactor it to use distinctUntilChanged and conflate correctly without losing the latest emission?", "domain": "code_kotlin"}
+{"prompt": "Write a Kotlin function that merges overlapping intervals given as a list of `IntRange` and returns the merged, sorted result.", "domain": "code_kotlin"}
+{"prompt": "I've got a for loop nesting three levels deep to flatten a list of lists of lists, can you clean this up with Kotlin idioms?", "domain": "code_kotlin"}
+{"prompt": "can you optimize this bubble sort implementation, it's way too slow for large lists?", "domain": "code_kotlin"}
+{"prompt": "Explain what this Kotlin coroutine code actually does under the hood:\n```kotlin\nCoroutineScope(Dispatchers.IO).launch {\n    supervisorScope {\n        launch { doWork() }\n        launch { doMoreWork() }\n    }\n}\n```", "domain": "code_kotlin"}
+{"prompt": "Walk me through optimizing this recursive Fibonacci function in Kotlin using memoization.\n```kotlin\nfun fib(n: Int): Long {\n    return if (n <= 1) n.toLong() else fib(n - 1) + fib(n - 2)\n}\n```", "domain": "code_kotlin"}
+{"prompt": "Fix this infinite loop.\nwhile (true) { if (x == 5) x++ }", "domain": "code_kotlin"}
+{"prompt": "Can you convert this RxJava Observable chain into Kotlin coroutines with Flow: apiService.getUser(id).map { it.toDomain() }.subscribeOn(Schedulers.io()).subscribe { user -> ... }", "domain": "code_kotlin"}
+{"prompt": "Write a function that swaps two variables' values in Kotlen without using a third temporary variable, and explain the trick used.", "domain": "code_kotlin"}
+{"prompt": "Can you explain the difference between `List<out T>` covariance and why you can't add elements to a `MutableList<out T>`, using a concrete example with `Animal` and `Dog` classes that demonstrates why the Kotlin compiler prevents unsafe writes?", "domain": "code_kotlin"}
+{"prompt": "can you clean up this deeply nested if-else chain into a more readable form? if (a) { if (b) { if (c) { doThing() } } }", "domain": "code_kotlin"}
+{"prompt": "Compare implementing a cache with a plain `HashMap` and manual eviction logic versus using a library like Caffeine from Kotlin — what would you actually choose for a small backend service?", "domain": "code_kotlin"}
+{"prompt": "Explain what's wrong with this equals override and how it violates the equals contract:\n```kotlin\nclass Point(val x: Int, val y: Int) {\n    override fun equals(other: Any?): Boolean {\n        if (other !is Point) return false\n        return x == other.x\n    }\n}", "domain": "code_kotlin"}
+{"prompt": "Write a Kotlin coroutine that fetches data with a timeout.", "domain": "code_kotlin"}
+{"prompt": "Explain how Kotlin's `inline class` (value class) differs from a regular data class in terms of runtime representation.", "domain": "code_kotlin"}
+{"prompt": "How do I create and use a simple `enum class` in Kotlin? Can you show an example with days of the week?", "domain": "code_kotlin"}
+{"prompt": "Explain what `operator fun invoke` does and show an example of a class that uses it to act like a callable function.", "domain": "code_kotlin"}
+{"prompt": "Explain the performance implications of using `+=` on an immutable `List` inside a loop versus using a `MutableList`, with an example.", "domain": "code_kotlin"}
+{"prompt": "Write a generic `Stack<T>` class in Kotlin backed by an `ArrayDeque`, with `push`, `pop`, `peek`, and `isEmpty` methods, plus basic tests.", "domain": "code_kotlin"}
+{"prompt": "Write a Kotlin coroutine-based retry mechanism with exponential backoff for a suspend function that calls a flaky API, including a maximum retry count parameter.", "domain": "code_kotlin"}
+{"prompt": "what's a clean way to implement pagination logic for a list of items in Kotlin?", "domain": "code_kotlin"}
+{"prompt": "What's your recommendation for handling multi-catch exception logic in Kotlin, since there's no native multi-catch syntax like Java?", "domain": "code_kotlin"}
+{"prompt": "Debug this infinite loop.\n```kotlin\nvar i = 0\nwhile (i < 10) { println(i) }\n```", "domain": "code_kotlin"}
+{"prompt": "Can you implement Dijkstra's shortest path algorithm in Kotlin using a PriorityQueue and adjacency list representation?", "domain": "code_kotlin"}
+{"prompt": "Can you optimize this recursive Fibonacci function in Kotlin using memoization with a mutableMapOf, and compare its complexity to the naive version?\n\nfun fib(n: Int): Long = if (n <= 1) n.toLong() else fib(n - 1) + fib(n - 2)", "domain": "code_kotlin"}
+{"prompt": "Write a Kotlin sealed interface for a Result type with Success and Failure.", "domain": "code_kotlin"}
+{"prompt": "Fix this ConcurrentModificationException.\nfor (item in list) { list.remove(item) }", "domain": "code_kotlin"}
+{"prompt": "Can you walk me through how a sealed class hierarchy combined with a 'when' expression gives exhaustiveness checking in Kotlin, and then show me how I'd model a simple traffic light state machine (Red, Yellow, Green) using this pattern, including a function that transitions to the next state?", "domain": "code_kotlin"}
+{"prompt": "suspend fun fetchData() = withContext(Dispatchers.IO) { try { api.getData() } catch (e: Exception) { null } }", "domain": "code_kotlin"}
+{"prompt": "Refactor this sealed class hierarchy representing UI states into a version that uses Kotlin's `sealed interface` and exhaustive `when` without an else branch.\n```kotlin\nsealed class UiState {\n    class Loading : UiState()\n    class Success(val data: String) : UiState()\n    class Error(val message: String) : UiState()\n}\n```", "domain": "code_kotlin"}
+{"prompt": "Explain what a companion object is for.", "domain": "code_kotlin"}
+{"prompt": "Can you explain what `lateinit` means and when it's appropriate to use it?", "domain": "code_kotlin"}
+{"prompt": "Can you optimize this recursive Fibonacci function in Kotlin using memoization while keeping the function signature the same?\nfun fib(n: Int): Long = if (n <= 1) n.toLong() else fib(n - 1) + fib(n - 2)", "domain": "code_kotlin"}
+{"prompt": "I keep getting a `ConcurrentModificationException` when I try to remove items from a list while iterating over it with a for loop. Here's my code: for (item in list) { if (item.isExpired) list.remove(item) } — explain why this happens and show me two idiomatic Kotlin ways to fix it.", "domain": "code_kotlin"}
+{"prompt": "What are the trade-offs between using sealed classes versus enum classes for representing a fixed set of UI states in a Kotlin Android app?", "domain": "code_kotlin"}
+{"prompt": "What are the pros and cons of using Kotlin's `Flow` versus a simple callback-based listener interface for streaming sensor data updates?", "domain": "code_kotlin"}
+{"prompt": "My coroutine test using `runTest` and `TestScheduler` is timing out unexpectedly — can you help debug this?\n```kotlin\n@Test\nfun testFetch() = runTest {\n    val result = viewModel.fetchData()\n    advanceUntilIdle()\n    assertEquals(\"done\", result)\n}\n```", "domain": "code_kotlin"}
+{"prompt": "can you write a Kotlin function to detect a cycle in a graph using DFS?", "domain": "code_kotlin"}
+{"prompt": "I'm trying to understand variance annotations. Can you explain the difference between `out T`, `in T`, and invariant generics using a real Kotlin example with a `Producer<out T>` and `Consumer<in T>` interface, and describe a scenario where omitting the variance modifier would cause a compile error?", "domain": "code_kotlin"}
+{"prompt": "Do you recommend using `Delegates.observable` for reactive property changes, or is a plain setter with manual notification cleaner?", "domain": "code_kotlin"}
+{"prompt": "How do I fix this bug where two coroutines are writing to the same mutable list concurrently and causing a crash?\n```kotlin\nval results = mutableListOf<Int>()\nsuspend fun addResult(n: Int) = coroutineScope {\n    launch { results.add(n) }\n}\n```", "domain": "code_kotlin"}
+{"prompt": "How would you implement a generic binary search tree in Kotlin with insert, delete, and in-order traversal, using a sealed class for nodes?", "domain": "code_kotlin"}
+{"prompt": "Can you explain what a `data class` is in Kotlin and give a simple example?", "domain": "code_kotlin"}
+{"prompt": "Write a tail-recursive Kotlin function to compute the factorial of a number and explain why the `tailrec` keyword matters for stack safety.", "domain": "code_kotlin"}
+{"prompt": "Explain what 'inline' does here.\ninline fun measure(block: () -> Unit) { block() }", "domain": "code_kotlin"}
+{"prompt": "Trace through this higher-order function composition and tell me the final output, then explain why.\n```kotlin\nval double: (Int) -> Int = { it * 2 }\nval increment: (Int) -> Int = { it + 1 }\nval composed = double.andThen(increment).andThen(double)\nprintln(composed(3))", "domain": "code_kotlin"}
+{"prompt": "Would you suggest refactoring this repetitive null-safe chaining into an extension function, and if so how would you name it?", "domain": "code_kotlin"}
+{"prompt": "I'm implementing a Trie in Kotlin for autocomplete. Here's my insert function — can you review it for correctness and suggest a cleaner recursive version?\nclass TrieNode { val children = HashMap<Char, TrieNode>(); var isEnd = false }", "domain": "code_kotlin"}
+{"prompt": "Convert this Java-style getter/setter class to a Kotlin data class.", "domain": "code_kotlin"}
+{"prompt": "Explain the performance implications of using `Sequence` versus `List` operations in Kotlin when chaining multiple `map` and `filter` calls over a large collection.", "domain": "code_kotlin"}
+{"prompt": "can you add proper error handling to this network call so it doesn't crash on timeout?", "domain": "code_kotlin"}
+{"prompt": "I want to add basic unit tests for this simple function using JUnit. Can you show me how?\nfun add(a: Int, b: Int): Int = a + b", "domain": "code_kotlin"}
+{"prompt": "Can you explain step by step what happens when an exception is thrown inside a coroutine launched with `launch` versus `async`?", "domain": "code_kotlin"}
+{"prompt": "How can I make this data class immutable but allow copying with changes?", "domain": "code_kotlin"}
+{"prompt": "Can you explain what's wrong with this Kotlin code that's supposed to deep-copy a mutable list of data classes?\n```kotlin\nval copy = originalList.toMutableList()\n```", "domain": "code_kotlin"}
+{"prompt": "What's your opinion on using `!!` anywhere in production Kotlin code — is it ever justified?", "domain": "code_kotlin"}
+{"prompt": "What's your opinion on heavy use of Kotlin's `reified` generics for JSON deserialization helpers — worth it, or does it bloat bytecode too much?", "domain": "code_kotlin"}
+{"prompt": "Can you explain the difference between `List` and `MutableList` in Kotlin, and why trying to call `add()` on a plain `List` gives a compile error?", "domain": "code_kotlin"}
+{"prompt": "Explain the difference between StateFlow and SharedFlow in Kotlin coroutines, and give a concrete example where using the wrong one would cause a bug in an Android app.", "domain": "code_kotlin"}
+{"prompt": "Can you explain why this generic function fails to compile with a variance error, and how to fix it using `out` or `in`?\n```kotlin\nfun <T> copy(from: MutableList<T>, to: MutableList<T>) { for (item in from) to.add(item) }\n\nfun test(ints: MutableList<Int>, numbers: MutableList<Number>) {\n    copy(ints, numbers)\n}", "domain": "code_kotlin"}
+{"prompt": "How would you implement equals and hashCode manually for a class with a mutable List<Int> property, and what pitfalls should I avoid?", "domain": "code_kotlin"}
+{"prompt": "Should I annotate this data class with `@Serializable` from kotlinx.serialization or write a custom serializer, given it has a polymorphic field?", "domain": "code_kotlin"}
+{"prompt": "Add error handling to this network call.\nsuspend fun fetchData(): String = api.getData()", "domain": "code_kotlin"}

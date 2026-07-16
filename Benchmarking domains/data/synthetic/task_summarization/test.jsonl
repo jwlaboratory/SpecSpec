@@ -1,0 +1,100 @@
+{"prompt": "Give me bullet points on climate change causes.", "domain": "task_summarization"}
+{"prompt": "For a busy reader, Summarise the key points about the global supply chain for cocoa in three sentences.", "domain": "task_summarization"}
+{"prompt": "Please summarize this email thread into three bullet points capturing the decisions made: 'From: Alex - Let's finalize the vendor by Thursday. From: Jamie - Agreed, I'll send comparison data. From: Sam - I'll set up the contract review meeting.'", "domain": "task_summarization"}
+{"prompt": "Please summarize this user manual section on setting up a wireless router into three easy steps.", "domain": "task_summarization"}
+{"prompt": "Summarize the basic idea behind Einstein's theory of relativity in a way a high schooler could understand.", "domain": "task_summarization"}
+{"prompt": "Guide me through summarizing this technical whitepaper on quantum error correction for a non-technical investor audience.", "domain": "task_summarization"}
+{"prompt": "In plain language, Summarise the key points about migratory bird navigation in three sentences.", "domain": "task_summarization"}
+{"prompt": "Summarize this customer support thread into key complaints and suggest which issue we should prioritize fixing first.", "domain": "task_summarization"}
+{"prompt": "Summarize the ecological role of leafcutter ant fungus farming for someone unfamiliar with entomology.", "domain": "task_summarization"}
+{"prompt": "Please summarize this company memo announcing a new work policy in two simple bullet points.", "domain": "task_summarization"}
+{"prompt": "Summarize the key findings of the IPCC's latest climate report for a policy briefing aimed at municipal planners, in no more than 150 words.", "domain": "task_summarization"}
+{"prompt": "Give me a TL;DR of this 90-minute product strategy meeting transcript, focused only on action items and owners.", "domain": "task_summarization"}
+{"prompt": "Turn this rambling voicemail transcript into a two-line summary: \"Hey it's Mike, so I talked to the contractor and he said the kitchen renovation is gonna take another two weeks because the cabinets got delayed, also he mentioned the quote might go up a little bit, call me back when you can.\"", "domain": "task_summarization"}
+{"prompt": "Summarize this research comparing intermittent fasting and calorie restriction diets into plain-language bullet points highlighting which is better for whom.", "domain": "task_summarization"}
+{"prompt": "Summarize the plot of Hamlet in one sentence.", "domain": "task_summarization"}
+{"prompt": "In plain language, Summarise the key points about volcanic soil and agriculture in three sentences.", "domain": "task_summarization"}
+{"prompt": "Sum up this movie review for me, thumbs up or thumbs down basically.", "domain": "task_summarization"}
+{"prompt": "Summarize the entire plot of Crime and Punishment in exactly five bullet points, then add a final bullet that captures the central moral question of the novel.", "domain": "task_summarization"}
+{"prompt": "Summarize this academic paper's statistical methodology section for a reviewer who wants to quickly assess whether the sample size was adequate.", "domain": "task_summarization"}
+{"prompt": "Summarise the key points about the history of the marathon in three sentences.", "domain": "task_summarization"}
+{"prompt": "What's the essential summary of the plot of One Hundred Years of Solitude, condensed to a single paragraph for someone deciding whether to read it?", "domain": "task_summarization"}
+{"prompt": "Summarize this 20-page thesis abstract into something I can say out loud in 30 seconds.", "domain": "task_summarization"}
+{"prompt": "'Sales grew 12% year-over-year, driven primarily by expansion in the Asia-Pacific region, though margins tightened due to shipping costs.' Summarize this for a board slide.", "domain": "task_summarization"}
+{"prompt": "For a busy reader, Summarise the key points about the history of the marathon in three sentences.", "domain": "task_summarization"}
+{"prompt": "In plain language, Summarise the key points about coral reef restoration in three sentences.", "domain": "task_summarization"}
+{"prompt": "What's the essential summary of Freud's theory of the unconscious mind for someone studying introductory psychology?", "domain": "task_summarization"}
+{"prompt": "Summarize the trade-offs between breastfeeding and formula feeding for new parents, in a neutral and concise bullet list.", "domain": "task_summarization"}
+{"prompt": "Summarize this article about a new phone release in one paragraph, focusing on the most important features.", "domain": "task_summarization"}
+{"prompt": "Summarize the historical context and outcome of the Cuban Missile Crisis in a short paragraph, and share your view on whether diplomacy or deterrence deserves more credit for resolving it.", "domain": "task_summarization"}
+{"prompt": "Summarize this scientific report on Antarctic subglacial lake exploration missions into a TL;DR.", "domain": "task_summarization"}
+{"prompt": "Give me a one-sentence summary of the causes of World War I suitable for a flashcard.", "domain": "task_summarization"}
+{"prompt": "Can you provide a short summary of the novel 'Never Let Me Go' by Kazuo Ishiguro suitable for someone deciding whether to read it, without major spoilers?", "domain": "task_summarization"}
+{"prompt": "For a busy reader, Summarise the key points about how lithium batteries are recycled in three sentences.", "domain": "task_summarization"}
+{"prompt": "Concisely, Summarise the key points about migratory bird navigation in three sentences.", "domain": "task_summarization"}
+{"prompt": "Can you condense this 3-hour lecture recording transcript into five main takeaways?", "domain": "task_summarization"}
+{"prompt": "Concisely, Summarise the key points about the rise of remote work in three sentences.", "domain": "task_summarization"}
+{"prompt": "Summarize this online forum discussion about the pros and cons of working from home into a short list.", "domain": "task_summarization"}
+{"prompt": "Give me a bullet-point summary of this cybersecurity incident report, organized by timeline, root cause, and remediation steps, for presentation to non-technical executives.", "domain": "task_summarization"}
+{"prompt": "I've got this huge PDF on climate policy, can you just give me the main takeaways in five bullets?", "domain": "task_summarization"}
+{"prompt": "Can you give a TL;DR of the new tax reform bill and tell me who benefits most and least from it?", "domain": "task_summarization"}
+{"prompt": "Summarize the main arguments in this op-ed about universal basic income.", "domain": "task_summarization"}
+{"prompt": "Can you give me a short summary of the Harry Potter series for someone who has never read any of the books?", "domain": "task_summarization"}
+{"prompt": "Sum up the main argument of this op-ed in two sentences.", "domain": "task_summarization"}
+{"prompt": "Give me a one-paragraph summary of the main events in the French Revolution, written simply enough for someone with no history background.", "domain": "task_summarization"}
+{"prompt": "Summarize this Slack thread into a single action item.", "domain": "task_summarization"}
+{"prompt": "Please give me a TL;DR of this research abstract and your recommendation on whether it's worth citing in a grant application: 'The study examined gut microbiome diversity in 200 participants and found a correlation between fiber intake and reduced inflammation markers.'", "domain": "task_summarization"}
+{"prompt": "Summarize the main plot and themes of George Orwell's '1984' in three sentences, and share whether you think its warnings are more relevant today than ever.", "domain": "task_summarization"}
+{"prompt": "Can you summarize the plot of the cult manga series 'Uzumaki' in bullet points without spoiling the ending?", "domain": "task_summarization"}
+{"prompt": "Please give me a one-paragraph summary of the main idea in this research paper about renewable energy storage.", "domain": "task_summarization"}
+{"prompt": "Summarise the key points about the economics of public transit in three sentences.", "domain": "task_summarization"}
+{"prompt": "Here's a passage from a diplomatic cable: 'The ambassador expressed cautious optimism regarding the ceasefire's durability but noted that both factions remain heavily armed and mutual distrust persists at the local commander level.' Summarize the key risk factors in one sentence for a policy brief.", "domain": "task_summarization"}
+{"prompt": "Give me a step-by-step method for summarizing a lengthy insurance policy document into key coverage points for a customer FAQ.", "domain": "task_summarization"}
+{"prompt": "Can you summarize this short story for me in two sentences? 'A young girl finds a stray cat during a storm and decides to keep it despite her parents' objections. Over the following months, the cat helps her cope with her parents' divorce, ultimately bringing the family closer together.'", "domain": "task_summarization"}
+{"prompt": "Concisely, Summarise the key points about tidal energy generation in three sentences.", "domain": "task_summarization"}
+{"prompt": "Summarize this Twitter thread on inflation for a general reader.", "domain": "task_summarization"}
+{"prompt": "Give me a bullet-point breakdown of the main arguments in this philosophy essay, keep it under 100 words.", "domain": "task_summarization"}
+{"prompt": "Without jargon, Summarise the key points about glacier retreat in the Alps in three sentences.", "domain": "task_summarization"}
+{"prompt": "Can you summarize this children's story for me in one or two simple sentences?", "domain": "task_summarization"}
+{"prompt": "Summarize the entire plot of the Harry Potter series in exactly seven bullet points, one for each book, keeping each bullet under 20 words.", "domain": "task_summarization"}
+{"prompt": "In plain language, Summarise the key points about how lithium batteries are recycled in three sentences.", "domain": "task_summarization"}
+{"prompt": "Can you condense this 10-page environmental impact report into a one-paragraph summary for a city council member, along with your recommendation on whether to approve the project?", "domain": "task_summarization"}
+{"prompt": "Provide an executive summary, no longer than 150 words, of the attached quarterly earnings call transcript for a board of directors unfamiliar with the technical details of semiconductor manufacturing yields.", "domain": "task_summarization"}
+{"prompt": "Summarize this dense contract amendment clause by clause, flagging anything that changes liability exposure for our company.", "domain": "task_summarization"}
+{"prompt": "Can you summarize this short scientific paper on the benefits of exercise for mental health in plain, easy-to-understand language?", "domain": "task_summarization"}
+{"prompt": "Concisely, Summarise the key points about how GPS satellites keep time in three sentences.", "domain": "task_summarization"}
+{"prompt": "Give me a summary of the entire Cold War, from its origins to its end, structured as a five-paragraph essay outline suitable for a high school history class.", "domain": "task_summarization"}
+{"prompt": "Give me a super short summary of the news today, just the headlines basically.", "domain": "task_summarization"}
+{"prompt": "Here's a text from my landlord: 'Rent's going up 8% next renewal due to property tax hikes, but I'll throw in a new dishwasher.' What's the one-line version of this?", "domain": "task_summarization"}
+{"prompt": "Can you summarize this whole research paper abstract in language a 10-year-old could get?", "domain": "task_summarization"}
+{"prompt": "For a busy reader, Summarise the key points about tidal energy generation in three sentences.", "domain": "task_summarization"}
+{"prompt": "Summarize this negative performance review email into a neutral HR case note, and tell me whether you think a formal warning is warranted: 'The employee missed three deadlines this quarter and was reported as unresponsive to team messages for days at a time.'", "domain": "task_summarization"}
+{"prompt": "Can you make a quick bullet list summary of this meeting recap? \"Attendees discussed the new hiring plan, agreed to open two more engineer roles, postponed the office relocation decision, and set a follow-up meeting for next month.\"", "domain": "task_summarization"}
+{"prompt": "Please condense this long academic paper on the philosophy of esoteric programming languages into a short summary for hobbyist coders.", "domain": "task_summarization"}
+{"prompt": "What's the gist of the Krebs cycle?", "domain": "task_summarization"}
+{"prompt": "Summarise the key points about migratory bird navigation in three sentences.", "domain": "task_summarization"}
+{"prompt": "Give me the short version of the Treaty of Versailles and why it's considered controversial by historians.", "domain": "task_summarization"}
+{"prompt": "Summarize this Twitter/X thread about the ethics of AI-generated art into a neutral paragraph, then tell me where you personally land on the debate.", "domain": "task_summarization"}
+{"prompt": "Can you give me a TL;DR plus a longer bulleted breakdown of this whitepaper on quantum computing's impact on cryptography?", "domain": "task_summarization"}
+{"prompt": "Give me a quick TL;DR of what happened in the latest Marvel movie, I fell asleep halfway through.", "domain": "task_summarization"}
+{"prompt": "Here is a paragraph from a medical journal: 'Patients receiving the experimental treatment showed a statistically significant reduction in inflammatory markers compared to the placebo group, though the sample size was limited and further trials are needed to confirm long-term safety.' Summarize this in plain language suitable for a patient information leaflet.", "domain": "task_summarization"}
+{"prompt": "I have a long email chain about our upcoming project deadline. Can you summarize the key points in five bullet points?", "domain": "task_summarization"}
+{"prompt": "Summarize the key events of the Cuban Missile Crisis in five bullet points for a history exam study guide.", "domain": "task_summarization"}
+{"prompt": "For a busy reader, Summarise the key points about volcanic soil and agriculture in three sentences.", "domain": "task_summarization"}
+{"prompt": "Give me a TL;DR contrasting traditional classrooms and flipped classroom models in education.", "domain": "task_summarization"}
+{"prompt": "For a busy reader, Summarise the key points about the rise of remote work in three sentences.", "domain": "task_summarization"}
+{"prompt": "Concisely, Summarise the key points about the spread of the printing press in three sentences.", "domain": "task_summarization"}
+{"prompt": "Summarize the key events of the French Revolution as a timeline with one short bullet per major event, from 1789 to Napoleon's rise to power.", "domain": "task_summarization"}
+{"prompt": "Summarize the key findings of this paper abstract for a policy briefing: 'Analysis of urban heat island effects across 50 major cities found that tree canopy coverage below 20% correlated with average temperature increases of 3-5°C compared to greener districts, disproportionately affecting low-income neighborhoods.'", "domain": "task_summarization"}
+{"prompt": "Give me a TL;DR of the differences between machine learning and traditional rule-based programming for a non-technical executive.", "domain": "task_summarization"}
+{"prompt": "Can you TL;DR this email for me? \"Hey team, just a heads up that the client meeting got pushed to Thursday at 2pm instead of Tuesday. Also, please send over your updated budget numbers by end of day Wednesday so I can compile them before the call. Let me know if that timing doesn't work for anyone.\"", "domain": "task_summarization"}
+{"prompt": "Summarise the key points about the invention of the transistor in three sentences.", "domain": "task_summarization"}
+{"prompt": "Summarize this academic thread on click consonants in Khoisan languages into plain language for non-linguists.", "domain": "task_summarization"}
+{"prompt": "Summarize this YouTube video transcript about how the stock market works into a short beginner-friendly explanation.", "domain": "task_summarization"}
+{"prompt": "In plain language, Summarise the key points about the history of the marathon in three sentences.", "domain": "task_summarization"}
+{"prompt": "Summarize the key takeaways from this book club discussion.", "domain": "task_summarization"}
+{"prompt": "Summarize the main arguments of the book 'Sapiens' by Yuval Noah Harari in under 100 words.", "domain": "task_summarization"}
+{"prompt": "I need a summary of this 45-minute podcast interview with an economist about inflation trends, formatted as five key takeaways.", "domain": "task_summarization"}
+{"prompt": "Can you provide a TL;DR of this academic debate on the reproducibility crisis in psychology research?", "domain": "task_summarization"}
+{"prompt": "Give me a one-line summary of this whole debate thread about pineapple on pizza.", "domain": "task_summarization"}
+{"prompt": "Without jargon, Summarise the key points about the economics of public transit in three sentences.", "domain": "task_summarization"}

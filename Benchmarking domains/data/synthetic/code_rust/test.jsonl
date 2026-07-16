@@ -1,0 +1,100 @@
+{"prompt": "Step by step, how would I refactor this deeply nested match statement into something more idiomatic using the `?` operator and early returns?", "domain": "code_rust"}
+{"prompt": "This function won't compile because I'm trying to return a reference to a local variable — can you explain why and fix it? `fn make_str() -> &str { let s = String::from(\"hello\"); &s }`", "domain": "code_rust"}
+{"prompt": "Can you explain what the `dbg!` macro does and how it's useful for debugging small Rust programs?", "domain": "code_rust"}
+{"prompt": "How would I go about writing a binary search implementation in Rust and then adding unit tests for edge cases like empty slices?", "domain": "code_rust"}
+{"prompt": "Write clean, idiomatic Rust that implements a debounce wrapper for a function.", "domain": "code_rust"}
+{"prompt": "Given this function, would you recommend making it generic over `AsRef<str>` instead of taking `&str` directly? `fn greet(name: &str) { println!(\"Hello, {}\", name); }`", "domain": "code_rust"}
+{"prompt": "I want to write a typestate pattern for a builder so invalid state transitions are caught at compile time. Can you sketch this for a `Connection` builder that must call `connect()` before `send()`?", "domain": "code_rust"}
+{"prompt": "Can you show me how to use `match` with multiple patterns, like matching several integer values in one arm?", "domain": "code_rust"}
+{"prompt": "Explain why this code fails to compile with a lifetime error: fn longest<'a>(x: &str, y: &'a str) -> &'a str { if x.len() > y.len() { x } else { y } } and show the fix.", "domain": "code_rust"}
+{"prompt": "Write a quick implementation of a queue using two stacks", "domain": "code_rust"}
+{"prompt": "my code has a deadlock somewhere with two mutexes, can you spot the issue in this snippet?", "domain": "code_rust"}
+{"prompt": "For a web server, would you recommend `tokio` or `async-std`, and what are the real differences in practice today?", "domain": "code_rust"}
+{"prompt": "Explain the difference between std::mem::replace, std::mem::take, and std::mem::swap, and give an example of using one of them to avoid a partial-move borrow error.", "domain": "code_rust"}
+{"prompt": "Write clean, idiomatic Rust that implements a min-heap with push and pop.", "domain": "code_rust"}
+{"prompt": "How do I implement the Display trait for my custom error type so it prints nicely?", "domain": "code_rust"}
+{"prompt": "Explain why this code doesn't implement Copy automatically.", "domain": "code_rust"}
+{"prompt": "Can you implement a simple LRU cache in Rust using a HashMap combined with a doubly linked list, with O(1) get and put operations?", "domain": "code_rust"}
+{"prompt": "Write a Rust function that checks if two strings are anagrams. Include a short comment explaining the approach.", "domain": "code_rust"}
+{"prompt": "Help me implement a doubly linked list in Rust — I know it's discouraged, but explain how Rc<RefCell<>> or unsafe raw pointers would be used and the pros/cons of each approach.", "domain": "code_rust"}
+{"prompt": "help me implement a basic LRU cache in Rust using a HashMap and a doubly linked list", "domain": "code_rust"}
+{"prompt": "Write a Rust function to check if a number is prime.", "domain": "code_rust"}
+{"prompt": "In Rust, write a function that checks if a number is a perfect square without using sqrt and explain its time complexity.", "domain": "code_rust"}
+{"prompt": "Implement, in Rust, code that implements a simple LRU cache. Add a couple of example calls.", "domain": "code_rust"}
+{"prompt": "I need a Rust function that performs run-length encoding and decoding on a byte slice — can you implement both directions with tests?", "domain": "code_rust"}
+{"prompt": "Is it better to implement `Iterator` manually for my custom type or to just return `impl Iterator<Item = T>` from a function? Walk me through the trade-offs.", "domain": "code_rust"}
+{"prompt": "How would I define an enum representing days of the week and write a function that returns whether a day is a weekend?", "domain": "code_rust"}
+{"prompt": "In your opinion, is `Box<dyn Error>` a good default error type for small utility functions, or should I always define specific errors?", "domain": "code_rust"}
+{"prompt": "Can you explain why `RefCell::borrow_mut()` panics at runtime instead of failing to compile, and how that relates to Rust's borrow checker?", "domain": "code_rust"}
+{"prompt": "Refactor this function to avoid unnecessary heap allocations: fn process(input: &str) -> String { let words: Vec<String> = input.split(' ').map(|w| w.to_string()).collect(); words.join(\"-\") }", "domain": "code_rust"}
+{"prompt": "This function is supposed to reverse a linked list in place but it segfaults... wait, wrong language, it just infinite loops. Can you find the bug?\n```rust\nfn reverse(mut head: Option<Box<Node>>) -> Option<Box<Node>> {\n    let mut prev = None;\n    while let Some(mut node) = head {\n        head = node.next.take();\n        node.next = prev.take();\n        prev = Some(node);\n    }\n    prev\n}\n```", "domain": "code_rust"}
+{"prompt": "Implement, in Rust, code that implements insertion sort. Add a couple of example calls.", "domain": "code_rust"}
+{"prompt": "Implement, in Rust, code that detects a cycle in a directed graph. Add a couple of example calls.", "domain": "code_rust"}
+{"prompt": "help me debug this async function, it never seems to finish `async fn fetch_data() { let res = reqwest::get(\"https://example.com\").await; println!(\"{:?}\", res); }`", "domain": "code_rust"}
+{"prompt": "Implement, in Rust, code that finds the longest common prefix of a list of strings. Add a couple of example calls.", "domain": "code_rust"}
+{"prompt": "Explain the difference between `.clone()` and just copying a value for types like `i32` versus `String`.", "domain": "code_rust"}
+{"prompt": "Refactor this deeply nested Result<Result<T, E1>, E2> handling into something cleaner using the `?` operator and a custom error enum implementing std::error::Error: `fn process(input: &str) -> Result<Result<i32, ParseIntError>, IoError> { ... }`", "domain": "code_rust"}
+{"prompt": "What's your view on using `dyn Any` for a plugin registry versus defining a proper enum of known plugin types?", "domain": "code_rust"}
+{"prompt": "I'm choosing between `Vec<Box<dyn Trait>>` and an enum with variants for a plugin system — what would you go with and why?", "domain": "code_rust"}
+{"prompt": "Fix this deadlock in a Mutex-based counter.", "domain": "code_rust"}
+{"prompt": "Can you explain what `impl Trait` means when used as a return type, with a simple example?", "domain": "code_rust"}
+{"prompt": "Write a CLI tool skeleton using clap derive macros that takes a filename, an optional verbosity flag, and a subcommand for 'encode' or 'decode'.", "domain": "code_rust"}
+{"prompt": "I wrote this loop to print numbers 1 to 10, but it only prints up to 9. What's wrong?\n```rust\nfor i in 0..10 {\n    println!(\"{}\", i + 1);\n}\n```", "domain": "code_rust"}
+{"prompt": "Write a quicksort implementation in Rust using slices.", "domain": "code_rust"}
+{"prompt": "Should this function take `&str` or `String` as a parameter? Here's the current signature and I'm not sure which is more idiomatic:\n\nfn greet(name: String) -> String {\n    format!(\"Hello, {}\", name)\n}", "domain": "code_rust"}
+{"prompt": "Do you prefer `match` guards or nested `if` statements inside match arms for this kind of conditional logic? `match value { x if x > 0 => \"positive\", x if x < 0 => \"negative\", _ => \"zero\" }`", "domain": "code_rust"}
+{"prompt": "Write a sealed trait pattern in Rust to prevent external crates from implementing a trait, and explain why you'd want that.", "domain": "code_rust"}
+{"prompt": "I have a struct with a field of type `Vec<Box<dyn Fn(i32) -> i32>>` representing a chain of transformations, and I want to apply them in sequence to an input value using `fold`. Can you write this, and also show how I'd add a way to register new transformation closures at runtime?", "domain": "code_rust"}
+{"prompt": "In Rust, write a function that removes duplicates from a list while keeping order and explain its time complexity.", "domain": "code_rust"}
+{"prompt": "Debug why this channel-based producer-consumer setup deadlocks: `let (tx, rx) = std::sync::mpsc::channel(); tx.send(1).unwrap(); drop(tx); for msg in rx { println!(\"{}\", msg); }`", "domain": "code_rust"}
+{"prompt": "Can you explain what's wrong with this recursive enum definition and how to fix it using `Box`?\n\nenum List {\n    Cons(i32, List),\n    Nil,\n}", "domain": "code_rust"}
+{"prompt": "Write a function that checks whether a given string is a palindrome, ignoring case and spaces.", "domain": "code_rust"}
+{"prompt": "In Rust, write a function that implements a simple exponential moving average and explain its time complexity.", "domain": "code_rust"}
+{"prompt": "Explain lifetimes in this function signature: `fn longest<'a>(x: &'a str, y: &'a str) -> &'a str`", "domain": "code_rust"}
+{"prompt": "what's the cleanest way to convert a Vec<u8> into a String in Rust?", "domain": "code_rust"}
+{"prompt": "Write clean, idiomatic Rust that implements run-length encoding and decoding.", "domain": "code_rust"}
+{"prompt": "Write a simple linked list node struct in Rust and explain why implementing a doubly linked list is tricky with the ownership model.", "domain": "code_rust"}
+{"prompt": "Write a simple JSON serializer for a struct without using serde.", "domain": "code_rust"}
+{"prompt": "In Rust, write a function that returns the prime numbers below n using a sieve and explain its time complexity.", "domain": "code_rust"}
+{"prompt": "In your opinion, is it worth adopting `clippy::pedantic` lints for a small hobby project, or is that overkill?", "domain": "code_rust"}
+{"prompt": "Add some doc comments to this function so it shows up nicely in rustdoc", "domain": "code_rust"}
+{"prompt": "Can you help me write a zero-copy parser for a simple CSV-like format using nom, avoiding unnecessary String allocations?", "domain": "code_rust"}
+{"prompt": "Can you explain what `#[derive(Debug)]` does and why it's useful when printing structs?", "domain": "code_rust"}
+{"prompt": "In Rust, write a function that computes the factorial of a number and explain its time complexity.", "domain": "code_rust"}
+{"prompt": "Here's a recursive Fibonacci implementation that's painfully slow for n > 40:\n```rust\nfn fib(n: u64) -> u64 {\n    if n <= 1 { n } else { fib(n - 1) + fib(n - 2) }\n}\n```\nCan you show at least two ways to speed this up—one using memoization with a `HashMap`, and one using an iterative approach—and compare their time and space complexity?", "domain": "code_rust"}
+{"prompt": "My code panics with 'index out of bounds' somewhere in here, can you spot the bug? fn get_last(v: Vec<i32>) -> i32 { v[v.len()] }", "domain": "code_rust"}
+{"prompt": "Would you recommend adding a builder crate dependency like `derive_builder`, or hand-rolling the builder pattern for this struct?", "domain": "code_rust"}
+{"prompt": "how do I read a CSV file line by line and parse it into a struct?", "domain": "code_rust"}
+{"prompt": "Write a Rust function that counts set bits in an integer. Include a short comment explaining the approach.", "domain": "code_rust"}
+{"prompt": "Which crate would you recommend for property-based testing in Rust, and how does it compare to just writing exhaustive unit tests by hand?", "domain": "code_rust"}
+{"prompt": "write a function in Rust that checks if a string has balanced parentheses", "domain": "code_rust"}
+{"prompt": "Write a bit-flag enum using the `bitflags!` macro for representing file permissions (read, write, execute) and show how to combine flags.", "domain": "code_rust"}
+{"prompt": "What's the difference between String and &str?", "domain": "code_rust"}
+{"prompt": "In Rust, write a function that finds the majority element in an array and explain its time complexity.", "domain": "code_rust"}
+{"prompt": "Can you write a property-based test using proptest for a function that reverses a linked list, checking that reversing twice yields the original list?", "domain": "code_rust"}
+{"prompt": "Would you recommend using builder pattern or `Default` plus struct update syntax for configuring this struct? `struct ServerOptions { addr: String, workers: usize, keep_alive: bool }`", "domain": "code_rust"}
+{"prompt": "Can you explain the difference between `impl Trait` in argument position versus return position, with small code examples for each, and note any limitations like why you can't return different concrete types from different branches with `impl Trait`?", "domain": "code_rust"}
+{"prompt": "Do you think this crate should expose a synchronous API with a blocking wrapper, or purely async, given most consumers will be in async contexts?", "domain": "code_rust"}
+{"prompt": "Write a function that takes a slice of strings representing CSV rows and parses them into a `Vec<Vec<String>>`, handling quoted fields that may contain commas, like `\"hello, world\",42,true`. Then explain how you'd extend this to handle escaped quotes within quoted fields.", "domain": "code_rust"}
+{"prompt": "Can you explain what the borrow checker is doing in this code and why it won't compile? `fn main() { let s = String::from(\"hi\"); let r1 = &s; let r2 = &mut s; println!(\"{} {}\", r1, r2); }`", "domain": "code_rust"}
+{"prompt": "Explain what this trait object code does and why `dyn` is required here.\n```rust\nfn draw_all(shapes: &[Box<dyn Shape>]) {\n    for s in shapes {\n        s.draw();\n    }\n}\n```", "domain": "code_rust"}
+{"prompt": "Write clean, idiomatic Rust that flattens an arbitrarily nested list.", "domain": "code_rust"}
+{"prompt": "Compare `Vec::retain` versus filtering into a new `Vec` with `.filter().collect()` for removing elements — which is preferable and when?", "domain": "code_rust"}
+{"prompt": "Write a Rust function that finds the majority element in an array. Include a short comment explaining the approach.", "domain": "code_rust"}
+{"prompt": "In Rust, write a function that computes the depth of a binary tree and explain its time complexity.", "domain": "code_rust"}
+{"prompt": "Write a generic function `fn chunked<T: Clone>(items: &[T], size: usize) -> Vec<Vec<T>>` that splits a slice into chunks of a given size, handling the case where the length isn't evenly divisible, and add tests covering empty input, size larger than the slice, and exact division.", "domain": "code_rust"}
+{"prompt": "What's wrong with this async function that never seems to complete?\n```rust\nasync fn fetch_all(urls: Vec<String>) -> Vec<String> {\n    let mut results = Vec::new();\n    for url in urls {\n        let res = reqwest::get(&url).await.unwrap().text().await.unwrap();\n        results.push(res);\n    }\n    results\n}\n```", "domain": "code_rust"}
+{"prompt": "I need to choose between `String` and `&str` as the field type in this struct — walk me through the trade-offs for ownership and lifetimes.\n\nstruct User { name: ???, }", "domain": "code_rust"}
+{"prompt": "hey can you help me figure out why this Rust function panics? fn get(v: &Vec<i32>, i: usize) -> i32 { v[i] } it crashes when i pass an out-of-range index and I want a safer version", "domain": "code_rust"}
+{"prompt": "Implement, in Rust, code that computes the moving average of a numeric stream. Add a couple of example calls.", "domain": "code_rust"}
+{"prompt": "Can you show how to implement a custom global allocator using `GlobalAlloc` and explain when that's actually useful?", "domain": "code_rust"}
+{"prompt": "Write a function that takes a slice of integers and returns a new `Vec` containing only the values greater than a given threshold.", "domain": "code_rust"}
+{"prompt": "Write clean, idiomatic Rust that validates an email address.", "domain": "code_rust"}
+{"prompt": "Write a binary search function that works on a sorted Vec<i32>.", "domain": "code_rust"}
+{"prompt": "Can you fix this bug where the program panics with 'index out of bounds' and explain what step in the loop caused it?\n\nfn moving_average(data: &[f64], window: usize) -> Vec<f64> {\n    let mut result = Vec::new();\n    for i in 0..data.len() {\n        let sum: f64 = data[i..i + window].iter().sum();\n        result.push(sum / window as f64);\n    }\n    result\n}", "domain": "code_rust"}
+{"prompt": "Can you explain the difference between impl Trait, dyn Trait, and generic type parameters, with performance implications for each in a hot-path function?", "domain": "code_rust"}
+{"prompt": "Can you implement a simple generic binary search tree with insert, search, and in-order traversal, and explain how Rust's ownership model shapes the Node representation?", "domain": "code_rust"}
+{"prompt": "Write a function that flattens a nested Vec<Vec<i32>> into a single Vec<i32>", "domain": "code_rust"}
+{"prompt": "Write a Rust function that finds the shortest path in an unweighted grid using BFS. Include a short comment explaining the approach.", "domain": "code_rust"}
+{"prompt": "In Rust, write a function that implements run-length encoding and decoding and explain its time complexity.", "domain": "code_rust"}
+{"prompt": "can you convert this Python function to Rust? def is_prime(n): return n > 1 and all(n % i for i in range(2, int(n**0.5)+1))", "domain": "code_rust"}

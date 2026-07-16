@@ -1,0 +1,100 @@
+{"prompt": "A customer's package shows 'out for delivery' for four consecutive days without ever arriving, and our tracking system shows no scan updates. Draft an internal note to the logistics team requesting an urgent investigation, plus a customer-facing update explaining what we're doing.", "domain": "ood_customer_support"}
+{"prompt": "My card was charged twice for one order, fix it now.", "domain": "ood_customer_support"}
+{"prompt": "I need help writing a message asking a software company why my paid subscription reverted to the free version overnight.", "domain": "ood_customer_support"}
+{"prompt": "Can you draft steps to help a customer reset their router after repeated connection drops?", "domain": "ood_customer_support"}
+{"prompt": "I need to cancel my subscription box but their site only has a 'pause' option, can you help me word an email demanding full cancellation?", "domain": "ood_customer_support"}
+{"prompt": "Write a reply to a customer asking why their credit card application was denied despite a good credit score.", "domain": "ood_customer_support"}
+{"prompt": "Draft a message weighing the option of accepting a replacement unit versus requesting a full refund for my malfunctioning washing machine.", "domain": "ood_customer_support"}
+{"prompt": "Draft a reply to a customer whose warranty registration failed to save after multiple attempts.", "domain": "ood_customer_support"}
+{"prompt": "Give me a script for handling a customer who wants a refund on a non-refundable ticket.", "domain": "ood_customer_support"}
+{"prompt": "I can't decide between canceling my hotel reservation for a refund or rebooking for a later date at the same rate—help me compare and write to the hotel.", "domain": "ood_customer_support"}
+{"prompt": "Please draft a formal complaint letter to a bank regarding unauthorized overdraft fees charged after they processed transactions out of chronological order, inflating the number of overdrafts.", "domain": "ood_customer_support"}
+{"prompt": "Write a reply to a customer who says their food delivery arrived cold and missing the side dish they paid extra for.", "domain": "ood_customer_support"}
+{"prompt": "How do I go about requesting a partial refund for a hotel stay where the room didn't match what was advertised?", "domain": "ood_customer_support"}
+{"prompt": "Draft a reply for a customer that lays out the trade-offs between a same-day in-store return versus a mail-in return for a defective appliance.", "domain": "ood_customer_support"}
+{"prompt": "Write an apology message for shipping the wrong item.", "domain": "ood_customer_support"}
+{"prompt": "Write troubleshooting steps for a customer deciding whether to reinstall their accounting software or roll back to a previous version after an update broke syncing.", "domain": "ood_customer_support"}
+{"prompt": "Can you draft a troubleshooting checklist for a customer whose robot vacuum keeps getting stuck mapping the same room repeatedly?", "domain": "ood_customer_support"}
+{"prompt": "How do I file a formal complaint with my telecom provider about three consecutive months of overcharges on my bill?", "domain": "ood_customer_support"}
+{"prompt": "My online banking app keeps crashing, what should I try?", "domain": "ood_customer_support"}
+{"prompt": "I was overcharged for international roaming, help me dispute it.", "domain": "ood_customer_support"}
+{"prompt": "Draft an escalation email weighing whether the customer should request a supervisor callback or continue via email for an unresolved insurance claim.", "domain": "ood_customer_support"}
+{"prompt": "My debit card was declined despite having funds.", "domain": "ood_customer_support"}
+{"prompt": "Write a firm but professional message asking a bank to explain why a wire transfer was held for five business days without notice.", "domain": "ood_customer_support"}
+{"prompt": "My noise-cancelling headphones randomly disconnect from Bluetooth every few minutes on Android but work fine on my laptop. What should I check?", "domain": "ood_customer_support"}
+{"prompt": "My prescription medication delivery from an online pharmacy arrived without the actual pills inside the sealed bag, help me write an urgent complaint.", "domain": "ood_customer_support"}
+{"prompt": "Draft a cancellation confirmation for a customer ending a meal-kit subscription after receiving spoiled ingredients twice.", "domain": "ood_customer_support"}
+{"prompt": "Draft troubleshooting steps for a customer whose point-of-sale terminal keeps freezing during transactions.", "domain": "ood_customer_support"}
+{"prompt": "My cloud storage account suddenly shows 'access denied' on all my files after a routine password reset, and support has been unresponsive for 48 hours — I need step-by-step troubleshooting for a suspected permissions rollback bug.", "domain": "ood_customer_support"}
+{"prompt": "Draft a welcome-back offer for a customer who cancelled last month.", "domain": "ood_customer_support"}
+{"prompt": "My SaaS invoice shows a $49.99 charge for 'Pro Plan Add-on' that I never enabled—can you help me write an email disputing this line item?", "domain": "ood_customer_support"}
+{"prompt": "Please draft a refund request email for a conference ticket where the event was rescheduled to dates I can no longer attend, referencing their stated force majeure refund policy.", "domain": "ood_customer_support"}
+{"prompt": "I got charged twice for my gym membership this month, can you help me write a message to their support asking for a refund?", "domain": "ood_customer_support"}
+{"prompt": "My retail loyalty points disappeared from my account after a recent app redesign—help me write a support ticket about this.", "domain": "ood_customer_support"}
+{"prompt": "Draft troubleshooting steps for a customer whose fitness tracker won't sync steps recorded during swimming workouts.", "domain": "ood_customer_support"}
+{"prompt": "My debit card was declined at checkout even though I have money in my account. What could be causing this?", "domain": "ood_customer_support"}
+{"prompt": "Write a step-by-step support reply explaining how a customer can track their delayed package that has been stuck in transit for six days.", "domain": "ood_customer_support"}
+{"prompt": "Our software vendor keeps missing SLA uptime targets—should we request service credits or terminate the contract? Draft a message reflecting your recommendation.", "domain": "ood_customer_support"}
+{"prompt": "I'm deciding between requesting a full refund or accepting a 20% discount and keeping my broken blender—can you help me weigh the pros and cons before I reply to the retailer?", "domain": "ood_customer_support"}
+{"prompt": "Do you think offering expedited shipping at no charge is a fair way to make up for a delayed order?", "domain": "ood_customer_support"}
+{"prompt": "I'm deciding between filing a warranty claim or just buying a new charger since mine stopped working after two months—help me compare and draft the support request.", "domain": "ood_customer_support"}
+{"prompt": "Write troubleshooting steps for customers whose mobile banking app crashes every time they try to deposit a check via photo.", "domain": "ood_customer_support"}
+{"prompt": "Can you draft a refund request for a concert ticket purchased through a resale app after the event was cancelled but the seller won't respond?", "domain": "ood_customer_support"}
+{"prompt": "I keep getting error messages when trying to update my payment method on a shopping site, what should I try?", "domain": "ood_customer_support"}
+{"prompt": "What do you recommend I say to convince a hotel to refund a resort fee I was never told about at booking?", "domain": "ood_customer_support"}
+{"prompt": "My order arrived damaged, what's the return process?", "domain": "ood_customer_support"}
+{"prompt": "I need help deciding whether to switch mobile carriers or stay and negotiate a lower rate after my bill unexpectedly doubled—what should I bring up with support?", "domain": "ood_customer_support"}
+{"prompt": "Write a short apology message to a customer whose flight was delayed by six hours due to a mechanical issue, offering a meal voucher and hotel accommodation.", "domain": "ood_customer_support"}
+{"prompt": "Draft a message recommending how to handle a customer who received the wrong size after exchanging an online order twice.", "domain": "ood_customer_support"}
+{"prompt": "Router keeps dropping wifi every hour, troubleshoot this.", "domain": "ood_customer_support"}
+{"prompt": "Can you help me compare the trade-offs of canceling my car rental reservation for a refund versus modifying the dates due to a flight delay?", "domain": "ood_customer_support"}
+{"prompt": "Help me write a message to my mobile carrier asking why I was charged an international roaming fee despite never leaving the country.", "domain": "ood_customer_support"}
+{"prompt": "How do I dispute a foreign transaction fee I wasn't told about when I opened my account?", "domain": "ood_customer_support"}
+{"prompt": "My flight got delayed six hours and I missed a connecting train, can you help me draft a compensation request to the airline?", "domain": "ood_customer_support"}
+{"prompt": "How do I escalate a support ticket that's been open for two weeks with no response from the shipping carrier?", "domain": "ood_customer_support"}
+{"prompt": "Write a message notifying customers of a service outage.", "domain": "ood_customer_support"}
+{"prompt": "My cable box froze on the same channel for two days and restarting it hasn't fixed it. What troubleshooting steps should I try?", "domain": "ood_customer_support"}
+{"prompt": "Write an escalation email for a customer whose laptop was sent for warranty repair six weeks ago and still hasn't been returned.", "domain": "ood_customer_support"}
+{"prompt": "Draft a reply to a customer whose warranty registration for a washing machine failed to go through despite submitting it twice.", "domain": "ood_customer_support"}
+{"prompt": "Can you draft a message to my landlord's payment portal support about a rent payment that shows as failed but my bank says it went through?", "domain": "ood_customer_support"}
+{"prompt": "Write a script for explaining a price increase to loyal customers.", "domain": "ood_customer_support"}
+{"prompt": "Write a troubleshooting reply and tell me which step you think is most likely to fix a smart thermostat that won't connect to WiFi.", "domain": "ood_customer_support"}
+{"prompt": "Draft a troubleshooting guide for customers whose smart lock won't respond to the mobile app but works fine with the physical key.", "domain": "ood_customer_support"}
+{"prompt": "Can you draft an apology message from a support agent to a customer whose account was mistakenly suspended for suspected fraud?", "domain": "ood_customer_support"}
+{"prompt": "My online grocery order was charged twice but only one delivery arrived, and the app won't let me report a billing duplicate. What should I do?", "domain": "ood_customer_support"}
+{"prompt": "I need to request a chargeback on my credit card for a hotel booking that charged me for a room type different from what I reserved and confirmed via email — what evidence should I gather first?", "domain": "ood_customer_support"}
+{"prompt": "Write a message to a clothing retailer asking to exchange a shirt for a different size since the one I received doesn't fit.", "domain": "ood_customer_support"}
+{"prompt": "My airline miles disappeared after a program merger, how do I recover them?", "domain": "ood_customer_support"}
+{"prompt": "Draft a customer support reply explaining the difference between a chargeback and a refund request for a disputed subscription charge.", "domain": "ood_customer_support"}
+{"prompt": "Compare the pros and cons of rebooking a cruise for next season versus taking a full cash refund after a canceled sailing.", "domain": "ood_customer_support"}
+{"prompt": "My noise-cancelling headphones only work in one ear intermittently, what troubleshooting steps should I follow?", "domain": "ood_customer_support"}
+{"prompt": "Write an apology message for a customer who received a birthday discount code that had already expired.", "domain": "ood_customer_support"}
+{"prompt": "My smart doorbell app keeps showing 'offline' even though my Wi-Fi is working fine everywhere else. What should I check?", "domain": "ood_customer_support"}
+{"prompt": "Draft a troubleshooting message for a customer whose mobile banking app crashes every time they try to deposit a check.", "domain": "ood_customer_support"}
+{"prompt": "Can you help me draft a message to a bank disputing a foreign transaction fee I was told wouldn't apply with my specific account type?", "domain": "ood_customer_support"}
+{"prompt": "What steps should I take to report that my rideshare app charged me for a trip I never took?", "domain": "ood_customer_support"}
+{"prompt": "Draft an apology and resolution message for a customer whose loyalty points vanished after a system migration, offering the best possible fix.", "domain": "ood_customer_support"}
+{"prompt": "Draft an email to a customer explaining a temporary price increase on their subscription due to new regional taxes.", "domain": "ood_customer_support"}
+{"prompt": "My car insurance premium jumped 40% at renewal with no accidents or claims on my record, and I want a script for calling to negotiate the rate down or understand exactly what changed in their risk model.", "domain": "ood_customer_support"}
+{"prompt": "My internet service provider has had an outage in my area for two days and I work from home, so I've lost income. Help me write a complaint that requests a bill credit for the downtime and asks what compensation policy applies in situations like mine.", "domain": "ood_customer_support"}
+{"prompt": "Write an apology and remediation message for subscribers who received an incorrect renewal price due to a coupon system glitch, explaining how their account will be corrected.", "domain": "ood_customer_support"}
+{"prompt": "Write an internal escalation ticket summary for a Tier 1 agent to hand off a case where a customer's smart home hub is bricked after a failed OTA update, including diagnostic logs the customer already provided.", "domain": "ood_customer_support"}
+{"prompt": "Which subscription tier would you recommend switching to if I'm being overcharged for a streaming service I barely use?", "domain": "ood_customer_support"}
+{"prompt": "I want to cancel my gym membership, what do I say?", "domain": "ood_customer_support"}
+{"prompt": "I never got the confirmation email after signing up, what should I do?", "domain": "ood_customer_support"}
+{"prompt": "Write a troubleshooting checklist for a car's infotainment system that won't recognize CarPlay anymore.", "domain": "ood_customer_support"}
+{"prompt": "Draft a message explaining why a customer's cryptocurrency withdrawal is delayed for compliance review.", "domain": "ood_customer_support"}
+{"prompt": "Draft a short apology and next-steps message for a customer whose subscription was accidentally billed at the wrong tier.", "domain": "ood_customer_support"}
+{"prompt": "My bank app won't let me log in after I changed my phone, walk me through what to do or help me write a message to their support team.", "domain": "ood_customer_support"}
+{"prompt": "Please write a customer support macro for handling tickets where users report their password reset link expired before they could click it, including a workaround and root cause note.", "domain": "ood_customer_support"}
+{"prompt": "I need to weigh whether to escalate my refund request to a manager now or give the current support agent 24 more hours to resolve it—can you help me draft this message?", "domain": "ood_customer_support"}
+{"prompt": "Draft a reply to a customer who is threatening to leave a negative public review after their software license key stopped working following a computer upgrade, explaining the reactivation process while trying to retain their trust.", "domain": "ood_customer_support"}
+{"prompt": "Should I ask my bank to reverse a disputed charge or file a formal chargeback with my card network? Help me compare both options and draft the message.", "domain": "ood_customer_support"}
+{"prompt": "Help me weigh canceling my gym membership versus freezing it for two months due to a billing dispute, and draft a message to the front desk.", "domain": "ood_customer_support"}
+{"prompt": "I need to write a support message asking why my e-reader shows 'Storage full' when I've deleted over half my books.", "domain": "ood_customer_support"}
+{"prompt": "Draft a message informing subscribers that their podcast app's offline downloads were wiped after an update.", "domain": "ood_customer_support"}
+{"prompt": "I need to cancel my gym membership that auto-renewed despite my written notice sent 45 days prior per their cancellation policy, and I want language for a formal dispute letter citing their own terms.", "domain": "ood_customer_support"}
+{"prompt": "Draft a message explaining why a customer's utility bill spiked unexpectedly after a smart meter installation.", "domain": "ood_customer_support"}
+{"prompt": "My package shows as 'delivered' on the tracking page but I never received it. Help me write a message to the retailer explaining this.", "domain": "ood_customer_support"}
+{"prompt": "I was billed for a service I cancelled two months ago, please help.", "domain": "ood_customer_support"}
+{"prompt": "Help me weigh switching carriers entirely versus staying and negotiating a loyalty discount after my third dropped-call complaint this month.", "domain": "ood_customer_support"}

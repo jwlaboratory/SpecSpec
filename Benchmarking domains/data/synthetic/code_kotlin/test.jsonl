@@ -1,0 +1,100 @@
+{"prompt": "I need to detect whether a binary tree is balanced, can you write this recursively in Kotlin and explain why it's O(n) rather than O(n log n)?", "domain": "code_kotlin"}
+{"prompt": "Compare using `try/catch` with coroutines versus `runCatching` for wrapping a suspend function that calls an external API — which handles cancellation more safely?", "domain": "code_kotlin"}
+{"prompt": "Explain the concept of 'contracts' in Kotlin (like the ones used in `require` and `check`) and how they help the compiler with smart casting, then show a simplified example of writing a custom function with a contract.", "domain": "code_kotlin"}
+{"prompt": "I'm getting a StackOverflowError with this recursive function on large inputs: fun sumTo(n: Long): Long = if (n == 0L) 0 else n + sumTo(n - 1) — how do I rewrite it to avoid this, ideally keeping it functional?", "domain": "code_kotlin"}
+{"prompt": "How do I read input from the console in a Kotlin program?", "domain": "code_kotlin"}
+{"prompt": "I have a Kotlin coroutine that leaks a Job because I'm launching it inside a ViewModel without using viewModelScope — can you review this snippet and show me the idiomatic fix?\nfun loadData() { GlobalScope.launch { repository.fetch() } }", "domain": "code_kotlin"}
+{"prompt": "this recursive function to calculate factorial overflows for large n, how do I fix it using BigInteger?", "domain": "code_kotlin"}
+{"prompt": "Can you explain what happens under the hood when you use `data class` with `copy()`, and why shallow copies can cause subtle bugs with mutable properties?", "domain": "code_kotlin"}
+{"prompt": "Compare using `data class` with `copy()` for immutable updates versus mutable properties with custom setters — which is more idiomatic for a state holder in Kotlin?", "domain": "code_kotlin"}
+{"prompt": "my RecyclerView adapter's DiffUtil isn't detecting changes, can you help fix this?\n```kotlin\nclass MyDiffCallback : DiffUtil.ItemCallback<Item>() {\n    override fun areItemsTheSame(old: Item, new: Item) = old === new\n    override fun areContentsTheSame(old: Item, new: Item) = old == new\n}\n```", "domain": "code_kotlin"}
+{"prompt": "write a kotlin function that generates all permutations of a given list", "domain": "code_kotlin"}
+{"prompt": "How do I write a custom `Comparator` in Kotlin to sort a list of `Person` objects first by age descending, then by name ascending, using `compareByDescending` and `thenBy`?", "domain": "code_kotlin"}
+{"prompt": "Compare `StringBuilder` and string concatenation with `+` inside a loop for building a large string in Kotlin — how much does it actually matter?", "domain": "code_kotlin"}
+{"prompt": "Is it better to use `Result<T>` or exceptions for error handling in a Kotlin backend service? Give me the pros and cons of each approach.", "domain": "code_kotlin"}
+{"prompt": "Can you review this Ktor route handler for security issues? It reads a user ID directly from the path parameter and queries the database without validation: get(\"/users/{id}\") { val id = call.parameters[\"id\"]; val user = db.findUser(id); call.respond(user) }", "domain": "code_kotlin"}
+{"prompt": "I want to expose a read-only view of an internal MutableMap from a class without allowing external code to mutate it. What's the idiomatic Kotlin way to do this, and are there any performance implications?", "domain": "code_kotlin"}
+{"prompt": "Explain how destructuring declarations work with data classes.", "domain": "code_kotlin"}
+{"prompt": "What's your opinion on naming convention for suspend functions — should they be verb-based like `fetchUser` or suffixed like `fetchUserAsync`?", "domain": "code_kotlin"}
+{"prompt": "Can you show me how to use Kotlin's 'filter' and 'map' together to process a list of numbers, keeping only even ones and doubling them?", "domain": "code_kotlin"}
+{"prompt": "how do I create a custom exception class in kotlin and use it properly with try-catch?", "domain": "code_kotlin"}
+{"prompt": "How would I implement a custom property delegate in Kotlin similar to 'Delegates.observable' but that also validates the new value before accepting it?", "domain": "code_kotlin"}
+{"prompt": "How do I implement a custom `Comparator` using `compareBy` and `thenBy` to sort a list of `Person(name: String, age: Int)` by age descending then name ascending?", "domain": "code_kotlin"}
+{"prompt": "Can you show me how to define a simple extension function that adds a `isEven()` method to the `Int` type?", "domain": "code_kotlin"}
+{"prompt": "How would you implement structured concurrency in Kotlin so that if one child coroutine in a coroutineScope fails, all siblings are cancelled automatically? Show a concrete example with async.", "domain": "code_kotlin"}
+{"prompt": "Explain what `fun main()` does in a Kotlin program and why it's the entry point.", "domain": "code_kotlin"}
+{"prompt": "Debug why this list comparison always returns false.\n```kotlin\nval a = listOf(1,2,3)\nval b = listOf(1,2,3)\nprintln(a === b)\n```", "domain": "code_kotlin"}
+{"prompt": "Write a basic Kotlin function that checks whether a given year is a leap year, and explain the conditions used.", "domain": "code_kotlin"}
+{"prompt": "Write a Kotlin function that computes the longest increasing subsequence of an IntArray in O(n log n) using binary search.", "domain": "code_kotlin"}
+{"prompt": "Explain what value classes (inline classes) in Kotlin are for, and rewrite this wrapper class as a value class:\ndata class UserId(val id: String)", "domain": "code_kotlin"}
+{"prompt": "I have this code and it's throwing a NullPointerException, can you help me fix it: val name: String? = null; println(name.length)", "domain": "code_kotlin"}
+{"prompt": "Do you think it's worth switching from Java-style builder patterns to Kotlin's named arguments and default parameters for object construction?", "domain": "code_kotlin"}
+{"prompt": "I'm not sure why this extension function shadows the member function instead of causing a conflict — can you explain resolution order in Kotlin?\n```kotlin\nclass Greeter {\n    fun greet() = \"member\"\n}\n\nfun Greeter.greet() = \"extension\"\n\nfun main() {\n    println(Greeter().greet())\n}\n```", "domain": "code_kotlin"}
+{"prompt": "Explain what `apply` does here.\n```kotlin\nval sb = StringBuilder().apply { append(\"hi\") }\n```", "domain": "code_kotlin"}
+{"prompt": "Can you walk me through debugging why this coroutine never completes?\n```kotlin\nsuspend fun fetchData() = coroutineScope {\n    launch {\n        delay(1000)\n        println(\"done\")\n    }\n}\n```", "domain": "code_kotlin"}
+{"prompt": "I'm confused about why this code doesn't compile: fun <T> printFirst(list: List<T>): T where T : Comparable<T> { return list.first() } — actually wait, it does compile, but I want you to explain what the 'where' clause is doing here and rewrite it using the inline bound syntax instead.", "domain": "code_kotlin"}
+{"prompt": "Show me, step by step, how to implement a simple observer pattern in Kotlin using `MutableList<() -> Unit>` as listeners.", "domain": "code_kotlin"}
+{"prompt": "my coroutine keeps freezing the UI thread, here's the code, can you spot the bug? GlobalScope.launch(Dispatchers.Main) { val data = fetchData(); Thread.sleep(3000) }", "domain": "code_kotlin"}
+{"prompt": "Write a Kotlin extension function 'chunkedBy' that splits a list into sublists whenever a predicate between consecutive elements becomes true.", "domain": "code_kotlin"}
+{"prompt": "Fix this compile error about smart cast impossibility.\n```kotlin\nvar x: String? = \"a\"\nif (x != null) { thread { x.length } }\n```", "domain": "code_kotlin"}
+{"prompt": "can you help me debug this? it should print numbers 1 to 5 but nothing shows up. for (i in 1..5) { }", "domain": "code_kotlin"}
+{"prompt": "What are the trade-offs between using `sealed class` versus `enum class` for representing a finite set of states in Kotlin, and when would you pick one over the other?", "domain": "code_kotlin"}
+{"prompt": "I need to implement Dijkstra's shortest path algorithm in Kotlin using a `PriorityQueue`, operating on a weighted graph represented as `Map<String, List<Pair<String, Int>>>`. Can you write it, explain the time complexity, and add a trace of the algorithm on a small example graph in comments?", "domain": "code_kotlin"}
+{"prompt": "Write a function to check if a linked list has a cycle.", "domain": "code_kotlin"}
+{"prompt": "Write a Kotlin coroutine-based rate limiter that allows at most N requests per second, using a `Channel` or `Semaphore`.", "domain": "code_kotlin"}
+{"prompt": "I have a sealed interface hierarchy for JSON values; can you show how to write an exhaustive `when` expression that also handles a newly added `JsonNull` variant at compile time?", "domain": "code_kotlin"}
+{"prompt": "Can you optimize this string concatenation loop for large inputs?\n```kotlin\nfun buildString(n: Int): String {\n    var result = \"\"\n    for (i in 0 until n) {\n        result += i.toString()\n    }\n    return result\n}\n```", "domain": "code_kotlin"}
+{"prompt": "Can you explain what Kotlin's 'Elvis operator' (?:) does and give me a simple example of using it to provide default values?", "domain": "code_kotlin"}
+{"prompt": "I have a memory leak in Android because I'm holding a reference to an Activity in a companion object: companion object { var listener: MyActivity? = null } — how do I fix this using Kotlin idioms like WeakReference or better architecture?", "domain": "code_kotlin"}
+{"prompt": "Can you explain the difference between 'Int' and 'Integer' in Kotlin, and when boxing actually happens?", "domain": "code_kotlin"}
+{"prompt": "Explain what happens memory-wise when you use lateinit var versus a nullable var with a default value for an Android Fragment's binding property.", "domain": "code_kotlin"}
+{"prompt": "Why is my `when` expression not exhaustive?\n```kotlin\nval x: Int? = 5\nval y = when(x) { 1 -> \"one\"; 2 -> \"two\" }\n```", "domain": "code_kotlin"}
+{"prompt": "Should a Kotlin multiplatform project use `expect`/`actual` declarations or a full dependency-injection abstraction for platform-specific file I/O?", "domain": "code_kotlin"}
+{"prompt": "What's the idiomatic way to parse a query string like `\"a=1&b=2&c=3\"` into a `Map<String, String>` in Kotlin?", "domain": "code_kotlin"}
+{"prompt": "Write a Kotlin function that implements Dijkstra's shortest path algorithm on a graph represented as an adjacency list of Map<Int, List<Pair<Int, Int>>>.", "domain": "code_kotlin"}
+{"prompt": "What's the difference between `==` and `===` in Kotlin? I keep mixing them up when comparing objects.", "domain": "code_kotlin"}
+{"prompt": "Write a Kotlin extension function on List<T> that returns all permutations, and explain the time complexity of your approach.", "domain": "code_kotlin"}
+{"prompt": "Write a function to find the longest common subsequence between two strings using dynamic programming in Kotlin, and explain the time and space complexity.", "domain": "code_kotlin"}
+{"prompt": "Write a property delegate in Kotlin similar to 'Delegates.observable' but that also validates the new value against a predicate before assignment, throwing an IllegalArgumentException otherwise.", "domain": "code_kotlin"}
+{"prompt": "I have a simple class hierarchy and want to understand how `open` and `override` work together. Can you explain with a small example of a `Shape` base class and a `Circle` subclass?", "domain": "code_kotlin"}
+{"prompt": "I need to migrate a Room DAO from callback-based queries to coroutines with Flow. Here's the old interface — can you convert it, and explain the tradeoffs between returning `Flow<List<Entity>>` versus a one-shot `suspend fun`?\n```kotlin\n@Dao\ninterface UserDao {\n    @Query(\"SELECT * FROM users\")\n    fun getUsers(callback: (List<UserEntity>) -> Unit)\n}\n```", "domain": "code_kotlin"}
+{"prompt": "Debug why this coroutine never completes: runBlocking { delay(1000) }", "domain": "code_kotlin"}
+{"prompt": "For a Kotlin multiplatform project, what are the trade-offs between using `expect`/`actual` declarations versus a fully shared interface with platform-specific implementations injected?", "domain": "code_kotlin"}
+{"prompt": "Can you explain why this `Flow` collector never receives the last emitted value before the flow completes?\n```kotlin\nflow {\n    emit(1)\n    emit(2)\n}.buffer(0).collect { println(it) }\n```", "domain": "code_kotlin"}
+{"prompt": "Here's a Flow pipeline that seems to buffer too much data and cause memory pressure — how would you apply backpressure strategies like conflate or buffer correctly?\nflow { emit(fetchLargeDataset()) }.collect { process(it) }", "domain": "code_kotlin"}
+{"prompt": "This Jetpack Compose `LaunchedEffect` seems to re-run every recomposition even though the key hasn't changed — can you help me debug it?\n```kotlin\n@Composable\nfun Screen(viewModel: MyViewModel) {\n    LaunchedEffect(viewModel) {\n        viewModel.loadData()\n    }\n}", "domain": "code_kotlin"}
+{"prompt": "Debug this code — it's supposed to reverse a linked list iteratively but it seems to lose nodes after the first two elements. Can you find the bug and explain what was going wrong with the pointer updates?\nfun reverse(head: Node?): Node? {\n    var prev: Node? = null\n    var curr = head\n    while (curr != null) {\n        val next = curr.next\n        curr.next = prev\n        curr = next\n    }\n    return prev\n}", "domain": "code_kotlin"}
+{"prompt": "Can you write a Kotlin function that checks whether a binary tree is balanced (the height difference between left and right subtrees of every node is at most 1), using a bottom-up approach that avoids recalculating height repeatedly, and explain why the naive top-down approach is O(n^2)?", "domain": "code_kotlin"}
+{"prompt": "Should I use `lateinit var` or a nullable `var` with `?` for a property that's initialized in `onCreate`? Walk me through the trade-offs in an Android context.", "domain": "code_kotlin"}
+{"prompt": "Review this Kotlin code for potential deadlocks — two coroutines are each trying to acquire two Mutex locks in different orders:\nsuspend fun transfer(a: Account, b: Account, amount: Int) { mutexA.lock(); mutexB.lock(); ... }", "domain": "code_kotlin"}
+{"prompt": "Write a sealed interface hierarchy representing a simple arithmetic expression tree (Num, Add, Mul) and an `eval` function that evaluates it recursively.", "domain": "code_kotlin"}
+{"prompt": "Explain the difference between == and === in Kotlin.", "domain": "code_kotlin"}
+{"prompt": "How do I make this class thread-safe using a mutex?", "domain": "code_kotlin"}
+{"prompt": "Explain what `by` does in `class Foo : Bar by bar`.", "domain": "code_kotlin"}
+{"prompt": "can you optimise this recursive fibonacci function in kotlin, it's super slow for large n? fun fib(n: Int): Int = if (n <= 1) n else fib(n-1) + fib(n-2)", "domain": "code_kotlin"}
+{"prompt": "How can I use Kotlin's Result class combined with runCatching to replace this verbose try-catch block?\n\nfun parseInt(s: String): Int {\n    try {\n        return s.toInt()\n    } catch (e: NumberFormatException) {\n        return -1\n    }\n}", "domain": "code_kotlin"}
+{"prompt": "Write a quicksort implementation in Kotlin.", "domain": "code_kotlin"}
+{"prompt": "Walk me through how to set up unit tests with MockK for a repository class that depends on a suspend function.", "domain": "code_kotlin"}
+{"prompt": "Explain what a companion object is in Kotlin and why we might use one.", "domain": "code_kotlin"}
+{"prompt": "Write a Kotlin extension function to capitalize each word in a string.", "domain": "code_kotlin"}
+{"prompt": "Explain what the `Elvis operator ?:` does in combination with `return` and `throw`, and show an example of using it inside a function to fail fast when a required parameter is null.", "domain": "code_kotlin"}
+{"prompt": "How would you implement the Observer pattern idiomatically in Kotlin using property delegation or Flow instead of a manual listener list?", "domain": "code_kotlin"}
+{"prompt": "Write a function using `buildList` and `buildMap` to construct an immutable list and map from a mutable building process, and explain why this is preferred over manually creating a `MutableList` and converting it.", "domain": "code_kotlin"}
+{"prompt": "Explain the difference between `Any`, `Any?`, and `Unit` in Kotlin.", "domain": "code_kotlin"}
+{"prompt": "I want to represent a binary tree in Kotlin using a sealed class with `Leaf` and `Node` variants, and write a function to compute its height recursively — can you show this?", "domain": "code_kotlin"}
+{"prompt": "Write a Kotlin extension function `String.isPalindrome(): Boolean` that ignores case and non-alphanumeric characters, and add test cases including edge cases like empty strings.", "domain": "code_kotlin"}
+{"prompt": "Can you find the bug in this recursive Fibonacci function and explain how to fix it for large inputs?\n```kotlin\nfun fib(n: Int): Long {\n    return if (n <= 1) n.toLong() else fib(n - 1) + fib(n - 2)\n}\n```", "domain": "code_kotlin"}
+{"prompt": "I'm building a small inventory app, can you write a kotlin class hierarchy for Product, with subclasses Electronics and Grocery?", "domain": "code_kotlin"}
+{"prompt": "this function is throwing a StackOverflowError on large inputs, can you help me fix my recursive fibonacci implementation?", "domain": "code_kotlin"}
+{"prompt": "write a simple kotlin implementation of a stack using an ArrayDeque", "domain": "code_kotlin"}
+{"prompt": "explain the difference between val and const val in kotlin, I keep getting confused", "domain": "code_kotlin"}
+{"prompt": "Write a Kotlin extension function on String that checks if it's a palindrome, ignoring case and non-alphanumeric characters.", "domain": "code_kotlin"}
+{"prompt": "What's your take on using extension functions versus utility objects for adding helper methods to third-party classes in Kotlin?", "domain": "code_kotlin"}
+{"prompt": "Would you recommend `kotlinx.datetime` over `java.time` for a Kotlin Multiplatform project that targets iOS and Android?", "domain": "code_kotlin"}
+{"prompt": "Explain how smart casts work in Kotlin.", "domain": "code_kotlin"}
+{"prompt": "Add unit tests for a Kotlin function that adds two integers.", "domain": "code_kotlin"}
+{"prompt": "Compare using `try`/`catch` blocks versus the `runCatching` function for wrapping risky operations in Kotlin — is one more idiomatic than the other?", "domain": "code_kotlin"}
+{"prompt": "Compare `object` singletons versus dependency-injected classes for managing shared state in a Kotlin multiplatform app.", "domain": "code_kotlin"}
+{"prompt": "this kotlin when expression isn't compiling, what am I missing? when (x) { 1 -> \"one\" 2 -> \"two\" }", "domain": "code_kotlin"}
+{"prompt": "Can you explain the purpose of the `init` block in a Kotlin class and show an example where it's used to validate constructor parameters?", "domain": "code_kotlin"}
+{"prompt": "can you explain how `lazy` delegation works under the hood in Kotlin?", "domain": "code_kotlin"}

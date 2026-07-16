@@ -1,0 +1,100 @@
+{"prompt": "In your opinion, should I switch this to use `Set` instead of `Array` for membership checks given the size of the collection?", "domain": "code_ruby"}
+{"prompt": "How do I flatten a deeply nested array in Ruby?", "domain": "code_ruby"}
+{"prompt": "Write a method to remove duplicates from an array without using uniq", "domain": "code_ruby"}
+{"prompt": "Explain the difference between `Module#include`, `extend`, and `prepend` with a concrete example showing method resolution order.", "domain": "code_ruby"}
+{"prompt": "I have this deeply nested hash from a JSON API response and I need to safely extract a value that might not exist at any level: `data['result']['items'][0]['metadata']['tags']`. Show me how to use `dig` and safe navigation to avoid NoMethodError, and discuss the tradeoffs versus a rescue block.", "domain": "code_ruby"}
+{"prompt": "I have this ActiveRecord query causing an N+1 problem, how do I fix it?\n\nposts.each { |post| puts post.comments.count }", "domain": "code_ruby"}
+{"prompt": "Can you refactor this method to use a case statement instead of a bunch of if/elsif branches?\n\ndef status_label(code)\n  if code == 200\n    'OK'\n  elsif code == 404\n    'Not Found'\n  elsif code == 500\n    'Server Error'\n  else\n    'Unknown'\n  end\nend", "domain": "code_ruby"}
+{"prompt": "Explain what's happening in this code with blocks and Proc#curry:\n\nadd = ->(a, b) { a + b }\nadd_five = add.curry[5]\nputs add_five[10]", "domain": "code_ruby"}
+{"prompt": "Fix this: def greet(name = 'World') puts \"Hello #{name\" end", "domain": "code_ruby"}
+{"prompt": "Compare `Module#prepend` and `Module#include` for adding behavior to a class — when would you pick one over the other?", "domain": "code_ruby"}
+{"prompt": "my rails model validation isn't firing, any idea why validates :email, presence: true isn't catching blank emails on update?", "domain": "code_ruby"}
+{"prompt": "What's the idiomatic way to check if a string is blank?", "domain": "code_ruby"}
+{"prompt": "Would you recommend `Hash#dig` over nested `&.` safe navigation for deeply nested config lookups? Explain your preference.", "domain": "code_ruby"}
+{"prompt": "Refactor this nested if-else chain into something more idiomatic using case/when or a hash lookup:\n\ndef grade(score)\n  if score >= 90\n    'A'\n  elsif score >= 80\n    'B'\n  elsif score >= 70\n    'C'\n  else\n    'F'\n  end\nend", "domain": "code_ruby"}
+{"prompt": "In Ruby, write a function that finds the second largest element in an array and explain its time complexity.", "domain": "code_ruby"}
+{"prompt": "Can you show me how to loop through an array and print each element with its index?", "domain": "code_ruby"}
+{"prompt": "Write a Ruby implementation of quicksort that sorts in place, then compare its performance characteristics to Ruby's built-in `sort` method in a short explanation.", "domain": "code_ruby"}
+{"prompt": "Write clean, idiomatic Ruby that counts set bits in an integer.", "domain": "code_ruby"}
+{"prompt": "Write me a simple LRU cache implementation in Ruby using a Hash.", "domain": "code_ruby"}
+{"prompt": "I'm getting a `FrozenError` intermittently in production when multiple threads touch this class. Can you help me figure out the race condition and fix it?\n\nclass Counter\n  def initialize\n    @count = 0\n  end\n\n  def increment\n    @count += 1\n  end\nend", "domain": "code_ruby"}
+{"prompt": "Can you explain lazy enumerators and rewrite this to avoid computing the whole range? `(1..Float::INFINITY).map { |n| n * 2 }.first(5)`", "domain": "code_ruby"}
+{"prompt": "Would you recommend rescuing `StandardError` broadly here, or is it better to rescue specific exception classes?\n\nbegin\n  risky_operation\nrescue => e\n  Rails.logger.error(e.message)\nend", "domain": "code_ruby"}
+{"prompt": "Explain step by step how Ruby's garbage collector decides when to reclaim an object, using this snippet as a jumping-off point:\n\nobj = Object.new\nobj = nil\nGC.start", "domain": "code_ruby"}
+{"prompt": "In Ruby, write a function that finds all pairs in an array that sum to a target and explain its time complexity.", "domain": "code_ruby"}
+{"prompt": "Write a Ruby script that reads a large CSV file line by line and aggregates a sum column without loading the whole file into memory.", "domain": "code_ruby"}
+{"prompt": "I'm building a simple job queue in pure Ruby using threads and a Mutex plus ConditionVariable. Can you write a thread-safe `WorkQueue` class with `push` and `pop` methods that blocks when empty, and explain any race conditions I should watch out for?", "domain": "code_ruby"}
+{"prompt": "Write a Ruby function that finds all pairs in an array that sum to a target. Include a short comment explaining the approach.", "domain": "code_ruby"}
+{"prompt": "What's your opinion on using `case/in` pattern matching versus a chain of `if/elsif` for parsing API responses in Ruby?", "domain": "code_ruby"}
+{"prompt": "What's the best way to merge two arrays and remove duplicates in Ruby?", "domain": "code_ruby"}
+{"prompt": "Write clean, idiomatic Ruby that computes the Hamming distance between two equal-length strings.", "domain": "code_ruby"}
+{"prompt": "Write a method to check if two strings are anagrams", "domain": "code_ruby"}
+{"prompt": "Is it more idiomatic to use `Hash.new(0)` for counting versus checking key existence manually with `key?`? Show both styles.", "domain": "code_ruby"}
+{"prompt": "Write a Ruby function that groups anagrams together from a list of words. Include a short comment explaining the approach.", "domain": "code_ruby"}
+{"prompt": "Explain how Ruby's garbage collector decides when to run and how `GC.stat` can help me diagnose performance issues in a Sinatra app.", "domain": "code_ruby"}
+{"prompt": "Between `Struct.new` and `Data.define` in newer Ruby versions, which would you recommend for immutable value objects and why?", "domain": "code_ruby"}
+{"prompt": "Would you recommend `Comparable#clamp` over manual min/max comparisons for bounding a value? Discuss with this snippet:\n\nvalue = [min, [value, max].min].max", "domain": "code_ruby"}
+{"prompt": "Explain, step by step, why this Ruby code raises a `FrozenError` and how I should restructure it.\n\nCONFIG = { retries: 3 }.freeze\nCONFIG[:retries] += 1", "domain": "code_ruby"}
+{"prompt": "How do I write a Ruby method, step by step, that groups an array of hashes by a given key and sums a numeric field for each group?", "domain": "code_ruby"}
+{"prompt": "Can you explain the difference between `instance_variable_get` and directly calling an attribute reader?", "domain": "code_ruby"}
+{"prompt": "Can you explain why this each_with_index usage produces a warning in newer Ruby versions and how to write it more idiomatically?\n\narr.each_with_index { |item, i| puts \"#{i}: #{item}\" }", "domain": "code_ruby"}
+{"prompt": "this bit of code is meant to detect cycles in a linked list but I don't think it works, can you check it?\n\ndef has_cycle?(head)\n  slow = fast = head\n  while fast\n    slow = slow.next\n    fast = fast.next\n    return true if slow == fast\n  end\n  false\nend", "domain": "code_ruby"}
+{"prompt": "Can you explain what this code does line by line? `5.times { |i| puts i * 2 }`", "domain": "code_ruby"}
+{"prompt": "Write a method that flattens an arbitrarily nested array without using Ruby's built-in `flatten` method, and explain the recursive approach you used.", "domain": "code_ruby"}
+{"prompt": "Debug this ActiveRecord scope that isn't chaining correctly: scope :recent, -> { where('created_at > ?', 1.week.ago) }; scope :published, -> { recent.where(published: true) }", "domain": "code_ruby"}
+{"prompt": "What's your honest opinion on this use of metaprogramming with `method_missing`? Is it worth the complexity here?\n\nclass DynamicProxy\n  def method_missing(name, *args)\n    puts \"Called #{name} with #{args}\"\n  end\nend", "domain": "code_ruby"}
+{"prompt": "Explain the difference between `Comparable` and `Enumerable` modules in Ruby with a short example of including each.", "domain": "code_ruby"}
+{"prompt": "Can you optimize this method that counts vowels in a string, since it currently iterates twice?\n\ndef vowel_count(str)\n  vowels = str.chars.select { |c| 'aeiouAEIOU'.include?(c) }\n  vowels.length\nend", "domain": "code_ruby"}
+{"prompt": "help me optimize this, it's way too slow on big arrays: def contains_dup?(arr) arr.each { |x| return true if arr.count(x) > 1 } false end", "domain": "code_ruby"}
+{"prompt": "How do I implement a simple pub-sub event system in plain Ruby without any gems?", "domain": "code_ruby"}
+{"prompt": "What's the difference between proc and lambda?", "domain": "code_ruby"}
+{"prompt": "Can you walk me through how default arguments work in Ruby methods?", "domain": "code_ruby"}
+{"prompt": "How do I write a simple Ruby method that checks if a number is even or odd?", "domain": "code_ruby"}
+{"prompt": "Can you explain what `ObjectSpace` is used for and give an example of iterating over all live instances of a class?", "domain": "code_ruby"}
+{"prompt": "what's wrong with this thread-safety wise? I'm getting weird race conditions\n\n@counter = 0\nthreads = 10.times.map { Thread.new { @counter += 1 } }\nthreads.each(&:join)", "domain": "code_ruby"}
+{"prompt": "What's your take on exception-based control flow versus returning nil/false for expected failure cases in Ruby methods?", "domain": "code_ruby"}
+{"prompt": "Is it better to use `Hash#dig` or nested `&.` safe navigation when traversing deeply nested JSON in Ruby? Show examples of both.", "domain": "code_ruby"}
+{"prompt": "I need a method that validates a Sudoku board is correctly solved, can you write that in Ruby?", "domain": "code_ruby"}
+{"prompt": "Would you recommend Dry::Validation or plain ActiveModel validations for a standalone Ruby service that isn't tied to Rails?", "domain": "code_ruby"}
+{"prompt": "can you explain what this line of ruby actually does: arr.each_with_object({}) { |x, h| h[x] ||= 0; h[x] += 1 }", "domain": "code_ruby"}
+{"prompt": "Can you review this merge sort implementation for correctness and suggest any performance improvements?\n\ndef merge_sort(arr)\n  return arr if arr.length <= 1\n  mid = arr.length / 2\n  left = merge_sort(arr[0...mid])\n  right = merge_sort(arr[mid..])\n  merge(left, right)\nend\n\ndef merge(left, right)\n  result = []\n  until left.empty? || right.empty?\n    result << (left.first <= right.first ? left.shift : right.shift)\n  end\n  result + left + right\nend", "domain": "code_ruby"}
+{"prompt": "can you add some basic error handling to this method so it doesn't blow up on bad input: def parse_age(str) str.to_i end", "domain": "code_ruby"}
+{"prompt": "Explain step by step what this Ruby metaprogramming snippet does and why it might be dangerous:\n\nclass Foo\n  define_method(:bar) { |x| instance_variable_set(\"@#{x}\", true) }\nend", "domain": "code_ruby"}
+{"prompt": "What's your view on using `Enumerable#lazy` for processing large CSV files versus loading everything into memory first?", "domain": "code_ruby"}
+{"prompt": "I need to implement a rate limiter using the token bucket algorithm in Ruby that works with Redis. Can you write the class and explain the atomicity concerns with concurrent requests?", "domain": "code_ruby"}
+{"prompt": "Explain the difference between freeze and dup", "domain": "code_ruby"}
+{"prompt": "I need to write a method that takes a Ruby Hash representing a nested JSON-like structure and flattens it into a single-level hash with dot-notation keys, similar to what you'd want before sending data to a flat key-value store. Please handle arrays inside the nested structure as well, and include a couple of example inputs and outputs.", "domain": "code_ruby"}
+{"prompt": "can you convert this each loop into a map/select chain: results = [] arr.each { |x| results << x * 2 if x > 0 }", "domain": "code_ruby"}
+{"prompt": "Can you explain the difference between `==` and `.equal?` in Ruby with simple examples?", "domain": "code_ruby"}
+{"prompt": "Why does `Comparable` require me to define `<=>` and how does mixing it in unlock methods like `clamp` and `between?`", "domain": "code_ruby"}
+{"prompt": "Is it better to use `respond_to?` checks or duck typing without checks when working with polymorphic objects in Ruby?", "domain": "code_ruby"}
+{"prompt": "What's your recommendation for handling multiple return values in Ruby — should I use arrays, hashes, or a Struct?", "domain": "code_ruby"}
+{"prompt": "Explain the performance implications of using `String#+=` versus `String#<<` in a loop that builds a large string.", "domain": "code_ruby"}
+{"prompt": "Walk me through writing a memoization helper in Ruby using `||=` versus a Hash-based cache, showing the pros of each approach.", "domain": "code_ruby"}
+{"prompt": "Compare using `case/when` with ranges versus a series of `if/elsif` statements for classifying exam scores into letter grades — which is more idiomatic?", "domain": "code_ruby"}
+{"prompt": "What's your opinion on using global variables (`$config`) for app-wide settings versus a singleton class?", "domain": "code_ruby"}
+{"prompt": "Implement a simple pub/sub event bus class in Ruby supporting subscribe, unsubscribe, and publish with multiple listeners per event", "domain": "code_ruby"}
+{"prompt": "Can you explain how Ruby's garbage collector decides when to collect objects, and how that might relate to a memory leak in a long-running Sidekiq worker?", "domain": "code_ruby"}
+{"prompt": "can you optimize this string building loop? it's really slow on large inputs\n\nresult = ''\n1000.times { |i| result += i.to_s }", "domain": "code_ruby"}
+{"prompt": "Can you convert this Ruby loop into something more idiomatic using Enumerable methods?\n\nresult = []\narr.each do |x|\n  result << x * 2 if x > 0\nend", "domain": "code_ruby"}
+{"prompt": "How do I debug a Ruby `NoMethodError: undefined method 'each' for nil:NilClass` that only happens intermittently in production?", "domain": "code_ruby"}
+{"prompt": "Write clean, idiomatic Ruby that converts a Roman numeral to an integer.", "domain": "code_ruby"}
+{"prompt": "Write a Ruby script that watches a directory for new files and logs their names.", "domain": "code_ruby"}
+{"prompt": "Can you write a Ruby method to check if two strings are anagrams of each other?", "domain": "code_ruby"}
+{"prompt": "Would you suggest using `Enumerable#each_slice` or manual index math to batch-process a large array in Ruby?", "domain": "code_ruby"}
+{"prompt": "I have a background job in Sidekiq that processes image uploads, but under load it occasionally duplicates work because two workers pick up the same job. Can you show me how to add a distributed lock using Redis (via the `redis-lock` gem or a manual `SETNX` implementation) around the critical section of this job, and explain how to handle lock expiry safely if the job takes longer than expected?", "domain": "code_ruby"}
+{"prompt": "What's the idiomatic Ruby way to memoize an expensive method call on an instance?", "domain": "code_ruby"}
+{"prompt": "Can you explain the difference between `method_missing` and `respond_to_missing?` and why you should implement both together?", "domain": "code_ruby"}
+{"prompt": "How would you implement the Observer pattern in Ruby using the standard library's `Observable` module?", "domain": "code_ruby"}
+{"prompt": "Compare writing a custom exception hierarchy with multiple subclasses versus using a single exception class with an `:error_code` attribute for a Ruby API client library.", "domain": "code_ruby"}
+{"prompt": "Compare `Kernel#loop` with a `while true` block for an infinite polling loop — any meaningful differences in Ruby?", "domain": "code_ruby"}
+{"prompt": "Write a thread-safe counter class using Mutex.", "domain": "code_ruby"}
+{"prompt": "Implement, in Ruby, code that implements a basic retry-with-backoff helper. Add a couple of example calls.", "domain": "code_ruby"}
+{"prompt": "Can you write a Ruby function that flattens a deeply nested array without using the built-in flatten method?", "domain": "code_ruby"}
+{"prompt": "Do you think it's worth introducing a gem like `dry-monads` for Result types in Ruby, or is that overkill for most teams?", "domain": "code_ruby"}
+{"prompt": "Show me step by step how to build a simple Rack middleware in Ruby that logs request duration.", "domain": "code_ruby"}
+{"prompt": "I'm trying to parse a log file and extract timestamps with a regex but it's not matching, what am I missing?\n\nline.match(/\\d{4}-\\d{2}-\\d{2}/)", "domain": "code_ruby"}
+{"prompt": "this recursive fibonacci function is super slow for n=35, can you speed it up?\n\ndef fib(n)\n  return n if n <= 1\n  fib(n-1) + fib(n-2)\nend", "domain": "code_ruby"}
+{"prompt": "Explain the difference between `Method` and `UnboundMethod` objects and when you'd use `bind`.", "domain": "code_ruby"}
+{"prompt": "Explain what's happening under the hood when I call .dup versus .clone on an object with instance variables", "domain": "code_ruby"}
+{"prompt": "Can you help me write a simple calculator method that takes two numbers and an operator symbol and returns the result?", "domain": "code_ruby"}

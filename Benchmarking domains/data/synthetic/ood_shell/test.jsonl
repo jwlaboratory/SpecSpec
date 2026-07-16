@@ -1,0 +1,100 @@
+{"prompt": "What's the command to compress a folder into a .tar.gz file?", "domain": "ood_shell"}
+{"prompt": "I need a find command that deletes all files older than 30 days in /var/log/myapp but excludes anything matching *.gz", "domain": "ood_shell"}
+{"prompt": "what's the shell one-liner to count occurrences of each unique word in a text file?", "domain": "ood_shell"}
+{"prompt": "Should I use `kubectl apply -f` or `kubectl create -f` when deploying a new manifest, and what's the practical difference?", "domain": "ood_shell"}
+{"prompt": "Is it better to use kubectl apply or kubectl create for managing Kubernetes resources in a CI/CD pipeline, and why?", "domain": "ood_shell"}
+{"prompt": "give me a one-liner to check disk I/O usage per process", "domain": "ood_shell"}
+{"prompt": "Write an awk one-liner that parses an nginx access log and prints the top 20 IP addresses by request count, sorted descending", "domain": "ood_shell"}
+{"prompt": "write a find command that changes the extension of all .txt files in a directory tree to .md", "domain": "ood_shell"}
+{"prompt": "What's the difference between piping to less versus more when reviewing long command output, and does it matter for scripting?", "domain": "ood_shell"}
+{"prompt": "Is `top` or `htop` more reliable for spotting a runaway process eating CPU on a headless server?", "domain": "ood_shell"}
+{"prompt": "Give me a kubectl one-liner that outputs the resource requests and limits for every container in every deployment within a namespace, formatted as a simple table.", "domain": "ood_shell"}
+{"prompt": "Explain what this command does and why the -0 flag matters: find . -name '*.tmp' -print0 | xargs -0 rm -f", "domain": "ood_shell"}
+{"prompt": "kubectl command to exec into a pod and open a bash shell", "domain": "ood_shell"}
+{"prompt": "What's your preferred approach for cleaning up dangling kubectl resources left behind after a failed deployment?", "domain": "ood_shell"}
+{"prompt": "How do I search for a specific process by name using ps and grep together?", "domain": "ood_shell"}
+{"prompt": "what's the git command to see which files changed between two branches without merging", "domain": "ood_shell"}
+{"prompt": "Explain step by step what this docker-compose command does and what could go wrong: docker-compose up -d --build --force-recreate --remove-orphans", "domain": "ood_shell"}
+{"prompt": "Explain what this does: ps aux | awk '{print $6/1024, $11}' | sort -n", "domain": "ood_shell"}
+{"prompt": "What's the kubectl command to list all pods in a specific namespace?", "domain": "ood_shell"}
+{"prompt": "Explain what this command sequence does and any risks involved: chmod -R 777 /var/www && chown -R www-data:www-data /var/www", "domain": "ood_shell"}
+{"prompt": "What's a simple git command to undo my last commit but keep the changes?", "domain": "ood_shell"}
+{"prompt": "git command to show the diff of a specific file between two commits", "domain": "ood_shell"}
+{"prompt": "How do I recover a deleted branch in git using reflog?", "domain": "ood_shell"}
+{"prompt": "How can I use grep with context flags to show 5 lines before and after every occurrence of a stack trace keyword in a log file", "domain": "ood_shell"}
+{"prompt": "How do I use lsof to find which process is holding a deleted file open and still consuming disk space", "domain": "ood_shell"}
+{"prompt": "How do I create a new branch in git and switch to it in one command?", "domain": "ood_shell"}
+{"prompt": "Would you recommend git cherry-pick or manually reapplying patches when porting a fix to an older release branch?", "domain": "ood_shell"}
+{"prompt": "How do I set up a git alias for 'git log --oneline --graph --decorate' so I can just type 'git lg'?", "domain": "ood_shell"}
+{"prompt": "explain this: du -sh * | sort -rh | head -10", "domain": "ood_shell"}
+{"prompt": "How do I copy a file from a running Docker container to my local machine, and what's the syntax?", "domain": "ood_shell"}
+{"prompt": "I need a docker command that runs a temporary container from an Ubuntu image, mounts my current working directory read-only, and drops me into an interactive bash shell with the container auto-removed on exit.", "domain": "ood_shell"}
+{"prompt": "Walk me through using netstat or ss to list all processes listening on TCP ports and identify which one is using port 3000.", "domain": "ood_shell"}
+{"prompt": "how do i undo my last git commit but keep the changes staged", "domain": "ood_shell"}
+{"prompt": "Give me a one-liner to find all git branches that have already been merged into main and delete them locally", "domain": "ood_shell"}
+{"prompt": "Explain this command in detail, including what each flag does and why someone would chain them together: find . -type f -name '*.tmp' -mtime +7 -exec rm -v {} \\;", "domain": "ood_shell"}
+{"prompt": "explain this pipeline: ps aux | grep node | awk '{print $2}' | xargs kill -9", "domain": "ood_shell"}
+{"prompt": "Is it better to use `cron` or `systemd timers` for scheduling a nightly backup script, and why?", "domain": "ood_shell"}
+{"prompt": "Give me a kubectl command to describe why a pod is stuck in Pending state, and explain how to interpret the events section to diagnose scheduling failures related to resource requests.", "domain": "ood_shell"}
+{"prompt": "find command to list empty directories?", "domain": "ood_shell"}
+{"prompt": "how can I monitor CPU and memory usage of a specific process by name every 2 seconds and log it to a file?", "domain": "ood_shell"}
+{"prompt": "Give me a one-liner to find the top 10 largest files under /home recursively.", "domain": "ood_shell"}
+{"prompt": "Explain what this command does: curl -s https://example.com | grep -oP '(?<=href=\")[^\"]*'", "domain": "ood_shell"}
+{"prompt": "Can you explain this command: du -ah /var/log | sort -rh | head -n 10", "domain": "ood_shell"}
+{"prompt": "What's a one-liner to watch memory usage of a specific process every 2 seconds?", "domain": "ood_shell"}
+{"prompt": "Can you explain what this command does: cat file.txt | sort | uniq -c", "domain": "ood_shell"}
+{"prompt": "What's a bash one-liner to find all symbolic links in a directory tree that point to nonexistent targets?", "domain": "ood_shell"}
+{"prompt": "one-liner to check disk usage per directory sorted descending", "domain": "ood_shell"}
+{"prompt": "Is it better to grep with -P for Perl-compatible regex or stick with POSIX extended regex using grep -E, and when does the difference matter?", "domain": "ood_shell"}
+{"prompt": "What's a one-liner to count occurrences of each unique IP address in an nginx access log?", "domain": "ood_shell"}
+{"prompt": "How do I set up a git hook that prevents commits containing the string TODO-FIXME from being pushed to main", "domain": "ood_shell"}
+{"prompt": "How do I stop and remove all docker containers at once?", "domain": "ood_shell"}
+{"prompt": "I need a cron expression and crontab entry to run a backup script every 6 hours starting at midnight, with output logged to a file.", "domain": "ood_shell"}
+{"prompt": "Explain what this command does: chmod -R u+x,go-w /opt/myapp/scripts", "domain": "ood_shell"}
+{"prompt": "How do I get kubectl to show me the actual resource requests and limits for every container in a namespace as a table", "domain": "ood_shell"}
+{"prompt": "What command shows me the history of commits in a git repository in a compact one-line format?", "domain": "ood_shell"}
+{"prompt": "Give me an awk command that parses a CSV file with a header row, filters rows where the third column is numeric and greater than 1000, and prints only the first and fourth columns as tab-separated output.", "domain": "ood_shell"}
+{"prompt": "git command to undo the last commit but keep changes staged", "domain": "ood_shell"}
+{"prompt": "Compare `git cherry-pick` and `git rebase --onto` for moving a single commit to another branch.", "domain": "ood_shell"}
+{"prompt": "How do I write a cron job that runs a command only on the first Monday of every month?", "domain": "ood_shell"}
+{"prompt": "Explain the difference in behavior between these two commands: kubectl delete pod --grace-period=0 --force and kubectl delete pod normally", "domain": "ood_shell"}
+{"prompt": "write a bash script snippet that watches a directory for new files and processes them as they arrive using inotifywait", "domain": "ood_shell"}
+{"prompt": "Give me a kubectl one-liner to dump the resource requests and limits for every container across all deployments in a namespace, formatted as a table.", "domain": "ood_shell"}
+{"prompt": "Explain this git command and describe a scenario where I'd actually want to use it: git reflog expire --expire=now --all && git gc --prune=now --aggressive", "domain": "ood_shell"}
+{"prompt": "Should I use `find -newer` or compare `stat` timestamps in a script when detecting recently modified files?", "domain": "ood_shell"}
+{"prompt": "Explain what this command does step by step: netstat -tulpn | grep LISTEN | awk '{print $4, $7}'", "domain": "ood_shell"}
+{"prompt": "Explain what this command does: netstat -tulnp | grep LISTEN", "domain": "ood_shell"}
+{"prompt": "awk to filter rows where column 2 equals a value?", "domain": "ood_shell"}
+{"prompt": "awk command to print lines where column 2 is greater than 100", "domain": "ood_shell"}
+{"prompt": "git command to find which commit introduced a specific line of code", "domain": "ood_shell"}
+{"prompt": "how do i squash my last 3 commits into one with git", "domain": "ood_shell"}
+{"prompt": "Explain what this command pipeline does: ps aux | awk '{print $2, $3, $11}' | sort -k2 -nr | head -10", "domain": "ood_shell"}
+{"prompt": "git command to stash changes only for a specific file", "domain": "ood_shell"}
+{"prompt": "How do I write a cron job that runs a backup script every night at 2am and logs output to a timestamped file?", "domain": "ood_shell"}
+{"prompt": "Can you explain how to use 'top' to monitor system resource usage?", "domain": "ood_shell"}
+{"prompt": "Explain this command: tar -czvf backup.tar.gz --exclude='*.log' /data", "domain": "ood_shell"}
+{"prompt": "Write a git command sequence to create a worktree for hotfix development off the main branch without disturbing my current working directory's uncommitted changes on a feature branch.", "domain": "ood_shell"}
+{"prompt": "what's a one-liner to find and kill the process currently listening on port 8080?", "domain": "ood_shell"}
+{"prompt": "How do I cherry-pick a specific commit from another branch into my current branch?", "domain": "ood_shell"}
+{"prompt": "how do I use xargs with find to grep inside matched files", "domain": "ood_shell"}
+{"prompt": "How do I write a bash one-liner to find all files larger than 500MB under /var and list them sorted by size?", "domain": "ood_shell"}
+{"prompt": "What's the command to check which process is listening on port 8080?", "domain": "ood_shell"}
+{"prompt": "What is the process for writing a shell script that archives and compresses all files matching a pattern into a timestamped tarball?", "domain": "ood_shell"}
+{"prompt": "how do i find and delete all node_modules folders recursively without deleting anything else", "domain": "ood_shell"}
+{"prompt": "what's the fastest way to check if a port is open on a remote server from the command line?", "domain": "ood_shell"}
+{"prompt": "what's the syntax to run a command every 5 minutes using cron", "domain": "ood_shell"}
+{"prompt": "give me a one liner to count how many lines match a pattern across multiple files using grep", "domain": "ood_shell"}
+{"prompt": "What's the awk one-liner to sum the values in the third column of a CSV file?", "domain": "ood_shell"}
+{"prompt": "Explain this command: docker run --rm -it -v $(pwd):/app -w /app node:18 npm install", "domain": "ood_shell"}
+{"prompt": "Should I schedule database backups with cron on the host or run them as a sidecar container in Kubernetes, and why?", "domain": "ood_shell"}
+{"prompt": "How do I copy a file to all running docker containers matching a label", "domain": "ood_shell"}
+{"prompt": "Explain what xargs -0 does with find -print0", "domain": "ood_shell"}
+{"prompt": "Is `netstat` or `ss` the better tool for inspecting active TCP connections on a modern Linux system?", "domain": "ood_shell"}
+{"prompt": "Should I use `du -sh *` or `ncdu` to find which directory is eating up disk space, and what's the difference in accuracy?", "domain": "ood_shell"}
+{"prompt": "give me a one liner to replace tabs with spaces in a file using sed", "domain": "ood_shell"}
+{"prompt": "What's a simple way to search for a string across multiple files using grep and show the filename with each match?", "domain": "ood_shell"}
+{"prompt": "how can I find out which process is holding a lock on a file that won't delete?", "domain": "ood_shell"}
+{"prompt": "How do I recursively search for the text 'TODO' in all files under my project folder?", "domain": "ood_shell"}
+{"prompt": "I accidentally staged a file with 'git add' — how do I unstage it?", "domain": "ood_shell"}
+{"prompt": "Write a find and xargs pipeline that recursively searches for all .env files under /opt/apps, checks each for a line starting with 'DEBUG=true', and prints the file path if found.", "domain": "ood_shell"}
+{"prompt": "One-liner to count occurrences of each HTTP status code in an access log", "domain": "ood_shell"}

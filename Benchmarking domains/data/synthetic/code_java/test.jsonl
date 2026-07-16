@@ -1,0 +1,100 @@
+{"prompt": "I want to implement a simple event listener pattern in Java, can you sketch that out for me?", "domain": "code_java"}
+{"prompt": "This unit test is flaky and sometimes fails intermittently: `assertEquals(expected, service.processAsync().get());` — what could be causing that and how do I make it deterministic?", "domain": "code_java"}
+{"prompt": "Compare using a HashMap versus a TreeMap when I need to store user sessions keyed by ID but occasionally need sorted iteration.", "domain": "code_java"}
+{"prompt": "I have a binary search implementation that seems to loop forever on some inputs, can you check it? `int binarySearch(int[] arr, int target) { int lo = 0, hi = arr.length; while (lo < hi) { int mid = (lo+hi)/2; if (arr[mid] == target) return mid; else if (arr[mid] < target) lo = mid; else hi = mid; } return -1; }`", "domain": "code_java"}
+{"prompt": "how do i properly handle multiple catch blocks without duplicating code in java?", "domain": "code_java"}
+{"prompt": "I need to deep clone this object graph in Java without implementing Cloneable, what's the best modern approach? `class Node { int value; List<Node> children; }`", "domain": "code_java"}
+{"prompt": "Compare using reflection-based frameworks like Jackson for JSON serialization versus writing custom serializers for performance-critical code.", "domain": "code_java"}
+{"prompt": "Weigh the pros and cons of using `Optional<T>` as a method return type versus returning `null` with a `@Nullable` annotation.", "domain": "code_java"}
+{"prompt": "Write a Java method that validates whether a given string represents a valid IPv4 address, without using regular expressions, and include a set of test cases covering edge cases like leading zeros and out-of-range octets.", "domain": "code_java"}
+{"prompt": "Write a simple Java method to check if a given string is a palindrome.", "domain": "code_java"}
+{"prompt": "Optimize this string concatenation in a loop.\nString result = \"\";\nfor (String s : list) result += s;", "domain": "code_java"}
+{"prompt": "I'm considering switching this DAO layer from raw JDBC to JPA/Hibernate. What's your opinion on whether that's worth it here?", "domain": "code_java"}
+{"prompt": "I have a memory leak in a long-running Java service caused by a static Map growing unbounded — how would I refactor this to use a bounded cache like Caffeine?", "domain": "code_java"}
+{"prompt": "can you add proper javadoc comments to this method?\n\npublic double calculateArea(double radius) {\n    return Math.PI * radius * radius;\n}", "domain": "code_java"}
+{"prompt": "Write a basic Java class called Person with fields for name and age, a constructor, and getters and setters.", "domain": "code_java"}
+{"prompt": "Write idiomatic Java code using try-with-resources to close multiple resources, including a custom AutoCloseable class.", "domain": "code_java"}
+{"prompt": "Can you explain the difference between an ArrayList and a regular array in Java, and when I should use each?", "domain": "code_java"}
+{"prompt": "Can you explain the difference between shallow copy and deep copy in Java, and implement a proper deep copy for a class containing a nested mutable list field?", "domain": "code_java"}
+{"prompt": "My code won't compile and says 'cannot find symbol'. Here it is: public class Test { public static void main(String[] args) { System.out.println(x); } } What's wrong?", "domain": "code_java"}
+{"prompt": "Add generics to this raw type class.", "domain": "code_java"}
+{"prompt": "Write a beginner-friendly Java program that builds a simple calculator supporting addition, subtraction, multiplication, and division using a switch statement.", "domain": "code_java"}
+{"prompt": "Write a Java implementation of Dijkstra's shortest path algorithm using a PriorityQueue, for a weighted graph represented with adjacency lists, and explain how it handles negative weights (or why it can't).", "domain": "code_java"}
+{"prompt": "Can you explain what happens under the hood with autoboxing in a loop like this, and why it's a performance problem?\n\nLong sum = 0L;\nfor (long i = 0; i < 1_000_000; i++) {\n    sum += i;\n}", "domain": "code_java"}
+{"prompt": "What does the 'static' keyword mean in Java? Can you explain with a small example?", "domain": "code_java"}
+{"prompt": "In your opinion, is it cleaner to use a fluent builder API or a plain setter-based approach for configuring a complex HTTP client object?", "domain": "code_java"}
+{"prompt": "Write a method using `CompletableFuture` that fetches data from two independent services concurrently and combines their results.", "domain": "code_java"}
+{"prompt": "Why does `==` fail for these two Integers but not others?", "domain": "code_java"}
+{"prompt": "Explain step by step how Java's garbage collector decides when to promote an object from young generation to old generation.", "domain": "code_java"}
+{"prompt": "Here's a recursive method to compute the greatest common divisor that works but I think it can be written more idiomatically using Java features like the ternary operator or streams. Can you clean it up? public static int gcd(int a, int b) { if (b == 0) { return a; } else { return gcd(b, a % b); } }", "domain": "code_java"}
+{"prompt": "Can you explain step by step why this deadlock occurs and how to fix it?\nsynchronized(lockA) { synchronized(lockB) { ... } } // in thread1\nsynchronized(lockB) { synchronized(lockA) { ... } } // in thread2", "domain": "code_java"}
+{"prompt": "can you refactor this loop to use a for-each instead?\n\nfor (int i = 0; i < list.size(); i++) {\n    System.out.println(list.get(i));\n}", "domain": "code_java"}
+{"prompt": "Write a Java program that implements the producer-consumer problem using wait() and notifyAll() on a shared bounded buffer, and explain why notify() alone could cause a deadlock here.", "domain": "code_java"}
+{"prompt": "Why is this recursive Fibonacci so slow, and how do I speed it up?", "domain": "code_java"}
+{"prompt": "write a method that merges two sorted arrays into one sorted array", "domain": "code_java"}
+{"prompt": "How would you design a thread-safe rate limiter in Java that allows at most N requests per second?", "domain": "code_java"}
+{"prompt": "Write a recursive descent parser in Java for simple arithmetic expressions supporting +, -, *, /, and parentheses, that evaluates the expression and returns a double result, and include a few test cases showing correct operator precedence handling.", "domain": "code_java"}
+{"prompt": "Explain the difference between checked and unchecked exceptions in Java, and help me decide whether a custom InsufficientFundsException in a banking application should extend Exception or RuntimeException, with reasoning about API design.", "domain": "code_java"}
+{"prompt": "Explain the difference between checked and unchecked exceptions in Java, and give guidance on when to create a custom checked exception versus a RuntimeException subclass.", "domain": "code_java"}
+{"prompt": "Write a Java Comparator that sorts a list of Person objects first by last name, then by age descending, using comparator chaining.", "domain": "code_java"}
+{"prompt": "Explain how garbage collection works in the JVM at a high level, and the difference between the G1 and ZGC collectors.", "domain": "code_java"}
+{"prompt": "Explain how Java's VarHandle API differs from using Unsafe for low-level memory access, with a short example.", "domain": "code_java"}
+{"prompt": "Write a Java program that reads lines from a file and counts word frequency, printing the top 5 most common words.", "domain": "code_java"}
+{"prompt": "Here's a snippet that uses Object.wait() without a loop checking a condition — can you explain why that's fragile and fix it?", "domain": "code_java"}
+{"prompt": "Write a Java class implementing a trie (prefix tree) with insert, search, and startsWith methods, optimized for a dictionary of 100,000 words.", "domain": "code_java"}
+{"prompt": "Write a quicksort in Java.", "domain": "code_java"}
+{"prompt": "Compare java.util.concurrent.ConcurrentHashMap and a regular HashMap wrapped in Collections.synchronizedMap for a shared cache under concurrent reads and writes.", "domain": "code_java"}
+{"prompt": "This code compiles but throws `ClassCastException` at runtime — why, and how do generics erasure play into it? `List list = new ArrayList<String>(); list.add(42); String s = (String) list.get(0);`", "domain": "code_java"}
+{"prompt": "Write a custom implementation of a min-heap in Java supporting insert, extractMin, and decreaseKey operations, without relying on PriorityQueue.", "domain": "code_java"}
+{"prompt": "Write a Java program that finds the largest of three numbers using if-else statements.", "domain": "code_java"}
+{"prompt": "Design a thread-safe bounded blocking queue in Java from scratch using wait/notify, without relying on java.util.concurrent classes, and explain the correctness of your synchronization.", "domain": "code_java"}
+{"prompt": "Explain how Java's garbage collector decides when to promote an object from young generation to old generation.", "domain": "code_java"}
+{"prompt": "Explain the difference between CompletableFuture.supplyAsync and CompletableFuture.thenApplyAsync in terms of thread pool usage, and show an example chaining three async calls with proper exception handling via exceptionally.", "domain": "code_java"}
+{"prompt": "Write a Java program that counts the number of words in a sentence entered by the user.", "domain": "code_java"}
+{"prompt": "Refactor this legacy DAO class to use try-with-resources and PreparedStatement instead of raw Statement concatenation, and explain why the original code is vulnerable to SQL injection: `Statement stmt = conn.createStatement(); ResultSet rs = stmt.executeQuery(\"SELECT * FROM users WHERE name = '\" + name + \"'\");`", "domain": "code_java"}
+{"prompt": "Explain the difference between == and .equals() for Strings in Java.", "domain": "code_java"}
+{"prompt": "Compare Guava's `ImmutableList` with Java's `List.of()` for creating immutable collections — are there meaningful differences in behavior or performance?", "domain": "code_java"}
+{"prompt": "Explain the contract between equals() and hashCode() and show a broken example where only equals() is overridden, then fix it.", "domain": "code_java"}
+{"prompt": "Can you convert this synchronous REST client call chain into a reactive pipeline using Project Reactor's Mono and Flux, with proper error handling and backpressure?", "domain": "code_java"}
+{"prompt": "Explain what a memory barrier is in the context of the Java Memory Model and how synchronized blocks establish happens-before relationships.", "domain": "code_java"}
+{"prompt": "Can you explain why this code throws an ArrayIndexOutOfBoundsException?\n\nint[] arr = new int[5]; System.out.println(arr[5]);", "domain": "code_java"}
+{"prompt": "Debug this NumberFormatException that occurs intermittently when parsing user input from a form: `int quantity = Integer.parseInt(request.getParameter(\"qty\").trim());`. Explain what inputs would cause this to fail and rewrite the code defensively with proper validation and error messaging.", "domain": "code_java"}
+{"prompt": "What are the trade-offs between checked exceptions and unchecked exceptions in a large Java codebase, and which would you recommend for a library API?", "domain": "code_java"}
+{"prompt": "How would I implement a circuit breaker pattern in plain Java without Resilience4j, for wrapping calls to a flaky downstream service?", "domain": "code_java"}
+{"prompt": "Convert this for-loop into a stream-based solution: List<Integer> squares = new ArrayList<>(); for (int i = 1; i <= 10; i++) { squares.add(i * i); }", "domain": "code_java"}
+{"prompt": "Can you explain what happens memory-wise when autoboxing is used inside a loop that sums a large list of Integer objects, and rewrite the loop to avoid unnecessary boxing overhead?\n\nList<Integer> nums = getMillionNumbers(); long sum = 0; for (Integer n : nums) { sum += n; }", "domain": "code_java"}
+{"prompt": "Add a toString() override for this class: `class Point{int x,y;}`", "domain": "code_java"}
+{"prompt": "Fix this ConcurrentModificationException.", "domain": "code_java"}
+{"prompt": "how do i make this class thread-safe? it's a simple counter\n\npublic class Counter {\n    private int count = 0;\n    public void increment() { count++; }\n    public int get() { return count; }\n}", "domain": "code_java"}
+{"prompt": "Can you explain why calling this method from multiple threads corrupts the counter, and fix it using AtomicInteger?\n\nprivate int counter = 0; public void increment() { counter++; }", "domain": "code_java"}
+{"prompt": "Write a method to merge two sorted arrays into one sorted array.", "domain": "code_java"}
+{"prompt": "How would I go about implementing a binary search tree in Java from scratch, step by step, including insert, delete, and in-order traversal?", "domain": "code_java"}
+{"prompt": "Can you show me how to create and use a simple HashMap in Java to store names and ages?", "domain": "code_java"}
+{"prompt": "Why is this HashMap iteration order not consistent?", "domain": "code_java"}
+{"prompt": "I have a serialization issue where a class implementing Serializable fails with a NotSerializableException because one of its fields is a non-serializable third-party object. Can you explain the possible fixes, including transient fields and custom writeObject/readObject methods, with code examples?", "domain": "code_java"}
+{"prompt": "This unit test is flaky and fails intermittently on CI. Can you help me figure out why? `assertEquals(expectedList, actualList);` where actualList comes from a HashSet-backed collection.", "domain": "code_java"}
+{"prompt": "Implement a generic binary search tree in Java with insert, delete, and an in-order traversal that returns a List.", "domain": "code_java"}
+{"prompt": "Explain the difference between `String`, `StringBuilder`, `StringBuffer`.", "domain": "code_java"}
+{"prompt": "Write a custom `AutoCloseable` resource class and demonstrate try-with-resources with suppressed exceptions when both the body and close() throw.", "domain": "code_java"}
+{"prompt": "Explain what happens under the hood when you call `String.intern()` and when it's actually useful.", "domain": "code_java"}
+{"prompt": "How do I set up integration tests with Testcontainers for a Spring Boot service that talks to PostgreSQL, step by step?", "domain": "code_java"}
+{"prompt": "can you convert this anonymous inner class to a lambda expression?\n\nRunnable r = new Runnable() {\n    public void run() {\n        System.out.println(\"running\");\n    }\n};", "domain": "code_java"}
+{"prompt": "What's the difference between == and .equals() for Strings in Java? I keep getting bitten by this.", "domain": "code_java"}
+{"prompt": "can you explain what volatile does in java and give a real example where it matters?", "domain": "code_java"}
+{"prompt": "what's a good way to implement a singleton in java that's thread safe?", "domain": "code_java"}
+{"prompt": "Write a Java method that checks whether a given string is a valid palindrome, ignoring spaces and punctuation.", "domain": "code_java"}
+{"prompt": "Would you suggest using Lombok in a large enterprise Java codebase, or is it more trouble than it's worth long term?", "domain": "code_java"}
+{"prompt": "Should I use Java's built-in Date/Calendar classes anywhere in new code, or is java.time always the better choice, no exceptions?", "domain": "code_java"}
+{"prompt": "Add null checks and input validation to this method.\npublic int divide(int a, int b) { return a / b; }", "domain": "code_java"}
+{"prompt": "Optimize this nested loop for large inputs.\nfor (int i=0;i<n;i++) for (int j=0;j<n;j++) if (arr[i]==arr[j]) count++;", "domain": "code_java"}
+{"prompt": "Compare Jackson and Gson for JSON serialization in a Java service — which handles polymorphic types and performance better?", "domain": "code_java"}
+{"prompt": "Compare CompletableFuture-based async code with virtual threads (Project Loom) for handling thousands of concurrent blocking I/O calls — which should I choose in 2024?", "domain": "code_java"}
+{"prompt": "can you explain the visitor design pattern with a small java example?", "domain": "code_java"}
+{"prompt": "Explain what a package is in Java and how the import statement works, with a small example.", "domain": "code_java"}
+{"prompt": "This unit test is flaky, can you tell me why it might fail intermittently?\n\n@Test void testAsyncResult() { service.startAsync(); assertEquals(expected, service.getResult()); }", "domain": "code_java"}
+{"prompt": "Write a Java program that reads a list of numbers from the user until they type 'done', then prints the maximum.", "domain": "code_java"}
+{"prompt": "My code throws a StackOverflowError only in production but not locally — here's the recursive method, can you help me spot why it might behave differently under load?", "domain": "code_java"}
+{"prompt": "Write a Java program that reverses a String without using the built-in reverse method.", "domain": "code_java"}
+{"prompt": "Write a Java function to check if a string is a palindrome, ignoring case and spaces.", "domain": "code_java"}
+{"prompt": "i'm getting a ConcurrentModificationException when removing items from a list while looping, how do i fix this?", "domain": "code_java"}
+{"prompt": "Implement a simple builder pattern for a Person class with optional fields.", "domain": "code_java"}

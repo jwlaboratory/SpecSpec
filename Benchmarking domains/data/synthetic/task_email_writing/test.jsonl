@@ -1,0 +1,100 @@
+{"prompt": "Draft a short apology to a coworker for missing our meeting.", "domain": "task_email_writing"}
+{"prompt": "Use a professional tone. Write an email asking for feedback on a draft proposal.", "domain": "task_email_writing"}
+{"prompt": "Guide me through drafting an announcement email to customers about a price increase taking effect next month.", "domain": "task_email_writing"}
+{"prompt": "Please draft a short announcement email to my team letting them know I'll be out of office next week.", "domain": "task_email_writing"}
+{"prompt": "Write an easy email announcing my resignation to my manager.", "domain": "task_email_writing"}
+{"prompt": "Guide me step by step through drafting a follow-up email to a hiring manager two weeks after my interview with no response yet.", "domain": "task_email_writing"}
+{"prompt": "Keep it under 120 words. Write an email requesting a refund for a defective laptop.", "domain": "task_email_writing"}
+{"prompt": "What's your recommendation for announcing a mid-project scope change to stakeholders without causing alarm, and can you write that email?", "domain": "task_email_writing"}
+{"prompt": "Write an email to a specialty cheese importer asking about the availability of a rare aged gouda.", "domain": "task_email_writing"}
+{"prompt": "Can you help me write an invitation email to former classmates for a casual reunion dinner?", "domain": "task_email_writing"}
+{"prompt": "Draft a professional email declining a speaking invitation at an industry conference while offering to recommend a colleague instead.", "domain": "task_email_writing"}
+{"prompt": "Can you help me draft a thank-you email to a mentor who gave me career advice over coffee?", "domain": "task_email_writing"}
+{"prompt": "Write a casual invite email to coworkers for a Friday happy hour after work.", "domain": "task_email_writing"}
+{"prompt": "Draft an email to a client outlining the trade-offs between a fixed-price contract and a time-and-materials contract for their upcoming project.", "domain": "task_email_writing"}
+{"prompt": "Draft a two-line thank-you note to a mentor after a career chat.", "domain": "task_email_writing"}
+{"prompt": "Keep it under 120 words. Write an email cancelling a subscription and explaining why.", "domain": "task_email_writing"}
+{"prompt": "Help me write a negotiation email to a contractor asking if they can lower their quote for a kitchen remodel.", "domain": "task_email_writing"}
+{"prompt": "Draft a detailed email to my dissertation advisor requesting an extension on my thesis submission deadline, explaining that I've had a family medical emergency, proposing a new deadline three weeks out, and asking whether we could also reschedule our weekly check-in meeting; keep the tone respectful but not overly apologetic.", "domain": "task_email_writing"}
+{"prompt": "Write an email declining a partnership proposal from another company, explaining that our strategic priorities have shifted this fiscal year.", "domain": "task_email_writing"}
+{"prompt": "Write an email to a charity offering to volunteer on weekends.", "domain": "task_email_writing"}
+{"prompt": "Draft an email to a co-founder proposing a change in equity split based on updated role responsibilities.", "domain": "task_email_writing"}
+{"prompt": "Can you draft a quick note thanking a teacher who wrote me a recommendation letter?", "domain": "task_email_writing"}
+{"prompt": "Short email thanking a volunteer for their weekend help.", "domain": "task_email_writing"}
+{"prompt": "Use a professional tone. Write an email to a charity offering to volunteer on weekends.", "domain": "task_email_writing"}
+{"prompt": "Keep it under 120 words. Write a follow-up email after a job interview for a marketing role.", "domain": "task_email_writing"}
+{"prompt": "Write an email to a former employer requesting they update an outdated reference letter.", "domain": "task_email_writing"}
+{"prompt": "Help me write a negotiation email to a freelance designer comparing their quote to a competing freelancer's, asking if they can adjust price or timeline.", "domain": "task_email_writing"}
+{"prompt": "I need a simple email asking my manager if I can leave an hour early on Friday for a family event.", "domain": "task_email_writing"}
+{"prompt": "Can you suggest how to word a congratulatory email to a colleague who just got promoted above me, then write it?", "domain": "task_email_writing"}
+{"prompt": "Can you write a thank-you note to a volunteer who repaired the church's old pipe organ.", "domain": "task_email_writing"}
+{"prompt": "Draft an announcement email to all employees about a company-wide transition to a four-day workweek starting next quarter.", "domain": "task_email_writing"}
+{"prompt": "Draft an apology email to a wedding photographer's client after I accidentally deleted half the reception photos during editing.", "domain": "task_email_writing"}
+{"prompt": "Use a professional tone. Write an email to reschedule a dentist appointment.", "domain": "task_email_writing"}
+{"prompt": "Be warm but concise. Write an email requesting a refund for a defective laptop.", "domain": "task_email_writing"}
+{"prompt": "Can you write a casual follow-up message to a friend I haven't heard from in a while, just checking in?", "domain": "task_email_writing"}
+{"prompt": "Be warm but concise. Write an email thanking a mentor for their guidance this year.", "domain": "task_email_writing"}
+{"prompt": "Please help me draft a follow-up email to a landlord about a security deposit I haven't received back yet.", "domain": "task_email_writing"}
+{"prompt": "Write a follow-up email to a hiring manager two weeks after a final-round interview, referencing a specific technical question I answered about distributed systems and reiterating my interest without sounding desperate.", "domain": "task_email_writing"}
+{"prompt": "Draft a thank-you email to a mentor group after finishing a leadership program, and tell me if I should include specific takeaways.", "domain": "task_email_writing"}
+{"prompt": "I need to apologize to a client for a billing error; what level of detail should I include, and can you draft the message?", "domain": "task_email_writing"}
+{"prompt": "Draft a terse email negotiating a lower consulting fee.", "domain": "task_email_writing"}
+{"prompt": "Can you draft a short email to a colleague thanking them for helping me finish a report on time?", "domain": "task_email_writing"}
+{"prompt": "Email HR requesting a copy of my employment verification letter.", "domain": "task_email_writing"}
+{"prompt": "Draft a quick invitation email to friends for a small birthday dinner.", "domain": "task_email_writing"}
+{"prompt": "Write a short email negotiating a lower rate with a freelancer.", "domain": "task_email_writing"}
+{"prompt": "I need to follow up with a client who hasn't paid an overdue invoice—what tone strikes the right balance between firm and courteous?", "domain": "task_email_writing"}
+{"prompt": "What's your recommendation for declining an unpaid speaking engagement while staying on good terms, and can you draft the email?", "domain": "task_email_writing"}
+{"prompt": "Write a short email to my HOA proposing we allow chickens in backyards.", "domain": "task_email_writing"}
+{"prompt": "Can you help me write a simple email asking my landlord to fix a leaking faucet in my kitchen?", "domain": "task_email_writing"}
+{"prompt": "Write an email introducing yourself to a new team as their manager.", "domain": "task_email_writing"}
+{"prompt": "I need a thank-you note to a former colleague who wrote a glowing LinkedIn recommendation, referencing a specific project we collaborated on.", "domain": "task_email_writing"}
+{"prompt": "Walk me through writing a request email to a professor asking for an extension on a paper deadline.", "domain": "task_email_writing"}
+{"prompt": "Help me draft a short email to my internet provider asking about a billing error.", "domain": "task_email_writing"}
+{"prompt": "Be warm but concise. Write an email welcoming a new subscriber to a newsletter.", "domain": "task_email_writing"}
+{"prompt": "Quick note asking my professor for a deadline extension.", "domain": "task_email_writing"}
+{"prompt": "I need to apologize to a friend for missing their dinner party last night—can you help me write a text?", "domain": "task_email_writing"}
+{"prompt": "Include a clear subject line. Write an email to a landlord reporting a broken heater.", "domain": "task_email_writing"}
+{"prompt": "I need an email negotiating a slightly later moving date with my new landlord.", "domain": "task_email_writing"}
+{"prompt": "Write a quick decline email for an unsolicited sales pitch.", "domain": "task_email_writing"}
+{"prompt": "Keep it under 120 words. Write an email to reschedule a dentist appointment.", "domain": "task_email_writing"}
+{"prompt": "What's the best way to negotiate a longer payment deadline with a supplier without damaging the relationship, and can you draft that email?", "domain": "task_email_writing"}
+{"prompt": "Can you write an apology email to a subscriber for a late newsletter delivery this week?", "domain": "task_email_writing"}
+{"prompt": "I need to send a thank-you email to a panel of judges after winning a startup pitch competition, mentioning specific feedback they gave that I plan to incorporate.", "domain": "task_email_writing"}
+{"prompt": "Can you draft a thank-you email to a friend who helped me move apartments over the weekend?", "domain": "task_email_writing"}
+{"prompt": "Be warm but concise. Write an email congratulating a coworker on a promotion.", "domain": "task_email_writing"}
+{"prompt": "Compose a request email to a colleague in another department asking for their team's collaboration on a cross-functional project, outlining the scope of work, proposed timeline, and asking for a kickoff meeting within the next week.", "domain": "task_email_writing"}
+{"prompt": "I need to apologize to my coworker for accidentally cc'ing the whole team on a message meant just for her, can you write that?", "domain": "task_email_writing"}
+{"prompt": "What's your advice on how to phrase a negotiation email asking a contractor to reduce their quote, and can you draft it?", "domain": "task_email_writing"}
+{"prompt": "I need to email my gym to cancel my membership—can you help me keep it short and polite?", "domain": "task_email_writing"}
+{"prompt": "Use a professional tone. Write an email welcoming a new subscriber to a newsletter.", "domain": "task_email_writing"}
+{"prompt": "Help me write an invitation to a former colleague for a networking coffee chat—what tone keeps it casual but purposeful?", "domain": "task_email_writing"}
+{"prompt": "Write a casual follow-up email to a vendor who never sent me the invoice they promised.", "domain": "task_email_writing"}
+{"prompt": "Write a decline email to a sponsor offering free gear in exchange for promoting their fishing lures.", "domain": "task_email_writing"}
+{"prompt": "Draft a quick apology to a customer for a shipping delay.", "domain": "task_email_writing"}
+{"prompt": "Write an email requesting a refund for a defective laptop.", "domain": "task_email_writing"}
+{"prompt": "Draft a resignation email to my manager giving four weeks notice, expressing gratitude for the opportunities provided.", "domain": "task_email_writing"}
+{"prompt": "What's your recommendation for inviting a busy executive to speak at our internal town hall, and can you draft the invitation?", "domain": "task_email_writing"}
+{"prompt": "Draft a professional email inviting a potential investor to a product demo, including a brief pitch of what's new, logistical details, and a polite request to confirm attendance within a week.", "domain": "task_email_writing"}
+{"prompt": "What's the best way to ask a busy colleague for a testimonial for my portfolio, and can you write that request?", "domain": "task_email_writing"}
+{"prompt": "Write a warm invitation email to former colleagues for a reunion dinner, including a nostalgic opening line, event details, and a request for them to forward the invite to anyone else from the old team.", "domain": "task_email_writing"}
+{"prompt": "Help me draft an email inviting my neighbors to a small backyard barbecue this Saturday.", "domain": "task_email_writing"}
+{"prompt": "I need an invitation email to alumni for a fundraising gala benefiting the school's new science lab.", "domain": "task_email_writing"}
+{"prompt": "Use a professional tone. Write an email cancelling a subscription and explaining why.", "domain": "task_email_writing"}
+{"prompt": "I need an apology email to a customer for the delay, comparing what caused it against what we've since changed to prevent it happening again.", "domain": "task_email_writing"}
+{"prompt": "Use a professional tone. Write an email thanking a mentor for their guidance this year.", "domain": "task_email_writing"}
+{"prompt": "Be warm but concise. Write an email negotiating a lower price with a supplier.", "domain": "task_email_writing"}
+{"prompt": "Write a negotiation email to a landlord proposing to sign a two-year lease in exchange for a reduced monthly rate, citing my history as a reliable tenant, and asking if they'd also consider including utilities in the new terms.", "domain": "task_email_writing"}
+{"prompt": "Help me write a decline email to a job offer I'm turning down because I accepted a different position, keeping the tone warm and future-oriented.", "domain": "task_email_writing"}
+{"prompt": "Draft a message to my team proposing two meeting time options and asking them to weigh in on which works better given everyone's schedules.", "domain": "task_email_writing"}
+{"prompt": "Hey can you help me write a quick text to my roommate asking her to chip in for the wifi bill?", "domain": "task_email_writing"}
+{"prompt": "Write an email inviting your team to a project kickoff meeting.", "domain": "task_email_writing"}
+{"prompt": "I need a short apology email to a neighbor whose fence I accidentally damaged with my drone.", "domain": "task_email_writing"}
+{"prompt": "Please draft a short email announcing that our local sports team is holding tryouts next month.", "domain": "task_email_writing"}
+{"prompt": "Keep it under 120 words. Write an email to a charity offering to volunteer on weekends.", "domain": "task_email_writing"}
+{"prompt": "Draft a message announcing a new intern joining the team.", "domain": "task_email_writing"}
+{"prompt": "Show me the steps to write a polite decline email to a job offer I've decided not to accept.", "domain": "task_email_writing"}
+{"prompt": "Write an announcement email to alumni about an upcoming reunion event, including details on registration and lodging.", "domain": "task_email_writing"}
+{"prompt": "Help me draft an email requesting a meeting with the city council regarding a zoning variance for our nonprofit's new building.", "domain": "task_email_writing"}
+{"prompt": "Write a decline email to a recruiter reaching out about a role I'm not interested in right now.", "domain": "task_email_writing"}
+{"prompt": "Include a clear subject line. Write an email introducing yourself to a new team as their manager.", "domain": "task_email_writing"}

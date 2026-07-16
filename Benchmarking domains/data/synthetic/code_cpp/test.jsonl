@@ -1,0 +1,100 @@
+{"prompt": "Why does this throw an exception on the second call: `static int counter = 0; counter++;`", "domain": "code_cpp"}
+{"prompt": "Implement, in C++, code that implements a simple exponential moving average. Add a couple of example calls.", "domain": "code_cpp"}
+{"prompt": "How do I go about converting this legacy code using new/delete arrays into RAII-based std::vector usage?\n```cpp\nclass Matrix {\n  double* data;\n  int rows, cols;\npublic:\n  Matrix(int r, int c) : rows(r), cols(c) { data = new double[r*c]; }\n  ~Matrix() { delete[] data; }\n};\n```", "domain": "code_cpp"}
+{"prompt": "Explain the difference between std::atomic's memory_order_acquire and memory_order_release in a lock-free single-producer single-consumer queue.", "domain": "code_cpp"}
+{"prompt": "Can you debug why my move constructor isn't being used and copies are happening instead when I push objects into a `std::vector`?", "domain": "code_cpp"}
+{"prompt": "How do I step through this template code to understand the compiler error about ambiguous overloads? `template<typename T> void print(T t) {} template<typename T> void print(T& t) {} print(5);`", "domain": "code_cpp"}
+{"prompt": "Write clean, idiomatic C++ that implements a debounce wrapper for a function.", "domain": "code_cpp"}
+{"prompt": "What's your take on using const references versus passing by value for small structs like this one? `struct Point { double x, y; };`", "domain": "code_cpp"}
+{"prompt": "Write unit tests using Google Test for a Stack<T> class with push, pop, top, and empty methods.", "domain": "code_cpp"}
+{"prompt": "Write a small implementation of a thread-safe singleton using std::call_once instead of the classic double-checked locking pattern.", "domain": "code_cpp"}
+{"prompt": "Can you explain the difference between std::shared_ptr's control block and the managed object's memory layout, and when std::make_shared avoids a separate allocation versus when it doesn't?", "domain": "code_cpp"}
+{"prompt": "Implement a simple bloom filter class in C++ with configurable size and number of hash functions, including insert and possibly-contains methods.", "domain": "code_cpp"}
+{"prompt": "I need a custom allocator for a small-object pool in C++17 that satisfies the Allocator named requirements — can you sketch one and point out common pitfalls?", "domain": "code_cpp"}
+{"prompt": "When designing a small linear algebra library, should operators like + and * return by value with move semantics or use expression templates to avoid temporaries? Discuss the trade-offs.", "domain": "code_cpp"}
+{"prompt": "What does the 'explicit' keyword do on a constructor?", "domain": "code_cpp"}
+{"prompt": "Write clean, idiomatic C++ that implements a min-heap with push and pop.", "domain": "code_cpp"}
+{"prompt": "This code triggers a segfault intermittently, seemingly related to string lifetime. Can you identify the dangling reference?\n```cpp\nconst std::string& getName() {\n    std::string name = \"temp\";\n    return name;\n}\n```", "domain": "code_cpp"}
+{"prompt": "I need to implement a thread-safe blocking queue with a maximum capacity, where producers block when full and consumers block when empty. Write the class using `std::condition_variable` and explain how you avoid spurious wakeups.", "domain": "code_cpp"}
+{"prompt": "Explain what a dangling reference is with an example", "domain": "code_cpp"}
+{"prompt": "Write a C++ function that checks if two strings are anagrams. Include a short comment explaining the approach.", "domain": "code_cpp"}
+{"prompt": "Write a function to reverse a linked list iteratively.", "domain": "code_cpp"}
+{"prompt": "why is my custom exception class not being caught by the catch block? `try { throw MyException(); } catch (std::exception& e) { std::cout << e.what(); }`", "domain": "code_cpp"}
+{"prompt": "Implement a binary search tree in C++ with insert, find, and delete operations, then add an in-order iterator so it can be used in range-based for loops, and explain how you handled iterator invalidation on delete.", "domain": "code_cpp"}
+{"prompt": "In C++, write a function that checks if a number is a perfect square without using sqrt and explain its time complexity.", "domain": "code_cpp"}
+{"prompt": "Implement, in C++, code that implements a simple LRU cache. Add a couple of example calls.", "domain": "code_cpp"}
+{"prompt": "Write a CMakeLists.txt for a small executable with two source files.", "domain": "code_cpp"}
+{"prompt": "Should this hash function use FNV-1a or std::hash combined manually for combining multiple fields into one key? Compare collision behavior and speed.", "domain": "code_cpp"}
+{"prompt": "Can you walk me through how std::weak_ptr avoids the cyclic reference problem that std::shared_ptr introduces in a doubly linked observer pattern?", "domain": "code_cpp"}
+{"prompt": "write a function that checks if a string is a palindrome, ignoring case and punctuation", "domain": "code_cpp"}
+{"prompt": "Why does this template function fail to compile with a confusing error about ambiguous overloads?\n```cpp\ntemplate<typename T>\nvoid print(T t) { std::cout << t; }\nvoid print(int i) { std::cout << \"int: \" << i; }\nint main() { print(5); }\n```", "domain": "code_cpp"}
+{"prompt": "Fix this segfault: `int* p = nullptr; *p = 5;`", "domain": "code_cpp"}
+{"prompt": "Explain the difference between static_cast, dynamic_cast, reinterpret_cast, and const_cast with examples of when each is appropriate.", "domain": "code_cpp"}
+{"prompt": "Implement, in C++, code that implements insertion sort. Add a couple of example calls.", "domain": "code_cpp"}
+{"prompt": "Implement, in C++, code that detects a cycle in a directed graph. Add a couple of example calls.", "domain": "code_cpp"}
+{"prompt": "Optimize this hot-path function that's showing up in the profiler as a bottleneck: `double sum(const std::vector<double>& v) { double s = 0; for (size_t i = 0; i < v.size(); ++i) s += v[i]; return s; }`", "domain": "code_cpp"}
+{"prompt": "Implement, in C++, code that finds the longest common prefix of a list of strings. Add a couple of example calls.", "domain": "code_cpp"}
+{"prompt": "I need a custom hash function for a struct with two ints so I can use it as a key in std::unordered_map. Show idiomatic C++17 code.", "domain": "code_cpp"}
+{"prompt": "Debug this data race detected by ThreadSanitizer in my producer thread pushing to a shared vector without locking", "domain": "code_cpp"}
+{"prompt": "write a function that flattens a nested vector of vectors into a single vector", "domain": "code_cpp"}
+{"prompt": "Given the concurrency requirements, would you recommend std::atomic or a full mutex for this simple counter shared across threads?", "domain": "code_cpp"}
+{"prompt": "Write a small event dispatcher class that lets callers subscribe lambdas to named events and fire them with variadic arguments, using `std::function` and `std::unordered_map`.", "domain": "code_cpp"}
+{"prompt": "I'm just starting with C++ and want to know what the main() function actually does and why every program needs one.", "domain": "code_cpp"}
+{"prompt": "I have this legacy C-style code that I want turned into idiomatic modern C++ using RAII, smart pointers, and STL containers instead of raw arrays and manual memory management:\n```cpp\nstruct Buffer {\n    char* data;\n    int size;\n};\n\nBuffer* createBuffer(int size) {\n    Buffer* b = (Buffer*)malloc(sizeof(Buffer));\n    b->data = (char*)malloc(size);\n    b->size = size;\n    return b;\n}\n\nvoid freeBuffer(Buffer* b) {\n    free(b->data);\n    free(b);\n}\n```\nCan you refactor this into a proper RAII class, explain each design decision, and mention how you'd handle the case where someone wants to resize the buffer without reallocating unnecessarily every time?", "domain": "code_cpp"}
+{"prompt": "Refactor this code to use `std::optional` instead of returning a sentinel value of -1 for 'not found': `int findIndex(std::vector<int>& v, int target){ for(size_t i=0;i<v.size();i++) if(v[i]==target) return i; return -1; }`", "domain": "code_cpp"}
+{"prompt": "Convert this function to use std::optional instead of a sentinel value.\n```cpp\nint findIndex(const std::vector<int>& v, int target) {\n    for (int i = 0; i < v.size(); i++) if (v[i] == target) return i;\n    return -1;\n}\n```", "domain": "code_cpp"}
+{"prompt": "Do you think this use of static polymorphism via templates is cleaner than dynamic dispatch for a plugin architecture with only three known implementations?", "domain": "code_cpp"}
+{"prompt": "what does this weird syntax mean exactly? `auto&& x = someFunction();`", "domain": "code_cpp"}
+{"prompt": "Write a singly linked list class in C++ with push_front, push_back, and a reverse() method that reverses the list in place.", "domain": "code_cpp"}
+{"prompt": "Can you explain the basic idea behind recursion in C++ using a simple example like computing the sum of numbers from 1 to n?", "domain": "code_cpp"}
+{"prompt": "In C++, write a function that removes duplicates from a list while keeping order and explain its time complexity.", "domain": "code_cpp"}
+{"prompt": "Write a custom comparator for sorting pairs by second element descending", "domain": "code_cpp"}
+{"prompt": "What do you think about using std::mutex versus std::atomic for protecting this simple counter?\n```cpp\nint counter = 0;\nvoid increment() { counter++; }\n```", "domain": "code_cpp"}
+{"prompt": "Write a lock-free single-producer single-consumer queue using `std::atomic` with proper memory ordering.", "domain": "code_cpp"}
+{"prompt": "In C++, write a function that implements a simple exponential moving average and explain its time complexity.", "domain": "code_cpp"}
+{"prompt": "Here's a class that manages a raw resource handle:\n```cpp\nclass FileHandle {\npublic:\n    FileHandle(const char* path) { fp = fopen(path, \"r\"); }\n    ~FileHandle() { fclose(fp); }\nprivate:\n    FILE* fp;\n};\n```\nIdentify every rule-of-five violation, explain the consequences of copying an instance of this class, and rewrite it to be safe and idiomatic, including move semantics.", "domain": "code_cpp"}
+{"prompt": "Can you write unit tests using Google Test for this Stack class, covering push, pop, top, and edge cases like popping an empty stack", "domain": "code_cpp"}
+{"prompt": "Write clean, idiomatic C++ that implements run-length encoding and decoding.", "domain": "code_cpp"}
+{"prompt": "What's the difference between std::move and std::forward, and why does using std::move on a forwarding reference cause subtle bugs?", "domain": "code_cpp"}
+{"prompt": "Explain step by step how this quicksort partition function works, then identify why it performs poorly on already-sorted input and suggest a fix:\n```cpp\nint partition(std::vector<int>& v, int lo, int hi) {\n    int pivot = v[hi];\n    int i = lo - 1;\n    for (int j = lo; j < hi; j++) {\n        if (v[j] < pivot) { i++; std::swap(v[i], v[j]); }\n    }\n    std::swap(v[i+1], v[hi]);\n    return i + 1;\n}\n```", "domain": "code_cpp"}
+{"prompt": "In C++, write a function that returns the prime numbers below n using a sieve and explain its time complexity.", "domain": "code_cpp"}
+{"prompt": "hi", "domain": "code_cpp"}
+{"prompt": "I want to convert this raw pointer-based binary tree into one using smart pointers without breaking the existing traversal functions. Can you do the refactor?\n```cpp\nstruct Node {\n    int val;\n    Node* left;\n    Node* right;\n};\n```", "domain": "code_cpp"}
+{"prompt": "What's wrong with this code? `for(int i=0;i<=n;i++) arr[i]=0;`", "domain": "code_cpp"}
+{"prompt": "Optimize this matrix multiplication loop for cache locality using loop tiling.\n```cpp\nfor (int i = 0; i < n; i++)\n  for (int j = 0; j < n; j++)\n    for (int k = 0; k < n; k++)\n      C[i][j] += A[i][k] * B[k][j];\n```", "domain": "code_cpp"}
+{"prompt": "In C++, write a function that computes the factorial of a number and explain its time complexity.", "domain": "code_cpp"}
+{"prompt": "Write a simple program that simulates rolling a six-sided die using `rand()` and explain how to seed it properly.", "domain": "code_cpp"}
+{"prompt": "can you help me write a simple event loop or task scheduler in C++?", "domain": "code_cpp"}
+{"prompt": "can you convert this C-style array code into something more modern using std::array", "domain": "code_cpp"}
+{"prompt": "Explain how std::variant and std::visit work together and show me a real example handling a simple AST node with three variant types", "domain": "code_cpp"}
+{"prompt": "Write a C++ function that counts set bits in an integer. Include a short comment explaining the approach.", "domain": "code_cpp"}
+{"prompt": "Is it a good idea to use inline namespaces for versioning this library's ABI, or would you suggest a different approach?", "domain": "code_cpp"}
+{"prompt": "Explain the difference between std::variant and a tagged union in C++17, with an example showing how visitation avoids the classic switch-on-enum bug.", "domain": "code_cpp"}
+{"prompt": "Explain why this class violates the Rule of Five and fix it.\n```cpp\nclass Buffer {\npublic:\n    Buffer(size_t n) : data(new char[n]), size(n) {}\n    ~Buffer() { delete[] data; }\nprivate:\n    char* data;\n    size_t size;\n};\n```", "domain": "code_cpp"}
+{"prompt": "I have a producer-consumer setup using `std::queue` protected by a `std::mutex` and `std::condition_variable`, but occasionally the consumer thread hangs on shutdown. Here's the relevant code: `void stop(){ done = true; cv.notify_all(); }` — walk me through why this might not wake up a waiting consumer, fix the race condition, and show me how to add a proper join-based shutdown sequence with unit tests verifying no deadlock occurs under stress.", "domain": "code_cpp"}
+{"prompt": "In C++, write a function that finds the majority element in an array and explain its time complexity.", "domain": "code_cpp"}
+{"prompt": "What's wrong with this move constructor? `Foo(Foo&& o){ data=o.data; }`", "domain": "code_cpp"}
+{"prompt": "how do I properly overload the == operator for a class that has a vector member", "domain": "code_cpp"}
+{"prompt": "I need to serialize and deserialize a simple struct to and from a binary file in C++ without using any external libraries. Can you write the code, handle endianness concerns, and explain the pitfalls of doing raw memcpy on structs with padding?", "domain": "code_cpp"}
+{"prompt": "can you explain what a dangling iterator is with an example", "domain": "code_cpp"}
+{"prompt": "I wrote a program to sum the elements of an array but it's giving garbage output. Can you help me debug it?\n```cpp\nint arr[5] = {1,2,3,4,5};\nint sum;\nfor (int i = 0; i <= 5; i++) sum += arr[i];\ncout << sum;\n```", "domain": "code_cpp"}
+{"prompt": "Can you explain what an infinite loop is and show a simple example of one along with how to accidentally cause it?", "domain": "code_cpp"}
+{"prompt": "Is it better to pass a large struct by const reference or by value with move semantics when the function sometimes needs to store a copy? Explain with an example.", "domain": "code_cpp"}
+{"prompt": "Write clean, idiomatic C++ that flattens an arbitrarily nested list.", "domain": "code_cpp"}
+{"prompt": "Explain, step by step, how virtual function dispatch works under the hood in this class hierarchy.\n```cpp\nstruct Base { virtual void speak() { std::cout << \"base\"; } };\nstruct Derived : Base { void speak() override { std::cout << \"derived\"; } };\n```", "domain": "code_cpp"}
+{"prompt": "Write a C++ function that finds the majority element in an array. Include a short comment explaining the approach.", "domain": "code_cpp"}
+{"prompt": "In C++, write a function that computes the depth of a binary tree and explain its time complexity.", "domain": "code_cpp"}
+{"prompt": "Explain what `const` means when applied to a function parameter versus a return type.", "domain": "code_cpp"}
+{"prompt": "Contrast std::list and std::deque for implementing an LRU cache alongside an unordered_map for O(1) lookups.", "domain": "code_cpp"}
+{"prompt": "Compare defining interfaces via abstract base classes with pure virtual functions versus using concepts and templates in C++20 for a plugin architecture.", "domain": "code_cpp"}
+{"prompt": "hey can you help me figure out why this segfaults? `int* p = new int[5]; delete[] p; std::cout << p[0];`", "domain": "code_cpp"}
+{"prompt": "Implement, in C++, code that computes the moving average of a numeric stream. Add a couple of example calls.", "domain": "code_cpp"}
+{"prompt": "Write a generic binary search implementation using iterators that works on any random-access container, not just arrays.", "domain": "code_cpp"}
+{"prompt": "Explain what 'placement new' is used for and show a minimal example allocating an object into a pre-allocated buffer.", "domain": "code_cpp"}
+{"prompt": "Write clean, idiomatic C++ that validates an email address.", "domain": "code_cpp"}
+{"prompt": "Refactor this legacy C-style code into modern idiomatic C++ using RAII, range-based for loops, and STL algorithms where appropriate, and explain each change you made:\n```cpp\nint* arr = (int*)malloc(sizeof(int) * n);\nfor (int i = 0; i < n; i++) arr[i] = i * i;\nint sum = 0;\nfor (int i = 0; i < n; i++) sum += arr[i];\nfree(arr);\n```", "domain": "code_cpp"}
+{"prompt": "Walk me through debugging this race condition where the counter sometimes ends up wrong after multithreaded increments.\n```cpp\nint counter = 0;\nvoid increment() { for (int i = 0; i < 100000; i++) counter++; }\n```", "domain": "code_cpp"}
+{"prompt": "Why is this giving me a segmentation fault?\n```cpp\nchar buf[5];\nstrcpy(buf, \"hello world\");\n```", "domain": "code_cpp"}
+{"prompt": "Implement a simple LRU cache in C++.", "domain": "code_cpp"}
+{"prompt": "Explain the differences between std::async, std::thread, and a manually managed thread pool in terms of overhead and use cases.", "domain": "code_cpp"}
+{"prompt": "Write a C++ function that finds the shortest path in an unweighted grid using BFS. Include a short comment explaining the approach.", "domain": "code_cpp"}

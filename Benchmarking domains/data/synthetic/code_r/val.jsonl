@@ -1,0 +1,100 @@
+{"prompt": "I'm getting unexpected results with lazy evaluation — why does this function print '10' instead of '5'? f <- function(x) { y <- 10; force(x); y <- 5; x }; f(y)", "domain": "code_r"}
+{"prompt": "How do I combine two data frames in R by matching rows on a common ID column?", "domain": "code_r"}
+{"prompt": "why is my date parsing returning NA for every row?\n\nas.Date('03/15/2023', format = '%Y-%m-%d')", "domain": "code_r"}
+{"prompt": "I'm getting inconsistent results from set.seed() across R sessions when using parallel::mclapply — how do I ensure reproducibility with parallel RNG streams?", "domain": "code_r"}
+{"prompt": "How do I write a simple R function that checks whether a number is even or odd and returns 'Even' or 'Odd'?", "domain": "code_r"}
+{"prompt": "Debug this code that should convert a factor to numeric but returns unexpected values: f <- factor(c('10','20','30')); as.numeric(f)", "domain": "code_r"}
+{"prompt": "In your opinion, is roxygen2 documentation overkill for small internal scripts, or should every function have it regardless of size?", "domain": "code_r"}
+{"prompt": "Refactor this nested for loop that fills a matrix with pairwise distances into something using vectorized operations or apply family functions.", "domain": "code_r"}
+{"prompt": "why does this assignment not update the global variable?\nf <- function() x <- 5\nf()\nprint(x)", "domain": "code_r"}
+{"prompt": "can you show me how to write a generic function with S4 dispatch that behaves differently for numeric versus character input, including setValidity for input checks?", "domain": "code_r"}
+{"prompt": "Please add unit tests using testthat for this function that validates email addresses with a regex.\nis_valid_email <- function(x) grepl('^[[:alnum:].+_-]+@[[:alnum:].-]+\\\\.[[:alpha:]]{2,}$', x)", "domain": "code_r"}
+{"prompt": "Write an R6 class representing a simple bank account with deposit and withdraw methods, and explain how private fields differ from public ones.", "domain": "code_r"}
+{"prompt": "can you refactor this into something more idiomatic R instead of a while loop?\n\ni <- 1\nresult <- c()\nwhile (i <= length(vec)) {\n  result <- c(result, vec[i] * 2)\n  i <- i + 1\n}", "domain": "code_r"}
+{"prompt": "write a function to check if a string is a palindrome", "domain": "code_r"}
+{"prompt": "Write a memoized Fibonacci function in R using the memoise package and explain the performance gain over the naive recursive version.", "domain": "code_r"}
+{"prompt": "what's the right way to handle missing values when computing correlations in R?", "domain": "code_r"}
+{"prompt": "Compare using Rcpp to speed up a bottleneck function versus optimizing the same function in pure vectorized R first.", "domain": "code_r"}
+{"prompt": "explain the difference between %in% and match() and give an example where using match() gives you more useful information", "domain": "code_r"}
+{"prompt": "Explain what the pipe operator |> introduced in R 4.1 does differently compared to magrittr's %>%.", "domain": "code_r"}
+{"prompt": "How would I implement memoization for a recursive Fibonacci function in R using an environment as a cache?", "domain": "code_r"}
+{"prompt": "refactor this for loop that builds a data frame row by row using rbind into a vectorized version: for(i in 1:n){ df <- rbind(df, data.frame(id=i, val=i^2)) }", "domain": "code_r"}
+{"prompt": "my ggplot2 facet_wrap plot has inconsistent y-axis scales across panels even though I set scales = 'fixed'—what could be overriding that?", "domain": "code_r"}
+{"prompt": "Explain what makes a function 'pure' in R and why it matters", "domain": "code_r"}
+{"prompt": "How would I go about writing unit tests with testthat for a function that computes the median of a numeric vector while handling NAs?", "domain": "code_r"}
+{"prompt": "Explain why this closure-based counter doesn't reset properly when called from within lapply: make_counter <- function() { i <- 0; function() { i <<- i + 1; i } }", "domain": "code_r"}
+{"prompt": "can you optimize this function, it's really slow on large vectors: f <- function(x) { out <- c(); for (i in x) out <- c(out, i^2); out }", "domain": "code_r"}
+{"prompt": "how do I convert a list of vectors into a data frame?", "domain": "code_r"}
+{"prompt": "Walk me through what this piece of dplyr code is doing step by step, including what group_by + mutate does differently from group_by + summarise here.\ndf %>% group_by(category) %>% mutate(pct = value/sum(value)*100) %>% ungroup()", "domain": "code_r"}
+{"prompt": "Write a function that safely parses dates in multiple formats using lubridate's parse_date_time, and explain how it picks the right format.", "domain": "code_r"}
+{"prompt": "what's a clean way to check if all elements in a list are the same type?", "domain": "code_r"}
+{"prompt": "can you help debug this? it throws 'subscript out of bounds' when I run it on the full dataset", "domain": "code_r"}
+{"prompt": "Compare testthat and tinytest as testing frameworks for a small internal R package — which has less overhead and which is more feature-rich?", "domain": "code_r"}
+{"prompt": "explain what's going on with factor levels here that's causing my plot legend to show categories in the wrong order after filtering: df$grp <- factor(df$grp, levels=c('low','medium','high')); df2 <- df[df$score>0,]", "domain": "code_r"}
+{"prompt": "Fix this bug: my recursive function to flatten a nested list only works one level deep: flatten <- function(x) unlist(x, recursive = FALSE)", "domain": "code_r"}
+{"prompt": "write me a function that takes a vector of strings and returns the longest one, ties broken by first occurrence", "domain": "code_r"}
+{"prompt": "fix this: x <- c(1,2,NA,4); mean(x)", "domain": "code_r"}
+{"prompt": "Explain why this code throws 'invalid subscript type list' and how to fix it: x <- list(a = 1, b = 2, c = 3); idx <- list('a', 'b'); x[idx]. What's the correct way to subset a list using multiple names stored in another list or vector?", "domain": "code_r"}
+{"prompt": "Write an Rcpp function that multiplies two matrices and benchmark it against base R's %*% and a naive triple for-loop implementation using microbenchmark", "domain": "code_r"}
+{"prompt": "how would I set up a proper .Rbuildignore and NAMESPACE for a package that uses both roxygen2 documentation and imports from magrittr?", "domain": "code_r"}
+{"prompt": "how do I write a simple unit test with testthat for a function that converts Celsius to Fahrenheit?", "domain": "code_r"}
+{"prompt": "write a function that checks if a string is a palindrome, ignoring case and spaces", "domain": "code_r"}
+{"prompt": "Please walk me through refactoring this repetitive code into a single function using purrr::map instead of copy-pasted blocks.\n\nresult1 <- mean(df$a, na.rm = TRUE)\nresult2 <- mean(df$b, na.rm = TRUE)\nresult3 <- mean(df$c, na.rm = TRUE)", "domain": "code_r"}
+{"prompt": "Walk me through implementing quicksort in R step by step, including how partitioning works with vector indexing.", "domain": "code_r"}
+{"prompt": "Write a function to compute a running median over a vector", "domain": "code_r"}
+{"prompt": "Write a function that implements a simple LRU cache using an environment in R.", "domain": "code_r"}
+{"prompt": "Write a function that checks if a given string is a palindrome, ignoring case and spaces.", "domain": "code_r"}
+{"prompt": "Can you explain what this line of R code does: x <- seq(1, 10, by = 2)", "domain": "code_r"}
+{"prompt": "my date parsing is off by one day after converting time zones, what's going wrong?", "domain": "code_r"}
+{"prompt": "Walk me through, step by step, how to write an R function that computes the nth Fibonacci number using memoization with a local environment.", "domain": "code_r"}
+{"prompt": "Show me, step by step, how to build a simple linked list data structure in R using a list of environments as nodes.", "domain": "code_r"}
+{"prompt": "explain S3 vs S4 classes with a tiny example", "domain": "code_r"}
+{"prompt": "Explain step by step what this Reduce() call is doing and rewrite it as an explicit loop for clarity.\n\nReduce(function(acc, x) acc + x^2, 1:5, accumulate = TRUE)", "domain": "code_r"}
+{"prompt": "Can you explain what this ggplot2 code does step by step: ggplot(df, aes(x = category, y = value)) + geom_bar(stat = 'identity')", "domain": "code_r"}
+{"prompt": "I need a function that pivots a long-format data frame to wide format, handling duplicate key combinations by summing values.", "domain": "code_r"}
+{"prompt": "I need to remove duplicate rows from a data frame based on only two of the columns, keeping the first occurrence — what's the tidyverse way to do this?", "domain": "code_r"}
+{"prompt": "How do I convert this base R plotting code into an equivalent ggplot2 version? plot(x, y, type = 'l', col = 'blue', main = 'My Plot')", "domain": "code_r"}
+{"prompt": "Debug this environment-scoping bug where a Shiny module's server function reads a stale value of an input even after the user updates it, here's the relevant reactive code: observe({ val <- input$slider; updateTextInput(session, 'out', value = val) })", "domain": "code_r"}
+{"prompt": "how would I implement memoization for this slow recursive function?", "domain": "code_r"}
+{"prompt": "Do you think using environments as mutable objects in R is good practice, or does it lead to hard-to-maintain code?", "domain": "code_r"}
+{"prompt": "explain what environment() does in this context", "domain": "code_r"}
+{"prompt": "Write a memoised recursive Fibonacci function using the memoise package and compare its performance against a naive recursive version for n = 30", "domain": "code_r"}
+{"prompt": "write a binary search function for a sorted vector", "domain": "code_r"}
+{"prompt": "Write an R function to detect cycles in a directed graph", "domain": "code_r"}
+{"prompt": "Can you walk me through how R's environments work, then use that explanation to build a simple memoization decorator function that wraps any single-argument numeric function and caches results in an environment?", "domain": "code_r"}
+{"prompt": "fib <- function(n) if (n <= 1) n else fib(n - 1) + fib(n - 2)", "domain": "code_r"}
+{"prompt": "this regex is supposed to extract all email addresses from a character vector but it's missing ones with a plus sign, like 'user+tag@example.com'—how do I fix the pattern?\n\ngrepl('[A-Za-z0-9._-]+@[A-Za-z0-9.-]+', x)", "domain": "code_r"}
+{"prompt": "Explain tidy evaluation vs base R substitute/quote", "domain": "code_r"}
+{"prompt": "I want to convert a column of strings like 'yes' and 'no' into a logical TRUE/FALSE column in my data frame — what's the simplest way?", "domain": "code_r"}
+{"prompt": "Explain what tryCatch's 'condition' system is doing here, and add a custom condition class so I can catch only my specific warning type: withCallingHandlers(warning('custom issue'), warning = function(w) message('caught: ', conditionMessage(w)))", "domain": "code_r"}
+{"prompt": "Explain what data.table's := operator does versus base R's assignment, then rewrite this base R aggregation as a data.table one-liner: agg <- aggregate(value ~ group, data = df, FUN = mean)", "domain": "code_r"}
+{"prompt": "I need to decide between writing a for loop or a vectorized operation to compute pairwise distances between rows of a matrix — what are the real performance implications?", "domain": "code_r"}
+{"prompt": "I need to concatenate strings in a loop thousands of times — is paste0 in a loop acceptable or should I use sprintf with vectorization or stringr::str_glue instead?", "domain": "code_r"}
+{"prompt": "what's the idiomatic way to reshape a wide data frame with multiple measurement columns per subject into long format using tidyr, and how does pivot_longer differ from the old gather()?", "domain": "code_r"}
+{"prompt": "this code throws a warning about NAs introduced by coercion, what line is causing it? as.numeric(c('1','2','three'))", "domain": "code_r"}
+{"prompt": "Refactor this repetitive code that computes summary statistics for several columns individually into a single call using across() from dplyr, and explain any pitfalls with NA handling.\ndf %>% summarise(mean_a = mean(a), mean_b = mean(b), mean_c = mean(c))", "domain": "code_r"}
+{"prompt": "I'm deciding between storing configuration in a YAML file parsed with yaml package or a plain R list sourced at startup — what's your recommendation and why?", "domain": "code_r"}
+{"prompt": "I'm trying to understand this recursive factorial function's stack behavior — can you trace through it step by step for n=5?\nfact <- function(n) if (n <= 1) 1 else n * fact(n - 1)", "domain": "code_r"}
+{"prompt": "how do I implement a binary search tree in R using a list-based node structure, with insert and in-order traversal functions?", "domain": "code_r"}
+{"prompt": "What's the difference between a factor and a character vector in R, and when should I use each?", "domain": "code_r"}
+{"prompt": "How do I create a sparse matrix in R using the Matrix package and multiply it efficiently against a dense vector?", "domain": "code_r"}
+{"prompt": "Refactor this ifelse chain into switch()", "domain": "code_r"}
+{"prompt": "explain what %>% does versus |>", "domain": "code_r"}
+{"prompt": "my shiny app crashes whenever I click the submit button, here's the observeEvent block, any idea what's wrong? observeEvent(input$submit, { output$result <- renderText(input$val / 0) })", "domain": "code_r"}
+{"prompt": "write a roxygen2 comment block for this exported function including @param, @return, and a runnable @examples section: normalize_vec <- function(x, na.rm=TRUE) (x-min(x,na.rm=na.rm))/(max(x,na.rm=na.rm)-min(x,na.rm=na.rm))", "domain": "code_r"}
+{"prompt": "optimise this apply call, it's slow on large matrices\napply(m, 1, sum)", "domain": "code_r"}
+{"prompt": "fix this: x <- c(1,2,NA,4); mean(x) returns NA, I want it to ignore NAs", "domain": "code_r"}
+{"prompt": "write a small function to detect duplicate rows in a dataframe based on a subset of columns", "domain": "code_r"}
+{"prompt": "Write a simple function that takes a vector of strings and returns only the ones longer than a given number of characters.", "domain": "code_r"}
+{"prompt": "Can you walk me through optimizing this string concatenation loop that's slow for large vectors?\n\nresult <- \"\"\nfor (s in strings) {\n  result <- paste0(result, s)\n}", "domain": "code_r"}
+{"prompt": "debug this tryCatch, the error isn't being caught\ntryCatch(stop('oops'), warning = function(w) print('caught'))", "domain": "code_r"}
+{"prompt": "How would I go about profiling this R script with profvis to find the bottleneck, step by step?", "domain": "code_r"}
+{"prompt": "I'm building an internal tool — would you recommend Shiny or a plumber API for exposing this R function to other teams?", "domain": "code_r"}
+{"prompt": "Would you recommend refactoring this nested ifelse chain into a lookup table, and if so, what's the cleanest way to do it in R?\n\ncategorize <- function(x) {\n  ifelse(x < 10, 'low', ifelse(x < 20, 'medium', ifelse(x < 30, 'high', 'extreme')))\n}", "domain": "code_r"}
+{"prompt": "Can you explain what class() and typeof() tell me about an R object, using a few examples?", "domain": "code_r"}
+{"prompt": "explain the difference between <- and <<- in the context of this closure factory: make_counter <- function(){ i <- 0; function(){ i <<- i + 1; i } }", "domain": "code_r"}
+{"prompt": "can you trace through this code and explain why the closure captures the wrong value of i in all three functions it creates?\n\nfuns <- list()\nfor (i in 1:3) {\n  funs[[i]] <- function() i\n}\nsapply(funs, function(f) f())", "domain": "code_r"}
+{"prompt": "Write a plumber API endpoint that accepts a POST request with JSON body containing a numeric vector and returns its summary statistics", "domain": "code_r"}
+{"prompt": "values <- sapply(1:5, function(i) i * 2)", "domain": "code_r"}
+{"prompt": "Write a function that takes a string and returns TRUE if it's a palindrome, ignoring case and spaces.", "domain": "code_r"}
+{"prompt": "I need to implement gradient descent from scratch to fit a simple linear regression, including a convergence check based on the change in loss", "domain": "code_r"}

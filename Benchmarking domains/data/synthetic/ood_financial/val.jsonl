@@ -1,0 +1,100 @@
+{"prompt": "Can you explain what a stepped-up cost basis is and how it applies to inherited assets?", "domain": "ood_financial"}
+{"prompt": "How would I go about building a zero-based budget for a monthly take-home pay of $4,200 with rent of $1,500, groceries of $400, and variable expenses?", "domain": "ood_financial"}
+{"prompt": "Given this balance sheet snippet — Total Assets $2M, Total Liabilities $1.2M, Total Equity $800K — would you say this company is over-leveraged? What's your recommendation?", "domain": "ood_financial"}
+{"prompt": "Walk me through how to read a company's statement of cash flows, focusing on the differences between operating, investing, and financing activities, and explain what it means if operating cash flow is consistently lower than net income.", "domain": "ood_financial"}
+{"prompt": "My credit card statement says APR is 24.99% but I only carry a balance sometimes—how do I actually calculate what that costs me monthly?", "domain": "ood_financial"}
+{"prompt": "Explain what a 'currency carry trade' is, using an example of borrowing in a low-interest-rate currency to invest in a higher-yielding one.", "domain": "ood_financial"}
+{"prompt": "Can you explain how 'accelerated depreciation' methods like MACRS affect a company's taxable income in the early years of an asset's life?", "domain": "ood_financial"}
+{"prompt": "Explain the debt-to-equity ratio and what a value above 2 might signal.", "domain": "ood_financial"}
+{"prompt": "Contrast contribution limits and employer matching rules between a 401(k) and a SIMPLE IRA for a small business employee deciding where to allocate retirement savings.", "domain": "ood_financial"}
+{"prompt": "What is the difference between a mutual fund and an ETF, and are there meaningful differences in cost or tax treatment that a beginner should know about?", "domain": "ood_financial"}
+{"prompt": "What is 'securitization' and how are mortgage-backed securities structured into tranches with different risk and payout priorities?", "domain": "ood_financial"}
+{"prompt": "Would you advise someone to pay off their student loans early or invest extra cash in the market if the loan interest rate is 4.5%? Explain your reasoning.", "domain": "ood_financial"}
+{"prompt": "What is quantitative easing, and how does a central bank buying government bonds actually influence interest rates and the broader economy?", "domain": "ood_financial"}
+{"prompt": "What's the significance of the Sharpe ratio, and how would you compare two portfolios where Portfolio A returns 10% with 15% volatility and Portfolio B returns 8% with 9% volatility?", "domain": "ood_financial"}
+{"prompt": "I'm evaluating whether to lease or buy a $40,000 car. Walk me through the key financial factors I should compare, including total cost of ownership, depreciation, interest rates, and how my expected mileage and time horizon should influence the decision.", "domain": "ood_financial"}
+{"prompt": "Can you explain the concept of opportunity cost using a simple everyday example?", "domain": "ood_financial"}
+{"prompt": "Given a company with current ratio of 0.8 and quick ratio of 0.4, would you recommend investing in it, and why?", "domain": "ood_financial"}
+{"prompt": "Explain the concept of working capital, how to calculate it from a balance sheet, and why a negative working capital position isn't always a bad sign depending on the industry.", "domain": "ood_financial"}
+{"prompt": "What is the difference between systemic risk and systematic risk in the context of financial markets?", "domain": "ood_financial"}
+{"prompt": "What is the difference between a Traditional mortgage and an adjustable-rate mortgage, and how would monthly payments change on a $300,000 loan if the rate rose from 4% to 6%?", "domain": "ood_financial"}
+{"prompt": "What does a P/E ratio of 25 tell you about market expectations?", "domain": "ood_financial"}
+{"prompt": "What is the difference between an American depositary receipt (ADR) and a global depositary receipt (GDR)?", "domain": "ood_financial"}
+{"prompt": "Can you explain what a budget is and walk me through creating a simple monthly budget using the 50/30/20 rule?", "domain": "ood_financial"}
+{"prompt": "What is securities lending and how do short sellers actually borrow shares to sell them, including the role of the lending fee and rebate rate?", "domain": "ood_financial"}
+{"prompt": "Compare and contrast options and futures contracts for hedging commodity price risk, including differences in margin requirements and settlement procedures.", "domain": "ood_financial"}
+{"prompt": "Given this cash flow statement summary — Operating Cash Flow $200,000, Investing Cash Flow -$150,000, Financing Cash Flow -$30,000 — what would you tell an investor about this company's financial health?", "domain": "ood_financial"}
+{"prompt": "Explain what market capitalization means.", "domain": "ood_financial"}
+{"prompt": "What is the difference between a W-2 employee and a 1099 independent contractor when it comes to taxes?", "domain": "ood_financial"}
+{"prompt": "Explain the concept of duration in bond investing and why a 10-year bond is more sensitive to interest rate changes than a 2-year bond.", "domain": "ood_financial"}
+{"prompt": "Walk me through how to read a company's 10-K filing: what sections should I focus on as a retail investor, and what red flags should make me cautious about a company's financial health?", "domain": "ood_financial"}
+{"prompt": "Would you advise a first-time homebuyer to put down 20% or take a smaller down payment with private mortgage insurance to preserve cash reserves?", "domain": "ood_financial"}
+{"prompt": "What does it mean when a stock has a market capitalization of $2 billion versus $200 billion, and how does that affect the risk profile of investing in it?", "domain": "ood_financial"}
+{"prompt": "Explain what a contingent convertible bond (CoCo) is, how its loss-absorption trigger works, and why regulators pushed European banks to issue them after the financial crisis.", "domain": "ood_financial"}
+{"prompt": "What is the difference between a progressive tax system and a flat tax system, and how would each affect take-home pay differently for someone earning $40,000 versus $400,000?", "domain": "ood_financial"}
+{"prompt": "Can you walk me through how to calculate the Sharpe ratio for a portfolio with a 12% return, 8% standard deviation, and a 3% risk-free rate?", "domain": "ood_financial"}
+{"prompt": "What is a 'covenant-lite' loan, and why did they become more common in leveraged lending markets?", "domain": "ood_financial"}
+{"prompt": "I keep hearing about 'diversification' in investing—can you explain what it means and why it reduces risk?", "domain": "ood_financial"}
+{"prompt": "What does it mean when a stock pays a dividend, and how is dividend yield calculated?", "domain": "ood_financial"}
+{"prompt": "What does an inverted yield curve typically signal about the economy?", "domain": "ood_financial"}
+{"prompt": "Explain the concept of amortization for a business loan.", "domain": "ood_financial"}
+{"prompt": "Can you explain the concept of diversification using a simple example of a two-asset portfolio where one asset returns 10% with high volatility and the other returns 4% with low volatility?", "domain": "ood_financial"}
+{"prompt": "How should I think about asset allocation differently at age 25 versus age 55?", "domain": "ood_financial"}
+{"prompt": "How do I evaluate the trade-offs between a Roth 401(k) and a traditional 401(k) contribution if I expect my tax bracket to be higher in retirement than it is now?", "domain": "ood_financial"}
+{"prompt": "Compare investing in a Roth IRA versus a Traditional IRA for a 30-year-old who expects their tax bracket to rise significantly by retirement, focusing on the trade-offs in tax treatment.", "domain": "ood_financial"}
+{"prompt": "Can you explain what GDP measures and why economists use it as an indicator of a country's economic health?", "domain": "ood_financial"}
+{"prompt": "What's the purpose of a statement of cash flows broken into operating, investing, and financing activities, and how might a company show strong net income but negative operating cash flow?", "domain": "ood_financial"}
+{"prompt": "What is EBITDA and why do investors use it instead of net income?", "domain": "ood_financial"}
+{"prompt": "Explain what 'transfer pricing' means for multinational corporations, and why tax authorities scrutinize how a subsidiary in one country prices goods sold to a subsidiary in another.", "domain": "ood_financial"}
+{"prompt": "What's the difference between hedging and speculation?", "domain": "ood_financial"}
+{"prompt": "Compare inflation-protected securities like TIPS to standard Treasury bonds in terms of how each responds to changes in inflation expectations.", "domain": "ood_financial"}
+{"prompt": "Can you walk me through how to build an emergency fund if I'm starting from basically zero?", "domain": "ood_financial"}
+{"prompt": "I'm trying to understand what 'gross margin' versus 'net margin' tells you about a business's efficiency.", "domain": "ood_financial"}
+{"prompt": "What's a stock buyback and why do companies do them instead of just paying bigger dividends?", "domain": "ood_financial"}
+{"prompt": "Can you explain the concept of dollar-cost averaging and show how it would play out if I invested $200 a month into a fund whose price varied between $18 and $25 over six months?", "domain": "ood_financial"}
+{"prompt": "Can you explain what an interest rate swap is and why a company might use one to manage debt exposure?", "domain": "ood_financial"}
+{"prompt": "Explain the concept of dollar-cost averaging versus lump-sum investing, and using historical market behavior, help me reason through the trade-offs of each approach for someone investing a $40,000 inheritance.", "domain": "ood_financial"}
+{"prompt": "Explain what 'free cash flow' is and how it differs from net income, using an example where a company has net income of $1 million, depreciation of $200,000, and capital expenditures of $500,000.", "domain": "ood_financial"}
+{"prompt": "What is the difference between a revocable and an irrevocable trust from an estate planning and tax perspective?", "domain": "ood_financial"}
+{"prompt": "What is the difference between accrual accounting and cash accounting, and how would a $10,000 service performed in December but paid for in January be recorded differently under each?", "domain": "ood_financial"}
+{"prompt": "Can you explain what a covered call strategy is and how an investor holding 100 shares of a $60 stock could use it to generate income?", "domain": "ood_financial"}
+{"prompt": "What is the current ratio and quick ratio, and calculate both for a company with $80,000 in cash, $120,000 in receivables, $200,000 in inventory, and $250,000 in current liabilities?", "domain": "ood_financial"}
+{"prompt": "Explain how dollar-cost averaging works when investing in a volatile market, and use an example of investing $500 per month over six months into a stock whose price fluctuates between $20 and $35 to show how it affects the average purchase price.", "domain": "ood_financial"}
+{"prompt": "Can you explain the mechanics of a leveraged buyout, including how debt is used to acquire a company and repaid using its own cash flows?", "domain": "ood_financial"}
+{"prompt": "Can you explain how inflation erodes purchasing power over time, using an example of $1,000 today versus its real value in 20 years at 3% average inflation?", "domain": "ood_financial"}
+{"prompt": "Compare the trade-offs of refinancing a mortgage from 7% to 5.5% when the borrower has 20 years remaining on the loan and refinancing costs $4,000 upfront.", "domain": "ood_financial"}
+{"prompt": "Would you recommend dollar-cost averaging or lump-sum investing if I just received a $50,000 inheritance and want to invest it in the stock market?", "domain": "ood_financial"}
+{"prompt": "Explain the concept of 'dollar-cost averaging' and illustrate it with someone investing $500 monthly into a fund whose price fluctuates between $20 and $30 over six months.", "domain": "ood_financial"}
+{"prompt": "Given this simplified income statement—Revenue $2,000,000, COGS $1,200,000, Operating Expenses $500,000, Interest Expense $50,000, Tax Rate 25%—walk me through calculating net income and the operating margin.", "domain": "ood_financial"}
+{"prompt": "How do I read a statement of stockholders' equity, and what does a large 'treasury stock' line item usually indicate about a company's capital allocation strategy?", "domain": "ood_financial"}
+{"prompt": "Explain the concept of 'float' in insurance companies like Berkshire Hathaway and why it's valuable beyond underwriting profit.", "domain": "ood_financial"}
+{"prompt": "Can you explain what a contango market is in futures trading and how it differs from backwardation?", "domain": "ood_financial"}
+{"prompt": "Explain the difference between systematic risk and unsystematic risk, and why diversification can only reduce one of them.", "domain": "ood_financial"}
+{"prompt": "Can you explain what the term 'liquidity' means for an asset, and give examples of a highly liquid asset versus an illiquid one?", "domain": "ood_financial"}
+{"prompt": "Given a company with $2 million in liabilities and $5 million in assets, calculate its equity and debt-to-assets ratio.", "domain": "ood_financial"}
+{"prompt": "Can you explain what a 'stub period' is in bond accrued interest calculations?", "domain": "ood_financial"}
+{"prompt": "Compare defined benefit pension plans to defined contribution plans like 401(k)s, weighing the risk borne by employers versus employees.", "domain": "ood_financial"}
+{"prompt": "If a company has a debt-to-equity ratio of 3.5, would you view that as a red flag for a potential equity investment?", "domain": "ood_financial"}
+{"prompt": "What is the difference between a mutual fund's expense ratio and its load fee, and how do these costs compound over a 20-year holding period?", "domain": "ood_financial"}
+{"prompt": "Explain the difference between FIFO and LIFO inventory accounting methods using an example where a company buys 100 units at $10 and later 100 units at $15, then sells 120 units.", "domain": "ood_financial"}
+{"prompt": "How do I read a simple balance sheet? Can you explain what assets, liabilities, and equity mean using a small example?", "domain": "ood_financial"}
+{"prompt": "Explain the difference between the discounted cash flow (DCF) method and comparable company analysis (comps) for valuing a private business, including the pros and cons of each approach.", "domain": "ood_financial"}
+{"prompt": "Walk me through how to calculate the weighted average cost of capital (WACC) for a firm with 60% equity at a 10% cost and 40% debt at a 6% after-tax cost.", "domain": "ood_financial"}
+{"prompt": "Given a company with current assets of $450,000 and current liabilities of $300,000, calculate the current ratio and explain what it tells us about short-term liquidity.", "domain": "ood_financial"}
+{"prompt": "How does a triple net lease differ from a gross lease in commercial real estate, and who bears the risk in each?", "domain": "ood_financial"}
+{"prompt": "Given these two job offers—Offer A: $95,000 salary with 4% 401k match, Offer B: $105,000 salary with no match—which would you recommend taking from a long-term wealth-building perspective?", "domain": "ood_financial"}
+{"prompt": "What is a stock's dividend yield and how is it calculated?", "domain": "ood_financial"}
+{"prompt": "If someone has $30,000 in credit card debt at 22% APR and is only making minimum payments of $600 a month, roughly how long would it take to pay off, and how much interest would they pay in total?", "domain": "ood_financial"}
+{"prompt": "What's the difference between a bull market and a bear market?", "domain": "ood_financial"}
+{"prompt": "Explain the concept of net present value (NPV) and walk me through evaluating a project that costs $100,000 upfront and returns $30,000 per year for five years, using a discount rate of 8%, to determine whether it's a worthwhile investment.", "domain": "ood_financial"}
+{"prompt": "What is the efficient market hypothesis, and how do its three forms — weak, semi-strong, and strong — differ in their implications for whether active stock picking can consistently outperform the market?", "domain": "ood_financial"}
+{"prompt": "How should I decide between paying off a $15,000 credit card balance at 22% interest versus investing extra cash in an index fund expected to return 8% annually?", "domain": "ood_financial"}
+{"prompt": "Explain the concept of the time value of money and then show me, step by step, how to calculate the present value of $50,000 to be received in 10 years if the discount rate is 6%.", "domain": "ood_financial"}
+{"prompt": "What is the 'efficient market hypothesis,' and how do its three forms—weak, semi-strong, and strong—differ in their assumptions?", "domain": "ood_financial"}
+{"prompt": "What is the difference between nominal GDP and real GDP, and why does the distinction matter when comparing economic growth across years?", "domain": "ood_financial"}
+{"prompt": "I'm new to investing—can you explain the difference between a stock and a bond in plain terms?", "domain": "ood_financial"}
+{"prompt": "What is the difference between a Traditional IRA contribution limit and a 401(k) contribution limit for 2024, and how do catch-up contributions work for people over 50?", "domain": "ood_financial"}
+{"prompt": "What is the difference between an operating lease and a capital lease under accounting rules, and how does each appear on the balance sheet?", "domain": "ood_financial"}
+{"prompt": "What's the difference between a call option and a put option in terms of payoff structure, and how does implied volatility affect their pricing?", "domain": "ood_financial"}
+{"prompt": "Explain the rule of 72 for estimating how long it takes an investment to double, and use it to estimate the doubling time for an investment earning 9% annually.", "domain": "ood_financial"}
+{"prompt": "If I'm self-employed, how do quarterly estimated tax payments actually work?", "domain": "ood_financial"}

@@ -1,0 +1,800 @@
+{"prompt": "Can you write a Haskell function that flattens an arbitrarily nested list structure, like `Tree Int` with `Leaf` and multiple `Branch` children?", "domain": "code_haskell"}
+{"prompt": "How would I refactor this code to use Data.Text instead of String for better performance, and what pitfalls should I watch for during the migration?", "domain": "code_haskell"}
+{"prompt": "Write a simple stack using a list in Haskell.", "domain": "code_haskell"}
+{"prompt": "I need a Haskell function that computes all permutations of a list without using the built-in `permutations` function, for a coding exercise.", "domain": "code_haskell"}
+{"prompt": "Can you explain step by step how type inference resolves the type of this expression?\n\nlet compose = (.) in compose (+1) (*2) 3", "domain": "code_haskell"}
+{"prompt": "Write a small parser combinator from scratch (without Parsec) that can parse balanced parentheses into a nested `Int` depth structure.", "domain": "code_haskell"}
+{"prompt": "I have a lazy evaluation space leak in this fold, can you help me fix it?\nsumStrict :: [Int] -> Int\nsumStrict = foldl (+) 0", "domain": "code_haskell"}
+{"prompt": "can you write a function that merges two sorted lists into one sorted list?", "domain": "code_haskell"}
+{"prompt": "I'm confused about why this instance declaration overlaps and causes a compile error. Can you explain and suggest how to restructure it?\nclass Pretty a where\n  pretty :: a -> String\n\ninstance Pretty a => Pretty [a] where\n  pretty xs = concatMap pretty xs\n\ninstance Pretty Char where\n  pretty c = [c]", "domain": "code_haskell"}
+{"prompt": "What's the idiomatic way to handle exceptions in IO code?", "domain": "code_haskell"}
+{"prompt": "I'm trying to understand recursion in Haskell. Can you walk me through how this factorial function evaluates for input 4?\n\nfactorial :: Int -> Int\nfactorial 0 = 1\nfactorial n = n * factorial (n - 1)", "domain": "code_haskell"}
+{"prompt": "Can you explain why this code gives a type error?\n\nadd :: Int -> Int -> Int\nadd x y = x + y\n\nmain = print (add 1 \"two\")", "domain": "code_haskell"}
+{"prompt": "What's a monoid instance for a custom Vector2 type?", "domain": "code_haskell"}
+{"prompt": "Compare writing a custom Foldable instance manually versus deriving it with DeriveFoldable for a custom rose tree type.", "domain": "code_haskell"}
+{"prompt": "What's your honest opinion on Template Haskell — is it worth the compile-time cost for something like generating lenses or JSON instances?", "domain": "code_haskell"}
+{"prompt": "Can you explain what the `Maybe` type is used for in Haskell and give a beginner-friendly example?", "domain": "code_haskell"}
+{"prompt": "What's the difference between using `Data.Map.Strict` and `Data.Map.Lazy` for a cache that's updated frequently but read rarely?", "domain": "code_haskell"}
+{"prompt": "explain the difference between foldl and foldr with a small example", "domain": "code_haskell"}
+{"prompt": "Compare `IORef` and `MVar` for sharing mutable state between two threads that occasionally need to block on updates.", "domain": "code_haskell"}
+{"prompt": "Walk me through profiling this Haskell program to find out why it's using so much memory, including what GHC flags I should pass.", "domain": "code_haskell"}
+{"prompt": "I'm confused about how `Reader` monad works. Can you explain it with a small example involving application configuration being passed implicitly through several functions, and contrast it with just passing the config as an explicit argument?", "domain": "code_haskell"}
+{"prompt": "Can you explain what 'tagless final' style is and rewrite a small expression evaluator DSL using it instead of a plain ADT?", "domain": "code_haskell"}
+{"prompt": "Do you think Haskell's default lazy evaluation is a net positive for correctness, or does it cause more headaches than it's worth for beginners?", "domain": "code_haskell"}
+{"prompt": "can you explain what's going on in this snippet line by line?\n\nmain = do\n  let xs = [1..10]\n  print (filter even xs)", "domain": "code_haskell"}
+{"prompt": "Can you refactor this beginner code to be more idiomatic Haskell?\n\ndoubleAll :: [Int] -> [Int]\ndoubleAll [] = []\ndoubleAll (x:xs) = [x * 2] ++ doubleAll xs", "domain": "code_haskell"}
+{"prompt": "Can you help me debug this instance declaration, GHC says it's missing a Functor instance context but I don't understand the error?\n\ndata Pair a = Pair a a\n\ninstance Functor Pair where\n  fmap f (Pair x y) = Pair (f x) (f y) (f x)", "domain": "code_haskell"}
+{"prompt": "Can you show me how to implement the Visitor pattern idiomatically in Haskell without OOP-style classes, probably using pattern matching or GADTs?", "domain": "code_haskell"}
+{"prompt": "Explain what makes this `Foldable` instance incorrect for a binary tree type, and show the corrected version.\n\ndata Tree a = Leaf | Node (Tree a) a (Tree a)\ninstance Foldable Tree where\n  foldr f z Leaf = z\n  foldr f z (Node l x r) = f x (foldr f z l)", "domain": "code_haskell"}
+{"prompt": "Can you help me write a function that counts how many vowels are in a given string?", "domain": "code_haskell"}
+{"prompt": "Why does `print (1/3)` in Haskell give a long decimal instead of a fraction, and how would I get an exact fraction instead?", "domain": "code_haskell"}
+{"prompt": "Write a Haskell program that reads a list of integers from stdin, one per line, and prints their sum, average, and maximum, handling the case where the input might be empty or contain invalid lines gracefully.", "domain": "code_haskell"}
+{"prompt": "I want to build a simple REST API in Haskell using Servant that exposes endpoints for creating and listing 'todo' items stored in an in-memory IORef. Can you scaffold the types, the API definition, and the handlers?", "domain": "code_haskell"}
+{"prompt": "Write a Haskell function using `Data.Set` that finds all elements present in exactly one of two input lists (symmetric difference).", "domain": "code_haskell"}
+{"prompt": "Should I implement this cache eviction policy using a purely functional LRU structure or an `IORef`-based mutable hashmap? Discuss correctness and performance trade-offs.", "domain": "code_haskell"}
+{"prompt": "Is it better to write this parser combinator by hand or just pull in Megaparsec for something this small?\n\nparseNumber :: String -> Maybe Int\nparseNumber = readMaybe", "domain": "code_haskell"}
+{"prompt": "I'd like an explanation of how `Data.Sequence` differs from `[]` performance-wise, with an example where `Seq` clearly wins.", "domain": "code_haskell"}
+{"prompt": "Can you write a Haskell function using `Data.Text` instead of `String` that tokenizes a sentence into words, strips punctuation, and lowercases everything, and explain why Text is generally preferred over String for this kind of work?", "domain": "code_haskell"}
+{"prompt": "Walk me through how lazy evaluation affects this snippet and why it doesn't cause an infinite loop:\n\nones :: [Int]\nones = 1 : ones\n\ntake5 :: [Int]\ntake5 = take 5 ones\n\nThen show an example where laziness actually causes a subtle space leak, and how to fix it with strictness annotations.", "domain": "code_haskell"}
+{"prompt": "Write a Haskell function that computes the topological sort of a directed acyclic graph represented as an adjacency list, using Data.Map and Data.Set, and explain how you detect cycles.", "domain": "code_haskell"}
+{"prompt": "Why do I get 'No instance for (Show a)' here?", "domain": "code_haskell"}
+{"prompt": "Can you explain what `DeepSeq` and `NFData` are for, and show when `seq` alone isn't enough to force evaluation?", "domain": "code_haskell"}
+{"prompt": "Is Data.Sequence a better fit than a plain list for this queue implementation, and why would you pick one over the other?", "domain": "code_haskell"}
+{"prompt": "Explain what's happening in this snippet involving Applicative style parsing, and why the `<*>` operator is used instead of `>>=`:\n\ndata Person = Person String Int\n\nparsePerson :: Parser Person\nparsePerson = Person <$> parseName <*> parseAge", "domain": "code_haskell"}
+{"prompt": "Fix this: `foo x = x + 1.0` won't compile with Int input.", "domain": "code_haskell"}
+{"prompt": "How do I use `Data.Map` to count word frequency?", "domain": "code_haskell"}
+{"prompt": "this code compiles but hangs forever, any idea why?\n\nones = 1 : ones\nmain = print (sum ones)", "domain": "code_haskell"}
+{"prompt": "Compare using Data.IORef versus State monad for tracking a counter across multiple IO actions in a small script.", "domain": "code_haskell"}
+{"prompt": "Can you explain what `Data.Coerce` and `coerce` do, and show an example where it avoids runtime overhead compared to manual wrapping/unwrapping?", "domain": "code_haskell"}
+{"prompt": "I'm trying to understand `case` expressions in Haskell. Can you show a simple example matching on a `Maybe Int` value?", "domain": "code_haskell"}
+{"prompt": "Would you recommend `Data.Array` or `Data.Vector` for a numeric computation that needs fast random access and mutation? Explain the differences.", "domain": "code_haskell"}
+{"prompt": "Write a function to compute the GCD of two numbers.", "domain": "code_haskell"}
+{"prompt": "Refactor this to use pattern matching instead of if-else.", "domain": "code_haskell"}
+{"prompt": "Why does this code fail to compile with 'No instance for (Show a)'? I thought GHC would infer it automatically.\n\ndata Box a = Box a\nmain = print (Box 5)", "domain": "code_haskell"}
+{"prompt": "How do I write a custom `Monoid` instance for a type representing running statistics (count, sum, min, max) so I can combine chunks in parallel?", "domain": "code_haskell"}
+{"prompt": "I have a Haskell module that reads a CSV file of employee records, parses each line into a record type, and then computes the average salary per department. The parsing currently uses `words` and `read`, which crashes on malformed rows. Can you rewrite it to use `Data.Text` for splitting, add proper error handling with `Either String Employee`, and make sure malformed rows are collected separately and reported at the end instead of crashing the whole program?", "domain": "code_haskell"}
+{"prompt": "I have two versions of a merge sort, one using explicit recursion and one using Data.List.sortBy — can you benchmark them conceptually and tell me which allocations differ?", "domain": "code_haskell"}
+{"prompt": "Can you explain the difference between `Traversal`, `Prism`, and `Iso` in the `lens` library with a tiny concrete example for each?", "domain": "code_haskell"}
+{"prompt": "Can you show me a simple example of using `Data.Map` to count how many times each word appears in a list of strings?", "domain": "code_haskell"}
+{"prompt": "this code compiles but gives the wrong output, can you find the bug?\n\naverage :: [Double] -> Double\naverage xs = sum xs / length xs", "domain": "code_haskell"}
+{"prompt": "Do you think it's worth adopting a lens library here, or would simple record update syntax suffice for this nested config type?\n\ndata Config = Config { server :: ServerConfig, db :: DbConfig }\ndata ServerConfig = ServerConfig { port :: Int, host :: String }", "domain": "code_haskell"}
+{"prompt": "Walk me through optimizing this Fibonacci function so it doesn't recompute values exponentially:\nfib :: Int -> Int\nfib 0 = 0\nfib 1 = 1\nfib n = fib (n-1) + fib (n-2)", "domain": "code_haskell"}
+{"prompt": "Refactor this nested case expression into guards.", "domain": "code_haskell"}
+{"prompt": "I'm trying to benchmark two implementations of a sorting function with `criterion`. Can you show me how to set that up properly?", "domain": "code_haskell"}
+{"prompt": "What's the idiomatic way to handle configuration in a Haskell app — environment variables, a config file parsed with Aeson, or something else you'd suggest?", "domain": "code_haskell"}
+{"prompt": "What's the idiomatic way to model a state machine for a traffic light system in Haskell using GADTs to enforce valid transitions at compile time?", "domain": "code_haskell"}
+{"prompt": "can you add some quickcheck tests for this function that sorts a list using insertion sort?", "domain": "code_haskell"}
+{"prompt": "Write a Haskell module that defines a `Vector3` type with addition, subtraction, dot product, and cross product operations, and make it an instance of the `Num` typeclass where it makes sense, explaining any methods you choose not to implement.", "domain": "code_haskell"}
+{"prompt": "Compare using type families versus GADTs for encoding a strongly-typed expression language in Haskell.", "domain": "code_haskell"}
+{"prompt": "How do I write a simple continuation-passing style (CPS) version of a factorial function in Haskell, and why would I ever want to do that?", "domain": "code_haskell"}
+{"prompt": "What does `>>=` do for Maybe?", "domain": "code_haskell"}
+{"prompt": "Explain the difference between Functor, Applicative, and Monad using a Maybe example that builds up incrementally, showing why each abstraction is more powerful than the last.", "domain": "code_haskell"}
+{"prompt": "I want to write a CSV parser using `Data.Text` and applicative style parsing. Can you sketch how that would look with `attoparsec`?", "domain": "code_haskell"}
+{"prompt": "Explain what `do` notation desugars to.", "domain": "code_haskell"}
+{"prompt": "Compare using `Data.List.sortBy` with a custom comparator versus defining an `Ord` instance for this type. When is each approach preferable?\n\ndata Task = Task { priority :: Int, name :: String }", "domain": "code_haskell"}
+{"prompt": "How can I use `STM` to implement a simple thread-safe bounded queue in Haskell?", "domain": "code_haskell"}
+{"prompt": "I'm getting a confusing type error when trying to write a generic `traverse`-based validation function. The error says 'Could not deduce (Traversable t) arising from a use of traverse'. Here's my code: ```haskell\nvalidateAll :: (a -> Maybe b) -> [a] -> Maybe [b]\nvalidateAll f xs = traverse f xs\n```. Why would this fail, and what's actually going wrong here — is it a type inference issue or something else?", "domain": "code_haskell"}
+{"prompt": "How do I refactor this code that uses partial functions like `head` and `fromJust` to instead use Maybe safely throughout, step by step?\nprocessOrders :: [Order] -> Double\nprocessOrders orders = total\n  where total = sum (map orderTotal orders)\n        firstOrder = head orders", "domain": "code_haskell"}
+{"prompt": "I'm confused about lazy evaluation here, can you explain why this doesn't loop forever?\n\nones = 1 : ones\ntake 5 ones", "domain": "code_haskell"}
+{"prompt": "Explain the difference between Maybe and Either.", "domain": "code_haskell"}
+{"prompt": "I'm getting an 'ambiguous type variable' error and don't know what it means. Can you explain what causes this kind of error in general?", "domain": "code_haskell"}
+{"prompt": "Should this recursive tree traversal be implemented with explicit recursion or using the Foldable/Traversable typeclasses? Explain the trade-offs.\ndata Tree a = Leaf | Node (Tree a) a (Tree a)", "domain": "code_haskell"}
+{"prompt": "Can you explain why my State monad code isn't updating the state the way I expect? runState (do { put 5; x <- get; return x }) 0", "domain": "code_haskell"}
+{"prompt": "Can you explain the difference between `[Char]` and `String` in Haskell, and whether they're actually the same thing?", "domain": "code_haskell"}
+{"prompt": "my stack overflow happens on large inputs, can you help fix this recursive sum function?\n\nsumList :: [Int] -> Int\nsumList [] = 0\nsumList (x:xs) = x + sumList xs", "domain": "code_haskell"}
+{"prompt": "What's your take on using `Maybe` chains with do-notation versus explicit case expressions for readability?", "domain": "code_haskell"}
+{"prompt": "Can you explain the difference between `NoImplicitPrelude` usage and just importing `Prelude` qualified, and when a project would want the former?", "domain": "code_haskell"}
+{"prompt": "Write a Haskell function using Data.Sequence instead of lists to implement an efficient double-ended queue, and explain why Seq beats [] here.", "domain": "code_haskell"}
+{"prompt": "I want to understand the difference between `Foldable` and `Traversable` typeclasses with concrete examples, and show me how I'd write instances of both for a custom `Tree` data type.", "domain": "code_haskell"}
+{"prompt": "Can you walk me through building a simple command-line to-do list application in Haskell using `IORef`?", "domain": "code_haskell"}
+{"prompt": "I'm trying to understand monad transformers. Can you show me how to combine `StateT` and `ExceptT` to build a simple stack-based calculator that can fail on division by zero, with a full working example including the `runStateT`/`runExceptT` invocation?", "domain": "code_haskell"}
+{"prompt": "Explain what `IO` means in Haskell and why `main :: IO ()` looks the way it does.", "domain": "code_haskell"}
+{"prompt": "can you explain the difference between seq and deepseq with a small example?", "domain": "code_haskell"}
+{"prompt": "Write a simple Haskell function to check if a number is prime, and explain how it works line by line.", "domain": "code_haskell"}
+{"prompt": "What does `deriving (Show, Eq)` actually generate?", "domain": "code_haskell"}
+{"prompt": "What does this list comprehension do? Can you explain it step by step?\n\nsquares = [x*x | x <- [1..10], even x]", "domain": "code_haskell"}
+{"prompt": "I'm trying to represent a simple binary tree and write a function to compute its depth, can you help?", "domain": "code_haskell"}
+{"prompt": "I'm deciding between Warp/WAI directly versus a framework like Servant or Yesod for a small web service — what would you suggest?", "domain": "code_haskell"}
+{"prompt": "Should I model this domain with a typeclass hierarchy or with a single sum type and pattern matching? Here's a rough sketch of the sum type approach.\n\ndata Shape = Circle Double | Rectangle Double Double | Triangle Double Double Double", "domain": "code_haskell"}
+{"prompt": "Explain why my code triggers a space leak when folding over a huge list with foldl instead of foldl', and show me the corrected version with strictness annotations.", "domain": "code_haskell"}
+{"prompt": "Can you show me how to define a custom Monad instance for a Writer-like type that accumulates a log of type [String] alongside a computed value?", "domain": "code_haskell"}
+{"prompt": "What's your take on using `Data.List` functions like `nub` on large lists — is there a better idiomatic alternative you'd suggest?", "domain": "code_haskell"}
+{"prompt": "Can you review this parser combinator and tell me why it fails on nested parentheses?\ndata Expr = Num Int | Paren Expr\n\nparseExpr :: String -> Maybe (Expr, String)\nparseExpr ('(':rest) = case parseExpr rest of\n  Just (e, ')':rest') -> Just (Paren e, rest')\n  _ -> Nothing\nparseExpr s = case reads s of\n  [(n, rest)] -> Just (Num n, rest)\n  _ -> Nothing", "domain": "code_haskell"}
+{"prompt": "Why does adding two lists with `+` fail in Haskell? I expected it to concatenate them like in Python.", "domain": "code_haskell"}
+{"prompt": "I'm using `Data.Aeson` to decode JSON into a custom record type but getting parse errors. Can you show the correct way to write a `FromJSON` instance for this?\n\ndata Person = Person { name :: String, age :: Int }", "domain": "code_haskell"}
+{"prompt": "Can you explain what `Int` versus `Integer` means in Haskell, and when I should use one over the other?", "domain": "code_haskell"}
+{"prompt": "In your view, is Stack or Cabal the better choice for managing a new Haskell project in 2024?", "domain": "code_haskell"}
+{"prompt": "What's your opinion on using type classes versus records of functions for dependency injection in Haskell?", "domain": "code_haskell"}
+{"prompt": "Can you explain what the `Ord` type class is for, and show how deriving it lets me use `sort` on a custom data type?", "domain": "code_haskell"}
+{"prompt": "How would you implement Dijkstra's shortest path algorithm using `Data.Map` as a priority queue substitute in idiomatic Haskell?", "domain": "code_haskell"}
+{"prompt": "Write a rose tree (`data Rose a = Rose a [Rose a]`) and implement a `Foldable` instance for it manually, without deriving.", "domain": "code_haskell"}
+{"prompt": "Why does this program run out of memory when I just want to sum a million numbers?\n\nmain :: IO ()\nmain = print (sum [1..1000000 :: Integer])", "domain": "code_haskell"}
+{"prompt": "Step by step, how would I rewrite this recursive Fibonacci function to use memoization?\n\nfib :: Int -> Integer\nfib 0 = 0\nfib 1 = 1\nfib n = fib (n - 1) + fib (n - 2)", "domain": "code_haskell"}
+{"prompt": "What's the difference between `Maybe` and `Either`?", "domain": "code_haskell"}
+{"prompt": "Can you review this code for idiomatic style and suggest improvements? It works but feels un-Haskell-like to me:\n\nprocessList :: [Int] -> [Int]\nprocessList xs = do\n  x <- xs\n  if x > 0\n    then return (x * 2)\n    else []", "domain": "code_haskell"}
+{"prompt": "Explain the concept of kind signatures in Haskell using this example, and why `Maybe` has kind `* -> *` while `Int` has kind `*`:\n\ndata Maybe a = Nothing | Just a", "domain": "code_haskell"}
+{"prompt": "Can you walk me through how to implement a persistent finger tree in Haskell, including the amortized complexity guarantees for push/pop operations?", "domain": "code_haskell"}
+{"prompt": "I keep getting an 'ambiguous type variable' error with this code. What's going wrong?\n\nmain = print (read \"42\")", "domain": "code_haskell"}
+{"prompt": "Convert this for-loop pseudocode into a Haskell recursive function.", "domain": "code_haskell"}
+{"prompt": "Write a small command-line todo list application in Haskell that supports adding, listing, and removing tasks, persisting the list to a text file between runs.", "domain": "code_haskell"}
+{"prompt": "Do you recommend using explicit recursion or should I always try to reach for a fold or higher-order function first?", "domain": "code_haskell"}
+{"prompt": "How do I go about writing a custom Monad instance for a simple `Result e a` type step by step, making sure it satisfies the monad laws?", "domain": "code_haskell"}
+{"prompt": "help me debug this, GHC is giving me a type error I don't understand\n\nmain = print (length \"hello\" + \"world\")", "domain": "code_haskell"}
+{"prompt": "I'm getting 'Could not deduce (Ord a)' when trying to write a generic `insert` function for a binary search tree. Can you explain the fix?", "domain": "code_haskell"}
+{"prompt": "Step by step, show me how to implement a simple LRU cache in Haskell using Data.Map and a queue structure.", "domain": "code_haskell"}
+{"prompt": "I'm getting a confusing type error with this code involving higher-kinded types. Can you explain what's going wrong?\n\nclass Container f where\n  empty :: f a\n  insert :: a -> f a -> f a\n\ninstance Container [] where\n  empty = []\n  insert x xs = x : xs\n\ndata Stack a = Stack [a]\n\ninstance Container Stack where\n  empty = Stack []\n  insert x (Stack xs) = Stack (x : xs)\n\nWhy does GHC infer ambiguous types when I try to use `empty` alone without context, and how do I fix that with a type application?", "domain": "code_haskell"}
+{"prompt": "I'm curious what you'd suggest between `Text.Read.readMaybe` and writing a custom parser combinator for simple input validation.", "domain": "code_haskell"}
+{"prompt": "Write a Haskell function that computes the longest common subsequence of two lists using dynamic programming with an array, and explain how you avoid recomputation compared to a naive recursive approach.", "domain": "code_haskell"}
+{"prompt": "Refactor this imperative-style Haskell code into something more idiomatic using folds instead of explicit recursion:\n\nsumEvens :: [Int] -> Int\nsumEvens [] = 0\nsumEvens (x:xs)\n  | even x = x + sumEvens xs\n  | otherwise = sumEvens xs\n\nAlso explain why the idiomatic version is generally preferred in Haskell style guides.", "domain": "code_haskell"}
+{"prompt": "What's the trade-off between using foldl' and foldr for summing a large list of Ints, and when would each cause space leaks?", "domain": "code_haskell"}
+{"prompt": "Compare `Control.Exception`'s typed exceptions to using `ExceptT` for error handling in an IO-heavy application. What are the maintainability implications?", "domain": "code_haskell"}
+{"prompt": "Can you write a beginner-friendly explanation of what `Functor`, `Applicative`, and `Monad` mean, just at a conceptual level with tiny examples?", "domain": "code_haskell"}
+{"prompt": "How would I go about adding a custom `Ord` instance to this data type so it sorts by priority first, then by name?\n\ndata Task = Task { priority :: Int, name :: String }", "domain": "code_haskell"}
+{"prompt": "I'm getting an 'ambiguous type' error and I don't understand why. Can you help me fix this?\n\nmain = print (read \"5\" + 1)", "domain": "code_haskell"}
+{"prompt": "Can you show me, step by step, how to debug this infinite loop caused by mutual recursion?\n\nf 0 = g 0\nf n = g (n - 1)\ng 0 = f 0\ng n = f (n - 1)", "domain": "code_haskell"}
+{"prompt": "Can you explain what `DataKinds` lets you do, with an example of a type-level natural number used to constrain vector length?", "domain": "code_haskell"}
+{"prompt": "What's the purpose of `NFData` and `deepseq`, and can you show an example where `seq` alone isn't enough to force full evaluation?", "domain": "code_haskell"}
+{"prompt": "I keep getting 'No instance for (Show a)' errors when trying to print a polymorphic result. Can you explain why type inference doesn't just default to something printable, and how to add proper constraints?", "domain": "code_haskell"}
+{"prompt": "I want to write a function that checks if a list is a palindrome. Can you show me a simple, idiomatic Haskell solution?", "domain": "code_haskell"}
+{"prompt": "Show me step by step how to implement the classic 'FizzBuzz' problem in Haskell using idiomatic pattern matching instead of nested if-else.", "domain": "code_haskell"}
+{"prompt": "Explain how `mapM` differs from `traverse`, and rewrite this loop using `traverse` instead of explicit recursion.\n\nvalidateAll :: [Int] -> Maybe [Int]\nvalidateAll [] = Just []\nvalidateAll (x:xs)\n  | x > 0 = case validateAll xs of\n      Nothing -> Nothing\n      Just rest -> Just (x:rest)\n  | otherwise = Nothing", "domain": "code_haskell"}
+{"prompt": "can you walk me through how this Maybe monad chain actually evaluates?\n\nsafeDiv :: Int -> Int -> Maybe Int\nsafeDiv _ 0 = Nothing\nsafeDiv x y = Just (x `div` y)\n\nresult = do\n  a <- safeDiv 10 2\n  b <- safeDiv a 0\n  return b", "domain": "code_haskell"}
+{"prompt": "Show me how to implement quicksort in Haskell step by step, and then explain why the naive version isn't actually in-place like the imperative one.", "domain": "code_haskell"}
+{"prompt": "can you add some unit tests using HUnit for this function?\n\nadd :: Int -> Int -> Int\nadd x y = x + y", "domain": "code_haskell"}
+{"prompt": "Explain step by step why this code fails to compile due to ambiguous type variables:\nmain = print (read \"42\")", "domain": "code_haskell"}
+{"prompt": "Can you explain the difference between `head`/`tail` and pattern matching when working with lists in Haskell?", "domain": "code_haskell"}
+{"prompt": "Write a Haskell implementation of Dijkstra's shortest path algorithm using `Data.Map` for the graph representation and a priority queue from `Data.Set` of (distance, node) pairs, and explain the time complexity of your implementation compared to using a proper heap library.", "domain": "code_haskell"}
+{"prompt": "Can you help me understand why deriving Functor automatically fails for this GADT, and what changes I need to make it derivable or write it manually?", "domain": "code_haskell"}
+{"prompt": "Write a Haskell function that converts a Celsius temperature to Fahrenheit.", "domain": "code_haskell"}
+{"prompt": "Explain step by step how the `Maybe` monad works by tracing through this do-block:\n\ndo\n  x <- Just 5\n  y <- Just 10\n  return (x + y)", "domain": "code_haskell"}
+{"prompt": "Add error handling using `Either String a` to this parser.", "domain": "code_haskell"}
+{"prompt": "I have a monad transformer stack of `ReaderT Config (StateT AppState IO)` and I'm getting confusing type errors when lifting IO actions — can you help me untangle this?", "domain": "code_haskell"}
+{"prompt": "Should this binary tree insertion function be written with explicit pattern matching or using `case` expressions with guards? Which is more idiomatic?\n\ninsert :: Ord a => a -> Tree a -> Tree a\ninsert x Leaf = Node Leaf x Leaf\ninsert x t@(Node l y r)\n  | x < y = Node (insert x l) y r\n  | x > y = Node l y (insert x r)\n  | otherwise = t", "domain": "code_haskell"}
+{"prompt": "Can you explain monad transformers using StateT and ExceptT stacked together with a concrete example, like a simple bank account simulation where withdrawals can fail if there's insufficient balance?", "domain": "code_haskell"}
+{"prompt": "I'm implementing a simple stack-based calculator that parses RPN expressions. Can you write this in Haskell using `foldl` over tokens?", "domain": "code_haskell"}
+{"prompt": "Can you explain what `case` expressions are and rewrite this if-else chain using a `case` instead?\n\ndescribe n =\n  if n == 0 then \"zero\"\n  else if n == 1 then \"one\"\n  else \"many\"", "domain": "code_haskell"}
+{"prompt": "Explain the difference between `IO ()` and pure functions.", "domain": "code_haskell"}
+{"prompt": "What's your opinion on writing custom Monad instances by hand versus deriving them via GeneralizedNewtypeDeriving?", "domain": "code_haskell"}
+{"prompt": "I'm trying to implement a simple stack using a newtype wrapper around a list, can you show me a clean version with push and pop?", "domain": "code_haskell"}
+{"prompt": "Can you explain what a comonad is and give a minimal instance for a `Store` comonad?", "domain": "code_haskell"}
+{"prompt": "Can you write a QuickCheck property to verify that my binary search implementation always returns the correct index or Nothing for a sorted list?", "domain": "code_haskell"}
+{"prompt": "I'm getting a segfault-like behavior with infinite recursion in my mutual recursion between two typeclasses, any idea what's wrong?", "domain": "code_haskell"}
+{"prompt": "I have two competing implementations of a function to check if a string is a palindrome, one using `reverse` and equality, and another using two-pointer style recursion. Can you benchmark them conceptually in terms of complexity and tell me which is more idiomatic Haskell, then write a version that ignores case and punctuation?", "domain": "code_haskell"}
+{"prompt": "Step by step, how do I add property-based tests with QuickCheck for a function that merges two sorted lists?", "domain": "code_haskell"}
+{"prompt": "Can you explain why using `++` in a loop to build up a large string is bad practice in Haskell, show me a benchmark-style explanation of why it's O(n^2), and rewrite an example using `Data.Text.Builder` or difference lists instead?\n\nbuildString :: [String] -> String\nbuildString = foldl (++) \"\"", "domain": "code_haskell"}
+{"prompt": "Can you explain why this monad transformer stack doesn't compile, and how to fix the lifting issue?\n\ntype App = StateT Int (ReaderT Config IO)\n\naction :: App ()\naction = do\n  cfg <- ask\n  modify (+1)", "domain": "code_haskell"}
+{"prompt": "Please explain what a Maybe type is for and rewrite this function to use it instead of crashing on empty lists.\n\nheadUnsafe :: [a] -> a\nheadUnsafe xs = xs !! 0", "domain": "code_haskell"}
+{"prompt": "Debug this: newtype Parser a = Parser { runParser :: String -> Maybe (a, String) } — my Applicative instance for Parser type-checks but always returns Nothing on valid input.", "domain": "code_haskell"}
+{"prompt": "I wrote this function to add two numbers but it always returns 0. What's wrong?\n\naddNumbers :: Int -> Int -> Int\naddNumbers x y = 0\n  where result = x + y", "domain": "code_haskell"}
+{"prompt": "Add comprehensive Hspec test cases for this function, covering edge cases like empty strings, single characters, and palindromes with mixed case:\n\nisPalindrome :: String -> Bool\nisPalindrome s = cleaned == reverse cleaned\n  where cleaned = map toLower (filter isAlpha s)", "domain": "code_haskell"}
+{"prompt": "How would you design a type-safe DSL for building SQL-like queries in Haskell using phantom types to prevent invalid column references at compile time?", "domain": "code_haskell"}
+{"prompt": "Here's my attempt at implementing quicksort in Haskell: ```haskell\nquicksort [] = []\nquicksort (x:xs) = quicksort [a | a <- xs, a < x] ++ [x] ++ quicksort [a | a <- xs, a >= x]\n```. It works but I've heard this isn't very idiomatic or efficient for large lists. Can you explain the performance issues, add a type signature, and rewrite it using an in-place-like approach with `ST` and mutable arrays for comparison?", "domain": "code_haskell"}
+{"prompt": "I wrote this function to add up a list of numbers but it doesn't compile. Can you fix it and explain the mistake?\n\nsumList [] = 0\nsumList (x:xs) = x + sumList xs\nsumList = sumList [1,2,3]", "domain": "code_haskell"}
+{"prompt": "Can you explain what GADTs buy you over regular algebraic data types, using a small expression evaluator as an example?", "domain": "code_haskell"}
+{"prompt": "I have a stack overflow error with this function on large inputs, any idea why?\n\nsumList :: [Int] -> Int\nsumList [] = 0\nsumList (x:xs) = x + sumList xs", "domain": "code_haskell"}
+{"prompt": "Can you show me how to write a `Traversable` instance for a custom rose tree type, and explain what laws it needs to satisfy?", "domain": "code_haskell"}
+{"prompt": "Can you write an idiomatic Haskell solution to the classic 'N-Queens' problem using list monad and backtracking, and explain how the list monad naturally expresses nondeterministic search in this case?", "domain": "code_haskell"}
+{"prompt": "How do I incrementally refactor this monolithic `main` function into smaller composable pieces?", "domain": "code_haskell"}
+{"prompt": "How do I write a function in Haskell that checks whether a number is prime? Please keep it simple for a beginner.", "domain": "code_haskell"}
+{"prompt": "Can you show me how to implement Dijkstra's shortest path algorithm using `Data.Map` and a priority queue in Haskell?", "domain": "code_haskell"}
+{"prompt": "Explain what `<$>` means.", "domain": "code_haskell"}
+{"prompt": "Explain lazy evaluation with a simple example.", "domain": "code_haskell"}
+{"prompt": "Can you show me how to write a simple function that capitalizes the first letter of a string?", "domain": "code_haskell"}
+{"prompt": "Show me, step by step, how to set up property-based testing to verify that my `sort` function actually produces a sorted, permutation-preserving output.", "domain": "code_haskell"}
+{"prompt": "What's your opinion on using RecordWildCards versus explicit field access in pattern matches for readability?", "domain": "code_haskell"}
+{"prompt": "Guide me through converting this imperative-style loop into idiomatic Haskell using recursion or a fold:\nfor i in range(n): total += i*i", "domain": "code_haskell"}
+{"prompt": "I'm building a small inventory management system for a warehouse app. Walk me through designing the core types (Item, Warehouse, Transaction) using records and sum types, then show how I'd write a function to process a list of transactions and update stock levels, including how to handle negative stock errors idiomatically.", "domain": "code_haskell"}
+{"prompt": "What causes this 'No instance for Show' error?", "domain": "code_haskell"}
+{"prompt": "Here's my attempt at a lazy Fibonacci sequence using a self-referential list: fibs = 0 : 1 : zipWith (+) fibs (tail fibs). Can you explain exactly how the laziness and sharing make this efficient instead of exponential?", "domain": "code_haskell"}
+{"prompt": "What's the difference between using explicit dictionary-passing style versus type classes for polymorphism in performance-critical numeric code?", "domain": "code_haskell"}
+{"prompt": "Write a Haskell function implementing the Sieve of Eratosthenes for finding all primes up to n, and then benchmark it mentally against a naive trial-division approach — explain which is asymptotically better and why.", "domain": "code_haskell"}
+{"prompt": "Show me how to write a simple JSON encoder for a custom data type without pulling in Aeson.", "domain": "code_haskell"}
+{"prompt": "Walk me through fixing this code that's supposed to compute factorials but overflows silently for large inputs, and suggest what type to use instead:\nfactorial :: Int -> Int\nfactorial n = product [1..n]", "domain": "code_haskell"}
+{"prompt": "I'm getting a 'no instance for (Show a)' error and I don't fully understand why adding a type signature fixes it. Can you explain what's happening under the hood with type defaulting?\n\nmain :: IO ()\nmain = print (read \"42\")", "domain": "code_haskell"}
+{"prompt": "Should I prefer using Data.Map or Data.HashMap.Strict for a lookup table with a few thousand entries, performance-wise?", "domain": "code_haskell"}
+{"prompt": "Why does this code produce a type error about ambiguous `Num` instance, and how do I resolve it?\nmain = print (show (1 + 1))", "domain": "code_haskell"}
+{"prompt": "Debug this concurrent Haskell code using MVar that seems to deadlock intermittently when two threads try to update a shared bank balance.", "domain": "code_haskell"}
+{"prompt": "Can you show me how to write a basic 'FizzBuzz' program in Haskell for numbers 1 to 100?", "domain": "code_haskell"}
+{"prompt": "Compare Church encoding versus algebraic data types for representing natural numbers in Haskell, focusing on performance and readability.", "domain": "code_haskell"}
+{"prompt": "Why does this function give a type error? ```haskell\naddOne :: Int -> Int\naddOne x = x + 1.5\n```ould you fix it and explain what's happening?", "domain": "code_haskell"}
+{"prompt": "I need to choose between lazy and strict evaluation for this accumulator function. Can you explain the space/time trade-offs and which is more appropriate here?\n\nsumList :: [Int] -> Int\nsumList = foldl (+) 0", "domain": "code_haskell"}
+{"prompt": "Explain how `newtype` differs from `type` and `data` in Haskell, including a concrete example of a case where using `newtype` instead of `type` prevents a real bug, and mention any runtime performance implications.", "domain": "code_haskell"}
+{"prompt": "Can you explain how `Data.IORef` compares to `MVar` for simple mutable counters in concurrent code?", "domain": "code_haskell"}
+{"prompt": "Write a function to reverse a list without using `reverse`.", "domain": "code_haskell"}
+{"prompt": "can you turn this into a one-liner using list comprehensions?\n\nsquares n = map (\\x -> x*x) (filter even [1..n])", "domain": "code_haskell"}
+{"prompt": "Explain what `mapM_` does versus `map`.", "domain": "code_haskell"}
+{"prompt": "can you explain lazy evaluation in haskell with a concrete example that shows infinite lists?", "domain": "code_haskell"}
+{"prompt": "Should I use newtype wrappers for all my domain IDs (UserId, OrderId, etc.) or is that too much ceremony for a small app?", "domain": "code_haskell"}
+{"prompt": "can you refactor this to use pattern matching instead of a bunch of if-else statements?\n\nclassify n =\n  if n < 0 then \"negative\"\n  else if n == 0 then \"zero\"\n  else \"positive\"", "domain": "code_haskell"}
+{"prompt": "Compare using the Reader monad for dependency injection versus just passing configuration explicitly as function arguments.", "domain": "code_haskell"}
+{"prompt": "What's the difference between using async/wait from the async package versus manually forking threads with forkIO for concurrent HTTP requests?", "domain": "code_haskell"}
+{"prompt": "Can you explain how `newtype` deriving works with `GeneralizedNewtypeDeriving` and why it's safe to reuse instances from the underlying type?", "domain": "code_haskell"}
+{"prompt": "Debug this: mapM print [1,2,3] returns unit list, is that right?", "domain": "code_haskell"}
+{"prompt": "Can you help me implement a red-black tree insertion function in Haskell? I only need insert and a way to check balance invariants hold.", "domain": "code_haskell"}
+{"prompt": "I have an FFI binding to a C function that takes a pointer and length, but I'm getting segfaults. Can you review this binding?\n\nforeign import ccall \"sum_array\" c_sum_array :: Ptr CInt -> CInt -> IO CInt", "domain": "code_haskell"}
+{"prompt": "Can you explain lazy pattern matching using irrefutable patterns (the `~` symbol) with a concrete example, and describe a real scenario where using `~` prevents unnecessary evaluation in a recursive function?", "domain": "code_haskell"}
+{"prompt": "Should I reach for STM or plain MVar when coordinating a handful of worker threads that share a counter?", "domain": "code_haskell"}
+{"prompt": "What's the difference in performance and safety between unsafePerformIO tricks and proper IO threading, using a caching example?", "domain": "code_haskell"}
+{"prompt": "Refactor this monolithic IO-heavy function into something that separates pure logic from effects using a ReaderT over IO, and explain the tradeoffs versus using mtl-style typeclasses.", "domain": "code_haskell"}
+{"prompt": "Refactor this to use foldr instead of explicit recursion.", "domain": "code_haskell"}
+{"prompt": "Can you explain the difference between `newtype` and `data` for a single-constructor single-field type, and when the distinction actually matters at runtime?", "domain": "code_haskell"}
+{"prompt": "Explain why this pattern match is non-exhaustive.", "domain": "code_haskell"}
+{"prompt": "Simplify this nested case expression.", "domain": "code_haskell"}
+{"prompt": "I'm implementing union-find with `STUArray` for disjoint sets but my `find` function isn't compressing paths correctly. Can you review and fix the logic?", "domain": "code_haskell"}
+{"prompt": "Can you explain how `Control.Arrow`'s `(&&&)` and `(***)` combinators work with a couple of small examples?", "domain": "code_haskell"}
+{"prompt": "Why is my `Text` version of this string-processing function slower than the `String` version? I expected the opposite.", "domain": "code_haskell"}
+{"prompt": "Can you write a basic FizzBuzz implementation in Haskell and explain the pattern matching used?", "domain": "code_haskell"}
+{"prompt": "How would I go about writing a simple interpreter for a stack-based calculator language in Haskell, step by step, starting with the AST?", "domain": "code_haskell"}
+{"prompt": "Can you explain what `do` notation is doing in this simple example?\n\nmain :: IO ()\nmain = do\n  putStrLn \"Enter your name:\"\n  name <- getLine\n  putStrLn (\"Hello, \" ++ name)", "domain": "code_haskell"}
+{"prompt": "Do you think Text or String is the right choice for a small script that just parses log files, or is that overkill?", "domain": "code_haskell"}
+{"prompt": "Write a Haskell implementation of Dijkstra's shortest path algorithm using a priority queue, and discuss the time complexity of your choice of data structure.", "domain": "code_haskell"}
+{"prompt": "Write a Haskell program that implements Conway's Game of Life on an infinite grid using a Set of live cell coordinates, and explain the design tradeoffs versus a fixed-size array.", "domain": "code_haskell"}
+{"prompt": "What's the difference between `++` and `:` in Haskell? I keep mixing them up.", "domain": "code_haskell"}
+{"prompt": "Can you optimize this naive prime sieve? It's too slow for numbers above 100000.\nprimes :: [Int]\nprimes = sieve [2..]\n  where sieve (p:xs) = p : sieve [x | x <- xs, x `mod` p /= 0]", "domain": "code_haskell"}
+{"prompt": "Why do I get 'Could not deduce (Eq a)' in this function?", "domain": "code_haskell"}
+{"prompt": "write a haskell function that counts word frequency in a string and returns a sorted list by count", "domain": "code_haskell"}
+{"prompt": "Can you profile this Haskell program conceptually and tell me where the likely bottleneck is, given this fold that builds a large intermediate list before summing it?", "domain": "code_haskell"}
+{"prompt": "write a haskell program that simulates rolling two dice and prints the sum, using the random package", "domain": "code_haskell"}
+{"prompt": "Can you review this Haskell code for idiomatic style and suggest improvements, particularly around unnecessary use of explicit recursion?\n\nfactorial :: Integer -> Integer\nfactorial n = go n 1\n  where\n    go 0 acc = acc\n    go k acc = go (k - 1) (k * acc)", "domain": "code_haskell"}
+{"prompt": "Should I use Data.Map.Strict or Data.Map here given that I'm accumulating counts in a hot loop?", "domain": "code_haskell"}
+{"prompt": "What's the cleanest way to implement a trie (prefix tree) in Haskell for storing and looking up strings?", "domain": "code_haskell"}
+{"prompt": "I want to write a Haskell program that reads lines from stdin lazily and stops processing once it finds a matching line, without loading the whole file into memory. How would I do that?", "domain": "code_haskell"}
+{"prompt": "I keep getting confused about `Int` vs `Integer` in Haskell — can you explain the difference and when to use each?", "domain": "code_haskell"}
+{"prompt": "Can you guide me through adding concurrency to this web scraper using `async` so multiple pages fetch in parallel?", "domain": "code_haskell"}
+{"prompt": "I'm trying to understand catamorphisms and recursion schemes. Can you show how `cata` works for a simple `Expr` type using `recursion-schemes`?", "domain": "code_haskell"}
+{"prompt": "How do I add logging to this IO-based function without breaking purity guarantees elsewhere in the codebase?", "domain": "code_haskell"}
+{"prompt": "Write a Haskell function that computes the longest increasing subsequence of a list of integers, and explain its time complexity.", "domain": "code_haskell"}
+{"prompt": "How would I write a Servant API type for a simple CRUD endpoint over a `User` resource, and what does the type-level routing actually mean?", "domain": "code_haskell"}
+{"prompt": "I want to convert this recursive function into a tail-recursive one using an accumulator, and I'd like you to explain why the original version could cause a stack overflow on large inputs.\n\nfactorial :: Integer -> Integer\nfactorial 0 = 1\nfactorial n = n * factorial (n - 1)", "domain": "code_haskell"}
+{"prompt": "What do you think about using TemplateHaskell for generating lens fields versus writing them by hand for a small codebase?", "domain": "code_haskell"}
+{"prompt": "Can you explain what `do` notation actually desugars into, using a small `IO` example with two `putStrLn` calls?", "domain": "code_haskell"}
+{"prompt": "I have mutual recursion between two functions and GHC keeps complaining about type inference. Can you help me restructure this?\n\nisEven' 0 = True\nisEven' n = isOdd' (n - 1)\nisOdd' 0 = False\nisOdd' n = isEven' (n - 1)", "domain": "code_haskell"}
+{"prompt": "I want to parse a simple CSV file in Haskell without external libraries. Write a function that splits each line on commas, handles trailing whitespace, and returns a list of records as `[[String]]`. Then add a version that uses the `text` package instead of String for better performance.", "domain": "code_haskell"}
+{"prompt": "Should I split this monolithic Main.hs into separate modules now, or wait until the project grows further?", "domain": "code_haskell"}
+{"prompt": "Compare `Data.IntMap` and `Data.Map Int` for a workload with millions of integer keys and frequent insert/lookup operations.", "domain": "code_haskell"}
+{"prompt": "I'm confused about currying in Haskell. Can you explain it with a simple example function that takes two arguments?", "domain": "code_haskell"}
+{"prompt": "Fix the infinite loop in this recursive function.\n\nfact n = n * fact (n-1)", "domain": "code_haskell"}
+{"prompt": "I don't understand why `1 / 2` gives an error but `1.0 / 2.0` works fine. Can you explain Haskell's numeric type classes simply?", "domain": "code_haskell"}
+{"prompt": "Can you explain functional dependencies in multi-parameter type classes with a small example that wouldn't type-check without them?", "domain": "code_haskell"}
+{"prompt": "I'm trying to write a function that finds the maximum of three numbers, but I don't know the idiomatic way to do it in Haskell. Can you show me?", "domain": "code_haskell"}
+{"prompt": "I want to model a simple state machine for a traffic light using Haskell's algebraic data types. Write the data type, a transition function, and a small simulation that cycles through states over a list of ticks.", "domain": "code_haskell"}
+{"prompt": "Please explain why this code triggers a 'Could not deduce (Num a) from the context' type error and how to fix it: ```haskell\ndoubleIt x = x + x\n\nmain :: IO ()\nmain = print (doubleIt \"hello\")\n```. I want to understand exactly what type inference is doing here and why the compiler picks the error location it does.", "domain": "code_haskell"}
+{"prompt": "Explain in detail how the ST monad allows safe use of mutable arrays inside a pure function, and give an example that fills an array with the Fibonacci sequence using STUArray.", "domain": "code_haskell"}
+{"prompt": "Compare and contrast `Either e a` and `Maybe a` for error handling in Haskell, and show how you'd refactor a function returning `Maybe String` into one returning `Either String String` with a descriptive error message.", "domain": "code_haskell"}
+{"prompt": "Should I prefer `Data.Sequence` over plain lists if I need frequent appends at both ends — what would you recommend?", "domain": "code_haskell"}
+{"prompt": "Add error handling to this function that divides two numbers.", "domain": "code_haskell"}
+{"prompt": "Can you explain the difference between `unsafePerformIO` and normal `IO` actions, and why using it carelessly can break referential transparency?", "domain": "code_haskell"}
+{"prompt": "Can you write a `ReaderT Config IO` based application skeleton for a small CLI tool that reads settings once and threads them through several functions?", "domain": "code_haskell"}
+{"prompt": "I wrote a binary search tree insertion function but it's not maintaining balance and I suspect there's also a subtle bug where duplicate keys get inserted twice instead of being ignored. Here's the code: ```haskell\ndata BST a = Leaf | Node (BST a) a (BST a)\n\ninsert :: Ord a => a -> BST a -> BST a\ninsert x Leaf = Node Leaf x Leaf\ninsert x (Node l y r)\n  | x < y = Node (insert x l) y r\n  | x > y = insert x r\n  | otherwise = Node l y r\n```. Can you find and fix the bug, then suggest how I'd extend this toward a self-balancing AVL tree?", "domain": "code_haskell"}
+{"prompt": "Please write a Haskell function that implements run-length encoding and decoding for a list of characters, ensuring that `decode . encode` is the identity function, and add a couple of QuickCheck properties verifying this roundtrip behavior.", "domain": "code_haskell"}
+{"prompt": "Can you add some simple test cases using HUnit for this function?\n\nsquare :: Int -> Int\nsquare x = x * x", "domain": "code_haskell"}
+{"prompt": "What's the more idiomatic way to write this — recursion or a fold?\n\nsumSquares :: [Int] -> Int\nsumSquares [] = 0\nsumSquares (x:xs) = x*x + sumSquares xs", "domain": "code_haskell"}
+{"prompt": "Add error handling to this file-reading function.", "domain": "code_haskell"}
+{"prompt": "Write a function that takes a list of numbers and returns their average, handling the empty list case safely.", "domain": "code_haskell"}
+{"prompt": "I have this Haskell function that's supposed to compute the running average of a list of doubles, but it blows the stack on large inputs:\n\nrunningAvg :: [Double] -> [Double]\nrunningAvg xs = go xs 0 0\n  where go [] _ _ = []\n        go (y:ys) s n = let s' = s + y; n' = n + 1 in (s' / n') : go ys s' n'\n\nCan you explain why it's not stack-safe, fix it, and also add a QuickCheck property that verifies the output length always matches the input length?", "domain": "code_haskell"}
+{"prompt": "Why is my recursive Fibonacci function so slow?", "domain": "code_haskell"}
+{"prompt": "Explain what `seq` actually does and why `foldl' (+) 0 [1..1000000]` is preferred over `foldl (+) 0 [1..1000000]` for performance.", "domain": "code_haskell"}
+{"prompt": "This code compiles but the memory usage explodes on large inputs due to a space leak in foldl. Can you identify it and rewrite it to be strict?\n\naverage :: [Double] -> Double\naverage xs = s / fromIntegral n\n  where\n    (s, n) = foldl (\\(acc, cnt) x -> (acc + x, cnt + 1)) (0, 0) xs", "domain": "code_haskell"}
+{"prompt": "Fix this: foldl (+) [] 0 — why won't it compile?", "domain": "code_haskell"}
+{"prompt": "Would you say learning Haskell via 'Learn You a Haskell' is still a good idea, or are there better modern resources you'd recommend?", "domain": "code_haskell"}
+{"prompt": "Write a function that takes a list of words and groups anagrams together, returning a list of lists. Then explain the time complexity of your solution and suggest an alternative approach if performance matters for very large word lists.", "domain": "code_haskell"}
+{"prompt": "Explain the difference between Data.Map.Strict and Data.Map.Lazy in terms of when values are forced, and give an example where using the wrong one causes a leak.", "domain": "code_haskell"}
+{"prompt": "I want to write a function that returns the maximum of three integers without using the built-in `max` function more than needed. Can you show a clean way to do it?", "domain": "code_haskell"}
+{"prompt": "Can you show me a simple example of pattern matching on tuples, like extracting the first and second elements of a pair?", "domain": "code_haskell"}
+{"prompt": "I wrote this function to find the maximum of a list but it crashes on empty lists: ```haskell\nmyMax :: [Int] -> Int\nmyMax [x] = x\nmyMax (x:xs) = max x (myMax xs)\n```. How should I handle the empty list case?", "domain": "code_haskell"}
+{"prompt": "Write a Haskell function that takes a list of strings and returns the longest one.", "domain": "code_haskell"}
+{"prompt": "Explain how ST monad and mutable STRef work under the hood, and rewrite this pure accumulation loop using STRef for performance.", "domain": "code_haskell"}
+{"prompt": "can you help me trace through what this list comprehension produces?\n\n[(x, y) | x <- [1..3], y <- [1..3], x /= y]", "domain": "code_haskell"}
+{"prompt": "Write a Haskell program that reads a CSV file, parses it into records using cassava, and outputs the average of a numeric column, with proper error handling for malformed rows.", "domain": "code_haskell"}
+{"prompt": "Write a simple Haskell function using `foldr` to compute the product of a list of numbers.", "domain": "code_haskell"}
+{"prompt": "Do you think it's idiomatic to use partial pattern matches in small scripts, or should I always handle every case even in throwaway code?", "domain": "code_haskell"}
+{"prompt": "Optimize this naive Fibonacci function using memoization.", "domain": "code_haskell"}
+{"prompt": "Can you explain how GADTs let you write a well-typed expression evaluator, and show a small example with `Add` and `If` constructors?", "domain": "code_haskell"}
+{"prompt": "What's your take on using lens vs plain record accessors for a medium-sized project with lots of nested data types?", "domain": "code_haskell"}
+{"prompt": "Write a quicksort in Haskell.", "domain": "code_haskell"}
+{"prompt": "This code compiles fine but produces wrong results for negative numbers. Can you find the bug and explain what went wrong mathematically?\n\ngcd' :: Int -> Int -> Int\ngcd' a 0 = a\ngcd' a b = gcd' b (a `mod` b)\n\nabsVal :: Int -> Int\nabsVal x = if x < 0 then negate x else x\n\nsafeDiv :: Int -> Int -> Int\nsafeDiv a b = a `div` (absVal b)", "domain": "code_haskell"}
+{"prompt": "can you write property-based tests for a function that reverses a list twice and should equal the original?", "domain": "code_haskell"}
+{"prompt": "Do you think GADTs are overused in Haskell codebases, or are they generally a good tool reached for too rarely?", "domain": "code_haskell"}
+{"prompt": "How do I write a simple Haskell function that takes a list of integers and returns only the even numbers?", "domain": "code_haskell"}
+{"prompt": "What is the purpose of the `Ord` type class, and how do I make a custom data type an instance of it?", "domain": "code_haskell"}
+{"prompt": "I want to convert this IO-heavy imperative-style code into something using the Reader monad for dependency injection of a config\n\ndata Config = Config { dbUrl :: String, timeout :: Int }\n\nrunApp :: Config -> IO ()\nrunApp cfg = do\n  putStrLn (dbUrl cfg)\n  print (timeout cfg)", "domain": "code_haskell"}
+{"prompt": "Which testing library would you recommend for property-based testing in Haskell, QuickCheck or Hedgehog, and why?", "domain": "code_haskell"}
+{"prompt": "Is it idiomatic to use where clauses this heavily, or should I break this function into top-level helpers instead?\n\nprocess xs = go xs\n  where\n    go [] = []\n    go (y:ys) = f y : go ys\n    f y = y * 2 + offset\n    offset = 10", "domain": "code_haskell"}
+{"prompt": "what's the best way to represent a graph in haskell and implement BFS on it?", "domain": "code_haskell"}
+{"prompt": "Explain the difference between `foldr` and `foldl`.", "domain": "code_haskell"}
+{"prompt": "How would you implement a zipper for a binary tree so I can navigate up, left, and right while editing nodes in place?", "domain": "code_haskell"}
+{"prompt": "Write a function that flattens a nested list.", "domain": "code_haskell"}
+{"prompt": "can you write a quick Haskell function to check if a string is a palindrome?", "domain": "code_haskell"}
+{"prompt": "What's the difference between `let` and `where` in Haskell? Can you give a small example showing both used for the same computation?", "domain": "code_haskell"}
+{"prompt": "Would you prefer foldr or foldl' for summing this list of a million elements, and why?", "domain": "code_haskell"}
+{"prompt": "What's the difference between type families and GADTs for representing a typed expression language, and when would you prefer one over the other?", "domain": "code_haskell"}
+{"prompt": "When writing a parser, is it better to use `parsec`/`megaparsec` combinators or hand-roll a recursive descent parser for a small DSL? Walk me through the trade-offs.", "domain": "code_haskell"}
+{"prompt": "Can you explain what a comonad is, using a simple example like a stream with a `extract` and `extend` function?", "domain": "code_haskell"}
+{"prompt": "write me a haskell function that computes the nth fibonacci number using memoization", "domain": "code_haskell"}
+{"prompt": "Can you explain the difference between `MVar` and `TVar` for concurrency, and when I'd pick one over the other?", "domain": "code_haskell"}
+{"prompt": "Write a Haskell function that validates whether a given string is a well-formed sequence of balanced parentheses, brackets, and braces, using a stack-based approach, and explain the time complexity.", "domain": "code_haskell"}
+{"prompt": "I want to write a free monad interpreter for a simple key-value store DSL with `Get` and `Put` commands. Can you show the DSL, the free monad wrapper, and a pure interpreter?", "domain": "code_haskell"}
+{"prompt": "Do you think using `undefined` as a placeholder during development is fine, or should I always stub with something safer?", "domain": "code_haskell"}
+{"prompt": "What does 'deriving via' do, and can you show an example where it saves boilerplate for a `Monoid` instance?", "domain": "code_haskell"}
+{"prompt": "Should error handling in this HTTP client use ExceptT over IO or just catch exceptions with Control.Exception at the top level? Compare the two designs.", "domain": "code_haskell"}
+{"prompt": "write a function that groups consecutive duplicate elements in a list together", "domain": "code_haskell"}
+{"prompt": "Can you show how to implement memoization for the Fibonacci function using an array instead of a Map?", "domain": "code_haskell"}
+{"prompt": "Can you walk me through fixing this compile error about ambiguous type variables in a numeric literal context?\n\nsquareRoot x = sqrt x\nmain = print (squareRoot 16)", "domain": "code_haskell"}
+{"prompt": "Step by step, show me how to write a merge sort implementation in Haskell and explain the time complexity at each stage.", "domain": "code_haskell"}
+{"prompt": "Should I use lenses from the `lens` library or plain record update syntax for this nested record structure? Explain when the extra dependency is worth it.\n\ndata Address = Address { city :: String, zip :: String }\ndata Person = Person { name :: String, address :: Address }", "domain": "code_haskell"}
+{"prompt": "Walk me through refactoring this deeply nested case expression into something more idiomatic using pattern matching or Maybe monad:\nprocess :: Maybe Int -> Maybe Int -> String\nprocess mx my = case mx of\n  Nothing -> \"no x\"\n  Just x -> case my of\n    Nothing -> \"no y\"\n    Just y -> if x > y then \"x wins\" else \"y wins\"", "domain": "code_haskell"}
+{"prompt": "Explain what `Control.Arrow`'s `(&&&)` and `(***)` combinators do, with a small example combining two functions over a tuple.", "domain": "code_haskell"}
+{"prompt": "Refactor this deeply nested if-then-else chain into pattern matching with guards.\n\nclassify :: Int -> String\nclassify n = if n < 0 then \"negative\" else if n == 0 then \"zero\" else if n < 10 then \"small\" else \"large\"", "domain": "code_haskell"}
+{"prompt": "Can you show a minimal STM example implementing a bank account transfer between two `TVar Int` accounts safely?", "domain": "code_haskell"}
+{"prompt": "I'm choosing between Aeson and a hand-rolled JSON parser for a small project — what would you recommend and why?", "domain": "code_haskell"}
+{"prompt": "What does the `::` operator mean in Haskell? I keep seeing it everywhere and I'm confused.", "domain": "code_haskell"}
+{"prompt": "Would you suggest using a Writer monad to accumulate log messages here, or just passing an explicit log list through the function chain?", "domain": "code_haskell"}
+{"prompt": "Can you show how `Data.Sequence` differs from a plain list for scenarios needing efficient append and indexing, with a small benchmark-style example?", "domain": "code_haskell"}
+{"prompt": "Please help me understand why this code doesn't work: ```haskell\ngreet name = putStrLn \"Hello, \" ++ name\n```. It seems like it should print a greeting but it errors out.", "domain": "code_haskell"}
+{"prompt": "can you refactor this to use pattern matching instead of if-else chains?\n\nclassify n = if n < 0 then \"negative\" else if n == 0 then \"zero\" else \"positive\"", "domain": "code_haskell"}
+{"prompt": "Can you show me how to write a function that reverses a list without using the built-in `reverse`?", "domain": "code_haskell"}
+{"prompt": "How do I implement a simple graph traversal (BFS) in Haskell step by step using an adjacency list represented as Data.Map [Int]?", "domain": "code_haskell"}
+{"prompt": "Write an Eq instance for a custom Tree type.", "domain": "code_haskell"}
+{"prompt": "How would you implement a simple JSON encoder for a custom `Value` type without using Aeson, just to understand the technique?", "domain": "code_haskell"}
+{"prompt": "Write a function to flatten a nested list.", "domain": "code_haskell"}
+{"prompt": "What is the difference between `String` and `Text` in Haskell, and when should a beginner care about this?", "domain": "code_haskell"}
+{"prompt": "Is it a good idea to use MultiParamTypeClasses for this abstraction, or is there a simpler way without the language extension?\n\nclass Convert a b where\n  convert :: a -> b", "domain": "code_haskell"}
+{"prompt": "hey can you write a quick haskell function that checks if a string is a palindrome, ignoring case and spaces?", "domain": "code_haskell"}
+{"prompt": "What's better for representing a fixed set of enum-like values in Haskell: a plain sum type or Int constants with pattern matching? Explain the trade-offs.", "domain": "code_haskell"}
+{"prompt": "Compare using `Data.Text.Lazy` versus strict `Data.Text` for building up a large HTML string incrementally.", "domain": "code_haskell"}
+{"prompt": "In your opinion, does Haskell's record system need something like DuplicateRecordFields, or should people just prefix field names by convention?", "domain": "code_haskell"}
+{"prompt": "Can you show me an idiomatic way to implement a `zipWith3` equivalent for three lists using `Applicative`?", "domain": "code_haskell"}
+{"prompt": "Walk me through explaining what each part of this type class hierarchy is doing.\n\nclass Container f where\n  empty :: f a\n  insert :: a -> f a -> f a\n  toList :: f a -> [a]", "domain": "code_haskell"}
+{"prompt": "I have this mutual recursion for even/odd but GHC complains about missing type signatures in a where clause when I add strictness annotations, can you fix it and explain the fix?\n\nisEven 0 = True\nisEven n = isOdd (n - 1)\nisOdd 0 = False\nisOdd n = isEven (n - 1)", "domain": "code_haskell"}
+{"prompt": "Would you recommend I use Text or String for most of my Haskell code, and why does it actually matter in practice?", "domain": "code_haskell"}
+{"prompt": "Explain `newtype` vs `data` in one paragraph.", "domain": "code_haskell"}
+{"prompt": "Write a parser combinator for matching digits.", "domain": "code_haskell"}
+{"prompt": "I'm new to Haskell — what's the difference between `let` and `where` and when should I use each?", "domain": "code_haskell"}
+{"prompt": "Should I use foldl' with a strict accumulator or a mutable STRef inside runST for computing a running total over a huge list? Which is faster in practice?", "domain": "code_haskell"}
+{"prompt": "I want to convert this imperative-style loop into idiomatic Haskell using `mapM_` or a fold. Can you show me how?\nfor i in range(n):\n    print(i * i)", "domain": "code_haskell"}
+{"prompt": "Should I represent this recursive JSON-like structure as a GADT or as a plain ADT with a separate evaluator? Explain the trade-offs.", "domain": "code_haskell"}
+{"prompt": "How would I go about implementing a simple binary search tree in Haskell, step by step, including insert and lookup functions?", "domain": "code_haskell"}
+{"prompt": "Can you show me how to write a typeclass hierarchy for a simple algebra of shapes, with instances for Circle, Rectangle, and Triangle, each supporting area and perimeter?", "domain": "code_haskell"}
+{"prompt": "I have a mutually recursive pair of GADTs representing a typed expression language, but GHC keeps rejecting my exhaustive pattern match on the Refl constructor when trying to prove type equality. Can you walk through fixing this and explain why the type checker can't infer it automatically?", "domain": "code_haskell"}
+{"prompt": "can you show me the difference between a Maybe and an Either for error handling, with examples?", "domain": "code_haskell"}
+{"prompt": "Can you show me how to implement a simple LRU cache in Haskell using Data.Map and a queue-like structure, and discuss the tradeoffs versus using a more specialized library like `unordered-containers`?", "domain": "code_haskell"}
+{"prompt": "Explain how `do` notation desugars into `>>=`.", "domain": "code_haskell"}
+{"prompt": "How do I define a simple custom data type in Haskell to represent a traffic light with three states?", "domain": "code_haskell"}
+{"prompt": "Can you refactor this to use `foldr` instead of explicit recursion?\nsumList :: [Int] -> Int\nsumList [] = 0\nsumList (x:xs) = x + sumList xs", "domain": "code_haskell"}
+{"prompt": "write a function that implements quicksort in haskell, and explain the pivot choice tradeoffs", "domain": "code_haskell"}
+{"prompt": "Should I implement this queue using two lists (Okasaki-style) or Data.Sequence? Discuss the amortized complexity trade-offs.", "domain": "code_haskell"}
+{"prompt": "Walk me through debugging this off-by-one error in a function that's supposed to return the nth Fibonacci number:\nfibAt :: Int -> Int\nfibAt n = fibs !! n\n  where fibs = 0 : 1 : zipWith (+) fibs (tail fibs)", "domain": "code_haskell"}
+{"prompt": "Write an efficient Haskell implementation of the Knuth-Morris-Pratt string matching algorithm, and explain the intuition behind the failure function.", "domain": "code_haskell"}
+{"prompt": "What's actually going on with this monad transformer stack, can you break it down for me? type App = ReaderT Config (StateT AppState IO)", "domain": "code_haskell"}
+{"prompt": "I keep getting 'Could not deduce Show' errors, can you explain what's happening and how to fix it?", "domain": "code_haskell"}
+{"prompt": "Write a Haskell function using `Data.Map` that takes a list of words and returns a frequency map, then a second function that returns the top N most frequent words sorted by count descending and alphabetically for ties. Please include type signatures and handle the empty list case.", "domain": "code_haskell"}
+{"prompt": "Explain what 'kind signatures' are and why I'd need one for a type like `data Fix f = Fix (f (Fix f))`", "domain": "code_haskell"}
+{"prompt": "Explain what `newtype` buys you over `type`.", "domain": "code_haskell"}
+{"prompt": "Write a Haskell parser combinator from scratch (no external libraries) that can parse balanced parentheses and report the nesting depth.", "domain": "code_haskell"}
+{"prompt": "Write a simple JSON pretty-printer for a small AST.", "domain": "code_haskell"}
+{"prompt": "Can you explain lazy evaluation using this example, and why it doesn't loop forever?\n\nones :: [Int]\nones = 1 : ones\n\ntake5 = take 5 ones", "domain": "code_haskell"}
+{"prompt": "Write a small interpreter for a stack-based calculator language in Haskell, just add, subtract, multiply, divide.", "domain": "code_haskell"}
+{"prompt": "What would you recommend for handling optional configuration fields — Maybe everywhere, or a Default typeclass instance?", "domain": "code_haskell"}
+{"prompt": "Write a Haskell function using Data.Sequence instead of lists to implement an efficient double-ended queue with push/pop operations on both ends, and explain the complexity benefits over using [a].", "domain": "code_haskell"}
+{"prompt": "Can you add error handling using `Either String a` to this division function so it returns a descriptive error instead of crashing?\n\ndivide :: Int -> Int -> Int\ndivide x y = x `div` y", "domain": "code_haskell"}
+{"prompt": "I wrote a binary tree insert function but it's not preserving balance and I suspect there's also a subtle bug with duplicate values. Can you review this and fix it?\n\ndata Tree a = Leaf | Node (Tree a) a (Tree a)\n\ninsert :: Ord a => a -> Tree a -> Tree a\ninsert x Leaf = Node Leaf x Leaf\ninsert x (Node l y r)\n  | x < y = Node (insert x l) y r\n  | x > y = insert x r\n  | otherwise = Node l y r", "domain": "code_haskell"}
+{"prompt": "Walk me through converting this function from using explicit recursion to using standard higher-order functions like map, filter, and foldr:\ndoubleEvens :: [Int] -> [Int]\ndoubleEvens [] = []\ndoubleEvens (x:xs)\n  | even x = (x*2) : doubleEvens xs\n  | otherwise = doubleEvens xs", "domain": "code_haskell"}
+{"prompt": "Can you optimize this string-processing function which currently uses ++ in a loop and is O(n^2)? Rewrite it using Data.Text or a difference list approach.\n\nconcatAll :: [String] -> String\nconcatAll = foldl (++) \"\"", "domain": "code_haskell"}
+{"prompt": "Explain step by step how lazy evaluation causes this function to leak memory when summing a huge list:\nsumList :: [Int] -> Int\nsumList = foldl (+) 0", "domain": "code_haskell"}
+{"prompt": "Explain how `deriving (Generic)` works with the generic-deriving or GHC.Generics machinery and how it enables automatic JSON encoding via aeson.", "domain": "code_haskell"}
+{"prompt": "Can you explain what `RankNTypes` buys me here, and why removing the forall breaks this function?\n\napplyToBoth :: (forall a. a -> a) -> (Int, String) -> (Int, String)\napplyToBoth f (x, y) = (f x, f y)", "domain": "code_haskell"}
+{"prompt": "In your opinion, is it better to use lens or plain record syntax with field selectors for a medium-sized Haskell project with lots of nested records?", "domain": "code_haskell"}
+{"prompt": "can you help me write a haskell function to flatten a nested list of arbitrary depth?", "domain": "code_haskell"}
+{"prompt": "Explain step by step what this fold is actually doing and rewrite it using foldr for clarity:\nsumSquares :: [Int] -> Int\nsumSquares = foldl (\\acc x -> acc + x*x) 0", "domain": "code_haskell"}
+{"prompt": "Step by step, how would I implement Dijkstra's shortest path algorithm in Haskell using Data.Map and a priority queue?", "domain": "code_haskell"}
+{"prompt": "What's the difference between `foldl` and `foldl'`?", "domain": "code_haskell"}
+{"prompt": "Explain step by step how `mapM_` differs from `forM_` and when I should reach for each.", "domain": "code_haskell"}
+{"prompt": "Can you explain why using unsafePerformIO in this context is dangerous, and suggest a safer alternative using proper IO threading?", "domain": "code_haskell"}
+{"prompt": "What's your take on naming conventions for type class methods — should they be prefixed to avoid clashes across modules?", "domain": "code_haskell"}
+{"prompt": "I want to build a small HTTP client using `http-conduit` that fetches a URL and parses the JSON response into a record. Can you sketch this out?", "domain": "code_haskell"}
+{"prompt": "Write a Haskell implementation of a binary search tree with insert, delete, and lookup functions, and make it an instance of Foldable so I can use `sum`, `toList`, and `elem` on it directly.", "domain": "code_haskell"}
+{"prompt": "Write a property-based test using QuickCheck that verifies my custom `reverse` implementation satisfies `reverse (reverse xs) == xs` for all lists, and also test that it distributes correctly over `(++)`.", "domain": "code_haskell"}
+{"prompt": "Can you explain what `seq` and `deepseq` actually force in Haskell, using a concrete example with a data type containing multiple lazy fields, and clarify a common misconception about `seq` only forcing to 'normal form' rather than full evaluation?", "domain": "code_haskell"}
+{"prompt": "Walk me through adding proper error handling to this file-reading function so it doesn't crash on missing files:\nreadConfig :: FilePath -> IO String\nreadConfig path = readFile path", "domain": "code_haskell"}
+{"prompt": "Here's a naive Fibonacci implementation: `fib n = if n <= 1 then n else fib (n-1) + fib (n-2)`. Can you explain why this is exponential time, then show me two different ways to make it efficient in Haskell — one using memoization with an array, and one using a tail-recursive accumulator — and discuss the tradeoffs between them in terms of laziness and space usage?", "domain": "code_haskell"}
+{"prompt": "Can you explain the difference between `Maybe`, `Either e`, and `ExceptT e IO` for error handling, and give me a realistic example of when you'd reach for each one in a web backend written in Haskell?", "domain": "code_haskell"}
+{"prompt": "I don't understand why my function `f x y = x + y` works fine but `f = \\x y -> x + y` also works — are lambdas and normal function definitions the same thing?", "domain": "code_haskell"}
+{"prompt": "I have this code that's supposed to merge two sorted lists but it's producing duplicates incorrectly. Can you find the bug?\n\nmerge :: Ord a => [a] -> [a] -> [a]\nmerge [] ys = ys\nmerge xs [] = xs\nmerge (x:xs) (y:ys)\n  | x < y = x : merge xs (y:ys)\n  | otherwise = y : merge (x:xs) ys", "domain": "code_haskell"}
+{"prompt": "Can you help me trace through what this list comprehension produces? [(x,y) | x <- [1..3], y <- [1..3], x /= y]", "domain": "code_haskell"}
+{"prompt": "Can you explain what laziness means in Haskell with a simple example involving an infinite list like `[1..]`?", "domain": "code_haskell"}
+{"prompt": "How do I profile this Haskell program to find out why it's using so much memory, step by step?", "domain": "code_haskell"}
+{"prompt": "Write a Haskell function that takes a list of integers and returns all the ways to partition it into two sublists with equal sum, using list comprehensions or recursion, and explain the time complexity of your approach.", "domain": "code_haskell"}
+{"prompt": "Can you show me how to write property-based tests using Hedgehog instead of QuickCheck for a function that reverses a list twice and should return the original list, and explain the main differences between the two libraries?", "domain": "code_haskell"}
+{"prompt": "i have a mutual recursion problem, here's my code, why is it looping infinitely?\n\nisEven 0 = True\nisEven n = isOdd (n - 1)\nisOdd 0 = False\nisOdd n = isEven (n - 1)", "domain": "code_haskell"}
+{"prompt": "Step by step, explain how to derive Functor, Foldable, and Traversable for a custom tree type and what each derived instance actually gives me.", "domain": "code_haskell"}
+{"prompt": "What's your honest opinion on using partial functions like head and fromJust in production Haskell code?", "domain": "code_haskell"}
+{"prompt": "I'm trying to understand currying in Haskell — can you explain it with a simple example function?", "domain": "code_haskell"}
+{"prompt": "What's your opinion on deriving Generic for every data type by default versus only adding it when actually needed?", "domain": "code_haskell"}
+{"prompt": "Can you show how to write a tagless-final encoding for a small arithmetic DSL instead of using a free monad?", "domain": "code_haskell"}
+{"prompt": "I need to convert this recursive Haskell function into a tail-recursive one using an accumulator, and explain why the transformation improves stack behavior.", "domain": "code_haskell"}
+{"prompt": "my parser combinator isn't compiling, can you take a look?\n\nparseDigit :: Parser Char\nparseDigit = satisfy isDigit", "domain": "code_haskell"}
+{"prompt": "I have this instance declaration that overlaps with another one and GHC complains about instance resolution ambiguity. Can you explain the issue and suggest how to resolve it with FlexibleInstances or a newtype wrapper?", "domain": "code_haskell"}
+{"prompt": "I'm building a small inventory management system in Haskell. Can you design a data type for `Item` with fields for name, quantity, and price, write a function to compute total inventory value, and show how you'd structure this using a `Map String Item` instead of a list, including insertion and lookup functions?", "domain": "code_haskell"}
+{"prompt": "I need a Haskell implementation of Dijkstra's shortest path algorithm using Data.Map for the graph and a priority queue (you can implement a simple one or use Data.Set as a substitute). Please explain the complexity and any tricky parts of the implementation.", "domain": "code_haskell"}
+{"prompt": "What is a `Functor` in Haskell? Can you explain it simply with an example using `Maybe`?", "domain": "code_haskell"}
+{"prompt": "I want to write a bank account simulation using STM with `TVar` so multiple threads can safely deposit and withdraw. Can you show the code?", "domain": "code_haskell"}
+{"prompt": "Explain how the State monad works with a small counter example.", "domain": "code_haskell"}
+{"prompt": "I have this mutually recursive pair of functions for checking even/odd, but I want to understand how Haskell handles mutual recursion and whether this is efficient or if I should rewrite it iteratively.\n\nisEven :: Int -> Bool\nisEven 0 = True\nisEven n = isOdd (n - 1)\n\nisOdd :: Int -> Bool\nisOdd 0 = False\nisOdd n = isEven (n - 1)", "domain": "code_haskell"}
+{"prompt": "Debug this code — it compiles but throws a runtime pattern match failure when given an empty list:\n\nmaxOfList :: [Int] -> Int\nmaxOfList xs = maximum xs\n\nfirstAndLast :: [Int] -> (Int, Int)\nfirstAndLast xs = (head xs, last xs)\n\nRewrite both functions to safely handle empty lists using Maybe, and explain the tradeoffs of using `NonEmpty` from Data.List.NonEmpty instead.", "domain": "code_haskell"}
+{"prompt": "Write a Haskell function using `Data.Map.Strict` that builds a word-frequency histogram from a large text file efficiently, and explain why strictness matters here.", "domain": "code_haskell"}
+{"prompt": "Write a Haskell function that takes a list of tuples representing (name, age) and returns the names of people older than 18.", "domain": "code_haskell"}
+{"prompt": "write a function that takes a list of tuples and returns them sorted by the second element", "domain": "code_haskell"}
+{"prompt": "Write me a quick Haskell function that checks if a number is prime, doesn't need to be super optimized.", "domain": "code_haskell"}
+{"prompt": "Give me a one-liner to check if a string is a palindrome.", "domain": "code_haskell"}
+{"prompt": "Is it better to use Data.Sequence or a plain list when I need efficient append and prepend operations along with indexing? Explain the trade-offs.", "domain": "code_haskell"}
+{"prompt": "Here's a snippet using `Data.List.sortBy` and `comparing` that I don't fully understand: ```haskell\nimport Data.Ord (comparing)\nimport Data.List (sortBy)\n\nsortPeople :: [(String, Int)] -> [(String, Int)]\nsortPeople = sortBy (comparing snd)\n```. Can you explain how `comparing` works internally and show how I'd extend this to sort by age descending, then name ascending as a tiebreaker?", "domain": "code_haskell"}
+{"prompt": "I don't understand why my function isn't type-checking. Can you explain the error?\n\nisPositive :: Int -> Bool\nisPositive x = if x > 0 then \"yes\" else \"no\"", "domain": "code_haskell"}
+{"prompt": "Can you implement an LRU cache in Haskell using Data.Map and a doubly-linked structure or sequence to track recency efficiently?", "domain": "code_haskell"}
+{"prompt": "Should I use Data.Set for uniqueness checks or nub from Data.List? Compare their complexity and when nub is actually fine to use.", "domain": "code_haskell"}
+{"prompt": "I want to write a simple JSON encoder for a custom `Person` record type without using Aeson, just to understand the mechanics. Can you show how?", "domain": "code_haskell"}
+{"prompt": "Compare using free monads versus effect systems like `fused-effects` for building an interpretable DSL for a small scripting language.", "domain": "code_haskell"}
+{"prompt": "How do I convert this recursive function into a tail-recursive one using an accumulator, step by step?\n\ncountDown :: Int -> [Int]\ncountDown 0 = [0]\ncountDown n = n : countDown (n - 1)", "domain": "code_haskell"}
+{"prompt": "How do monad transformer stacks like `ReaderT Env (StateT AppState IO)` actually work under the hood, and can you show a minimal usage example?", "domain": "code_haskell"}
+{"prompt": "Can you explain what `newtype` is for and why I would use it instead of just `type` or `data`?", "domain": "code_haskell"}
+{"prompt": "Can you explain the difference between `Data.Map.Strict` and `Data.Map.Lazy`, and give a concrete example where using the lazy version by mistake causes a space leak?", "domain": "code_haskell"}
+{"prompt": "can you rewrite this using a fold instead of explicit recursion?\n\nmyLength :: [a] -> Int\nmyLength [] = 0\nmyLength (x:xs) = 1 + myLength xs", "domain": "code_haskell"}
+{"prompt": "Can you explain what `mapM_`, `forM_`, and `sequence_` are actually doing under the hood, and give an example of when you'd prefer `traverse_` from `Data.Foldable` instead of a list-specific version?", "domain": "code_haskell"}
+{"prompt": "Compare recursion schemes (like cata and ana from the recursion-schemes package) versus plain recursive functions for evaluating an AST.", "domain": "code_haskell"}
+{"prompt": "Write a Haskell function that takes two strings and checks if they are anagrams of each other.", "domain": "code_haskell"}
+{"prompt": "this pattern match is throwing a warning about incomplete patterns, how do I fix it properly?\n\ndata Shape = Circle Double | Square Double\n\narea (Circle r) = pi * r * r", "domain": "code_haskell"}
+{"prompt": "Explain the difference between `Data.Text` and `String` in Haskell, and when I should prefer one over the other for a web scraping tool.", "domain": "code_haskell"}
+{"prompt": "Can you explain what `MonadTrans` and `lift` do, and show a small example combining `StateT` with `IO`?", "domain": "code_haskell"}
+{"prompt": "Explain how `DeriveFunctor` and `DeriveFoldable` work under the hood, and show what the generated instance would look like for `data Tree a = Leaf | Node (Tree a) a (Tree a)`.", "domain": "code_haskell"}
+{"prompt": "Compare defining this recursive data type as a standard ADT versus using an explicit fixed-point type with `Fix` from `Data.Fix`.\n\ndata Expr = Lit Int | Add Expr Expr | Mul Expr Expr", "domain": "code_haskell"}
+{"prompt": "Can you explain what pattern synonyms are for, and rewrite a `Maybe`-based API using a pattern synonym to hide constructor details?", "domain": "code_haskell"}
+{"prompt": "Explain what GADTs are for with a small example, then show me how I'd rewrite a simple expression evaluator (for arithmetic and boolean expressions) using a GADT to get better type safety than a plain ADT would give me.", "domain": "code_haskell"}
+{"prompt": "Explain the difference between `foldl` and `foldr` using a concrete example where the choice actually changes performance or correctness, and tell me when I should reach for `foldl'` from Data.List instead.", "domain": "code_haskell"}
+{"prompt": "How do I set up a basic Haskell project with cabal from scratch, step by step, including a Main module and a test suite using Hspec?", "domain": "code_haskell"}
+{"prompt": "can you show me how to define a custom Show instance for this data type?\n\ndata Color = Red | Green | Blue", "domain": "code_haskell"}
+{"prompt": "Explain what higher-kinded types are, and how the `MonadTrans` class uses them to lift operations through a monad stack.", "domain": "code_haskell"}
+{"prompt": "Can you explain the difference between `foldl`, `foldl'`, and `foldr` in terms of strictness and stack usage, and then show me a concrete example where using `foldl` instead of `foldl'` on a large list causes a stack overflow?", "domain": "code_haskell"}
+{"prompt": "I need a Haskell function that parses a simple CSV line into a list of strings, handling quoted fields with commas inside them. Can you write one?", "domain": "code_haskell"}
+{"prompt": "can you show me a simple example of using the State monad to simulate a counter?", "domain": "code_haskell"}
+{"prompt": "Write a simple Haskell function that takes a list of integers and returns only the even numbers, and explain how list comprehensions work in this context.", "domain": "code_haskell"}
+{"prompt": "I'm deciding whether to use `Data.Vector` instead of lists for numeric processing — what would you recommend for performance-sensitive code?", "domain": "code_haskell"}
+{"prompt": "Can you help me write a function to compute the greatest common divisor of two numbers, explaining the recursion?", "domain": "code_haskell"}
+{"prompt": "I have a web server written with Servant that exposes a `GET /users/:id` endpoint, and I want to add proper error responses for when the user isn't found, distinguishing between a 404 and a 500 for database failures. Can you show how to structure the handler using `Either` or `ExceptT` over the Servant handler monad to do this cleanly?", "domain": "code_haskell"}
+{"prompt": "Can you refactor this deeply nested case-of-case expression into something more idiomatic using Maybe's Monad instance or the Alternative typeclass?", "domain": "code_haskell"}
+{"prompt": "Compare STM versus MVar for coordinating access to shared state in a concurrent Haskell server. When is each preferable?", "domain": "code_haskell"}
+{"prompt": "How do I implement Functor for a custom Tree type?", "domain": "code_haskell"}
+{"prompt": "write a simple haskell program that reads a list of numbers from stdin and prints their average", "domain": "code_haskell"}
+{"prompt": "Compare using Either String a versus a custom exception type thrown via throwIO for error handling in an IO-heavy application.", "domain": "code_haskell"}
+{"prompt": "Explain what `traverse` does compared to `map`.", "domain": "code_haskell"}
+{"prompt": "Write a Haskell function that takes a list of words and capitalizes the first letter of each one.", "domain": "code_haskell"}
+{"prompt": "How do I go about implementing a persistent immutable stack data structure in Haskell, step by step, with push, pop, and peek operations?", "domain": "code_haskell"}
+{"prompt": "I want to convert this recursive Fibonacci function into one that uses memoization via a lazy list of results. Can you show the transformation and explain why it works?\n\nfib :: Int -> Integer\nfib 0 = 0\nfib 1 = 1\nfib n = fib (n - 1) + fib (n - 2)", "domain": "code_haskell"}
+{"prompt": "I want to implement a simple LRU cache in Haskell. Can you design the data structure using a combination of `Data.Map` and a list or sequence to track access order, and provide `get` and `put` operations with their type signatures?", "domain": "code_haskell"}
+{"prompt": "Can you explain what a type class is in plain terms, maybe comparing it loosely to interfaces in other languages, using `Eq` as the example?", "domain": "code_haskell"}
+{"prompt": "What's your honest opinion on using `unsafePerformIO` — are there any cases where you'd actually endorse it?", "domain": "code_haskell"}
+{"prompt": "What are the pros and cons of using `deriving (Generic)` plus generic programming versus writing manual instances for a large family of related types?", "domain": "code_haskell"}
+{"prompt": "Can you show me how to define a custom `Semigroup` and `Monoid` instance for a type representing running statistics (count, sum, min, max) so that combining two partial statistics with `<>` gives correct aggregated statistics, and then use `foldMap` to compute stats over a large list in one pass?", "domain": "code_haskell"}
+{"prompt": "Can you convert this hand-rolled recursive descent parser into one built with Megaparsec, preserving the same grammar for arithmetic expressions with precedence?", "domain": "code_haskell"}
+{"prompt": "I keep getting confused between `let` and `where` in Haskell. Can you explain the difference with a small example?", "domain": "code_haskell"}
+{"prompt": "Can you write a simple Stack data type in Haskell using a list, with push, pop, and peek functions?", "domain": "code_haskell"}
+{"prompt": "Can you refactor this imperative-style Haskell code that uses nested `case` statements and manual index tracking into something more idiomatic using pattern matching and higher-order functions? ```haskell\nprocess :: [Int] -> [Int]\nprocess xs = go 0 xs []\n  where\n    go _ [] acc = reverse acc\n    go i (x:rest) acc =\n      case i `mod` 2 of\n        0 -> go (i+1) rest (x*2 : acc)\n        _ -> go (i+1) rest (x : acc)\n```", "domain": "code_haskell"}
+{"prompt": "Write a Haskell function that implements the Sieve of Eratosthenes lazily using an infinite list, and explain why naive implementations tend to be much slower than expected.", "domain": "code_haskell"}
+{"prompt": "write me a small function that takes a list of numbers and returns the running total at each step", "domain": "code_haskell"}
+{"prompt": "What are the trade-offs between using pattern synonyms versus smart constructors for hiding internal representation of a data type?", "domain": "code_haskell"}
+{"prompt": "i keep hearing about lens library, can you show a simple example of using it to update a nested record?", "domain": "code_haskell"}
+{"prompt": "Can you explain what 'lens' library operators like ^. and .~ actually do under the hood, with a minimal example on a nested record?", "domain": "code_haskell"}
+{"prompt": "I could implement this retry logic with a simple recursive loop in IO or with the `retry` package's combinators. What are the trade-offs?", "domain": "code_haskell"}
+{"prompt": "I'm brand new to Haskell — can you explain what the `::` symbol means and why I see it everywhere in type signatures?", "domain": "code_haskell"}
+{"prompt": "How would I implement a zipper for a rose tree in Haskell so I can navigate up and down efficiently?", "domain": "code_haskell"}
+{"prompt": "I'm implementing a simple JSON encoder using typeclasses. Can you show me how to define a ToJSON class and instances for Int, String, and lists, producing valid JSON output?", "domain": "code_haskell"}
+{"prompt": "i want to write a simple todo list app in haskell using a Map, any tips on structuring it?", "domain": "code_haskell"}
+{"prompt": "Write a parser combinator from scratch (no libraries) that can parse simple arithmetic expressions with +, -, *, /, and parentheses, respecting operator precedence. Include a Parser newtype, Functor/Applicative/Monad instances, and a top-level `parseExpr :: String -> Maybe (Int, String)` function.", "domain": "code_haskell"}
+{"prompt": "What does this type signature mean? `(a -> b) -> [a] -> [b]`", "domain": "code_haskell"}
+{"prompt": "I have this function to check if a list is a palindrome, but it seems slow for big lists — can you make it more efficient?\n\nisPalindrome :: Eq a => [a] -> Bool\nisPalindrome xs = xs == reverse xs", "domain": "code_haskell"}
+{"prompt": "How do I refactor this code to use `Data.Map` instead of an association list for better lookup performance?\n\nlookupUser :: [(String, Int)] -> String -> Maybe Int\nlookupUser assocs key = lookup key assocs", "domain": "code_haskell"}
+{"prompt": "Please explain the difference between `MVar`, `STM`, and `IORef` for managing shared mutable state in concurrent Haskell programs, and give a short example of a bank account transfer function implemented with each to illustrate the differences in safety guarantees.", "domain": "code_haskell"}
+{"prompt": "Write a simple Haskell function that removes duplicate elements from a list while preserving order.", "domain": "code_haskell"}
+{"prompt": "Add type signatures to this function.\n\nadd a b = a + b", "domain": "code_haskell"}
+{"prompt": "Explain the difference between `newtype` and `data` in Haskell using a concrete example involving a `Meters` wrapper around Double, and describe what performance benefits `newtype` gives at runtime.", "domain": "code_haskell"}
+{"prompt": "Can you help me understand this type error? I don't see why the types don't unify.\n\nimport Data.Map (Map)\nimport qualified Data.Map as Map\n\nlookupDefault :: Ord k => k -> v -> Map k v -> v\nlookupDefault k def m = Map.findWithDefault m k def", "domain": "code_haskell"}
+{"prompt": "How would I set up a REST API server in Haskell using Servant step by step, starting from defining the API type to running the server?", "domain": "code_haskell"}
+{"prompt": "Convert this to point-free style: `f x = x + 1`", "domain": "code_haskell"}
+{"prompt": "Write a Fibonacci function using memoization.", "domain": "code_haskell"}
+{"prompt": "How would you write a Haskell function to compute the Levenshtein edit distance between two strings, and can you optimize it with `Data.Array` for memoization?", "domain": "code_haskell"}
+{"prompt": "I need to write a parser combinator from scratch (no libraries) for arithmetic expressions with + - * / and parentheses, respecting precedence. Can you walk me through the design?", "domain": "code_haskell"}
+{"prompt": "Write a Haskell function that detects cycles in a directed graph represented as adjacency lists, returning `True` if a cycle exists.", "domain": "code_haskell"}
+{"prompt": "Can you explain what pattern matching means in Haskell using this simple example?\n\ndescribe :: Int -> String\ndescribe 0 = \"zero\"\ndescribe 1 = \"one\"\ndescribe _ = \"many\"", "domain": "code_haskell"}
+{"prompt": "This function is supposed to interleave two lists but produces the wrong output for lists of different lengths. Can you find the bug and fix it?\n\ninterleave :: [a] -> [a] -> [a]\ninterleave [] ys = ys\ninterleave (x:xs) ys = x : interleave ys xs", "domain": "code_haskell"}
+{"prompt": "Here's my attempt at implementing merge sort in Haskell, but I suspect it's inefficient:\n\nmergeSort :: Ord a => [a] -> [a]\nmergeSort [] = []\nmergeSort [x] = [x]\nmergeSort xs = merge (mergeSort left) (mergeSort right)\n  where (left, right) = splitAt (length xs `div` 2) xs\n        merge [] ys = ys\n        merge xs [] = xs\n        merge (x:xs) (y:ys)\n          | x <= y = x : merge xs (y:ys)\n          | otherwise = y : merge (x:xs) ys\n\nCan you point out any performance issues and suggest an optimized version?", "domain": "code_haskell"}
+{"prompt": "I'm confused why this code doesn't type-check when I try to make a list of mixed numeric types. Can you explain?\n\nxs :: [Num a => a]\nxs = [1, 2.5, 3]", "domain": "code_haskell"}
+{"prompt": "Can you show me an idiomatic way to parse a CSV line into a record using Text instead of String?", "domain": "code_haskell"}
+{"prompt": "I want to implement a simple LRU cache in Haskell — what data structures would you combine, and can you sketch the core functions?", "domain": "code_haskell"}
+{"prompt": "Should I use Data.Map or Data.HashMap.Strict for a lookup table with millions of String keys? Walk me through the performance and API trade-offs.", "domain": "code_haskell"}
+{"prompt": "Can you guide me through refactoring this deeply nested if-then-else chain into guards or pattern matching?\n\nclassify n = if n < 0 then \"negative\" else if n == 0 then \"zero\" else if n < 10 then \"small\" else \"large\"", "domain": "code_haskell"}
+{"prompt": "Explain how `unsafePerformIO` breaks referential transparency guarantees, and describe a realistic scenario where using it incorrectly leads to subtly wrong results.", "domain": "code_haskell"}
+{"prompt": "Here's a snippet using `Data.IORef` for a mutable counter. Can you explain what's happening line by line, and then show me the pure functional equivalent using the State monad?\n\nimport Data.IORef\n\ncounter :: IO ()\ncounter = do\n  ref <- newIORef 0\n  mapM_ (\\_ -> modifyIORef ref (+1)) [1..10]\n  val <- readIORef ref\n  print val", "domain": "code_haskell"}
+{"prompt": "Can you explain the difference between `++` and `:` for working with lists in Haskell?", "domain": "code_haskell"}
+{"prompt": "how would I parse a simple CSV line into a list of strings without any libraries?", "domain": "code_haskell"}
+{"prompt": "Can you explain why this code doesn't compile and how to fix it?\nclass Container f where\n  empty :: f a\n  insert :: a -> f a -> f a\n\ninstance Container [] where\n  empty = []\n  insert = (:)\n\nmain = print (insert 5 empty)", "domain": "code_haskell"}
+{"prompt": "I wrote a binary search tree insert function, but I think it's not preserving the BST invariant correctly. Can you check it?\ndata Tree a = Leaf | Node (Tree a) a (Tree a)\ninsert :: Ord a => a -> Tree a -> Tree a\ninsert x Leaf = Node Leaf x Leaf\ninsert x (Node l y r)\n  | x < y = Node (insert x l) y r\n  | otherwise = Node l y (insert x r)", "domain": "code_haskell"}
+{"prompt": "hey can you help me write a function that reverses a list without using the built-in reverse?", "domain": "code_haskell"}
+{"prompt": "Walk me through fixing this off-by-one error in a function that computes a sliding window average.\n\nwindowAvg :: [Double] -> Int -> [Double]\nwindowAvg xs n = [sum (take n (drop i xs)) / fromIntegral n | i <- [0..length xs - n]]", "domain": "code_haskell"}
+{"prompt": "Compare implementing memoization with a Map-based cache versus using lazy arrays for the classic dynamic programming coin change problem.", "domain": "code_haskell"}
+{"prompt": "Explain what `mapM_`, `forM_`, and `sequence_` each do differently, with small examples showing when you'd pick one over the others in real IO code.", "domain": "code_haskell"}
+{"prompt": "How would you write a Haskell interpreter for a tiny arithmetic language with addition, multiplication, and variables, using an `Data.Map` environment?", "domain": "code_haskell"}
+{"prompt": "Can you explain the monoid instance for `Ordering` and show how it's used to implement lexicographic comparison of tuples?", "domain": "code_haskell"}
+{"prompt": "Explain what `newtype` buys me over `type`.", "domain": "code_haskell"}
+{"prompt": "Write a stack implemented with a list and push/pop functions.", "domain": "code_haskell"}
+{"prompt": "Write a function to reverse a list without using reverse.", "domain": "code_haskell"}
+{"prompt": "Convert this for-loop logic into Haskell recursion.", "domain": "code_haskell"}
+{"prompt": "Please add QuickCheck property tests for this function that reverses a list using an accumulator: ```haskell\nmyReverse :: [a] -> [a]\nmyReverse = go []\n  where go acc [] = acc\n        go acc (x:xs) = go (x:acc) xs\n```. I want properties checking that reversing twice gives back the original list, that the length is preserved, and that it matches the standard library's `reverse`.", "domain": "code_haskell"}
+{"prompt": "can you show me how to implement a simple binary search tree with insert and lookup in Haskell?", "domain": "code_haskell"}
+{"prompt": "I want to implement a trie (prefix tree) in Haskell for efficient string lookup and autocomplete suggestions. Can you provide an implementation with insert, member, and a prefix search function?", "domain": "code_haskell"}
+{"prompt": "How would you architect error handling across this whole application — one big sum type of errors, or many small ones per module?", "domain": "code_haskell"}
+{"prompt": "Explain the difference between `seq`, `deepseq`, and `($!)` with concrete examples showing when each one actually forces evaluation.", "domain": "code_haskell"}
+{"prompt": "Can you write a set of QuickCheck property tests for this function that checks it always returns a sorted list and that the output has the same length as the input?\n\nmySort :: Ord a => [a] -> [a]\nmySort = foldr insert []\n  where insert x [] = [x]\n        insert x (y:ys) | x <= y = x : y : ys\n                         | otherwise = y : insert x ys", "domain": "code_haskell"}
+{"prompt": "Walk me through writing a typeclass hierarchy from scratch for a small shape library with area and perimeter functions, step by step.", "domain": "code_haskell"}
+{"prompt": "Can you convert this recursive Fibonacci function to use memoization with an array, keeping it purely functional, and explain how `Data.Array`'s laziness makes this work?\n\nfib :: Int -> Integer\nfib n = fibs !! n\n  where fibs = map fib' [0..]\n        fib' 0 = 0\n        fib' 1 = 1\n        fib' k = fibs !! (k-1) + fibs !! (k-2)", "domain": "code_haskell"}
+{"prompt": "This code compiles but always prints the same thing regardless of input. What am I doing wrong?\n\nmain :: IO ()\nmain = do\n  let x = 5\n  print (isEven x)\n  where\n    isEven n = True", "domain": "code_haskell"}
+{"prompt": "can you help me write a function that flattens a list of lists into one list?", "domain": "code_haskell"}
+{"prompt": "In your opinion, is it better to model application errors with ExceptT or with a custom monad transformer stack? I'm building a CLI tool that talks to a REST API.", "domain": "code_haskell"}
+{"prompt": "What does the `deriving` keyword do? Can you show me an example with a simple data type where deriving Show and Eq actually matters?", "domain": "code_haskell"}
+{"prompt": "Can you trace through the evaluation of this expression step by step and tell me what it prints, explaining any surprising behavior related to laziness or sharing?\n\nmain :: IO ()\nmain = do\n  let xs = [1..] :: [Int]\n  let ys = map (*2) xs\n  print (take 3 ys)", "domain": "code_haskell"}
+{"prompt": "I'd like an idiomatic Haskell implementation of the Sieve of Eratosthenes that's actually efficient, not the classic naive lazy list version that's secretly quadratic. Can you explain why the naive version is slow too?", "domain": "code_haskell"}
+{"prompt": "Optimize this recursive naive Fibonacci function using memoization via Data.Array, and explain the complexity improvement: fib n = if n < 2 then n else fib (n-1) + fib (n-2)", "domain": "code_haskell"}
+{"prompt": "Write a Haskell function using `Data.Map` that counts word frequencies in a `String` and returns the top 5 most frequent words.", "domain": "code_haskell"}
+{"prompt": "I have this code using `STRef` inside the `ST` monad but GHC complains about escaping scope. What's going on?\n\nimport Control.Monad.ST\nimport Data.STRef\n\nbadFunction :: ST s (STRef s Int)\nbadFunction = newSTRef 0", "domain": "code_haskell"}
+{"prompt": "i've got this function that reverses a list but it feels super inefficient, can you make it faster?\n\nreverseList :: [a] -> [a]\nreverseList [] = []\nreverseList (x:xs) = reverseList xs ++ [x]", "domain": "code_haskell"}
+{"prompt": "What does this type signature actually mean in plain English? (Functor f, Applicative f) => f (a -> b) -> f a -> f b", "domain": "code_haskell"}
+{"prompt": "I'm implementing a simple interpreter for arithmetic expressions with variables and want to add proper error handling using `Either String Int` instead of `error`. Can you show how to restructure this?\n\ndata Expr = Num Int | Var String | Add Expr Expr | Div Expr Expr\n\neval :: [(String, Int)] -> Expr -> Int\neval _ (Num n) = n\neval env (Var x) = case lookup x env of\n  Just v -> v\n  Nothing -> error \"unbound variable\"\neval env (Add a b) = eval env a + eval env b\neval env (Div a b) = eval env a `div` eval env b", "domain": "code_haskell"}
+{"prompt": "Please explain what `IO ()` means in a function signature, using a simple `main` function as an example.", "domain": "code_haskell"}
+{"prompt": "Can you explain how `mtl`'s `MonadState` class relates to `StateT`, and rewrite this explicit `StateT` code to use the more general `MonadState` constraint?\n\ncounter :: StateT Int IO ()\ncounter = do\n  n <- get\n  put (n + 1)", "domain": "code_haskell"}
+{"prompt": "Would you suggest using GADTs here to make this expression evaluator type-safe, or is that overengineering for a toy calculator?\n\ndata Expr = Lit Int | Add Expr Expr | If Expr Expr Expr", "domain": "code_haskell"}
+{"prompt": "What's the performance and readability trade-off between using list comprehensions and explicit `map`/`filter` chains for this kind of transformation?\n\nresult = [x * 2 | x <- [1..100], even x]", "domain": "code_haskell"}
+{"prompt": "Please explain, step by step, why this code fails to compile with a type ambiguity error.\n\nmain = print (read \"42\")", "domain": "code_haskell"}
+{"prompt": "I have a list of tuples representing (name, score) pairs, and I want to find the name with the highest score. How would I write that in Haskell?", "domain": "code_haskell"}
+{"prompt": "Which do you recommend for error handling in a small CLI tool: Either, ExceptT, or just throwing exceptions with Control.Exception?", "domain": "code_haskell"}
+{"prompt": "What's the difference between using explicit case expressions and guards for this function, and does one compile to more efficient code?\nclassify :: Int -> String\nclassify n\n  | n < 0 = \"negative\"\n  | n == 0 = \"zero\"\n  | otherwise = \"positive\"", "domain": "code_haskell"}
+{"prompt": "Can you write a simple binary search tree insert and lookup in Haskell, nothing fancy, just something that works?", "domain": "code_haskell"}
+{"prompt": "Write a topological sort function over a graph represented as `Map Int [Int]` using DFS.", "domain": "code_haskell"}
+{"prompt": "refactor this using Data.Map instead of an association list for better performance\n\nlookupUser :: [(String, Int)] -> String -> Maybe Int\nlookupUser db name = lookup name db", "domain": "code_haskell"}
+{"prompt": "I'm getting a confusing kind error when trying to define a Functor instance for my type. Can you explain kinds in Haskell and fix this?\n\ndata Pair a b = Pair a b\n\ninstance Functor (Pair a b) where\n  fmap f (Pair x y) = Pair x (f y)", "domain": "code_haskell"}
+{"prompt": "Can you walk me through what this snippet does line by line, including why the type signature is necessary? ```haskell\nnewtype Parser a = Parser { runParser :: String -> Maybe (a, String) }\n\ninstance Functor Parser where\n  fmap f (Parser p) = Parser $ \\s -> case p s of\n    Nothing -> Nothing\n    Just (a, rest) -> Just (f a, rest)\n```", "domain": "code_haskell"}
+{"prompt": "I need to implement Dijkstra's shortest path algorithm in Haskell using a `Data.Map` for the graph representation and a priority queue. Can you write a working version and explain the key data structures used?", "domain": "code_haskell"}
+{"prompt": "Can you write property-based tests using QuickCheck for a function that checks if a list is a palindrome?", "domain": "code_haskell"}
+{"prompt": "how do i implement a binary search tree in haskell with insert and lookup functions?", "domain": "code_haskell"}
+{"prompt": "What are the advantages and disadvantages of using `newtype` wrappers versus type synonyms for distinguishing `UserId` from `ProductId`, both backed by `Int`?", "domain": "code_haskell"}
+{"prompt": "Can you explain the difference between `deriving stock`, `deriving newtype`, and `deriving via`, with a short example for each?", "domain": "code_haskell"}
+{"prompt": "I'm torn between using Text.Printf and manual string concatenation for formatting a report — what would you go with?", "domain": "code_haskell"}
+{"prompt": "can you clean up this messy function so it reads more like idiomatic Haskell?\n\nprocess xs = if length xs == 0 then [] else map (\\x -> x * 2) xs", "domain": "code_haskell"}
+{"prompt": "I need a memoized Fibonacci function using Data.Array, can you show me how that works?", "domain": "code_haskell"}
+{"prompt": "What's the difference between using `Data.Sequence` and a plain list for implementing a queue-heavy algorithm, and when does the switch actually matter?", "domain": "code_haskell"}
+{"prompt": "I keep getting 'Non-exhaustive patterns' errors. Can you explain what this means and fix the function below?\n\nsign :: Int -> String\nsign 0 = \"zero\"\nsign x\n  | x > 0 = \"positive\"", "domain": "code_haskell"}
+{"prompt": "What do you think is the cleanest way to handle configuration loading — environment variables, a YAML file, or command-line flags — in a Haskell CLI app?", "domain": "code_haskell"}
+{"prompt": "Compare Data.Array versus Data.Vector.Unboxed for a dynamic programming solution to the knapsack problem in terms of speed and ergonomics.", "domain": "code_haskell"}
+{"prompt": "Write a function that computes the transitive closure of a directed graph represented as an adjacency list using Data.Map and Data.Set, and explain the algorithm's complexity.", "domain": "code_haskell"}
+{"prompt": "Can you explain what `newtype` deriving buys you over a plain `data` declaration, using a `Sum` wrapper around `Int` as an example?", "domain": "code_haskell"}
+{"prompt": "I'm trying to understand lazy evaluation and space leaks. Here's a function that computes a running sum using `foldl` over a large list, and it's blowing the heap: ```haskell\nsumList :: [Int] -> Int\nsumList = foldl (+) 0\n```. Can you explain exactly why this leaks space even though `(+)` seems simple, and show the fix along with how to verify the fix using `+RTS -s`?", "domain": "code_haskell"}
+{"prompt": "Implement binary search on a sorted list.", "domain": "code_haskell"}
+{"prompt": "Write a simple bank account simulation using the State monad.", "domain": "code_haskell"}
+{"prompt": "Why does this function give a type error? I just want to add two numbers together.\n\nadd x y = x + y\naddStrings = add \"3\" \"4\"", "domain": "code_haskell"}
+{"prompt": "How does `foldl'` from `Data.List` differ from `foldr` in terms of strictness, and when would using `foldr` cause a stack overflow on a long list?", "domain": "code_haskell"}
+{"prompt": "I'm confused about `MultiParamTypeClasses` combined with `FunctionalDependencies`. Can you give a small example of a collection class that needs both?", "domain": "code_haskell"}
+{"prompt": "What's the idiomatic way to write a coroutine-like generator in Haskell without a dedicated library, just using laziness or continuations?", "domain": "code_haskell"}
+{"prompt": "Can you write an Arbitrary instance for a custom data type representing a valid non-empty binary search tree, for use with QuickCheck?", "domain": "code_haskell"}
+{"prompt": "Can you explain what's happening step by step in this snippet: main = print $ foldl (flip (:)) [] [1,2,3]", "domain": "code_haskell"}
+{"prompt": "can you show a basic example of using STM for a shared counter across threads?", "domain": "code_haskell"}
+{"prompt": "Can you explain existential types in Haskell and show a heterogeneous list example using `ExistentialQuantification`?", "domain": "code_haskell"}
+{"prompt": "I'm choosing between Servant and Scotty for a small internal microservice — what would you pick and why?", "domain": "code_haskell"}
+{"prompt": "How would I write a function in Haskell to check whether a string is empty, and is there an idiomatic way instead of comparing to \"\"?", "domain": "code_haskell"}
+{"prompt": "Can you convert this recursive Fibonacci implementation into a memoized version using an infinite list?\n\nfib :: Int -> Integer\nfib 0 = 0\nfib 1 = 1\nfib n = fib (n-1) + fib (n-2)", "domain": "code_haskell"}
+{"prompt": "How would I write a function that groups consecutive duplicate elements in a list, like `[1,1,2,3,3,3]` becomes `[[1,1],[2],[3,3,3]]`?", "domain": "code_haskell"}
+{"prompt": "Would you recommend learning lens/optics early on, or is it overkill for someone still getting comfortable with monads?", "domain": "code_haskell"}
+{"prompt": "How would I implement a simple JSON encoder for a custom data type using `aeson`, step by step?", "domain": "code_haskell"}
+{"prompt": "Can you refactor this to use a fold instead of explicit recursion? sumList [] = 0; sumList (x:xs) = x + sumList xs", "domain": "code_haskell"}
+{"prompt": "Refactor this deeply nested case expression into something more readable using guards or pattern matching helpers:\n\nclassify :: Int -> String\nclassify n = case n of\n  _ | n < 0 -> case even n of\n      True -> \"negative even\"\n      False -> \"negative odd\"\n    | n == 0 -> \"zero\"\n    | otherwise -> case even n of\n      True -> \"positive even\"\n      False -> \"positive odd\"", "domain": "code_haskell"}
+{"prompt": "What's wrong with this Maybe monad usage?\n\nsafeDiv :: Int -> Int -> Maybe Int\nsafeDiv x y = x / y", "domain": "code_haskell"}
+{"prompt": "How do lenses from the `lens` library work under the hood? Can you show a minimal implementation of `Lens'`, `view`, `set`, and `over` without depending on the actual package?", "domain": "code_haskell"}
+{"prompt": "what does the >>= operator actually do, can you walk me through it step by step?", "domain": "code_haskell"}
+{"prompt": "Explain step by step what's happening in this monad transformer stack and why the type doesn't compile:\ntype App = ReaderT Config (StateT AppState IO)\nrunApp :: App ()\nrunApp = do\n  cfg <- ask\n  liftIO (print cfg)", "domain": "code_haskell"}
+{"prompt": "Refactor this nested case expression to be more readable.", "domain": "code_haskell"}
+{"prompt": "Should this function return Either String a or throw a custom exception via throwIO? I want consistent error handling across the app.", "domain": "code_haskell"}
+{"prompt": "Can you walk me through how Haskell's type classes resolve at compile time versus how Java interfaces resolve at runtime? Use a small example with a custom `Shape` typeclass with `area` and `perimeter` methods.", "domain": "code_haskell"}
+{"prompt": "Compare cabal versus stack for managing dependencies in a medium-sized Haskell project, especially around reproducibility.", "domain": "code_haskell"}
+{"prompt": "I have this GADT-based expression evaluator but GHC complains about missing type annotations — can you fix it?\n\ndata Expr a where\n  IntLit :: Int -> Expr Int\n  BoolLit :: Bool -> Expr Bool\n  Add :: Expr Int -> Expr Int -> Expr Int\n  If :: Expr Bool -> Expr a -> Expr a -> Expr a\n\neval e = case e of\n  IntLit n -> n\n  Add a b -> eval a + eval b", "domain": "code_haskell"}
+{"prompt": "I want to add QuickCheck properties for this `reverse` implementation to check idempotence and length preservation. Can you write the properties?", "domain": "code_haskell"}
+{"prompt": "Walk me through, step by step, how to write a Haskell function that reverses a list without using the built-in `reverse`.", "domain": "code_haskell"}
+{"prompt": "My code compiles but throws a runtime pattern match error on an empty list, can you help me make it total? headSafe xs = head xs", "domain": "code_haskell"}
+{"prompt": "I'm torn between mtl-style monad transformers and effect systems like polysemy or fused-effects — what's your recommendation for a mid-size app?", "domain": "code_haskell"}
+{"prompt": "what's the simplest way to read a text file line by line and count the lines?", "domain": "code_haskell"}
+{"prompt": "Which testing library would you recommend for property-based testing of this parser — QuickCheck or Hedgehog?", "domain": "code_haskell"}
+{"prompt": "What's wrong with this attempt at memoizing Fibonacci with an array?\nimport Data.Array\nfib :: Int -> Integer\nfib n = arr ! n\n  where arr = listArray (0, n) (map f [0..n])\n        f 0 = 0\n        f 1 = 1\n        f i = arr ! (i-1) + arr ! (i-2)", "domain": "code_haskell"}
+{"prompt": "How do I implement a simple LRU cache in Haskell using `Data.Map` and a counter for recency?", "domain": "code_haskell"}
+{"prompt": "Write a function to count word frequency in a string.", "domain": "code_haskell"}
+{"prompt": "I need a Zipper data structure for a binary tree in Haskell so I can efficiently navigate and update nodes without full tree reconstruction. Can you implement one?", "domain": "code_haskell"}
+{"prompt": "Can you show me how to write property-based tests with QuickCheck for a function that reverses a list?", "domain": "code_haskell"}
+{"prompt": "What's your take on naming conventions for typeclass methods — should they be verbs, nouns, or does it not matter much?", "domain": "code_haskell"}
+{"prompt": "Why does this if-expression give a syntax error? I'm just trying to check if a number is positive.\n\ncheck x =\nif x > 0\nthen \"positive\"\nelse \"non-positive\"", "domain": "code_haskell"}
+{"prompt": "What's wrong with this code? It says 'variable not in scope' but I clearly defined it.\n\nmain = print (double 5)\n\ndouble x = 2 * x + y\n  where y = 10", "domain": "code_haskell"}
+{"prompt": "I have a recursive JSON-like data type `data Value = VNull | VBool Bool | VNumber Double | VString String | VArray [Value] | VObject [(String, Value)]` and I want to write a function that flattens nested objects into a single-level object with dot-separated keys, like turning `{\"a\": {\"b\": 1}}` into `{\"a.b\": 1}`. Can you implement this recursively and handle arrays by including their index in the key path?", "domain": "code_haskell"}
+{"prompt": "Step by step, explain how laziness causes this fold to blow the stack and how I could fix it.\n\nsumList :: [Int] -> Int\nsumList = foldl (+) 0", "domain": "code_haskell"}
+{"prompt": "I've got this code but it won't compile, can you spot the issue?\n\nfoo :: Int -> Int\nfoo x = x + \"1\"", "domain": "code_haskell"}
+{"prompt": "Write a simple command-line calculator in Haskell.", "domain": "code_haskell"}
+{"prompt": "Can you explain how the `ST` monad lets me use mutable state safely, and rewrite this pure fold as an `STRef`-based loop for comparison?", "domain": "code_haskell"}
+{"prompt": "Can you explain what pattern matching is in Haskell using a simple example with a custom data type for traffic lights?", "domain": "code_haskell"}
+{"prompt": "How would you idiomatically implement a `Trie` data structure in Haskell for storing and looking up strings efficiently?", "domain": "code_haskell"}
+{"prompt": "Can you help me design a simple typeclass hierarchy for a game engine, with typeclasses for `Drawable`, `Updatable`, and `Collidable`, and show how a `Player` and `Enemy` data type might implement all three?", "domain": "code_haskell"}
+{"prompt": "I'm confused about why this code doesn't compile: ```haskell\ndata Shape = Circle Double | Rectangle Double Double\n\narea :: Shape -> Double\narea (Circle r) = pi * r * r\n```. GHC gives a warning about non-exhaustive patterns rather than an error, but I want it to be a compile error instead. How do I configure that, and can you also fix the function to handle the `Rectangle` case?", "domain": "code_haskell"}
+{"prompt": "Can you help me trace through why this mutual recursion between typeclasses causes GHC to loop during instance resolution? I'm using FunctionalDependencies.", "domain": "code_haskell"}
+{"prompt": "Write a Haskell implementation of the Boyer-Moore majority vote algorithm to find the majority element in a list in linear time.", "domain": "code_haskell"}
+{"prompt": "What's your take on using String literals with OverloadedStrings versus explicit Text.pack calls everywhere?", "domain": "code_haskell"}
+{"prompt": "Would you recommend Free monads for building an interpreter, or do you think that's mostly academic and not worth it in production code?", "domain": "code_haskell"}
+{"prompt": "What's the trade-off between using bytestring's strict versus lazy variant when streaming a large file for line-by-line processing?", "domain": "code_haskell"}
+{"prompt": "Please write a function that reverses a string in Haskell without using the built-in `reverse` function, and explain your approach.", "domain": "code_haskell"}
+{"prompt": "I have a `Functor`/`Applicative`/`Monad` instance for a custom `Parser` type but I suspect it violates the Applicative laws. Can you check this code?\n\nnewtype Parser a = Parser { runParser :: String -> Maybe (a, String) }\ninstance Functor Parser where\n  fmap f (Parser p) = Parser $ \\s -> case p s of\n    Nothing -> Nothing\n    Just (a, rest) -> Just (f a, rest)", "domain": "code_haskell"}
+{"prompt": "I want a function that takes a list of integers and returns only the even ones. Can you write it and explain list comprehensions versus using `filter`?", "domain": "code_haskell"}
+{"prompt": "Should I represent this recursive data type with an explicit Fix point encoding or just a plain recursive ADT? What's the trade-off in extensibility versus simplicity?\ndata Expr = Lit Int | Add Expr Expr | Mul Expr Expr", "domain": "code_haskell"}
+{"prompt": "I'm confused about why this doesn't typecheck: let x = if True then 1 else \"hello\" — can you explain the error?", "domain": "code_haskell"}
+{"prompt": "how would you write a haskell function to merge two sorted lists?", "domain": "code_haskell"}
+{"prompt": "Explain `>>=` for Maybe in one sentence.", "domain": "code_haskell"}
+{"prompt": "Explain strictness annotations like `!` in data types.", "domain": "code_haskell"}
+{"prompt": "Walk me through writing a simple state machine using the `State` monad for tracking a traffic light's transitions.", "domain": "code_haskell"}
+{"prompt": "I want to convert this imperative-style loop into idiomatic Haskell, can you help? I need to sum squares of even numbers from 1 to n.", "domain": "code_haskell"}
+{"prompt": "I want to merge two sorted lists into one sorted list. Can you write this function and explain the base cases?", "domain": "code_haskell"}
+{"prompt": "Optimise this naive prime sieve.", "domain": "code_haskell"}
+{"prompt": "Write a Haskell function that checks if a binary tree is balanced, defining the tree type yourself.", "domain": "code_haskell"}
+{"prompt": "I've got a mutual recursion problem between two functions, can you show a clean way to structure it in Haskell?", "domain": "code_haskell"}
+{"prompt": "I'm getting a mysterious space leak in this fold over a large list — can you spot why and suggest a strict alternative?\n\nsumList :: [Int] -> Int\nsumList = foldl (+) 0", "domain": "code_haskell"}
+{"prompt": "I have this function that's supposed to reverse a string but it throws a type error, can you fix it? myReverse :: String -> String; myReverse s = foldl (:) [] s", "domain": "code_haskell"}
+{"prompt": "Here's my attempt at a red-black tree insertion function, but the balancing invariant seems to break after a few inserts. Can you find the bug?\n\ndata Color = R | B\ndata Tree a = E | T Color (Tree a) a (Tree a)\n\ninsert :: Ord a => a -> Tree a -> Tree a\ninsert x t = makeBlack (ins t)\n  where\n    ins E = T R E x E\n    ins s@(T color l y r)\n      | x < y = balance color (ins l) y r\n      | x > y = balance color l y (ins r)\n      | otherwise = s\n    makeBlack (T _ l y r) = T B l y r\n    makeBlack E = E", "domain": "code_haskell"}
+{"prompt": "Here's a function using `unsafePerformIO` that I inherited from a coworker. Can you explain why this is dangerous and rewrite it to avoid unsafePerformIO entirely?\n\nimport System.IO.Unsafe\n\ngetConfig :: String\ngetConfig = unsafePerformIO (readFile \"config.txt\")", "domain": "code_haskell"}
+{"prompt": "Refactor this messy IO-heavy function into something that separates pure logic from effects, ideally using a typeclass or free monad style if it makes sense, and explain your reasoning for the split.\n\nprocessFile :: FilePath -> IO ()\nprocessFile path = do\n  contents <- readFile path\n  let ls = lines contents\n  let cleaned = filter (not . null) (map (filter (/= ' ')) ls)\n  let result = map (map toUpper) cleaned\n  mapM_ putStrLn result", "domain": "code_haskell"}
+{"prompt": "Should this event-processing pipeline be built with lazy lists and `interact`, or with a streaming library like `conduit` or `pipes`? Walk me through the trade-offs for handling large inputs.", "domain": "code_haskell"}
+{"prompt": "I'm trying to write a free monad interpreter for a small DSL with Get, Put, and Log commands. Can you sketch the Functor instance and the interpreter that runs it in IO?", "domain": "code_haskell"}
+{"prompt": "I keep getting a space leak warning when using `foldl` to sum a huge list. Can you explain why and rewrite it with `Data.List.foldl'` or strict accumulation?", "domain": "code_haskell"}
+{"prompt": "Optimize this naive Fibonacci implementation, it's painfully slow for n > 30\n\nfib :: Int -> Integer\nfib 0 = 0\nfib 1 = 1\nfib n = fib (n-1) + fib (n-2)", "domain": "code_haskell"}
+{"prompt": "Explain what's going on with this record update syntax and why it fails to compile: person { age = age person + 1, name }", "domain": "code_haskell"}
+{"prompt": "Walk me through debugging this function that's supposed to reverse a list but throws a stack overflow on large inputs:\nreverse' :: [a] -> [a]\nreverse' [] = []\nreverse' (x:xs) = reverse' xs ++ [x]", "domain": "code_haskell"}
+{"prompt": "write a simple haskell CLI tool that takes a filename argument and counts the number of lines in it", "domain": "code_haskell"}
+{"prompt": "I wrote this function to compute the greatest common divisor but I'm not sure it handles negative numbers or zero correctly: ```haskell\ngcd' :: Int -> Int -> Int\ngcd' a 0 = a\ngcd' a b = gcd' b (a `mod` b)\n```. Can you check this for edge cases, fix any issues, and explain how Haskell's `mod` behaves differently from `rem` in a way that matters here?", "domain": "code_haskell"}
+{"prompt": "Would you recommend switching this project from Stack to Cabal, or is that not worth the migration effort?", "domain": "code_haskell"}
+{"prompt": "Can you write a Haskell function that merges two sorted lists into one sorted list?", "domain": "code_haskell"}
+{"prompt": "Write property-based tests using QuickCheck for a `quicksort` implementation to verify it produces a sorted, permutation-preserving output.", "domain": "code_haskell"}
+{"prompt": "Can you explain lazy evaluation pitfalls with Data.Map.Strict.insertWith and show a case where it still causes a thunk buildup?", "domain": "code_haskell"}
+{"prompt": "Can you write a simple Haskell function that checks whether a given integer is prime, and explain how it works line by line?", "domain": "code_haskell"}
+{"prompt": "Add QuickCheck tests for a function that reverses a list.", "domain": "code_haskell"}
+{"prompt": "Can you walk me through implementing a free monad for a simple DSL that has `Say String` and `Ask` commands?", "domain": "code_haskell"}
+{"prompt": "Can you write a small Haskell program using the `aeson` library that parses a JSON file containing a list of users (with name, email, and age fields) into a list of records, and handles the case where the JSON is malformed?", "domain": "code_haskell"}
+{"prompt": "Why does GHC complain about ambiguous type here?", "domain": "code_haskell"}
+{"prompt": "Can you explain the `Traversable` laws and check whether a hand-rolled instance for a rose tree satisfies them?", "domain": "code_haskell"}
+{"prompt": "Write a Haskell function using Data.Sequence instead of lists to implement an efficient double-ended queue supporting O(1) amortized push/pop from both ends, and explain why lists would be worse here.", "domain": "code_haskell"}
+{"prompt": "Step by step, how would I write a parser combinator for a simple arithmetic expression grammar using `Parsec`?", "domain": "code_haskell"}
+{"prompt": "How do I go about setting up a Stack or Cabal project from scratch for a new Haskell library, step by step?", "domain": "code_haskell"}
+{"prompt": "I keep getting a type ambiguity error on this function and I don't understand why GHC can't infer the type. Can you explain the error and fix the code, and also explain what ScopedTypeVariables would do here?\n\nsumAll xs = sum (map read xs)", "domain": "code_haskell"}
+{"prompt": "Walk me through optimizing this string concatenation loop that's currently using `++` inside a fold.\n\nbuildString :: [String] -> String\nbuildString = foldl (++) \"\"", "domain": "code_haskell"}
+{"prompt": "Hey can you help me figure out why this function loops forever? foldr (\\x acc -> x : acc) [] [1..] — I thought foldr was lazy enough for infinite lists here.", "domain": "code_haskell"}
+{"prompt": "I want to parse a simple binary file format using `Data.Binary`. Can you show me how to define a `Get` parser for a header with a magic number and a length field?", "domain": "code_haskell"}
+{"prompt": "Can you review this code for idiomatic style? I feel like I'm writing too much boilerplate and not using Haskell's strengths.\n\nprocess :: [Int] -> [Int]\nprocess xs = go xs []\n  where\n    go [] acc = reverse acc\n    go (x:xs) acc\n      | x `mod` 2 == 0 = go xs (x*x : acc)\n      | otherwise = go xs acc", "domain": "code_haskell"}
+{"prompt": "My code won't compile because of ambiguous type variables, here's the function, any idea what's missing? parseNumber s = read s", "domain": "code_haskell"}
+{"prompt": "What's the difference in practice between `Text` and `ByteString` for parsing a large UTF-8 log file, and which would you recommend?", "domain": "code_haskell"}
+{"prompt": "Can you explain what this Monad instance is doing step by step, and then tell me whether it actually satisfies the monad laws?\n\ndata Box a = Box a\ninstance Functor Box where fmap f (Box a) = Box (f a)\ninstance Applicative Box where pure = Box; (Box f) <*> (Box a) = Box (f a)\ninstance Monad Box where return = pure; (Box a) >>= f = f a", "domain": "code_haskell"}
+{"prompt": "Here's a snippet using Data.Map that's throwing a pattern match failure on lookup, can you help debug it? let m = Map.fromList [(1,\"a\")] in case Map.lookup 2 m of Just x -> x", "domain": "code_haskell"}
+{"prompt": "When would you choose Text over String for a parser, and what are the trade-offs in terms of memory and library support?", "domain": "code_haskell"}
+{"prompt": "Compare using `STRef` inside the `ST` monad versus a purely functional accumulator for implementing an in-place-style array algorithm.", "domain": "code_haskell"}
+{"prompt": "What does this type signature mean: (a -> b) -> [a] -> [b]?", "domain": "code_haskell"}
+{"prompt": "Walk me through debugging why this pattern match is non-exhaustive.\n\nfirstElement :: [a] -> a\nfirstElement (x:_) = x", "domain": "code_haskell"}
+{"prompt": "I'm not sure when to use `Int` versus a custom data type for representing simple states like 'Running' or 'Stopped'. Can you show me how to define and use a small enum-like data type?", "domain": "code_haskell"}
+{"prompt": "I need a Haskell function to compute the nth Fibonacci number, but my recursive version is super slow for n=40, can you optimize it?", "domain": "code_haskell"}
+{"prompt": "I'm torn between implementing this with recursion and an explicit accumulator versus using `Data.List.foldl'`. Which is more idiomatic and why?", "domain": "code_haskell"}
+{"prompt": "Show me step by step how to parse JSON manually in Haskell without using a library, just to understand the process.", "domain": "code_haskell"}
+{"prompt": "How would I implement a simple LRU cache from scratch in Haskell, explaining each design decision along the way?", "domain": "code_haskell"}
+{"prompt": "What's the point of `RankNTypes` and can you show a small example where a rank-2 type is actually necessary?", "domain": "code_haskell"}
+{"prompt": "Explain what this type class hierarchy snippet is doing and why the superclass constraint is necessary: ```haskell\nclass Eq a => Container f a where\n  empty :: f a\n  insert :: a -> f a -> f a\n  member :: a -> f a -> Bool\n```", "domain": "code_haskell"}
+{"prompt": "Can you explain the difference between `map` and `fmap` for someone just starting with Haskell?", "domain": "code_haskell"}
+{"prompt": "Explain point-free style with an example.", "domain": "code_haskell"}
+{"prompt": "Do you prefer explicit pattern matching or view patterns for extracting fields from this custom data type in guards?", "domain": "code_haskell"}
+{"prompt": "Explain what `deriving (Functor, Foldable, Traversable)` gives you for free.", "domain": "code_haskell"}
+{"prompt": "Write a stack data structure using a list.", "domain": "code_haskell"}
+{"prompt": "Can you explain how `STRef` and the `ST` monad let you do local mutation safely, with a small example computing a running sum?", "domain": "code_haskell"}
+{"prompt": "Write quicksort in Haskell.", "domain": "code_haskell"}
+{"prompt": "can you help me convert this recursive function into a tail-recursive one using an accumulator?\n\nfactorial :: Integer -> Integer\nfactorial 0 = 1\nfactorial n = n * factorial (n - 1)", "domain": "code_haskell"}
+{"prompt": "I need to convert a recursive Haskell function into a tail-recursive one using an accumulator, can you show me with this example?\nfactorial :: Integer -> Integer\nfactorial 0 = 1\nfactorial n = n * factorial (n - 1)", "domain": "code_haskell"}
+{"prompt": "What's the difference between `foldl` and `foldr`?", "domain": "code_haskell"}
+{"prompt": "Do you recommend using `newtype` wrappers everywhere for domain types like UserId and Email, or is that excessive for a small app?", "domain": "code_haskell"}
+{"prompt": "Can you explain how `MonadTrans` and monad transformer stacks like `StateT s (ExceptT e IO)` actually work when you run them, step by step?", "domain": "code_haskell"}
+{"prompt": "I'm confused about currying. Can you explain what it means that all Haskell functions take one argument, using a two-argument function as an example?", "domain": "code_haskell"}
+{"prompt": "Explain how the `Semigroup` and `Monoid` typeclasses relate, and write a custom Monoid instance for a type representing min-max range tracking.", "domain": "code_haskell"}
+{"prompt": "I don't understand why Haskell requires all branches of an `if` expression to return the same type. Can you explain this with an example?", "domain": "code_haskell"}
+{"prompt": "Can you explain existential quantification in Haskell and show how to build a heterogeneous list of `Show`-able values?", "domain": "code_haskell"}
+{"prompt": "How can I make this recursive function stack-safe?", "domain": "code_haskell"}
+{"prompt": "What's the difference between `foldl'` and `foldr` in terms of strictness, and when should I prefer one over the other for large lists?", "domain": "code_haskell"}
+{"prompt": "Can you explain why deriving `Ord` automatically for this data type gives unexpected ordering, and how to write a custom instance?\ndata Priority = Low | Medium | High deriving (Show, Eq, Ord)", "domain": "code_haskell"}
+{"prompt": "Is it better practice to export only smart constructors for this type, or expose the constructors directly?\n\ndata NonEmptyList a = NonEmptyList a [a]", "domain": "code_haskell"}
+{"prompt": "Explain how `Data.Sequence` differs from `[]` performance-wise, and when I'd actually want to use it instead of a list.", "domain": "code_haskell"}
+{"prompt": "What's better for representing optional configuration fields: `Maybe` wrapped fields in a record, or a separate builder pattern with smart constructors?", "domain": "code_haskell"}
+{"prompt": "I want idiomatic error handling using ExceptT over IO for a function that parses a config file, validates fields, and fails with descriptive errors. Can you write this out?", "domain": "code_haskell"}
+{"prompt": "Write a Haskell type for a binary tree and an insert function.", "domain": "code_haskell"}
+{"prompt": "Can you explain what this type signature means and why the `forall` is needed here?\n{-# LANGUAGE RankNTypes #-}\napplyTwice :: (forall a. a -> a) -> (Int, String) -> (Int, String)\napplyTwice f (x, y) = (f x, f y)", "domain": "code_haskell"}
+{"prompt": "this is way too slow on large lists, can you help me speed it up?\n\nnubSlow :: Eq a => [a] -> [a]\nnubSlow [] = []\nnubSlow (x:xs) = x : nubSlow (filter (/= x) xs)", "domain": "code_haskell"}
+{"prompt": "Write a Haskell function that flattens an arbitrarily nested list structure like Cons Int [NestedList] into a single flat list, using a suitable recursive data type.", "domain": "code_haskell"}
+{"prompt": "How would I go about writing a parser for simple arithmetic expressions using Parsec, step by step, starting from tokens to a full AST?", "domain": "code_haskell"}
+{"prompt": "Compare writing this loop with explicit recursion versus using the `for_` combinator from Data.Foldable. Which is more idiomatic here?\nprintAll :: [Int] -> IO ()\nprintAll [] = return ()\nprintAll (x:xs) = do print x; printAll xs", "domain": "code_haskell"}
+{"prompt": "write a function that checks whether a given binary tree is balanced", "domain": "code_haskell"}
+{"prompt": "Should this configuration loader use `ReaderT` environment pattern or pass explicit arguments through every function? Discuss the trade-offs for a medium-sized app.", "domain": "code_haskell"}
+{"prompt": "I need to parse a simple arithmetic expression string into an AST, can you sketch out a Haskell implementation?", "domain": "code_haskell"}
+{"prompt": "Fix this off-by-one error in a list-slicing function.", "domain": "code_haskell"}
+{"prompt": "How would you model a simple bank account system with concurrent transactions in Haskell, ensuring no race conditions, using MVar or STM?", "domain": "code_haskell"}
+{"prompt": "can you explain what this line of haskell does in plain english: foldr (\\x acc -> if even x then x:acc else acc) [] [1..10]", "domain": "code_haskell"}
+{"prompt": "What are the trade-offs between using `Alternative`'s `<|>` for backtracking parsers versus explicit error recovery logic?", "domain": "code_haskell"}
+{"prompt": "Do you recommend pinning exact dependency versions in the cabal file for a library that others will depend on, or is that too restrictive?", "domain": "code_haskell"}
+{"prompt": "Would you recommend switching from IORef to STM for a shared counter accessed by multiple threads, or is IORef fine here?", "domain": "code_haskell"}
+{"prompt": "Write a merge sort using Data.List.", "domain": "code_haskell"}
+{"prompt": "How do I properly use `bracket` from `Control.Exception` to ensure a file handle is closed even if an exception occurs mid-processing?", "domain": "code_haskell"}
+{"prompt": "Can you show me how to define a custom `Traversable` instance for a simple binary tree type, and explain what invariants I need to preserve?", "domain": "code_haskell"}
+{"prompt": "Write a function to check if a string is a palindrome.", "domain": "code_haskell"}
+{"prompt": "Explain how GHC's garbage collector handles thunks, and why this function might cause a space leak\n\nlength' :: [a] -> Int\nlength' = go 0\n  where go acc [] = acc\n        go acc (_:xs) = go (acc+1) xs", "domain": "code_haskell"}
+{"prompt": "I need a Haskell implementation of quicksort, nothing fancy, just something that works", "domain": "code_haskell"}
+{"prompt": "Can you explain, step by step, how the following mutual recursion works and whether GHC will optimize it into a loop?\n\nisEven :: Int -> Bool\nisEven 0 = True\nisEven n = isOdd (n - 1)\n\nisOdd :: Int -> Bool\nisOdd 0 = False\nisOdd n = isEven (n - 1)", "domain": "code_haskell"}
+{"prompt": "How do I debug this code that's supposed to compute the length of a list but causes infinite recursion?\nmyLength :: [a] -> Int\nmyLength xs = 1 + myLength xs", "domain": "code_haskell"}
+{"prompt": "Compare tail-recursive versus non-tail-recursive implementations of factorial in Haskell, and explain whether tail recursion actually matters given laziness.", "domain": "code_haskell"}
+{"prompt": "Can you help me understand why using ++ repeatedly in a loop is slow, and show me a faster alternative?", "domain": "code_haskell"}
+{"prompt": "I have a Haskell script that's supposed to parse command-line arguments with `optparse-applicative` but the help text isn't showing up correctly. Can you review my parser definition and suggest a fix?", "domain": "code_haskell"}
+{"prompt": "What's your recommendation for structuring modules in a medium Haskell project — feature-based or layer-based?", "domain": "code_haskell"}
+{"prompt": "What's the practical difference between GADTs and plain ADTs with phantom types for enforcing invariants at compile time? Show a small example of each.", "domain": "code_haskell"}
+{"prompt": "Implement merge sort in Haskell.", "domain": "code_haskell"}
+{"prompt": "Explain the difference between `newtype` and `data` in Haskell, including runtime representation, and give an example where using `newtype` instead of `data` actually matters for performance.", "domain": "code_haskell"}
+{"prompt": "Write a Haskell parser for simple arithmetic expressions.", "domain": "code_haskell"}
+{"prompt": "Can you explain what GHCi is and how I can load a Haskell file and test a function interactively?", "domain": "code_haskell"}
+{"prompt": "what does this do exactly, I copied it from somewhere and I'm lost\n\n(.) :: (b -> c) -> (a -> b) -> a -> c\n(f . g) x = f (g x)", "domain": "code_haskell"}
+{"prompt": "I want to memoize this Fibonacci function, what's a clean way to do that in Haskell?\n\nfib :: Int -> Integer\nfib 0 = 0\nfib 1 = 1\nfib n = fib (n-1) + fib (n-2)", "domain": "code_haskell"}
+{"prompt": "Compare using `foldl'` versus `foldr` for summing a large list of Doubles in terms of strictness, memory usage, and performance.", "domain": "code_haskell"}
+{"prompt": "Can you explain GADTs with a small example of a typed expression evaluator that prevents ill-typed expressions at compile time?", "domain": "code_haskell"}
+{"prompt": "Show me idiomatic Haskell for FizzBuzz.", "domain": "code_haskell"}
+{"prompt": "I'm trying to write a function that flattens an arbitrarily nested list structure, but I'm running into type issues because Haskell lists must be homogeneous. Can you explain why this doesn't type-check and show me the idiomatic way to represent nested lists?\n\ndata Nested a = Elem a | List [Nested a]\n\nflatten :: Nested a -> [a]\nflatten (Elem x) = [x]\nflatten (List xs) = concatMap flatten xs", "domain": "code_haskell"}
+{"prompt": "I'm writing a small command-line tool with `optparse-applicative` that needs to accept a required input file path, an optional output path defaulting to stdout, and a verbosity flag that can be repeated. Can you show me the applicative parser definitions for these options and how they compose together?", "domain": "code_haskell"}
+{"prompt": "What is a `newtype` and how is it different from just using `type`? Can you show a small example where the difference actually matters?", "domain": "code_haskell"}
+{"prompt": "Compare implementing JSON serialization by hand versus relying on Aeson's generic deriving via GHC.Generics. What do you lose in control?", "domain": "code_haskell"}
+{"prompt": "How do I set up a basic property-based test with QuickCheck for this function, step by step?\n\nreverseList :: [a] -> [a]\nreverseList = foldl (flip (:)) []", "domain": "code_haskell"}
+{"prompt": "what's a clean way to implement run-length encoding for a string in Haskell?", "domain": "code_haskell"}
+{"prompt": "What's the difference between using `unsafePerformIO` and properly threading IO through the type signature, and why is the former almost always the wrong choice here?", "domain": "code_haskell"}
+{"prompt": "How do I write a State monad based stack machine evaluator for a small arithmetic expression language?", "domain": "code_haskell"}
+{"prompt": "I need help understanding why this custom Semigroup/Monoid instance doesn't behave the way I expect when I use `mconcat` on an empty list. Can you explain and fix it?\n\nnewtype MaxInt = MaxInt Int deriving Show\n\ninstance Semigroup MaxInt where\n  (MaxInt a) <> (MaxInt b) = MaxInt (max a b)", "domain": "code_haskell"}
+{"prompt": "I'm deciding between `aeson`'s generic derivation and hand-written `FromJSON`/`ToJSON` instances for this record. What are the pros and cons of each approach?\n\ndata User = User { userId :: Int, userName :: String, userEmail :: String }", "domain": "code_haskell"}
+{"prompt": "What's the best way, in your opinion, to model a finite state machine here — an ADT with pattern matching, or a typeclass-based approach?", "domain": "code_haskell"}
+{"prompt": "Should I be worried about space leaks from lazy foldl usage, or is this overstated advice?", "domain": "code_haskell"}
+{"prompt": "Write a Haskell function using `Data.Array` and dynamic programming to compute the longest common subsequence of two strings.", "domain": "code_haskell"}
+{"prompt": "Can you show me step by step how to add proper error handling to this function using `Either` instead of `error`?\n\ndivide :: Int -> Int -> Int\ndivide x 0 = error \"division by zero\"\ndivide x y = x `div` y", "domain": "code_haskell"}
+{"prompt": "Step by step, walk me through adding logging to this IO-based function without changing its core logic too much:\nfetchData :: String -> IO String\nfetchData url = do\n  response <- httpGet url\n  return response", "domain": "code_haskell"}
+{"prompt": "Given this function signature, would you recommend making it polymorphic over Foldable instead of restricting it to lists?\n\nsumAll :: [Int] -> Int\nsumAll = sum", "domain": "code_haskell"}
+{"prompt": "I want to model a simple bank account system using the free monad pattern instead of mtl-style typeclasses. Can you sketch the DSL, the interpreter, and a sample program?", "domain": "code_haskell"}
+{"prompt": "How do I derive Ord for a custom data type with multiple constructors?", "domain": "code_haskell"}
+{"prompt": "Can you explain what 'tying the knot' means in Haskell with the classic circular doubly-linked list example?", "domain": "code_haskell"}
+{"prompt": "Can you explain the difference between `Maybe` and `Either` for error handling in Haskell, and then refactor this function that currently returns `Maybe String` to instead return `Either ParseError String` with a custom error type that includes context about what went wrong? ```haskell\nparseAge :: String -> Maybe Int\nparseAge s = case reads s of\n  [(n, \"\")] | n >= 0 -> Just n\n  _ -> Nothing\n```", "domain": "code_haskell"}
+{"prompt": "What's wrong with this instance declaration: instance Show MyType where show x = x", "domain": "code_haskell"}
+{"prompt": "I'm getting an ambiguous type error with this function, can you explain why and suggest a fix?\nclassify :: (Show a, Read a) => String -> a\nclassify = read", "domain": "code_haskell"}
+{"prompt": "I'm trying to implement Dijkstra's algorithm using a priority queue from Data.Heap or PSQueue, can you show a clean implementation?", "domain": "code_haskell"}
+{"prompt": "What are the trade-offs between strict and lazy evaluation for this fibonacci implementation, and how would memoization change the picture?\nfib :: Int -> Integer\nfib n = fib (n-1) + fib (n-2)", "domain": "code_haskell"}
+{"prompt": "I'm deciding between mtl-style type classes and effect systems like polysemy or fused-effects for a medium-sized project. What are the practical trade-offs?", "domain": "code_haskell"}
+{"prompt": "my haskell code keeps giving me a 'no instance for Eq' error, here's the snippet, any idea what's wrong?\n\ndata Shape = Circle Float | Square Float\nmain = print (Circle 3.0 == Circle 3.0)", "domain": "code_haskell"}
+{"prompt": "Can you explain what a type class is in Haskell using the `Eq` class as a beginner-friendly example?", "domain": "code_haskell"}
+{"prompt": "How would I go about writing unit tests with Hspec for this function that parses CSV lines?", "domain": "code_haskell"}
+{"prompt": "Can you show me how to write a basic `factorial` function using recursion in Haskell?", "domain": "code_haskell"}
+{"prompt": "Can you show me how to write a custom Show instance for a binary tree that pretty-prints it with indentation reflecting depth?", "domain": "code_haskell"}
+{"prompt": "I'm brand new to Haskell. Can you explain what `map`, `filter`, and `foldr` do, and show a tiny example of each?", "domain": "code_haskell"}
+{"prompt": "Can you optimize this Haskell function that computes the sum of squares of even numbers in a list? It currently does three separate passes: ```haskell\nsumSquaresEven :: [Int] -> Int\nsumSquaresEven xs = sum (map (^2) (filter even xs))\n```. I want to know if GHC fuses these list operations automatically, and if not, how I'd rewrite it to guarantee a single pass, perhaps using `foldr` or explicit recursion.", "domain": "code_haskell"}
+{"prompt": "I have this beginner code that's supposed to sum a list but it won't compile: ```haskell\nsumList [] = 0\nsumList (x:xs) = x + sumList\n```. What's wrong with it?", "domain": "code_haskell"}
+{"prompt": "My function to reverse a list is looping forever, can you spot the bug?\nreverseList :: [a] -> [a]\nreverseList xs = reverseList (tail xs) ++ [head xs]", "domain": "code_haskell"}
+{"prompt": "Can you review this code for idiomatic style? I feel like I'm writing Haskell like it's Python.\n\nprocessItems :: [Int] -> [Int]\nprocessItems items = do\n  let result = []\n  let go [] acc = acc\n      go (x:xs) acc = if x > 0 then go xs (acc ++ [x*2]) else go xs acc\n  go items result", "domain": "code_haskell"}
+{"prompt": "What's the cleanest way in Haskell to model a state machine for a traffic light (Red, Yellow, Green) with valid transitions enforced at the type level so invalid transitions are compile errors rather than runtime errors? Please show an approach using GADTs or phantom types.", "domain": "code_haskell"}
+{"prompt": "I need to parse a simple INI-style configuration file format with sections in brackets and key-value pairs, ignoring blank lines and comments starting with a semicolon. Can you write this using either `Text.Megaparsec` or manual string parsing, whichever you think is more maintainable, and explain your choice?", "domain": "code_haskell"}
+{"prompt": "I have a typeclass hierarchy that isn't compiling. Can you explain the error and fix the code?\n\nclass Shape a where\n  area :: a -> Double\n  perimeter :: a -> Double\n\ndata Circle = Circle Double\n\ninstance Shape Circle where\n  area (Circle r) = pi * r * r\n\nGHC complains about a missing method — walk me through why and whether I should provide a default implementation for `perimeter`.", "domain": "code_haskell"}
+{"prompt": "Why does `head []` crash and how do I avoid it?", "domain": "code_haskell"}
+{"prompt": "I keep seeing the error 'No instance for (Show a0)'. What does that actually mean and how do I fix it in beginner code?", "domain": "code_haskell"}
+{"prompt": "What's your opinion on using `deriving (Show)` for domain types versus writing custom pretty-printers?", "domain": "code_haskell"}
+{"prompt": "Write a Haskell record type for a Person with name and age.", "domain": "code_haskell"}
+{"prompt": "Here's a function meant to check if a binary tree is balanced, but I think it's doing redundant work by computing height multiple times: ```haskell\nisBalanced :: Tree a -> Bool\nisBalanced Leaf = True\nisBalanced (Node l _ r) =\n  abs (height l - height r) <= 1 && isBalanced l && isBalanced r\n```. Can you rewrite this so it computes height and balance in a single traversal, returning both pieces of information together?", "domain": "code_haskell"}
+{"prompt": "Explain lazy pattern matching with `~` in function arguments, and give a real scenario where using an irrefutable pattern actually fixes a bug related to strictness.", "domain": "code_haskell"}
+{"prompt": "Step by step, how do I write a function that safely parses user input into a custom enum type, handling invalid input gracefully?", "domain": "code_haskell"}
+{"prompt": "Can you refactor this deeply nested case expression into something using pattern guards or a Maybe monad chain?\n\nprocess x = case x of\n  Just y -> case y of\n    n | n > 0 -> case n `mod` 2 of\n        0 -> Just (n * 2)\n        _ -> Nothing\n    _ -> Nothing\n  Nothing -> Nothing", "domain": "code_haskell"}
+{"prompt": "I'm confused about why this code doesn't compile — it looks like a simple record update but GHC throws a type error:\n\ndata Config = Config { port :: Int, host :: String }\n\nupdatePort :: Config -> Int -> Config\nupdatePort cfg p = cfg { port = p, host = p }\n\nCan you explain the mistake and fix it?", "domain": "code_haskell"}
+{"prompt": "I want to memoize a recursive Fibonacci function using a lazy infinite list instead of a `Map`. Can you show the idiomatic trick?", "domain": "code_haskell"}
+{"prompt": "Can you explain what `Data.Map` is used for, and show me how to insert, lookup, and delete keys with a simple example?", "domain": "code_haskell"}

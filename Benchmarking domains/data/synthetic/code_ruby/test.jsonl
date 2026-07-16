@@ -1,0 +1,100 @@
+{"prompt": "Fix this off-by-one bug: arr[0..arr.length]", "domain": "code_ruby"}
+{"prompt": "Implement, in Ruby, code that implements a simple exponential moving average. Add a couple of example calls.", "domain": "code_ruby"}
+{"prompt": "Do you think `frozen_string_literal: true` should be the default in every new Ruby file? Give me your reasoning.", "domain": "code_ruby"}
+{"prompt": "What's the purpose of `Struct.new` versus `Data.define`, and when should I prefer one over the other in Ruby 3.2+?", "domain": "code_ruby"}
+{"prompt": "I'm confused about Ruby blocks, procs, and lambdas. Can you explain the difference in simple terms with small examples?", "domain": "code_ruby"}
+{"prompt": "Would you recommend `Struct.new` or a plain class with `attr_accessor` for a simple value object that holds a name and age? Explain your reasoning.", "domain": "code_ruby"}
+{"prompt": "Write clean, idiomatic Ruby that implements a debounce wrapper for a function.", "domain": "code_ruby"}
+{"prompt": "I've got this loop that's throwing a NoMethodError and I can't figure out why:\n\nusers.each do |user|\n  puts user.name.upcase\nend\n\nusers is nil sometimes, how do I fix this safely?", "domain": "code_ruby"}
+{"prompt": "Explain what `method_missing` does and write a small proxy class that logs every call before forwarding it.", "domain": "code_ruby"}
+{"prompt": "Can you show how to use `Comparable#clamp` and explain a real-world use case for it?", "domain": "code_ruby"}
+{"prompt": "Here's a Sinatra route that's vulnerable to mass assignment: post '/users' do User.create(params[:user]) end — show me how to whitelist params properly", "domain": "code_ruby"}
+{"prompt": "I'm debugging a Rails background job that silently swallows exceptions. Can you explain why this rescue block is problematic and how to fix it?\n\ndef perform(id)\n  record = Record.find(id)\n  record.process!\nrescue => e\n  Rails.logger.error(e.message)\nend", "domain": "code_ruby"}
+{"prompt": "can you turn this into a one-liner using inject: total = 0 arr.each { |x| total += x } total", "domain": "code_ruby"}
+{"prompt": "Walk me through adding RSpec tests for this Ruby method that validates email addresses using a regex.", "domain": "code_ruby"}
+{"prompt": "I have a Rails service object that fetches user orders, applies discounts, and then saves them, but it's throwing a NoMethodError intermittently in production. Here's the code:\n\nclass OrderProcessor\n  def initialize(user)\n    @user = user\n  end\n\n  def process\n    orders = @user.orders.pending\n    orders.each do |order|\n      order.total = apply_discount(order)\n      order.save\n    end\n  end\n\n  def apply_discount(order)\n    order.total * @user.discount.rate\n  end\nend\n\nCan you walk through why this might fail, add proper nil-checking, and rewrite it in a more idiomatic and defensive style, including a brief explanation of each change?", "domain": "code_ruby"}
+{"prompt": "Write clean, idiomatic Ruby that implements a min-heap with push and pop.", "domain": "code_ruby"}
+{"prompt": "Here's a snippet using `define_method` inside a class body in a loop. Can you explain why all the generated methods return the same value?\n\nclass Foo\n  [:a, :b, :c].each do |name|\n    define_method(name) { name }\n  end\nend", "domain": "code_ruby"}
+{"prompt": "Explain what respond_to? is used for with an example", "domain": "code_ruby"}
+{"prompt": "Convert this each loop into a map/reduce.\n\ntotal = 0\narr.each { |n| total += n**2 }", "domain": "code_ruby"}
+{"prompt": "Write a Ruby function that checks if two strings are anagrams. Include a short comment explaining the approach.", "domain": "code_ruby"}
+{"prompt": "Write a job queue simulator in Ruby using a priority queue implemented with a binary heap", "domain": "code_ruby"}
+{"prompt": "I need a Ruby class that implements a thread-safe LRU cache with a configurable max size and O(1) get/put operations.", "domain": "code_ruby"}
+{"prompt": "Explain the difference between `Array#map` and `Array#each` with respect to return values and typical use cases, including a common beginner mistake.", "domain": "code_ruby"}
+{"prompt": "In Ruby, write a function that checks if a number is a perfect square without using sqrt and explain its time complexity.", "domain": "code_ruby"}
+{"prompt": "Implement, in Ruby, code that implements a simple LRU cache. Add a couple of example calls.", "domain": "code_ruby"}
+{"prompt": "How do I properly implement the <=> operator alongside Comparable for a class with multiple sort criteria like a Person sorted by last name then first name", "domain": "code_ruby"}
+{"prompt": "What's the difference in performance and readability between using `Comparable` module vs manually defining `<`, `>`, `==` on a custom class?", "domain": "code_ruby"}
+{"prompt": "Debug this method that's supposed to flatten a deeply nested array but raises a SystemStackError on large inputs:\n\ndef deep_flatten(arr)\n  arr.flat_map { |x| x.is_a?(Array) ? deep_flatten(x) : x }\nend", "domain": "code_ruby"}
+{"prompt": "Write a method that finds the longest word in a sentence, handling punctuation properly.", "domain": "code_ruby"}
+{"prompt": "Refactor this method to use `reduce` instead of a manual loop with an accumulator variable:\n\ndef sum_of_squares(arr)\n  total = 0\n  arr.each { |x| total += x**2 }\n  total\nend", "domain": "code_ruby"}
+{"prompt": "Design a Ruby DSL for defining validation rules on a hash, similar to how ActiveModel::Validations works internally", "domain": "code_ruby"}
+{"prompt": "I'm seeing unexpected behavior with `Array#sort_by` when sorting mixed nil and string values. How should I handle that safely?", "domain": "code_ruby"}
+{"prompt": "Implement, in Ruby, code that implements insertion sort. Add a couple of example calls.", "domain": "code_ruby"}
+{"prompt": "Implement, in Ruby, code that detects a cycle in a directed graph. Add a couple of example calls.", "domain": "code_ruby"}
+{"prompt": "Debug this Enumerable chain, it raises NoMethodError intermittently depending on input.\n\ndata.group_by(&:category).transform_values { |v| v.sum(&:amount) }.max_by(&:last).first", "domain": "code_ruby"}
+{"prompt": "Implement, in Ruby, code that finds the longest common prefix of a list of strings. Add a couple of example calls.", "domain": "code_ruby"}
+{"prompt": "Can you explain lazy enumerators in Ruby and show how `Enumerator::Lazy` avoids computing an infinite sequence eagerly?", "domain": "code_ruby"}
+{"prompt": "Write a method that determines if two strings are anagrams, ignoring case and whitespace, and add specs for it.", "domain": "code_ruby"}
+{"prompt": "can you write a method that groups an array of hashes by a given key and counts them?", "domain": "code_ruby"}
+{"prompt": "Can you help me write a Ruby method that checks if a string is a palindrome, ignoring spaces and capitalization?", "domain": "code_ruby"}
+{"prompt": "Write a quicksort implementation in Ruby", "domain": "code_ruby"}
+{"prompt": "What's the difference between `define_method` and defining a method with `def` inside a metaprogramming context?", "domain": "code_ruby"}
+{"prompt": "I'm getting a confusing `FrozenError` when trying to modify an array that I thought I duplicated. Can you explain why `dup` isn't enough here and how `clone` and `Marshal.load(Marshal.dump(...))` differ in terms of deep versus shallow copying, using this snippet as the starting point?\n\noriginal = [[1, 2], [3, 4]].freeze\ncopy = original.dup\ncopy[0] << 5", "domain": "code_ruby"}
+{"prompt": "I keep getting a `NoMethodError` when calling a method on what I thought was an array. How do I debug this?", "domain": "code_ruby"}
+{"prompt": "I need to implement a rate limiter in Ruby using a sliding window algorithm, backed by Redis, for a Sinatra API. Can you write the class with methods `allowed?(user_id)` and `reset!(user_id)`, explain the Redis data structure you chose and why, and mention any race condition concerns with concurrent requests?", "domain": "code_ruby"}
+{"prompt": "what's the idiomatic Ruby way to memoize an expensive method call?", "domain": "code_ruby"}
+{"prompt": "What does the `<<` operator actually do when used on a custom class, and how do I implement it?", "domain": "code_ruby"}
+{"prompt": "Can you refactor this nested conditional into a cleaner guard-clause style? `def process(x); if x; if x > 0; puts 'positive'; else; puts 'non-positive'; end; end; end`", "domain": "code_ruby"}
+{"prompt": "Write a Ruby method that takes a sentence and capitalizes the first letter of every word.", "domain": "code_ruby"}
+{"prompt": "In Ruby, write a function that removes duplicates from a list while keeping order and explain its time complexity.", "domain": "code_ruby"}
+{"prompt": "Explain the difference between `Proc.new` and `lambda`.", "domain": "code_ruby"}
+{"prompt": "What's your opinion on using keyword arguments versus a single options hash for this method signature?\n\ndef create_user(name, email, admin: false, active: true)\nend", "domain": "code_ruby"}
+{"prompt": "How do I write a Ruby method that takes two numbers and returns the larger one?", "domain": "code_ruby"}
+{"prompt": "In Ruby, write a function that implements a simple exponential moving average and explain its time complexity.", "domain": "code_ruby"}
+{"prompt": "I need a Ruby script that recursively walks a directory tree, finds all `.log` files older than 30 days, and deletes them safely with a dry-run flag option. Please include error handling for permission issues.", "domain": "code_ruby"}
+{"prompt": "Can you refactor this class to follow the Single Responsibility Principle? It's currently handling validation, persistence, and notification all at once.\n\nclass Order\n  def save_and_notify\n    validate!\n    db.save(self)\n    Mailer.send_confirmation(self)\n  end\nend", "domain": "code_ruby"}
+{"prompt": "Write clean, idiomatic Ruby that implements run-length encoding and decoding.", "domain": "code_ruby"}
+{"prompt": "Can you explain the difference between `dup` and `clone` in Ruby, especially regarding frozen objects and singleton methods?", "domain": "code_ruby"}
+{"prompt": "I need to implement a simple state machine for an order's lifecycle (pending, paid, shipped, delivered, cancelled) without using a gem like AASM. Can you sketch out a class that enforces valid transitions?", "domain": "code_ruby"}
+{"prompt": "In Ruby, write a function that returns the prime numbers below n using a sieve and explain its time complexity.", "domain": "code_ruby"}
+{"prompt": "How would you implement a simple binary search tree in Ruby, with insert and search methods?", "domain": "code_ruby"}
+{"prompt": "Can you optimize this method that checks if a string is a permutation of a palindrome? It currently uses O(n^2) string operations.\n\ndef palindrome_permutation?(str)\n  chars = str.downcase.gsub(/\\s/, '').chars\n  odd_count = chars.uniq.count { |c| chars.count(c).odd? }\n  odd_count <= 1\nend", "domain": "code_ruby"}
+{"prompt": "Quick way to check if a string is a palindrome in Ruby?", "domain": "code_ruby"}
+{"prompt": "Explain the difference between `Proc.new`, `lambda`, and `->` syntax regarding arity checking and `return` behavior.", "domain": "code_ruby"}
+{"prompt": "In Ruby, write a function that computes the factorial of a number and explain its time complexity.", "domain": "code_ruby"}
+{"prompt": "Write a method that implements binary search on a sorted array, handling duplicates by returning the leftmost matching index, and add test cases for edge cases like empty arrays and single-element arrays.", "domain": "code_ruby"}
+{"prompt": "write a Ruby method that flattens a deeply nested hash into dot-notation keys", "domain": "code_ruby"}
+{"prompt": "Can you write a simple rate limiter class in Ruby using a sliding window approach?", "domain": "code_ruby"}
+{"prompt": "Explain how Ruby's garbage collector handles object generations and when I might need to tune GC settings for a memory-heavy app.", "domain": "code_ruby"}
+{"prompt": "Write a Ruby function that counts set bits in an integer. Include a short comment explaining the approach.", "domain": "code_ruby"}
+{"prompt": "what's a cleaner way to write this using Enumerable methods instead of a manual loop?\n\nresult = []\nnumbers.each do |n|\n  result << n * 2 if n.even?\nend", "domain": "code_ruby"}
+{"prompt": "can you show me how to memoize an expensive method call in plain ruby without a gem", "domain": "code_ruby"}
+{"prompt": "Write a method that groups an array of hashes by a given key, similar to Rails' `group_by` but implemented manually.", "domain": "code_ruby"}
+{"prompt": "Debug why this returns nil: def add(a, b); a + b; end; puts add(2)", "domain": "code_ruby"}
+{"prompt": "In Ruby, write a function that finds the majority element in an array and explain its time complexity.", "domain": "code_ruby"}
+{"prompt": "Why does this concurrent code produce inconsistent counts: counter = 0; 10.times.map { Thread.new { 1000.times { counter += 1 } } }.each(&:join); puts counter — and how do I fix it with Mutex", "domain": "code_ruby"}
+{"prompt": "I have this method that's supposed to reverse a linked list but it's not working right, can you find the bug?\n\ndef reverse(node)\n  prev = nil\n  while node\n    node.next = prev\n    prev = node\n    node = node.next\n  end\n  prev\nend", "domain": "code_ruby"}
+{"prompt": "What's the simplest way in Ruby to reverse a string without using the built-in `reverse` method?", "domain": "code_ruby"}
+{"prompt": "Can you explain the difference between `Array#dup` and `Array#clone` with a code example?", "domain": "code_ruby"}
+{"prompt": "Write a method that takes a string and returns true if it's a palindrome, ignoring case and spaces.", "domain": "code_ruby"}
+{"prompt": "What's the difference between `Array#push` and `Array#<<`, and are there any performance differences?", "domain": "code_ruby"}
+{"prompt": "Can you convert this Java-style loop into idiomatic Ruby using enumerable methods?\n\nresult = []\nfor i in 0...arr.length\n  if arr[i] % 2 == 0\n    result.push(arr[i] * 2)\n  end\nend", "domain": "code_ruby"}
+{"prompt": "Write clean, idiomatic Ruby that flattens an arbitrarily nested list.", "domain": "code_ruby"}
+{"prompt": "Walk me through building a simple rate limiter in Ruby using a sliding window algorithm.", "domain": "code_ruby"}
+{"prompt": "Write a Ruby function that finds the majority element in an array. Include a short comment explaining the approach.", "domain": "code_ruby"}
+{"prompt": "In Ruby, write a function that computes the depth of a binary tree and explain its time complexity.", "domain": "code_ruby"}
+{"prompt": "Write a method that flattens a deeply nested array of arbitrary depth without using Ruby's built-in `flatten` method, then explain how your recursive approach handles cyclic references if at all.", "domain": "code_ruby"}
+{"prompt": "Write a simple rate limiter class in Ruby that allows N requests per time window using a sliding window approach.", "domain": "code_ruby"}
+{"prompt": "Can you show me step by step how to implement a simple LRU cache in Ruby using a Hash and an ordered structure?", "domain": "code_ruby"}
+{"prompt": "hey can you help me figure out why this ruby method keeps returning nil instead of the array? def double_all(arr) arr.each { |x| x * 2 } end", "domain": "code_ruby"}
+{"prompt": "Implement, in Ruby, code that computes the moving average of a numeric stream. Add a couple of example calls.", "domain": "code_ruby"}
+{"prompt": "Debug why this recursive Fibonacci implementation is so slow for n=35 and suggest a fix:\n\ndef fib(n)\n  return n if n <= 1\n  fib(n - 1) + fib(n - 2)\nend", "domain": "code_ruby"}
+{"prompt": "Write a recursive method to compute the Levenshtein distance between two strings in Ruby.", "domain": "code_ruby"}
+{"prompt": "Write clean, idiomatic Ruby that validates an email address.", "domain": "code_ruby"}
+{"prompt": "Explain what Comparable module does and show how to implement it in a custom class so instances can be sorted with `<=>`.", "domain": "code_ruby"}
+{"prompt": "What's your take on using service objects versus fat models for business logic in a Rails app?", "domain": "code_ruby"}
+{"prompt": "Explain what `instance_variable_get` is used for.", "domain": "code_ruby"}
+{"prompt": "Simplify this nested conditional using a case statement.\n\nif type == :a\n  1\nelsif type == :b\n  2\nelse\n  3\nend", "domain": "code_ruby"}
+{"prompt": "I'm working with `Comparable` and `<=>` for a custom `Money` class handling different currencies. What edge cases should I be careful about, and can you show a solid implementation?", "domain": "code_ruby"}
+{"prompt": "Write a Ruby function that finds the shortest path in an unweighted grid using BFS. Include a short comment explaining the approach.", "domain": "code_ruby"}

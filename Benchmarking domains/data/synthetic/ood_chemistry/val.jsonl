@@ -1,0 +1,100 @@
+{"prompt": "Calculate the pH of a 0.10 M solution of acetic acid (Ka = 1.8×10^-5) using the quadratic approximation, and express the final answer with proper significant figures.", "domain": "ood_chemistry"}
+{"prompt": "Balance the chemical equation for the combustion of propane (C3H8) in oxygen, write the balanced equation using proper subscripts, and calculate how many moles of CO2 are produced from 5 moles of propane.", "domain": "ood_chemistry"}
+{"prompt": "Write the Arrhenius equation in LaTeX and explain how the activation energy can be determined graphically from a plot of ln(k) versus 1/T.", "domain": "ood_chemistry"}
+{"prompt": "Which method do you recommend for finding the limiting reagent in a reaction with three reactants, and how would you apply it to N2 + 3H2 → 2NH3 given specific starting masses?", "domain": "ood_chemistry"}
+{"prompt": "Write the Lewis structure and formal charges for the nitrate ion NO3^-, and express the resonance hybrid bond order using a fraction in LaTeX.", "domain": "ood_chemistry"}
+{"prompt": "Give the LaTeX formula for calculating standard cell potential from Gibbs free energy.", "domain": "ood_chemistry"}
+{"prompt": "Calculate the solubility product constant Ksp for calcium fluoride given its molar solubility, and express the equilibrium expression with correct stoichiometric exponents.", "domain": "ood_chemistry"}
+{"prompt": "How do I convert 3.5 moles of CO2 into grams, showing the molar mass calculation and the final unit conversion in a clear sequence of steps?", "domain": "ood_chemistry"}
+{"prompt": "Derive the Henderson-Hasselbalch equation from the acid dissociation constant expression and use it to calculate the pH of a buffer made from 0.20 M acetic acid and 0.15 M sodium acetate, given pKa = 4.76.", "domain": "ood_chemistry"}
+{"prompt": "I need help figuring out the limiting reagent when 5 mol H2 reacts with 3 mol N2 to form NH3.", "domain": "ood_chemistry"}
+{"prompt": "How many significant figures in 0.00420 mol?", "domain": "ood_chemistry"}
+{"prompt": "Explain the Born-Haber cycle for the formation of magnesium oxide, listing each enthalpy term with its correct sign and writing the overall thermochemical equation.", "domain": "ood_chemistry"}
+{"prompt": "Please balance this combustion equation: C4H10 + O2 -> CO2 + H2O.", "domain": "ood_chemistry"}
+{"prompt": "Compare the van der Waals equation to the ideal gas law, and explain under what conditions the correction terms a and b become significant.", "domain": "ood_chemistry"}
+{"prompt": "Balance the equation for the reaction between potassium permanganate and oxalic acid in acidic solution, and identify which species is oxidized and which is reduced.", "domain": "ood_chemistry"}
+{"prompt": "Explain the difference between Markovnikov and anti-Markovnikov addition in the hydrohalogenation of propene, showing the carbocation intermediate.", "domain": "ood_chemistry"}
+{"prompt": "Explain the Arrhenius equation k = Ae^{-Ea/RT} and use it to determine the activation energy of a reaction given rate constants at two temperatures, formatting your derivation in LaTeX.", "domain": "ood_chemistry"}
+{"prompt": "Explain the difference between kinetic and thermodynamic control in a chemical reaction, using the bromination of 1,3-butadiene as an example.", "domain": "ood_chemistry"}
+{"prompt": "Write out the full set of quantum numbers (n, l, m_l, m_s) for the electrons in a 3d^5 configuration.", "domain": "ood_chemistry"}
+{"prompt": "What is the oxidation number of chromium in Cr2O7^2-?", "domain": "ood_chemistry"}
+{"prompt": "Show step by step how to balance the redox reaction between KMnO4 and FeSO4 in acidic solution using the half-reaction method.", "domain": "ood_chemistry"}
+{"prompt": "Show me how to convert a reaction rate given in mol/(L·s) into mol/(L·min), including the dimensional analysis steps explicitly.", "domain": "ood_chemistry"}
+{"prompt": "How would you write the equilibrium expression Kc for the reaction N2 + 3H2 <=> 2NH3?", "domain": "ood_chemistry"}
+{"prompt": "How many grams of CO2 form from burning 10 g of CH4?", "domain": "ood_chemistry"}
+{"prompt": "A 2.50 g sample of an unknown hydrocarbon is combusted completely, producing 7.86 g of CO2 and 3.02 g of H2O. Determine the empirical formula of the hydrocarbon, show all mass-to-mole conversions explicitly, and then calculate its molecular formula if the molar mass is approximately 86 g/mol.", "domain": "ood_chemistry"}
+{"prompt": "Write the equation relating Gibbs free energy, enthalpy, and entropy, and determine whether a reaction with delta H = -150 kJ/mol and delta S = -50 J/(mol K) is spontaneous at 298 K.", "domain": "ood_chemistry"}
+{"prompt": "What's the balanced equation for the reaction between aluminum and hydrochloric acid, and what gas is produced?", "domain": "ood_chemistry"}
+{"prompt": "Can you explain the mechanism of an acid-catalyzed esterification reaction step by step?", "domain": "ood_chemistry"}
+{"prompt": "Compare the empirical formula and molecular formula of glucose C6H12O6, and explain under what circumstances only the empirical formula can be determined experimentally.", "domain": "ood_chemistry"}
+{"prompt": "Balance this combustion reaction for octane (C8H18) in oxygen and calculate the theoretical yield of water from 114 g of octane.", "domain": "ood_chemistry"}
+{"prompt": "Derive the relationship between half-life and the rate constant for a first-order reaction, and calculate the half-life if k = 0.0231 min^-1.", "domain": "ood_chemistry"}
+{"prompt": "Can you convert 2.5 atm to kPa and show the conversion factor you used?", "domain": "ood_chemistry"}
+{"prompt": "Balance: Fe + O2 -> Fe2O3", "domain": "ood_chemistry"}
+{"prompt": "Determine the rate law for a reaction A + B → C given the following initial rate data at varying concentrations of A and B, express the rate law in the form rate = k[A]^m[B]^n, and calculate the overall reaction order.", "domain": "ood_chemistry"}
+{"prompt": "Walk me through the calculation of the equilibrium constant Kc for the Haber process N2(g) + 3H2(g) ⇌ 2NH3(g) given initial and equilibrium concentrations, and present the final expression in LaTeX.", "domain": "ood_chemistry"}
+{"prompt": "Calculate the lattice energy of MgO using the Born-Landé equation, given the relevant ionic charges, distances, and Madelung constant.", "domain": "ood_chemistry"}
+{"prompt": "How do I figure out the empirical formula if I have 40% C, 6.7% H, and 53.3% O by mass?", "domain": "ood_chemistry"}
+{"prompt": "Can you explain in simple terms what a rate law like rate = k[A]^2[B] actually tells us about the reaction?", "domain": "ood_chemistry"}
+{"prompt": "Provide a step-by-step derivation of the ideal gas law from Boyle's, Charles's, and Avogadro's laws.", "domain": "ood_chemistry"}
+{"prompt": "Show me step by step how to balance the equation for the combustion of glucose, C6H12O6, and express the final coefficients clearly.", "domain": "ood_chemistry"}
+{"prompt": "What is the formula for calcium phosphate?", "domain": "ood_chemistry"}
+{"prompt": "Write the rate expression for an enzyme-catalyzed reaction following Michaelis-Menten kinetics in LaTeX, and explain the meaning of Vmax and Km.", "domain": "ood_chemistry"}
+{"prompt": "Write the formula for calculating the theoretical yield of a reaction and use it to find the theoretical yield of carbon dioxide from 10.0 g of propane combustion.", "domain": "ood_chemistry"}
+{"prompt": "Write the molecular formula for glucose and explain what each subscript in C6H12O6 represents in terms of atom count.", "domain": "ood_chemistry"}
+{"prompt": "Can you explain why water has the formula H2O and not something like H4O2 in simplest terms?", "domain": "ood_chemistry"}
+{"prompt": "Given the half-reactions for the reduction of Cr2O7^2- to Cr^3+ and the oxidation of Fe^2+ to Fe^3+, balance the overall redox equation and express the final answer in LaTeX with proper subscripts and superscripts.", "domain": "ood_chemistry"}
+{"prompt": "Explain how to determine the empirical formula of a compound that is 40.0% carbon, 6.7% hydrogen, and 53.3% oxygen by mass, showing each step of the mole ratio calculation.", "domain": "ood_chemistry"}
+{"prompt": "Balance the thermite reaction Al + Fe2O3.", "domain": "ood_chemistry"}
+{"prompt": "Walk through the process of calculating the freezing point depression of a solution containing 1.20 mol of NaCl in 2.00 kg of water.", "domain": "ood_chemistry"}
+{"prompt": "Write the formula relating moles, mass, and molar mass, and use it to calculate the mass of 0.50 moles of calcium carbonate.", "domain": "ood_chemistry"}
+{"prompt": "Determine the limiting reagent when 5.0 g of Al reacts with 8.0 g of Fe2O3 in the thermite reaction 2Al + Fe2O3 → Al2O3 + 2Fe.", "domain": "ood_chemistry"}
+{"prompt": "Determine the hybridization and molecular geometry of the central atom in XeF4 using VSEPR theory, and draw its Lewis structure notation.", "domain": "ood_chemistry"}
+{"prompt": "Explain how to use the Rydberg equation to calculate the wavelength of light emitted when an electron in a hydrogen atom transitions from n=4 to n=2.", "domain": "ood_chemistry"}
+{"prompt": "Balance C3H8 + O2 → CO2 + H2O.", "domain": "ood_chemistry"}
+{"prompt": "Derive the rate law for the decomposition of N2O5 given that it follows first-order kinetics, and express the integrated rate equation in LaTeX with proper subscripts for [N2O5]_0 and [N2O5]_t.", "domain": "ood_chemistry"}
+{"prompt": "Which is a better method, in your view, for finding the order of a reaction from a graph, linearizing rate data or using the method of initial rates?", "domain": "ood_chemistry"}
+{"prompt": "Balance: KClO3 -> KCl + O2.", "domain": "ood_chemistry"}
+{"prompt": "Describe the SN1 versus SN2 mechanism difference for tert-butyl bromide versus methyl bromide when reacting with hydroxide ion, focusing on transition states and rate laws.", "domain": "ood_chemistry"}
+{"prompt": "Give the LaTeX Nernst equation for a general half-cell.", "domain": "ood_chemistry"}
+{"prompt": "Balance the reaction of magnesium with hydrochloric acid.", "domain": "ood_chemistry"}
+{"prompt": "Derive the integrated rate law for a second-order reaction A -> products, starting from the differential rate equation -d[A]/dt = k[A]^2. Present the final integrated form in LaTeX and explain how a plot of 1/[A] versus t confirms second-order kinetics.", "domain": "ood_chemistry"}
+{"prompt": "In your opinion, is titration curve analysis or direct calculation better for finding the equivalence point of a weak base titrated with strong acid, and can you illustrate with the equation for NH3 titrated by HCl?", "domain": "ood_chemistry"}
+{"prompt": "Given the Michaelis-Menten equation v = Vmax[S]/(Km + [S]), derive the Lineweaver-Burk linear form and explain how to extract Km and Vmax graphically.", "domain": "ood_chemistry"}
+{"prompt": "Calculate the number of atoms in 5 mol of carbon.", "domain": "ood_chemistry"}
+{"prompt": "Convert 500 mL of a 2.0 M solution into the number of moles of solute present, showing the formula used.", "domain": "ood_chemistry"}
+{"prompt": "Explain the crystal field splitting diagram for an octahedral d^6 low-spin transition metal complex, and write the electron configuration using t_{2g} and e_g notation.", "domain": "ood_chemistry"}
+{"prompt": "Write out the Arrhenius equation in LaTeX notation, then determine the activation energy of a reaction given rate constants of 0.00123 s^-1 at 298 K and 0.00567 s^-1 at 320 K.", "domain": "ood_chemistry"}
+{"prompt": "Compare the buffering capacity of a phosphate buffer versus a carbonate buffer near physiological pH, using the Henderson-Hasselbalch equation pH = pKa + log([A-]/[HA]) to justify your answer.", "domain": "ood_chemistry"}
+{"prompt": "Evaluate the trade-off between kinetic control and thermodynamic control in the addition of HBr to 1,3-butadiene, showing the two possible products and their relative activation energies.", "domain": "ood_chemistry"}
+{"prompt": "Explain the crystal field splitting diagram for an octahedral complex like [Ti(H2O)6]^3+, including the energy gap notation Δo.", "domain": "ood_chemistry"}
+{"prompt": "Can you explain what's happening at the molecular level during an SN2 reaction and why it's a single step?", "domain": "ood_chemistry"}
+{"prompt": "Derive the ideal gas law from the combined gas law and Avogadro's law, showing each substitution step, and express the final relationship PV = nRT in LaTeX with all variables clearly defined.", "domain": "ood_chemistry"}
+{"prompt": "I'm stuck on this stoichiometry homework, if I have 2.5 mol of N2 reacting with H2 to make NH3, how much NH3 comes out and what's the balanced equation?", "domain": "ood_chemistry"}
+{"prompt": "Explain step by step how to calculate the mass of solute needed to prepare 250 mL of a 0.15 M KCl solution, showing all unit conversions.", "domain": "ood_chemistry"}
+{"prompt": "Derive the Nernst equation for a concentration cell and calculate the cell potential when [Zn2+] in one half-cell is 0.010 M and 1.0 M in the other.", "domain": "ood_chemistry"}
+{"prompt": "Convert 15.0 grams of oxygen gas into liters at standard temperature and pressure, using the ideal gas law and showing each step.", "domain": "ood_chemistry"}
+{"prompt": "Write the equilibrium expression for the solubility product of calcium fluoride, CaF2, and use it to calculate the molar solubility given Ksp = 3.9 x 10^-11.", "domain": "ood_chemistry"}
+{"prompt": "Write the Ka expression for acetic acid.", "domain": "ood_chemistry"}
+{"prompt": "Write the LaTeX expression for the ideal gas law.", "domain": "ood_chemistry"}
+{"prompt": "What's actually happening mechanistically when HCl reacts with NaOH, can you show me the net ionic equation too?", "domain": "ood_chemistry"}
+{"prompt": "Calculate the pH of a 0.150 M solution of a weak acid with Ka = 1.8 x 10^-5, showing the quadratic approximation and the simplified assumption method.", "domain": "ood_chemistry"}
+{"prompt": "Give the LaTeX formula for calculating pH from H+ concentration.", "domain": "ood_chemistry"}
+{"prompt": "Balance C3H8 + O2 -> CO2 + H2O.", "domain": "ood_chemistry"}
+{"prompt": "Can you show me the calculation for converting 750 torr of pressure into atmospheres using the right formula?", "domain": "ood_chemistry"}
+{"prompt": "Explain how to determine the number of significant figures in the measurement 0.00420 mol, and describe why significant figures are important in reporting chemical quantities.", "domain": "ood_chemistry"}
+{"prompt": "Walk through calculating the percent composition by mass of each element in Mg(OH)2, showing all subscript-based mass contributions.", "domain": "ood_chemistry"}
+{"prompt": "Determine the empirical formula for a hydrate with 45% water by mass and MgSO4 as the anhydrous salt.", "domain": "ood_chemistry"}
+{"prompt": "Walk through balancing the half-reactions and combining them to write the overall balanced equation for the reaction between MnO4^- and C2O4^2- in acidic solution.", "domain": "ood_chemistry"}
+{"prompt": "What's your take on the best way to represent isotopic notation—using mass number superscripts or atomic number subscripts first—and can you write both notations for carbon-14?", "domain": "ood_chemistry"}
+{"prompt": "Do you prefer explaining buffer capacity through titration curve slopes or through the Henderson-Hasselbalch equation's sensitivity to acid/base ratios?", "domain": "ood_chemistry"}
+{"prompt": "Explain what the superscript charge in the formula SO4^2- indicates about the ion, and describe how this affects the formula of a compound formed with calcium.", "domain": "ood_chemistry"}
+{"prompt": "Walk me through the stoichiometric calculation to determine how many grams of CO2 are produced from the complete combustion of 25.0 g of propane, showing the balanced equation first.", "domain": "ood_chemistry"}
+{"prompt": "Balance the following complex redox equation in acidic solution: Cr2O7^2- + Fe^2+ -> Cr^3+ + Fe^3+.", "domain": "ood_chemistry"}
+{"prompt": "Can you explain the electron-pushing mechanism for the aldol condensation reaction between two molecules of acetaldehyde, including the enolate intermediate?", "domain": "ood_chemistry"}
+{"prompt": "Hey can you help me balance this equation, C3H8 + O2 -> CO2 + H2O, and show me the steps so I actually get it this time?", "domain": "ood_chemistry"}
+{"prompt": "Write the rate law for a first-order reaction in LaTeX.", "domain": "ood_chemistry"}
+{"prompt": "How do you balance the equation for the reaction between potassium permanganate and hydrogen peroxide in acidic solution, including electron transfer accounting?", "domain": "ood_chemistry"}
+{"prompt": "Compare the stability of a chair versus boat conformation of cyclohexane, quantifying the energy difference in kJ/mol and relating it to torsional and steric strain.", "domain": "ood_chemistry"}
+{"prompt": "Calculate the lattice energy of NaCl using the Born-Haber cycle, given the enthalpies of sublimation, ionization, electron affinity, and formation, and show each step of the cycle as a labeled thermochemical equation.", "domain": "ood_chemistry"}
+{"prompt": "Write the equation relating Gibbs free energy, enthalpy, and entropy in LaTeX, and calculate ΔG at 298 K for a reaction with ΔH = -92.4 kJ/mol and ΔS = -198.7 J/(mol·K).", "domain": "ood_chemistry"}

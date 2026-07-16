@@ -1,0 +1,800 @@
+{"prompt": "In detail, answer: What is the greenhouse effect?", "domain": "task_question_answering"}
+{"prompt": "Why did the Byzantine Empire outlast the Western Roman Empire by centuries?", "domain": "task_question_answering"}
+{"prompt": "Why does a spinning top eventually wobble and fall instead of spinning forever?", "domain": "task_question_answering"}
+{"prompt": "How do I check if a website is safe before entering my personal information?", "domain": "task_question_answering"}
+{"prompt": "How do LED light bulbs compare to incandescent bulbs in energy use and lifespan?", "domain": "task_question_answering"}
+{"prompt": "Explain like I'm five why the sky turns orange and red during sunset.", "domain": "task_question_answering"}
+{"prompt": "What is the Big Bang theory?", "domain": "task_question_answering"}
+{"prompt": "What exactly is inflation, how is it calculated, and why does a little bit of it each year get considered healthy for an economy?", "domain": "task_question_answering"}
+{"prompt": "What is the stock market, and how does buying a share of a company actually work?", "domain": "task_question_answering"}
+{"prompt": "What were the main causes of World War I, and how did the assassination of Archduke Franz Ferdinand set off a chain of events leading to a global conflict?", "domain": "task_question_answering"}
+{"prompt": "How does anesthesia work to make a person unconscious and unable to feel pain during surgery, and are there different types used for different procedures?", "domain": "task_question_answering"}
+{"prompt": "What is the Great Wall of China, and why was it originally built?", "domain": "task_question_answering"}
+{"prompt": "What's the difference between weather and climate, explained simply for a child?", "domain": "task_question_answering"}
+{"prompt": "What is the difference between climate and weather?", "domain": "task_question_answering"}
+{"prompt": "What causes thunder and lightning during a storm?", "domain": "task_question_answering"}
+{"prompt": "What is the difference between an allergy and an intolerance?", "domain": "task_question_answering"}
+{"prompt": "For a beginner: How do vaccines train the immune system?", "domain": "task_question_answering"}
+{"prompt": "Why does bread rise when you add yeast to it?", "domain": "task_question_answering"}
+{"prompt": "What caused World War I to begin?", "domain": "task_question_answering"}
+{"prompt": "What causes a total solar eclipse to occur so rarely?", "domain": "task_question_answering"}
+{"prompt": "How do our eyes actually let us see colors?", "domain": "task_question_answering"}
+{"prompt": "Why do some bridges use suspension design while others use truss design, and what are the trade-offs?", "domain": "task_question_answering"}
+{"prompt": "What's the best strategy for saving money on a tight budget?", "domain": "task_question_answering"}
+{"prompt": "How does a refrigerator keep food cold?", "domain": "task_question_answering"}
+{"prompt": "What causes the northern lights, and where can you best see them?", "domain": "task_question_answering"}
+{"prompt": "What's the process for composting kitchen scraps at home from start to finished soil?", "domain": "task_question_answering"}
+{"prompt": "What is a credit score, and why does it matter?", "domain": "task_question_answering"}
+{"prompt": "What was the significance of the Silk Road in ancient trade?", "domain": "task_question_answering"}
+{"prompt": "If I plant a seed upside down in soil, how does the root still know to grow downward?", "domain": "task_question_answering"}
+{"prompt": "Explain simply: How does a refrigerator keep food cold?", "domain": "task_question_answering"}
+{"prompt": "Why do we yawn?", "domain": "task_question_answering"}
+{"prompt": "What caused the fall of the Aztec Empire?", "domain": "task_question_answering"}
+{"prompt": "In detail, answer: How do noise-cancelling headphones work?", "domain": "task_question_answering"}
+{"prompt": "How do vaccines train the immune system to fight diseases?", "domain": "task_question_answering"}
+{"prompt": "Why is the sea level rising?", "domain": "task_question_answering"}
+{"prompt": "What is inflation?", "domain": "task_question_answering"}
+{"prompt": "What's the difference between a monarchy and a constitutional monarchy, using the UK as an example?", "domain": "task_question_answering"}
+{"prompt": "How do vaccines cause immunity?", "domain": "task_question_answering"}
+{"prompt": "What causes jet lag, and are there any scientifically backed methods to reduce its effects when traveling across time zones?", "domain": "task_question_answering"}
+{"prompt": "Explain why touching a 9-volt battery to your tongue gives you a tingling sensation.", "domain": "task_question_answering"}
+{"prompt": "What is the water cycle, how does evaporation lead to rainfall, and why is this cycle important for maintaining ecosystems on Earth?", "domain": "task_question_answering"}
+{"prompt": "How do volcanoes form, why do some erupt violently while others just ooze lava slowly, and what determines the difference?", "domain": "task_question_answering"}
+{"prompt": "What is the difference between a virus infection and a bacterial infection when it comes to symptoms?", "domain": "task_question_answering"}
+{"prompt": "How does WiFi actually get to my phone without wires?", "domain": "task_question_answering"}
+{"prompt": "Why does ice float instead of sinking in water?", "domain": "task_question_answering"}
+{"prompt": "How do vaccines differ from antibiotics in what they treat?", "domain": "task_question_answering"}
+{"prompt": "What is CRISPR gene editing, and how did scientists use it to treat sickle cell disease in a 2023 trial?", "domain": "task_question_answering"}
+{"prompt": "How does electric car battery range compare to gasoline car range, and what causes the difference?", "domain": "task_question_answering"}
+{"prompt": "What is the difference between type 1 and type 2 diabetes in terms of cause, symptoms, and treatment?", "domain": "task_question_answering"}
+{"prompt": "How does GPS work?", "domain": "task_question_answering"}
+{"prompt": "What's the difference between fossil fuels and renewable energy?", "domain": "task_question_answering"}
+{"prompt": "How did the printing press change European society in the 15th century, and why is it considered one of the most important inventions in history?", "domain": "task_question_answering"}
+{"prompt": "Can you explain what caused the 2008 financial crisis and how it affected economies around the world?", "domain": "task_question_answering"}
+{"prompt": "How does Bitcoin work?", "domain": "task_question_answering"}
+{"prompt": "Briefly: What is the greenhouse effect?", "domain": "task_question_answering"}
+{"prompt": "What was the Silk Road, which regions did it connect, and how did it shape trade and cultural exchange between civilizations?", "domain": "task_question_answering"}
+{"prompt": "In detail, answer: How do vaccines train the immune system?", "domain": "task_question_answering"}
+{"prompt": "Can you give a detailed explanation of how neural networks use backpropagation to update weights during training?", "domain": "task_question_answering"}
+{"prompt": "How does sunscreen actually protect your skin?", "domain": "task_question_answering"}
+{"prompt": "How does the human immune system distinguish between the body's own cells and foreign invaders?", "domain": "task_question_answering"}
+{"prompt": "Describe in detail how mRNA vaccines instruct cells to produce an immune response, using the COVID-19 vaccines as an example.", "domain": "task_question_answering"}
+{"prompt": "How do bats use echolocation to navigate in the dark?", "domain": "task_question_answering"}
+{"prompt": "How do vaccines train the immune system?", "domain": "task_question_answering"}
+{"prompt": "Why do vaccines sometimes require booster shots, and how does immune memory decline over time?", "domain": "task_question_answering"}
+{"prompt": "What is the greenhouse effect, and how does it relate to climate change?", "domain": "task_question_answering"}
+{"prompt": "Briefly: What causes tides?", "domain": "task_question_answering"}
+{"prompt": "What causes the phenomenon of 'brain freeze' when eating something cold too fast?", "domain": "task_question_answering"}
+{"prompt": "What's a good approach to reducing screen time before bed?", "domain": "task_question_answering"}
+{"prompt": "What is the Coriolis effect and how does it influence ocean currents?", "domain": "task_question_answering"}
+{"prompt": "Why do some people get seasick and others don't?", "domain": "task_question_answering"}
+{"prompt": "What's the most effective method for improving memory retention while studying?", "domain": "task_question_answering"}
+{"prompt": "Why does the moon have phases?", "domain": "task_question_answering"}
+{"prompt": "Why does my phone battery degrade over time?", "domain": "task_question_answering"}
+{"prompt": "How do vaccines work?", "domain": "task_question_answering"}
+{"prompt": "What is the difference between a virus and a bacteria, and why do antibiotics work on one but not the other?", "domain": "task_question_answering"}
+{"prompt": "Explain why mixing red and blue paint makes purple, but mixing red and blue light makes something different.", "domain": "task_question_answering"}
+{"prompt": "Compare traditional savings accounts to investing in index funds for long-term growth.", "domain": "task_question_answering"}
+{"prompt": "What is the Coriolis effect, and how does it influence hurricanes spinning counterclockwise in the Northern Hemisphere?", "domain": "task_question_answering"}
+{"prompt": "For a beginner: How does the internet route data?", "domain": "task_question_answering"}
+{"prompt": "Explain the steps involved in how a wound heals after you get injured.", "domain": "task_question_answering"}
+{"prompt": "How do plants know which way is up when they grow?", "domain": "task_question_answering"}
+{"prompt": "For a beginner: How do bees make honey?", "domain": "task_question_answering"}
+{"prompt": "Why does bread turn stale faster in the fridge than on the counter?", "domain": "task_question_answering"}
+{"prompt": "Why do we get goosebumps?", "domain": "task_question_answering"}
+{"prompt": "Walk me through how to perform basic first aid for a burn.", "domain": "task_question_answering"}
+{"prompt": "Explain like I'm five why some volcanoes explode violently and others just ooze lava.", "domain": "task_question_answering"}
+{"prompt": "How do noise-cancelling headphones actually work?", "domain": "task_question_answering"}
+{"prompt": "What's the trade-off between using public transportation versus driving a personal car in a big city?", "domain": "task_question_answering"}
+{"prompt": "How do gas stoves compare to induction stoves in cooking efficiency and safety?", "domain": "task_question_answering"}
+{"prompt": "What causes earthquakes, and why do some places experience them more than others?", "domain": "task_question_answering"}
+{"prompt": "Explain what DNA is, how it stores genetic information, and how it differs from RNA.", "domain": "task_question_answering"}
+{"prompt": "How do octopuses change color to camouflage themselves?", "domain": "task_question_answering"}
+{"prompt": "Explain like I'm five why the moon has phases.", "domain": "task_question_answering"}
+{"prompt": "Explain like I'm five the difference between weather and climate.", "domain": "task_question_answering"}
+{"prompt": "Explain like I'm five why ice floats on water.", "domain": "task_question_answering"}
+{"prompt": "How does a rainbow form after it rains?", "domain": "task_question_answering"}
+{"prompt": "Why do onions make us cry when we cut them?", "domain": "task_question_answering"}
+{"prompt": "How does a compression algorithm like ZIP differ from one like JPEG in what it optimizes for?", "domain": "task_question_answering"}
+{"prompt": "How does a refrigerator keep food cold, step by step, from a technical standpoint?", "domain": "task_question_answering"}
+{"prompt": "What is artificial general intelligence, and how is it different from the narrow AI systems we use today?", "domain": "task_question_answering"}
+{"prompt": "How does a microwave oven heat food without making the plate hot?", "domain": "task_question_answering"}
+{"prompt": "If a nutrition label lists '15g of added sugar,' how does that affect my body differently than natural sugar?", "domain": "task_question_answering"}
+{"prompt": "What were the main factors that led to the Cuban Missile Crisis, and how was it ultimately resolved?", "domain": "task_question_answering"}
+{"prompt": "Should I invest in index funds or individual stocks as a beginner investor?", "domain": "task_question_answering"}
+{"prompt": "Why is the sky blue?", "domain": "task_question_answering"}
+{"prompt": "Explain like I'm five why the sky turns orange and pink during sunset but blue during the day.", "domain": "task_question_answering"}
+{"prompt": "Explain like I'm five what causes hiccups and why they're hard to stop.", "domain": "task_question_answering"}
+{"prompt": "What caused the Great Depression, and how did countries recover from it?", "domain": "task_question_answering"}
+{"prompt": "What's the difference between the Renaissance and the Enlightenment periods?", "domain": "task_question_answering"}
+{"prompt": "Explain the causes and effects of the French Revolution.", "domain": "task_question_answering"}
+{"prompt": "Why do we experience jet lag when flying across time zones?", "domain": "task_question_answering"}
+{"prompt": "What's the difference between an allergy and an intolerance to food?", "domain": "task_question_answering"}
+{"prompt": ";What is the Renaissance?", "domain": "task_question_answering"}
+{"prompt": "How do I set up a compost bin in my backyard step by step?", "domain": "task_question_answering"}
+{"prompt": "Explain like I'm five what causes thunder after you see lightning.", "domain": "task_question_answering"}
+{"prompt": "How do batteries store energy?", "domain": "task_question_answering"}
+{"prompt": "How do airplanes manage to stay in the air?", "domain": "task_question_answering"}
+{"prompt": "What's the difference between fiber optic internet and cable internet in terms of speed and reliability?", "domain": "task_question_answering"}
+{"prompt": "How does the stock market actually work, and what determines whether a company's share price goes up or down?", "domain": "task_question_answering"}
+{"prompt": "What's the difference between weathering and erosion in geology?", "domain": "task_question_answering"}
+{"prompt": "What is the water cycle and how does it work?", "domain": "task_question_answering"}
+{"prompt": "How does the metric system compare to the imperial system in terms of practicality for science?", "domain": "task_question_answering"}
+{"prompt": "Why does spicy food make you sweat?", "domain": "task_question_answering"}
+{"prompt": "How do bees communicate the location of flowers to each other?", "domain": "task_question_answering"}
+{"prompt": "How does nuclear power compare to coal power in terms of safety and efficiency?", "domain": "task_question_answering"}
+{"prompt": "Why do we get sunburned?", "domain": "task_question_answering"}
+{"prompt": "How does photosynthesis work, and why is it considered essential for almost all life on Earth?", "domain": "task_question_answering"}
+{"prompt": "Why do we need to sleep, and what happens if we don't get enough?", "domain": "task_question_answering"}
+{"prompt": "If I mix baking soda with vinegar and see it fizz up like a volcano, what chemical reaction is actually happening?", "domain": "task_question_answering"}
+{"prompt": "How does LASIK eye surgery compare to wearing glasses in terms of long-term risks and benefits?", "domain": "task_question_answering"}
+{"prompt": "How does a lava lamp actually work?", "domain": "task_question_answering"}
+{"prompt": "What causes the aurora borealis, and why is it mostly seen near the poles?", "domain": "task_question_answering"}
+{"prompt": "What caused the fall of the Roman Empire, and were there multiple factors involved rather than just one single cause?", "domain": "task_question_answering"}
+{"prompt": "If a website uses 'HTTPS' instead of 'HTTP,' what extra security does that provide?", "domain": "task_question_answering"}
+{"prompt": "How does a car's airbag know exactly when to deploy during a collision?", "domain": "task_question_answering"}
+{"prompt": "What geopolitical factors led to the partition of India in 1947, and what were its immediate humanitarian consequences?", "domain": "task_question_answering"}
+{"prompt": "What is the greenhouse effect, and how does it differ from the human-caused climate change we hear about today?", "domain": "task_question_answering"}
+{"prompt": "How does the immune response to a cold differ from the response to the flu?", "domain": "task_question_answering"}
+{"prompt": "If I mix baking soda and vinegar in a bottle and it foams up, what chemical reaction is actually happening?", "domain": "task_question_answering"}
+{"prompt": "What's the difference between AC and DC electricity, and why does one dominate long-distance power transmission?", "domain": "task_question_answering"}
+{"prompt": "Why does drinking coffee make people feel more awake?", "domain": "task_question_answering"}
+{"prompt": "Explain like I'm five how a computer actually stores information.", "domain": "task_question_answering"}
+{"prompt": "What is the difference between Wi-Fi and Bluetooth?", "domain": "task_question_answering"}
+{"prompt": "Explain like I'm five how vaccines teach the immune system to fight off diseases.", "domain": "task_question_answering"}
+{"prompt": "What is the function of the appendix in the human body?", "domain": "task_question_answering"}
+{"prompt": "Explain the process of cellular respiration and how it differs from fermentation in terms of energy yield.", "domain": "task_question_answering"}
+{"prompt": "What is quantitative easing, and how does a central bank use it to influence inflation and unemployment?", "domain": "task_question_answering"}
+{"prompt": "What is quantum entanglement, and why did Einstein call it 'spooky action at a distance'?", "domain": "task_question_answering"}
+{"prompt": "Explain the difference between an earthquake's magnitude and its intensity.", "domain": "task_question_answering"}
+{"prompt": "What are the steps a bill goes through to become a law in the United States?", "domain": "task_question_answering"}
+{"prompt": "Why do certain diseases like sickle cell anemia persist in populations despite being harmful?", "domain": "task_question_answering"}
+{"prompt": "What's the point of a gallbladder and what happens if you don't have one?", "domain": "task_question_answering"}
+{"prompt": "What causes tides?", "domain": "task_question_answering"}
+{"prompt": "Explain like I'm five what a black hole's event horizon actually is.", "domain": "task_question_answering"}
+{"prompt": "What causes déjà vu?", "domain": "task_question_answering"}
+{"prompt": "Can you explain what cryptocurrency is, how blockchain technology supports it, and why some people consider it risky?", "domain": "task_question_answering"}
+{"prompt": "Why does ice float on water instead of sinking, and how is that related to water's unique molecular structure?", "domain": "task_question_answering"}
+{"prompt": "What is the placebo button phenomenon in elevators and crosswalks?", "domain": "task_question_answering"}
+{"prompt": "How do plants grow without soil?", "domain": "task_question_answering"}
+{"prompt": "If I touch a metal doorknob after walking on carpet and get a small shock, what's causing that static electricity?", "domain": "task_question_answering"}
+{"prompt": "Explain how noise-canceling headphones work, including the science of sound waves and how the technology detects and cancels out ambient noise.", "domain": "task_question_answering"}
+{"prompt": "What is DNA, and what does it actually do in our bodies?", "domain": "task_question_answering"}
+{"prompt": "What causes a hangover the morning after drinking?", "domain": "task_question_answering"}
+{"prompt": "What is the difference between a stock and a bond, using a small business investment as an example?", "domain": "task_question_answering"}
+{"prompt": "What's the best way to deal with a clogged sink drain at home?", "domain": "task_question_answering"}
+{"prompt": "What's the best way to organize a small closet for maximum space?", "domain": "task_question_answering"}
+{"prompt": "How does 3D printing work, and what materials can actually be used in the process?", "domain": "task_question_answering"}
+{"prompt": "Walk me through the process of nuclear fission in a pressurized water reactor, including how control rods and coolant work together to prevent meltdown.", "domain": "task_question_answering"}
+{"prompt": "Walk me through how a computer converts typed keystrokes into text on a screen.", "domain": "task_question_answering"}
+{"prompt": "Explain how GPS devices determine your exact location on Earth.", "domain": "task_question_answering"}
+{"prompt": "Why do some people get motion sickness and others don't?", "domain": "task_question_answering"}
+{"prompt": "Explain like I'm five how airplanes stay in the air.", "domain": "task_question_answering"}
+{"prompt": "How does encryption keep online transactions secure, and what would happen if someone managed to crack it?", "domain": "task_question_answering"}
+{"prompt": "How do GPS devices know exactly where I am?", "domain": "task_question_answering"}
+{"prompt": "How do I perform CPR correctly on an adult in an emergency?", "domain": "task_question_answering"}
+{"prompt": "Explain like I'm five the difference between a comet and an asteroid.", "domain": "task_question_answering"}
+{"prompt": "What were the main events that led to the start of World War I?", "domain": "task_question_answering"}
+{"prompt": "Explain like I'm five: why is the ocean salty?", "domain": "task_question_answering"}
+{"prompt": "Explain how earthquakes are measured and detected.", "domain": "task_question_answering"}
+{"prompt": "What's the trade-off between getting a college degree versus learning a trade skill?", "domain": "task_question_answering"}
+{"prompt": "How does GPS in my phone figure out my exact location using satellites?", "domain": "task_question_answering"}
+{"prompt": "What's the most reliable way to remove a stain from a white shirt?", "domain": "task_question_answering"}
+{"prompt": "How do antibiotics kill bacteria?", "domain": "task_question_answering"}
+{"prompt": "What's the best way to childproof a home for a newly mobile toddler?", "domain": "task_question_answering"}
+{"prompt": "How do earthquakes happen?", "domain": "task_question_answering"}
+{"prompt": "What causes rust?", "domain": "task_question_answering"}
+{"prompt": "What is the biological basis of aging, and what role do telomeres play in cellular senescence?", "domain": "task_question_answering"}
+{"prompt": "Why do we dream when we sleep, and does everyone dream every night?", "domain": "task_question_answering"}
+{"prompt": "Why do old photographs turn yellow over time?", "domain": "task_question_answering"}
+{"prompt": "Why do onions make you cry when you chop them?", "domain": "task_question_answering"}
+{"prompt": "How do GPS satellites know exactly where I am?", "domain": "task_question_answering"}
+{"prompt": "What is dark matter, and what evidence suggests it exists even though it can't be directly observed?", "domain": "task_question_answering"}
+{"prompt": "Briefly: How does a microwave heat food?", "domain": "task_question_answering"}
+{"prompt": "For a beginner: What is the greenhouse effect?", "domain": "task_question_answering"}
+{"prompt": "What's the difference between Type 1 and Type 2 diabetes?", "domain": "task_question_answering"}
+{"prompt": "Briefly: Why does bread rise?", "domain": "task_question_answering"}
+{"prompt": "Why do onions make people cry when they're being cut?", "domain": "task_question_answering"}
+{"prompt": "Why does the Earth's magnetic field periodically reverse, and what evidence do scientists use to study past reversals?", "domain": "task_question_answering"}
+{"prompt": "Why do we dream?", "domain": "task_question_answering"}
+{"prompt": "Why did ancient Egyptians build pyramids?", "domain": "task_question_answering"}
+{"prompt": "Why does bread rise when you add yeast to the dough?", "domain": "task_question_answering"}
+{"prompt": "Can you explain what a black hole is in simple terms?", "domain": "task_question_answering"}
+{"prompt": "Why do leaves change color in the autumn?", "domain": "task_question_answering"}
+{"prompt": "How do earthquakes happen, and why are some areas more prone to them?", "domain": "task_question_answering"}
+{"prompt": "Why does the human body develop a fever in response to infection, and what purpose does it serve?", "domain": "task_question_answering"}
+{"prompt": "Why does caffeine keep people awake, and what happens in the brain when its effects wear off?", "domain": "task_question_answering"}
+{"prompt": "How does GPS in a phone know exactly where I am?", "domain": "task_question_answering"}
+{"prompt": "What is the difference between mitosis and meiosis in cell division?", "domain": "task_question_answering"}
+{"prompt": "Why did the partition of India in 1947 lead to such widespread violence and displacement?", "domain": "task_question_answering"}
+{"prompt": "Why does the moon appear to change shape throughout the month?", "domain": "task_question_answering"}
+{"prompt": "How does the human brain store and retrieve memories, and why do some memories fade over time while others remain vivid for decades?", "domain": "task_question_answering"}
+{"prompt": "What's the actual difference between a virus and bacteria?", "domain": "task_question_answering"}
+{"prompt": "Why do we hiccup after eating fast?", "domain": "task_question_answering"}
+{"prompt": "What is the difference between the Sun and a star?", "domain": "task_question_answering"}
+{"prompt": "Why do we have leap years?", "domain": "task_question_answering"}
+{"prompt": "Explain the difference between a hurricane and a typhoon, and why they're named differently by region.", "domain": "task_question_answering"}
+{"prompt": "What is the difference between a meteor, a meteoroid, and a meteorite?", "domain": "task_question_answering"}
+{"prompt": "In your opinion, is it better to rent or buy a home in a volatile housing market?", "domain": "task_question_answering"}
+{"prompt": "Explain how vaccines train the immune system to fight diseases.", "domain": "task_question_answering"}
+{"prompt": "Explain like I'm five how vaccines teach your body to fight sickness.", "domain": "task_question_answering"}
+{"prompt": "What is blockchain?", "domain": "task_question_answering"}
+{"prompt": "What is the difference between a solstice and an equinox?", "domain": "task_question_answering"}
+{"prompt": "What is the Great Wall of China, and why was it built?", "domain": "task_question_answering"}
+{"prompt": "How do I safely defrost frozen meat before cooking it?", "domain": "task_question_answering"}
+{"prompt": "In detail, answer: Why do onions make you cry?", "domain": "task_question_answering"}
+{"prompt": "In detail, answer: Why does bread rise?", "domain": "task_question_answering"}
+{"prompt": "Explain like I'm five how bees make honey.", "domain": "task_question_answering"}
+{"prompt": "Explain the difference between Type 1 and Type 2 diabetes and how their treatments differ.", "domain": "task_question_answering"}
+{"prompt": "Explain like I'm five how airplanes stay up in the sky.", "domain": "task_question_answering"}
+{"prompt": "What causes tinnitus, that ringing sound some people hear in their ears?", "domain": "task_question_answering"}
+{"prompt": "What's the trade-off between breastfeeding and formula feeding for infants?", "domain": "task_question_answering"}
+{"prompt": "How does sunscreen with SPF 30 actually protect skin from UV radiation?", "domain": "task_question_answering"}
+{"prompt": "Explain the process by which stars form from collapsing clouds of gas and dust.", "domain": "task_question_answering"}
+{"prompt": "How did the Panama Canal change global shipping routes?", "domain": "task_question_answering"}
+{"prompt": "How do vaccines help protect the body from getting sick?", "domain": "task_question_answering"}
+{"prompt": "Why do we get hiccups, and how do you make them stop?", "domain": "task_question_answering"}
+{"prompt": "Explain what dark matter is and why scientists believe it exists.", "domain": "task_question_answering"}
+{"prompt": "How does LASIK eye surgery compare to wearing glasses in terms of long-term outcomes?", "domain": "task_question_answering"}
+{"prompt": "What causes thunder?", "domain": "task_question_answering"}
+{"prompt": "Why do we yawn, and why does seeing someone else yawn make us yawn too?", "domain": "task_question_answering"}
+{"prompt": "How do bees communicate the location of food to other bees in their hive, and what is the 'waggle dance' scientists have observed?", "domain": "task_question_answering"}
+{"prompt": "What was the significance of the Library of Alexandria, and how was it lost?", "domain": "task_question_answering"}
+{"prompt": "Explain why the sky changes color during sunrise and sunset.", "domain": "task_question_answering"}
+{"prompt": "How do noise-canceling headphones work, and what signal processing techniques do they use to cancel out ambient sound?", "domain": "task_question_answering"}
+{"prompt": "How does a microwave oven heat up food so quickly?", "domain": "task_question_answering"}
+{"prompt": "How does the stock market actually work?", "domain": "task_question_answering"}
+{"prompt": "Briefly: What makes a rainbow appear?", "domain": "task_question_answering"}
+{"prompt": "What caused the Dust Bowl in the United States during the 1930s?", "domain": "task_question_answering"}
+{"prompt": "What's the difference between a virus and a bacterium, and why do antibiotics work on one but not the other?", "domain": "task_question_answering"}
+{"prompt": "Explain the mechanics of how a jet engine generates thrust, covering compression, combustion, and exhaust stages.", "domain": "task_question_answering"}
+{"prompt": "What are the main causes of the fall of the Roman Empire?", "domain": "task_question_answering"}
+{"prompt": "What caused the fall of the Roman Empire, and what were the major contributing factors?", "domain": "task_question_answering"}
+{"prompt": "How do vaccines help protect the body from diseases?", "domain": "task_question_answering"}
+{"prompt": "How did the Silk Road shape trade and cultural exchange in ancient times?", "domain": "task_question_answering"}
+{"prompt": "Explain like I'm five the difference between the sun and a star.", "domain": "task_question_answering"}
+{"prompt": "What was the Silk Road and why was it historically important?", "domain": "task_question_answering"}
+{"prompt": "What is the difference between a virus and a bacterium in terms of structure, reproduction, and how antibiotics affect each?", "domain": "task_question_answering"}
+{"prompt": "What is photosynthesis and why is it important for life on Earth?", "domain": "task_question_answering"}
+{"prompt": "Explain like I'm five why we have seasons like summer and winter.", "domain": "task_question_answering"}
+{"prompt": "What is the Doppler effect?", "domain": "task_question_answering"}
+{"prompt": "How does Wi-Fi let my phone connect to the internet without wires?", "domain": "task_question_answering"}
+{"prompt": "What is DNA, how does it store genetic information, and how is it different from RNA?", "domain": "task_question_answering"}
+{"prompt": "How does the human digestive system break down food, and what happens to nutrients after they're absorbed into the bloodstream?", "domain": "task_question_answering"}
+{"prompt": "Explain in detail how photosynthesis works in plants.", "domain": "task_question_answering"}
+{"prompt": "How does a jet engine generate thrust, and what are the key differences between a turbofan and a turbojet?", "domain": "task_question_answering"}
+{"prompt": "What caused the extinction of the woolly mammoth?", "domain": "task_question_answering"}
+{"prompt": "What is the difference between the Arctic and Antarctica?", "domain": "task_question_answering"}
+{"prompt": "How do solar panels turn sunlight into electricity?", "domain": "task_question_answering"}
+{"prompt": "Explain like I'm five how vaccines teach the immune system to fight diseases.", "domain": "task_question_answering"}
+{"prompt": "How does encryption keep online banking transactions secure, and what would happen if someone managed to break that encryption?", "domain": "task_question_answering"}
+{"prompt": "What is the function of mitochondria in a cell, and why are they often called the powerhouse of the cell?", "domain": "task_question_answering"}
+{"prompt": "Why is the sky dark at night if there are billions of stars in the universe, and what is this paradox called?", "domain": "task_question_answering"}
+{"prompt": "Explain how GPS satellites determine your exact location.", "domain": "task_question_answering"}
+{"prompt": "Provide a detailed explanation of how CRISPR-Cas9 gene editing works at the molecular level, including guide RNA design and off-target effects.", "domain": "task_question_answering"}
+{"prompt": "What causes rainbows?", "domain": "task_question_answering"}
+{"prompt": "How did the invention of the printing press change European society?", "domain": "task_question_answering"}
+{"prompt": "Why did the Treaty of Versailles contribute to the rise of extremist movements in interwar Germany?", "domain": "task_question_answering"}
+{"prompt": "How do our eyes perceive color, and why do some people experience color blindness?", "domain": "task_question_answering"}
+{"prompt": "Can you break down how photosynthesis works at a chemical level and explain why plants appear green?", "domain": "task_question_answering"}
+{"prompt": "How does a black hole form, and what happens to matter as it crosses the event horizon according to general relativity?", "domain": "task_question_answering"}
+{"prompt": "Explain like I'm five why the moon looks bigger when it's near the horizon.", "domain": "task_question_answering"}
+{"prompt": "What causes tectonic plates to move, and how does plate boundary type determine earthquake versus volcanic activity?", "domain": "task_question_answering"}
+{"prompt": "How does the immune system fight off a common cold?", "domain": "task_question_answering"}
+{"prompt": "Briefly: What is the difference between weather and climate?", "domain": "task_question_answering"}
+{"prompt": "Why did the Byzantine Empire last so much longer than the Western Roman Empire?", "domain": "task_question_answering"}
+{"prompt": "What is inflation targeting?", "domain": "task_question_answering"}
+{"prompt": "Explain the difference between mitosis and meiosis in a way a high schooler could understand.", "domain": "task_question_answering"}
+{"prompt": "What's the trade-off between working remotely and working in an office for productivity?", "domain": "task_question_answering"}
+{"prompt": "Why do leaves change color from green to red and orange in autumn?", "domain": "task_question_answering"}
+{"prompt": "Explain simply: How does the internet route data?", "domain": "task_question_answering"}
+{"prompt": "Explain gravity like I'm five.", "domain": "task_question_answering"}
+{"prompt": "For a beginner: What is compound interest?", "domain": "task_question_answering"}
+{"prompt": "How do I brew a proper cup of pour-over coffee at home?", "domain": "task_question_answering"}
+{"prompt": "Why do some people get seasick or carsick while others don't?", "domain": "task_question_answering"}
+{"prompt": "Describe the process of photosynthesis at the molecular level, including the light-dependent and light-independent reactions.", "domain": "task_question_answering"}
+{"prompt": "For a beginner: How does a refrigerator keep food cold?", "domain": "task_question_answering"}
+{"prompt": "How did the Silk Road facilitate not just trade but also cultural and technological exchange between civilizations?", "domain": "task_question_answering"}
+{"prompt": "Why does my houseplant lean toward the window instead of growing straight up?", "domain": "task_question_answering"}
+{"prompt": "Explain simply: How do vaccines train the immune system?", "domain": "task_question_answering"}
+{"prompt": "Why do we yawn, and why is it contagious?", "domain": "task_question_answering"}
+{"prompt": "I keep hearing about 'inflation' and 'recession' in the news—can you explain what each term means, how they're related, and give a simple real-world example of both?", "domain": "task_question_answering"}
+{"prompt": "What is the difference between Type 1 and Type 2 diabetes in terms of cause, onset, and treatment?", "domain": "task_question_answering"}
+{"prompt": "How do I calculate my basal metabolic rate to understand daily calorie needs?", "domain": "task_question_answering"}
+{"prompt": "Which programming language would you recommend for someone starting out in data science?", "domain": "task_question_answering"}
+{"prompt": "What's the difference between a hurricane category 3 and category 5 in terms of actual damage?", "domain": "task_question_answering"}
+{"prompt": "Explain simply: What is the greenhouse effect?", "domain": "task_question_answering"}
+{"prompt": "Why do cats knead soft surfaces with their paws?", "domain": "task_question_answering"}
+{"prompt": "What was the main cause of World War I?", "domain": "task_question_answering"}
+{"prompt": "For a beginner: Why does bread rise?", "domain": "task_question_answering"}
+{"prompt": "Why do bees make honey?", "domain": "task_question_answering"}
+{"prompt": "What is the process of fermentation and how does it turn grapes into wine?", "domain": "task_question_answering"}
+{"prompt": "Can you explain what artificial intelligence actually is, how it's different from a regular computer program, and why some people are worried about it?", "domain": "task_question_answering"}
+{"prompt": "Should I choose an electric car or a hybrid if I mostly drive in the city?", "domain": "task_question_answering"}
+{"prompt": "What's the difference between a recession and a depression economically?", "domain": "task_question_answering"}
+{"prompt": "Why does a can of soda go flat faster once you've opened it and left it in the fridge overnight?", "domain": "task_question_answering"}
+{"prompt": "How does the internet work?", "domain": "task_question_answering"}
+{"prompt": "What is the difference between a virus and a worm in computer security terms?", "domain": "task_question_answering"}
+{"prompt": "What's the difference between a virus and bacteria?", "domain": "task_question_answering"}
+{"prompt": "What is the Coriolis effect, and why does it make hurricanes spin counterclockwise in the Northern Hemisphere?", "domain": "task_question_answering"}
+{"prompt": "Why do onions make people cry when they're cut?", "domain": "task_question_answering"}
+{"prompt": "How do memory foam mattresses compare to spring mattresses for back support?", "domain": "task_question_answering"}
+{"prompt": "What exactly happens inside a nuclear reactor to produce electricity, and how does that process differ from what happens in a nuclear bomb?", "domain": "task_question_answering"}
+{"prompt": "What is the capital of Australia, and why isn't it Sydney or Melbourne?", "domain": "task_question_answering"}
+{"prompt": "Can you explain like I'm five why the moon changes shape throughout the month, and then give me the more detailed astronomical explanation for how it actually works?", "domain": "task_question_answering"}
+{"prompt": "What's the difference between a virus and a bacteria in terms of how they infect the body?", "domain": "task_question_answering"}
+{"prompt": "What caused the extinction of the dinosaurs, and what evidence do scientists have that points to an asteroid impact as the main cause?", "domain": "task_question_answering"}
+{"prompt": "Why do some people prefer analog watches over digital ones despite digital being more accurate?", "domain": "task_question_answering"}
+{"prompt": "Explain like I'm five how the internet actually works—like what happens when I type a website address and hit enter?", "domain": "task_question_answering"}
+{"prompt": "How does WiFi work?", "domain": "task_question_answering"}
+{"prompt": "Briefly: Why does ice float on water?", "domain": "task_question_answering"}
+{"prompt": "What is the difference between a hurricane, typhoon, and cyclone?", "domain": "task_question_answering"}
+{"prompt": "What's the trade-off between organic farming and conventional farming in terms of yield and environmental cost?", "domain": "task_question_answering"}
+{"prompt": "What is the Doppler effect and where do I hear it in real life?", "domain": "task_question_answering"}
+{"prompt": "Why do we yawn, and why is yawning contagious?", "domain": "task_question_answering"}
+{"prompt": "What is the greenhouse effect?", "domain": "task_question_answering"}
+{"prompt": "What is the difference between Type 1 and Type 2 diabetes in terms of cause, onset, and treatment approach?", "domain": "task_question_answering"}
+{"prompt": "What is the difference between a virus and a bacteria, and why do antibiotics not work on viruses?", "domain": "task_question_answering"}
+{"prompt": "Briefly: What is compound interest?", "domain": "task_question_answering"}
+{"prompt": "Explain like I'm five how airplanes manage to fly despite being so heavy.", "domain": "task_question_answering"}
+{"prompt": "What is the difference between an earthquake's magnitude and its intensity?", "domain": "task_question_answering"}
+{"prompt": "Explain how blood clotting works when you get a small cut.", "domain": "task_question_answering"}
+{"prompt": "Why do some autoimmune diseases like lupus affect women more than men?", "domain": "task_question_answering"}
+{"prompt": "What's the most effective way to get rid of a headache without medication?", "domain": "task_question_answering"}
+{"prompt": "Step by step, how do I set up a new Wi-Fi router at home?", "domain": "task_question_answering"}
+{"prompt": "Explain how the water cycle moves water from oceans to clouds and back to earth.", "domain": "task_question_answering"}
+{"prompt": "How does a compass always know which way is north?", "domain": "task_question_answering"}
+{"prompt": "What's the deal with leap years, why do we need them?", "domain": "task_question_answering"}
+{"prompt": "What is the uncanny valley effect in robotics and animation?", "domain": "task_question_answering"}
+{"prompt": "Why do muscles feel sore a day or two after intense exercise, and what is actually happening inside the muscle fibers during this process?", "domain": "task_question_answering"}
+{"prompt": "Why does the Dead Sea have such high salt content compared to other seas?", "domain": "task_question_answering"}
+{"prompt": "What is the difference between renewable and nonrenewable energy sources?", "domain": "task_question_answering"}
+{"prompt": "How does GPS determine your exact location on Earth?", "domain": "task_question_answering"}
+{"prompt": "What's the healthiest way to cook eggs in the morning?", "domain": "task_question_answering"}
+{"prompt": "How does freezing food compare to canning in terms of nutrient preservation?", "domain": "task_question_answering"}
+{"prompt": "Explain simply: What causes tides?", "domain": "task_question_answering"}
+{"prompt": "Explain in detail how photosynthesis converts sunlight, water, and carbon dioxide into glucose and oxygen.", "domain": "task_question_answering"}
+{"prompt": "What's the difference between a comet and an asteroid?", "domain": "task_question_answering"}
+{"prompt": "Why do some volcanoes erupt explosively while others just ooze lava slowly?", "domain": "task_question_answering"}
+{"prompt": "What causes the phenomenon of 'brain freeze' when you eat something cold too fast?", "domain": "task_question_answering"}
+{"prompt": "How do bees make honey?", "domain": "task_question_answering"}
+{"prompt": "What's the best way to prepare for a job interview?", "domain": "task_question_answering"}
+{"prompt": "Explain the water cycle in detail, including the roles of evaporation, condensation, and precipitation in regulating Earth's climate.", "domain": "task_question_answering"}
+{"prompt": "How do I train a new puppy to respond to basic commands like sit and stay?", "domain": "task_question_answering"}
+{"prompt": "Explain how the stock market determines the price of a share, and what causes prices to fluctuate.", "domain": "task_question_answering"}
+{"prompt": "What's the trade-off between solar power and wind power for a home energy system?", "domain": "task_question_answering"}
+{"prompt": "Why do we get static shocks in winter?", "domain": "task_question_answering"}
+{"prompt": "For a beginner: How do noise-cancelling headphones work?", "domain": "task_question_answering"}
+{"prompt": "How does the human liver detoxify the blood, what specific substances does it filter out, and what happens to a person's health if the liver stops working properly?", "domain": "task_question_answering"}
+{"prompt": "Why do we yawn when we see someone else yawn?", "domain": "task_question_answering"}
+{"prompt": "What causes the aurora borealis, and why is it more visible near the poles?", "domain": "task_question_answering"}
+{"prompt": "Why do muscles get sore a day or two after intense exercise instead of immediately, and what is actually happening inside the muscle tissue?", "domain": "task_question_answering"}
+{"prompt": "Explain how a refrigerator keeps food cold even though it's sitting in a warm kitchen.", "domain": "task_question_answering"}
+{"prompt": "Compare the causes of World War I and World War II in terms of underlying tensions.", "domain": "task_question_answering"}
+{"prompt": "What is the capital of Australia, and why isn't it Sydney?", "domain": "task_question_answering"}
+{"prompt": "Why do we yawn, and is it really contagious?", "domain": "task_question_answering"}
+{"prompt": "Why did the Titanic sink so quickly?", "domain": "task_question_answering"}
+{"prompt": "What's the difference between common law and civil law legal systems?", "domain": "task_question_answering"}
+{"prompt": "Can you recommend a good approach to starting a vegetable garden?", "domain": "task_question_answering"}
+{"prompt": "What's the best way to negotiate a higher salary during a job offer?", "domain": "task_question_answering"}
+{"prompt": "How do noise-cancelling headphones work?", "domain": "task_question_answering"}
+{"prompt": "If I leave a glass of water outside overnight in winter and it freezes solid, why does the ice sometimes crack the glass?", "domain": "task_question_answering"}
+{"prompt": "What caused the 2008 global financial crisis, and how did subprime mortgages play a role?", "domain": "task_question_answering"}
+{"prompt": "Explain simply: Why is the sky blue?", "domain": "task_question_answering"}
+{"prompt": "How do I calculate the area of a triangle if I only know the lengths of its three sides?", "domain": "task_question_answering"}
+{"prompt": "What is the Renaissance and why was it such an important period in history?", "domain": "task_question_answering"}
+{"prompt": "What is photosynthesis?", "domain": "task_question_answering"}
+{"prompt": "If I run a marathon, why do my legs feel sore two days later instead of right away?", "domain": "task_question_answering"}
+{"prompt": "Explain how tides are caused by the moon's gravity.", "domain": "task_question_answering"}
+{"prompt": "What's the difference between the House of Representatives and the Senate in the U.S. Congress?", "domain": "task_question_answering"}
+{"prompt": "What caused World War I to start?", "domain": "task_question_answering"}
+{"prompt": "What is the difference between a republic and a democracy, and why do many countries, including the United States, describe themselves using both terms?", "domain": "task_question_answering"}
+{"prompt": "Why do we dream during sleep, what happens in the brain during REM sleep, and do scientists have any solid theories about the purpose of dreaming?", "domain": "task_question_answering"}
+{"prompt": "Why did the Berlin Wall fall in 1989, and what domestic and international pressures led to its collapse?", "domain": "task_question_answering"}
+{"prompt": "What is the difference between a comet and an asteroid?", "domain": "task_question_answering"}
+{"prompt": "How do earthquakes actually happen underground?", "domain": "task_question_answering"}
+{"prompt": "Define democracy.", "domain": "task_question_answering"}
+{"prompt": "Can you explain how the human eye converts light into the images we perceive, and why some people are colorblind?", "domain": "task_question_answering"}
+{"prompt": "How did the ancient Egyptians build the pyramids without modern machinery, and what theories exist about the techniques and labor force they used?", "domain": "task_question_answering"}
+{"prompt": "How do magnets work?", "domain": "task_question_answering"}
+{"prompt": "What caused the Cuban Missile Crisis, and how close did the world really come to nuclear war in 1962?", "domain": "task_question_answering"}
+{"prompt": "What's the difference between a virus and malware on a computer?", "domain": "task_question_answering"}
+{"prompt": "How does the stock market work?", "domain": "task_question_answering"}
+{"prompt": "In detail, answer: What makes a rainbow appear?", "domain": "task_question_answering"}
+{"prompt": "How do noise-canceling headphones actually cancel noise?", "domain": "task_question_answering"}
+{"prompt": "How does noise-canceling technology in headphones actually block out sound like airplane engine noise?", "domain": "task_question_answering"}
+{"prompt": "How did the fall of Constantinople in 1453 change trade routes between Europe and Asia?", "domain": "task_question_answering"}
+{"prompt": "Compare gas-powered lawn mowers to electric ones in terms of cost and environmental impact.", "domain": "task_question_answering"}
+{"prompt": "Explain like I'm five: why is the sea blue?", "domain": "task_question_answering"}
+{"prompt": "Why do some volcanoes erupt explosively while others produce slow-moving lava flows?", "domain": "task_question_answering"}
+{"prompt": "For a beginner: How do airplanes stay in the air?", "domain": "task_question_answering"}
+{"prompt": "What is inflation and why does it happen?", "domain": "task_question_answering"}
+{"prompt": "What is the history behind the Berlin Wall, why was it built, and what series of events eventually led to its fall in 1989?", "domain": "task_question_answering"}
+{"prompt": "Why do some metals feel colder to the touch than others at the same temperature?", "domain": "task_question_answering"}
+{"prompt": "Why do we experience jet lag when flying across time zones, what is actually happening to our circadian rhythm, and are there scientifically backed ways to reduce its effects?", "domain": "task_question_answering"}
+{"prompt": "Explain how antibiotics kill bacteria, why they don't work on viruses, and why overuse of antibiotics leads to resistant bacterial strains.", "domain": "task_question_answering"}
+{"prompt": "How does a refrigerator keep food cold without a fire or ice inside it?", "domain": "task_question_answering"}
+{"prompt": "How do cloud storage services compare to keeping files on a local hard drive in terms of security?", "domain": "task_question_answering"}
+{"prompt": "What is the Great Barrier Reef and why is it considered important for ocean life?", "domain": "task_question_answering"}
+{"prompt": "Why does the Leaning Tower of Pisa lean, and why hasn't it fallen over yet?", "domain": "task_question_answering"}
+{"prompt": "How does a solar eclipse differ from a lunar eclipse?", "domain": "task_question_answering"}
+{"prompt": "How does a solar panel convert sunlight into electricity?", "domain": "task_question_answering"}
+{"prompt": "How does the immune system distinguish between the body's own cells and foreign pathogens?", "domain": "task_question_answering"}
+{"prompt": "In detail, answer: How do airplanes stay in the air?", "domain": "task_question_answering"}
+{"prompt": "What actually causes hiccups and how do you stop them?", "domain": "task_question_answering"}
+{"prompt": "Describe the geological processes that formed the Himalayan mountain range and why it continues to grow today.", "domain": "task_question_answering"}
+{"prompt": "Explain how GPS satellites calculate a device's precise location using trilateration and atomic clocks.", "domain": "task_question_answering"}
+{"prompt": "Why do leaves change color in autumn, and what chemical processes inside the leaf cause the shift from green to red, orange, and yellow?", "domain": "task_question_answering"}
+{"prompt": "Can you explain what machine learning is, how it's related to artificial intelligence, and give a simple everyday example of it in action?", "domain": "task_question_answering"}
+{"prompt": "Why do some countries drive on the left side of the road while others drive on the right?", "domain": "task_question_answering"}
+{"prompt": "What is the difference between a hurricane, a typhoon, and a cyclone?", "domain": "task_question_answering"}
+{"prompt": "What's the difference between a recession and a depression in economics?", "domain": "task_question_answering"}
+{"prompt": "How do solar panels work?", "domain": "task_question_answering"}
+{"prompt": "What's a good way to fall asleep faster at night?", "domain": "task_question_answering"}
+{"prompt": "What is the process by which volcanoes form?", "domain": "task_question_answering"}
+{"prompt": "How do vaccines get made in the first place?", "domain": "task_question_answering"}
+{"prompt": "Explain like I'm five why the sky turns orange during a sunset.", "domain": "task_question_answering"}
+{"prompt": "What is the mechanism behind autoimmune diseases like rheumatoid arthritis, where the immune system attacks the body's own tissue?", "domain": "task_question_answering"}
+{"prompt": "Explain like I'm five how the internet works.", "domain": "task_question_answering"}
+{"prompt": "Can you explain what DNA is like I'm five years old?", "domain": "task_question_answering"}
+{"prompt": "What caused the collapse of the Bronze Age civilizations around 1200 BCE?", "domain": "task_question_answering"}
+{"prompt": "What were the main causes of World War I, and how did a single assassination lead to a war involving so many countries?", "domain": "task_question_answering"}
+{"prompt": "What is the difference between a meteor, meteorite, and meteoroid?", "domain": "task_question_answering"}
+{"prompt": "What is the difference between weather and climate, and how do scientists use historical data to detect long-term climate change?", "domain": "task_question_answering"}
+{"prompt": "What's the difference between a hurricane, a typhoon, and a cyclone?", "domain": "task_question_answering"}
+{"prompt": "What is umami, and why is it considered a basic taste?", "domain": "task_question_answering"}
+{"prompt": "Explain like I'm five why the moon looks different shapes throughout the month.", "domain": "task_question_answering"}
+{"prompt": "Walk me through the steps of the scientific method.", "domain": "task_question_answering"}
+{"prompt": "Briefly: Why do stars twinkle?", "domain": "task_question_answering"}
+{"prompt": "How did the Great Wall of China get built?", "domain": "task_question_answering"}
+{"prompt": "What is quorum sensing in bacteria, and why does it matter for infections?", "domain": "task_question_answering"}
+{"prompt": "What are the steps to safely jump-start a car battery?", "domain": "task_question_answering"}
+{"prompt": "Explain like I'm five: how does an airplane stay up in the sky?", "domain": "task_question_answering"}
+{"prompt": "Which is better for beginners, yoga or pilates, if I want to improve flexibility?", "domain": "task_question_answering"}
+{"prompt": "What caused World War I, and how did a single assassination lead to a conflict involving so many countries?", "domain": "task_question_answering"}
+{"prompt": "What is CRISPR-Cas9 gene editing, and how does it actually locate and cut specific DNA sequences?", "domain": "task_question_answering"}
+{"prompt": "How does keto compare to a low-fat diet for losing weight sustainably?", "domain": "task_question_answering"}
+{"prompt": "How did the fall of the Berlin Wall in 1989 change the political map of Europe?", "domain": "task_question_answering"}
+{"prompt": "How does a solar panel convert sunlight into usable electricity?", "domain": "task_question_answering"}
+{"prompt": "In detail, answer: Why does ice float on water?", "domain": "task_question_answering"}
+{"prompt": "How do noise-canceling headphones work, and why don't they block out every type of sound equally well?", "domain": "task_question_answering"}
+{"prompt": "What's the best type of houseplant for someone who forgets to water often?", "domain": "task_question_answering"}
+{"prompt": "My phone battery says '87% health' in the settings menu — what does battery health actually measure?", "domain": "task_question_answering"}
+{"prompt": "Why do we yawn, and is it really true that yawning is contagious because of empathy?", "domain": "task_question_answering"}
+{"prompt": "Explain how the human heart pumps blood through the body.", "domain": "task_question_answering"}
+{"prompt": "Can you explain what causes earthquakes, how scientists measure their magnitude, and why some regions are more prone to them than others?", "domain": "task_question_answering"}
+{"prompt": "What is the difference between weather and climate, and why can a cold winter still happen during global warming?", "domain": "task_question_answering"}
+{"prompt": "How do I properly stretch before running to avoid injury?", "domain": "task_question_answering"}
+{"prompt": "Why does the Moon always show the same face to Earth?", "domain": "task_question_answering"}
+{"prompt": "Explain the process of photosynthesis at the molecular level, including the role of chlorophyll and the light and dark reactions.", "domain": "task_question_answering"}
+{"prompt": "How do antibiotics work at a molecular level to kill or inhibit bacteria, and why is antibiotic resistance a growing problem?", "domain": "task_question_answering"}
+{"prompt": "Why did the Ottoman Empire decline over the 19th and early 20th centuries, and what internal and external factors accelerated its collapse?", "domain": "task_question_answering"}
+{"prompt": "How does a parliamentary system of government differ from a presidential system?", "domain": "task_question_answering"}
+{"prompt": "Why do leaves change color in the fall?", "domain": "task_question_answering"}
+{"prompt": "Why do some languages have grammatical gender while others don't?", "domain": "task_question_answering"}
+{"prompt": "Explain step by step how bread rises when baking.", "domain": "task_question_answering"}
+{"prompt": "Explain like I'm five why we see lightning before we hear thunder.", "domain": "task_question_answering"}
+{"prompt": "In detail, answer: Why do we get jet lag?", "domain": "task_question_answering"}
+{"prompt": "For a beginner: Why do onions make you cry?", "domain": "task_question_answering"}
+{"prompt": "Explain like I'm five why the sky turns red or orange at sunset.", "domain": "task_question_answering"}
+{"prompt": "What caused the Cuban Missile Crisis, and how close did the world actually come to nuclear war during those thirteen days?", "domain": "task_question_answering"}
+{"prompt": "Why do my hands get wrinkly after soaking in a bathtub for a long time?", "domain": "task_question_answering"}
+{"prompt": "What's the difference between an accountant and a bookkeeper?", "domain": "task_question_answering"}
+{"prompt": "Explain simply: What is the difference between weather and climate?", "domain": "task_question_answering"}
+{"prompt": "What causes 'brain freeze' when you eat ice cream too fast?", "domain": "task_question_answering"}
+{"prompt": "What causes hiccups and why are they so hard to stop?", "domain": "task_question_answering"}
+{"prompt": "How does sonar work underwater and why do submarines use it?", "domain": "task_question_answering"}
+{"prompt": "What is CRISPR gene editing, and how does it let scientists snip specific pieces of DNA?", "domain": "task_question_answering"}
+{"prompt": "Explain like I'm five: why does the moon change shape in the sky?", "domain": "task_question_answering"}
+{"prompt": "What causes jet lag?", "domain": "task_question_answering"}
+{"prompt": "In detail, answer: What is the difference between weather and climate?", "domain": "task_question_answering"}
+{"prompt": "Explain like I'm five why the sky is blue during the day but turns orange and red at sunset.", "domain": "task_question_answering"}
+{"prompt": "What's the difference between weather and climate?", "domain": "task_question_answering"}
+{"prompt": "What are the steps involved in photosynthesis, from sunlight to sugar production?", "domain": "task_question_answering"}
+{"prompt": "How does the internet route data?", "domain": "task_question_answering"}
+{"prompt": "Explain like I'm five: how do clouds hold water without falling?", "domain": "task_question_answering"}
+{"prompt": "What is the Mpemba effect, and why does hot water sometimes freeze faster than cold?", "domain": "task_question_answering"}
+{"prompt": "Explain simply: How do noise-cancelling headphones work?", "domain": "task_question_answering"}
+{"prompt": "Explain like I'm five what black holes are and why nothing, not even light, can escape from them.", "domain": "task_question_answering"}
+{"prompt": "How does a nuclear reactor generate electricity, and what makes nuclear power different from a nuclear bomb?", "domain": "task_question_answering"}
+{"prompt": "What is the difference between a republic and a democracy?", "domain": "task_question_answering"}
+{"prompt": "What is the difference between Type 1 and Type 2 diabetes, and why do they require different approaches to treatment and management?", "domain": "task_question_answering"}
+{"prompt": "What is cholesterol, and why do doctors say too much is bad?", "domain": "task_question_answering"}
+{"prompt": "Should I get a standing desk if I sit for long hours at work?", "domain": "task_question_answering"}
+{"prompt": "Why do we dream, and is there any actual scientific consensus on what purpose dreaming serves for the brain?", "domain": "task_question_answering"}
+{"prompt": "What is the water cycle, and how does rain form?", "domain": "task_question_answering"}
+{"prompt": "How does deep learning differ from traditional machine learning algorithms in terms of feature extraction and model architecture?", "domain": "task_question_answering"}
+{"prompt": "How does a nuclear power plant generate electricity, and what safety systems are in place to prevent a meltdown like the ones at Chernobyl or Fukushima?", "domain": "task_question_answering"}
+{"prompt": "Why is Pluto not a planet?", "domain": "task_question_answering"}
+{"prompt": "How does the Federal Reserve's control of interest rates influence inflation and unemployment in the broader economy?", "domain": "task_question_answering"}
+{"prompt": "What's a smart way to childproof a house for a toddler?", "domain": "task_question_answering"}
+{"prompt": "What is the placebo effect, and why did patients in drug trials sometimes improve after taking a sugar pill?", "domain": "task_question_answering"}
+{"prompt": "What is dark matter, why do scientists believe it exists even though it can't be directly observed, and how does it affect the movement of galaxies?", "domain": "task_question_answering"}
+{"prompt": "Why is the ocean salty?", "domain": "task_question_answering"}
+{"prompt": "How do I perform CPR on an adult in an emergency?", "domain": "task_question_answering"}
+{"prompt": "What was the Little Ice Age, and how did it affect European history?", "domain": "task_question_answering"}
+{"prompt": "Explain step by step how a lightning bolt forms during a thunderstorm.", "domain": "task_question_answering"}
+{"prompt": "How do introverts and extroverts differ neurologically in how they process social interaction?", "domain": "task_question_answering"}
+{"prompt": "What caused the 2008 global financial crisis, in simple terms?", "domain": "task_question_answering"}
+{"prompt": "What is dark matter, and why do scientists believe it exists?", "domain": "task_question_answering"}
+{"prompt": "What is the difference between a black hole and a neutron star in terms of formation and physical properties?", "domain": "task_question_answering"}
+{"prompt": "What is inflation, and why do prices go up over time?", "domain": "task_question_answering"}
+{"prompt": "What causes the northern lights, why do they only appear near the poles, and why do their colors vary?", "domain": "task_question_answering"}
+{"prompt": "For a beginner: How does a microwave heat food?", "domain": "task_question_answering"}
+{"prompt": "What's the difference between a crocodile bite and a shark bite in terms of danger?", "domain": "task_question_answering"}
+{"prompt": "Can you explain like I'm five why the sky turns red at sunset?", "domain": "task_question_answering"}
+{"prompt": "What happened at the Boston Tea Party and why did it matter?", "domain": "task_question_answering"}
+{"prompt": "Explain like I'm five: what is gravity?", "domain": "task_question_answering"}
+{"prompt": "Walk me through how to change a flat tire on a car.", "domain": "task_question_answering"}
+{"prompt": "Why do earthquakes happen more frequently along the Pacific Ring of Fire?", "domain": "task_question_answering"}
+{"prompt": "Compare the pros and cons of remote work versus working in an office.", "domain": "task_question_answering"}
+{"prompt": "What's the recommended amount of water someone should drink daily?", "domain": "task_question_answering"}
+{"prompt": "What is the difference between weather and climate, and how do scientists model long-term climate change?", "domain": "task_question_answering"}
+{"prompt": "How do SSDs compare to traditional hard drives in speed, cost, and durability?", "domain": "task_question_answering"}
+{"prompt": "How does the internet actually work when I open a website on my phone?", "domain": "task_question_answering"}
+{"prompt": "What is the Renaissance, when did it happen, and why is it considered such an important turning point in history?", "domain": "task_question_answering"}
+{"prompt": "Walk me through how a bill becomes a law in the United States.", "domain": "task_question_answering"}
+{"prompt": "How did the Great Depression of the 1930s spread from the US to affect economies worldwide?", "domain": "task_question_answering"}
+{"prompt": "How does a refrigerator keep food cold without a fire or ice involved?", "domain": "task_question_answering"}
+{"prompt": "How do vaccines help protect us from getting sick?", "domain": "task_question_answering"}
+{"prompt": "How do black holes form in space?", "domain": "task_question_answering"}
+{"prompt": "Why does the Coriolis effect influence the rotation direction of hurricanes in the Northern versus Southern Hemisphere?", "domain": "task_question_answering"}
+{"prompt": "Can you explain the historical origins of democracy in ancient Greece and how it differs from the democratic systems we have today?", "domain": "task_question_answering"}
+{"prompt": "What caused the extinction of the dodo bird on the island of Mauritius?", "domain": "task_question_answering"}
+{"prompt": "Explain simply: Why do we get jet lag?", "domain": "task_question_answering"}
+{"prompt": "Why does the Leaning Tower of Pisa lean, and why hasn't it fallen over?", "domain": "task_question_answering"}
+{"prompt": "Explain how solar panels convert sunlight into electricity.", "domain": "task_question_answering"}
+{"prompt": "What causes hiccups?", "domain": "task_question_answering"}
+{"prompt": "What is the difference between the stock market and the economy?", "domain": "task_question_answering"}
+{"prompt": "What are the trade-offs between renting an apartment versus buying a house financially over ten years?", "domain": "task_question_answering"}
+{"prompt": "What is the difference between a virus and a bacterium?", "domain": "task_question_answering"}
+{"prompt": "Explain like I'm five why the sky turns orange and pink during sunset instead of staying blue.", "domain": "task_question_answering"}
+{"prompt": "How do airplanes fly?", "domain": "task_question_answering"}
+{"prompt": "What is the boiling point of water at high altitude, and why does it change?", "domain": "task_question_answering"}
+{"prompt": "How do noise-canceling headphones actually block out sound like airplane engine noise?", "domain": "task_question_answering"}
+{"prompt": "Explain the process of nuclear fission in a power plant reactor, from fuel to electricity generation.", "domain": "task_question_answering"}
+{"prompt": "Can you explain how airplanes generate enough lift to fly, and why they don't just fall out of the sky despite being so heavy?", "domain": "task_question_answering"}
+{"prompt": "Briefly: How does the internet route data?", "domain": "task_question_answering"}
+{"prompt": "What is an algorithm?", "domain": "task_question_answering"}
+{"prompt": "Why do cats purr?", "domain": "task_question_answering"}
+{"prompt": "Explain like I'm five why we have different time zones around the world.", "domain": "task_question_answering"}
+{"prompt": "Explain like I'm five why the sky changes color at sunset.", "domain": "task_question_answering"}
+{"prompt": "Why do we get jet lag?", "domain": "task_question_answering"}
+{"prompt": "How did the Rosetta Stone help decipher Egyptian hieroglyphs?", "domain": "task_question_answering"}
+{"prompt": "How did ancient Egyptians build the pyramids without modern machinery, and what theories exist about the techniques they used?", "domain": "task_question_answering"}
+{"prompt": "Why do some countries drive on the left while others drive on the right, and what determined the split?", "domain": "task_question_answering"}
+{"prompt": "What are the steps to properly wash your hands to prevent illness?", "domain": "task_question_answering"}
+{"prompt": "What's the difference between weather forecasting models and climate models?", "domain": "task_question_answering"}
+{"prompt": "What is quantum entanglement, explained simply?", "domain": "task_question_answering"}
+{"prompt": "Can you explain how airplanes generate lift and stay in the air despite weighing so much?", "domain": "task_question_answering"}
+{"prompt": "How do viruses and bacteria differ in structure, and why do antibiotics work on one but not the other?", "domain": "task_question_answering"}
+{"prompt": "How did Alexander the Great manage to conquer such a vast empire by age 30?", "domain": "task_question_answering"}
+{"prompt": "Explain simply: Why do onions make you cry?", "domain": "task_question_answering"}
+{"prompt": "What is the difference between a virus and a bacteria?", "domain": "task_question_answering"}
+{"prompt": "What was the Cold War and why did it never turn into a real war?", "domain": "task_question_answering"}
+{"prompt": "Describe in detail how mRNA vaccines train the immune system to recognize a pathogen.", "domain": "task_question_answering"}
+{"prompt": "What is quantum entanglement, and can you explain it in simple terms before giving a more technical explanation of how it's used in quantum computing?", "domain": "task_question_answering"}
+{"prompt": "What is climate change?", "domain": "task_question_answering"}
+{"prompt": "What is the placebo effect?", "domain": "task_question_answering"}
+{"prompt": "How do vaccines actually train the immune system to fight off diseases, and why do some vaccines require multiple doses while others only need one?", "domain": "task_question_answering"}
+{"prompt": "What is cholesterol, and why do doctors say some kinds are bad for us?", "domain": "task_question_answering"}
+{"prompt": "For a beginner: Why does ice float on water?", "domain": "task_question_answering"}
+{"prompt": "What's the best way to prepare for a job interview in a competitive field?", "domain": "task_question_answering"}
+{"prompt": "Step by step, how do I create a budget for my monthly expenses?", "domain": "task_question_answering"}
+{"prompt": "Why is the sky blue during the day but red or orange at sunset?", "domain": "task_question_answering"}
+{"prompt": "Explain like I'm five what happens inside a volcano before it erupts.", "domain": "task_question_answering"}
+{"prompt": "Why does coffee make you feel more awake?", "domain": "task_question_answering"}
+{"prompt": "How do antibiotics know which bacteria to target, and why has antibiotic resistance become such a serious global health concern?", "domain": "task_question_answering"}
+{"prompt": "How do I set up a basic budget to track monthly expenses?", "domain": "task_question_answering"}
+{"prompt": "Explain how GPS satellites determine your exact location on a map.", "domain": "task_question_answering"}
+{"prompt": "What historical events led to the partition of India and Pakistan in 1947?", "domain": "task_question_answering"}
+{"prompt": "Would you recommend meditation apps or in-person classes for reducing stress?", "domain": "task_question_answering"}
+{"prompt": "How does the stock market actually work, what determines whether a stock's price goes up or down, and why can prices change so quickly?", "domain": "task_question_answering"}
+{"prompt": "For a beginner: What causes the seasons?", "domain": "task_question_answering"}
+{"prompt": "What's the best way to soothe a sore throat at home?", "domain": "task_question_answering"}
+{"prompt": "In detail, answer: How does the internet route data?", "domain": "task_question_answering"}
+{"prompt": "How do I properly plant a vegetable garden bed for the first time?", "domain": "task_question_answering"}
+{"prompt": "How do our ears help us keep balance, not just hear?", "domain": "task_question_answering"}
+{"prompt": "Compare solar eclipses and lunar eclipses in terms of how often they occur and why.", "domain": "task_question_answering"}
+{"prompt": "How does encryption like RSA actually work to keep online communications secure?", "domain": "task_question_answering"}
+{"prompt": "What is the function of mitochondria in a human cell, and why are they called the 'powerhouse'?", "domain": "task_question_answering"}
+{"prompt": "Define inflation rate.", "domain": "task_question_answering"}
+{"prompt": "Can you explain the causes and major events of the French Revolution, and why it had such a lasting impact on modern politics?", "domain": "task_question_answering"}
+{"prompt": "What is the difference between AI and machine learning?", "domain": "task_question_answering"}
+{"prompt": "What's the difference between Wi-Fi and Bluetooth?", "domain": "task_question_answering"}
+{"prompt": "Why do flamingos stand on one leg?", "domain": "task_question_answering"}
+{"prompt": "How does the human digestive system break down food?", "domain": "task_question_answering"}
+{"prompt": "What's the trade-off between using cash versus credit cards for everyday purchases?", "domain": "task_question_answering"}
+{"prompt": "How did the Rosetta Stone help scholars decode Egyptian hieroglyphics?", "domain": "task_question_answering"}
+{"prompt": "What is CRISPR gene editing, and how does it work in simple terms?", "domain": "task_question_answering"}
+{"prompt": "Explain like I'm five what black holes are, how they form, and why nothing can escape once it crosses the event horizon.", "domain": "task_question_answering"}
+{"prompt": "Why does bread get moldy faster than crackers?", "domain": "task_question_answering"}
+{"prompt": "What is the difference between a bacteria and a virus in terms of structure, reproduction, and how our bodies fight them off?", "domain": "task_question_answering"}
+{"prompt": "Explain like I'm five why the sky is blue during the day but turns red or orange at sunset.", "domain": "task_question_answering"}
+{"prompt": "Explain how cryptocurrencies like Bitcoin work, including what mining is and why some people call it bad for the environment.", "domain": "task_question_answering"}
+{"prompt": "What's the difference between DNA and RNA?", "domain": "task_question_answering"}
+{"prompt": "How did the Berlin Wall's construction in 1961 reshape daily life for families in Germany?", "domain": "task_question_answering"}
+{"prompt": "Compare the effectiveness of physical exercise versus dieting alone for weight loss.", "domain": "task_question_answering"}
+{"prompt": "How does the human liver metabolize alcohol, and why do some people experience a facial flush after drinking?", "domain": "task_question_answering"}
+{"prompt": "What actually causes hiccups and why do they stop on their own?", "domain": "task_question_answering"}
+{"prompt": "How does anesthesia actually make you unconscious and prevent you from feeling pain during surgery?", "domain": "task_question_answering"}
+{"prompt": "What led to the collapse of the Soviet Union, and how did that reshape the political map of Eastern Europe?", "domain": "task_question_answering"}
+{"prompt": "What caused the Great Depression, and how did government responses in different countries vary?", "domain": "task_question_answering"}
+{"prompt": "What caused the 2008 global financial crisis, and how did mortgage-backed securities contribute to the collapse?", "domain": "task_question_answering"}
+{"prompt": "What makes a rainbow appear?", "domain": "task_question_answering"}
+{"prompt": "Walk me through the steps of how vaccines train the immune system to fight viruses.", "domain": "task_question_answering"}
+{"prompt": "Why do my ears feel like they need to 'pop' when a plane is taking off or landing?", "domain": "task_question_answering"}
+{"prompt": "What caused the Cuban Missile Crisis, and how was it ultimately resolved diplomatically?", "domain": "task_question_answering"}
+{"prompt": "How do electric cars compare to gasoline cars in terms of long-term environmental impact?", "domain": "task_question_answering"}
+{"prompt": "Explain how a lithium-ion battery stores and releases energy, and why they can degrade or catch fire over time.", "domain": "task_question_answering"}
+{"prompt": "Why do some people get seasonal allergies while others never seem to be affected by pollen at all?", "domain": "task_question_answering"}
+{"prompt": "How did the fall of the Roman Empire happen, and what were the main political and economic factors that contributed to it?", "domain": "task_question_answering"}
+{"prompt": "What causes the 'stitch' or sharp pain in your side when you run after eating?", "domain": "task_question_answering"}
+{"prompt": "Why is the Dead Sea so much saltier than regular seawater?", "domain": "task_question_answering"}
+{"prompt": "Explain simply: What makes a rainbow appear?", "domain": "task_question_answering"}
+{"prompt": "For a beginner: Why do we get jet lag?", "domain": "task_question_answering"}
+{"prompt": "What are the geopolitical consequences of the 1947 partition of India and Pakistan that still affect the region today?", "domain": "task_question_answering"}
+{"prompt": "Why does drinking coffee make some people jittery while others feel nothing?", "domain": "task_question_answering"}
+{"prompt": "How do vaccines actually teach your body to fight diseases?", "domain": "task_question_answering"}
+{"prompt": "How did ancient Egyptians build the pyramids without modern machinery, and what theories exist about their construction methods?", "domain": "task_question_answering"}
+{"prompt": "How do volcanoes decide when to erupt?", "domain": "task_question_answering"}
+{"prompt": "How does the internet actually work behind the scenes?", "domain": "task_question_answering"}
+{"prompt": "How does the process of photosynthesis actually work in plants?", "domain": "task_question_answering"}
+{"prompt": "Explain like I'm five how a rainbow is formed after it rains.", "domain": "task_question_answering"}
+{"prompt": "What's the difference between a virus and a bacteria in terms of how they make you sick?", "domain": "task_question_answering"}
+{"prompt": "Can you recommend a good method for learning a new language quickly?", "domain": "task_question_answering"}
+{"prompt": "What is the Great Wall of China and why was it originally built?", "domain": "task_question_answering"}
+{"prompt": "Explain how GPS satellites use relativity corrections to maintain accurate positioning on Earth.", "domain": "task_question_answering"}
+{"prompt": "Why do leaves change color in autumn?", "domain": "task_question_answering"}
+{"prompt": "Explain how public-key cryptography ensures secure communication over the internet, including the math behind RSA encryption.", "domain": "task_question_answering"}
+{"prompt": "Can you explain what causes the northern lights, why they only appear near the poles, and whether other planets in our solar system have similar phenomena?", "domain": "task_question_answering"}
+{"prompt": "Briefly: Why is the sky blue?", "domain": "task_question_answering"}
+{"prompt": "Explain how airplanes manage to stay up in the air.", "domain": "task_question_answering"}
+{"prompt": "How do solar panels generate electricity?", "domain": "task_question_answering"}
+{"prompt": "Briefly: Why do we get jet lag?", "domain": "task_question_answering"}
+{"prompt": "Explain in detail the biochemical mechanism by which statins lower LDL cholesterol and why they can cause muscle pain in some patients.", "domain": "task_question_answering"}
+{"prompt": "What's the difference between a virus and malware on a computer, and how do you protect against each?", "domain": "task_question_answering"}
+{"prompt": "What caused the fall of the Roman Empire, and how did political, economic, and military factors each contribute to its collapse over time?", "domain": "task_question_answering"}
+{"prompt": "How does sound travel differently through air, water, and solid materials, and why does it travel faster in some mediums than others?", "domain": "task_question_answering"}
+{"prompt": "How does blockchain technology achieve consensus without a central authority, and what are the trade-offs of different consensus mechanisms?", "domain": "task_question_answering"}
+{"prompt": "How does the heart pump blood?", "domain": "task_question_answering"}
+{"prompt": "What causes lightning?", "domain": "task_question_answering"}
+{"prompt": "What is the difference between a republic and a democracy, and can a country be both at the same time?", "domain": "task_question_answering"}
+{"prompt": "Explain in detail the causes and consequences of the 2008 global financial crisis.", "domain": "task_question_answering"}
+{"prompt": "What causes the seasons?", "domain": "task_question_answering"}
+{"prompt": "What is the difference between a virus and malware on a computer?", "domain": "task_question_answering"}
+{"prompt": "How does GPS know exactly where you are?", "domain": "task_question_answering"}
+{"prompt": "My phone battery drops from 100% to 20% overnight even when I'm not using it—why does that happen?", "domain": "task_question_answering"}
+{"prompt": "Explain like I'm five why we get hiccups and why holding your breath sometimes stops them.", "domain": "task_question_answering"}
+{"prompt": "Explain like I'm five how airplanes manage to stay up in the air.", "domain": "task_question_answering"}
+{"prompt": "Why does a straw appear bent when you put it in a glass of water?", "domain": "task_question_answering"}
+{"prompt": "How does the human immune system fight off a viral infection?", "domain": "task_question_answering"}
+{"prompt": "Why do cats purr, and does it always mean they're happy?", "domain": "task_question_answering"}
+{"prompt": "Why do some volcanic eruptions produce ash clouds while others produce flowing lava with little explosive activity?", "domain": "task_question_answering"}
+{"prompt": "Why does the sky turn orange and pink during sunset?", "domain": "task_question_answering"}
+{"prompt": "What is compound interest, and why is it important for savings?", "domain": "task_question_answering"}
+{"prompt": "How does blockchain technology achieve consensus without a central authority, and what are the trade-offs between proof-of-work and proof-of-stake?", "domain": "task_question_answering"}
+{"prompt": "What causes jet lag and why does it feel so bad?", "domain": "task_question_answering"}
+{"prompt": "What geological forces created the Grand Canyon over millions of years?", "domain": "task_question_answering"}
+{"prompt": "Explain what tinnitus is and why it happens.", "domain": "task_question_answering"}
+{"prompt": "Why do dogs wag their tails?", "domain": "task_question_answering"}
+{"prompt": "What is blockchain technology, explained simply using a shared notebook as an analogy?", "domain": "task_question_answering"}
+{"prompt": "Why do some people get motion sickness, and what is actually happening inside the inner ear during that time?", "domain": "task_question_answering"}
+{"prompt": "How did ancient Egyptians build the pyramids without modern machinery?", "domain": "task_question_answering"}
+{"prompt": "How does a lithium-ion battery actually store and release energy?", "domain": "task_question_answering"}
+{"prompt": "What's the difference between a stock and a bond as investment options?", "domain": "task_question_answering"}
+{"prompt": "Why did the Roman Empire split into Eastern and Western halves?", "domain": "task_question_answering"}
+{"prompt": "Explain how the human immune system tells the difference between healthy cells and harmful invaders.", "domain": "task_question_answering"}
+{"prompt": "Explain like I'm five: why does bread rise when you add yeast?", "domain": "task_question_answering"}
+{"prompt": "Why do onions make you cry when you're cutting them on a cutting board?", "domain": "task_question_answering"}
+{"prompt": "How does deep sleep differ from REM sleep in terms of brain activity and physiological function?", "domain": "task_question_answering"}
+{"prompt": "Compare cremation and burial in terms of environmental impact and cost.", "domain": "task_question_answering"}
+{"prompt": "Why do some people become lactose intolerant as adults even though they could drink milk fine as children, and what happens biologically when they consume dairy?", "domain": "task_question_answering"}
+{"prompt": "Can you explain what blockchain actually is in simple terms?", "domain": "task_question_answering"}
+{"prompt": "What was the significance of the Treaty of Westphalia signed in 1648?", "domain": "task_question_answering"}
+{"prompt": "What causes tectonic plates to move, and how does plate movement lead to mountain formation?", "domain": "task_question_answering"}
+{"prompt": "In detail, answer: Why is the sky blue?", "domain": "task_question_answering"}
+{"prompt": "My smartphone battery says it charges to 100% in under two hours—what's the science behind fast charging?", "domain": "task_question_answering"}
+{"prompt": "Can you explain what blockchain is in simple terms?", "domain": "task_question_answering"}
+{"prompt": "What's the difference between a stalactite and a stalagmite in caves?", "domain": "task_question_answering"}
+{"prompt": "What's the best method for defrosting meat safely?", "domain": "task_question_answering"}
+{"prompt": "How does the human digestive system break down food, and what role do enzymes play at each stage?", "domain": "task_question_answering"}
+{"prompt": "What is the difference between machine learning, deep learning, and artificial intelligence as terms are commonly used?", "domain": "task_question_answering"}
+{"prompt": "Describe the process of plate tectonics and how it explains the distribution of earthquakes and volcanoes around the world.", "domain": "task_question_answering"}
+{"prompt": "What is the gold standard?", "domain": "task_question_answering"}
+{"prompt": "Explain like I'm five what causes earthquakes, and then describe in more detail how tectonic plate movement builds up the pressure that gets released.", "domain": "task_question_answering"}
+{"prompt": "What is inflation, and why do prices keep going up over time?", "domain": "task_question_answering"}
+{"prompt": "What caused the Chernobyl nuclear disaster, and what were its long-term effects?", "domain": "task_question_answering"}
+{"prompt": "How does a nuclear power plant compare to a coal power plant in terms of safety and efficiency?", "domain": "task_question_answering"}
+{"prompt": "Why does ice float on water instead of sinking, and how is this unusual compared to most other substances?", "domain": "task_question_answering"}
+{"prompt": "What causes the phenomenon of 'brain freeze' when eating something cold?", "domain": "task_question_answering"}
+{"prompt": "Why do we get brain freeze from eating ice cream too fast?", "domain": "task_question_answering"}
+{"prompt": "How do rainbows form after it rains?", "domain": "task_question_answering"}
+{"prompt": "What is the difference between a fjord and a bay?", "domain": "task_question_answering"}
+{"prompt": "What are the steps involved in photosynthesis?", "domain": "task_question_answering"}
+{"prompt": "What is the difference between a virus and a bacterium in terms of structure, reproduction, and how they're treated medically?", "domain": "task_question_answering"}
+{"prompt": "How do 4K and 1080p resolutions compare in terms of visual quality and file size?", "domain": "task_question_answering"}
+{"prompt": "What was the economic impact of the Black Death on medieval European society?", "domain": "task_question_answering"}
+{"prompt": "How does anesthesia work during surgery?", "domain": "task_question_answering"}
+{"prompt": "How do noise-canceling headphones actually cancel sound?", "domain": "task_question_answering"}
+{"prompt": "What's the actual difference between a hurricane and a typhoon?", "domain": "task_question_answering"}
+{"prompt": "What's the difference between a crocodile and an alligator?", "domain": "task_question_answering"}
+{"prompt": "Explain simply: Why does bread rise?", "domain": "task_question_answering"}
+{"prompt": "Why do stars twinkle?", "domain": "task_question_answering"}
+{"prompt": "Why does bread rise when yeast is added to dough?", "domain": "task_question_answering"}
+{"prompt": "How do gas stoves compare to induction stoves in terms of cooking speed and safety?", "domain": "task_question_answering"}
+{"prompt": "What are the main differences between a republic and a democracy?", "domain": "task_question_answering"}
+{"prompt": "Why does chocolate melt in your hand but not in the fridge?", "domain": "task_question_answering"}
+{"prompt": "What is the function of the human liver, and what happens to the body when the liver stops working properly?", "domain": "task_question_answering"}
+{"prompt": "How does a microwave oven heat up food like a bowl of leftover soup so quickly?", "domain": "task_question_answering"}
+{"prompt": "What is a virus?", "domain": "task_question_answering"}
+{"prompt": "Why does ice float on water?", "domain": "task_question_answering"}
+{"prompt": "How does 4G compare to 5G in terms of speed, range, and battery consumption on phones?", "domain": "task_question_answering"}
+{"prompt": "Why did the Great Depression happen, and what specific economic policies and events led to the stock market crash of 1929?", "domain": "task_question_answering"}
+{"prompt": "What is the placebo effect and why does it work?", "domain": "task_question_answering"}
+{"prompt": "Why do some countries drive on the left side of the road?", "domain": "task_question_answering"}
+{"prompt": "What is the point of the United Nations?", "domain": "task_question_answering"}
+{"prompt": "What's the difference between a republic and a democracy, and can a country be both?", "domain": "task_question_answering"}
+{"prompt": "How does a democracy differ from a republic in terms of governance structure?", "domain": "task_question_answering"}
+{"prompt": "What caused the fall of the Roman Empire?", "domain": "task_question_answering"}
+{"prompt": "How do coral reefs form, and why are they considered such biodiversity hotspots?", "domain": "task_question_answering"}
+{"prompt": "What was the significance of the Rosetta Stone in deciphering ancient Egyptian hieroglyphics?", "domain": "task_question_answering"}
+{"prompt": "Why do we dream, what happens in the brain during REM sleep, and is there any proven purpose behind dreaming?", "domain": "task_question_answering"}
+{"prompt": "Explain like I'm five why the sky is blue.", "domain": "task_question_answering"}
+{"prompt": "How do I start composting kitchen scraps without attracting pests?", "domain": "task_question_answering"}
+{"prompt": "How do our lungs extract oxygen from the air we breathe?", "domain": "task_question_answering"}
+{"prompt": "Why is the ocean salty but most lakes and rivers are not?", "domain": "task_question_answering"}
+{"prompt": "What is compound interest?", "domain": "task_question_answering"}
+{"prompt": "Explain how neural networks in machine learning learn from data through backpropagation.", "domain": "task_question_answering"}
+{"prompt": "How does blockchain technology ensure that transaction records cannot be altered retroactively?", "domain": "task_question_answering"}
+{"prompt": "Can you explain how muscles grow when we exercise, and why rest days are just as important as workouts?", "domain": "task_question_answering"}
+{"prompt": "If my smartwatch tracks 'REM sleep' versus 'deep sleep,' what's the biological difference between those stages?", "domain": "task_question_answering"}
+{"prompt": "Explain like I'm five how airplanes manage to stay in the air.", "domain": "task_question_answering"}
+{"prompt": "How do I properly tie a necktie step by step?", "domain": "task_question_answering"}
+{"prompt": "Why do some people experience motion sickness while others don't?", "domain": "task_question_answering"}
+{"prompt": "What is the difference between a virus and a viroid?", "domain": "task_question_answering"}
+{"prompt": "What is the speed of light?", "domain": "task_question_answering"}
+{"prompt": "Why do some people need glasses while others don't?", "domain": "task_question_answering"}
+{"prompt": "What's the trade-off between getting a flu shot every year versus not getting vaccinated at all?", "domain": "task_question_answering"}
+{"prompt": "How does an airplane generate enough lift to take off?", "domain": "task_question_answering"}
+{"prompt": "How does the immune system fight viruses?", "domain": "task_question_answering"}
+{"prompt": "Why does my sourdough starter bubble up and smell sour after a few days on the counter?", "domain": "task_question_answering"}
+{"prompt": "How does a car's braking system work, step by step, when you press the pedal?", "domain": "task_question_answering"}
+{"prompt": "What's the trade-off between studying abroad versus staying at a local university?", "domain": "task_question_answering"}
+{"prompt": "What's the best way to remove a red wine stain from carpet?", "domain": "task_question_answering"}
+{"prompt": "What is the difference between a hurricane, a typhoon, and a cyclone, and why do these storms form over warm ocean waters?", "domain": "task_question_answering"}
+{"prompt": "How did the Cold War start, who were the main countries involved, and what eventually led to its end?", "domain": "task_question_answering"}
+{"prompt": "Explain like I'm five: why is the sky blue during the day but red at sunset?", "domain": "task_question_answering"}
+{"prompt": "Can you explain like I'm five why we have leap years?", "domain": "task_question_answering"}
+{"prompt": "What is the difference between a peninsula and an isthmus?", "domain": "task_question_answering"}
+{"prompt": "In detail, answer: Why do metals feel colder than wood?", "domain": "task_question_answering"}
+{"prompt": "What led to the collapse of the Maya civilization's major cities?", "domain": "task_question_answering"}
+{"prompt": "Explain like I'm five why the moon looks like it changes shape throughout the month.", "domain": "task_question_answering"}
+{"prompt": "For a beginner: Why is the sky blue?", "domain": "task_question_answering"}
+{"prompt": "Explain the causes and consequences of the Great Depression, including the role of the stock market crash of 1929.", "domain": "task_question_answering"}
+{"prompt": "What's the difference between a virus and a bacterium, using the common cold versus strep throat as examples?", "domain": "task_question_answering"}
+{"prompt": "What is the placebo effect and why does it sometimes actually work?", "domain": "task_question_answering"}
+{"prompt": "Briefly: What causes the seasons?", "domain": "task_question_answering"}
+{"prompt": "Explain how GPS works.", "domain": "task_question_answering"}
+{"prompt": "Explain the difference between a stock and a bond in terms of the rights and risks they confer to an investor.", "domain": "task_question_answering"}
+{"prompt": "Explain like I'm five: why do we dream when we sleep?", "domain": "task_question_answering"}
+{"prompt": "What is the Coriolis effect, and how does it influence ocean currents?", "domain": "task_question_answering"}
+{"prompt": "Explain simply: How do bees make honey?", "domain": "task_question_answering"}
+{"prompt": "How does a credit score actually get calculated?", "domain": "task_question_answering"}
+{"prompt": "What were the underlying economic and political causes of the fall of the Western Roman Empire, and how do historians debate their relative importance?", "domain": "task_question_answering"}
+{"prompt": "Explain how the human eye converts light into the images we perceive, including the roles of the retina, optic nerve, and brain.", "domain": "task_question_answering"}
+{"prompt": "How does Wi-Fi actually send data through the air?", "domain": "task_question_answering"}
+{"prompt": "What is machine learning?", "domain": "task_question_answering"}
+{"prompt": "Explain the process of nuclear fusion in stars and why heavier elements require higher temperatures to fuse.", "domain": "task_question_answering"}
+{"prompt": "What is the physiological explanation for why muscles feel sore a day or two after intense exercise?", "domain": "task_question_answering"}
+{"prompt": "What is the difference between renewable and nuclear energy in terms of safety, cost, and environmental impact over the long term?", "domain": "task_question_answering"}
+{"prompt": "What is the function of white blood cells when you get a cut that becomes infected?", "domain": "task_question_answering"}
+{"prompt": "Explain simply: Why does ice float on water?", "domain": "task_question_answering"}
+{"prompt": "What is inflation, and why do prices for everyday goods sometimes go up over time?", "domain": "task_question_answering"}
+{"prompt": "What is quantum entanglement?", "domain": "task_question_answering"}
+{"prompt": "Can you explain what plate tectonics is and how it relates to the formation of mountains and volcanoes?", "domain": "task_question_answering"}
+{"prompt": "Explain like I'm five: why does ice float on water instead of sinking?", "domain": "task_question_answering"}
+{"prompt": "What is DNA and how does it determine our traits?", "domain": "task_question_answering"}
+{"prompt": "Why do some fruits ripen faster when placed near bananas?", "domain": "task_question_answering"}
+{"prompt": "What is the Amazon rainforest, and why is it often called the 'lungs of the Earth'?", "domain": "task_question_answering"}
+{"prompt": "Why do we get brain freeze?", "domain": "task_question_answering"}

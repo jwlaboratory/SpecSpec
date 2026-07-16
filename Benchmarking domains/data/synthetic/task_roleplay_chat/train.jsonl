@@ -1,0 +1,800 @@
+{"prompt": "Pretend to be my astronomy tutor as I set up my first telescope for deep-sky observation. Should we calibrate the finder scope or align the equatorial mount first?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as my chess coach as I sit down for my first serious match. Should we review openings or endgame patterns first?", "domain": "task_roleplay_chat"}
+{"prompt": "You're my zoo docent introducing me to the primate house. Should we watch the gorillas or the chimpanzees first?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as a cooking teacher guiding someone who has never cracked an egg before. What's the trick to doing it without getting shell in the bowl?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be a beekeeping mentor showing a new beekeeper their first hive inspection. Why are the bees suddenly buzzing louder now that I've lifted this frame out?", "domain": "task_roleplay_chat"}
+{"prompt": "You're the head chef of a Michelin-starred kitchen and I'm a new line cook on my first dinner service. I just dropped a plate mid-rush and the ticket queue is backing up, tell me how to recover without falling further behind.", "domain": "task_roleplay_chat"}
+{"prompt": "You're a wildlife tracker guiding me on my first tracking expedition. Should we study footprint identification or scent marking behavior first?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as a glassblowing instructor guiding a student before their first attempt at shaping a vase. What's the sequence of moves I need to master with the pipe?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be my ceramicist mentor as I glaze my first piece. Should we talk about glaze chemistry or application technique first?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as my career counselor as I choose between grad school and a full-time job. Should we compare long-term earning potential or immediate experience gained first?", "domain": "task_roleplay_chat"}
+{"prompt": "You're the master gardener at a botanical estate and I've just inherited an overgrown greenhouse. Should we prioritize pruning the citrus trees or repotting the orchids first?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be my marathon coach as I begin training for my first ultramarathon. Should we build the base mileage plan or address nutrition strategy first?", "domain": "task_roleplay_chat"}
+{"prompt": "Be a wedding planner for a second. My fiancé and I have no idea where to start.", "domain": "task_roleplay_chat"}
+{"prompt": "You're a herbalist mentor as I dry my first batch of chamomile. What should I know about moisture before storage?", "domain": "task_roleplay_chat"}
+{"prompt": "You're my personal chef helping me plan my first dinner party menu. Would you recommend starting with a rich sauce-based main or a lighter grilled option?", "domain": "task_roleplay_chat"}
+{"prompt": "You're my zoo keeper trainer as I feed the big cats for the first time. Should we go over the safety gate protocol before I open the enclosure?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as a submarine sonar operator training a new crew member on their first patrol. How do I tell the difference between a whale and another vessel on the screen?", "domain": "task_roleplay_chat"}
+{"prompt": "You are a barista who is also a poet. A regular orders their usual.", "domain": "task_roleplay_chat"}
+{"prompt": "Act as a museum docent guiding a visitor through the ancient Egypt wing for the first time. Why did they wrap mummies the way they did?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be my coding mentor as I debug my first Python script. It's throwing 'IndexError: list index out of range' on line 12 — where should I look first?", "domain": "task_roleplay_chat"}
+{"prompt": "You're the master perfumer at an atelier and I want to create a signature scent. Should we build around a floral base or start with something woodier?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a falconry instructor and I'm holding my first bird. Handling grip or feeding first?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as my planetarium guide mentor as I prepare my first star show for visitors. Should we start with the constellations or the planet positions?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be a cheese maker training an apprentice before their first batch of aged cheddar. Should we age it longer for sharper flavor or shorter for a milder taste people prefer?", "domain": "task_roleplay_chat"}
+{"prompt": "You're my dungeon master starting my first tabletop campaign. Should we build my character backstory or roll for stats first?", "domain": "task_roleplay_chat"}
+{"prompt": "Reply in two short paragraphs. You are a calm 911 dispatcher. Someone reports a kitchen fire.", "domain": "task_roleplay_chat"}
+{"prompt": "Reply in two short paragraphs. You are an air traffic controller. Guide a nervous student pilot.", "domain": "task_roleplay_chat"}
+{"prompt": "Act as a piano teacher with a student who has never touched a keyboard before. Can you show me where middle C is and why it matters?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be my tax attorney mentor reviewing a complex return before the filing deadline. Should we address the deduction discrepancies first or the foreign income reporting?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a submarine captain during a silent running order. Sonar just picked up an unknown contact, what now?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as my martial arts instructor on my first day in the dojo. Should we practice stances or basic strikes first?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as the master blacksmith and I'm your apprentice starting my first week. Should we begin with hammer control on scrap iron or jump straight into forging a simple hook?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as a beekeeping mentor showing a new hobbyist their first hive. I'm nervous about getting stung, how close is actually safe to stand?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a coral reef dive guide briefing a diver before their very first reef dive. Why can't I touch anything down there even if it looks like a rock?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be a lighthouse keeper training a new assistant before their first storm watch. Should we keep the light on a steady rotation or increase the flash rate for visibility?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as my algebra tutor since I've never solved an equation before. Should we start with what a variable is or how to balance both sides?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as a forensic scientist walking me through my first crime scene as a trainee. Should we photograph the scene before or after collecting trace evidence?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be my language exchange partner for my first conversation practice. Should we start with basic greetings or ordering food phrases?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as a tea master mentoring a student before their first formal tea ceremony. Can you guide me through each step of the preparation?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as a yoga instructor and I've got a stiff lower back today. Would sun salutations or restorative poses be better for me?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a museum curator and I've just been hired as a docent for the Egyptian antiquities wing. Should we go over artifact provenance or crowd-handling etiquette first?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as a crime scene photographer training a new hire on their first active scene. Why do you need a photo of this bloodstain before anyone even moves the body?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be my air traffic control trainer on my first day in the tower. Should we practice handling departures or arrivals first?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a movie critic and I just watched the new sci-fi blockbuster. What did you think of the ending compared to the first two acts?", "domain": "task_roleplay_chat"}
+{"prompt": "Reply in two short paragraphs. You are a museum dinosaur come to life. Greet the schoolchildren.", "domain": "task_roleplay_chat"}
+{"prompt": "You are a museum dinosaur come to life. Greet the schoolchildren.", "domain": "task_roleplay_chat"}
+{"prompt": "Act as my beekeeping mentor as I inspect my first hive. Should we check for queen activity or assess honey stores first?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be my chess coach as I learn the game from scratch. Should we start with how the pieces move or basic opening principles?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be a perfumer mentoring me on blending my first scent. It smells too sharp, what's off?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be a veteran 911 dispatcher mentoring someone taking their first emergency call ever. The caller is screaming and not making sense, what's the very first thing I should say?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as my debate coach before my first competitive round. Should we focus on the strength of my evidence or the pacing of my delivery first?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as a chef consulting on my dinner party menu. Should I go with a plated three-course meal or a more relaxed family-style spread?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be a firefighter captain briefing new recruits before a live burn training exercise. One recruit just admitted they're scared of enclosed spaces, how do you address that right before we go in?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as a 911 dispatcher taking my call. I just witnessed a car flip over on the highway and there's smoke coming from the engine, people are still inside, tell me exactly what to do while help is on the way.", "domain": "task_roleplay_chat"}
+{"prompt": "You're a bartender and I just sat down looking pretty down. What do you say to me?", "domain": "task_roleplay_chat"}
+{"prompt": "Be helpful and vivid. You are a ship's captain in a storm. Reassure the passengers.", "domain": "task_roleplay_chat"}
+{"prompt": "You're a hostage negotiator and I'm your rookie partner. Listening techniques or de-escalation first?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a ship's navigator during a night crossing. The GPS just failed, how do we chart by stars?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as a wildfire incident commander training a new firefighter before their first burn assessment. Can you walk me through how we should approach the fire line safely?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be a wildlife tracker guiding a new researcher on their first night survey. Do we follow the fresh paw prints now or wait until dawn when visibility improves?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as my stand-up comedy coach before my first open mic set. Should we work on my opening joke or my stage presence first?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as my perfumer mentor as I try blending my first scent. Should we start with top notes or base notes?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as my rock climbing instructor before my first outdoor lead climb. Should we practice belay technique or knot tying first?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as my financial advisor mentor as I open my first investment account. Should we discuss risk tolerance or asset allocation first?", "domain": "task_roleplay_chat"}
+{"prompt": "Keep it friendly. You are a museum dinosaur come to life. Greet the schoolchildren.", "domain": "task_roleplay_chat"}
+{"prompt": "Stay fully in character. You are a barista who is also a poet. A regular orders their usual.", "domain": "task_roleplay_chat"}
+{"prompt": "You're my perfumer mentor as I formulate my first fragrance. Should we start with selecting the top notes or building the base accord?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a florist training me for my first bouquet arrangement. Should we start with color theory or stem cutting?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be my tattoo mentor as I prepare to ink my first paying client. Should we review sterilization procedures or stencil transfer technique first?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as my librarian guiding me through research for my first thesis. Should we start with primary sources or secondary literature reviews?", "domain": "task_roleplay_chat"}
+{"prompt": "Be helpful and vivid. You are a hotel concierge. A guest wants a surprise anniversary plan.", "domain": "task_roleplay_chat"}
+{"prompt": "You're the head sommelier at a Michelin-starred restaurant training me as a new server. Should we start with wine pairing fundamentals or proper decanting technique first?", "domain": "task_roleplay_chat"}
+{"prompt": "You're my landlord and I need to tell you the sink is broken. Respond like you'd actually text me back.", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be a ventriloquist coach teaching a student how to throw their voice for the first time. Why does my mouth keep moving even when I try not to?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be a personal trainer meeting a client who has never lifted weights before. What's a safe way for me to start without hurting myself?", "domain": "task_roleplay_chat"}
+{"prompt": "Act like a plant nursery worker. I keep killing my houseplants, what am I doing wrong?", "domain": "task_roleplay_chat"}
+{"prompt": "You're my drone pilot instructor before my first FPV flight. Should we check the battery voltage or the propeller balance first?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a hostage negotiation coach preparing a trainee before their first live call. Walk me through the steps we take when the caller first picks up the phone.", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be my stock trading mentor as I place my first trade. Should we focus on technical charts or fundamental analysis first?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as a poker coach reviewing my hand history. I lost a huge pot on a bluff, where did I go wrong?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as my lighthouse keeper mentor on my first night shift. What should I watch for as the fog rolls in?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as my planetarium guide before my first stargazing show for visitors. Should we walk through the star map or the projector controls first?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as a drone pilot instructor certifying me for commercial flights. Should we cover airspace regulations first or hands-on maneuvering drills?", "domain": "task_roleplay_chat"}
+{"prompt": "Keep it friendly. You are a friendly robot chef. Suggest a dinner using only leftovers.", "domain": "task_roleplay_chat"}
+{"prompt": "You're the hotel concierge. I need a table for two, tonight, impossible reservation.", "domain": "task_roleplay_chat"}
+{"prompt": "You're the head chef of a fine dining kitchen and I'm the new line cook on my first shift. Should we review mise en place or knife skills first?", "domain": "task_roleplay_chat"}
+{"prompt": "Keep it friendly. You are a gardener. Advise someone whose tomatoes keep dying.", "domain": "task_roleplay_chat"}
+{"prompt": "You're a watchmaker teaching me to assemble my first mechanical movement. Should we start with the mainspring or the escapement mechanism?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a deep-sea submersible pilot training a new co-pilot before their first descent. What do I do if we lose communication with the surface down there?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be my gardening mentor as I plan my first vegetable bed. Should we focus on soil composition or companion planting first?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be my bonsai master as I begin styling my first juniper tree. Should we start with wiring the branches or selecting the front view?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be a hospital ER charge nurse training a new resident before their first trauma shift. Walk me through the steps for triaging patients as they come in.", "domain": "task_roleplay_chat"}
+{"prompt": "You're my screenwriting mentor as I draft my first feature-length script. Should we outline the three-act structure or develop the protagonist's arc first?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a career mentor and I've been offered a promotion that means relocating. What questions do you think I should be asking myself before deciding?", "domain": "task_roleplay_chat"}
+{"prompt": "You're my flight instructor. Preflight checklist, where do we start?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a chess grandmaster coaching a student before their first tournament match. How should I plan my opening moves step by step against an unknown opponent?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be my glassblower mentor as I gather my first molten glass on the blowpipe. Should we talk about the temperature or the rotation speed first?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be a nutritionist meeting a client who has never tracked their eating before. How do I start paying attention to what I eat without it feeling overwhelming?", "domain": "task_roleplay_chat"}
+{"prompt": "You're my perfume-making mentor as I blend my first fragrance. Should we balance top notes or base notes first?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be my cheese-aging mentor as I prepare my first cave-aged wheel. Should we discuss humidity control or rind development first?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be my aerial silks coach as I climb the fabric for the first time. Should we go over grip technique or fall safety first?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a kayaking guide before we launch on my first whitewater run. Should we review paddle strokes or capsize recovery first?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be my acting coach before the audition. Monologue or improv first?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as my scuba diving instructor before my open-water certification dive. Should we review hand signals or practice mask-clearing techniques first?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a bomb disposal expert training me. Wire cutting or detection tools first?", "domain": "task_roleplay_chat"}
+{"prompt": "You're my calligraphy mentor as I dip my first nib pen into ink. Should we practice the upstroke or the downstroke first?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be my data science bootcamp instructor on my first day building a machine learning model. Should we start with data cleaning or feature engineering?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a flight instructor mid-lesson in a small Cessna. The engine just sputtered, walk me through it.", "domain": "task_roleplay_chat"}
+{"prompt": "You're a wildlife rehabilitation specialist and I just brought in an injured owl I found on the roadside. It's not moving its left wing and seems disoriented, tell me what to do right now before we even get to the clinic.", "domain": "task_roleplay_chat"}
+{"prompt": "You're a caving guide leading a team underground. The tunnel ahead looks unstable, do we push on or turn back?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a glassblowing master and I'm your apprentice. Furnace safety or shaping tools first?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a wine cellar concierge welcoming a guest who has never toured an underground cellar before. Why is that one row of bottles stored on its side while the others stand upright?", "domain": "task_roleplay_chat"}
+{"prompt": "You are a friendly museum guide. A visitor asks what to see first.", "domain": "task_roleplay_chat"}
+{"prompt": "Act as my museum guide specializing in Renaissance art as I tour the Uffizi Gallery for the first time. Should we start with the Botticelli room or the Michelangelo sculptures?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as my sushi chef mentor on my first day working the fish counter. Should we start with knife maintenance or breaking down a whole tuna?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be a beekeeping-turned-perfume chemist mentoring a lab assistant before their first extraction of essential oils. What's the process step by step?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a airline captain briefing the cabin crew before an emergency landing due to hydraulic failure. Walk me through what you'd tell them so the passengers stay calm during evacuation prep.", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be my falconry mentor as I train my first hawk. Should we work on the recall whistle or the glove transfer first?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be my calligraphy instructor as I prepare to write my first formal invitation set. Should we practice letter spacing or ink flow control first?", "domain": "task_roleplay_chat"}
+{"prompt": "You're my tailor mentor as I cut my first pattern piece from wool fabric. Should we double check the seam allowance or the grainline first?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a sword fighting instructor before my first sparring match with a wooden blade. What stance should I learn first?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be a radio dispatcher training a new hire before their first overnight shift. Should we dispatch the nearest unit immediately or wait for more details from the caller?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as a tailor mentoring an apprentice on suit fitting. My client's shoulders are uneven and the jacket keeps pulling on one side, explain how I diagnose and fix this before the final fitting.", "domain": "task_roleplay_chat"}
+{"prompt": "You're a glacier guide briefing me before my first walk on the ice. Should we check crampons or rope technique first?", "domain": "task_roleplay_chat"}
+{"prompt": "You're my yoga instructor. My back's been locked up all week.", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be my beekeeping mentor as I check my first hive. Should we look at the brood frames or the honey stores first?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a startup mentor and I'm deciding between raising venture funding or staying bootstrapped. What would you advise given my situation?", "domain": "task_roleplay_chat"}
+{"prompt": "You're my sailing instructor before my first time at the helm. Should we cover tacking or docking first?", "domain": "task_roleplay_chat"}
+{"prompt": "You're my camping guide as I pitch my first tent in the wild. Should we pick the campsite spot first or start staking it down?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be a scuba shop instructor certifying someone for their very first open water dive. Why do my ears hurt when I go deeper?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a hostage negotiator on scene. The suspect just hung up the phone, what's our next move?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be a beer brewmaster mentoring an apprentice tasting their first batch straight from the fermenter. Why does it taste like bananas when we didn't add any fruit?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as my mountain guide before we attempt a technical alpine ascent together. Should we check crampon fit or review avalanche terrain assessment first?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a distillery master explaining the mash bill to a brand new hire on their first day. Why does the ratio of corn to rye actually matter that much?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a marine biologist leading a night dive to study bioluminescent plankton. My mask keeps fogging up and I'm falling behind the group in the dark water, help me fix this without panicking.", "domain": "task_roleplay_chat"}
+{"prompt": "Act as a puppetmaster teaching me marionette control. The strings keep tangling, how do I fix my grip?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be my rock climbing coach before my first outdoor lead climb. Should we focus on rope management or fall technique first?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be a sommelier helping me pick wine for a first date. I know nothing, where do I start?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as my falconer mentor as I glove up to handle my first hawk. Should we go over the jesses or the whistle command first?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as a yoga instructor teaching a class for total beginners. I'm not flexible at all, is it still okay for me to try touching my toes?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be a NASA mission control director briefing a rookie astronaut before their first spacewalk. What's the step-by-step checklist we need to run through before I open the airlock?", "domain": "task_roleplay_chat"}
+{"prompt": "You're my K9 trainer as I handle my first search dog on a mock scent trail. Should we start with the harness commands or the reward timing?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as a marine biologist mentoring a new intern before their first coral reef survey. Should we survey by free diving for mobility or scuba for longer bottom time?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be my air traffic controller trainer on my first day in the tower. A pilot just radios 'Tower, Cessna 172 requesting taxi to runway 27.' How should I respond?", "domain": "task_roleplay_chat"}
+{"prompt": "You're my interview coach. Panel of five, starting in an hour.", "domain": "task_roleplay_chat"}
+{"prompt": "Act as a patent attorney walking an inventor through filing for a groundbreaking new device. I've built the prototype but have no idea where to start with the paperwork.", "domain": "task_roleplay_chat"}
+{"prompt": "You're my negotiation coach before my first salary discussion. Should we prepare anchoring numbers or active listening responses first?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be my diplomatic mentor as I prepare for my first international negotiation. Should we rehearse opening statements or contingency concessions first?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be a whisky blender training a new taster on how to nose a glass for the first time. Why do I need to add water before I even smell it?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as a park ranger and I've got a couple hours before sunset. Should I take the ridge trail or the waterfall loop?", "domain": "task_roleplay_chat"}
+{"prompt": "You're the museum guide at the dinosaur hall. Where do we start?", "domain": "task_roleplay_chat"}
+{"prompt": "You're an antique clock restorer teaching a new apprentice how to disassemble their first movement. Why do all these tiny gears need to come off in a specific order?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be my karate sensei prepping me for my belt test. Should we drill forms or spend more time sparring?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as a ship's navigator during a night crossing through a storm. Our GPS just went out and the compass is spinning erratically, talk me through how we find our bearings using what we have left.", "domain": "task_roleplay_chat"}
+{"prompt": "You're my scuba instructor before my first dive. Gear check or safety signals first?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be a financial advisor and I just got a small windfall. Should I pay off debt first or start investing it?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as my scuba instructor before my first open water dive. Should we review the buddy check or the ascent rate first?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as my woodworking mentor as I build my first dovetail joint. Should we focus on marking the cuts precisely or chisel angle first?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be a cheesemaker mentoring me on my first wheel. The rind looks moldy already, is that normal?", "domain": "task_roleplay_chat"}
+{"prompt": "You are a hotel concierge. A guest wants a surprise anniversary plan.", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be my sommelier mentor as I taste my first flight of red wines. Should we discuss tannin structure or aroma identification first?", "domain": "task_roleplay_chat"}
+{"prompt": "You're an astronomy guide at a stargazing event. What are we looking at up there tonight?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be my papermaking mentor as I pull my first sheet from the vat. What should I check before lifting the mold?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be a park ranger leading me on a backcountry survival course. Should we cover shelter-building first or water purification techniques?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as a violin luthier mentoring an apprentice on repairing a cracked instrument. The crack runs right along the seam near the bridge, explain how we assess whether it's fixable and what the repair involves.", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be a diplomat coaching me before a sensitive trade negotiation. Should we rehearse the opening remarks or prepare contingency positions first?", "domain": "task_roleplay_chat"}
+{"prompt": "You're my orchestra conductor mentor as I prepare to lead my first rehearsal. Should we focus on tempo consistency or dynamic balance first?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as my fire academy training officer before my first live burn exercise. Should we review hose deployment or search-and-rescue technique first?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a mead brewing mentor as I mix my first batch of honey wine. Should we talk about yeast selection or sanitation first?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be a travel concierge at a boutique hotel in Lisbon. I have one free evening — where should I go for the most memorable dinner?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a ski instructor. This is my first time on the slopes and I'm already scared.", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be my yoga instructor before my first advanced class. Should we ease into inversions or focus on breathwork and flexibility first?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a puppeteer mentoring an apprentice before their first live performance with a marionette. How do I control the strings smoothly for a walking motion?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as a falconer training an apprentice before their first flight with a young hawk. What steps should I take to build trust with the bird before releasing it?", "domain": "task_roleplay_chat"}
+{"prompt": "You're the submarine sonar operator and I'm the new ensign. Signal reading or equipment first?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as a hostage negotiator mentoring a rookie before their first live call. The line just connected and I'm not sure how to open, what do I say first?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as a forensic entomologist mentoring a new intern examining insect evidence for the first time. Why do the maggots on this body tell you more than the body itself does?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be a tax attorney walking a small business owner through an unexpected audit notice. I just opened the letter and I'm panicking, what do we do first?", "domain": "task_roleplay_chat"}
+{"prompt": "You're the captain of a commercial fishing vessel and I'm a deckhand on my first voyage. Should we go over net rigging or safety gear first?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be my hairdresser and I'm thinking about a big change. Should I go bold with color or just get a subtle trim?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be a barbecue pitmaster judging my first competition entry. Would you say my brisket needs more smoke time or a different rub?", "domain": "task_roleplay_chat"}
+{"prompt": "You're the head chef and I'm your new line cook. Knife skills or station setup first?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as my sushi chef mentor as I attempt to slice my first piece of tuna sashimi. Should I angle the knife at 45 degrees or keep it flat?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be a sommelier training a new server before their first wine pairing dinner. Should I recommend the bold cabernet or the lighter pinot noir with this duck dish, and what's the trade-off?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a weaving mentor as I set up my first loom. Should we start with the warp threads or the tension adjustment?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as a planetarium guide right before the show starts. Should we catch the solar system tour or the deep space one?", "domain": "task_roleplay_chat"}
+{"prompt": "Be my personal shopper. I need an outfit for a job interview tomorrow and nothing in my closet works.", "domain": "task_roleplay_chat"}
+{"prompt": "You're my tailoring mentor as I sew my first suit jacket. Should we start with pattern drafting or fabric grain alignment first?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as a master puppeteer teaching a new apprentice their first hand movements for a marionette. Why does the puppet look stiff no matter how I move the strings?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as my climbing guide before my first time on an outdoor route. Should we review knots or check the harness fit first?", "domain": "task_roleplay_chat"}
+{"prompt": "You're my restaurant consultant mentor as I compare two menu concepts for my new café. Should we weigh ingredient cost against customer appeal first?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be my tattoo artist mentor as I practice my first line work on synthetic skin. Should we start with needle depth or hand speed?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as my fishing guide for this morning's trip. Should we try the lake or head for the river today?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as my forensic lab mentor as I examine my first blood spatter pattern. Should we start with the angle of impact or the origin point?", "domain": "task_roleplay_chat"}
+{"prompt": "You're the dispatcher tonight. Truck 12 just called in, what's the address?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as my meditation coach as I begin my first extended silent retreat. Should we focus on breath awareness or thought observation first?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as a chess grandmaster mentoring a promising junior player the night before a major tournament. My opponent tomorrow plays the Sicilian, how should I prepare?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a beekeeping mentor and I'm about to open my first hive. What should I check before I even lift the lid?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a brewmaster teaching a new hire the entire craft beer process from mash to fermentation. The wort just hit the wrong temperature, is the batch salvageable?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be a home improvement contractor and I've never used a power drill before. What's the safest way to hold it so I don't strip the screw?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be a mechanic. My car is making a weird clunking noise and I don't know cars at all.", "domain": "task_roleplay_chat"}
+{"prompt": "You're the concierge at a luxury hotel and I've just arrived with no idea what to do in this city. What would you recommend for my first evening?", "domain": "task_roleplay_chat"}
+{"prompt": "Be helpful and vivid. You are a veteran mountaineer. Warn a hiker about the weather ahead.", "domain": "task_roleplay_chat"}
+{"prompt": "Keep it friendly. You are an air traffic controller. Guide a nervous student pilot.", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be my personal trainer on day one at the gym. Should we start with cardio or jump straight into strength training?", "domain": "task_roleplay_chat"}
+{"prompt": "Be helpful and vivid. You are a patient math tutor. A student is stuck on fractions.", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be a puppet ventriloquist mentoring a student on throwing their voice for the first time. Why does my mouth keep moving even when I try to keep it still?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be a beekeeper training a new apprentice before their first hive inspection. How do we approach the hive safely without disturbing the colony?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a brewmaster teaching me to make my first batch of beer. Should we start with sanitation or the recipe first?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be my conducting mentor as I raise the baton for my first rehearsal. Should I cue the strings or the brass section first?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a museum guide leading me through the impressionist wing. Out of everything here, which painting do you think deserves more attention than it gets?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be my astronomy guide setting up my first telescope for stargazing. Should we align on the moon or a bright planet first?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as a professional gardener and landscape designer visiting my backyard for the first time. I want a low-maintenance garden that still looks lush, but I have terrible soil and almost no sunlight in half the yard, where do we start?", "domain": "task_roleplay_chat"}
+{"prompt": "You're an archaeologist supervising me on my first dig site. Should we review artifact cataloging or excavation grid setup first?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be my winemaker mentor during my first grape harvest. Should we discuss sugar levels and Brix testing or crush timing first?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as a hostage negotiation trainer briefing a new negotiator before their first simulated call. The subject on the line just said, 'Nobody's coming in here, I mean it' — how do you respond?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as my urban planning mentor as I look at my first city map project. Where should we begin?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be my mountaineering guide before my first summit attempt. Should we discuss oxygen management or turnaround time first?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be my personal trainer designing my first strength program. Should we prioritize compound lifts or accessory movements first?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a startup advisor and I'm about to pitch to investors for the first time. Should we refine the financial projections or the opening hook first?", "domain": "task_roleplay_chat"}
+{"prompt": "You're my sommelier guiding my first wine tasting. Should we start with the whites or jump straight to the reds?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a barista at my favorite coffee shop. I can't decide what to order, surprise me.", "domain": "task_roleplay_chat"}
+{"prompt": "Act as a locksmith training an apprentice. This antique lock won't budge, what's the technique?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as my chess grandmaster mentor before my first tournament match. Should we drill opening theory or practice endgame calculations first?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be my wilderness survival instructor as we're dropped into the backcountry for a three-day course. Should we build a shelter or find a water source first?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as a theater director and I'm playing the lead in tomorrow's dress rehearsal. Should we run the emotional monologue again or block the final scene transitions?", "domain": "task_roleplay_chat"}
+{"prompt": "You're the captain of a submarine training me as a new sonar operator. I just heard a faint ping on the screen — what's my first move?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as my voice acting coach before my first audiobook recording session. Should we work on character voices or breath control first?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be a submarine sonar operator mentoring a trainee hearing their first unidentified contact. This ping just repeated twice as fast as before — what does that pattern usually mean?", "domain": "task_roleplay_chat"}
+{"prompt": "Imagine you're a sommelier at a fine dining restaurant and I've just sat down for dinner. I'm having the herb-crusted lamb — what wine would you pair with it tonight?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be a wedding planner helping me choose a venue. I'm deciding between a vineyard and a converted barn — which fits a fall wedding better?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as my wildlife rehabilitation specialist mentor as I care for my first injured raptor. Should we start with wound assessment or feeding protocol?", "domain": "task_roleplay_chat"}
+{"prompt": "You're my meditation guide and I've never tried meditating before. Should we start with breath awareness or body scanning?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as my sailing captain before my first solo voyage. Should we review points of sail or docking maneuvers first?", "domain": "task_roleplay_chat"}
+{"prompt": "Reply in two short paragraphs. You are a librarian. Recommend a book for someone who hates reading.", "domain": "task_roleplay_chat"}
+{"prompt": "You're my personal stylist helping me pick my first formal gown. Should we go with a bold color or a classic silhouette first?", "domain": "task_roleplay_chat"}
+{"prompt": "Reply in two short paragraphs. You are a patient math tutor. A student is stuck on fractions.", "domain": "task_roleplay_chat"}
+{"prompt": "Act as a puppet master of a marching band mentoring a new drum major before their first parade. How do I signal the first cadence to the band?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a shipwright teaching an apprentice before laying the keel of their first boat. Should we use oak for strength or cedar for lighter weight, given the trade-offs?", "domain": "task_roleplay_chat"}
+{"prompt": "You're the head gardener at a botanical estate and I'm the new apprentice. Should we review soil composition or pruning technique first?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as the captain of a sailboat and I'm a total beginner joining the crew today. What's the first thing I need to learn?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as my wedding planner as I choose my first venue. Should we prioritize the outdoor garden option or the historic ballroom?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a glassblowing instructor guiding a student through their first attempt at the furnace. Why does the glass keep sagging the second I pull it away from the heat?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be my origami sensei. Basic folds or a full crane first?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as a ship's captain briefing a new deckhand before their first night watch. What do I do if I see a light on the horizon that doesn't match anything on the chart?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be a friendly hotel concierge and I've just checked in for my very first solo trip. What are three easy things I should do today to get oriented in the city?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be my puppeteer mentor as I learn to perform with a marionette for the first time. Should we practice hand coordination or string tension first?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as our wedding photographer going over the shot list. Should we lean more into candid moments or posed shots?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as a museum curator guiding a new docent before their first tour of the ancient artifacts wing. Should I lead with the oldest piece for shock value or the most famous piece for engagement?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as a debate coach prepping me for finals tomorrow. My rebuttals feel weak, how do I sharpen them?", "domain": "task_roleplay_chat"}
+{"prompt": "You're the observatory director and I'm the new intern. Telescope calibration or data logging first?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as my financial advisor as I open my first investment account. Should we talk about risk tolerance or investment goals first?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be a submarine navigator training a new officer before their first dive. Should we trust the sonar readings or the paper charts when they disagree?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be a bell founder guiding an apprentice through their first bronze bell casting. What happens if there are air bubbles in the mold when we pour?", "domain": "task_roleplay_chat"}
+{"prompt": "You're the commander of an Antarctic research station briefing a new scientist who just arrived. The storm outside is worse than anything I've seen, what survival protocols do I need to know immediately?", "domain": "task_roleplay_chat"}
+{"prompt": "Be helpful and vivid. You are an air traffic controller. Guide a nervous student pilot.", "domain": "task_roleplay_chat"}
+{"prompt": "You're a zookeeper training me to work with the big cats for the first time. Should we start with feeding protocols or enrichment activities?", "domain": "task_roleplay_chat"}
+{"prompt": "You're my castle tour guide before I lead my first group through the medieval keep. Should we cover the history of the great hall or the defensive architecture first?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as my meditation retreat guide on my first silent retreat. Should we begin with breath awareness or body scanning practice?", "domain": "task_roleplay_chat"}
+{"prompt": "You're my archery instructor before my first shot at the range. Should we work on stance or grip first?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a cheese affineur guiding a customer through your aging cave. This wheel smells stronger than the others, is that a good sign or a bad one?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be a florist training a new hire before their first wedding bouquet design. How do we build the arrangement layer by layer?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as my watchmaking mentor as I assemble my first mechanical movement. Should we focus on gear train alignment or spring tension first?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as my life coach as I decide between two job offers. Should we weigh salary and stability against passion and growth potential first?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as my orchestra conductor mentor as I learn to read a score for the first time. Where should we begin?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a museum conservator restoring a centuries-old oil painting and I'm your intern. We just noticed flaking paint spreading faster than expected in one corner, explain what we do next and why.", "domain": "task_roleplay_chat"}
+{"prompt": "You're a NASA flight director and I'm a capsule communicator during a live mission. The crew just reported a warning light on the oxygen system, talk me through how we assess and respond.", "domain": "task_roleplay_chat"}
+{"prompt": "You're my grandma teaching me her secret pasta sauce recipe over the phone.", "domain": "task_roleplay_chat"}
+{"prompt": "You're an orchestra conductor rehearsing with a nervous first violinist before opening night. I keep losing my place in the third movement, help me through it.", "domain": "task_roleplay_chat"}
+{"prompt": "You're my personal trainer. First session, bad knee. Warm-up plan?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a night shift pharmacist training a new technician on their first solo counter. This prescription dosage looks ten times higher than normal — what do you do before filling it?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a chess coach. I keep losing to my little brother and I don't know why.", "domain": "task_roleplay_chat"}
+{"prompt": "You're my stage combat choreographer before my first fight scene rehearsal. Should we block the footwork or the weapon exchanges first?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be my woodworking teacher on my first day in the shop. Should we start with measuring and marking or safety with the tools?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be a gardening expert visiting my backyard for the first time. Would you recommend raised beds or in-ground planting for my soil type?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a tattoo artist mentoring an apprentice on their first paying client. The design keeps shifting under the skin and the lines aren't as clean as your stencil, explain how to adjust technique mid-session.", "domain": "task_roleplay_chat"}
+{"prompt": "You're a coroner mentoring a new medical examiner before their first autopsy. Can you walk me through the initial external examination steps?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as my marathon coach as I plan my first race season. Should we build a base mileage plan or a speed work plan first?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be my screenwriting mentor as I write my first scene. I've got 'INT. KITCHEN - NIGHT' as my slug line — what should come next?", "domain": "task_roleplay_chat"}
+{"prompt": "You're the tattoo artist and this is my first ever tattoo. Would you suggest starting with something on my wrist or my ankle?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as my pottery teacher as I center my first piece of clay on the wheel. Should we focus on hand pressure or wheel speed first?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be my thesis advisor before my defense. Methodology or literature review first?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be a private investigator training me as your new associate. Should we start with surveillance techniques or background research methods?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as a climate scientist briefing a city council on flood risk mitigation. They just asked why the current seawall plan isn't enough, how do I explain the modeling?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be my paralegal mentor before my first courtroom filing deadline. Should we review the motion format or the citation rules first?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be my taxidermy mentor as I prepare my first small mammal mount. Should we focus on skinning technique or form fitting first?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a butcher mentoring an apprentice before their first full animal breakdown. Can you walk me through where to make the first cut?", "domain": "task_roleplay_chat"}
+{"prompt": "Be helpful and vivid. You are a wise old tree. A child asks why leaves fall.", "domain": "task_roleplay_chat"}
+{"prompt": "You're the ship's captain. Storm's rolling in fast. Orders?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be my mountain rescue dispatcher trainer as a call comes in: 'Hiker reported missing near the ridge, last seen at 2pm.' What's my first question to the caller?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be my art museum guide leading me through the modern wing. Should we begin with the abstract expressionists or the surrealists first?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a planetarium guide and I'm shadowing you before my first solo presentation to a school group. Should we rehearse the constellation tour or the Q&A handling first?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be a radio air traffic controller training a trainee on their first live shift. A pilot just reported 'minor fuel imbalance, request priority landing' — what do you tell them next?", "domain": "task_roleplay_chat"}
+{"prompt": "Stay fully in character. You are a friendly robot chef. Suggest a dinner using only leftovers.", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be my debate coach the night before regionals. Should we run through rebuttals for the toughest arguments or polish my opening statement?", "domain": "task_roleplay_chat"}
+{"prompt": "Keep it friendly. You are a fitness coach. A beginner asks how to start running.", "domain": "task_roleplay_chat"}
+{"prompt": "You're my barista trainer as I pull my first espresso shot. The extraction just came out in 15 seconds — is that too fast?", "domain": "task_roleplay_chat"}
+{"prompt": "You're my farrier trainer before I shoe my first horse. Should we review hoof trimming technique or nail placement first?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as my personal finance mentor since I've never made a budget before. Where do we even begin?", "domain": "task_roleplay_chat"}
+{"prompt": "Keep it friendly. You are a barista who is also a poet. A regular orders their usual.", "domain": "task_roleplay_chat"}
+{"prompt": "Act as my brewmaster mentor as I mash my first batch of grain for beer. Should we check the water temperature or the grain crush first?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a mountain guide briefing a client before their first ice climb. Why does my ice axe keep glancing off the wall instead of sticking on the swing?", "domain": "task_roleplay_chat"}
+{"prompt": "Stay fully in character. You are a museum dinosaur come to life. Greet the schoolchildren.", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be a park ranger. I'm about to go on my first solo hike, any tips?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a glassblower guiding my first attempt at the furnace. The piece just cracked cooling, what happened?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be my ski instructor before my first run down the bunny slope. Should we practice snowplow stops or turning first?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as a theater director mentoring a young actor before their first lead role. Should the character's grief be shown through silence or through a big emotional outburst?", "domain": "task_roleplay_chat"}
+{"prompt": "You're my beekeeping mentor and it's my first spring managing hives. Should we inspect for queen health first or check the honey stores?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be a falconer training a new apprentice before flying their first hawk. Should we fly her in open field for range or wooded terrain for hunting practice?", "domain": "task_roleplay_chat"}
+{"prompt": "Stay fully in character. You are an air traffic controller. Guide a nervous student pilot.", "domain": "task_roleplay_chat"}
+{"prompt": "You're a running coach meeting someone who has never jogged more than a block. How do I build up to running a full mile without hurting myself?", "domain": "task_roleplay_chat"}
+{"prompt": "You're the ringmaster of a traveling circus and I'm your newest trapeze recruit. Should we work on grip strength or timing with the catcher first?", "domain": "task_roleplay_chat"}
+{"prompt": "Keep it friendly. You are a patient math tutor. A student is stuck on fractions.", "domain": "task_roleplay_chat"}
+{"prompt": "Act as my perfumer mentor blending my first scent. Top notes or base notes first?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be my interior designer as I furnish my first apartment. Should we invest in a statement couch or build around a good rug first?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a sommelier turned cheese shop owner mentoring me on pairings for a dinner party tonight. I have six guests with wildly different tastes and only two hours to prepare a board, help me plan it out.", "domain": "task_roleplay_chat"}
+{"prompt": "Act as my beekeeping mentor as I inspect my first hive. Should we check for queen activity or look for signs of disease first?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a submarine captain and I'm the newly assigned sonar operator on my first deep-sea mission. Should we run a systems diagnostic or review the emergency surfacing protocol first?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as my puppeteer coach before my first performance behind the booth. Should we rehearse voice or hand movement first?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a vintner mentoring a new hire before their first grape harvest decision. How do we determine, step by step, whether the fruit is ready to pick this morning?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be my blacksmith mentor. Hammer technique or forge temperature first?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a hospice chaplain mentoring a new volunteer before their first patient visit. What do I say if the patient just asks me, 'Am I going to die soon?'", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be a sommelier mentoring a new sommelier trainee at their first blind tasting. The glass in front of me smells like wet stone and green apple — what does that actually tell us about the wine?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as a first-time home buyer's real estate agent showing a client their very first listing. What should I actually be looking for besides how it looks?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as my brewmaster mentor as I brew my first batch of beer. Should we go over sanitizing equipment or mixing the mash first?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretence aside, act as a mountaineering base camp doctor. A climber just showed signs of altitude sickness, what's the call?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a mountain guide leading a group toward the summit and the weather just turned unexpectedly. Half the group wants to push on and half wants to turn back, how do you make the call and communicate it?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a courtroom sketch artist mentoring a student. The judge just moved seats mid-trial, how do I adapt fast?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be my ghost tour guide mentor before my first night leading a group. Should we rehearse the opening story or the safety briefing first?", "domain": "task_roleplay_chat"}
+{"prompt": "You're the submarine captain. Sonar's picking up something. Depth?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a robotics coach mentoring a student team before their first competition. Should we prioritize a faster but less accurate arm design or a slower but more precise one?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as a beekeeping mentor teaching me to inspect my first hive. The bees seem more aggressive than usual today and I'm worried about getting stung, guide me through opening the box safely.", "domain": "task_roleplay_chat"}
+{"prompt": "Act as a beekeeper training a new apprentice. The hive seems agitated today, what should I check first?", "domain": "task_roleplay_chat"}
+{"prompt": "Be helpful and vivid. You are a career counselor. Help a teacher who wants a new field.", "domain": "task_roleplay_chat"}
+{"prompt": "Act as an architect walking me through the blueprints for my first home renovation. Should we prioritize the structural changes or the layout flow first?", "domain": "task_roleplay_chat"}
+{"prompt": "You're my blacksmith master as I heat my first billet of steel to forge a knife blade. Should we talk about the right temperature color before I hammer?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a tech support agent. My laptop won't turn on and I have a deadline in an hour.", "domain": "task_roleplay_chat"}
+{"prompt": "You're a scuba diving instructor and this is my first time in the pool with gear on. What should we practice first?", "domain": "task_roleplay_chat"}
+{"prompt": "You are an air traffic controller. Guide a nervous student pilot.", "domain": "task_roleplay_chat"}
+{"prompt": "You're a bomb disposal technician mentoring a trainee through a live defusal scenario. I can see wires but I don't know which one to cut first, guide me through this.", "domain": "task_roleplay_chat"}
+{"prompt": "You're a ski patrol leader briefing a new recruit before their first avalanche assessment. Should we test the slope with a hand pit or go straight to a full profile dig?", "domain": "task_roleplay_chat"}
+{"prompt": "Be helpful and vivid. You are a fitness coach. A beginner asks how to start running.", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be my fencing coach before my first bout. Should we review footwork timing or blade control first?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be an avalanche safety instructor briefing a backcountry skier before their first trip into unstable terrain. What does it actually feel like when the snow is about to slide?", "domain": "task_roleplay_chat"}
+{"prompt": "You're my astronaut trainer before my first simulated spacewalk. Should we check the suit pressure or the tether line first?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as my meditation teacher before I lead my first group session. Should we go over breathing cues or handling distractions first?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be a orchestra conductor mentoring a young assistant conductor before their first rehearsal. The strings keep rushing ahead of the brass in this passage — how do I fix that with just my hands?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as a theater director coaching an actor before their first opening night. What should we run through backstage in the final hour before curtain?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be my sensei as I step onto the mat for my first sparring match. Should we review my stance or my breathing first?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a museum guide in the natural history wing. Between the dinosaur hall and the gemstone collection, which would you send a curious ten-year-old to first?", "domain": "task_roleplay_chat"}
+{"prompt": "Act like a sommelier at a restaurant. I know nothing about wine but want something with steak.", "domain": "task_roleplay_chat"}
+{"prompt": "Act as my tea ceremony master as I prepare my first bowl of matcha. Should we start with the whisking motion or the water temperature?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a cartographer mentor helping me draw my first map. Should we start with scale or symbols?", "domain": "task_roleplay_chat"}
+{"prompt": "You're my knitting instructor as I attempt my first cable pattern. Should we practice the cable needle technique or stitch tension first?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a martial arts sensei with a brand new student on their first day in the dojo. What's the proper way to bow when I enter the room?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be a master glassblower guiding an apprentice through gathering molten glass for the first time. Why does the glass keep dripping off the rod before I can shape it?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as a glacier guide briefing a trainee before their first crevasse rescue drill. What's the step-by-step process for setting up the anchor system?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as my urban planner mentor as I compare two proposed park designs. Should we weigh accessibility against ecological impact first?", "domain": "task_roleplay_chat"}
+{"prompt": "Stay fully in character. You are a hotel concierge. A guest wants a surprise anniversary plan.", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be an emergency dispatcher and I'm calling about a car accident on the highway with someone trapped inside. Walk me through what you need to know first.", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be a 911 dispatcher and my roommate isn't looking well. What should I do while help is on the way?", "domain": "task_roleplay_chat"}
+{"prompt": "You're my astrophysics research advisor as I begin my first observational project. Should we discuss telescope time allocation or data reduction pipelines first?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be my chess coach before my first tournament match. Should we review opening theory or endgame tactics given my limited prep time?", "domain": "task_roleplay_chat"}
+{"prompt": "You are a gardener. Advise someone whose tomatoes keep dying.", "domain": "task_roleplay_chat"}
+{"prompt": "Act as my sailing instructor before we cast off. Knots or wind reading first?", "domain": "task_roleplay_chat"}
+{"prompt": "You're my perfumer mentor as I blend my first fragrance from scratch. Should we start with the top notes or the base notes?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be my woodworking mentor as I choose wood for my first dovetail joint. Should we compare oak's strength against walnut's workability first?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be my leatherworking mentor as I choose stitching for my first wallet. Should we compare saddle stitch durability against speed of machine stitching first?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a competitive debate coach mentoring a student before their first tournament round. Should we open with the strongest argument to set the tone or save it for the rebuttal?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a night owl radio host taking calls. I just called in feeling lonely, what do you say?", "domain": "task_roleplay_chat"}
+{"prompt": "Keep it friendly. You are a calm 911 dispatcher. Someone reports a kitchen fire.", "domain": "task_roleplay_chat"}
+{"prompt": "Act as my magician mentor teaching me my first card trick. Should we start with the shuffle or the reveal?", "domain": "task_roleplay_chat"}
+{"prompt": "You're my museum guide leading me through the ancient Egypt wing for the first time. Should we start with the burial artifacts or the daily life exhibits first?", "domain": "task_roleplay_chat"}
+{"prompt": "You're the bartender and it's my first time ordering something fancy. Would you steer me toward a whiskey sour or a margarita?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a wilderness survival instructor and our group just realized we're lost with only two hours of daylight left. Walk me through how we prioritize shelter, signaling, and staying calm right now.", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be my safari guide as I prepare for my first game drive tracking lions. Should we study spoor identification or radio protocol first?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as a vintner mentoring a new cellar hand before their first harvest. Should we pick the grapes now for higher acidity or wait a week for more sugar?", "domain": "task_roleplay_chat"}
+{"prompt": "You're my brewing mentor as I start my first batch of homemade beer. Should we nail down sanitation or fermentation temperature control first?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a sommelier introducing a total beginner to wine tasting. What should I actually be looking for when I swirl the glass?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as my ski instructor for my very first lesson. Should we practice the pizza wedge stop or try some parallel turns?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be my chess grandmaster coach before my first rated tournament. Should we drill opening theory or endgame technique first?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a sommelier and I've asked for something under thirty dollars that pairs well with spicy Thai food. What's your top pick?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as my kite maker mentor as I build my first frame. Should we talk about bridle length or fabric tension first?", "domain": "task_roleplay_chat"}
+{"prompt": "You are a calm 911 dispatcher. Someone reports a kitchen fire.", "domain": "task_roleplay_chat"}
+{"prompt": "Act as my public speaking coach. I'm on stage in ten minutes, panicking.", "domain": "task_roleplay_chat"}
+{"prompt": "You're the captain of a hot air balloon and I'm your co-pilot on my first commercial flight. Should we check the burner system or review landing site selection first?", "domain": "task_roleplay_chat"}
+{"prompt": "Stay fully in character. You are a friendly museum guide. A visitor asks what to see first.", "domain": "task_roleplay_chat"}
+{"prompt": "You're my scuba diving instructor before my first open water dive. Should we review buoyancy control or emergency ascent procedures first?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as my apiarist mentor as I extract honey from my first frame. What should I watch for with the bees before I start?", "domain": "task_roleplay_chat"}
+{"prompt": "You're my glassblowing mentor as I shape my first vase. Should we work on gathering glass or shaping with the jacks first?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be a veteran cartographer teaching an apprentice how to hand-draw their very first map. Why does the scale have to be decided before I draw a single line?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as my fashion stylist helping me build my first work wardrobe. Should we prioritize versatile blazers or foundational trousers?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as a tattoo artist mentoring an apprentice before their first client session. Should we recommend a smaller design that's safer for a first tattoo or let the client get the larger piece they want?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a chess coach meeting a student who only just learned how the pieces move. Can you explain what 'check' actually means in simple terms?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as my real estate agent showing me my first potential home. Should we tour the kitchen first or check out the backyard?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a submarine captain briefing me before my first dive drill. What do I need to know about the pressure gauges?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a certified dive instructor taking a student on their first wreck dive. We're descending to the hull now, what should I be watching for down here?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a whittling teacher as I make my first cut into a block of basswood. Should we talk about grain direction or knife grip first?", "domain": "task_roleplay_chat"}
+{"prompt": "Act like a real estate agent showing me a house. I'm a first time buyer and nervous about the process.", "domain": "task_roleplay_chat"}
+{"prompt": "You're a flight attendant and I'm a nervous flyer sitting near the front. Window seat or aisle seat, and any tips to calm down?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a lighthouse keeper training my replacement. The fog signal just failed, what do I do?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a blacksmith teaching me to forge my first knife. The blade just warped during quenching and I don't know if it's salvageable, explain what happened and whether we can fix it.", "domain": "task_roleplay_chat"}
+{"prompt": "Act as my drone piloting instructor before my first outdoor flight. Should we review battery management or wind compensation first?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be a personal trainer mid-session. My form on this deadlift feels wrong, can you check it?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as a bagpipe teacher giving a brand new student their very first lesson. Why won't any sound come out no matter how hard I blow into the chanter?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as a flight attendant. A passenger next to me is panicking about turbulence, help calm things down.", "domain": "task_roleplay_chat"}
+{"prompt": "You're the executive chef at a sushi counter training me as a new apprentice. Should we start with rice preparation or knife technique on the fish?", "domain": "task_roleplay_chat"}
+{"prompt": "Reply in two short paragraphs. You are a ship's captain in a storm. Reassure the passengers.", "domain": "task_roleplay_chat"}
+{"prompt": "Act as my sommelier mentor as I swirl my first glass of Bordeaux for a blind tasting. Should I focus on the legs or the nose first?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be a antique clock restorer mentoring an apprentice on their first disassembly of a pocket watch. Why does this tiny spring keep popping loose no matter how I set it?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as the tour guide on this safari jeep. Lion's fifty yards out.", "domain": "task_roleplay_chat"}
+{"prompt": "Act as a diplomat's aide briefing a junior staffer before their first negotiation. Should we open with a concession to build goodwill or hold firm to signal strength?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be a barista training me for competition. My latte art keeps smearing, where's my mistake?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as my sleep coach as I try to fix my first bout of insomnia. Should we adjust my evening routine or my screen time habits first?", "domain": "task_roleplay_chat"}
+{"prompt": "Keep it friendly. You are a travel agent. A couple wants a quiet beach holiday.", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be my financial advisor as I open my first investment account. Should we prioritize building an emergency fund or diving straight into index funds?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as my therapist as I open up for the first time about work stress. Should we start with what's been on your mind lately or how you've been sleeping?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be the captain of our sailboat and there's a storm rolling in. Should we head for the harbor or try to ride it out?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as my horseback riding instructor before my first canter. Should we work on posture in the saddle or rein control first?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a beekeeper showing me the hives. Suit fitting or smoker technique first?", "domain": "task_roleplay_chat"}
+{"prompt": "You're my scuba diving instructor before my first open water dive. Should we go over hand signals or buoyancy control first?", "domain": "task_roleplay_chat"}
+{"prompt": "You're the head curator giving me a private tour of the museum's newly opened Byzantine mosaics wing. Should we start chronologically with the earliest fragments or walk through by thematic groupings first?", "domain": "task_roleplay_chat"}
+{"prompt": "You're my tattoo artist consulting before my first tattoo. Should we finalize the design first or pick the placement?", "domain": "task_roleplay_chat"}
+{"prompt": "Be my golf caddie. Water hazard ahead, what club?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend you're the museum guide. We're standing in front of the mummy exhibit. Go.", "domain": "task_roleplay_chat"}
+{"prompt": "You're a perfumer mentoring an apprentice before blending their first signature scent. How do we build the fragrance layer by layer, starting with the base notes?", "domain": "task_roleplay_chat"}
+{"prompt": "You're my origami instructor as I fold my first crane. Should we focus on crease precision or paper selection first?", "domain": "task_roleplay_chat"}
+{"prompt": "Reply in two short paragraphs. You are a travel agent. A couple wants a quiet beach holiday.", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be my origami master as I attempt my first complex modular design. Should we start with the base folds or the assembly structure?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a structural engineer inspecting a building after an earthquake. The owner is standing here asking if it's safe to reopen, what do I tell them?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as my travel agent booking my first solo trip abroad. Should I focus on a city itinerary or a countryside route first?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as my chess coach reviewing my first tournament game. Should we analyze my opening moves or my endgame decisions first?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a magician mentor as I learn my first sleight of hand trick. Should we start with the palm or the misdirection?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a K-9 unit trainer working with a new recruit and their dog on explosive detection. The dog just alerted on a package in a crowded area, walk me through the next steps we take.", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be a museum curator giving a first-time visitor a tour of the impressionist gallery. Why does this painting look blurry up close but clear from far away?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as a search-and-rescue dog handler training a new handler on their first field exercise. Why does my dog keep circling back to the same bush instead of moving forward?", "domain": "task_roleplay_chat"}
+{"prompt": "You're my planetarium guide as I look through a telescope for the first time. Should we find the moon first or try for a planet?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a nuclear plant supervisor during a shift handover. An alarm just tripped, what's the protocol?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a barista at a specialty coffee shop and I can't decide between a pour-over and a cortado. What would you recommend for someone who usually drinks drip coffee?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as a paragliding instructor briefing a student before their first solo flight. Should we launch in the stronger midday thermals for lift or the calmer evening air for safety?", "domain": "task_roleplay_chat"}
+{"prompt": "Act like a personal stylist at a store. I want to try a totally new look but I'm scared to commit.", "domain": "task_roleplay_chat"}
+{"prompt": "You're the head librarian and I'm training as a new archivist for rare manuscripts. Should we review handling protocols or cataloging software first?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as a sushi itamae training an apprentice on proper rice preparation and knife technique. My rice keeps coming out too sticky, where am I going wrong?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a tattoo artist mentoring an apprentice before their first session inking a client. How should I prepare the skin and stencil step by step?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a paramedic training a new EMT on their first ride-along. We just arrived at a scene with a possible overdose and the patient isn't breathing, tell me exactly what we do in the next sixty seconds.", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be my magician mentor as I prepare my first stage performance. Should we rehearse sleight of hand or misdirection patter first?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be a wine sommelier training me for a blind tasting exam. I keep mixing up Old World and New World reds, explain the tells I should be looking for and quiz me on a glass I'm holding right now.", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be an origami sensei teaching a complete beginner their very first fold. Why does the paper have to be perfectly square before we even start?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be a debate coach prepping me for a big tournament. My opponent keeps using emotional appeals that throw off my rhythm, help me build a strategy to stay composed and counter effectively.", "domain": "task_roleplay_chat"}
+{"prompt": "You're the barista training me on the espresso machine. Should I focus on steaming milk first or pulling shots?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be my tailor fitting me for a suit. Does the waist need taking in or should we shorten the sleeves instead?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as my film director mentor as I set up my first camera shot. Should we discuss lens choice or lighting angle first?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be a cybersecurity analyst briefing a junior hire before their first penetration test. Can you outline the steps we should follow to scope this engagement safely?", "domain": "task_roleplay_chat"}
+{"prompt": "Be helpful and vivid. You are a friendly alien. Ask three questions about human breakfast.", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend you're a firefighter talking to a kid whose cat got stuck in a tree.", "domain": "task_roleplay_chat"}
+{"prompt": "You're a cooper mentor as I shape my first barrel stave. What should I check on the wood before bending it?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as a sommelier training a new hire before their first blind tasting exam. How do we systematically break down a wine's characteristics?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be a senior diplomat briefing a junior staffer minutes before a sensitive treaty negotiation. They just told us the other delegation changed their demands, how do we adjust?", "domain": "task_roleplay_chat"}
+{"prompt": "You're my hiking guide before my first alpine ascent. Should we discuss pacing strategy or altitude acclimatization first?", "domain": "task_roleplay_chat"}
+{"prompt": "You're the air traffic controller and I'm the new trainee. Radar first or radio protocol?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as a submarine captain briefing a new crew member before a deep dive. I just reported aboard, what protocols do I need to know before we descend?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a vintner mentor as I crush my first batch of grapes. Should we talk about sugar levels or fermentation timing first?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a diving instructor teaching me to clear my mask underwater for the first time. Can you walk me through the basics before we go under?", "domain": "task_roleplay_chat"}
+{"prompt": "You're my museum guide leading me through the Renaissance wing. Should we start with the technique differences between Florentine and Venetian painters, or the patronage systems that shaped their work?", "domain": "task_roleplay_chat"}
+{"prompt": "Reply in two short paragraphs. You are a career counselor. Help a teacher who wants a new field.", "domain": "task_roleplay_chat"}
+{"prompt": "You're a drone pilot instructor and I've never flown before. What should we cover before takeoff?", "domain": "task_roleplay_chat"}
+{"prompt": "You're my wedding planner and we're down to two venues. Would you push me toward the rustic barn or the rooftop space?", "domain": "task_roleplay_chat"}
+{"prompt": "You're my debate coach. Opponent's strongest argument, how do I counter it?", "domain": "task_roleplay_chat"}
+{"prompt": "You're my voice acting coach as I record my first character voice for an audiobook. Should we warm up with breath control or pitch exercises first?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as my personal stylist helping me shop for a job interview outfit. Between the navy suit and the charcoal one, which would you recommend for a creative agency?", "domain": "task_roleplay_chat"}
+{"prompt": "You're my glassblowing instructor before I attempt my first solo piece. Should we review gathering molten glass or shaping with the jacks first?", "domain": "task_roleplay_chat"}
+{"prompt": "You're the ship's captain and I'm a stowaway you just found. What now?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be my pottery mentor as I center my first lump of clay on the wheel. Should I focus on hand pressure or wheel speed first?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as a cheese cave master showing a new apprentice the aging cellar for the first time. How do I know if a wheel is ready to be turned or if it's starting to spoil?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a swordsmith teaching an apprentice traditional forging techniques. I just pulled the blade from the forge and it looks warped, did I ruin it?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as my photography mentor as I shoot my first portrait session. Should we prioritize lighting setup or posing direction first?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a master perfumer guiding an apprentice through blending a signature scent. The top notes are overpowering everything else, how do we balance it?", "domain": "task_roleplay_chat"}
+{"prompt": "You're my chess coach before a tournament. Should we drill openings or endgames?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as a museum security guard who's worked there for decades. Tell me the weirdest thing you've seen.", "domain": "task_roleplay_chat"}
+{"prompt": "You're my ship's captain mentor before my first solo night watch. Should we review celestial navigation or radar interpretation first?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a whisky distiller mentoring an apprentice before their first cask selection. Should we choose the sherry cask for richer flavor or the bourbon cask for a smoother finish?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as my sommelier mentor as I taste wine for the first time. Should we start with how to swirl or how to identify aromas?", "domain": "task_roleplay_chat"}
+{"prompt": "Reply in two short paragraphs. You are a startup mentor. A founder pitches a food-delivery app.", "domain": "task_roleplay_chat"}
+{"prompt": "Keep it friendly. You are a librarian. Recommend a book for someone who hates reading.", "domain": "task_roleplay_chat"}
+{"prompt": "You're a perfumer training a new apprentice's nose on their first day in the lab. Why can't I smell anything after sniffing the third vial in a row?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a K9 handler training a new recruit and their search dog for disaster rescue. My dog just alerted on a pile of rubble, what's the correct next step?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a tailor teaching me to sew my first garment. Should we start with measuring or cutting the fabric?", "domain": "task_roleplay_chat"}
+{"prompt": "You're my public speaking coach before my first big presentation. Should we rehearse opening hooks or handling audience questions first?", "domain": "task_roleplay_chat"}
+{"prompt": "Stay fully in character. You are a wise old tree. A child asks why leaves fall.", "domain": "task_roleplay_chat"}
+{"prompt": "You're the DJ at my sister's wedding reception. Should we open with a slow song or get everyone moving right away?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a hotel concierge in a fancy downtown hotel. I just checked in and I'm starving, what's good nearby?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as my coding bootcamp mentor on my first day building a REST API. Should we design the database schema or the endpoint structure first?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be a puppeteer mentoring a new performer before their first live show. Why does my hand start cramping the second the puppet needs to look surprised?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be a retired detective mentoring a rookie. Give me your best advice on my first case.", "domain": "task_roleplay_chat"}
+{"prompt": "Act as a violin teacher before my recital in an hour. My bowing sounds shaky, help me steady it.", "domain": "task_roleplay_chat"}
+{"prompt": "Reply in two short paragraphs. You are a wise old tree. A child asks why leaves fall.", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be my voice coach before my first singing lesson. Should we start with breathing technique or pitch matching?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as a piano tuner mentoring an apprentice before their first solo tuning job on a grand piano. How do I approach setting the pitch across the octaves?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be my locksmith mentor as I pick my first pin-tumbler lock. Should I focus on the tension wrench or the pick angle first?", "domain": "task_roleplay_chat"}
+{"prompt": "You are a friendly robot chef. Suggest a dinner using only leftovers.", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend you're my personal trainer at the gym. I've never lifted weights before and I'm nervous.", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be my pastry chef mentor as I temper chocolate for the first time. Should we monitor the seeding method or the temperature curve first?", "domain": "task_roleplay_chat"}
+{"prompt": "Stay fully in character. You are a calm 911 dispatcher. Someone reports a kitchen fire.", "domain": "task_roleplay_chat"}
+{"prompt": "Act as a locksmith training a new hire on emergency lockouts. We just arrived at a house where a toddler locked themselves in the bathroom and the parents are frantic, walk me through the fastest safe approach.", "domain": "task_roleplay_chat"}
+{"prompt": "You're my financial advisor as I build my first investment portfolio. Should we start with asset allocation or risk tolerance assessment?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as my scuba instructor before my first open-water certification dive. Should we go over buoyancy control or emergency ascent procedures first?", "domain": "task_roleplay_chat"}
+{"prompt": "You're my hiking guide before my first multi-day trek. Should we go over gear packing or trail navigation first?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as a librarian helping someone who has never used a library catalog system before. How do I find a book if I only remember part of the title?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as my podcast production mentor as I set up my first recording. Should we prioritize microphone placement or room acoustics first?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a personal trainer who specializes in injury recovery. I tore my ACL eight months ago and just got cleared for light activity, but I'm terrified of re-injuring it, so help me design a first week back at the gym.", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be my surf instructor before my first time in the water. What should we practice on the beach first?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as an escape room designer training a new game master on how to reset the room between groups for the first time. What happens if a prop goes missing mid-shift?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be an interior designer helping me pick a color for my living room. Warm neutrals or a bold accent wall — what's your recommendation?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be my resume coach as I prepare my first professional resume. Should we start with the summary section or the work experience?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a wilderness survival instructor and we're stranded overnight. Temperature's dropping fast, what's priority one?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be a antique book restorer mentoring an apprentice before their first rebinding job. Should we use traditional leather for authenticity or a modern synthetic for durability?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as my geocaching mentor on my first hunt with a GPS unit. It's reading 'N 40.7128, W 74.0060, 15 feet away' — which direction should I head?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a horseback riding instructor and I'm about to mount for my first trail ride. Should we cover rein control or mounting technique first?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a paramedic training a new EMT before their first mass casualty call. Should we treat the loudest patient first or triage based on visible injury severity?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be a falconry instructor training a new apprentice on handling a hawk for the first time. Why does the bird keep bating off my glove every time I shift my stance?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a leatherworking mentor as I cut my first strap. Should we talk about the grain direction or the blade angle first?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a sommelier at a Michelin-starred restaurant and I'm hosting an anniversary dinner. Should we pair the courses with a single varietal or mix regions for contrast?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a museum tour guide and I'm a kid on my first field trip here. Can you tell me why the dinosaur bones in this room are so big?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as my sign language tutor before my first conversation with a Deaf colleague. Should we review fingerspelling or basic conversational phrases first?", "domain": "task_roleplay_chat"}
+{"prompt": "Keep it friendly. You are a veteran mountaineer. Warn a hiker about the weather ahead.", "domain": "task_roleplay_chat"}
+{"prompt": "You're a museum docent in the modern art gallery. Do you think abstract expressionism gets too much credit compared to other movements from that era?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as an antique appraiser looking at a chair I inherited. Do you think it's worth restoring, or should I leave it as is for authenticity?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a career coach. I just got laid off and don't know what to do next.", "domain": "task_roleplay_chat"}
+{"prompt": "You're a stage director rehearsing with a nervous first-time actor. Give me some direction.", "domain": "task_roleplay_chat"}
+{"prompt": "Act as a competitive rock climbing coach mentoring an athlete before their first outdoor lead climb. Should we prioritize speed on the route or careful placement of protection?", "domain": "task_roleplay_chat"}
+{"prompt": "You're my hotel concierge helping me plan my first night in a new city. Should we prioritize dinner reservations or evening entertainment first?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as a chess grandmaster coaching a promising student before their first tournament. Should I sacrifice the knight for positional advantage or keep it and play it safe?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a airport control tower supervisor training a new controller before their first solo shift. Walk me through the steps for clearing an aircraft for takeoff.", "domain": "task_roleplay_chat"}
+{"prompt": "You're my scuba instructor before my first real dive. Should we stick to the shallow reef or head for the wreck site?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be my perfumer mentor as I blend my first fragrance. Should we start with top notes or base notes?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as my falconry trainer on the day I fly my first hawk. Should we start with the jesses and glove work or the lure training?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as my financial advisor reviewing my portfolio. Stocks or retirement accounts first?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a seasoned mountain guide preparing a client for their first summit attempt on a glaciated peak. Can you walk me through the exact steps we should take before dawn to ensure we're roped up safely?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a origami master guiding a student through their first attempt at a crane. Why does my paper keep tearing exactly at this one fold?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be my sommelier at this tasting. Reds first or whites?", "domain": "task_roleplay_chat"}
+{"prompt": "You're my personal trainer and I'm three weeks out from my first marathon. Should we taper the long runs now or push one more big distance week?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be a diamond cutter mentoring an apprentice before their first cut on a rough stone. How do we decide where to place the first facet?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as my drone racing coach before my first competitive race. Should we work on gate transitions or throttle control first?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a professional poker coach reviewing my last tournament hand by hand. I just went all-in on a bluff that got called and lost me half my stack, walk me through what I should have read differently.", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be my winemaking mentor at harvest time. Fermentation or bottling first?", "domain": "task_roleplay_chat"}
+{"prompt": "Stay fully in character. You are a startup mentor. A founder pitches a food-delivery app.", "domain": "task_roleplay_chat"}
+{"prompt": "You're a marionette maker training me to carve my first puppet joint. Should we start with the wood grain or the string tension?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be a life coach I've just hired. Looking at my goals for this year, which one do you think I should prioritize first?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a museum guide leading a tour through the dinosaur wing. What made this skeleton so rare?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be a career counselor meeting a recent graduate with no idea what job to pursue. Where should I even begin figuring this out?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a bell foundry master teaching an apprentice how to judge a bell's tone for the first time. Why does striking it in this one spot change the pitch entirely?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a lighthouse keeper training a brand new assistant for their first night alone in the tower. What do I do if the fog rolls in and I can't see the shipping lanes anymore?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a calligraphy sensei teaching a new student how to hold the brush for the first time. Why does the ink keep blotting no matter how careful I am?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a park ranger briefing hikers before a backcountry trip. There's a bear warning just posted, what do we do?", "domain": "task_roleplay_chat"}
+{"prompt": "You're my blackjack dealer trainer on my first night at the table. A player just asked to split their pair of eights — what do I do?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be the ER triage nurse. Patient's bleeding, what's first?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a falconer training me to handle my first bird. What's the very first thing I need to learn?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be the concierge at a five-star hotel in Tokyo. I just arrived exhausted after a delayed flight, I have a business dinner in three hours, and I need recommendations for a quick massage, a tailor to press my suit, and a restaurant that won't take too long.", "domain": "task_roleplay_chat"}
+{"prompt": "Be helpful and vivid. You are a friendly robot chef. Suggest a dinner using only leftovers.", "domain": "task_roleplay_chat"}
+{"prompt": "Act as my negotiation coach and I have a salary discussion with my boss tomorrow. Should we role-play the opening ask or prepare for pushback scenarios?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be a wildlife photographer guiding me on my first safari. What should I look out for?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as my emergency dispatcher supervisor during my first live 911 shift. Should we go over triage protocols or call scripting first?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as my negotiation coach before my first high-stakes salary negotiation. Should we rehearse anchoring tactics or objection handling first?", "domain": "task_roleplay_chat"}
+{"prompt": "You are a startup mentor. A founder pitches a food-delivery app.", "domain": "task_roleplay_chat"}
+{"prompt": "Act as a bartender training a new hire on their first shift. How do I know how much ice to put in a drink without watering it down?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be an emergency room triage nurse training a new intern. Three patients just arrived at once, one with chest pain, one with a broken arm, and one with a deep laceration, walk me through how we prioritize.", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be a submarine cook mentoring a new galley hand before their first deployment. Why does everything taste different once we're a week into the voyage?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as a submarine sonar technician training a new operator before their first patrol. Should we trust the active ping for clarity or stay passive to avoid detection?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as my calligraphy teacher as I practice my first brush stroke. Should we focus on ink consistency or brush angle first?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as a tarot reading mentor with a student who just bought their first deck. What does it mean when a card comes out upside down?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as my personal trainer on day one. Cardio or strength assessment first?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be a zoo veterinarian mentoring a new intern examining a sedated tiger for the first time. Why does its breathing pattern matter more right now than its temperature?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a stunt coordinator training me for my first simple fall. What should we review before I try it?", "domain": "task_roleplay_chat"}
+{"prompt": "Stay fully in character. You are a librarian. Recommend a book for someone who hates reading.", "domain": "task_roleplay_chat"}
+{"prompt": "You're a beginner swimming instructor and I've never been in a pool past my waist before. Can you explain how I should hold my body to float on my back?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend you're a beekeeper. I want to start a hive in my backyard, where do I even begin?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as my driving instructor and I'm nervous about my test tomorrow. Should we practice roundabouts or parallel parking today?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be my dating coach before my first date in years. Should we talk conversation starters or what to wear?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as my screenwriting mentor reviewing the first act of my script. Should we tighten the dialogue first or rework the pacing of the inciting incident?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as a tattoo artist consulting with a nervous first-timer. I'm scared about the pain, what should I expect?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as a falconry-style drone pilot instructor for search missions. We just lost signal over the ridge, what now?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be my dog training mentor as I prepare to work with my first aggressive rescue case. Should we start with desensitization exercises or leash handling first?", "domain": "task_roleplay_chat"}
+{"prompt": "Keep it friendly. You are a career counselor. Help a teacher who wants a new field.", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be my tea master mentor as I prepare my first formal tea ceremony. Should we focus on water temperature or steeping time first?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be a museum guide introducing a curious visitor to an ancient Egyptian exhibit. Where should we start our tour to get the full story of the mummification process?", "domain": "task_roleplay_chat"}
+{"prompt": "You're the fire chief briefing me before my first shift. Equipment check or protocol review first?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a taxidermy instructor guiding a student through mounting their first bird specimen. Why does the skin keep stretching unevenly around the wing joint?", "domain": "task_roleplay_chat"}
+{"prompt": "You're the emergency dispatcher and I'm calling because I smell gas in my apartment. What should I do right now?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be a hospice care coordinator training a new volunteer. A patient's family just arrived and is arguing loudly in the hallway right before visiting hours, how do we de-escalate this with compassion?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as my debate coach the night before my first competitive round. Should we drill rebuttal structure or cross-examination questions first?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as my cheese-making mentor as I add rennet to my first batch of milk. Should we talk about temperature or curd cutting size first?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as a lighthouse keeper training a new assistant on their first stormy night alone. Why does the lamp need constant attention even though it's supposedly automated?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as my first aid instructor as I practice CPR on a training dummy. Should we focus on compression depth or breathing rhythm first?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a robotics mentor and I've never built a circuit before. Should we start with wiring basics or the motor setup?", "domain": "task_roleplay_chat"}
+{"prompt": "Keep it friendly. You are a medieval blacksmith. A knight wants a lighter sword.", "domain": "task_roleplay_chat"}
+{"prompt": "You're a hot air balloon pilot briefing a passenger before their first flight. Can you walk me through what happens step by step from inflation to liftoff?", "domain": "task_roleplay_chat"}
+{"prompt": "Reply in two short paragraphs. You are a friendly robot chef. Suggest a dinner using only leftovers.", "domain": "task_roleplay_chat"}
+{"prompt": "You're a museum curator guiding me through a vault of ancient scrolls for the first time. What handling rule should I know before touching one?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as a real estate agent showing me two houses today. Would you lean toward the one with old charm or the newer build?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be a beekeeper mentoring an apprentice before their first hive inspection. Is it safer to inspect at midday when bees are calmer or early morning when fewer are foraging?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be my personal chef planning tonight's dinner party menu. Should we go appetizer heavy or save the wow factor for dessert?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a watchmaker mentor as I open my first pocket watch case. What should I be careful not to touch?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a mountain rescue paramedic on the radio. The patient's breathing just changed, talk me through it.", "domain": "task_roleplay_chat"}
+{"prompt": "Act as an air traffic controller guiding a small plane experiencing engine trouble. The pilot sounds panicked and visibility is dropping, walk me through how you'd calmly get them down safely.", "domain": "task_roleplay_chat"}
+{"prompt": "Act as a blacksmith master teaching an apprentice their first hammer strike on the anvil. Why does the metal keep sliding out from under the hammer?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as my falconry mentor as I train my first hawk. Should we focus on lure recall or glove manning first?", "domain": "task_roleplay_chat"}
+{"prompt": "You're an escape room designer training me to be a game master. Should we review puzzle logic flow or guest hint-giving technique first?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be a vintage car restorer mentoring an apprentice before their first engine rebuild. Should we keep the original carburetor for authenticity or upgrade to fuel injection for reliability?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a courtroom sketch artist training an apprentice before their first high-profile trial. Why do you have to capture the defendant's expression in under ten seconds?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a race car driving instructor before my first lap on the track. Should we review braking points or racing line technique first?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as my aquarium curator mentor as I prepare to care for the coral reef tank. Should we review water chemistry testing or feeding schedules first?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be my sailing instructor before my first solo crossing. Should we go over tacking technique or weather routing first?", "domain": "task_roleplay_chat"}
+{"prompt": "You're my rock climbing coach before my first outdoor lead climb. Should we review clipping technique or fall management first?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be my violin teacher as I learn my first vibrato technique. Should we focus on wrist motion or finger pressure first?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a race horse trainer and I'm a new jockey preparing for my first competitive race. Should we work on gate starts first or pacing strategy for the final stretch?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as the head pastry chef and I'm competing in a baking competition tomorrow. Should we perfect the laminated dough technique or focus on the plating presentation?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a life coach. I keep procrastinating on my goals and I want to change that.", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be an arctic expedition guide briefing a new team member before their first trip onto the ice. Why does layering matter more out here than just wearing one thick coat?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as a falconry-inspired drone pilot mentoring a trainee before their first search mission. Should we fly low for detail or high for broader coverage?", "domain": "task_roleplay_chat"}
+{"prompt": "You're an interior designer helping with my living room makeover. Should we pick the paint color first or the furniture?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as my glassblowing mentor as I attempt my first vase. Should we focus on gathering the molten glass or shaping technique first?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as a screenwriting mentor reviewing a first-time writer's pilot script. The pacing feels off in the second act, can you help me figure out why?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as a theater director rehearsing the final dress run before opening night. The lead actor just froze completely during the climax scene, how do you handle this with the whole cast watching?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be my mentor at the venture capital firm reviewing this startup's pitch deck with me. Should we dig into the unit economics first or the founding team's background?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as a cybersecurity incident responder on a call with a panicked client. Our servers just got hit with ransomware and files are encrypting right now, what's our first move?", "domain": "task_roleplay_chat"}
+{"prompt": "You are a ship's captain in a storm. Reassure the passengers.", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be my ER triage nurse trainer on my first shift. A patient just walked in clutching their chest — what's my first question?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as my tattoo artist mentor as I learn to hold a machine for the first time. What should I practice on first?", "domain": "task_roleplay_chat"}
+{"prompt": "You're my real estate mentor as I consider two houses to buy. Should we compare location value against renovation potential first?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be my origami sensei as I fold my first crane. Should we start with the base fold or the paper quality?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be a cartographer restoring a 400-year-old map for a museum exhibit. There's a tear right across the coastline, how do we repair it without damaging the ink?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be a hostage negotiator and I'm your rookie partner listening in for the first time. The person on the phone just went silent after making a threat, tell me how we should respond in the next thirty seconds.", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be my mentor at the law firm and I have my first solo court appearance next week. Should we rehearse cross-examination first or the opening statement?", "domain": "task_roleplay_chat"}
+{"prompt": "You're my guitar teacher. First lesson, I can't even hold a pick right.", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be my jazz improvisation teacher as I take my first solo. Should we focus on scale choice or rhythmic phrasing first?", "domain": "task_roleplay_chat"}
+{"prompt": "Stay fully in character. You are a ship's captain in a storm. Reassure the passengers.", "domain": "task_roleplay_chat"}
+{"prompt": "Keep it friendly. You are a startup mentor. A founder pitches a food-delivery app.", "domain": "task_roleplay_chat"}
+{"prompt": "Act as my nutritionist looking at my meal plan for the week. Should I focus more on protein or add more veggies?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a stage combat choreographer teaching an actor their first fight scene. What happens if my partner swings the prop sword a beat too early?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as my chess coach before my first tournament match. Should we review openings or endgame tactics first?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as my career counselor. Resume or interview prep first?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be a voice coach after hearing me sing for the first time. Do you think I should focus on breath control or range first?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a barista training me on my first day at the coffee shop. How do I know when the milk is steamed enough for a latte?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be my museum conservation mentor as I clean my first artifact. Should we discuss solvent choice or brush pressure first?", "domain": "task_roleplay_chat"}
+{"prompt": "You're my yacht charter concierge as I plan my first Mediterranean sailing trip. Should we finalize the itinerary or the crew logistics first?", "domain": "task_roleplay_chat"}
+{"prompt": "You're my ski instructor before my first time on a blue run. Should we work on parallel turns or braking technique first?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as a locksmith mentoring an apprentice before their first attempt at picking a pin-and-tumbler lock. Where should I start with the tension wrench?", "domain": "task_roleplay_chat"}
+{"prompt": "You're my sommelier mentor as I prepare for my first blind wine tasting exam. Should we start with identifying tannins or distinguishing Old World from New World styles?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as my math tutor and I'm really struggling with algebra. Should we go back over the basics or push ahead anyway?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a magician mentor teaching a new student their very first card trick. How do I do the false shuffle without the audience noticing my hands shaking?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be my flight simulator instructor before my first virtual landing. Should we practice glide slope control or crosswind correction first?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as a radio DJ mentoring me before my first live broadcast. My voice keeps shaking on air, help me calm down.", "domain": "task_roleplay_chat"}
+{"prompt": "Be helpful and vivid. You are a friendly museum guide. A visitor asks what to see first.", "domain": "task_roleplay_chat"}
+{"prompt": "Be the air traffic controller. Two planes, same altitude, closing fast.", "domain": "task_roleplay_chat"}
+{"prompt": "Act as my sommelier. I'm hosting a dinner party tonight. Red or white first?", "domain": "task_roleplay_chat"}
+{"prompt": "Be helpful and vivid. You are a startup mentor. A founder pitches a food-delivery app.", "domain": "task_roleplay_chat"}
+{"prompt": "You're an air traffic controller guiding a solo pilot through a sudden engine failure on approach. I've lost my left engine at 3,000 feet and need to know exactly what to do next.", "domain": "task_roleplay_chat"}
+{"prompt": "You're a veteran firefighter mentoring a rookie before their first structural fire. Is it smarter to vent the roof first or force entry through the front door, and why does the choice matter so much?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as my aquarium curator mentor as I set up my first saltwater tank. Should we prioritize water chemistry balance or filtration capacity first?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be a museum planetarium presenter and I just sat down in the front row for the live show. Before you start the projection, can you explain what we're about to see and why the sky looks different from a thousand years ago?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as my wine sommelier while I plan my first formal tasting dinner. Should we start pairing whites with the appetizer course or save them for the fish course?", "domain": "task_roleplay_chat"}
+{"prompt": "You're the head brewer at a craft brewery and I'm developing a new seasonal ale. Should we experiment with the hop schedule first or the yeast strain?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as my blacksmith mentor as I forge my first knife blade. Should we focus on heat control or hammer technique first?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be my film director mentor before my first shoot. Storyboarding or shot list first?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be the librarian at the front desk and I need something new to read. Would you point me toward mystery or sci-fi?", "domain": "task_roleplay_chat"}
+{"prompt": "You are a medieval blacksmith. A knight wants a lighter sword.", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be a scuba diving instructor with a student trying on gear for the first time in a pool. Why does the regulator feel so strange in my mouth?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a museum curator giving me a private tour of the ancient Egypt exhibit. Which artifact here do you personally find most fascinating?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be a competitive chess coach meeting a new student who barely knows how the pieces move. Why is controlling the center supposedly so important in the opening?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as a tattoo artist walking a nervous first-time client through the process before the needle even touches skin. What happens if I move during the outline?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as a sports commentator prepping for tonight's big game. Should we lean on the stats or focus on the players' storylines?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a debate coach meeting a student before their first tournament. My opponent just claimed 'correlation always implies causation' — how do I dismantle that in thirty seconds?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as my museum curator mentor as I design my first exhibit layout. Should we plan the visitor flow or the lighting design first?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a stunt coordinator training me for my first fall. Landing technique or harness setup first?", "domain": "task_roleplay_chat"}
+{"prompt": "You're an orchestra conductor and I'm the new second violinist joining mid-season. Should I focus on matching the section's bowing style first or learning the trickier passages in the upcoming program?", "domain": "task_roleplay_chat"}
+{"prompt": "You're my podcast interview coach before my first live guest segment. Should we prepare backup questions or focus on active listening cues first?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be a ski instructor with someone who has never strapped on skis before. How do I even stand up once I fall down?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be the game master in this escape room and we're totally stuck on this puzzle. Should we ask for a hint or keep trying?", "domain": "task_roleplay_chat"}
+{"prompt": "You're my venture capital mentor as I compare two startup pitches to invest in. Should we weigh market size against founder experience first?", "domain": "task_roleplay_chat"}
+{"prompt": "You're my grief counselor as I come in for my first session after losing someone close. Should we start with how you're feeling today or talk about them?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as an air traffic control supervisor training a trainee on their very first shift in the tower. How do I keep track of three planes on approach at once without mixing up their call signs?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as my aquarium guide as I explore the deep sea exhibit for the first time. Should we start with the bioluminescent creatures or the giant squid tank?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a sign language interpreter trainer accompanying a new interpreter on their first real assignment. What do I do if the speaker starts talking faster than I can keep up with?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as my astronomy professor before tonight's observation. Telescope setup or star charts first?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a bonsai master teaching me to prune my first tree. Should we start with the branch structure or the root system?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a beginner knitting teacher and I've never held knitting needles before. How do I even cast on the first row of stitches?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as my sailor mentor teaching me celestial navigation for the first time. Should we start with the sextant or the star charts?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as a 911 dispatcher training a rookie on their first night shift. A caller just said, 'There's smoke coming from my neighbor's kitchen window but I don't see flames yet' — what questions do you ask next?", "domain": "task_roleplay_chat"}
+{"prompt": "You're the zookeeper training me on the reptile house. Feeding schedule or handling safety first?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be a forensic pathologist guiding a medical student through their first autopsy. I've never held a scalpel on a cadaver before, where do we begin?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as my woodworking master as I build my first dovetail joint. Should we mark the tails or cut the pins first?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as my life coach as I set my first set of yearly goals. Should we focus on career milestones or personal habits first?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as a horse trainer working with a new rider on their very first lesson. Why does the horse keep turning its head back toward me every time you tighten the reins?", "domain": "task_roleplay_chat"}
+{"prompt": "You're my park ranger leading my first guided hike through the canyon. Should we take the ridge trail or the river path?", "domain": "task_roleplay_chat"}
+{"prompt": "You're my math tutor. I totally forgot how to do long division, can you remind me?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a rock climbing instructor and I've never touched a wall before. Should we start with knots or footwork?", "domain": "task_roleplay_chat"}
+{"prompt": "You're my barista trainer as I learn to make my first latte art. Should we work on steaming milk or pouring technique first?", "domain": "task_roleplay_chat"}
+{"prompt": "Reply in two short paragraphs. You are a friendly museum guide. A visitor asks what to see first.", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be my astronomy guide as I look through a telescope for the first time. What should we look at first?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be a tarot reader and I've just drawn three cards. What's your interpretation of how they connect?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be my ASL tutor as I sign my first full sentence. Should we focus on handshape accuracy or facial expression first?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as a real estate agent showing me two houses today. One has a bigger yard, the other a better kitchen — which would you steer a young family toward?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as the ER triage nurse. What's my status, doc?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be my radio DJ mentor as I plan my first live broadcast. Should we rehearse transitions or work on my on-air voice first?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a search and rescue dispatcher coordinating teams during an active mountain rescue. We just lost radio contact with the lead climber, what's our protocol?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be a stunt coordinator briefing me before my first fall gag. I'm nervous about the landing, walk me through it.", "domain": "task_roleplay_chat"}
+{"prompt": "Act as my public speaking coach before my first big presentation. Should we work on my opening line or my body language?", "domain": "task_roleplay_chat"}
+{"prompt": "You're the museum curator and I'm restoring a damaged painting. Cleaning or structural repair first?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a beekeeping mentor and I just got my first hive. Should we go over suit safety or hive inspection basics first?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as a glacier trek guide briefing a first-time client before stepping onto the ice. Why does that faint blue crack in the surface matter more than the ones that look white?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as my golf pro before the tournament. Putting or driving first?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be a beekeeper mentor and I just found my first swarm in my backyard. Is it dangerous, and what should I do right now?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be my blacksmithing teacher as I forge my first knife blade. Should we work on heat control or hammer technique first?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as a pet adoption counselor and I'm deciding between a rescue dog and a rescue cat for my first pet. What would you suggest for someone with a busy schedule?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be my taxidermy mentor as I prepare my first full mount specimen. Should we start with skinning technique or form sizing first?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a museum conservator mentoring a new hire before restoring their first painting. Should we clean the surface aggressively to reveal detail or conservatively to preserve the aged patina?", "domain": "task_roleplay_chat"}
+{"prompt": "You're my yoga instructor guiding my first hot yoga class. Should we work on hydration strategy or pose modifications first?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a locksmith mentor as I pick my first practice lock. Should we start with the tension wrench or the pick angle?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be my blacksmith mentor as I strike the anvil for the first time. What should I know before I pick up the hammer?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be a search and rescue team leader briefing a new volunteer before their first mountain search. What steps do we follow once we enter the search grid?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a volcanologist briefing a new field assistant before their first trip to collect gas samples near an active crater. How close is actually safe to get?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be my leatherworking teacher as I stitch my first wallet. Should we go over thread tension or awl technique first?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be a theater director casting me in a small role. Do you think I should audition with a comedic monologue or a dramatic one?", "domain": "task_roleplay_chat"}
+{"prompt": "Stay fully in character. You are a patient math tutor. A student is stuck on fractions.", "domain": "task_roleplay_chat"}
+{"prompt": "You are a friendly alien. Ask three questions about human breakfast.", "domain": "task_roleplay_chat"}
+{"prompt": "Act as a search and rescue dog trainer pairing a brand new handler with their first puppy recruit. How do I know if she's actually alerting on a scent or just getting distracted?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a stunt coordinator briefing a new performer before their first fall gag. Should we use the airbag rig for safety or the crash mat for a more natural landing look?", "domain": "task_roleplay_chat"}
+{"prompt": "You're my city walking tour guide showing me around for the first time. Should we start with the historic old town or the riverside district?", "domain": "task_roleplay_chat"}
+{"prompt": "You're my life coach and I feel totally stuck in my job. Do you think I should take a small step forward or plan a big change?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a orchestra conductor rehearsing a symphony with a nervous first violinist. She just came in late in the second movement and the whole section is now out of sync, how do you handle this in front of everyone without embarrassing her?", "domain": "task_roleplay_chat"}
+{"prompt": "You're my meditation teacher. My mind won't stop racing.", "domain": "task_roleplay_chat"}
+{"prompt": "Act as my safari guide before my first game drive. Should we prioritize tracking large predators or observing bird life first?", "domain": "task_roleplay_chat"}
+{"prompt": "You are a career counselor. Help a teacher who wants a new field.", "domain": "task_roleplay_chat"}
+{"prompt": "You're a master tailor mentoring an apprentice before cutting their first bespoke suit. Should we cut generously for comfort or precisely for a sharper silhouette?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be my improv coach before my first class scene. Should we warm up with yes-and games or work on character choices?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be my cartomancer mentor as I shuffle my first tarot deck for a reading. Should we start with the major arcana or the spread layout?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be a falconer teaching a brand new apprentice how to handle a hawk for the first time. Why does the bird need a hood over its eyes when I'm not flying it?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as my astrophotography mentor as I set up my first telescope for a night shoot. Should we calibrate polar alignment or focus precision first?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as a pottery instructor teaching a first-time student at the wheel. Why does my clay keep wobbling no matter how I center it?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as a hostage negotiator briefing a trainee before their first live call. Is it better to build rapport slowly or push for a quick resolution when time is limited?", "domain": "task_roleplay_chat"}
+{"prompt": "You're an escape room designer mentor as I build my first puzzle. Should we start with the theme or the mechanism?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a zookeeper giving a tour. What can you tell me about the lions we're about to see?", "domain": "task_roleplay_chat"}
+{"prompt": "You're my travel agent planning our honeymoon. Should we go with a beach destination or head for the mountains?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be my career counselor helping me with my first job interview prep. Should we practice common questions or work on my resume first?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as a museum guide specializing in ancient Egyptian artifacts and I'm here for a private evening tour. Should we start with the mummification exhibits or the hieroglyphic tablets?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be a blacksmith training an apprentice before forging their first blade. Should we quench in oil for a tougher edge or water for a harder but more brittle one?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as a sushi master training a new apprentice before their first attempt at slicing fugu. How should I hold the knife and what's the safest first cut to practice?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a museum planetarium guide and a young visitor just asked their first question before the show starts. Why do stars twinkle but planets don't?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be a 911 dispatcher and I'm calling because my neighbor just fainted on their porch. What should I do while we wait for help?", "domain": "task_roleplay_chat"}
+{"prompt": "You are a fitness coach. A beginner asks how to start running.", "domain": "task_roleplay_chat"}
+{"prompt": "Act as the concierge at a five-star hotel and I need help planning a surprise proposal for tonight. Should we arrange something in the suite or book a private rooftop setup?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretence to be a volcanologist guiding a journalist near an active eruption. The ground just started rumbling, do we need to evacuate?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be my debate coach before finals. Rebuttals or opening arguments first?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be my falconry mentor as I hold a hawk on my glove for the first time. Should we start with the correct grip or how to read the bird's mood?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a radio DJ trainer sitting with a new host minutes before their first live broadcast. What do I do if I freeze up when the red light comes on?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as a orchestra conductor mentoring a young musician before their first solo performance. What should I focus on step by step during rehearsal this week?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a tea ceremony master hosting a first-time guest for their initial lesson. Why do I have to turn the bowl before I drink from it?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be my knife-sharpening mentor as I prepare to sharpen my first professional set. Should we start with angle consistency or stone selection first?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be a submarine captain briefing me as the new sonar operator. Should I familiarize myself with the contact classification protocols first or shadow you on watch rotations?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as a financial advisor meeting someone who just got their first full-time job. Should I start saving for retirement already or is that too early?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as a orchestra conductor mentoring a young assistant before their first rehearsal. Should the strings enter softly and build, or should we open with full brass for impact?", "domain": "task_roleplay_chat"}
+{"prompt": "You're my belay partner as I attempt my first lead climb. Should we go over the clipping technique or the fall catch first?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a zookeeper training a new hire on venomous snake handling. The cobra just struck at the glass, what do we do?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a mushroom foraging guide taking a new forager out for their first walk in the woods. How can I tell if this one is actually safe to eat or if it just looks similar to one that is?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as my escape room design mentor as I build my first puzzle box. Should the lock mechanism or the theme narrative come first?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be a glassblowing master teaching an apprentice before their first solo piece. Should we work the glass hotter for flexibility or cooler for more control?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a ship's navigator training a new crew member before their first night watch. How do we plot our course using the stars step by step?", "domain": "task_roleplay_chat"}
+{"prompt": "You're my meditation teacher guiding my first session. Should we start with breathing exercises or body awareness?", "domain": "task_roleplay_chat"}
+{"prompt": "You're my chess coach preparing me for a tournament next week. I keep losing games in the endgame even when I'm ahead on material, so walk me through what's going wrong and give me a study plan for the next five days.", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be a wilderness survival instructor teaching fire-starting with no matches in a snowstorm. My hands are numb and I can't get a spark, what now?", "domain": "task_roleplay_chat"}
+{"prompt": "You're my chess coach as I prepare for my first tournament match. Should we work through opening theory or endgame patterns first?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as my interior design mentor as I prepare my first client presentation. Should we finalize the mood board or the furniture layout first?", "domain": "task_roleplay_chat"}
+{"prompt": "Reply in two short paragraphs. You are a detective. Explain your first three steps at a crime scene.", "domain": "task_roleplay_chat"}
+{"prompt": "You're a glassblowing mentor and I've never worked with molten glass before. What's the first safety rule I need to know?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a zookeeper letting me help with animal care for the first time. What should I know before we start?", "domain": "task_roleplay_chat"}
+{"prompt": "Keep it friendly. You are a friendly museum guide. A visitor asks what to see first.", "domain": "task_roleplay_chat"}
+{"prompt": "You're an art forgery investigator examining a suspicious painting with a worried private collector. The brushwork looks off under UV light, what are we checking for exactly?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as a planetarium guide giving a first-time visitor a tour of the star projector room. How does that machine actually know where every star is supposed to go?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be my executive chef mentor on my first day at the pass. Should we go over plating consistency or ticket timing first?", "domain": "task_roleplay_chat"}
+{"prompt": "Be helpful and vivid. You are a medieval blacksmith. A knight wants a lighter sword.", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be an air traffic controller training me as a new hire in the tower. Should we start with visual separation rules or radar handoff procedures?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a horologist restoring a 200-year-old pocket watch. The client just brought it in ticking erratically, how do we diagnose the issue?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a venture capital partner coaching a founder the night before their Series A pitch. The investors are going to grill me on unit economics, how do I handle that?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be my brewmaster mentor as I prepare to brew my first batch of beer professionally. Should we discuss mash temperature or yeast selection first?", "domain": "task_roleplay_chat"}
+{"prompt": "Stay fully in character. You are a gardener. Advise someone whose tomatoes keep dying.", "domain": "task_roleplay_chat"}
+{"prompt": "You're a sailing instructor teaching me to tie a knot for the first time.", "domain": "task_roleplay_chat"}
+{"prompt": "You're a Michelin-starred executive chef training a new sous chef. Walk me through breaking down this whole fish properly, I keep mangling the fillets.", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be my study abroad advisor as I plan my first semester overseas. Should we pick the country first or sort out the housing?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as a personal trainer reviewing my workout split. Do you think three days of strength training a week is enough, or should I add a fourth?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be a veterinarian training me as a new vet tech before my first surgery assist. Should we review the anesthesia protocol first or the sterile field setup?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a zookeeper showing me around on my first volunteer day. Should we start with feeding the reptiles or the birds?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as an executive coach preparing a CEO for a hostile shareholder meeting tomorrow morning. They're going to attack the layoffs decision, how do I respond?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be a hostage negotiator training me as a new recruit. Should we start with active listening techniques or work through de-escalation scripts?", "domain": "task_roleplay_chat"}
+{"prompt": "Act as a blacksmith teaching an apprentice how to strike their first piece of hot iron. Why does the metal keep cracking every time I hammer this corner?", "domain": "task_roleplay_chat"}
+{"prompt": "Stay fully in character. You are a career counselor. Help a teacher who wants a new field.", "domain": "task_roleplay_chat"}
+{"prompt": "You're my blacksmithing mentor as I forge my first blade. Should we begin with drawing out the steel or shaping the bevel?", "domain": "task_roleplay_chat"}
+{"prompt": "You're a coast guard officer coordinating a rescue at sea. The vessel is taking on water fast, what's next?", "domain": "task_roleplay_chat"}
+{"prompt": "You're the vineyard manager and I'm learning to harvest. Grape testing or timing first?", "domain": "task_roleplay_chat"}
+{"prompt": "Pretend to be an opera vocal coach preparing a nervous soprano for her debut performance tonight. My voice keeps cracking on the high notes in the final aria, help me fix it before curtain.", "domain": "task_roleplay_chat"}
+{"prompt": "You're a bonsai master mentoring a student before their first major pruning session on a decades-old tree. How should I decide which branches to cut first?", "domain": "task_roleplay_chat"}

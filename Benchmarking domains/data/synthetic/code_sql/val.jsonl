@@ -1,0 +1,100 @@
+{"prompt": "can you refactor this query to avoid the SELECT * and only pull the columns we actually need\nSELECT * FROM transactions WHERE account_id = 10 ORDER BY created_at DESC LIMIT 20", "domain": "code_sql"}
+{"prompt": "I'm deciding between storing timestamps in UTC always versus local time with a timezone column — what's your recommendation?", "domain": "code_sql"}
+{"prompt": "Can you help me refactor this nested subquery into a cleaner query using CTEs?\nSELECT * FROM (SELECT * FROM (SELECT customer_id, SUM(total) as total_spent FROM orders GROUP BY customer_id) t WHERE total_spent > 1000) f ORDER BY total_spent DESC;", "domain": "code_sql"}
+{"prompt": "Rewrite this query using EXISTS instead of IN.", "domain": "code_sql"}
+{"prompt": "Show me step by step how to write a stored procedure in PostgreSQL that transfers funds between two accounts while checking for sufficient balance.", "domain": "code_sql"}
+{"prompt": "I want to merge two similar tables with UNION but I keep getting column mismatch errors, any tips?", "domain": "code_sql"}
+{"prompt": "Explain step by step how the query planner would execute this query, including which indexes it might use: SELECT p.name, c.category_name FROM products p JOIN categories c ON p.category_id = c.id WHERE p.price > 100 ORDER BY p.created_at DESC LIMIT 20;", "domain": "code_sql"}
+{"prompt": "Can you show me step by step how to write a query that computes a 7-day moving average of daily active users?", "domain": "code_sql"}
+{"prompt": "Can you review this query and suggest indexes to speed it up?\nSELECT customer_id, COUNT(*) FROM orders WHERE status = 'shipped' AND created_at > '2023-01-01' GROUP BY customer_id;", "domain": "code_sql"}
+{"prompt": "Write a SQL function that finds duplicate email addresses in a users table. Include a short comment explaining the approach.", "domain": "code_sql"}
+{"prompt": "How do I add a new column to an existing table? Can you show the ALTER TABLE syntax?", "domain": "code_sql"}
+{"prompt": "Explain why this query hits a full table scan despite having an index", "domain": "code_sql"}
+{"prompt": "In SQL, write a function that finds products that have never been ordered and explain its time complexity.", "domain": "code_sql"}
+{"prompt": "Do you think this trigger-based audit logging approach is overengineered for a small internal tool?\nCREATE TRIGGER trg_audit AFTER UPDATE ON accounts FOR EACH ROW EXECUTE FUNCTION log_account_change()", "domain": "code_sql"}
+{"prompt": "what's the difference between UNION and UNION ALL, with a small example please", "domain": "code_sql"}
+{"prompt": "How would you write a SQL query to pivot monthly sales data from rows into columns, one column per month?", "domain": "code_sql"}
+{"prompt": "How do I go about writing a batch UPSERT statement that inserts new records or updates existing ones based on a unique constraint?", "domain": "code_sql"}
+{"prompt": "Explain step by step how to write a query that finds the second-highest salary in each department without using LIMIT or OFFSET.", "domain": "code_sql"}
+{"prompt": "Explain what a window function LAG does with an example using stock prices over time", "domain": "code_sql"}
+{"prompt": "can you add error handling to this batch script so it logs failures instead of stopping entirely", "domain": "code_sql"}
+{"prompt": "Refactor this stored procedure that uses nested cursors to loop through customers and their orders into a single set-based query: DECLARE cur1 CURSOR FOR SELECT customer_id FROM customers; ... (nested loop logic) ...", "domain": "code_sql"}
+{"prompt": "In SQL, write a function that computes the churn rate between two months and explain its time complexity.", "domain": "code_sql"}
+{"prompt": "How would I go about writing a query using LATERAL joins to get the top 3 most recent orders for each customer?", "domain": "code_sql"}
+{"prompt": "Explain the difference between a correlated subquery and a non-correlated subquery with examples.", "domain": "code_sql"}
+{"prompt": "Implement, in SQL, code that returns sessions longer than the average session length. Add a couple of example calls.", "domain": "code_sql"}
+{"prompt": "I'm trying to prevent SQL injection in a dynamic query builder that constructs WHERE clauses based on user input filters. Explain best practices for parameterization and show an example of vulnerable versus safe dynamic SQL.", "domain": "code_sql"}
+{"prompt": "Explain step by step what this window function query is doing and why it might produce duplicate rank values:\nSELECT id, RANK() OVER (ORDER BY score DESC) AS rnk FROM contestants", "domain": "code_sql"}
+{"prompt": "Hey can you help me figure out why this query is returning duplicate rows? SELECT o.id, c.name FROM orders o JOIN customers c ON o.customer_id = c.id JOIN order_items oi ON oi.order_id = o.id", "domain": "code_sql"}
+{"prompt": "Explain the difference between READ COMMITTED and REPEATABLE READ isolation levels with a concrete example of a phantom read scenario.", "domain": "code_sql"}
+{"prompt": "Simplify this nested subquery.", "domain": "code_sql"}
+{"prompt": "What's the better practice here — using a sequence explicitly or letting the database handle identity columns automatically?", "domain": "code_sql"}
+{"prompt": "Please explain, line by line, what this window function query is doing and why it uses RANGE instead of ROWS.\nSELECT id, amount, SUM(amount) OVER (ORDER BY order_date RANGE BETWEEN INTERVAL '7 days' PRECEDING AND CURRENT ROW) FROM sales;", "domain": "code_sql"}
+{"prompt": "I want a detailed walkthrough of how to pivot this table so that each product category becomes its own column with total sales as values.", "domain": "code_sql"}
+{"prompt": "How do I write a query that assigns a unique rank to each product within its category based on sales, breaking ties by product_id?", "domain": "code_sql"}
+{"prompt": "Write a query to compute a running total of daily revenue per store using a window function.", "domain": "code_sql"}
+{"prompt": "got this error 'column ambiguous' on a join, can you spot the issue\nSELECT id, name FROM employees e JOIN departments d ON e.dept_id = d.id;", "domain": "code_sql"}
+{"prompt": "What's the difference between COUNT(*) and COUNT(column_name)? Can you show an example where they give different results?", "domain": "code_sql"}
+{"prompt": "Add a CHECK constraint to ensure price is always positive", "domain": "code_sql"}
+{"prompt": "Can you explain why this query plan shows a nested loop join instead of a hash join, and whether that's a problem given the table sizes involved?", "domain": "code_sql"}
+{"prompt": "Please help me trace through why this UPDATE statement is updating more rows than expected.\nUPDATE inventory SET quantity = quantity - 1 WHERE product_id IN (SELECT product_id FROM orders);", "domain": "code_sql"}
+{"prompt": "Explain what a columnstore index is and why it's beneficial for analytical queries over row-based storage.", "domain": "code_sql"}
+{"prompt": "How would you write a query to find the three most recent orders per customer without using a window function, and then show the window function version for comparison?", "domain": "code_sql"}
+{"prompt": "Write a query that lists the top 3 best-selling products per month", "domain": "code_sql"}
+{"prompt": "How do I write a query to find the second highest salary in each department, handling ties correctly?", "domain": "code_sql"}
+{"prompt": "Explain deadlocks and how to avoid them in transactions.", "domain": "code_sql"}
+{"prompt": "Explain what a NULL value means in SQL and how to check for it in a WHERE clause.", "domain": "code_sql"}
+{"prompt": "Can you explain the basic syntax of a LEFT JOIN and when I'd use it instead of an INNER JOIN?", "domain": "code_sql"}
+{"prompt": "I want to find duplicate email addresses in a users table. Can you write a query for that?", "domain": "code_sql"}
+{"prompt": "What's your take on using database views to abstract complex joins versus just embedding the logic directly in application queries?", "domain": "code_sql"}
+{"prompt": "Walk me through creating a query that assigns a unique sequential number to each row within a group, resetting the count when the group changes.", "domain": "code_sql"}
+{"prompt": "Compare clustered versus non-clustered indexes for a table that's frequently range-scanned on a timestamp column but also filtered by a status flag.", "domain": "code_sql"}
+{"prompt": "can you simplify this CASE WHEN chain, it feels way too long\nCASE WHEN status = 1 THEN 'active' WHEN status = 2 THEN 'inactive' WHEN status = 3 THEN 'pending' WHEN status = 4 THEN 'deleted' ELSE 'unknown' END", "domain": "code_sql"}
+{"prompt": "Should I use a CTE or a subquery here for readability, and does it matter for performance in Postgres?\nSELECT * FROM (SELECT customer_id, SUM(amount) AS total FROM orders GROUP BY customer_id) t WHERE total > 1000;", "domain": "code_sql"}
+{"prompt": "How would you detect and remove orphaned rows in a child table where the parent no longer exists?", "domain": "code_sql"}
+{"prompt": "can you write a trigger that logs any update made to the salary column into an audit table", "domain": "code_sql"}
+{"prompt": "Write a window function query that computes a running total of daily sales per region, resetting at the start of each fiscal year.", "domain": "code_sql"}
+{"prompt": "Should I use a lateral join (CROSS APPLY) or a correlated subquery to get the top 3 orders per customer, and how do their execution plans typically differ?", "domain": "code_sql"}
+{"prompt": "What's your recommendation for handling soft deletes — a deleted_at timestamp column or a separate archive table?", "domain": "code_sql"}
+{"prompt": "write a query that ranks products by sales within each category using RANK()", "domain": "code_sql"}
+{"prompt": "Write a query to normalize a comma-separated column into rows.", "domain": "code_sql"}
+{"prompt": "Why is this UPDATE affecting more rows than expected?", "domain": "code_sql"}
+{"prompt": "Given a table of flight segments with departure and arrival airports, write a recursive query to find all possible multi-leg routes between two given airports with at most 3 layovers.", "domain": "code_sql"}
+{"prompt": "Can you explain how recursive CTEs work by writing one that generates a sequence of dates for the current month?", "domain": "code_sql"}
+{"prompt": "Can you show me how to use a CTE to deduplicate rows while keeping the most recent one per group?", "domain": "code_sql"}
+{"prompt": "Should I use window functions or a self-join to compute the rank of each employee's salary within their department? What's your honest opinion?", "domain": "code_sql"}
+{"prompt": "Please show me how to write a query step by step that calculates the median value of a column without using a built-in median function.", "domain": "code_sql"}
+{"prompt": "I have a slowly changing dimension table and need a query to reconstruct the state of a customer record as of any given date. Can you show me how to do this with valid_from and valid_to columns", "domain": "code_sql"}
+{"prompt": "Compare the maintainability and performance of a single large query with many JOINs versus breaking it into several CTEs that are joined together at the end.", "domain": "code_sql"}
+{"prompt": "How would you model a hierarchical category tree (like an e-commerce menu) in SQL, and write a query to fetch all descendants of a given category?", "domain": "code_sql"}
+{"prompt": "What do you think is the cleanest way to deduplicate this table without losing the most recent row per key?\nCREATE TABLE logs (id INT, user_id INT, message TEXT, created_at TIMESTAMP)", "domain": "code_sql"}
+{"prompt": "Write a query to find gaps in a sequence of invoice numbers.", "domain": "code_sql"}
+{"prompt": "Write a SQL script to detect and remove exact duplicate rows from a table called 'events' that has no primary key, keeping only the row with the lowest ctid or id, and explain your approach for large tables.", "domain": "code_sql"}
+{"prompt": "I'm debating whether to add a unique constraint or handle duplicate prevention purely at the application layer — what would you recommend?", "domain": "code_sql"}
+{"prompt": "my query keeps returning duplicate rows and I can't figure out why:\nSELECT o.order_id, p.product_name FROM orders o JOIN order_items oi ON o.order_id = oi.order_id JOIN products p ON oi.product_id = p.product_id", "domain": "code_sql"}
+{"prompt": "What's the trade-off between storing historical price changes as a slowly changing dimension (Type 2) versus just keeping the latest price and a separate audit table?", "domain": "code_sql"}
+{"prompt": "In SQL, write a function that computes monthly revenue grouped by product category and explain its time complexity.", "domain": "code_sql"}
+{"prompt": "can you write a stored procedure that transfers money between two bank accounts and rolls back if either update fails", "domain": "code_sql"}
+{"prompt": "What's your recommendation for handling NULLs in this aggregation — COALESCE them to zero or exclude them entirely from the calculation?\nSELECT AVG(rating) FROM reviews WHERE product_id = 88", "domain": "code_sql"}
+{"prompt": "I'd like a detailed explanation of how partition pruning works and how to verify it's happening for this partitioned table query.", "domain": "code_sql"}
+{"prompt": "Write a query to find the top 3 customers by revenue per region.", "domain": "code_sql"}
+{"prompt": "I'm trying to deduplicate rows in a staging table before inserting into production, keeping only the latest entry per business key. What's an efficient pattern?", "domain": "code_sql"}
+{"prompt": "explain the difference between INNER JOIN and LEFT JOIN using a real example with two small tables", "domain": "code_sql"}
+{"prompt": "Explain how a hash join differs from a nested loop join, and when the query planner might choose one over the other.", "domain": "code_sql"}
+{"prompt": "Compare INNER JOIN with a subquery pre-filter versus JOIN then WHERE filter — do query planners actually treat these differently in most databases?", "domain": "code_sql"}
+{"prompt": "Should I use database-level check constraints or application-level validation to enforce that a discount percentage stays between 0 and 100? What are the trade-offs?", "domain": "code_sql"}
+{"prompt": "Fix this syntax error: SELECT name FROM users WHERE age > 18 AND", "domain": "code_sql"}
+{"prompt": "Write a SQL function that computes the percentage of orders that were refunded. Include a short comment explaining the approach.", "domain": "code_sql"}
+{"prompt": "What's your take on always writing explicit column lists in INSERT statements instead of relying on column order?", "domain": "code_sql"}
+{"prompt": "Is it a good idea to store JSON blobs in a Postgres JSONB column here, or should I fully normalize this nested order data?", "domain": "code_sql"}
+{"prompt": "What are the trade-offs of indexing a low-cardinality column like status versus leaving it unindexed and relying on full table scans for filtering?", "domain": "code_sql"}
+{"prompt": "help me write a recursive CTE to get all subordinates under a manager in an org chart", "domain": "code_sql"}
+{"prompt": "Is it better practice to use CHECK constraints or application-level validation for enforcing business rules like age >= 18?", "domain": "code_sql"}
+{"prompt": "Can you refactor this nested subquery into a cleaner CTE-based version? SELECT * FROM (SELECT * FROM (SELECT id, amount FROM payments WHERE amount > 100) t1 WHERE t1.amount < 1000) t2", "domain": "code_sql"}
+{"prompt": "I need a query to detect sessionization from raw clickstream events, grouping events into sessions with a 30-minute inactivity timeout.", "domain": "code_sql"}
+{"prompt": "Can you show me how to use CASE WHEN to categorize orders as 'small', 'medium', or 'large' based on order total?", "domain": "code_sql"}
+{"prompt": "What index would help this query run faster? SELECT * FROM logs WHERE user_id = 5 ORDER BY created_at DESC;", "domain": "code_sql"}
+{"prompt": "Implement, in SQL, code that lists the most recent order for each customer. Add a couple of example calls.", "domain": "code_sql"}
+{"prompt": "I need step-by-step instructions for setting up a composite index that supports both filtering and sorting for this query.\nSELECT * FROM events WHERE user_id = 42 ORDER BY created_at DESC;", "domain": "code_sql"}
+{"prompt": "Can you write a simple query using BETWEEN to find all orders placed between two dates?", "domain": "code_sql"}
+{"prompt": "Why does this query return duplicate rows after a LEFT JOIN, and how do I collapse them? SELECT o.id, o.total, i.sku FROM orders o LEFT JOIN order_items i ON o.id = i.order_id", "domain": "code_sql"}

@@ -1,0 +1,100 @@
+{"prompt": "Can you help me write unit tests using pytest for this function, including edge cases for empty lists and negative numbers?\n\ndef running_median(nums):\n    sorted_nums = []\n    medians = []\n    for n in nums:\n        bisect.insort(sorted_nums, n)\n        mid = len(sorted_nums) // 2\n        if len(sorted_nums) % 2 == 0:\n            medians.append((sorted_nums[mid-1] + sorted_nums[mid]) / 2)\n        else:\n            medians.append(sorted_nums[mid])\n    return medians", "domain": "code_python"}
+{"prompt": "Explain how Python's garbage collector works.", "domain": "code_python"}
+{"prompt": "I want to implement retry logic with exponential backoff for a function that calls an unreliable API. Can you write a decorator for that?", "domain": "code_python"}
+{"prompt": "What's the cleanest way in modern Python to handle multiple exception types differently but share some common cleanup logic, and can you show an example with a database connection that needs to be closed no matter what?", "domain": "code_python"}
+{"prompt": "how do I merge two dictionaries in Python without mutating either one", "domain": "code_python"}
+{"prompt": "Which do you prefer for logging in production code, the standard logging module or a third-party library like loguru?", "domain": "code_python"}
+{"prompt": "Implement a simple trie data structure in Python for autocomplete suggestions.", "domain": "code_python"}
+{"prompt": "Explain the GIL in one paragraph.", "domain": "code_python"}
+{"prompt": "Should I model this as a class hierarchy with inheritance or use simple functions with a dispatch dictionary for handling different shape types?", "domain": "code_python"}
+{"prompt": "quick one - what's the pythonic way to check if a string is a palindrome, ignoring case and spaces?", "domain": "code_python"}
+{"prompt": "How do I read a large file line by line without loading it all into memory?", "domain": "code_python"}
+{"prompt": "Please explain step by step why this code raises a KeyError intermittently and how to fix it.\ncache = {}\ndef get_value(key):\n    if key in cache:\n        return cache[key]\n    value = expensive_computation(key)\n    cache[key] = value\n    return cache[key]", "domain": "code_python"}
+{"prompt": "Can you explain how Python's descriptor protocol works and why properties are implemented using it?", "domain": "code_python"}
+{"prompt": "In Python, write a function that finds the second largest element in an array and explain its time complexity.", "domain": "code_python"}
+{"prompt": "I got this error and I don't know what it means: TypeError: 'int' object is not iterable. Here's my code, can you help me fix it?\nnum = 12345\nfor digit in num:\n    print(digit)", "domain": "code_python"}
+{"prompt": "convert this to a list comprehension\nresult = []\nfor x in data:\n    if x > 0:\n        result.append(x)", "domain": "code_python"}
+{"prompt": "Write clean, idiomatic Python that counts set bits in an integer.", "domain": "code_python"}
+{"prompt": "I'm deciding between inheritance and composition for this plugin system. Which approach would you recommend and why?", "domain": "code_python"}
+{"prompt": "can you refactor this loop into a list comprehension?\n\nresult = []\nfor x in range(100):\n    if x % 3 == 0:\n        result.append(x*x)", "domain": "code_python"}
+{"prompt": "Write a custom context manager class (not using contextlib) that measures and prints the execution time of a code block.", "domain": "code_python"}
+{"prompt": "Write a decorator that caches function results based on arguments but automatically invalidates the cache after a configurable TTL in seconds.", "domain": "code_python"}
+{"prompt": "Compare using a class-based singleton versus a module-level instance for managing a shared configuration object.", "domain": "code_python"}
+{"prompt": "In Python, write a function that finds all pairs in an array that sum to a target and explain its time complexity.", "domain": "code_python"}
+{"prompt": "what's the cleanest way to read a large file line by line without loading it all into memory", "domain": "code_python"}
+{"prompt": "I'm parsing a large CSV file (millions of rows) with pandas and running out of memory. Can you suggest a more memory-efficient approach, maybe using chunksize or dtype optimization, and show me example code for aggregating a 'sales' column grouped by 'region'?", "domain": "code_python"}
+{"prompt": "Write a Python function that finds all pairs in an array that sum to a target. Include a short comment explaining the approach.", "domain": "code_python"}
+{"prompt": "Is it better to chain multiple list comprehensions or use a single generator pipeline with itertools when transforming a large dataset in stages?", "domain": "code_python"}
+{"prompt": "What is the purpose of the __init__ method in a Python class? Can you explain with a simple Person class example?", "domain": "code_python"}
+{"prompt": "Write clean, idiomatic Python that computes the Hamming distance between two equal-length strings.", "domain": "code_python"}
+{"prompt": "Write a generator that yields Fibonacci numbers indefinitely.", "domain": "code_python"}
+{"prompt": "I need to choose between Celery and a simple threading-based task queue for background jobs in a small Flask app. What should guide that decision?", "domain": "code_python"}
+{"prompt": "Write a Python function that groups anagrams together from a list of words. Include a short comment explaining the approach.", "domain": "code_python"}
+{"prompt": "Write a binary search function.", "domain": "code_python"}
+{"prompt": "Explain step by step how Python's garbage collector handles reference cycles and why the following code might leak memory.\n\nclass Node:\n    def __init__(self):\n        self.parent = None\n        self.child = None", "domain": "code_python"}
+{"prompt": "Can you show me, step by step, how to add proper exception handling to this file-reading function so it doesn't crash on missing files?\ndef read_config(path):\n    with open(path) as f:\n        return f.read()", "domain": "code_python"}
+{"prompt": "Should I write custom __eq__ and __hash__ methods or rely on dataclass(frozen=True) for making objects usable as set elements?", "domain": "code_python"}
+{"prompt": "Is it better to validate function arguments manually with if-statements or use type hints plus a library like typeguard at runtime?", "domain": "code_python"}
+{"prompt": "Can you show how to overload the + operator for a custom Vector class, including proper handling of type checking?", "domain": "code_python"}
+{"prompt": "Write unit tests using pytest for this function that validates email addresses with a regex.\n\nimport re\ndef is_valid_email(email):\n    return re.match(r'^[\\w.-]+@[\\w.-]+\\.\\w+$', email) is not None", "domain": "code_python"}
+{"prompt": "Would you advise using a queue.Queue-based worker pool or asyncio tasks for handling a moderate number of I/O-bound background jobs?", "domain": "code_python"}
+{"prompt": "Can you explain what 'return' does in a function versus just using 'print'? I keep mixing them up.", "domain": "code_python"}
+{"prompt": "what's wrong here? for i in range(len(arr)): arr[i] += arr[i+1]", "domain": "code_python"}
+{"prompt": "Write a function that computes the nth Fibonacci number using memoization with functools.lru_cache, then compare its performance conceptually to an iterative approach.", "domain": "code_python"}
+{"prompt": "I have a bug where my dictionary comprehension is overwriting keys unexpectedly. Can you explain why and show the fix?\n\nresult = {x % 3: x for x in range(10)}", "domain": "code_python"}
+{"prompt": "Can you optimize this function that finds the nth Fibonacci number recursively? It's extremely slow for n=35.\n\ndef fib(n):\n    if n <= 1:\n        return n\n    return fib(n-1) + fib(n-2)", "domain": "code_python"}
+{"prompt": "Can you explain the difference between deepcopy and copy when working with nested lists?", "domain": "code_python"}
+{"prompt": "can you write a small script that watches a folder for new files and prints their names as they appear?", "domain": "code_python"}
+{"prompt": "Can you explain the difference between deepcopy and copy in Python with a concrete example where they behave differently?", "domain": "code_python"}
+{"prompt": "What does the walrus operator do?", "domain": "code_python"}
+{"prompt": "Here's my attempt at implementing binary tree level-order traversal but it's returning nodes in the wrong order for unbalanced trees. Can you debug it and explain the correct approach using a queue?\n\ndef level_order(root):\n    if not root:\n        return []\n    result = []\n    stack = [root]\n    while stack:\n        node = stack.pop()\n        result.append(node.val)\n        if node.left: stack.append(node.left)\n        if node.right: stack.append(node.right)\n    return result", "domain": "code_python"}
+{"prompt": "What is the difference between a list and a tuple in Python, and when should a beginner use each one?", "domain": "code_python"}
+{"prompt": "Can you explain what *args and **kwargs mean in a Python function definition, with a simple example?", "domain": "code_python"}
+{"prompt": "What do you think is the cleanest way to implement the singleton pattern in Python, if it's needed at all?", "domain": "code_python"}
+{"prompt": "How do I set up logging in a multi-module Python application so that each module's log messages include the module name and timestamp?", "domain": "code_python"}
+{"prompt": "Is it better to use pandas or plain Python with the csv module for a script that processes a 200MB file once a month?", "domain": "code_python"}
+{"prompt": "Should this module use relative imports or absolute imports, given it's part of a larger package?", "domain": "code_python"}
+{"prompt": "Explain what's happening in this multithreaded code that produces inconsistent results, and show me how to fix it.\n\ncounter = 0\ndef increment():\n    global counter\n    for _ in range(100000):\n        counter += 1", "domain": "code_python"}
+{"prompt": "can you write some pytest tests for a function that validates email addresses with regex?", "domain": "code_python"}
+{"prompt": "can you add some pytest tests for this function?\n\ndef divide(a, b):\n    if b == 0:\n        raise ValueError('cannot divide by zero')\n    return a / b", "domain": "code_python"}
+{"prompt": "help me optimize this - it's O(n^2) and i need it faster for large lists\ndef has_duplicates(lst):\n    for i in range(len(lst)):\n        for j in range(len(lst)):\n            if i != j and lst[i] == lst[j]:\n                return True\n    return False", "domain": "code_python"}
+{"prompt": "Is it better to raise exceptions or return error codes/None in a Python library meant for other developers to consume?", "domain": "code_python"}
+{"prompt": "I want a step-by-step explanation of how Python's GIL affects multithreaded CPU-bound code, with a concrete example.", "domain": "code_python"}
+{"prompt": "my script keeps throwing a KeyError here and I can't figure out why:\n\ndef get_price(item, catalog):\n    return catalog[item]['price']\n\ncatalog = {'apple': {'cost': 1.2}}\nprint(get_price('apple', catalog))", "domain": "code_python"}
+{"prompt": "Why is my recursive fibonacci so slow?", "domain": "code_python"}
+{"prompt": "Quick way to dedupe a list while preserving order?", "domain": "code_python"}
+{"prompt": "write a function that checks if two strings are anagrams of each other, keep it short", "domain": "code_python"}
+{"prompt": "What are Python's basic data types, and can you show a quick example of each one being used in a variable?", "domain": "code_python"}
+{"prompt": "Explain how Python's Method Resolution Order (MRO) works with multiple inheritance, using a diamond-shaped class hierarchy as an example.", "domain": "code_python"}
+{"prompt": "Please explain step by step how to implement a topological sort for a directed acyclic graph represented as an adjacency list.", "domain": "code_python"}
+{"prompt": "Explain what's wrong with this code that's supposed to compute Fibonacci numbers using memoization but throws a RecursionError for large inputs.\n\nimport sys\ndef fib(n, cache={}):\n    if n in cache:\n        return cache[n]\n    if n <= 1:\n        return n\n    cache[n] = fib(n-1) + fib(n-2)\n    return cache[n]", "domain": "code_python"}
+{"prompt": "how do I handle multiple exceptions in one except block cleanly", "domain": "code_python"}
+{"prompt": "What are the pros and cons of using pydantic models versus plain dataclasses for validating incoming JSON payloads?", "domain": "code_python"}
+{"prompt": "I'm getting a 'dictionary changed size during iteration' error. Can you explain why and show me the fix?\n\nd = {'a': 1, 'b': 2, 'c': 3}\nfor key in d:\n    if d[key] == 2:\n        del d[key]", "domain": "code_python"}
+{"prompt": "I need a step-by-step guide to writing a context manager class that manages a temporary file and cleans it up on exit.", "domain": "code_python"}
+{"prompt": "Write a topological sort implementation using Kahn's algorithm and explain how it detects cycles in the input graph.", "domain": "code_python"}
+{"prompt": "debug this: print(1/0)", "domain": "code_python"}
+{"prompt": "What's your recommendation for logging in a multi-threaded Python application — the standard logging module, structlog, or loguru?", "domain": "code_python"}
+{"prompt": "Do you think it's worth adding docstrings to every function in this module, even trivial helpers?", "domain": "code_python"}
+{"prompt": "Compare multiprocessing.Pool and concurrent.futures.ProcessPoolExecutor for parallelizing this CPU-heavy function across cores.", "domain": "code_python"}
+{"prompt": "Write clean, idiomatic Python that converts a Roman numeral to an integer.", "domain": "code_python"}
+{"prompt": "Do you think threading is the right tool here, or should I use asyncio for this I/O-bound network client?", "domain": "code_python"}
+{"prompt": "What's your opinion on naming conventions for private methods — single underscore versus double underscore?", "domain": "code_python"}
+{"prompt": "Walk me through optimizing this function that finds duplicate values in a large list; it's currently O(n^2).\n\ndef find_duplicates(lst):\n    dupes = []\n    for i in range(len(lst)):\n        for j in range(i+1, len(lst)):\n            if lst[i] == lst[j] and lst[i] not in dupes:\n                dupes.append(lst[i])\n    return dupes", "domain": "code_python"}
+{"prompt": "Show me how to use functools.lru_cache here.", "domain": "code_python"}
+{"prompt": "How would I implement a simple rate limiter decorator that only allows a function to be called N times per minute?", "domain": "code_python"}
+{"prompt": "can you explain what this list slicing does exactly\ndata[::-2]", "domain": "code_python"}
+{"prompt": "I have two dataframes and I want to merge them on a column but keep only rows that exist in both. What's the pandas way to do this?", "domain": "code_python"}
+{"prompt": "I want to convert this synchronous web scraping script into an async one using aiohttp to speed up fetching multiple URLs concurrently. Can you help?", "domain": "code_python"}
+{"prompt": "I'm torn between SQLAlchemy ORM and raw SQL with sqlite3 for a small internal tool. Which would you recommend and why?", "domain": "code_python"}
+{"prompt": "I want to profile this function to find the bottleneck. Can you show me how to use cProfile and interpret the output?\ndef process_data(items):\n    result = []\n    for item in items:\n        result.append(expensive_transform(item))\n    return sorted(result)", "domain": "code_python"}
+{"prompt": "Implement, in Python, code that implements a basic retry-with-backoff helper. Add a couple of example calls.", "domain": "code_python"}
+{"prompt": "What do you think is the cleanest way to handle optional dependencies in a package — try/except imports or extras_require?", "domain": "code_python"}
+{"prompt": "Walk me through how to implement a simple producer-consumer pipeline using Python's multiprocessing module.", "domain": "code_python"}
+{"prompt": "When should I prefer composition over inheritance in Python, and can you show an example refactor from inheritance to composition?", "domain": "code_python"}
+{"prompt": "how would you implement a rate limiter decorator that only allows N calls per second?", "domain": "code_python"}
+{"prompt": "What's your take on using global mutable state versus passing a context object through function calls in a CLI tool?", "domain": "code_python"}
+{"prompt": "What's the difference between a generator function and a generator expression? Show me both producing the same squares sequence.", "domain": "code_python"}
+{"prompt": "Can you show me how to profile this function to find the bottleneck, and suggest an optimization based on typical profiling results?\ndef process_large_csv(path):\n    rows = []\n    with open(path) as f:\n        for line in f:\n            rows.append(line.strip().split(','))\n    return [dict(zip(rows[0], row)) for row in rows[1:]]", "domain": "code_python"}
+{"prompt": "Can you explain what this list comprehension does in plain English?\nsquares = [x**2 for x in range(10) if x % 2 == 0]", "domain": "code_python"}
+{"prompt": "Fix this off-by-one error:\ndef last_n(lst, n):\n    return lst[-n+1:]", "domain": "code_python"}

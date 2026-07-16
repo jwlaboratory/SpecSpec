@@ -1,0 +1,800 @@
+{"prompt": "Write an idiomatic C implementation of a generic dynamic array (like a vector) using void pointers and a function pointer for element destruction.", "domain": "code_c"}
+{"prompt": "I have a memory leak somewhere in this code but can't find it. Can you help?\n\nchar *build_message(const char *name) {\n    char *msg = malloc(100);\n    sprintf(msg, \"Hello, %s!\", name);\n    if (strlen(name) == 0) {\n        return NULL;\n    }\n    return msg;\n}", "domain": "code_c"}
+{"prompt": "Can you optimize this string concatenation loop that repeatedly calls strlen, making it quadratic?\n\nchar buf[1024] = \"\"; for(int i=0;i<n;i++){ strcat(buf, words[i]); }", "domain": "code_c"}
+{"prompt": "Write a minimal JSON parser in C that can handle nested objects, arrays, strings, and numbers.", "domain": "code_c"}
+{"prompt": "explain the difference between arr[i] and *(arr + i) with an example, I'm still fuzzy on pointer arithmetic", "domain": "code_c"}
+{"prompt": "I need a hash table in C with open addressing and linear probing that supports insert, lookup, and delete with tombstones. Please write the full implementation including resizing when the load factor exceeds 0.7, and add a short main() that demonstrates inserting 20 random strings and looking a few of them up.", "domain": "code_c"}
+{"prompt": "Optimize this naive matrix multiplication function for cache locality: for(i)for(j)for(k) C[i][j]+=A[i][k]*B[k][j];", "domain": "code_c"}
+{"prompt": "Can you explain why this comparison always evaluates to true and how to fix it? char *a = \"hello\"; char *b = \"hello\"; if (a == b) printf(\"equal\\n\");", "domain": "code_c"}
+{"prompt": "I'm using `mmap` to read a large file — can you show a minimal example and explain the advantages over `fread` for this use case.", "domain": "code_c"}
+{"prompt": "I need a C function to compute the CRC32 checksum of a byte buffer — can you provide an implementation with a lookup table for speed?", "domain": "code_c"}
+{"prompt": "Can you explain why this loop runs forever: `for (int i = 0; i < 10; i--) { printf(\"%d\\n\", i); }`", "domain": "code_c"}
+{"prompt": "Compare using a doubly linked list versus a dynamic array for implementing an LRU cache in C, considering both time complexity and implementation complexity.", "domain": "code_c"}
+{"prompt": "In your view, is it better practice to typedef structs in C, like typedef struct { int x; } Point;, or keep the struct keyword explicit everywhere?", "domain": "code_c"}
+{"prompt": "Explain the difference between `malloc`/`calloc`/`realloc` and give an example of a bug caused by assuming `malloc` zero-initializes memory.", "domain": "code_c"}
+{"prompt": "Write a C function that safely reads a line of arbitrary length from stdin using dynamic reallocation, avoiding the pitfalls of gets().", "domain": "code_c"}
+{"prompt": "Explain step by step how printf's format string parsing works internally, focusing on how %d and %s are handled differently in the variadic argument list.", "domain": "code_c"}
+{"prompt": "Write a portable, allocation-free CRC32 implementation in C suitable for embedded firmware, using a lookup table generated at compile time if possible.", "domain": "code_c"}
+{"prompt": "Is it better to pass large structs by value or by pointer in C function calls? Explain the performance implications and when each makes sense.", "domain": "code_c"}
+{"prompt": "I'm trying to detect integer overflow before it happens in an addition operation, what's the standard approach in C?", "domain": "code_c"}
+{"prompt": "Can you explain the trade-offs of using signed versus unsigned integers for loop counters in C, especially regarding underflow bugs?", "domain": "code_c"}
+{"prompt": "Compare mmap versus fread for reading large files in a C program, considering performance and portability across platforms.", "domain": "code_c"}
+{"prompt": "What's your recommendation for managing configuration options in a C program — a struct passed around, global variables, or getter functions?", "domain": "code_c"}
+{"prompt": "Can you show me how to use mmap to read a large file efficiently instead of using fread in a loop?", "domain": "code_c"}
+{"prompt": "optimize this matrix multiply, it's way too slow for 500x500 matrices\n\nfor (int i = 0; i < n; i++)\n    for (int j = 0; j < n; j++)\n        for (int k = 0; k < n; k++)\n            C[i][j] += A[i][k] * B[k][j];", "domain": "code_c"}
+{"prompt": "I need a C function that trims leading and trailing whitespace from a string in place, can you write that?", "domain": "code_c"}
+{"prompt": "Explain what undefined behavior occurs in this code and how to fix it: `int *get_local(void) { int x = 42; return &x; }` and then describe a real bug you might see caused by this pattern manifesting much later in a program's execution.", "domain": "code_c"}
+{"prompt": "Write a C function implementing quicksort with the median-of-three pivot selection strategy, and explain why this reduces worst-case behavior.", "domain": "code_c"}
+{"prompt": "Discuss the trade-offs between writing a state machine in C using switch statements versus using function pointers/tables.", "domain": "code_c"}
+{"prompt": "Step by step, show me how to implement a thread pool in C using pthreads, including a work queue and condition variables.", "domain": "code_c"}
+{"prompt": "my program crashes randomly when I free this struct, is there something wrong with how I set it up?\n\ntypedef struct {\n    char *name;\n    int *scores;\n} Student;\n\nvoid free_student(Student *s) {\n    free(s);\n    free(s->name);\n    free(s->scores);\n}", "domain": "code_c"}
+{"prompt": "Can you explain the difference between '#define' macros and 'const' variables in C, with an example showing a potential pitfall of macros?", "domain": "code_c"}
+{"prompt": "How do I step through debugging this segmentation fault? The program crashes when I call free(ptr) twice in this cleanup function:\n\nvoid cleanup(Node *n) {\n    free(n);\n    free(n);\n}", "domain": "code_c"}
+{"prompt": "Optimize this string search function; it's a hot path in our parser and currently uses naive O(n*m) matching. Can you implement Boyer-Moore or KMP instead?\n\nint contains(const char *haystack, const char *needle) {\n    size_t hlen = strlen(haystack), nlen = strlen(needle);\n    for (size_t i = 0; i + nlen <= hlen; i++) {\n        if (memcmp(haystack + i, needle, nlen) == 0) return 1;\n    }\n    return 0;\n}", "domain": "code_c"}
+{"prompt": "Compare using strtok versus writing a custom tokenizer for parsing a configuration file line in C, focusing on thread safety and reentrancy.", "domain": "code_c"}
+{"prompt": "I wrote a function to add two numbers but it's not returning the right value. Here's my code: `void add(int a, int b) { int sum = a + b; }` What am I doing wrong?", "domain": "code_c"}
+{"prompt": "I'm new to C and want to understand how strings are represented internally. Can you explain how char arrays and null termination work with a diagram-style explanation?", "domain": "code_c"}
+{"prompt": "I've got this hash table insert function and it's crashing on collisions, any idea what's wrong?\n\nvoid insert(HashTable *ht, char *key, int value) {\n    int idx = hash(key) % ht->size;\n    Node *n = malloc(sizeof(Node));\n    n->key = key;\n    n->value = value;\n    n->next = ht->buckets[idx];\n    ht->buckets[idx] = n;\n}", "domain": "code_c"}
+{"prompt": "Can you write a simple C function that checks whether a given number is prime, and explain how the loop works?", "domain": "code_c"}
+{"prompt": "I need a thread-safe circular buffer implementation in C using pthread mutexes and condition variables for a producer-consumer setup.", "domain": "code_c"}
+{"prompt": "Walk me through optimizing this matrix multiplication function for cache locality, explaining each transformation:\n\nvoid multiply(int n, double A[n][n], double B[n][n], double C[n][n]) {\n    for (int i = 0; i < n; i++)\n        for (int j = 0; j < n; j++)\n            for (int k = 0; k < n; k++)\n                C[i][j] += A[i][k] * B[k][j];\n}", "domain": "code_c"}
+{"prompt": "Write a C function that implements binary search on a rotated sorted array without duplicates.", "domain": "code_c"}
+{"prompt": "Write a C program that computes the CRC32 checksum of a file's contents, reading it in chunks rather than loading the whole file into memory.", "domain": "code_c"}
+{"prompt": "Write a function that implements Huffman encoding for a small byte array and explain how the frequency table drives tree construction.", "domain": "code_c"}
+{"prompt": "Write a simple state machine in C for parsing CSV lines.", "domain": "code_c"}
+{"prompt": "Explain what happens when you free a pointer twice in C, and show how tools like valgrind or AddressSanitizer would report it.", "domain": "code_c"}
+{"prompt": "what's the best way to implement a generic linked list in C?", "domain": "code_c"}
+{"prompt": "Should I prefer fixed-width integer types like uint32_t everywhere in my C code, or is plain int usually fine for portability?", "domain": "code_c"}
+{"prompt": "Do you think it's worth switching this bubble sort to quicksort for a dataset of about 10,000 integers, or would the added complexity not be worth it?\n\nvoid bubble_sort(int *arr, int n) {\n    for (int i = 0; i < n - 1; i++)\n        for (int j = 0; j < n - i - 1; j++)\n            if (arr[j] > arr[j+1]) {\n                int tmp = arr[j];\n                arr[j] = arr[j+1];\n                arr[j+1] = tmp;\n            }\n}", "domain": "code_c"}
+{"prompt": "Please explain what happens when you mix signed and unsigned integers in a comparison in C, using this example: `int a = -1; unsigned int b = 1; if (a < b) printf(\"a is less\"); else printf(\"a is not less\");` What gets printed and why, and how would you avoid this class of bug in real code?", "domain": "code_c"}
+{"prompt": "Can you explain what 'static' means when applied to a local variable inside a function, with a small example showing its effect across multiple calls?", "domain": "code_c"}
+{"prompt": "how do I convert a string to an integer in C?", "domain": "code_c"}
+{"prompt": "I have a struct with `__attribute__((packed))` on GCC — can you explain what this does to memory layout and why it might cause unaligned access crashes on some architectures?", "domain": "code_c"}
+{"prompt": "Compare the performance and safety trade-offs of using strcpy versus strncpy versus strlcpy for copying user input into a fixed buffer.", "domain": "code_c"}
+{"prompt": "Write a small C program that opens a text file, reads its contents line by line, and prints the total number of lines.", "domain": "code_c"}
+{"prompt": "Explain how variadic functions work in C using va_list, va_start, and va_arg.", "domain": "code_c"}
+{"prompt": "Explain what's wrong with this code that tries to detect integer overflow: int add(int a, int b) { int sum = a + b; if (sum < a) return -1; return sum; }", "domain": "code_c"}
+{"prompt": "Explain what undefined behavior means in the context of signed integer overflow.", "domain": "code_c"}
+{"prompt": "Can you optimize this matrix multiplication function for cache locality? It currently loops i, j, k in the naive order over two 1024x1024 float matrices and takes forever: `for (i=0;i<n;i++) for (j=0;j<n;j++) for (k=0;k<n;k++) c[i][j]+=a[i][k]*b[k][j];`. Please explain the memory access pattern problem and rewrite it with loop reordering or blocking, and estimate the expected speedup.", "domain": "code_c"}
+{"prompt": "Can you explain step by step what this preprocessor macro does and point out any pitfalls with operator precedence or multiple evaluation: `#define SQUARE(x) x*x` versus a safer version, and then show me how to write a macro that safely computes the max of two values without double-evaluating side effects?", "domain": "code_c"}
+{"prompt": "Write a coroutine-like generator in C using ucontext.h and explain the stack-switching mechanism.", "domain": "code_c"}
+{"prompt": "This bit manipulation function is supposed to count the number of set bits in a 32-bit integer but seems slower than expected on large inputs. Can you explain Brian Kernighan's algorithm as an alternative, implement it, and compare its complexity to the naive loop-through-all-32-bits approach?\n\nint count_bits(unsigned int x) {\n    int count = 0;\n    for (int i = 0; i < 32; i++) {\n        if (x & (1 << i)) count++;\n    }\n    return count;\n}", "domain": "code_c"}
+{"prompt": "This code is supposed to check if a number is prime but returns wrong results for 2:\n\nint isPrime(int n){ for(int i=2;i<n;i++){ if(n%i==0) return 0; } return 1; }\nCan you find the issue?", "domain": "code_c"}
+{"prompt": "what does 'volatile' actually do in C and when do I really need it", "domain": "code_c"}
+{"prompt": "Explain the difference between setjmp/longjmp and how they interact with local variable state across stack frames.", "domain": "code_c"}
+{"prompt": "Compare the use of goto for cleanup in error paths versus nested if-checks with early returns in C, focusing on readability and maintainability.", "domain": "code_c"}
+{"prompt": "Can you explain how variadic functions work in C using va_list, va_start, and va_arg, and show a small printf-like implementation as an example?", "domain": "code_c"}
+{"prompt": "Can you write a trie data structure in C for storing and searching a dictionary of lowercase words?", "domain": "code_c"}
+{"prompt": "write a function to trim whitespace from a string in place", "domain": "code_c"}
+{"prompt": "What are the pros and cons of using a union versus a tagged struct to represent a variant type in C?", "domain": "code_c"}
+{"prompt": "Refactor this nested if-else chain into a switch.", "domain": "code_c"}
+{"prompt": "Write a small command-line utility in C that computes the SHA-256-like checksum of a file (you can use a simplified or placeholder hash for demonstration) by reading it in fixed-size chunks, and explain how you'd structure the code to make the hashing algorithm swappable later.", "domain": "code_c"}
+{"prompt": "Explain how signal handlers work in C and why calling printf inside one is unsafe.", "domain": "code_c"}
+{"prompt": "Write a small command-line argument parser that handles flags like -v and --output=file.", "domain": "code_c"}
+{"prompt": "Write a C program that takes a temperature in Celsius as input and converts it to Fahrenheit.", "domain": "code_c"}
+{"prompt": "Can you explain the difference between calloc and malloc followed by memset, including any subtle performance or portability differences?", "domain": "code_c"}
+{"prompt": "Guide me through implementing a simple LRU cache in C using a hash map combined with a doubly linked list.", "domain": "code_c"}
+{"prompt": "can you add unit tests for this simple queue implementation using a plain C testing approach, no frameworks?", "domain": "code_c"}
+{"prompt": "What's your opinion on using macros for simple getters/setters in C versus writing out the functions explicitly?", "domain": "code_c"}
+{"prompt": "explain what undefined behavior means in C with a couple of concrete examples from real code", "domain": "code_c"}
+{"prompt": "Can you show me how to write a basic C program that reads a list of 5 integers from the user and prints their average?", "domain": "code_c"}
+{"prompt": "explain how a for loop is different from a while loop in C, with examples", "domain": "code_c"}
+{"prompt": "Can you walk me through what happens step by step when this code runs, including stack layout, given it's a classic buffer overflow example?\n\nvoid vulnerable(char *input) {\n    char buf[16];\n    strcpy(buf, input);\n    printf(\"%s\\n\", buf);\n}", "domain": "code_c"}
+{"prompt": "I'm debating whether to use recursion or an explicit stack for implementing a DFS on a large graph in C. Which would you recommend and why?", "domain": "code_c"}
+{"prompt": "Can you explain why comparing two strings with '==' doesn't work as expected in C, and show the correct way using strcmp?", "domain": "code_c"}
+{"prompt": "write a strlen clone", "domain": "code_c"}
+{"prompt": "explain why this code has undefined behavior:\n\nint x; printf(\"%d\\n\", x);", "domain": "code_c"}
+{"prompt": "Explain how the C preprocessor handles include guards versus pragma once.", "domain": "code_c"}
+{"prompt": "can you add unit tests for this function using plain asserts, no external framework?\n\nint gcd(int a, int b) { while (b) { int t = b; b = a % b; a = t; } return a; }", "domain": "code_c"}
+{"prompt": "can you help me write a Makefile for a small multi-file C project with a src and include directory?", "domain": "code_c"}
+{"prompt": "I want to implement my own version of strdup, can you show me a correct implementation with error handling?", "domain": "code_c"}
+{"prompt": "What's the safest way to read a line of arbitrary length from stdin in C without a fixed-size buffer?", "domain": "code_c"}
+{"prompt": "Can you write a step-by-step tutorial on implementing a simple state machine in C using function pointers for state transitions?", "domain": "code_c"}
+{"prompt": "Can you help me implement Dijkstra's shortest path algorithm in C using an adjacency list and a min-heap?", "domain": "code_c"}
+{"prompt": "What's your opinion on defensive programming in C — checking every malloc return value versus wrapping allocation in a helper that aborts on failure?", "domain": "code_c"}
+{"prompt": "Write a custom implementation of qsort using the quicksort algorithm with a median-of-three pivot selection strategy.", "domain": "code_c"}
+{"prompt": "Compare qsort from the standard library to a custom quicksort implementation in terms of performance and flexibility for sorting an array of custom structs.", "domain": "code_c"}
+{"prompt": "Compare using recursion versus an explicit stack for traversing a binary tree in C, especially for very deep or unbalanced trees.", "domain": "code_c"}
+{"prompt": "write me a simple hash table implementation in C using open addressing, just the basics", "domain": "code_c"}
+{"prompt": "I'm getting 'undefined symbol' errors at link time when compiling multiple .c files with a shared header. Here's my setup, can you tell me what's wrong?\n\n// utils.h\nint counter = 0;\nvoid increment(void);", "domain": "code_c"}
+{"prompt": "Explain how the volatile keyword affects compiler optimizations and give an example involving a memory-mapped hardware register.", "domain": "code_c"}
+{"prompt": "Step by step, help me debug why this function leaks memory whenever the input list has more than one element:\n\nvoid free_list(Node *head) {\n    if (head) {\n        free(head);\n        free_list(head->next);\n    }\n}", "domain": "code_c"}
+{"prompt": "I'm building a small key-value store in C. Would you suggest a linked list, a hash map, or a sorted array for the underlying storage given a few thousand entries?", "domain": "code_c"}
+{"prompt": "Write a function to parse a simple INI file format into key-value pairs using only standard C library functions.", "domain": "code_c"}
+{"prompt": "Debug this: while(fgets(line, sizeof(line), fp)) { free(line); }", "domain": "code_c"}
+{"prompt": "Can you spot the bug in this linked list free function?\n\nvoid free_list(node_t *head) {\n    while (head) {\n        free(head);\n        head = head->next;\n    }\n}", "domain": "code_c"}
+{"prompt": "Walk me through step by step how to implement a simple mark-and-sweep style reference counting system for manually managed C objects.", "domain": "code_c"}
+{"prompt": "Please show how to implement a doubly linked list in C with intrusive nodes, where the list node is embedded inside a larger struct.", "domain": "code_c"}
+{"prompt": "I'm implementing a hash table with open addressing and linear probing, can you review my insert function for bugs?\n\nvoid insert(HashTable *ht, const char *key, int value) { int idx = hash(key) % ht->capacity; while (ht->slots[idx].occupied) idx = (idx+1) % ht->capacity; ht->slots[idx].key = key; ht->slots[idx].value = value; ht->slots[idx].occupied = 1; }", "domain": "code_c"}
+{"prompt": "Write a function to check if a string is a palindrome.", "domain": "code_c"}
+{"prompt": "fix the memory leak here\n\nchar *buf = malloc(100);\nreturn 0;", "domain": "code_c"}
+{"prompt": "Explain the difference between volatile and atomic operations in C, and when each is appropriate in multithreaded code.", "domain": "code_c"}
+{"prompt": "Can you explain what struct padding and alignment mean in C, and show how to compute the actual size of a struct with mixed types?", "domain": "code_c"}
+{"prompt": "Explain the difference between `static`, `extern`, and file-scope variables in C, and how the linker treats them across multiple translation units. Then show a small three-file example (two .c files and a shared .h) demonstrating a common linker error caused by misuse of these keywords.", "domain": "code_c"}
+{"prompt": "can you optimize this matrix multiplication function for cache performance? it's way too slow on large matrices\n\nvoid multiply(int n, double a[n][n], double b[n][n], double c[n][n]) {\n    for (int i = 0; i < n; i++)\n        for (int j = 0; j < n; j++)\n            for (int k = 0; k < n; k++)\n                c[i][j] += a[i][k] * b[k][j];\n}", "domain": "code_c"}
+{"prompt": "In your experience, is it better to write custom string handling functions or rely on the standard library's strncpy/strlcpy despite their quirks?", "domain": "code_c"}
+{"prompt": "Explain how variadic functions work in C using va_list, va_start, and va_arg, and write a small printf-like function that only handles %d and %s.", "domain": "code_c"}
+{"prompt": "Discuss the trade-offs between row-major and column-major traversal order when multiplying two large matrices stored as 2D arrays in C.", "domain": "code_c"}
+{"prompt": "Would you recommend using qsort from the standard library for sorting an array of custom structs, or writing a custom sort function? What's the tradeoff?", "domain": "code_c"}
+{"prompt": "Write a C function that implements the Sieve of Eratosthenes using a bit array instead of a boolean array to save memory, and explain the bit manipulation.", "domain": "code_c"}
+{"prompt": "write a function to compute the length of a null-terminated string without using strlen", "domain": "code_c"}
+{"prompt": "this quicksort implementation seems really slow on already sorted arrays, can you tell me why and how to fix it?\n\nvoid quicksort(int *arr, int low, int high) {\n    if (low < high) {\n        int pivot = arr[high];\n        int i = low - 1;\n        for (int j = low; j < high; j++) {\n            if (arr[j] < pivot) {\n                i++;\n                int tmp = arr[i]; arr[i] = arr[j]; arr[j] = tmp;\n            }\n        }\n        int tmp = arr[i+1]; arr[i+1] = arr[high]; arr[high] = tmp;\n        quicksort(arr, low, i);\n        quicksort(arr, i + 2, high);\n    }\n}", "domain": "code_c"}
+{"prompt": "write a function that merges two sorted arrays into a new sorted array", "domain": "code_c"}
+{"prompt": "Explain step by step what happens on the stack and heap when this function runs, including where the returned pointer points after the function exits, and why this is a bug:\n\nchar* make_greeting(const char* name) {\n    char buffer[64];\n    snprintf(buffer, sizeof(buffer), \"Hello, %s!\", name);\n    return buffer;\n}", "domain": "code_c"}
+{"prompt": "When implementing a queue in C, what are the trade-offs between a circular buffer with fixed capacity and a dynamically resizing linked list?", "domain": "code_c"}
+{"prompt": "my program segfaults when I free this struct twice, here's the code, can you spot the bug?\n\ntypedef struct { int *data; } Box;\nvoid destroy(Box *b) { free(b->data); free(b->data); }", "domain": "code_c"}
+{"prompt": "Write an idiomatic C implementation of a generic circular buffer that works with any element size using void pointers.", "domain": "code_c"}
+{"prompt": "Write a C function that merges two sorted arrays into a single sorted array without using extra allocation beyond a fixed-size output buffer.", "domain": "code_c"}
+{"prompt": "Compare the memory and speed trade-offs of using a bitset versus a boolean array to track visited nodes in a graph traversal written in C.", "domain": "code_c"}
+{"prompt": "Walk me through building a simple hash table in C from scratch, step by step, including collision resolution via open addressing.", "domain": "code_c"}
+{"prompt": "Should I use recursive descent parsing or a table-driven parser for a small expression evaluator written in C?", "domain": "code_c"}
+{"prompt": "I have this function that's supposed to compute factorial but overflows silently for n=20:\n\nunsigned long fact(int n){ unsigned long r=1; for(int i=1;i<=n;i++) r*=i; return r; }\nHow would you detect and handle the overflow properly?", "domain": "code_c"}
+{"prompt": "Can you explain, step by step, how the strtok function maintains state between calls and why it's not thread-safe?", "domain": "code_c"}
+{"prompt": "Can you explain how the volatile keyword affects compiler behavior, and show an example involving a memory-mapped hardware register in embedded C?", "domain": "code_c"}
+{"prompt": "I'm torn between using a single global error variable like errno-style versus passing an error pointer to every function. What do you suggest?", "domain": "code_c"}
+{"prompt": "Explain step by step how to detect and fix a data race in this multi-threaded counter increment function:\n\nint counter = 0;\nvoid increment() {\n    counter++;\n}", "domain": "code_c"}
+{"prompt": "I wrote a function to reverse a string in place but it's not working correctly. Can you fix it?\n\nvoid reverse(char *s) {\n    int len = strlen(s);\n    for (int i = 0; i < len; i++) {\n        char temp = s[i];\n        s[i] = s[len-i];\n        s[len-i] = temp;\n    }\n}", "domain": "code_c"}
+{"prompt": "Write a C implementation of a min-heap that supports insert, extract-min, and decrease-key operations.", "domain": "code_c"}
+{"prompt": "how do I safely cast a void pointer back to a function pointer in C, is that even legal?", "domain": "code_c"}
+{"prompt": "I want to implement a simple LRU cache in C using a hash map combined with a doubly linked list — can you sketch the structure and eviction logic?", "domain": "code_c"}
+{"prompt": "Should I prefer designated initializers over positional struct initialization in modern C code? What do you recommend for readability and safety?", "domain": "code_c"}
+{"prompt": "I'm building a small JSON parser in C for a config file loader. Walk me through how you'd structure the tokenizer and recursive-descent parser, then write the code for parsing a nested object with string, number, and boolean values. Please also mention how you'd handle memory ownership for the resulting tree so callers don't leak.", "domain": "code_c"}
+{"prompt": "Compare using calloc versus malloc followed by memset for zero-initializing a buffer, in terms of performance and clarity.", "domain": "code_c"}
+{"prompt": "Discuss the trade-offs of using variable-length arrays on the stack versus heap allocation for buffers whose size is only known at runtime.", "domain": "code_c"}
+{"prompt": "Can you show a safe way to read a line of arbitrary length from stdin in C without a fixed-size buffer, using `getline` or manual reallocation?", "domain": "code_c"}
+{"prompt": "Compare implementing a simple string builder in C using realloc-based growth versus preallocating a fixed large buffer, in terms of memory usage and complexity.", "domain": "code_c"}
+{"prompt": "What's the difference between calloc and malloc followed by memset regarding zero-initialization guarantees?", "domain": "code_c"}
+{"prompt": "Can you write a generic doubly linked list in C using void* payloads, including insert-before, insert-after, remove, and a foreach macro that takes a function pointer for the visit callback? Also add a small test that stores integers wrapped in heap-allocated boxes and prints them in order.", "domain": "code_c"}
+{"prompt": "Write a C function using getaddrinfo and socket to connect to a TCP server given a hostname and port.", "domain": "code_c"}
+{"prompt": "I'm about to write a memory pool allocator for a game engine in C. What approach would you recommend for balancing simplicity and performance?", "domain": "code_c"}
+{"prompt": "I need a CRC32 checksum implementation in C that matches the standard zlib polynomial, with a lookup table for speed.", "domain": "code_c"}
+{"prompt": "Explain how alignas and alignof work in C11 and why alignment matters for SIMD data structures.", "domain": "code_c"}
+{"prompt": "can you show me how to declare and use a 2D array in C?", "domain": "code_c"}
+{"prompt": "I need a state machine implementation in C for parsing a simple configuration file format with key=value pairs, comments starting with #, and section headers in brackets.", "domain": "code_c"}
+{"prompt": "Would you recommend using goto for error handling and cleanup in C, or is it better to use nested if statements? Discuss the trade-offs with an example.", "domain": "code_c"}
+{"prompt": "Can you explain what this macro does line by line, including why the extra parentheses and do-while(0) wrapper are necessary, and give an example of a bug that would occur if they were removed?\n\n#define SWAP(a, b, type) do { type tmp = (a); (a) = (b); (b) = tmp; } while (0)", "domain": "code_c"}
+{"prompt": "Can you explain what a dangling pointer is and show an example where freeing memory and then using it leads to undefined behavior, along with the fix?", "domain": "code_c"}
+{"prompt": "I need to implement a simple state machine in C using an array of function pointers indexed by state and event. Can you write an example for a traffic light controller?", "domain": "code_c"}
+{"prompt": "This code compiles with warnings about implicit function declarations — can you explain why and how to fix it? `int main() { printf(\"%d\\n\", square(5)); }`", "domain": "code_c"}
+{"prompt": "Explain what undefined behavior occurs in this code and how to fix it: int x; printf(\"%d\\n\", x); int arr[5]; arr[5] = 10;", "domain": "code_c"}
+{"prompt": "Step by step, show me how to implement a generic swap macro in C that works for any type, and discuss the pitfalls of macro-based generics.", "domain": "code_c"}
+{"prompt": "Can you show me the basic syntax for defining and calling a function in C that returns the square of a number?", "domain": "code_c"}
+{"prompt": "Is it better to use a union or a tagged struct to represent a variant type in C? Explain the safety and maintainability trade-offs.", "domain": "code_c"}
+{"prompt": "I'm trying to parse a binary file format with a fixed header followed by variable-length records in C. Can you show me idiomatic patterns for reading structured binary data safely, handling endianness conversion, and validating that the file isn't truncated mid-record, with example code for a simple header struct containing a magic number, version, and record count?", "domain": "code_c"}
+{"prompt": "I'm choosing between a linked list and a dynamic array for a task queue in C. What would you suggest given frequent insertions at both ends?", "domain": "code_c"}
+{"prompt": "explain how to detect memory leaks with valgrind", "domain": "code_c"}
+{"prompt": "explain the difference between malloc and calloc", "domain": "code_c"}
+{"prompt": "What are the trade-offs between using setjmp/longjmp for error handling versus returning error codes through every function call?", "domain": "code_c"}
+{"prompt": "Write a function that computes the greatest common divisor of two integers using the Euclidean algorithm, both iteratively and using tail recursion, and explain why the iterative version is generally preferred in C given how the language handles recursion versus how, say, Scheme would optimize tail calls.", "domain": "code_c"}
+{"prompt": "I'm trying to free a 2D array allocated with malloc of pointers but I think I'm doing it wrong, can you check?\n\nint **grid = malloc(rows * sizeof(int*)); for (i=0;i<rows;i++) grid[i] = malloc(cols*sizeof(int)); free(grid);", "domain": "code_c"}
+{"prompt": "Write a quicksort implementation.", "domain": "code_c"}
+{"prompt": "why do I get a warning about implicit declaration of function when I forget to include a header?", "domain": "code_c"}
+{"prompt": "I wrote this recursive factorial function but it overflows for large n, is there a cleaner way to handle that or should I just switch to unsigned long long?\n\nint factorial(int n) {\n    if (n <= 1) return 1;\n    return n * factorial(n - 1);\n}", "domain": "code_c"}
+{"prompt": "Write a C program demonstrating how to use setjmp and longjmp to implement basic exception-like error handling.", "domain": "code_c"}
+{"prompt": "Compare using signal handlers versus a dedicated polling loop for detecting termination requests in a long-running C daemon.", "domain": "code_c"}
+{"prompt": "how do I detect integer overflow before it happens when multiplying two ints in C?", "domain": "code_c"}
+{"prompt": "can you help me write a function that reverses a singly linked list in place? I keep messing up the pointer swaps", "domain": "code_c"}
+{"prompt": "Write an idiomatic C implementation of a generic singly linked list using void pointers, including insert, delete, and traversal functions.", "domain": "code_c"}
+{"prompt": "Can you rewrite this using bitwise operations instead of division and modulo?\n\nint half = x / 2;\nint remainder = x % 2;", "domain": "code_c"}
+{"prompt": "can you show me a simple implementation of a binary heap in C with insert and extract-min operations?", "domain": "code_c"}
+{"prompt": "what's the cleanest way to parse command line arguments in C without getopt?", "domain": "code_c"}
+{"prompt": "Write a small state machine in C using a table of function pointers for transitions, for a traffic light controller.", "domain": "code_c"}
+{"prompt": "Write a simple hash map with open addressing.", "domain": "code_c"}
+{"prompt": "How do I write a custom qsort comparator for sorting an array of structs by multiple keys?", "domain": "code_c"}
+{"prompt": "Optimize this bubble sort for nearly-sorted arrays.", "domain": "code_c"}
+{"prompt": "Can you explain how restrict-qualified pointers affect compiler optimizations, with an example showing the assembly difference before and after adding restrict?", "domain": "code_c"}
+{"prompt": "Can you explain why this code has a buffer overflow risk and how to fix it?\n\nchar buffer[10];\nstrcpy(buffer, \"This is a very long string\");", "domain": "code_c"}
+{"prompt": "I'm getting a segmentation fault in this code and I don't understand why. Can you find the bug?\n\nint *p;\n*p = 10;\nprintf(\"%d\\n\", *p);", "domain": "code_c"}
+{"prompt": "What's the trade-off between using static linking versus dynamic linking for a C library that needs to run on embedded devices with limited flash storage?", "domain": "code_c"}
+{"prompt": "write a function that takes an array of ints and returns the sum", "domain": "code_c"}
+{"prompt": "Can you explain step by step how the strcmp function might be implemented internally, and write your own version?", "domain": "code_c"}
+{"prompt": "Can you optimize this matrix multiplication function for cache locality? It's currently very slow on large matrices and I suspect it's due to poor memory access patterns.\n\nvoid multiply(int n, double A[n][n], double B[n][n], double C[n][n]) {\n    for (int i = 0; i < n; i++)\n        for (int j = 0; j < n; j++)\n            for (int k = 0; k < n; k++)\n                C[i][j] += A[i][k] * B[k][j];\n}", "domain": "code_c"}
+{"prompt": "Explain how function pointers and a jump table can be used to implement a simple state machine in C.", "domain": "code_c"}
+{"prompt": "Write a function that reverses a singly linked list in place.", "domain": "code_c"}
+{"prompt": "what's the proper way to check for integer overflow before doing a multiplication in C", "domain": "code_c"}
+{"prompt": "how do I read a line of text from the user including spaces?", "domain": "code_c"}
+{"prompt": "write a function to deep copy a binary tree, including allocating new nodes", "domain": "code_c"}
+{"prompt": "Please explain the output of this code involving integer promotion: `char a = 200; char b = 100; int c = a + b; printf(\"%d\\n\", c);`", "domain": "code_c"}
+{"prompt": "why does my code print garbage values when I print an uninitialized variable?", "domain": "code_c"}
+{"prompt": "Write a C program demonstrating how to use mmap to map a file into memory and read its contents.", "domain": "code_c"}
+{"prompt": "What are the trade-offs between using malloc/free directly versus a custom memory pool allocator in a performance-critical C application?", "domain": "code_c"}
+{"prompt": "Can you show a minimal example of using `dlopen`/`dlsym` to load a plugin function at runtime in C?", "domain": "code_c"}
+{"prompt": "Write a C function to compute the greatest common divisor of two unsigned integers iteratively, and explain why it terminates.", "domain": "code_c"}
+{"prompt": "Is it preferable to inline small helper functions manually or rely on the compiler's inlining heuristics with the inline keyword in C? Discuss the trade-offs.", "domain": "code_c"}
+{"prompt": "Should I use realloc to grow a dynamic array by doubling its size or by adding a fixed increment each time? Explain the amortized cost implications.", "domain": "code_c"}
+{"prompt": "I need to implement a simple LRU cache in C with a fixed capacity using a hash map combined with a doubly linked list for eviction order. Please write the full implementation with get and put operations, and explain how you keep both O(1) average time complexity.", "domain": "code_c"}
+{"prompt": "Implement a Boyer-Moore string search algorithm in C and explain the bad character heuristic.", "domain": "code_c"}
+{"prompt": "I have a zombie process issue after forking child processes — can you explain why this happens and show how `waitpid` fixes it?", "domain": "code_c"}
+{"prompt": "What's wrong with this: char buf[10]; strcpy(buf, \"hello world\");", "domain": "code_c"}
+{"prompt": "Can you explain the difference between `malloc`, `calloc`, and `realloc` in terms of memory initialization and typical use cases, and then show a bug scenario where forgetting that `realloc` can return a different pointer leads to a dangling pointer elsewhere in the program?", "domain": "code_c"}
+{"prompt": "Why does this comparison function for qsort crash intermittently, and how should it be written correctly?\n\nint cmp(const void *a, const void *b) {\n    return *(int*)a - *(int*)b;\n}", "domain": "code_c"}
+{"prompt": "Can you show me how to use a `switch` statement in C to print the name of the day given a number from 1 to 7?", "domain": "code_c"}
+{"prompt": "Explain restrict pointers and why they matter for optimization.", "domain": "code_c"}
+{"prompt": "Debug this code that uses setjmp/longjmp for error handling across function calls — it crashes intermittently:\n\njmp_buf env;\nvoid risky() {\n    int local = 5;\n    longjmp(env, 1);\n}\nint main() {\n    if (setjmp(env)) {\n        printf(\"recovered\\n\");\n        return 0;\n    }\n    risky();\n}", "domain": "code_c"}
+{"prompt": "Compare implementing a state machine in C using a switch statement versus using an array of function pointers.", "domain": "code_c"}
+{"prompt": "Explain how setjmp and longjmp work in C, and give a small example simulating exception handling.", "domain": "code_c"}
+{"prompt": "What's your recommendation for handling multiple return values in C — output parameters, a struct, or a global? I want idiomatic advice.", "domain": "code_c"}
+{"prompt": "Can you refactor this function to avoid goto and still handle multiple error-cleanup paths cleanly? `int process() { FILE *f = fopen(\"x\", \"r\"); if (!f) goto err; char *buf = malloc(100); if (!buf) goto err2; return 0; err2: free(buf); err: fclose(f); return -1; }`", "domain": "code_c"}
+{"prompt": "Write a red-black tree insertion function in C, including the necessary rotation and recoloring logic.", "domain": "code_c"}
+{"prompt": "write a simple hash table with open addressing", "domain": "code_c"}
+{"prompt": "Here's my attempt at a generic swap macro. Can you review it and point out any hidden bugs?\n\n#define SWAP(a,b) { int t=a; a=b; b=t; }", "domain": "code_c"}
+{"prompt": "Explain the differences between fork-based and thread-based concurrency models when writing C programs on Linux.", "domain": "code_c"}
+{"prompt": "Can you optimize this matrix multiplication for cache locality? `for (i = 0; i < n; i++) for (j = 0; j < n; j++) for (k = 0; k < n; k++) C[i][j] += A[i][k] * B[k][j];`", "domain": "code_c"}
+{"prompt": "I need a C function that trims leading and trailing whitespace from a string in place. Can you write it and handle the edge case of an all-whitespace string?", "domain": "code_c"}
+{"prompt": "can you explain what volatile actually does in C and give an example where it's necessary?", "domain": "code_c"}
+{"prompt": "can you write a simple producer-consumer setup using pthreads and a mutex/condition variable", "domain": "code_c"}
+{"prompt": "can you show me how to implement a simple circular buffer in C for a producer/consumer queue", "domain": "code_c"}
+{"prompt": "help me fix this off-by-one error in my array bounds check, my program keeps crashing on the last element", "domain": "code_c"}
+{"prompt": "I'm torn between using an enum or #define constants for error codes in this project. What would you suggest and why?", "domain": "code_c"}
+{"prompt": "How do I write a step-by-step unit test suite in plain C (no framework) for a function that parses integers from strings, including edge cases like overflow and leading whitespace?", "domain": "code_c"}
+{"prompt": "I have a buffer overflow in this function — can you identify it and suggest a safe fix? `void copy(char *dst, char *src) { strcpy(dst, src); }`", "domain": "code_c"}
+{"prompt": "I've got a memory leak somewhere in this parser but valgrind output is huge, any tips on narrowing it down?", "domain": "code_c"}
+{"prompt": "Walk me through profiling this function to find the bottleneck, then suggest an optimized version using bit tricks instead of a loop:\n\nint count_set_bits(unsigned int n) {\n    int count = 0;\n    while (n) {\n        count += n & 1;\n        n >>= 1;\n    }\n    return count;\n}", "domain": "code_c"}
+{"prompt": "Please review this function for thread safety issues and explain what could go wrong if called concurrently from multiple threads without synchronization: `static int counter = 0; int next_id(void) { return counter++; }` Then rewrite it using atomic operations from `<stdatomic.h>`.", "domain": "code_c"}
+{"prompt": "How do I correctly implement a signal handler for SIGINT that sets a flag and cleans up resources before exiting?", "domain": "code_c"}
+{"prompt": "Can you explain what `_Generic` does in C11 and write a macro that dispatches to different print functions based on the argument's type?", "domain": "code_c"}
+{"prompt": "Compare implementing a circular buffer with a fixed-size array and modulo arithmetic versus using bitmasking when the size is a power of two.", "domain": "code_c"}
+{"prompt": "Explain why this code has undefined behavior and how to fix it:\n\nint x = 5;\nint y = x++ + x++;", "domain": "code_c"}
+{"prompt": "I wrote this function to reverse a string in place. Can you check it for bugs and tell me if you'd recommend any changes?\n\nvoid reverse(char *s) {\n    int len = strlen(s);\n    for (int i = 0; i < len / 2; i++) {\n        char tmp = s[i];\n        s[i] = s[len - i];\n        s[len - i] = tmp;\n    }\n}", "domain": "code_c"}
+{"prompt": "Can you refactor this function to use a for loop instead of a while loop, and explain any readability tradeoffs?\n\nint i = 0;\nwhile (i < 10) {\n    printf(\"%d\\n\", i);\n    i++;\n}", "domain": "code_c"}
+{"prompt": "How do I go about writing a C program that reads a large file line by line efficiently, step by step, comparing fgets versus getline?", "domain": "code_c"}
+{"prompt": "Can you explain what `argc` and `argv` are in `int main(int argc, char *argv[])` and show a simple example that prints all command-line arguments?", "domain": "code_c"}
+{"prompt": "Explain what undefined behavior occurs in this snippet and how to fix it:\n\nint a[5]; a[5] = 10; printf(\"%d\\n\", a[5]);", "domain": "code_c"}
+{"prompt": "Implement a simple virtual machine in C that can execute a small bytecode instruction set with push, pop, add, and jump operations.", "domain": "code_c"}
+{"prompt": "Write a beginner-level C function that checks if a number is prime, and explain why we only need to check divisors up to the square root of n.", "domain": "code_c"}
+{"prompt": "Can you explain what `_Thread_local` does and show an example of a per-thread counter that avoids race conditions without locks?", "domain": "code_c"}
+{"prompt": "write a small C program that reads lines from stdin and reverses each line in place, printing the result", "domain": "code_c"}
+{"prompt": "Can you add unit tests for this function using a lightweight framework like Unity or just plain asserts, covering edge cases like empty strings and NULL input?\n\nsize_t count_vowels(const char *s) {\n    size_t count = 0;\n    for (; *s; s++) {\n        char c = tolower((unsigned char)*s);\n        if (c=='a'||c=='e'||c=='i'||c=='o'||c=='u') count++;\n    }\n    return count;\n}", "domain": "code_c"}
+{"prompt": "Write a hash table implementation in C with open addressing and linear probing, supporting insert, lookup, and delete.", "domain": "code_c"}
+{"prompt": "What's your take on using function-like macros with side effects versus static inline functions for small utility operations?", "domain": "code_c"}
+{"prompt": "write a simple program that counts how many times a character appears in a string", "domain": "code_c"}
+{"prompt": "I need to implement a basic LRU cache in C using a hash map and doubly linked list, any tips on structuring the code?", "domain": "code_c"}
+{"prompt": "write a quick benchmark harness to compare the speed of memcpy versus a manual byte-copy loop", "domain": "code_c"}
+{"prompt": "Can you convert this recursive Fibonacci function into an iterative one using constant space?\n\nint fib(int n) {\n    if (n <= 1) return n;\n    return fib(n-1) + fib(n-2);\n}", "domain": "code_c"}
+{"prompt": "Walk me through implementing a simple LRU cache in C using a hash map combined with a doubly linked list, step by step.", "domain": "code_c"}
+{"prompt": "I'm getting 'warning: implicit declaration of function' but I can't figure out why, here's my code", "domain": "code_c"}
+{"prompt": "Write a C function to detect a cycle in a singly linked list using Floyd's tortoise and hare algorithm.", "domain": "code_c"}
+{"prompt": "Can you explain why comparing floating point numbers for exact equality is problematic in C, show an example where it fails in practice, and rewrite the comparison using an epsilon-based approach along with a discussion of how to choose an appropriate epsilon?", "domain": "code_c"}
+{"prompt": "implement strtok from scratch", "domain": "code_c"}
+{"prompt": "I need to convert between host and network byte order for a custom binary protocol — can you show functions using `htons`/`htonl` and explain when they're needed.", "domain": "code_c"}
+{"prompt": "Can you optimize this matrix multiplication function for cache locality? It's currently quite slow for large matrices.\n\nfor (i=0;i<n;i++) for (j=0;j<n;j++) for (k=0;k<n;k++) C[i][j] += A[i][k]*B[k][j];", "domain": "code_c"}
+{"prompt": "Should this counter be declared as int or as a fixed-width type like int32_t, and what are the trade-offs for portability across platforms with different int sizes?", "domain": "code_c"}
+{"prompt": "I want to implement a generic swap macro in C that works for any type using a temporary buffer and memcpy. Can you write it and explain its limitations?", "domain": "code_c"}
+{"prompt": "Write a C function that implements quicksort with the median-of-three pivot selection strategy, and explain why this reduces worst-case behavior on sorted input.", "domain": "code_c"}
+{"prompt": "Can you explain in detail what undefined behavior actually occurs in the following code, walk through why signed integer overflow is different from unsigned overflow in C, and then rewrite it so it's well-defined regardless of platform?\n\nint x = INT_MAX;\nint y = x + 1;\nprintf(\"%d\\n\", y);", "domain": "code_c"}
+{"prompt": "Can you optimize this recursive Fibonacci function by adding memoization without changing its signature, and explain the difference in time complexity before and after the change?\n\nlong fib(int n) {\n    if (n <= 1) return n;\n    return fib(n - 1) + fib(n - 2);\n}", "domain": "code_c"}
+{"prompt": "Can you explain this bitwise trick for checking if a number is a power of two: `(n & (n - 1)) == 0`? Include edge cases like zero and negative numbers.", "domain": "code_c"}
+{"prompt": "I want to parse command-line options using `getopt` — can you show an example that handles both flags and options with arguments?", "domain": "code_c"}
+{"prompt": "Write a function to detect a cycle in a singly linked list using Floyd's algorithm.", "domain": "code_c"}
+{"prompt": "Explain what this pointer arithmetic actually does and whether it's undefined behavior: `int arr[5]; int *p = arr + 5; printf(\"%d\", *p);`", "domain": "code_c"}
+{"prompt": "Please explain what a NULL pointer is and show a simple example of checking for one before using it.", "domain": "code_c"}
+{"prompt": "I have this union-based type-punning code and I'm not sure if it's legal C or undefined behavior: `union { float f; unsigned int u; } conv; conv.f = 3.14f; printf(\"%x\\n\", conv.u);` Can you explain whether this is safe, contrast it with using memcpy for the same purpose, and mention what the C standard actually says about union type punning?", "domain": "code_c"}
+{"prompt": "Refactor this C function to remove the goto statements while preserving the same error-cleanup behavior:\n\nint process(void) {\n    FILE *f = fopen(\"data.txt\", \"r\");\n    if (!f) goto err1;\n    char *buf = malloc(1024);\n    if (!buf) goto err2;\n    if (fread(buf, 1, 1024, f) == 0) goto err3;\n    free(buf);\n    fclose(f);\n    return 0;\nerr3: free(buf);\nerr2: fclose(f);\nerr1: return -1;\n}", "domain": "code_c"}
+{"prompt": "can you explain the difference between static and extern linkage in C with a short example?", "domain": "code_c"}
+{"prompt": "what's the purpose of the return 0; at the end of main?", "domain": "code_c"}
+{"prompt": "Write a function that implements Dijkstra's algorithm using an adjacency list and a simple binary heap in C.", "domain": "code_c"}
+{"prompt": "What are the trade-offs between using a single large struct versus several smaller structs connected by pointers when modeling a game entity in C?", "domain": "code_c"}
+{"prompt": "Please write a beginner-friendly C program that converts temperature from Celsius to Fahrenheit.", "domain": "code_c"}
+{"prompt": "Write a C function that implements binary search on a sorted array of structs, comparing by a key field.", "domain": "code_c"}
+{"prompt": "Write a C function that parses a CSV line into an array of strings, handling quoted fields that may contain commas.", "domain": "code_c"}
+{"prompt": "Write a function to find the largest element in an array of integers, and explain how you'd handle an empty array as an edge case.", "domain": "code_c"}
+{"prompt": "Please implement a generic bounded queue (ring buffer) in C that works with `void*` elements and includes push/pop functions.", "domain": "code_c"}
+{"prompt": "Write a memory pool allocator in C that supports fixed-size block allocation and deallocation with O(1) complexity.", "domain": "code_c"}
+{"prompt": "I keep hearing that gets() is dangerous, what should I use instead for reading a line of input safely in C?", "domain": "code_c"}
+{"prompt": "Refactor this switch statement full of magic numbers into something more maintainable using enums and a lookup table.\n\nint get_days(int month) {\n    switch (month) {\n        case 1: return 31;\n        case 2: return 28;\n        case 3: return 31;\n        case 4: return 30;\n        default: return -1;\n    }\n}", "domain": "code_c"}
+{"prompt": "Please explain what happens when you cast a `float` to an `int` in C, especially with values near the boundary of `INT_MAX`.", "domain": "code_c"}
+{"prompt": "I keep getting a segmentation fault when I run this code and I don't know why: `int *arr; arr[0] = 5;` Can you explain what's wrong?", "domain": "code_c"}
+{"prompt": "Can you refactor this function to be more idiomatic C, and explain what changes you'd recommend and why?\n\nint sum(int *arr, int n) {\n    int total;\n    total = 0;\n    int i;\n    for (i = 0; i < n; i = i + 1) {\n        total = total + arr[i];\n    }\n    return total;\n}", "domain": "code_c"}
+{"prompt": "Write a binary search function for a sorted array.", "domain": "code_c"}
+{"prompt": "Would you recommend writing my own memory pool allocator for a small parser, or is it premature optimization for a one-off tool?", "domain": "code_c"}
+{"prompt": "Optimize this loop that sums an array of doubles.", "domain": "code_c"}
+{"prompt": "Can you explain how the C compiler decides struct padding and how to inspect it with offsetof?", "domain": "code_c"}
+{"prompt": "I need to parse command line args in C without getopt, can you show a basic manual approach", "domain": "code_c"}
+{"prompt": "Write a custom memory arena allocator in C that allocates from a fixed-size buffer and supports a reset operation.", "domain": "code_c"}
+{"prompt": "Can you explain the difference between `fork()` followed by `exec()` versus just calling a function directly, and why Unix uses this pattern for process creation?", "domain": "code_c"}
+{"prompt": "Implement a red-black tree insertion routine in C and explain the rotation cases.", "domain": "code_c"}
+{"prompt": "This function is supposed to reverse a linked list in place but it's losing nodes. What's wrong?\n\nnode_t *reverse(node_t *head) {\n    node_t *prev = NULL;\n    while (head) {\n        head->next = prev;\n        prev = head;\n        head = head->next;\n    }\n    return prev;\n}", "domain": "code_c"}
+{"prompt": "Can you explain what `#include <stdio.h>` actually does and why we need it at the top of C programs?", "domain": "code_c"}
+{"prompt": "Given this function, would you recommend switching from recursion to an iterative approach for performance, or is the recursive version fine?\n\nint fib(int n) {\n    if (n <= 1) return n;\n    return fib(n-1) + fib(n-2);\n}", "domain": "code_c"}
+{"prompt": "refactor this to use enums instead of magic numbers\n\nint state = 0;\nif (state == 0) { /* idle */ }\nelse if (state == 1) { /* running */ }\nelse if (state == 2) { /* stopped */ }", "domain": "code_c"}
+{"prompt": "Write a simple JSON string escaper in C.", "domain": "code_c"}
+{"prompt": "Can you explain how function pointers and pointer-to-pointer-to-function work in C, with a small example of a dispatch table for arithmetic operations?", "domain": "code_c"}
+{"prompt": "How do I implement a generic intrusive linked list in C using offsetof and container_of macros?", "domain": "code_c"}
+{"prompt": "Can you review this thread pool implementation for potential deadlocks or race conditions?\n\ntypedef struct { pthread_mutex_t lock; pthread_cond_t cond; Task *queue; int size; } ThreadPool;\nvoid submit(ThreadPool *tp, Task t) { pthread_mutex_lock(&tp->lock); enqueue(tp->queue, t); pthread_cond_signal(&tp->cond); pthread_mutex_unlock(&tp->lock); }", "domain": "code_c"}
+{"prompt": "Can you profile this function conceptually and tell me where the performance bottleneck likely is, then rewrite it to be faster: `int count_set_bits(unsigned int n) { int count = 0; for (int i = 0; i < 32; i++) { if (n & (1 << i)) count++; } return count; }` Also mention any built-in compiler intrinsics that could replace this entirely.", "domain": "code_c"}
+{"prompt": "Can you look at this code and tell me whether you think the off-by-one error is in the loop condition or the array indexing?\n\nvoid print_last_n(int *arr, int size, int n) {\n    for (int i = size - n; i < size; i++)\n        printf(\"%d\\n\", arr[i+1]);\n}", "domain": "code_c"}
+{"prompt": "Can you implement a simple LRU cache in C using a hash map combined with a doubly linked list for O(1) get and put operations?", "domain": "code_c"}
+{"prompt": "Compare the performance and safety trade-offs of using sprintf versus snprintf when formatting strings into fixed buffers.", "domain": "code_c"}
+{"prompt": "Weigh the pros and cons of using a global mutex versus per-object locks in a multithreaded C data structure.", "domain": "code_c"}
+{"prompt": "can you add some basic unit tests for this function using just plain asserts, no frameworks\n\nint add(int a, int b) { return a + b; }", "domain": "code_c"}
+{"prompt": "Refactor this function to remove the goto spaghetti while preserving the same cleanup-on-error behavior: int load_config(const char *path) { FILE *f = fopen(path, \"r\"); if (!f) goto fail; char *buf = malloc(1024); if (!buf) goto fail_close; if (fread(buf, 1, 1024, f) == 0) goto fail_free; free(buf); fclose(f); return 0; fail_free: free(buf); fail_close: fclose(f); fail: return -1; }", "domain": "code_c"}
+{"prompt": "Can you walk me through how `qsort` from the standard library works internally in terms of the comparator contract, and then write a custom comparator for sorting an array of structs by two fields, first by `priority` descending and then by `name` ascending as a tiebreaker?", "domain": "code_c"}
+{"prompt": "Can you explain the difference between fork() and pthread_create() for concurrency in C, including memory sharing implications?", "domain": "code_c"}
+{"prompt": "What is the purpose of the `return 0;` at the end of `main`, and what happens if I omit it?", "domain": "code_c"}
+{"prompt": "What's your opinion on using function pointers versus switch statements for implementing a simple state machine in C?", "domain": "code_c"}
+{"prompt": "Explain what undefined behavior occurs in this code and how to avoid it: `int x; int y = x + 1; printf(\"%d\\n\", y);`", "domain": "code_c"}
+{"prompt": "I have this bitfield struct for a hardware register but the layout doesn't match the datasheet: struct Reg { unsigned int enable : 1; unsigned int mode : 3; unsigned int reserved : 4; }; What could cause the mismatch and how do I debug it?", "domain": "code_c"}
+{"prompt": "I'm getting a 'use of uninitialized value' warning from valgrind on this struct — can you spot the issue? `struct Point { int x, y; }; struct Point p; printf(\"%d\\n\", p.x);`", "domain": "code_c"}
+{"prompt": "write a function that swaps two integers using pointers", "domain": "code_c"}
+{"prompt": "Can you show me step by step how to implement a binary search tree with insert, delete, and in-order traversal functions in idiomatic C?", "domain": "code_c"}
+{"prompt": "Compare fixed-size stack allocation versus heap allocation for a buffer whose size is only known at runtime but bounded by a small constant.", "domain": "code_c"}
+{"prompt": "write a quick C function to check if a number is prime, nothing fancy just something correct", "domain": "code_c"}
+{"prompt": "I want to implement a custom memory pool allocator in C for fixed-size blocks to avoid frequent malloc/free calls. Can you write a basic version?", "domain": "code_c"}
+{"prompt": "Can you add unit tests using a simple assert-based framework for this factorial function?\n\nlong factorial(int n) {\n    if (n <= 1) return 1;\n    return n * factorial(n - 1);\n}", "domain": "code_c"}
+{"prompt": "Explain what a segmentation fault typically means and walk through debugging this snippet with gdb conceptually:\n\nint *p;\n*p = 42;", "domain": "code_c"}
+{"prompt": "can you help me implement a simple state machine for parsing tokens character by character?", "domain": "code_c"}
+{"prompt": "I want to implement a basic memory pool allocator in C that hands out fixed-size blocks — can you write one and explain the free-list logic?", "domain": "code_c"}
+{"prompt": "I'm deciding between using strncpy or a custom bounded copy function for string handling. What would you recommend given strncpy's known quirks?", "domain": "code_c"}
+{"prompt": "Can you explain how the C preprocessor's token pasting operator ## works, with an example of generating function names dynamically via macros?", "domain": "code_c"}
+{"prompt": "Write a simple function that computes the sum of digits of a positive integer.", "domain": "code_c"}
+{"prompt": "why does this loop never terminate? pretty sure it's an off by one or something\n\nfor (unsigned int i = 10; i >= 0; i--) {\n    printf(\"%d\\n\", i);\n}", "domain": "code_c"}
+{"prompt": "I need to parse a CSV file line by line in C. Can you walk me through building a robust line-reading and tokenizing routine that handles quoted fields?", "domain": "code_c"}
+{"prompt": "I need a thread-safe counter using pthread mutexes, can you show me a minimal example?", "domain": "code_c"}
+{"prompt": "Write a function that computes the Levenshtein edit distance between two strings.", "domain": "code_c"}
+{"prompt": "Refactor this error-handling code to use goto-based cleanup instead of duplicated free calls:\n\nvoid *process(){ void *a=malloc(10); if(!a) return NULL; void *b=malloc(20); if(!b){ free(a); return NULL; } void *c=malloc(30); if(!c){ free(a); free(b); return NULL; } return c; }", "domain": "code_c"}
+{"prompt": "Write a simple memcpy implementation from scratch.", "domain": "code_c"}
+{"prompt": "Can you explain what a struct is in C and give a simple example of defining and using one for a 'Point' with x and y coordinates?", "domain": "code_c"}
+{"prompt": "Please explain what a memory barrier is and show a minimal example where omitting one could cause a visible reordering bug on a multicore system.", "domain": "code_c"}
+{"prompt": "hey can you look at this function and tell me why it segfaults? it's supposed to reverse a linked list\n\nstruct Node* reverse(struct Node* head) {\n    struct Node* prev = NULL;\n    while (head) {\n        head->next = prev;\n        prev = head;\n        head = head->next;\n    }\n    return prev;\n}", "domain": "code_c"}
+{"prompt": "Should I use a state machine implemented with function pointers or a big switch statement for parsing a simple protocol in C?", "domain": "code_c"}
+{"prompt": "Compare the performance implications of row-major versus column-major traversal when summing a large 2D array in C.", "domain": "code_c"}
+{"prompt": "Explain the difference between restrict and const qualifiers in C function signatures with a practical example involving array copying.", "domain": "code_c"}
+{"prompt": "Can you explain restrict-qualified pointers and how they help the compiler vectorize loops?", "domain": "code_c"}
+{"prompt": "debug this: it prints garbage instead of the string\n\nchar *get_name() {\n  char name[20] = \"Alice\";\n  return name;\n}", "domain": "code_c"}
+{"prompt": "can you explain the difference between deep copy and shallow copy for structs containing pointers, with a small example?", "domain": "code_c"}
+{"prompt": "can you explain what a segfault actually is at the OS level, in simple terms?", "domain": "code_c"}
+{"prompt": "Can you explain what happens with signed integer overflow in this code and why it's undefined behavior: `int x = INT_MAX; x = x + 1;`", "domain": "code_c"}
+{"prompt": "This code compiles with warnings, can you clean it up?\n\nint main() {\n    char c;\n    c = getchar();\n    while (c != EOF) {\n        putchar(c);\n        c = getchar();\n    }\n}", "domain": "code_c"}
+{"prompt": "Can you write unit tests using a minimal C testing macro setup for a function that computes the greatest common divisor?", "domain": "code_c"}
+{"prompt": "Write a small ring buffer implementation in C for a single-producer single-consumer scenario, and explain how it avoids needing a mutex.", "domain": "code_c"}
+{"prompt": "How would you write a step-by-step explanation of how a C compiler resolves the diamond problem-like ambiguity when multiple headers define macros with the same name?", "domain": "code_c"}
+{"prompt": "Compare using bitfields versus manual bit masking for packing flags into a struct in C, considering portability and performance.", "domain": "code_c"}
+{"prompt": "Walk me through, step by step, how to implement a thread-safe singly linked list in C using a mutex for each insert and delete operation.", "domain": "code_c"}
+{"prompt": "write a qsort comparator for sorting strings", "domain": "code_c"}
+{"prompt": "Do you recommend using inline functions over macros for small utility operations in modern C, given macros' lack of type safety?", "domain": "code_c"}
+{"prompt": "can you write a simple JSON-like tokenizer in C, just splitting strings into tokens by braces and commas", "domain": "code_c"}
+{"prompt": "Can you show me a simple example of using a `for` loop to print the multiplication table of a number entered by the user?", "domain": "code_c"}
+{"prompt": "what does this error mean: 'expected ';' before '}' token'", "domain": "code_c"}
+{"prompt": "Write a quicksort implementation in C that sorts an array of structs by a given comparator function pointer.", "domain": "code_c"}
+{"prompt": "Compare passing a function pointer directly versus using a struct with a vtable-like layout to implement polymorphism in C.", "domain": "code_c"}
+{"prompt": "this code leaks memory somewhere but valgrind output is confusing me, can you help interpret it or spot the leak\n\nchar *make_greeting(char *name) {\n    char *greeting = malloc(50);\n    sprintf(greeting, \"Hello, %s!\", name);\n    return greeting;\n}\n\nint main() {\n    char *g = make_greeting(\"World\");\n    printf(\"%s\\n\", g);\n    return 0;\n}", "domain": "code_c"}
+{"prompt": "explain restrict keyword in C99", "domain": "code_c"}
+{"prompt": "Explain why this code triggers a stack buffer overflow and how a tool like AddressSanitizer would catch it: `void fill(char *dst) { char buf[16]; for (int i = 0; i <= 16; i++) buf[i] = 'a'; strcpy(dst, buf); }` Then show a corrected version that avoids the off-by-one and any unsafe string copying.", "domain": "code_c"}
+{"prompt": "Can you explain the aliasing rules violated by this code and why `-fstrict-aliasing` might break it? `float f = 1.0f; int *ip = (int*)&f; *ip = 0;`", "domain": "code_c"}
+{"prompt": "How would I implement a simple reference-counted smart pointer pattern in plain C using structs and manual refcounting?", "domain": "code_c"}
+{"prompt": "I'm choosing between implementing my own doubly linked list from scratch or adapting the kernel-style intrusive list pattern. Which would you suggest for a C project with many different list types?", "domain": "code_c"}
+{"prompt": "This code is supposed to compute a running checksum over a byte stream but produces different results depending on optimization level (-O0 vs -O2). Can you explain why, identify if there's undefined behavior involved, and provide a corrected version?\n\nunsigned char checksum(unsigned char* data, int len) {\n    signed char sum = 0;\n    for (int i = 0; i < len; i++) {\n        sum += data[i];\n    }\n    return sum;\n}", "domain": "code_c"}
+{"prompt": "Can you explain the difference between malloc, calloc, and realloc in terms of what guarantees they make about memory contents and alignment?", "domain": "code_c"}
+{"prompt": "What's the difference between `int`, `float`, and `double` in C, and when should I use each one?", "domain": "code_c"}
+{"prompt": "what does malloc actually do, and why do I need to free what it returns?", "domain": "code_c"}
+{"prompt": "Why does this code trigger undefined behavior? int x = INT_MAX; x = x + 1; Explain integer overflow semantics for signed vs unsigned types.", "domain": "code_c"}
+{"prompt": "Write a recursive descent parser in C for simple arithmetic expressions supporting +, -, *, /, and parentheses.", "domain": "code_c"}
+{"prompt": "Write a simple memory pool allocator.", "domain": "code_c"}
+{"prompt": "What do you think is the cleanest way to implement optional/nullable semantics in C, given there's no built-in Optional type?", "domain": "code_c"}
+{"prompt": "In terms of portability and readability, which is preferable: bit-shifting with signed integers or using unsigned integers, and why does it matter for undefined behavior?", "domain": "code_c"}
+{"prompt": "Can you explain the difference between const char* and char* const, with examples of when each should be used in function signatures?", "domain": "code_c"}
+{"prompt": "write a simple C function to check if a number is prime", "domain": "code_c"}
+{"prompt": "can you show me how to implement a basic stack using a dynamic array in C?", "domain": "code_c"}
+{"prompt": "convert this recursive fibonacci to iterative for performance", "domain": "code_c"}
+{"prompt": "Here's a recursive Fibonacci function that's painfully slow for n=40: `int fib(int n) { if (n <= 1) return n; return fib(n-1) + fib(n-2); }` Please explain why it's exponential, then show me both a memoized version and an iterative bottom-up version, comparing their time and space complexity.", "domain": "code_c"}
+{"prompt": "Can you convert this code that uses gets/scanf into something that uses fgets safely with proper buffer size checks and newline stripping?\n\nchar name[20];\nprintf(\"Enter name: \");\ngets(name);", "domain": "code_c"}
+{"prompt": "I'm confused about why sizeof on this struct is larger than the sum of its fields — can you explain struct padding here? `struct S { char a; int b; char c; };`", "domain": "code_c"}
+{"prompt": "Can you write a simple implementation of `memcpy` from scratch, including handling of overlapping regions by falling back to a `memmove`-like backward copy, and explain any alignment considerations for performance on typical architectures?", "domain": "code_c"}
+{"prompt": "I'm trying to implement a basic stack using an array in C, can you show me push and pop with proper bounds checking", "domain": "code_c"}
+{"prompt": "this code compiles with warnings about comparing signed and unsigned, how do I fix it cleanly?\n\nfor (int i = 0; i < strlen(s); i++) { ... }", "domain": "code_c"}
+{"prompt": "Write a simple thread pool in C using POSIX threads, with a fixed number of worker threads pulling tasks from a queue.", "domain": "code_c"}
+{"prompt": "Can you help me write a simple program that asks the user for their name and age and then prints a greeting message using their input?", "domain": "code_c"}
+{"prompt": "How do I go about writing a robust command-line argument parser in C from scratch, step by step, without relying on getopt?", "domain": "code_c"}
+{"prompt": "why does this loop never terminate?\n\nfor (unsigned i = 10; i >= 0; i--) printf(\"%u\\n\", i);", "domain": "code_c"}
+{"prompt": "explain what this snippet does line by line, I inherited it and there are zero comments:\n\nfor (int i = 0, j = n-1; i < j; i++, j--) { int t = a[i]; a[i] = a[j]; a[j] = t; }", "domain": "code_c"}
+{"prompt": "Explain the difference between a union and a struct in C, and show a practical use case for a union in parsing network packet headers.", "domain": "code_c"}
+{"prompt": "Please write a simple bubble sort function in C and explain how it works step by step.", "domain": "code_c"}
+{"prompt": "Write a C implementation of a min-heap supporting insert and extract-min, and explain the sift-down logic.", "domain": "code_c"}
+{"prompt": "Write a simple arena allocator in C that preallocates a large block of memory upfront and hands out sub-allocations via a bump pointer, with no individual frees allowed until the whole arena is reset or destroyed, and explain a real-world scenario where this pattern is preferable to malloc/free.", "domain": "code_c"}
+{"prompt": "What's the trade-off between validating input at the API boundary versus deep within each function in a C library meant for external use?", "domain": "code_c"}
+{"prompt": "I have a hash table implementation in C that uses open addressing with linear probing, but it seems to degrade badly once the load factor passes 0.7. Can you walk through why that happens theoretically, then rewrite the resize logic so it doubles capacity and rehashes all entries when the load factor exceeds 0.6, and add a small main() that inserts 1000 keys and reports average probe length before and after the fix?", "domain": "code_c"}
+{"prompt": "Write a C function that copies one array into another manually, without using memcpy, and explain what could go wrong if the destination array is too small.", "domain": "code_c"}
+{"prompt": "Can you explain the difference between static and dynamic linking in C, and how it affects binary size and deployment?", "domain": "code_c"}
+{"prompt": "I'm getting a warning about implicit declaration of a function. What does that mean and how do I fix it?", "domain": "code_c"}
+{"prompt": "Can you explain the concept of pass-by-value versus pass-by-reference in C, and show how pointers are used to simulate pass-by-reference?", "domain": "code_c"}
+{"prompt": "Can you walk me through fixing this buffer overflow vulnerability and explain each change you make?\n\nvoid copy_input(char *dest, char *src) {\n    strcpy(dest, src);\n}", "domain": "code_c"}
+{"prompt": "I need a memory pool allocator in C for fixed-size blocks that avoids calling malloc/free repeatedly in a hot loop. Please implement init, alloc, and free functions backed by a free-list, explain the tradeoffs versus a general-purpose allocator, and show a benchmark loop comparing it against malloc for 1 million allocations of 64-byte blocks.", "domain": "code_c"}
+{"prompt": "Explain the difference between a flexible array member and a pointer member in a struct used for variable-length records.", "domain": "code_c"}
+{"prompt": "can you explain why using gets() is dangerous and what I should use instead", "domain": "code_c"}
+{"prompt": "Walk me through implementing a simple memory pool allocator in C for fixed-size blocks, step by step, including free list management.", "domain": "code_c"}
+{"prompt": "What's your opinion on using VLAs (variable-length arrays) in C99 versus heap allocation for buffers whose size is only known at runtime?", "domain": "code_c"}
+{"prompt": "Write a producer-consumer example in C using POSIX threads and a mutex plus condition variable for synchronization.", "domain": "code_c"}
+{"prompt": "What's your view on the tradeoffs of using recursion versus explicit stacks for traversing a tree structure in C, especially with deep trees?", "domain": "code_c"}
+{"prompt": "Can you explain what strict aliasing rules are in C and show an example of undefined behavior caused by violating them via type punning through pointers?", "domain": "code_c"}
+{"prompt": "Can you explain why this string comparison always returns false and fix it? `char *a = \"hello\"; char *b = malloc(6); strcpy(b, \"hello\"); if (a == b) printf(\"equal\\n\");`", "domain": "code_c"}
+{"prompt": "what's the difference between malloc and calloc, and when should I actually use calloc", "domain": "code_c"}
+{"prompt": "fix this segfault please\n\nchar *s = malloc(5);\nstrcpy(s, \"hello world\");\nprintf(\"%s\\n\", s);", "domain": "code_c"}
+{"prompt": "Can you help me write a function that counts how many times a specific character appears in a string?", "domain": "code_c"}
+{"prompt": "Give me a step-by-step guide to writing a simple hash table in C with open addressing and linear probing, including insert, lookup, and delete.", "domain": "code_c"}
+{"prompt": "Please write a function that detects the host's endianness at runtime without using any preprocessor macros, purely with C code.", "domain": "code_c"}
+{"prompt": "Please write a basic C function that checks if a string is a palindrome.", "domain": "code_c"}
+{"prompt": "Please explain what a header file is in C and why we split code into `.h` and `.c` files.", "domain": "code_c"}
+{"prompt": "can you convert this recursive fibonacci to an iterative version to avoid the stack overflow on large n?", "domain": "code_c"}
+{"prompt": "I have this code using `alloca` for a variable-length buffer inside a loop — can you explain why this is dangerous and suggest a safer alternative?", "domain": "code_c"}
+{"prompt": "Write a function in C that computes the number of trailing zero bits in an integer, and compare it to using `__builtin_ctz`.", "domain": "code_c"}
+{"prompt": "I'm implementing a binary search tree in C — can you add a function to compute the height and check if it's balanced?", "domain": "code_c"}
+{"prompt": "why does this code produce different output on different compilers?\n\nint main() {\n    int i = 0;\n    printf(\"%d %d\\n\", i++, i++);\n}", "domain": "code_c"}
+{"prompt": "Can you explain how function pointers and callback-based APIs work in C, with an example of a simple event dispatcher?", "domain": "code_c"}
+{"prompt": "Explain what this macro does.\n\n#define SWAP(a, b) do { typeof(a) t = a; a = b; b = t; } while (0)", "domain": "code_c"}
+{"prompt": "can you explain what a pointer actually is in C, like with a simple diagram or analogy?", "domain": "code_c"}
+{"prompt": "Write a topological sort implementation in C for a directed acyclic graph represented as an adjacency list, using Kahn's algorithm with an explicit queue, and explain how you'd detect and report a cycle if the input graph isn't actually acyclic.", "domain": "code_c"}
+{"prompt": "Explain what this bitwise trick does and in what scenarios it's useful: `x = x ^ y; y = x ^ y; x = x ^ y;` Then discuss whether modern compilers would generate better code for a simple temp-variable swap instead, and why you might still see this idiom in older C code.", "domain": "code_c"}
+{"prompt": "What does `sizeof` do in C, and can you show examples with an int, a float, and an array?", "domain": "code_c"}
+{"prompt": "Explain what a memory leak looks like in this code and show the corrected version:\n\nchar* make_greeting(const char* name) {\n    char* result = malloc(50);\n    sprintf(result, \"Hello, %s!\", name);\n    return result;\n}\nint main() {\n    make_greeting(\"World\");\n    return 0;\n}", "domain": "code_c"}
+{"prompt": "Can you compare the performance of qsort from the standard library versus a hand-rolled quicksort for sorting an array of 10,000 integers?", "domain": "code_c"}
+{"prompt": "Guide me through adding proper error handling and return codes to this file-reading function that currently ignores fopen failures:\n\nvoid read_file(const char *path) {\n    FILE *f = fopen(path, \"r\");\n    char buf[256];\n    fgets(buf, sizeof(buf), f);\n    fclose(f);\n}", "domain": "code_c"}
+{"prompt": "What does 'restrict' mean in a function signature?", "domain": "code_c"}
+{"prompt": "Write a C function that converts a string of digits into an integer manually, similar to how atoi works, and explain how you handle negative numbers and invalid input.", "domain": "code_c"}
+{"prompt": "write a function to check if a number is prime, optimized", "domain": "code_c"}
+{"prompt": "what's the best way to read an entire text file into a dynamically allocated buffer in C without knowing the size ahead of time?", "domain": "code_c"}
+{"prompt": "Write a small C library for a fixed-capacity ring buffer intended for use in an embedded system with no dynamic memory allocation allowed. It should support push, pop, peek, and a way to check if it's full or empty, and should be safe to use from an interrupt handler and a main loop concurrently on a single-core microcontroller.", "domain": "code_c"}
+{"prompt": "Weigh the pros and cons of using recursive descent parsing versus a table-driven parser for implementing a small expression evaluator in C.", "domain": "code_c"}
+{"prompt": "Write a C function that computes the factorial of a number iteratively and another version recursively, and explain when you'd prefer one over the other for small inputs.", "domain": "code_c"}
+{"prompt": "this code is supposed to implement a simple finite state machine for a traffic light but the transitions seem off, can you check it?\n\ntypedef enum { RED, GREEN, YELLOW } State;\n\nState next_state(State s) {\n    switch (s) {\n        case RED: return YELLOW;\n        case YELLOW: return RED;\n        case GREEN: return YELLOW;\n    }\n}", "domain": "code_c"}
+{"prompt": "Explain how variadic functions work in C using stdarg.h, and write an example that computes the average of an arbitrary number of doubles.", "domain": "code_c"}
+{"prompt": "Refactor this nested loop into a cleaner function using early returns:\n\nint find(int *arr, int n, int target){ int found=0; for(int i=0;i<n;i++){ if(!found){ if(arr[i]==target){ found=1; } } } return found; }", "domain": "code_c"}
+{"prompt": "Explain the difference between static linking and dynamic linking in C, and how you'd compile a program both ways using gcc.", "domain": "code_c"}
+{"prompt": "Compare the use of recursion versus an explicit stack for implementing depth-first search on a graph in C.", "domain": "code_c"}
+{"prompt": "Explain how bit fields work in C structs, including portability concerns across different compilers and endianness.", "domain": "code_c"}
+{"prompt": "add unit tests for this function using assert\n\nint add(int a, int b) { return a + b; }", "domain": "code_c"}
+{"prompt": "Explain step by step why this code produces a compiler warning about comparing signed and unsigned integers:\n\nsize_t len = strlen(s); for(int i=len-1;i>=0;i--) putchar(s[i]);", "domain": "code_c"}
+{"prompt": "I'm debating whether to null-terminate all my strings or track lengths explicitly alongside buffers in a text-processing tool. What's better in your opinion?", "domain": "code_c"}
+{"prompt": "can you help me understand why this union based type punning gives inconsistent results across platforms?\n\nunion Convert {\n    float f;\n    int i;\n};", "domain": "code_c"}
+{"prompt": "Can you explain why this code triggers a compiler warning about strict-aliasing and how union-based type punning compares to memcpy-based punning?\n\nint float_to_int_bits(float f) {\n    union { float f; int i; } u;\n    u.f = f;\n    return u.i;\n}", "domain": "code_c"}
+{"prompt": "Write a C function that implements quicksort with median-of-three pivot selection to avoid worst-case behavior on sorted or reverse-sorted input, and explain why the naive first-element pivot strategy performs poorly on such inputs. Include a small driver that times both implementations on a nearly-sorted array of 100000 integers.", "domain": "code_c"}
+{"prompt": "Compare using atomic operations from stdatomic.h versus mutex-protected critical sections for incrementing a shared counter across threads in C.", "domain": "code_c"}
+{"prompt": "can you help me write a C function that checks whether two strings are anagrams of each other, ideally without extra allocation?", "domain": "code_c"}
+{"prompt": "How do I write a simple C program that swaps two integers using a temporary variable, and then show me how to do it without a temporary variable using arithmetic?", "domain": "code_c"}
+{"prompt": "Write a function to serialize and deserialize a binary tree to and from a byte buffer for storage or transmission.", "domain": "code_c"}
+{"prompt": "Write a C program that reads a binary file containing fixed-size records and prints the fields of each record using a packed struct.", "domain": "code_c"}
+{"prompt": "This code is meant to copy a string safely but I keep hearing that strncpy has surprising behavior. Can you point out the problem with this usage and rewrite it using a safer idiom?\n\nchar dest[16];\nstrncpy(dest, src, sizeof(dest));\nprintf(\"%s\\n\", dest);", "domain": "code_c"}
+{"prompt": "what's wrong with this code, it prints garbage instead of the sum?\n\nint sum(int *arr, int n) { int s; for (int i = 0; i <= n; i++) s += arr[i]; return s; }", "domain": "code_c"}
+{"prompt": "In your opinion, is it better to use setjmp/longjmp for error handling in C, or should I stick with manual error codes returned from functions?", "domain": "code_c"}
+{"prompt": "I have a memory leak somewhere in this program according to valgrind, can you help me trace it?\n\nchar *buf = malloc(256); if (some_condition) { return -1; } free(buf); return 0;", "domain": "code_c"}
+{"prompt": "explain what this snippet does line by line, I inherited this code and have no idea\n\nvoid *p = malloc(sizeof(int) * n);\nmemset(p, 0, sizeof(int) * n);\nint *arr = (int *)p;", "domain": "code_c"}
+{"prompt": "Write a C function that computes the Levenshtein edit distance between two strings using dynamic programming with O(n) space.", "domain": "code_c"}
+{"prompt": "Fix this segfault: int *p; *p = 5;", "domain": "code_c"}
+{"prompt": "Explain why this loop never terminates and fix it: `for (unsigned int i = 10; i >= 0; i--) { printf(\"%u\\n\", i); }`", "domain": "code_c"}
+{"prompt": "I wrote this function to trim whitespace from both ends of a string in place, but it doesn't work correctly for all-whitespace strings: char* trim(char *s) { char *end; while (isspace(*s)) s++; end = s + strlen(s) - 1; while (end > s && isspace(*end)) end--; *(end+1) = 0; return s; }", "domain": "code_c"}
+{"prompt": "write a C function to reverse a singly linked list", "domain": "code_c"}
+{"prompt": "Write a C program that memory-maps a file using mmap and counts the number of newline characters in it.", "domain": "code_c"}
+{"prompt": "Refactor this recursive Fibonacci function to use memoization with a static array: long fib(int n) { if (n <= 1) return n; return fib(n-1) + fib(n-2); }", "domain": "code_c"}
+{"prompt": "Implement a lock-free single-producer single-consumer ring buffer in C using atomics from stdatomic.h.", "domain": "code_c"}
+{"prompt": "Refactor this function to avoid undefined behavior and explain what was wrong:\n\nint sum(int *arr, int len) {\n    int total;\n    for (int i = 0; i <= len; i++) total += arr[i];\n    return total;\n}", "domain": "code_c"}
+{"prompt": "I need to convert this recursive tree traversal into an iterative version using an explicit stack, since the recursive version overflows the call stack on deeply unbalanced trees with a few hundred thousand nodes. Can you rewrite it and explain the stack space tradeoff?\n\nvoid inorder(struct Node* root) {\n    if (!root) return;\n    inorder(root->left);\n    printf(\"%d \", root->value);\n    inorder(root->right);\n}", "domain": "code_c"}
+{"prompt": "I'm working with a fixed-size array-based queue and I keep getting an off-by-one bug where the queue reports full when it has one empty slot left. Here's my code: `int is_full(Queue *q) { return q->tail == q->head; }` Can you explain the classic circular buffer full/empty ambiguity problem and show two different standard fixes for it?", "domain": "code_c"}
+{"prompt": "Write a beginner-friendly C function that checks whether a given string is a palindrome, ignoring case and spaces.", "domain": "code_c"}
+{"prompt": "debug this: my binary search never finds the element even though it's clearly in the array\n\nint bsearch2(int *a, int n, int target) { int lo=0, hi=n; while (lo<hi) { int mid=(lo+hi)/2; if (a[mid]==target) return mid; if (a[mid]<target) lo=mid; else hi=mid; } return -1; }", "domain": "code_c"}
+{"prompt": "I have a socket server in C using select() to handle multiple clients, but it starts dropping connections once more than 64 clients connect simultaneously. Can you explain the likely cause related to FD_SETSIZE, and rewrite the event loop using poll() or epoll() instead, with an explanation of why that scales better?", "domain": "code_c"}
+{"prompt": "How would I add proper bounds checking and unit tests to this function that copies n bytes into a fixed buffer?\n\nvoid copyData(char *dest, char *src, int n){ for(int i=0;i<n;i++) dest[i]=src[i]; }", "domain": "code_c"}
+{"prompt": "refactor this so it doesn't use so many nested if statements, feels really messy right now\n\nint classify(int age, int income) {\n    if (age < 18) {\n        return 0;\n    } else {\n        if (income < 20000) {\n            return 1;\n        } else {\n            if (income < 50000) {\n                return 2;\n            } else {\n                return 3;\n            }\n        }\n    }\n}", "domain": "code_c"}
+{"prompt": "Do you recommend using const aggressively throughout a C codebase, or does it just add noise without much benefit?", "domain": "code_c"}
+{"prompt": "this binary search seems to work most of the time but fails on some edge cases, any idea why?\n\nint bsearch_custom(int *arr, int n, int target) {\n    int lo = 0, hi = n;\n    while (lo <= hi) {\n        int mid = (lo + hi) / 2;\n        if (arr[mid] == target) return mid;\n        else if (arr[mid] < target) lo = mid + 1;\n        else hi = mid - 1;\n    }\n    return -1;\n}", "domain": "code_c"}
+{"prompt": "Write a hash table in C with open addressing and linear probing, supporting insert, lookup, and delete with tombstones, and explain the tombstone deletion tradeoffs.", "domain": "code_c"}
+{"prompt": "Explain what undefined behavior means in C with three concrete examples that compilers are allowed to miscompile.", "domain": "code_c"}
+{"prompt": "Write a function that safely reads an arbitrary-length line from stdin into a dynamically growing buffer, without a fixed size limit like fgets imposes, and explain the resizing strategy you use to keep the amortized cost of reading a long line linear in its length.", "domain": "code_c"}
+{"prompt": "Walk me through implementing a basic red-black tree insertion in C, step by step, focusing on the rotation and recoloring logic.", "domain": "code_c"}
+{"prompt": "Write a function to trim whitespace from a string in place.", "domain": "code_c"}
+{"prompt": "can you write a function that reads an entire file into a dynamically allocated buffer and returns it, handling errors properly", "domain": "code_c"}
+{"prompt": "What's the best approach in your view for handling multi-threaded access to a shared C struct — mutexes, atomics, or redesigning to avoid shared state?", "domain": "code_c"}
+{"prompt": "What's wrong with this mutex usage?\n\npthread_mutex_lock(&lock);\nif (error) return -1;\npthread_mutex_unlock(&lock);", "domain": "code_c"}
+{"prompt": "My realloc-based dynamic array loses data intermittently — can you review this growth function? `void push(Vec *v, int x) { if (v->len == v->cap) { v->cap *= 2; realloc(v->data, v->cap * sizeof(int)); } v->data[v->len++] = x; }`", "domain": "code_c"}
+{"prompt": "How would I refactor this function to eliminate undefined behavior from signed integer overflow, explaining each step?\n\nint add_checked(int a, int b) {\n    return a + b;\n}", "domain": "code_c"}
+{"prompt": "I need to implement a simple JSON tokenizer in C that can handle strings, numbers, booleans, null, and the basic punctuation characters. Please write the tokenizer as a state machine that returns one token at a time via a function call, and include handling for escaped characters inside strings.", "domain": "code_c"}
+{"prompt": "Explain what this switch statement does and why the missing 'break' might cause unexpected behavior.\n\nswitch (grade) {\n    case 'A':\n        printf(\"Excellent\\n\");\n    case 'B':\n        printf(\"Good\\n\");\n        break;\n}", "domain": "code_c"}
+{"prompt": "Write a hash table in C with open addressing and linear probing.", "domain": "code_c"}
+{"prompt": "Can you explain how `restrict` qualified pointers can help the compiler optimize this loop, and show a before/after example?", "domain": "code_c"}
+{"prompt": "what does this macro do?\n\n#define SWAP(a,b) { int t=a; a=b; b=t; }", "domain": "code_c"}
+{"prompt": "write a function that converts a hex string like \"1a2b\" into its equivalent integer value", "domain": "code_c"}
+{"prompt": "Refactor this function to avoid goto.\n\nint validate(int x) {\n    if (x < 0) goto fail;\n    if (x > 100) goto fail;\n    return 1;\nfail:\n    return 0;\n}", "domain": "code_c"}
+{"prompt": "Write a C program that reads a file line by line and counts word frequencies.", "domain": "code_c"}
+{"prompt": "Can you optimize this matrix multiplication function for cache locality?\n\nvoid multiply(int n, double a[n][n], double b[n][n], double c[n][n]){ for(int i=0;i<n;i++) for(int j=0;j<n;j++) for(int k=0;k<n;k++) c[i][j]+=a[i][k]*b[k][j]; }", "domain": "code_c"}
+{"prompt": "Refactor this function to avoid undefined behavior from signed integer overflow and explain which line was problematic.\n\nint sum_range(int a, int b) {\n    int total = 0;\n    for (int i = a; i <= b; i++) {\n        total += i * i;\n    }\n    return total;\n}", "domain": "code_c"}
+{"prompt": "Can you explain how errno works in C, and show a proper way to check and report errors after calling a function like strtol?", "domain": "code_c"}
+{"prompt": "Write a C implementation of a simple thread pool using pthreads that executes queued work items.", "domain": "code_c"}
+{"prompt": "Write a hash table in C using open addressing with linear probing, including insert, lookup, and delete.", "domain": "code_c"}
+{"prompt": "I'm trying to understand recursion in C. Can you write a simple factorial function using recursion and explain how the calls stack up?", "domain": "code_c"}
+{"prompt": "Explain what undefined behavior means in C with a concrete example involving signed integer overflow, and show how to detect it with sanitizers.", "domain": "code_c"}
+{"prompt": "Why does this loop never terminate? for(unsigned i=10;i>=0;i--) printf(\"%d\",i);", "domain": "code_c"}
+{"prompt": "I want to implement a circular buffer for a producer-consumer scenario in an embedded system without dynamic memory allocation. Can you write it?", "domain": "code_c"}
+{"prompt": "What are the trade-offs between using errno-based error reporting versus returning a custom error enum from every function in a C library?", "domain": "code_c"}
+{"prompt": "Can you explain what this pointer declaration means and how it differs from a normal int pointer?\n\nint (*arr)[5];", "domain": "code_c"}
+{"prompt": "I'm getting a strict-aliasing warning when I do this: `int x = 5; float *fp = (float*)&x;` — can you explain why this is undefined behavior and how to do type punning safely with a union?", "domain": "code_c"}
+{"prompt": "I'm confused about arrays in C. Can you explain how `int nums[10];` is stored in memory and how indexing works?", "domain": "code_c"}
+{"prompt": "can you walk me through how scanf works and why it sometimes skips input?", "domain": "code_c"}
+{"prompt": "why does sizeof give the wrong result here?\n\nint arr[10];\nvoid foo(int arr[]) { printf(\"%zu\\n\", sizeof(arr)); }", "domain": "code_c"}
+{"prompt": "Can you explain what's wrong with this code and fix it, going through your reasoning step by step?\n\nchar *get_greeting() {\n    char buf[50];\n    snprintf(buf, sizeof(buf), \"Hello, world!\");\n    return buf;\n}", "domain": "code_c"}
+{"prompt": "Can you show me how to use `setjmp`/`longjmp` to implement a simple error-handling pattern that unwinds out of nested function calls?", "domain": "code_c"}
+{"prompt": "I need a function that counts how many times a specific character appears in a string. Can you write it and add a couple of test cases?", "domain": "code_c"}
+{"prompt": "can you explain why this printf format string causes undefined behavior?\n\nlong x = 100000;\nprintf(\"%d\\n\", x);", "domain": "code_c"}
+{"prompt": "Explain step by step what this snippet does and why it might crash:\n\nchar *buf = malloc(10);\nstrcpy(buf, \"this string is way too long\");\nprintf(\"%s\\n\", buf);", "domain": "code_c"}
+{"prompt": "can you trace through this code and tell me what value it prints?\n\nint a[5] = {1,2,3,4,5}; int *p = a; p += 2; printf(\"%d\\n\", *p);", "domain": "code_c"}
+{"prompt": "hey can you help me figure out why this linked list reverse function segfaults sometimes\n\nstruct Node* reverse(struct Node* head) {\n    struct Node* prev = NULL;\n    while (head) {\n        head->next = prev;\n        prev = head;\n        head = head->next;\n    }\n    return prev;\n}", "domain": "code_c"}
+{"prompt": "Guide me through converting this code to use function pointers for a simple plugin-style dispatch table instead of a switch statement.", "domain": "code_c"}
+{"prompt": "Step by step, explain how malloc and free typically manage the heap internally, including concepts like free lists and fragmentation.", "domain": "code_c"}
+{"prompt": "Write a C implementation of a Bloom filter with configurable false-positive rate.", "domain": "code_c"}
+{"prompt": "Can you trace through this code and tell me what it prints, explaining the order of evaluation?\n\nint i = 0;\nprintf(\"%d %d %d\\n\", i++, i++, i++);", "domain": "code_c"}
+{"prompt": "Optimize this string reversal function to avoid the extra buffer allocation: char* reverse(const char *s) { int len = strlen(s); char *r = malloc(len+1); for (int i = 0; i < len; i++) r[i] = s[len-1-i]; r[len] = '\\0'; return r; }", "domain": "code_c"}
+{"prompt": "Write a function to check if a string is a palindrome, ignoring case and spaces.", "domain": "code_c"}
+{"prompt": "write a program that finds the largest of three numbers", "domain": "code_c"}
+{"prompt": "optimize this string concatenation loop\n\nchar result[1000] = \"\";\nfor (int i = 0; i < 100; i++) strcat(result, \"x\");", "domain": "code_c"}
+{"prompt": "Add bounds checking to this array access function.\n\nint get(int *arr, int idx) {\n    return arr[idx];\n}", "domain": "code_c"}
+{"prompt": "Write a function that implements a generic dynamic array (like a vector) in C using void pointers and a specified element size, supporting push_back, pop_back, get, and set operations, with automatic growth when capacity is exceeded. Also include comments about the type-safety limitations of this approach compared to C++ templates.", "domain": "code_c"}
+{"prompt": "can you walk me through what's happening in this bit manipulation trick?\n\nint x = 5;\nx = x ^ (x & 1);", "domain": "code_c"}
+{"prompt": "I wrote a producer-consumer queue using pthreads but I think there's a race condition. Here's the code: `void push(Queue *q, int v) { q->buf[q->tail] = v; q->tail = (q->tail+1)%CAP; q->count++; } void* consumer(void *arg) { while(1) { if (q->count > 0) { int v = q->buf[q->head]; q->head=(q->head+1)%CAP; q->count--; } } }` Can you identify all the synchronization issues and rewrite it correctly with mutexes and condition variables?", "domain": "code_c"}
+{"prompt": "Do you think restrict-qualified pointers are worth adding to this function for the compiler to optimize better, or is it premature optimization?\n\nvoid add_arrays(int *a, int *b, int *out, int n) {\n    for (int i = 0; i < n; i++) out[i] = a[i] + b[i];\n}", "domain": "code_c"}
+{"prompt": "implement a circular buffer in C", "domain": "code_c"}
+{"prompt": "Write a C function that computes CRC32 using a precomputed lookup table, optimized for throughput.", "domain": "code_c"}
+{"prompt": "Do you think it's worth implementing my own reference-counted string type in C, or should I just be careful with ownership using plain char pointers?", "domain": "code_c"}
+{"prompt": "I'm getting inconsistent results comparing floats for equality — can you explain why and show a safer epsilon-based comparison function?", "domain": "code_c"}
+{"prompt": "Explain why this code produces a compiler warning about incompatible pointer types: int *p = malloc(sizeof(int)); double *d = p;", "domain": "code_c"}
+{"prompt": "what's a clean way to parse comma separated values from a line of text in C without using strtok, since I heard it's not reentrant?", "domain": "code_c"}
+{"prompt": "In your opinion, should I use malloc/free directly in a new embedded project or wrap them in a custom allocator? What would you recommend and why?", "domain": "code_c"}
+{"prompt": "Do you think it's a good idea to inline small helper functions manually with the inline keyword, or should I just trust the compiler's optimizer?", "domain": "code_c"}
+{"prompt": "Compare using pthreads directly versus a thread pool library for handling many short-lived tasks in a C server application.", "domain": "code_c"}
+{"prompt": "why does this cause undefined behavior?\n\nint x;\nprintf(\"%d\\n\", x);", "domain": "code_c"}
+{"prompt": "Explain what's happening in this snippet and why it might invoke undefined behavior: `int a[5]; int *p = a + 5; int x = *p;` Also describe what tools like ASan or UBSan would report if I ran this.", "domain": "code_c"}
+{"prompt": "Can you explain what this line of C does and why someone would write it this way?\n\nint x = a ^ b ^ (a &= b) ^= (a ^= b);", "domain": "code_c"}
+{"prompt": "What's your recommendation for handling configuration files in a C application — a simple INI parser, JSON, or a custom key=value format?", "domain": "code_c"}
+{"prompt": "what's the idiomatic way to do a dynamic array (like a vector) in plain C without any libraries?", "domain": "code_c"}
+{"prompt": "What's your opinion on using designated initializers for struct literals versus positional initialization in modern C code?", "domain": "code_c"}
+{"prompt": "explain why this comparison always fails\n\nfloat a = 0.1 + 0.2;\nif (a == 0.3) printf(\"equal\\n\");", "domain": "code_c"}
+{"prompt": "Can you explain what this code does line by line, especially the use of the ternary operator?\n\nint max = (a > b) ? a : b;", "domain": "code_c"}
+{"prompt": "I'm implementing a ring buffer for a UART driver in embedded C. Can you review this for off-by-one errors?\n\ntypedef struct {\n    uint8_t buf[64];\n    uint8_t head, tail;\n} ring_t;\nvoid push(ring_t *r, uint8_t b) {\n    r->buf[r->head] = b;\n    r->head = (r->head + 1) % 64;\n}", "domain": "code_c"}
+{"prompt": "I'm debugging this segfault and I'm not sure if the bug is in the pointer arithmetic or the loop bound. Can you take a look and tell me what you think is wrong?\n\nint *p = malloc(10 * sizeof(int));\nfor (int i = 0; i <= 10; i++) {\n    p[i] = i * i;\n}\nfree(p);", "domain": "code_c"}
+{"prompt": "What's the difference between using errno-based error handling and returning error codes directly from functions in C, and which is preferable for a library API?", "domain": "code_c"}
+{"prompt": "Step by step, explain how to implement a circular buffer in C for a producer-consumer queue, including how to handle the full and empty conditions correctly.", "domain": "code_c"}
+{"prompt": "I don't understand why my function isn't modifying the caller's variable. Can you explain what's wrong?\n\nvoid increment(int x) {\n    x = x + 1;\n}\n\nint main() {\n    int a = 5;\n    increment(a);\n    printf(\"%d\\n\", a);\n}", "domain": "code_c"}
+{"prompt": "refactor this function to reduce the number of return statements and improve readability\n\nint validate(int x) { if (x < 0) return 0; if (x > 100) return 0; if (x % 2 != 0) return 0; return 1; }", "domain": "code_c"}
+{"prompt": "Do you think using variable-length arrays on the stack is safe enough for general use in C99, or should I always heap-allocate instead?", "domain": "code_c"}
+{"prompt": "Write a memory pool allocator in C that preallocates a fixed-size block of memory and hands out fixed-size chunks with O(1) alloc and free. Explain the free-list design you chose and show how it avoids fragmentation compared to malloc/free for many small same-sized objects.", "domain": "code_c"}
+{"prompt": "Explain what undefined behavior occurs in this code and how to fix it:\n\nint arr[5];\nint x = arr[5];\nprintf(\"%d\\n\", x);", "domain": "code_c"}
+{"prompt": "write a function that computes the greatest common divisor iteratively and explain why it works", "domain": "code_c"}
+{"prompt": "Write a C function that implements the Sieve of Eratosthenes using a bitset instead of a boolean array to save memory.", "domain": "code_c"}
+{"prompt": "Write a producer-consumer queue in C using pthreads with a bounded circular buffer, condition variables for blocking when full or empty, and proper cleanup on shutdown. Also include a brief explanation of how you avoid the lost-wakeup problem and a short test harness with two producer threads and two consumer threads.", "domain": "code_c"}
+{"prompt": "I need a fixed-point arithmetic library in C for embedded use, using 16.16 format — can you show multiply and divide functions that avoid overflow?", "domain": "code_c"}
+{"prompt": "write a function that checks whether a given string is a palindrome, ignoring case and spaces", "domain": "code_c"}
+{"prompt": "write a bubble sort in C but make it stop early if the array's already sorted", "domain": "code_c"}
+{"prompt": "Compare pthreads versus a single-threaded event loop for handling concurrent connections in a C server application.", "domain": "code_c"}
+{"prompt": "Write a C implementation of a skip list supporting insertion, deletion, and search, and explain how the probabilistic balancing works.", "domain": "code_c"}
+{"prompt": "I have a function that returns a pointer to a local array, which I know is wrong, but can you confirm the bug and suggest the best fix?\n\nint *make_array() {\n    int arr[5] = {1,2,3,4,5};\n    return arr;\n}", "domain": "code_c"}
+{"prompt": "got a weird bug where my struct fields seem to have garbage values right after malloc, is that expected behavior in C?", "domain": "code_c"}
+{"prompt": "Write a C program that reads integers from stdin until EOF and prints their median, handling both odd and even counts.", "domain": "code_c"}
+{"prompt": "What are the differences and trade-offs between using arrays of structs versus struct of arrays for representing particle data in a C simulation?", "domain": "code_c"}
+{"prompt": "Explain how variadic functions work in C and write an example similar to printf that sums an arbitrary number of doubles.", "domain": "code_c"}
+{"prompt": "Would you recommend using bit-fields in a struct for a hardware register layout, or is it safer to use explicit shifting and masking? What's your view?", "domain": "code_c"}
+{"prompt": "Should I use a hash table with open addressing or separate chaining for a symbol table in a small C compiler I'm building?", "domain": "code_c"}
+{"prompt": "Can you optimize this matrix multiplication for cache locality? It's currently way too slow for 1024x1024 matrices.\n\nvoid matmul(double **A, double **B, double **C, int n) {\n    for (int i = 0; i < n; i++)\n        for (int j = 0; j < n; j++)\n            for (int k = 0; k < n; k++)\n                C[i][j] += A[i][k] * B[k][j];\n}", "domain": "code_c"}
+{"prompt": "Explain how the volatile keyword affects compiler optimizations in C and give an example involving a hardware register or signal handler flag.", "domain": "code_c"}
+{"prompt": "Write a C function that implements a LRU cache using a hash map combined with a doubly linked list, supporting get and put operations in O(1) average time, and explain how you handle eviction when the cache reaches its capacity.", "domain": "code_c"}
+{"prompt": "write a simple bubble sort function for an array of integers", "domain": "code_c"}
+{"prompt": "Can you explain what the `static` keyword does when used inside a function, with a small example showing its effect across multiple calls?", "domain": "code_c"}
+{"prompt": "Write a C program that implements a simple producer-consumer queue using POSIX mutexes and condition variables.", "domain": "code_c"}
+{"prompt": "Can you explain what a memory leak is in C with a simple example, and show how to fix it using free()?", "domain": "code_c"}
+{"prompt": "Write a C function that computes the greatest common divisor using the binary GCD algorithm (Stein's algorithm) instead of the Euclidean algorithm, and explain why it can be faster.", "domain": "code_c"}
+{"prompt": "Compare the performance of a naive O(n^2) string matching algorithm versus the KMP algorithm for searching a pattern in a very large text file in C.", "domain": "code_c"}
+{"prompt": "Explain how function pointers and a dispatch table can be used to implement something like a simple virtual method table in C, with a small example.", "domain": "code_c"}
+{"prompt": "I have a legacy codebase with a lot of raw `malloc`/`free` calls and I want to introduce a simple reference-counting wrapper for shared heap objects. Can you design a small `refcount_t` struct pattern in C, show macros or inline functions for retain/release, and demonstrate it on a linked-list node type?", "domain": "code_c"}
+{"prompt": "can you write a C function that safely converts a string to an integer and handles overflow and invalid input?", "domain": "code_c"}
+{"prompt": "Weigh the pros and cons of implementing a hash table with open addressing versus separate chaining for a workload with frequent deletions.", "domain": "code_c"}
+{"prompt": "Do you think it's better to use fixed-width types like uint32_t everywhere in a cross-platform C library, or is plain int usually fine? What's your recommendation?", "domain": "code_c"}
+{"prompt": "Write a function to merge two sorted arrays in place.", "domain": "code_c"}
+{"prompt": "Write a C program that implements a basic LRU cache using a hash map and a doubly linked list.", "domain": "code_c"}
+{"prompt": "Write a producer-consumer example in C using POSIX threads, mutexes, and condition variables with a bounded buffer.", "domain": "code_c"}
+{"prompt": "Explain why this code invokes undefined behavior and how to fix it properly.\n\nint arr[5]; int *p = arr + 5; printf(\"%d\\n\", *p);", "domain": "code_c"}
+{"prompt": "Step by step, explain how to safely parse an integer from user input in C, handling overflow and invalid characters, replacing a naive atoi call.", "domain": "code_c"}
+{"prompt": "Add bounds checking to this array access function.", "domain": "code_c"}
+{"prompt": "Can you refactor this nested-if spaghetti into a cleaner switch statement? `if (cmd == 1) { doA(); } else { if (cmd == 2) { doB(); } else { if (cmd == 3) { doC(); } else { doDefault(); } } }`", "domain": "code_c"}
+{"prompt": "Fix the memory leak in this code.\n\nchar *buf = malloc(100);\nif (!buf) return -1;\nreturn 0;", "domain": "code_c"}
+{"prompt": "write a recursive factorial function with overflow check", "domain": "code_c"}
+{"prompt": "write a generic swap macro in C that works for any type using pointers", "domain": "code_c"}
+{"prompt": "Write a function to implement a doubly linked list based LRU cache with O(1) get and put operations.", "domain": "code_c"}
+{"prompt": "can you explain the difference between local and global variables in C?", "domain": "code_c"}
+{"prompt": "Do you recommend using stack-allocated arrays for small fixed-size buffers over malloc, purely from a performance and safety standpoint?", "domain": "code_c"}
+{"prompt": "Explain how the volatile keyword affects compiler optimizations for memory-mapped I/O registers.", "domain": "code_c"}
+{"prompt": "Do you recommend adding assert() calls liberally throughout production C code, or should they be stripped for release builds entirely?", "domain": "code_c"}
+{"prompt": "Write a C function that implements a lock-free single-producer single-consumer ring buffer using atomic operations from stdatomic.h, and explain the memory ordering choices.", "domain": "code_c"}
+{"prompt": "Can you explain why this code triggers a buffer overflow and rewrite it safely using snprintf?\n\nchar buf[10];\nsprintf(buf, \"%s\", long_string);", "domain": "code_c"}
+{"prompt": "Discuss the trade-offs between using assert() for runtime checks versus explicit error handling with return codes in production C code.", "domain": "code_c"}
+{"prompt": "Explain how variadic functions work with va_list.", "domain": "code_c"}
+{"prompt": "Explain step by step how printf's variadic argument mechanism works under the hood in C, ideally with a simplified custom implementation.", "domain": "code_c"}
+{"prompt": "can you show me how to implement a simple thread-safe counter using pthread mutexes?", "domain": "code_c"}
+{"prompt": "Would you recommend memcpy or a manual loop for copying structs in performance-critical code, and does it actually matter with modern compilers?", "domain": "code_c"}
+{"prompt": "Walk me through, step by step, how to implement a thread-safe bounded queue in C using pthreads mutexes and condition variables.", "domain": "code_c"}
+{"prompt": "Debug this code that's supposed to count vowels in a string but always returns 0:\n\nint countVowels(char *s){ int count=0; while(*s){ switch(*s){ case 'a': case 'e': case 'i': case 'o': case 'u': count++; } } return count; }", "domain": "code_c"}
+{"prompt": "Can you help me write a simple function that reverses a string in place using a loop?", "domain": "code_c"}
+{"prompt": "What's the difference between a pointer to array and array of pointers?", "domain": "code_c"}
+{"prompt": "I'm seeing intermittent crashes that only occur under -O2 optimization but not -O0, what kind of bugs typically cause this and how do I debug it?", "domain": "code_c"}
+{"prompt": "Explain how strict aliasing rules affect this type-punning code: float f = 3.14f; int i = *(int*)&f;", "domain": "code_c"}
+{"prompt": "Explain the difference between static, extern, and no-linkage-specifier at global scope in a multi-file C project.", "domain": "code_c"}
+{"prompt": "Write a red-black tree implementation in C supporting insertion with proper rotation and recoloring to maintain balance invariants, and explain each of the four insertion fix-up cases with comments in the code so I can follow the logic when debugging later.", "domain": "code_c"}
+{"prompt": "Explain step by step how to use valgrind to find memory leaks in this program and interpret its output.", "domain": "code_c"}
+{"prompt": "can you write me a quick C function that checks if a string is a palindrome, ignoring case and spaces?", "domain": "code_c"}
+{"prompt": "what is a header file and why do we separate declarations from definitions?", "domain": "code_c"}
+{"prompt": "I'm trying to understand structs in C. Can you show me a simple example of defining a struct for a `Point` with x and y coordinates and printing its values?", "domain": "code_c"}
+{"prompt": "Write a simple C program that reads an integer from the user and prints whether it's even or odd.", "domain": "code_c"}
+{"prompt": "I'm getting 'warning: implicit declaration of function' for strdup even though I included string.h. Why does this happen and how do I fix it portably?", "domain": "code_c"}
+{"prompt": "How would I implement reference counting for a shared resource in plain C without a garbage collector?", "domain": "code_c"}
+{"prompt": "Write a function in C that parses a simple INI-style configuration file into a key-value structure, handling section headers, comments starting with ';' or '#', and trimming whitespace around keys and values, and explain how you'd extend it to support nested sections if needed.", "domain": "code_c"}
+{"prompt": "Write a small arena allocator in C that allocates from a preallocated buffer and supports a reset operation, intended for use in a game loop where per-frame allocations are common.", "domain": "code_c"}
+{"prompt": "how would you implement a simple LRU cache in C using a hashmap plus doubly linked list?", "domain": "code_c"}
+{"prompt": "I'm getting 'double free or corruption' errors — can you review this cleanup code? `free(node->data); free(node); free(node->data);`", "domain": "code_c"}
+{"prompt": "Implement Floyd's cycle detection algorithm to detect a loop in a singly linked list, and return the node where the cycle begins.", "domain": "code_c"}
+{"prompt": "Do you recommend using a single translation unit approach (unity build) for a small C project to speed up compilation, or is that a bad habit?", "domain": "code_c"}
+{"prompt": "What's the difference between malloc and calloc in C? Can you show a small example of each?", "domain": "code_c"}
+{"prompt": "Explain how alignment and padding work in C structs, and show how reordering fields in this struct could reduce its size:\n\nstruct Data {\n    char a;\n    double b;\n    char c;\n    int d;\n};", "domain": "code_c"}
+{"prompt": "Write a C macro that safely computes the minimum of two values without evaluating either argument twice.", "domain": "code_c"}
+{"prompt": "I'm choosing between malloc/free and a custom arena allocator for a game engine written in C. What do you think is the better tradeoff for performance and simplicity?", "domain": "code_c"}
+{"prompt": "Convert this recursive Fibonacci to an iterative one.", "domain": "code_c"}
+{"prompt": "why is my recursive fibonacci so slow for n=40? can you explain and maybe show a faster version", "domain": "code_c"}
+{"prompt": "Write a C function to compute the GCD of two integers using the Euclidean algorithm.", "domain": "code_c"}
+{"prompt": "write a function that copies one string into another without using strcpy", "domain": "code_c"}
+{"prompt": "Step by step, explain how to use a union in C to implement a simple tagged variant type, and show an example with int, float, and char* members.", "domain": "code_c"}
+{"prompt": "Add error handling to this fopen call.", "domain": "code_c"}
+{"prompt": "How do I use valgrind to diagnose this kind of memory leak, and what does the output typically look like? void leak() { int *p = malloc(100 * sizeof(int)); return; }", "domain": "code_c"}
+{"prompt": "what's the difference between ++i and i++ and does it matter in a for loop?", "domain": "code_c"}
+{"prompt": "Write a C program that implements a simple command-line argument parser supporting flags like -v, -o <file>, and positional arguments.", "domain": "code_c"}
+{"prompt": "Explain what happens when you dereference a dangling pointer.", "domain": "code_c"}
+{"prompt": "Can you show me how `__builtin_popcount` works and write a portable fallback implementation for counting set bits without compiler intrinsics?", "domain": "code_c"}
+{"prompt": "Can you write a coroutine-like generator in C using a `switch` statement and a saved state variable, since C has no native coroutines?", "domain": "code_c"}
+{"prompt": "refactor this to avoid goto\n\nvoid f() {\n  if (a) goto err;\n  return;\n err:\n  cleanup();\n}", "domain": "code_c"}
+{"prompt": "Please explain the difference between weak and strong symbols in C, and show how `__attribute__((weak))` can be used for default implementations.", "domain": "code_c"}
+{"prompt": "Refactor this code to avoid strict aliasing violations: float f = 3.14f; int i = *(int*)&f;", "domain": "code_c"}
+{"prompt": "Can you write a C function to compute the nth Fibonacci number using memoization, and compare its time complexity to the naive recursive version?", "domain": "code_c"}
+{"prompt": "Why does printf(\"%s\", 42) crash?", "domain": "code_c"}
+{"prompt": "Write a C function implementing a Fenwick tree (binary indexed tree) supporting point updates and prefix sum queries, and briefly explain the bit manipulation involved.", "domain": "code_c"}
+{"prompt": "I'm implementing a custom string builder in C to avoid repeated realloc calls. Can you critique my growth strategy and suggest a better amortized approach?\n\ntypedef struct {\n    char *data;\n    size_t len, cap;\n} sb_t;\n\nvoid sb_append(sb_t *s, const char *str) {\n    size_t n = strlen(str);\n    s->cap += n;\n    s->data = realloc(s->data, s->cap);\n    memcpy(s->data + s->len, str, n);\n    s->len += n;\n}", "domain": "code_c"}
+{"prompt": "Write a function to compute GCD using the Euclidean algorithm.", "domain": "code_c"}
+{"prompt": "I'm implementing a custom string builder to avoid repeated reallocations, can you review this growth strategy for efficiency?\n\nvoid append(StringBuilder *sb, const char *str) { size_t len = strlen(str); if (sb->len + len > sb->cap) { sb->cap *= 2; sb->buf = realloc(sb->buf, sb->cap); } strcat(sb->buf, str); }", "domain": "code_c"}
+{"prompt": "can you trace through this code and tell me what it prints, I genuinely can't figure it out\n\nint x = 5;\nprintf(\"%d %d %d\\n\", x++, x++, x++);", "domain": "code_c"}
+{"prompt": "Refactor this function to eliminate the goto statements while preserving identical error-handling behavior, and explain whether the goto-based cleanup pattern was actually a reasonable idiom here or genuinely bad style.\n\nint process(FILE* f) {\n    char* buf = malloc(1024);\n    if (!buf) goto fail;\n    if (fread(buf, 1, 1024, f) == 0) goto fail_free;\n    // do work\n    free(buf);\n    return 0;\nfail_free:\n    free(buf);\nfail:\n    return -1;\n}", "domain": "code_c"}
+{"prompt": "Can you review this hash function and tell me whether you'd recommend it for a general-purpose hash table, or suggest a better one?\n\nunsigned int hash(const char *str) {\n    unsigned int h = 0;\n    while (*str) h = h * 31 + *str++;\n    return h;\n}", "domain": "code_c"}
+{"prompt": "Why does sizeof(arr) give the wrong value here after passing to a function?", "domain": "code_c"}
+{"prompt": "This function is supposed to count set bits in an integer but seems slow for large inputs. Can you optimize it?\n\nint count_bits(unsigned int n) {\n    int count = 0;\n    while (n) {\n        count += n & 1;\n        n >>= 1;\n    }\n    return count;\n}", "domain": "code_c"}
+{"prompt": "Write a small state machine in C for parsing a simple CSV line with quoted fields that may contain embedded commas, using an explicit enum for parser states and a single pass over the buffer. Please include handling for escaped quotes inside quoted fields.", "domain": "code_c"}
+{"prompt": "Here's a function that's supposed to reverse a singly linked list in place but it segfaults on lists with more than two nodes: struct Node* reverse(struct Node* head) { struct Node* prev = NULL; while (head) { head->next = prev; prev = head; head = head->next; } return prev; } Can you find and fix the bug?", "domain": "code_c"}
+{"prompt": "I'm new to C and don't understand pointers well. Can you explain what this line does step by step: `int *p = &x;` and then show me how to change the value of x using p?", "domain": "code_c"}
+{"prompt": "Compare using a linked list versus a dynamic array (realloc-based vector) for implementing a stack in C, considering cache locality and allocation overhead.", "domain": "code_c"}
+{"prompt": "Debug this code that segfaults intermittently: struct Node *head = NULL; void push(int v) { struct Node n; n.data = v; n.next = head; head = &n; }", "domain": "code_c"}
+{"prompt": "Add unit tests for this function using assert.\n\nint add(int a, int b) { return a + b; }", "domain": "code_c"}
+{"prompt": "Write a C program that reads a CSV file line by line and parses fields into a dynamically allocated array of strings, handling quoted commas.", "domain": "code_c"}
+{"prompt": "write a thread-safe counter using pthread mutex", "domain": "code_c"}
+{"prompt": "How would I go about writing unit tests for this bit manipulation function using a plain C testing approach without external libraries?\n\nunsigned int reverse_bits(unsigned int n) {\n    unsigned int result = 0;\n    for (int i = 0; i < 32; i++) {\n        result = (result << 1) | (n & 1);\n        n >>= 1;\n    }\n    return result;\n}", "domain": "code_c"}
+{"prompt": "Explain, step by step, how variadic functions work in C using stdarg.h, and write a small printf-like function as an example.", "domain": "code_c"}
+{"prompt": "Write a function that implements a lock-free single-producer single-consumer ring buffer using C11 atomics.", "domain": "code_c"}
+{"prompt": "How do I implement a doubly linked list with an efficient O(1) delete-by-pointer operation in C, step by step?", "domain": "code_c"}
+{"prompt": "Write a union-find (disjoint set) data structure in C with path compression and union by rank.", "domain": "code_c"}
+{"prompt": "Which approach is more efficient for string concatenation in a loop: repeated strcat calls or maintaining a length counter with manual memcpy?", "domain": "code_c"}
+{"prompt": "Write a function that performs in-place matrix transposition for a square matrix stored in row-major order.", "domain": "code_c"}
+{"prompt": "Write a function to detect a cycle in a linked list.", "domain": "code_c"}
+{"prompt": "Can you compare recursive and iterative implementations of factorial in C, discussing stack usage and performance differences?", "domain": "code_c"}
+{"prompt": "Explain how designated initializers work for structs and arrays in C99, with an example involving sparse array initialization.", "domain": "code_c"}
+{"prompt": "Explain what strtok does and why it's unsafe.", "domain": "code_c"}
+{"prompt": "I keep getting 'stack smashing detected' when running this program. Can you help me trace the cause?\n\nvoid fillArray(){ int arr[5]; for(int i=0;i<=5;i++) arr[i]=i; }", "domain": "code_c"}
+{"prompt": "Compare the use of inline functions versus preprocessor macros for small utility functions in C, focusing on debugging and type checking.", "domain": "code_c"}
+{"prompt": "What is the difference between `printf` and `scanf`, and can you give a small example that uses both?", "domain": "code_c"}
+{"prompt": "Explain step by step why this code produces incorrect output and how to fix the off-by-one error:\n\nfor (int i = 0; i <= sizeof(arr)/sizeof(arr[0]); i++) {\n    printf(\"%d\\n\", arr[i]);\n}", "domain": "code_c"}
+{"prompt": "Can you convert this recursive quicksort into an iterative version using an explicit stack? void quicksort(int *arr, int lo, int hi) { if (lo >= hi) return; int p = partition(arr, lo, hi); quicksort(arr, lo, p-1); quicksort(arr, p+1, hi); }", "domain": "code_c"}
+{"prompt": "write a small program that counts word frequency from stdin and prints the top 5 words", "domain": "code_c"}
+{"prompt": "Compare using #define macros versus static const variables for defining constants in C, including type safety implications.", "domain": "code_c"}
+{"prompt": "how do I read an entire file into a buffer in C without knowing its size ahead of time?", "domain": "code_c"}
+{"prompt": "Walk me through the process of writing a simple JSON parser in C, breaking it down into tokenizing, parsing, and building a tree structure.", "domain": "code_c"}
+{"prompt": "Which is better for a hot loop that copies large buffers: memcpy or a hand-rolled loop with pointer arithmetic, and why?", "domain": "code_c"}
+{"prompt": "Write a set of unit tests using a minimal custom test framework (just assert-based, no external library) for a stack implementation that supports push, pop, peek, and is_empty, covering edge cases like popping from an empty stack and pushing past initial capacity to trigger a resize.", "domain": "code_c"}
+{"prompt": "Can you explain the difference between `const char *`, `char * const`, and `const char * const`, and give an example where mixing them up causes a compile error?", "domain": "code_c"}
+{"prompt": "I need to parse command-line flags in a C program without using getopt, supporting both short flags like -v and long flags like --output=file.txt. Can you design and implement a small flexible argument parser that populates a struct with the parsed options?", "domain": "code_c"}
+{"prompt": "What do you recommend for logging in a C application without external dependencies — printf to stderr, a custom macro system, or something else?", "domain": "code_c"}
+{"prompt": "I'm confused about the difference between `==` and `=` in C. Can you explain with an example of a bug this confusion can cause?", "domain": "code_c"}
+{"prompt": "Why does this comparison always evaluate true?\n\nunsigned int x = -1;\nif (x > 0) printf(\"positive\\n\");", "domain": "code_c"}
+{"prompt": "How do I write step-by-step tests using assert() to verify a stack implementation's push, pop, and peek operations behave correctly under edge cases like empty and full stacks?", "domain": "code_c"}
+{"prompt": "Explain what a compiler optimization like loop unrolling does to this simple summation loop, and show roughly what the unrolled-by-4 version would look like by hand: `long sum = 0; for (int i = 0; i < n; i++) sum += arr[i];` Also mention when unrolling might hurt rather than help performance.", "domain": "code_c"}
+{"prompt": "I keep getting 'warning: implicit declaration of function' for strdup, what's going on and how do I fix it properly", "domain": "code_c"}
+{"prompt": "Explain step by step how struct padding and alignment work in C, using this struct as an example:\n\nstruct Example { char a; int b; char c; double d; };", "domain": "code_c"}
+{"prompt": "explain what #include <stdio.h> actually does behind the scenes", "domain": "code_c"}
+{"prompt": "How do I safely parse command-line arguments with getopt_long, including handling of required and optional arguments?", "domain": "code_c"}
+{"prompt": "refactor this nested if-else into a switch statement", "domain": "code_c"}
+{"prompt": "Can you review this code for thread safety issues? static int counter = 0; void increment() { counter++; }", "domain": "code_c"}
+{"prompt": "Can you explain what a memory-mapped file is in the context of `mmap()` on Linux, and write a small example program in C that memory-maps a file and searches for a byte pattern in it without loading it fully into a heap buffer?", "domain": "code_c"}
+{"prompt": "Can you explain what 'undefined behavior' means in C using a concrete example involving an uninitialized variable?", "domain": "code_c"}
+{"prompt": "Can you explain the difference between a union and a struct in C, and show a practical use case where a union saves memory in a network packet parser?", "domain": "code_c"}
+{"prompt": "Can you write a simple C program that reads numbers from the user until they type -1, and then prints their sum?", "domain": "code_c"}
+{"prompt": "Should I use fixed-size stack-allocated arrays or heap-allocated buffers for parsing variable-length network packets in C? Discuss the security implications.", "domain": "code_c"}
+{"prompt": "Step by step, show me how to write a simple JSON tokenizer in C that can handle strings, numbers, and basic punctuation.", "domain": "code_c"}
+{"prompt": "What's the best practice, in your opinion, for handling integer division by zero in C — checking before dividing, using signal handlers, or something else?", "domain": "code_c"}
+{"prompt": "Should I use malloc/free or a custom arena allocator for a game engine that allocates thousands of small objects per frame? Discuss the pros and cons.", "domain": "code_c"}
+{"prompt": "Explain the trade-offs between static linking and dynamic linking for a C library distributed to embedded systems.", "domain": "code_c"}
+{"prompt": "Explain the strict aliasing rule with an example.", "domain": "code_c"}
+{"prompt": "write a beginner-friendly function to reverse a string in C", "domain": "code_c"}
+{"prompt": "Can you show me step by step how to write a function that reverses a singly linked list in place, and explain each pointer manipulation?", "domain": "code_c"}
+{"prompt": "this code is supposed to free a doubly linked list but valgrind says I'm leaking memory, what am I missing?\n\nvoid free_list(Node *head) {\n    while (head) {\n        free(head);\n        head = head->next;\n    }\n}", "domain": "code_c"}
+{"prompt": "Can you write a small B-tree-inspired implementation, or at least a simplified binary search tree with insert, delete, and in-order traversal in C, and explain how you handle the tricky case of deleting a node with two children?", "domain": "code_c"}
+{"prompt": "Do you recommend using signed or unsigned integers for loop counters that index into arrays in C, especially when doing pointer arithmetic?", "domain": "code_c"}
+{"prompt": "What's your take on using bit-fields in structs for hardware register mapping versus manual bit shifting and masking?", "domain": "code_c"}
+{"prompt": "what's the cleanest way to implement error handling in C without exceptions, using error codes versus a global errno-style approach?", "domain": "code_c"}
+{"prompt": "Can you optimize this string reversal function for speed, possibly using pointer arithmetic instead of indexing?\n\nvoid reverse(char *s) {\n    int len = strlen(s);\n    for (int i = 0; i < len / 2; i++) {\n        char tmp = s[i];\n        s[i] = s[len - 1 - i];\n        s[len - 1 - i] = tmp;\n    }\n}", "domain": "code_c"}
+{"prompt": "Write a simple command-line argument parser.", "domain": "code_c"}
+{"prompt": "explain the difference between char* and char[] in C", "domain": "code_c"}
+{"prompt": "Can you profile-guide me on where the bottleneck likely is in this function and suggest a rewrite, given it's called millions of times per second in a tight loop?\n\nint is_prime(int n) {\n    if (n < 2) return 0;\n    for (int i = 2; i < n; i++) {\n        if (n % i == 0) return 0;\n    }\n    return 1;\n}", "domain": "code_c"}
+{"prompt": "i've got this bit of code that's supposed to count vowels in a string but it keeps giving wrong numbers, mind taking a look\n\nint count_vowels(char *s) {\n    int c = 0;\n    for (int i = 0; s[i]; i++)\n        if (s[i] == 'a' || 'e' || 'i' || 'o' || 'u') c++;\n    return c;\n}", "domain": "code_c"}
+{"prompt": "Write a C function that safely reads an arbitrary-length line from stdin into a dynamically growing buffer, and add tests for empty lines and very long lines.", "domain": "code_c"}
+{"prompt": "What's your take on using ternary operators for conditional logic in C — does it help or hurt readability compared to if/else?", "domain": "code_c"}
+{"prompt": "Implement a simple XOR-based encryption/decryption function in C and explain its security limitations.", "domain": "code_c"}
+{"prompt": "write a simple function to compute the factorial of a number recursively", "domain": "code_c"}
+{"prompt": "I have a function that's supposed to detect integer overflow before it happens when adding two ints, but I'm not sure it's correct. Can you review and fix it?\n\nint safe_add(int a, int b) {\n    if (a + b < a) return -1;\n    return a + b;\n}", "domain": "code_c"}
+{"prompt": "I have a race condition where two threads increment a shared counter and the final value is wrong — can you fix this using atomics? `int counter = 0; void increment() { counter++; }`", "domain": "code_c"}
+{"prompt": "Please explain the difference between `while` and `do-while` loops in C with a simple example for each.", "domain": "code_c"}
+{"prompt": "Explain the difference between a flexible array member and a pointer member at the end of a struct in C, with an example of when each is preferable for serialization.", "domain": "code_c"}
+{"prompt": "what's the deal with this segfault, I can't figure it out\n\nchar *get_greeting() {\n    char buf[50];\n    sprintf(buf, \"hello there\");\n    return buf;\n}", "domain": "code_c"}
+{"prompt": "I want to add simple tests to this function to make sure it works correctly: `int add(int a, int b) { return a + b; }` Can you show me how to write a few basic test cases for it?", "domain": "code_c"}
+{"prompt": "write a C function that trims leading and trailing whitespace from a string in place", "domain": "code_c"}
+{"prompt": "Write a C function that implements a binary search tree insertion, and then add a small test harness that verifies in-order traversal returns sorted output.", "domain": "code_c"}
+{"prompt": "Explain the difference between static and extern in C.", "domain": "code_c"}
+{"prompt": "Write a C function that computes the edit distance (Levenshtein distance) between two strings using dynamic programming with O(n) space.", "domain": "code_c"}
+{"prompt": "Would you recommend using setjmp/longjmp for error handling in C, or is it better to stick with return codes even though it's more verbose?", "domain": "code_c"}
+{"prompt": "Would you suggest using a compiler-specific attribute like __attribute__((packed)) for a struct that maps to a binary file format, or is there a more portable approach?", "domain": "code_c"}
+{"prompt": "Write a thread-safe counter using atomic operations instead of a mutex.", "domain": "code_c"}
+{"prompt": "Write a C function that safely reads a line of arbitrary length from stdin without a fixed-size buffer, using realloc.", "domain": "code_c"}
+{"prompt": ",", "domain": "code_c"}
+{"prompt": "How do I implement a red-black tree insertion in C, and what's the minimal set of rotations needed?", "domain": "code_c"}
+{"prompt": "how would you implement a circular buffer in C for a producer-consumer setup with a single writer and reader thread?", "domain": "code_c"}
+{"prompt": "this function is supposed to find the maximum subarray sum but I think it's giving wrong answers for arrays with all negative numbers\n\nint max_subarray(int *arr, int n) {\n    int max_sum = 0, current = 0;\n    for (int i = 0; i < n; i++) {\n        current += arr[i];\n        if (current > max_sum) max_sum = current;\n        if (current < 0) current = 0;\n    }\n    return max_sum;\n}", "domain": "code_c"}
+{"prompt": "When writing a hash table in C, what are the trade-offs between open addressing and separate chaining for collision resolution?", "domain": "code_c"}
+{"prompt": "Can you rewrite this loop to use pointer arithmetic instead of array indexing, and explain if it's actually faster?\n\nfor (int i = 0; i < n; i++) {\n    arr[i] = arr[i] * 2;\n}", "domain": "code_c"}
+{"prompt": "Write a function that trims leading and trailing whitespace from a string in place.", "domain": "code_c"}
+{"prompt": "Explain how the C preprocessor's token-pasting operator ## works, with an example of generating type-specific function names.", "domain": "code_c"}
+{"prompt": "Can you trace through this code and tell me exactly what gets printed, explaining the order of evaluation and any undefined behavior involved?\n\nint i = 0;\nprintf(\"%d %d %d\\n\", i++, i++, i++);", "domain": "code_c"}
+{"prompt": "Explain the memory layout differences between an array of structs and a struct of arrays, and when each is preferable for performance.", "domain": "code_c"}
+{"prompt": "I'm deciding between qsort from the standard library and writing a custom sort for an array of structs. What would you recommend given performance concerns?", "domain": "code_c"}
+{"prompt": "Show me, step by step, how to convert this recursive factorial function into an iterative one using a loop and explain why it avoids stack overflow for large inputs:\n\nlong long fact(int n) {\n    if (n <= 1) return 1;\n    return n * fact(n - 1);\n}", "domain": "code_c"}
+{"prompt": "this code compiles fine but crashes at runtime, and I suspect it's something with the array bounds\n\nint main() {\n    int arr[5];\n    for (int i = 0; i <= 5; i++) {\n        arr[i] = i * i;\n    }\n    return 0;\n}", "domain": "code_c"}
+{"prompt": "Write a function that computes the greatest common divisor using the Euclidean algorithm, then discuss the iterative versus recursive trade-offs for this specific case.", "domain": "code_c"}
+{"prompt": "My program segfaults intermittently. Here's the code that allocates and frees a struct in a loop:\n\nfor(int i=0;i<n;i++){ Node *p = malloc(sizeof(Node)); process(p); free(p); free(p); }\nCan you spot the bug and explain how to fix it?", "domain": "code_c"}
+{"prompt": "Write a hash table implementation in C using open addressing with linear probing, including a resize function.", "domain": "code_c"}
+{"prompt": "What's the difference in practice between using memcpy and a manual byte-by-byte copy loop, and when would the compiler's optimizer make them equivalent?", "domain": "code_c"}
+{"prompt": "I'm implementing a simple stack in C. Would you recommend a fixed-size array-based implementation or a linked-list-based one for general use?", "domain": "code_c"}
+{"prompt": "Refactor this recursive Fibonacci function to use memoization with a static array, and explain the performance difference.\n\nint fib(int n) { if (n <= 1) return n; return fib(n-1) + fib(n-2); }", "domain": "code_c"}
+{"prompt": "Fix this code that's supposed to reverse a singly linked list in place but seems to lose nodes:\n\nnode *reverse(node *head) {\n    node *prev = NULL;\n    while (head) {\n        head->next = prev;\n        prev = head;\n        head = head->next;\n    }\n    return prev;\n}", "domain": "code_c"}
+{"prompt": "Guide me through refactoring this messy nested-if error handling into a cleaner goto-based cleanup pattern common in C:\n\nint process(FILE *f) {\n    char *buf = malloc(100);\n    if (buf) {\n        if (fread(buf, 1, 100, f)) {\n            if (parse(buf)) {\n                free(buf);\n                return 0;\n            }\n        }\n        free(buf);\n    }\n    return -1;\n}", "domain": "code_c"}
+{"prompt": "can you show a minimal example of using fork and exec to run a child process in C?", "domain": "code_c"}
+{"prompt": "Given this snippet that computes the average of an array, do you see a rounding issue, and what would you recommend to fix it?\n\ndouble average(int *arr, int n) {\n    int sum = 0;\n    for (int i = 0; i < n; i++) sum += arr[i];\n    return sum / n;\n}", "domain": "code_c"}
+{"prompt": "explain this pointer arithmetic\n\nint *p = arr + 3;", "domain": "code_c"}
+{"prompt": "Can you write a simple C program that finds the largest number in an array of integers?", "domain": "code_c"}
+{"prompt": "I need to implement a thread-safe counter using pthreads and mutexes in C. Can you show the code and explain potential deadlock scenarios to avoid?", "domain": "code_c"}
+{"prompt": "I have a multi-threaded C program where two threads occasionally deadlock, and I suspect it's a classic lock-ordering issue. Can you explain how to diagnose this with gdb or a similar tool, and show a minimal reproducible example along with the fix using consistent lock ordering?", "domain": "code_c"}
+{"prompt": "Write a circular buffer implementation for a producer-consumer queue.", "domain": "code_c"}
+{"prompt": "I'm getting a 'warning: implicit declaration of function' for my recursive function. Here's the code, can you tell me what's wrong?\n\nint fib(int n){ if(n<2) return n; return fib(n-1)+fib(n-2); }\nvoid main(){ printf(\"%d\\n\", fib(10)); }", "domain": "code_c"}
+{"prompt": "I'm getting a segfault only in release builds with -O2 but not in debug builds. Any idea what kind of bug typically causes this and how would you go about finding it in this code?\n\nint *get_buffer(int n) {\n    int buf[n];\n    for (int i = 0; i < n; i++) buf[i] = i * i;\n    return buf;\n}", "domain": "code_c"}
+{"prompt": "What do you recommend for logging in embedded C projects — a simple printf wrapper, a ring buffer logger, or something else entirely?", "domain": "code_c"}
+{"prompt": "Would you recommend using flexible array members over pointer-based dynamic arrays for a struct that stores a variable number of records?", "domain": "code_c"}
+{"prompt": "can you write a quick C function that checks if a number is prime, nothing fancy just basic loop", "domain": "code_c"}
+{"prompt": "Why does this code print garbage values instead of the expected numbers?\n\nint arr[3];\nprintf(\"%d %d %d\\n\", arr[0], arr[1], arr[2]);", "domain": "code_c"}
+{"prompt": "How do I step through implementing quicksort in C with an in-place partition scheme, and what edge cases should my tests cover?", "domain": "code_c"}
+{"prompt": "I need to parse a simple CSV file line by line in C — can you show a robust approach that handles quoted fields with commas inside them?", "domain": "code_c"}
+{"prompt": "Can you show me how to implement a simple signal handler in C that safely sets a flag for graceful shutdown, avoiding the common pitfalls with non-reentrant functions?", "domain": "code_c"}
+{"prompt": "Explain how tail-call optimization interacts with recursive C functions and when the compiler will or won't apply it.", "domain": "code_c"}
+{"prompt": "Explain what's wrong with this comparator function used with qsort, why it can cause undefined behavior or crashes on certain inputs, and provide a corrected version.\n\nint compare(const void* a, const void* b) {\n    return *(int*)a - *(int*)b;\n}", "domain": "code_c"}
+{"prompt": "Can you walk me through what happens step by step when this code runs, especially with the pointer arithmetic?\n\nint arr[5] = {1,2,3,4,5};\nint *p = arr;\nprintf(\"%d\\n\", *(p+2));", "domain": "code_c"}
+{"prompt": "Compare the trade-offs of using compiler intrinsics for SIMD operations versus writing portable scalar C code that the compiler might auto-vectorize.", "domain": "code_c"}
+{"prompt": "Design a lock-free single-producer single-consumer queue in C using atomics from stdatomic.h, and explain the memory ordering choices you make.", "domain": "code_c"}
+{"prompt": "Explain the difference between these two function declarations and why using the second one in a header file shared across translation units could cause a subtle bug at link time:\n\nstatic int helper(int x);\nint helper(int x);", "domain": "code_c"}
+{"prompt": "I'm getting inconsistent results from this function depending on how it's called, and I think it's related to how variadic arguments are being handled. Can you explain the bug and fix it?\n\nint sum_all(int count, ...) {\n    va_list args;\n    va_start(args, count);\n    int total = 0;\n    for (int i = 0; i <= count; i++) {\n        total += va_arg(args, int);\n    }\n    va_end(args);\n    return total;\n}", "domain": "code_c"}
+{"prompt": "Can you walk me through implementing a simple X-macro to generate an enum and matching string table for error codes?", "domain": "code_c"}
+{"prompt": "write a simple C program that reads a number from the user and prints whether it's even or odd", "domain": "code_c"}
+{"prompt": "Write a C function that safely concatenates two dynamically allocated strings and returns a new heap-allocated buffer, handling all malloc failure cases.", "domain": "code_c"}
+{"prompt": "write a function to check if a string is a palindrome", "domain": "code_c"}
+{"prompt": "Write a C function that implements the Boyer-Moore majority vote algorithm to find the element that appears more than n/2 times in an array, and explain why it works correctly using an invariant-based argument, including what happens if no majority element actually exists.", "domain": "code_c"}
+{"prompt": "Explain why this code has a strict aliasing issue and how to fix it: union { int i; float f; } u; u.i = 5; printf(\"%f\", u.f);", "domain": "code_c"}
+{"prompt": "Step by step, show me how to write a function that safely concatenates two dynamically allocated strings without leaking memory or overflowing.", "domain": "code_c"}
+{"prompt": "Write a C function that implements a thread-safe reference-counted object with atomic increment/decrement and a destructor callback invoked at zero.", "domain": "code_c"}
+{"prompt": "Write a simple big-integer addition function in C that handles arbitrary-length numbers represented as strings of digits.", "domain": "code_c"}
+{"prompt": "I need a function that implements a Boyer-Moore majority vote algorithm on an integer array. Can you write it and explain why it works in a single pass?", "domain": "code_c"}
+{"prompt": "Write a C function that implements a simple ring of workers communicating via a lock-free single-producer single-consumer queue.", "domain": "code_c"}
+{"prompt": "I'm confused about the difference between '==' and '=' in C. Can you explain with an example of a common bug caused by mixing them up?", "domain": "code_c"}
+{"prompt": "what's the proper way to implement a simple observer pattern in C using function pointers and callback registration?", "domain": "code_c"}
+{"prompt": "Can you explain the goto-based cleanup pattern for handling multiple resource acquisitions in a single C function, and rewrite this nested-if version to use it?", "domain": "code_c"}
+{"prompt": "Please write a simple TCP echo server in C using sockets, and explain each step of the socket setup.", "domain": "code_c"}

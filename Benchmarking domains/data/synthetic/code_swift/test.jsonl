@@ -1,0 +1,100 @@
+{"prompt": "Can you show me idiomatic Swift for grouping an array of structs by a property, similar to `groupBy` in other languages?", "domain": "code_swift"}
+{"prompt": "What's the difference between `throws`, `rethrows`, and `try?` in Swift, and can you show a small example using all three?", "domain": "code_swift"}
+{"prompt": "write a function that finds the longest common subsequence between two strings in Swift", "domain": "code_swift"}
+{"prompt": "how would you implement a simple observer pattern in Swift without Combine?", "domain": "code_swift"}
+{"prompt": "Write a generic function in Swift that performs a topological sort on a directed acyclic graph represented as an adjacency list.", "domain": "code_swift"}
+{"prompt": "When writing a JSON decoder for a REST API with inconsistent date formats, should I use multiple `DateDecodingStrategy` closures or preprocess the raw JSON before decoding? Discuss trade-offs.", "domain": "code_swift"}
+{"prompt": "Explain what `@escaping` means for closures and why this code fails to compile without it:\n```\nfunc delayedPrint(_ message: String, handler: () -> Void) {\n    DispatchQueue.main.asyncAfter(deadline: .now() + 1) {\n        handler()\n    }\n}\n```", "domain": "code_swift"}
+{"prompt": "Please write a Swift extension on `String` that adds a computed property `isValidEmail` using a regular expression, and then write a set of XCTest cases covering valid emails, missing domains, multiple @ symbols, and empty strings.", "domain": "code_swift"}
+{"prompt": "Write a function that takes a string of parentheses, brackets, and braces and determines if they're validly balanced and nested, using a stack, and then add test cases covering empty strings, unmatched closing brackets, and deeply nested valid input.", "domain": "code_swift"}
+{"prompt": "Write a Swift async function that fetches JSON from a URL", "domain": "code_swift"}
+{"prompt": "What's your recommendation for handling optional chaining versus early returns in deeply nested model access?", "domain": "code_swift"}
+{"prompt": "Write a Swift function that counts how many vowels are in a given string.", "domain": "code_swift"}
+{"prompt": "write a function to detect if a linked list has a cycle in Swift", "domain": "code_swift"}
+{"prompt": "Write a Swift function that detects if a linked list has a cycle using Floyd's algorithm, then extend it to also return the node where the cycle begins if one exists.", "domain": "code_swift"}
+{"prompt": "Write a result builder in Swift (like SwiftUI's `@ViewBuilder`) that builds an array of strings from a DSL-like block syntax.", "domain": "code_swift"}
+{"prompt": "Can you show me how to create a basic `struct` for a `Person` with a name and age property?", "domain": "code_swift"}
+{"prompt": "Show me how to implement a simple dependency injection container in Swift using property wrappers, similar to how SwiftUI's Environment works", "domain": "code_swift"}
+{"prompt": "Can you show me how to write a simple `for-in` loop in Swift that prints numbers from 1 to 10, and then modify it to only print even numbers?", "domain": "code_swift"}
+{"prompt": "Refactor this into a single expression using map and filter.\n```swift\nvar result = [Int]()\nfor n in numbers {\n  if n % 2 == 0 {\n    result.append(n * 2)\n  }\n}\n```", "domain": "code_swift"}
+{"prompt": "Write a function that takes a person's birth year and returns their age as of this year.", "domain": "code_swift"}
+{"prompt": "Can you explain how Swift's key path expressions work and write an example using them to implement a generic sorting function that sorts an array of structs by any Comparable property", "domain": "code_swift"}
+{"prompt": "Can you review this concurrency code for data races and suggest a fix using Swift's structured concurrency: class Downloader { var results: [String] = []; func downloadAll(_ urls: [String]) async { await withTaskGroup(of: String.self) { group in for url in urls { group.addTask { await self.download(url) } } for await result in group { self.results.append(result) } } } }", "domain": "code_swift"}
+{"prompt": "My app crashes with 'unexpectedly found nil' when unwrapping an optional. Here's the code:\n```swift\nlet url = URL(string: userInput)\nlet request = URLRequest(url: url!)\n```\nCan you explain what's going wrong and how to fix it safely?", "domain": "code_swift"}
+{"prompt": "Should error messages shown to users be generated from the same enum as internal debugging errors, or kept separate? What's your recommended architecture?", "domain": "code_swift"}
+{"prompt": "Refactor this switch statement to use pattern matching with `where` clauses for cleaner logic:\n```\nfunc classify(_ n: Int) -> String {\n    switch n {\n    case let x where x < 0: return \"negative\"\n    case 0: return \"zero\"\n    default: return \"positive\"\n    }\n}\n```", "domain": "code_swift"}
+{"prompt": "Can you write a custom `AsyncSequence` conformance in Swift that produces a sequence of Fibonacci numbers lazily, with backpressure handling?", "domain": "code_swift"}
+{"prompt": "What are the trade-offs between using `URLSession` directly versus a third-party networking library like Alamofire in a new Swift project?", "domain": "code_swift"}
+{"prompt": "I need to merge sort a linked list in Swift. Here's my singly linked list node definition:\n```swift\nclass ListNode {\n    var val: Int\n    var next: ListNode?\n    init(_ val: Int) { self.val = val }\n}\n```\nCan you implement merge sort for this list in O(n log n) time without converting it to an array, and explain your recursive splitting strategy?", "domain": "code_swift"}
+{"prompt": "Explain step by step how property wrappers work in Swift, using `@Published` as an example, and then show how to build a simple custom one.", "domain": "code_swift"}
+{"prompt": "explain what this closure is doing line by line: let result = numbers.reduce(0) { $0 + $1 * 2 }", "domain": "code_swift"}
+{"prompt": "Write a Swift extension on String that efficiently checks if it's a palindrome, ignoring case, whitespace, and punctuation, and explain the time complexity", "domain": "code_swift"}
+{"prompt": "Explain what `Self` means versus `self` in Swift.", "domain": "code_swift"}
+{"prompt": "can you convert this Objective-C style code to more idiomatic Swift?", "domain": "code_swift"}
+{"prompt": "Explain why this async function deadlocks when called from the main thread:\n```\nfunc loadData() async {\n    await MainActor.run {\n        Task {\n            await someAsyncWork()\n        }.value\n    }\n}\n```", "domain": "code_swift"}
+{"prompt": "I have a protocol-oriented design with associated types that isn't compiling and I don't understand the generic constraint error. Here's the code: `protocol Repository { associatedtype Model; func fetch() -> [Model] }; class UserRepo: Repository { func fetch() -> [User] { [] } }; let repos: [Repository] = [UserRepo()]`. Explain the error and show how to fix it using type erasure.", "domain": "code_swift"}
+{"prompt": "Explain what `Result<Success, Failure>` is used for.", "domain": "code_swift"}
+{"prompt": "This code compiles but crashes at runtime with an index out of range error only sometimes. Can you spot the race condition?\n```swift\nvar queue: [Int] = []\nDispatchQueue.global().async {\n    queue.append(1)\n}\nDispatchQueue.global().async {\n    if !queue.isEmpty { print(queue[0]) }\n}\n```", "domain": "code_swift"}
+{"prompt": "Can you explain how Swift's copy-on-write mechanism works for `Array`, and show how I'd implement a similar CoW behavior for a custom struct wrapping a buffer?", "domain": "code_swift"}
+{"prompt": "I want to add Codable conformance and unit tests for this model, can you help?\n```\nstruct Order {\n    let id: UUID\n    let items: [String]\n    let total: Double\n}\n```", "domain": "code_swift"}
+{"prompt": "How do I write a simple Swift function that checks if a given number is even or odd?", "domain": "code_swift"}
+{"prompt": "Write a binary search tree implementation in Swift with `insert`, `contains`, and an in-order traversal method.", "domain": "code_swift"}
+{"prompt": "Write a simple Swift closure that takes two integers and returns their sum, and show how to call it.", "domain": "code_swift"}
+{"prompt": "Write a Swift extension on `Sequence` that adds a `chunked(into:)` method splitting the sequence into arrays of a given size.", "domain": "code_swift"}
+{"prompt": "Write a binary search function in Swift.", "domain": "code_swift"}
+{"prompt": "What are the pros and cons of using `Result` type versus throwing functions for representing recoverable errors in a networking layer?", "domain": "code_swift"}
+{"prompt": "I'm getting a 'Cannot use mutating member on immutable value' error, what's wrong with this code?\n```\nstruct Counter {\n    var count = 0\n    mutating func increment() { count += 1 }\n}\nlet c = Counter()\nc.increment()\n```", "domain": "code_swift"}
+{"prompt": "Explain the memory implications of using a class-based versus struct-based model in a SwiftUI app with deeply nested views and frequent state updates", "domain": "code_swift"}
+{"prompt": "Write a Swift function that checks if a given number is even or odd.", "domain": "code_swift"}
+{"prompt": "This UICollectionView cell keeps showing stale data when scrolling fast — can you spot the bug?\n```\nfunc collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {\n    let cell = collectionView.dequeueReusableCell(withReuseIdentifier: \"Cell\", for: indexPath) as! MyCell\n    loadImage(for: indexPath) { image in\n        cell.imageView.image = image\n    }\n    return cell\n}\n```", "domain": "code_swift"}
+{"prompt": "How does Swift's `Equatable` synthesis work for structs and enums, and when do I need to implement `==` manually?", "domain": "code_swift"}
+{"prompt": "Write unit tests using XCTest for this function that parses a semantic version string into major, minor, patch components, covering malformed inputs and edge cases: func parseVersion(_ s: String) -> (Int, Int, Int)?", "domain": "code_swift"}
+{"prompt": "I don't understand why this code doesn't compile: `var name: String; name = \"Alice\"` inside a function — what's wrong?", "domain": "code_swift"}
+{"prompt": "Here's a struct that conforms to Codable but crashes when the backend sends null for an optional nested array: `struct Response: Codable { let items: [Item]?; let meta: Meta }`. Walk me through how to make the decoding resilient to missing or malformed fields, and rewrite the decoder init if needed.", "domain": "code_swift"}
+{"prompt": "Refactor this closure to be more idiomatic: { (x: Int) -> Int in return x + 1 }", "domain": "code_swift"}
+{"prompt": "What's the difference in performance and safety between `unsafeBitCast` and `as!` when converting between reference types in Swift?", "domain": "code_swift"}
+{"prompt": "Write a trie data structure in Swift that supports inserting words and checking prefixes.", "domain": "code_swift"}
+{"prompt": "Design a generic Result type wrapper with a map, flatMap, and mapError method chain, and show how it composes cleanly for a multi-step validation pipeline", "domain": "code_swift"}
+{"prompt": "Write a Swift function using KeyPath that lets me sort an array of custom objects by any comparable property dynamically.", "domain": "code_swift"}
+{"prompt": "Can you explain what `withCheckedContinuation` and `withUnsafeContinuation` are used for when bridging old completion-handler APIs into async/await, and show an example converting a delegate-based location manager callback into an async function?", "domain": "code_swift"}
+{"prompt": "Explain the difference between `some View` and `AnyView` in SwiftUI, including performance implications, and rewrite this function that returns AnyView to instead use a generic approach with some View where feasible.", "domain": "code_swift"}
+{"prompt": "Can you explain reference counting implications of capturing `self` strongly in a Combine `.sink` closure, with an example?", "domain": "code_swift"}
+{"prompt": "Refactor this massive view controller with 800 lines into smaller, testable components following MVVM, focusing on separating networking, state, and presentation logic", "domain": "code_swift"}
+{"prompt": "Write a Swift extension on `Array` that adds a `chunked(into:)` method to split it into subarrays of a given size.", "domain": "code_swift"}
+{"prompt": "Convert this switch statement to use pattern matching with ranges:\n```\nswitch score {\ncase 90: grade = \"A\"\ncase 80: grade = \"B\"\ndefault: grade = \"F\"\n}\n```", "domain": "code_swift"}
+{"prompt": "Debug this infinite loop.\n```swift\nvar i = 0\nwhile i < 10 {\n  print(i)\n}\n```", "domain": "code_swift"}
+{"prompt": "Write a linked list implementation in Swift using generics.", "domain": "code_swift"}
+{"prompt": "how would I implement a simple linked list in Swift with generics?", "domain": "code_swift"}
+{"prompt": "This Core Data fetch is causing a crash with 'NSManagedObject accessed from wrong context' — how do I fix it properly?\n```\nfunc loadUsers() -> [User] {\n    var users: [User] = []\n    backgroundContext.perform {\n        users = try! backgroundContext.fetch(User.fetchRequest())\n    }\n    return users\n}\n```", "domain": "code_swift"}
+{"prompt": "Explain what @MainActor does", "domain": "code_swift"}
+{"prompt": "Show me step by step how to parse this JSON response into a Codable struct, handling missing keys gracefully.\n```\n{\n  \"id\": 1,\n  \"name\": \"Widget\",\n  \"tags\": [\"new\", \"sale\"]\n}\n```", "domain": "code_swift"}
+{"prompt": "Can you explain the difference between `Array`, `Set`, and `Dictionary` in Swift, and when I'd pick one over the others?", "domain": "code_swift"}
+{"prompt": "Debug this: guard let x = optionalValue else { return }; print(x)", "domain": "code_swift"}
+{"prompt": "Write a Swift function that takes a matrix represented as `[[Int]]` and rotates it 90 degrees clockwise in place without allocating a new matrix, then explain the index manipulation logic layer by layer.", "domain": "code_swift"}
+{"prompt": "How would I write a custom `Result` builder (like SwiftUI's ViewBuilder) for constructing a simple DSL to build HTML elements in Swift?", "domain": "code_swift"}
+{"prompt": "Can you explain how `Mirror` reflection works in Swift and show a simple use case for printing a struct's properties dynamically?", "domain": "code_swift"}
+{"prompt": "Write a Swift struct conforming to Equatable and Hashable manually.", "domain": "code_swift"}
+{"prompt": "Explain how `NSCache` differs from a plain Swift dictionary for caching, and when I should prefer one.", "domain": "code_swift"}
+{"prompt": "Add pagination support to this function that fetches items from an API:\n```\nfunc fetchItems(completion: @escaping ([Item]) -> Void) {\n    // fetches first page only\n}\n```", "domain": "code_swift"}
+{"prompt": "Guide me through writing a custom `Comparable` conformance for a `Version` struct that compares major, minor, and patch numbers correctly.", "domain": "code_swift"}
+{"prompt": "can you fix this memory leak caused by a strong reference cycle in my closure?", "domain": "code_swift"}
+{"prompt": "My app crashes with 'Fatal error: Unexpectedly found nil' somewhere in this code — any idea what's wrong?\n```\nlet url = URL(string: userInput)!\nlet data = try! Data(contentsOf: url)\n```", "domain": "code_swift"}
+{"prompt": "what's the cleanest way to do pagination with URLSession in Swift?", "domain": "code_swift"}
+{"prompt": "write a Swift extension on String to check if it contains only digits", "domain": "code_swift"}
+{"prompt": "Explain what `Never` as a return type means in Swift, and why functions like `fatalError` use it.", "domain": "code_swift"}
+{"prompt": "Explain step by step why this code produces unexpected output and how to correct it:\n\nvar array = [1, 2, 3]\nfor i in array {\n    array.append(i * 2)\n}\nprint(array)", "domain": "code_swift"}
+{"prompt": "What's your opinion on using force unwraps in unit tests versus production code — is the risk tolerance different?", "domain": "code_swift"}
+{"prompt": "Convert this switch statement to use pattern matching with where clauses", "domain": "code_swift"}
+{"prompt": "What does 'some' mean in Swift return types?", "domain": "code_swift"}
+{"prompt": "Compare using `UserDefaults` versus the Keychain for storing a user's authentication token — what are the security trade-offs?", "domain": "code_swift"}
+{"prompt": "What are the trade-offs between using structs and classes for a model layer in a SwiftUI app that needs to be shared across multiple views?", "domain": "code_swift"}
+{"prompt": "can you help me fix this retain cycle in my delegate pattern?", "domain": "code_swift"}
+{"prompt": "Can you write a basic `Person` struct that conforms to `Equatable` and explain why that's useful?", "domain": "code_swift"}
+{"prompt": "Can you explain what's happening with type inference in this line? It's confusing me.\n```\nlet numbers = [1, 2, 3].map { $0 * 2 }.filter { $0 > 2 }\n```", "domain": "code_swift"}
+{"prompt": "Write a Swift function to compute the maximum subarray sum using Kadane's algorithm, then modify it to also return the start and end indices of that subarray.", "domain": "code_swift"}
+{"prompt": "I'm new to Swift — can you explain what optionals are and why we use the `?` and `!` symbols?", "domain": "code_swift"}
+{"prompt": "I have a JSON payload with nested and optional fields that doesn't map cleanly to my Codable struct. Given this JSON shape, can you write the corresponding Swift model with custom `CodingKeys` and a custom `init(from:)` to handle a field that's sometimes a String and sometimes an Int?\n```\n{\n  \"id\": \"123\",\n  \"metadata\": { \"score\": \"42\" },\n  \"tags\": null\n}\n```", "domain": "code_swift"}
+{"prompt": "How do I make a Codable struct with optional fields?", "domain": "code_swift"}
+{"prompt": "refactor this to use guard statements instead of nested if lets please", "domain": "code_swift"}
+{"prompt": "Write a Swift function to detect balanced parentheses", "domain": "code_swift"}
+{"prompt": "Write unit tests using XCTest for a function that parses a JSON string into a custom Codable struct, including edge cases for malformed JSON and missing keys.", "domain": "code_swift"}

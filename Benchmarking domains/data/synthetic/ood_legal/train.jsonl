@@ -1,0 +1,800 @@
+{"prompt": "Hey, what does 'force majeure' actually mean in plain English?", "domain": "ood_legal"}
+{"prompt": "Draft a severability clause for a commercial contract that ensures the remaining provisions stay enforceable if one clause is found invalid by a court.", "domain": "ood_legal"}
+{"prompt": "What does 'ultra vires' mean when applied to actions taken by a corporation?", "domain": "ood_legal"}
+{"prompt": "What does it mean when a lease has a 'holdover tenant' clause?", "domain": "ood_legal"}
+{"prompt": "Define 'liquidated damages.'", "domain": "ood_legal"}
+{"prompt": "What does the term 'promissory estoppel' mean, and when might someone rely on it if a promise was broken without a formal contract?", "domain": "ood_legal"}
+{"prompt": "Can you explain what a 'cease and desist' letter accomplishes, and when would you recommend sending one?", "domain": "ood_legal"}
+{"prompt": "What does 'indemnification clause' mean in a contract, and can you draft a simple version for a services agreement?", "domain": "ood_legal"}
+{"prompt": "What's the difference between an 'LLC' and a 'sole proprietorship' legally?", "domain": "ood_legal"}
+{"prompt": "Can you explain what wage garnishment is, what legal process a creditor typically has to go through before garnishing someone's wages, and what limits usually apply to how much can be taken?", "domain": "ood_legal"}
+{"prompt": "What's the difference between a 'unilateral contract' and a 'bilateral contract,' and can you give an example of each?", "domain": "ood_legal"}
+{"prompt": "Can you explain the legal concept of 'due diligence' and recommend what it should typically cover in a business acquisition?", "domain": "ood_legal"}
+{"prompt": "Explain \"res ipsa loquitur\" in negligence law and give an example of a situation where a plaintiff might successfully invoke it.", "domain": "ood_legal"}
+{"prompt": "Explain the legal doctrine of 'strict liability' in tort law and how it applies differently to product liability cases versus abnormally dangerous activities.", "domain": "ood_legal"}
+{"prompt": "Could you walk me through the general procedure for filing a claim in small claims court, including what kind of cases are eligible, what documents I'd need, and roughly how long the process usually takes?", "domain": "ood_legal"}
+{"prompt": "What does 'garnishment' mean when it comes to wages?", "domain": "ood_legal"}
+{"prompt": "Can you draft a limitation of liability clause for a software licensing agreement that caps damages at the amount paid in the prior twelve months?", "domain": "ood_legal"}
+{"prompt": "What is 'jurisdiction'?", "domain": "ood_legal"}
+{"prompt": "Can you explain what 'adverse possession' means for property owners?", "domain": "ood_legal"}
+{"prompt": "Draft a simple termination clause for a service agreement.", "domain": "ood_legal"}
+{"prompt": "What are the trade-offs between filing a lawsuit in state court versus federal court when both have jurisdiction over a dispute?", "domain": "ood_legal"}
+{"prompt": "What does 'specific performance' mean as a legal remedy, and when would a court typically order it instead of damages?", "domain": "ood_legal"}
+{"prompt": "Explain 'chain of custody' in evidence law.", "domain": "ood_legal"}
+{"prompt": "Can you draft a simple non-compete clause and explain what limitations are needed to make it enforceable?", "domain": "ood_legal"}
+{"prompt": "What does 'severability clause' mean in a contract?", "domain": "ood_legal"}
+{"prompt": "What is an 'easement' in property law, what are the different types, and how does one get created, transferred, or terminated over time?", "domain": "ood_legal"}
+{"prompt": "Draft a basic termination clause for an employment contract, then explain in plain terms what notice period it requires and what severance obligations, if any, it creates.", "domain": "ood_legal"}
+{"prompt": "How would you explain what happens during small claims court to someone suing for the first time?", "domain": "ood_legal"}
+{"prompt": "What is 'discovery' in civil litigation, what are the main tools attorneys use during this phase such as interrogatories and depositions, and why is this process considered important to a fair trial?", "domain": "ood_legal"}
+{"prompt": "What is the procedure for appealing a lower court's decision to an appellate court?", "domain": "ood_legal"}
+{"prompt": "Could you draft a simple governing law clause specifying that a contract will be interpreted under the laws of a particular state?", "domain": "ood_legal"}
+{"prompt": "What are the typical steps a landlord must follow to legally evict a tenant?", "domain": "ood_legal"}
+{"prompt": "Can you explain what 'reasonable doubt' actually means in a criminal trial?", "domain": "ood_legal"}
+{"prompt": "What does 'anticipatory breach' mean in contract law, and what remedies are available to the non-breaching party before the performance date arrives?", "domain": "ood_legal"}
+{"prompt": "I'm drafting a partnership agreement and need a clause addressing what happens if one partner wants to exit the business. Can you draft a simple buy-sell provision and explain the key issues it should address?", "domain": "ood_legal"}
+{"prompt": "Can you explain what an NDA typically covers, and do you think startups should require one before initial investor meetings?", "domain": "ood_legal"}
+{"prompt": "Can you compare 'liquidated damages' clauses with simply suing for actual damages after a breach of contract?", "domain": "ood_legal"}
+{"prompt": "Could you draft a simple limitation of liability clause capping damages at the amount paid under a service agreement?", "domain": "ood_legal"}
+{"prompt": "Can you explain what 'joint and several liability' means for co-defendants in a lawsuit?", "domain": "ood_legal"}
+{"prompt": "What does the term 'force majeure' mean, and can you show me a simple clause I could add to a contract to cover pandemic-related disruptions?", "domain": "ood_legal"}
+{"prompt": "What's your take on whether someone should hire a lawyer to review a residential lease before signing?", "domain": "ood_legal"}
+{"prompt": "What does 'good faith' mean legally?", "domain": "ood_legal"}
+{"prompt": "What's the difference between a misdemeanor and a felony, and how do the potential consequences compare?", "domain": "ood_legal"}
+{"prompt": "Can you draft a simple assignment clause that prevents either party in a service contract from transferring their rights and obligations to another company without written consent?", "domain": "ood_legal"}
+{"prompt": "What is the difference between \"per stirpes\" and \"per capita\" distribution in a will, and how would each apply to a family with several grandchildren?", "domain": "ood_legal"}
+{"prompt": "Summarize what a non-disclosure agreement does.", "domain": "ood_legal"}
+{"prompt": "Draft an arbitration clause for a business partnership agreement that specifies governing rules, seat of arbitration, and language of proceedings.", "domain": "ood_legal"}
+{"prompt": "Please explain what 'estoppel by silence' means and give an example of when it might apply.", "domain": "ood_legal"}
+{"prompt": "How should a simple non-compete clause be drafted to remain enforceable in most jurisdictions?", "domain": "ood_legal"}
+{"prompt": "Can you walk me through how a force majeure clause should be drafted to account for pandemics, supply chain disruptions, and government shutdowns, while still being enforceable?", "domain": "ood_legal"}
+{"prompt": "Can you summarize what the statute of frauds requires for certain contracts to be enforceable?", "domain": "ood_legal"}
+{"prompt": "Can you help me write a simple confidentiality clause for a freelance contract?", "domain": "ood_legal"}
+{"prompt": "How would you summarize what happens procedurally when someone files a motion for summary judgment?", "domain": "ood_legal"}
+{"prompt": "In your opinion, is it wise for a small business owner to include a limitation of liability clause capping damages, and if so, how should it be worded?", "domain": "ood_legal"}
+{"prompt": "What is the difference between an \"indemnification clause\" and a \"hold harmless clause\" in a contract, and do they actually protect a party differently?", "domain": "ood_legal"}
+{"prompt": "What does 'strict liability' mean in tort law, how does it differ from negligence, and what are some common examples of activities or products that trigger strict liability?", "domain": "ood_legal"}
+{"prompt": "What rights does a criminal defendant have under the Sixth Amendment, including the right to counsel and the right to a speedy trial, and what remedies exist if these rights are violated?", "domain": "ood_legal"}
+{"prompt": "What steps should someone follow to properly execute a valid last will and testament?", "domain": "ood_legal"}
+{"prompt": "What does it mean when a contract has a 'force majeure' clause, and can you draft a basic example for a service agreement?", "domain": "ood_legal"}
+{"prompt": "Please summarize, in plain language a non-lawyer could understand, the basic holding and significance of the case Marbury v. Madison, including why it's considered foundational to the concept of judicial review.", "domain": "ood_legal"}
+{"prompt": "Can you compare 'first-to-file' and 'first-to-invent' systems in patent law, and explain which one most countries currently use?", "domain": "ood_legal"}
+{"prompt": "What distinguishes a sole proprietorship from an LLC in terms of personal liability protection, and which is better for a small freelance business?", "domain": "ood_legal"}
+{"prompt": "What is your view on whether an employee should sign a non-solicitation clause without negotiating its scope first?", "domain": "ood_legal"}
+{"prompt": "Please explain the statute of limitations in general terms, why it exists, how it can vary between civil and criminal cases, and what typically happens if someone tries to file a lawsuit after the deadline has passed.", "domain": "ood_legal"}
+{"prompt": "Explain what 'consideration' means in contract law, why courts require it for a contract to be enforceable, and describe a situation where a promise might fail for lack of consideration.", "domain": "ood_legal"}
+{"prompt": "What does 'null and void' mean?", "domain": "ood_legal"}
+{"prompt": "How does an at-will employment arrangement compare to a fixed-term employment contract in terms of employee protections?", "domain": "ood_legal"}
+{"prompt": "What does 'due diligence' mean when buying a house or business?", "domain": "ood_legal"}
+{"prompt": "Do you think a prenuptial agreement should include a clause about division of future business assets?", "domain": "ood_legal"}
+{"prompt": "Can you explain what 'adverse possession' means and the typical elements a claimant must satisfy to acquire title to land they don't legally own?", "domain": "ood_legal"}
+{"prompt": "Explain the legal doctrine of 'res judicata,' why it prevents parties from relitigating the same issue, and give an example of how it might apply after a civil case has been fully resolved.", "domain": "ood_legal"}
+{"prompt": "Would you recommend using a 'force majeure' clause in contracts post-pandemic, and how should it be worded?", "domain": "ood_legal"}
+{"prompt": "What is a \"shelf company,\" and why might someone acquire one instead of forming a brand-new corporation?", "domain": "ood_legal"}
+{"prompt": "What is 'collateral estoppel,' and how does it prevent a party from relitigating an issue that was already decided in a prior case?", "domain": "ood_legal"}
+{"prompt": "Can you help me write a basic confidentiality clause for a freelance contract?", "domain": "ood_legal"}
+{"prompt": "Explain the difference between \"summary judgment\" and a \"motion to dismiss,\" including what evidence a court considers at each stage.", "domain": "ood_legal"}
+{"prompt": "What does 'breach of contract' actually require to prove?", "domain": "ood_legal"}
+{"prompt": "Please explain what a 'cease and desist letter' is and what someone should do if they receive one.", "domain": "ood_legal"}
+{"prompt": "What does 'consideration' mean in contract law, and why is it required for a contract to be enforceable?", "domain": "ood_legal"}
+{"prompt": "Walk me through the process of registering a copyright for a written work.", "domain": "ood_legal"}
+{"prompt": "What is 'promissory note acceleration,' and how does an acceleration clause work if I miss a loan payment?", "domain": "ood_legal"}
+{"prompt": "What does 'indemnification' mean in a contract?", "domain": "ood_legal"}
+{"prompt": "What does 'ultra vires' mean when applied to actions taken by a corporation or government body?", "domain": "ood_legal"}
+{"prompt": "Explain 'quid pro quo' in legal usage.", "domain": "ood_legal"}
+{"prompt": "Could you explain the differences between a trademark, a copyright, and a patent, including what kind of creative or business output each one protects and how long each type of protection typically lasts?", "domain": "ood_legal"}
+{"prompt": "Could you explain what a 'statute of limitations' is and give an example of how it might apply to a personal injury claim filed three years after an accident?", "domain": "ood_legal"}
+{"prompt": "Can you summarize what the Fourth Amendment protects against in plain language, explain what counts as a 'reasonable expectation of privacy,' and describe how courts apply this in cases involving cell phone searches?", "domain": "ood_legal"}
+{"prompt": "How would someone draft a simple governing law clause to specify which state's laws apply to a contract?", "domain": "ood_legal"}
+{"prompt": "How would you explain 'in personam' versus 'in rem' jurisdiction, and why the distinction matters for where a lawsuit can be filed?", "domain": "ood_legal"}
+{"prompt": "How do exclusive and non-exclusive licensing agreements differ, and what are the advantages of each for a licensor?", "domain": "ood_legal"}
+{"prompt": "What steps should someone follow if they want to file for a temporary restraining order?", "domain": "ood_legal"}
+{"prompt": "Could you explain what 'negligence' means in tort law and what the four basic elements a plaintiff must prove are?", "domain": "ood_legal"}
+{"prompt": "How does 'comparative negligence' differ from 'contributory negligence,' and how does each affect a plaintiff's ability to recover damages?", "domain": "ood_legal"}
+{"prompt": "What is the legal meaning of 'due diligence,' and what might it involve when someone is buying a small business?", "domain": "ood_legal"}
+{"prompt": "What does 'negligence per se' mean, and how does it differ from ordinary negligence?", "domain": "ood_legal"}
+{"prompt": "What is a 'cease and desist letter,' and what should someone do if they receive one?", "domain": "ood_legal"}
+{"prompt": "Can you explain the difference between 'summary judgment' and going to trial, including why a party might prefer one over the other?", "domain": "ood_legal"}
+{"prompt": "What does 'consideration' mean in contract law — like, why does a contract need it?", "domain": "ood_legal"}
+{"prompt": "Can you explain what a 'security deposit' is legally required to cover, and when a landlord must return it?", "domain": "ood_legal"}
+{"prompt": "Can you explain what 'discovery' means in civil litigation and give your view on whether the process is too slow?", "domain": "ood_legal"}
+{"prompt": "Summarize the key legal principles established in Brown v. Board of Education and its impact on the doctrine of 'separate but equal.'", "domain": "ood_legal"}
+{"prompt": "What does 'piercing the corporate veil' mean, under what circumstances might a court disregard the corporate form to hold shareholders personally liable, and why is this generally considered an exceptional remedy?", "domain": "ood_legal"}
+{"prompt": "Can you explain what 'mens rea' means in criminal law and why it matters for determining guilt?", "domain": "ood_legal"}
+{"prompt": "In your opinion, should a startup founder use a 'vesting schedule' clause for co-founder equity, and why?", "domain": "ood_legal"}
+{"prompt": "How would you explain the concept of 'due process' to someone with no legal background?", "domain": "ood_legal"}
+{"prompt": "Draft a payment terms clause for a freelance contract.", "domain": "ood_legal"}
+{"prompt": "What's the difference between a misdemeanor and a felony?", "domain": "ood_legal"}
+{"prompt": "class action lawsuit", "domain": "ood_legal"}
+{"prompt": "What is your recommendation for phrasing a termination for convenience clause so both parties feel it's fair?", "domain": "ood_legal"}
+{"prompt": "Explain in plain language what", "domain": "ood_legal"}
+{"prompt": "What is the purpose of a 'notary public,' and why do some documents require notarization?", "domain": "ood_legal"}
+{"prompt": "Explain 'due process' simply.", "domain": "ood_legal"}
+{"prompt": "What does \"escheat\" mean, and under what circumstances does a deceased person's property pass to the state instead of to their heirs?", "domain": "ood_legal"}
+{"prompt": "What's the difference between copyright and trademark protection, and which would better protect a company's logo versus its written content?", "domain": "ood_legal"}
+{"prompt": "How does a general power of attorney differ from a limited power of attorney, and which is more appropriate for a short-term need?", "domain": "ood_legal"}
+{"prompt": "Please explain what 'tenancy at will' means and how it differs from a fixed-term lease.", "domain": "ood_legal"}
+{"prompt": "What's your recommendation for wording a non-disparagement clause in a settlement agreement so it's clear and enforceable?", "domain": "ood_legal"}
+{"prompt": "What does it mean for funds to be held 'in escrow,' who typically acts as the escrow agent, and in what kinds of transactions is this arrangement most common?", "domain": "ood_legal"}
+{"prompt": "What does 'assignment clause' mean in a contract, and would you recommend restricting assignment without prior consent?", "domain": "ood_legal"}
+{"prompt": "What is 'adverse possession' in property law, what conditions usually need to be met for someone to claim it, and why do some people consider the doctrine controversial?", "domain": "ood_legal"}
+{"prompt": "I saw a clause that reads 'time is of the essence' in a real estate purchase agreement. What legal effect does that phrase have?", "domain": "ood_legal"}
+{"prompt": "What is 'strict liability'?", "domain": "ood_legal"}
+{"prompt": "How would you explain the difference between negligence and gross negligence to someone drafting a liability waiver?", "domain": "ood_legal"}
+{"prompt": "What is a 'class action lawsuit,' and how does someone become part of one?", "domain": "ood_legal"}
+{"prompt": "What does 'res judicata' mean, and how does it prevent someone from relitigating a claim that has already been decided?", "domain": "ood_legal"}
+{"prompt": "What are the trade-offs of using a non-compete clause versus a non-solicitation clause to protect a business's interests?", "domain": "ood_legal"}
+{"prompt": "What are the pros and cons of hiring a lawyer on a contingency fee basis versus an hourly rate?", "domain": "ood_legal"}
+{"prompt": "What's the difference between an indemnification clause and a limitation of liability clause in a contract?", "domain": "ood_legal"}
+{"prompt": "What is a 'non-disclosure agreement' and when do people usually use one?", "domain": "ood_legal"}
+{"prompt": "Can you explain what 'tenancy at will' means for renters?", "domain": "ood_legal"}
+{"prompt": "How do I draft an arbitration clause that requires disputes to be resolved outside of court?", "domain": "ood_legal"}
+{"prompt": "Define 'plaintiff' and 'defendant.'", "domain": "ood_legal"}
+{"prompt": "How does an easement differ from a license to use land, and why does the distinction matter for property rights?", "domain": "ood_legal"}
+{"prompt": "How does the exclusionary rule operate in criminal procedure, and what are the main exceptions courts have carved out over time?", "domain": "ood_legal"}
+{"prompt": "What is the best way to draft a warranty clause in a sales contract that limits the seller's exposure while still reassuring the buyer?", "domain": "ood_legal"}
+{"prompt": "strict liability", "domain": "ood_legal"}
+{"prompt": "Please explain what 'chain of custody' means in the context of criminal evidence and why it matters.", "domain": "ood_legal"}
+{"prompt": "Explain in plain language what a", "domain": "ood_legal"}
+{"prompt": "What's the difference between civil law and common law systems?", "domain": "ood_legal"}
+{"prompt": "What's the deal with statute of limitations — how does it decide when I can no longer sue someone?", "domain": "ood_legal"}
+{"prompt": "What is a 'statute of limitations'?", "domain": "ood_legal"}
+{"prompt": "What is 'promissory estoppel'?", "domain": "ood_legal"}
+{"prompt": "Explain the concept of 'vicarious liability' and how it applies to an employer's responsibility for the actions of employees during the scope of employment.", "domain": "ood_legal"}
+{"prompt": "Explain 'habeas corpus' simply.", "domain": "ood_legal"}
+{"prompt": "What does 'statute of frauds' mean, and which types of contracts does it typically require to be in writing?", "domain": "ood_legal"}
+{"prompt": "Explain the trade-offs between including a broad \"force majeure\" clause versus a narrowly defined list of triggering events in a contract.", "domain": "ood_legal"}
+{"prompt": "Could you draft a simple confidentiality clause that I could include in a freelance work contract?", "domain": "ood_legal"}
+{"prompt": "What does 'double jeopardy' mean, and what exceptions exist to this protection?", "domain": "ood_legal"}
+{"prompt": "Could you explain what 'standing' means in the context of bringing a lawsuit, and what elements a plaintiff must show to establish it?", "domain": "ood_legal"}
+{"prompt": "What is a 'writ of mandamus,' and when might a court issue one?", "domain": "ood_legal"}
+{"prompt": "What does 'promissory estoppel' mean, and what elements must be shown to rely on it?", "domain": "ood_legal"}
+{"prompt": "How would you summarize the key legal reasoning behind Miranda v. Arizona in terms a non-lawyer could understand?", "domain": "ood_legal"}
+{"prompt": "Can you explain what 'liability waiver' means and whether signing one always prevents someone from suing later?", "domain": "ood_legal"}
+{"prompt": "In your opinion, is it better to use a broad or narrow definition of 'confidential information' in an NDA, and why?", "domain": "ood_legal"}
+{"prompt": "Explain the difference between a warranty and a guarantee.", "domain": "ood_legal"}
+{"prompt": "What is 'unjust enrichment,' and how might it apply if someone accidentally overpays a contractor for work never completed?", "domain": "ood_legal"}
+{"prompt": "Can you explain what a 'force majeure' clause is, give three real-world examples of events that might trigger it, and then draft a sample force majeure clause I could use in a service agreement?", "domain": "ood_legal"}
+{"prompt": "Could you summarize, in plain language, the core holding of the case that established the doctrine of judicial review, why it's considered so foundational to constitutional law, and what practical effect it has had on the balance of power between branches of government?", "domain": "ood_legal"}
+{"prompt": "What is the step-by-step process for obtaining a temporary restraining order?", "domain": "ood_legal"}
+{"prompt": "What is the 'business judgment rule' in corporate law, why does it protect directors and officers, and under what circumstances can a court override it?", "domain": "ood_legal"}
+{"prompt": "What does 'liability waiver' mean, and can signing one actually stop someone from suing later?", "domain": "ood_legal"}
+{"prompt": "What is the difference between \"actual malice\" and \"negligence\" as standards in defamation cases, and why does it matter whether the plaintiff is a public figure?", "domain": "ood_legal"}
+{"prompt": "Can you draft a termination for convenience clause for a vendor services contract that specifies notice period and payment obligations upon termination?", "domain": "ood_legal"}
+{"prompt": "What does 'indemnification' mean in a contract, and would you advise a small business to accept an uncapped indemnity clause?", "domain": "ood_legal"}
+{"prompt": "In your opinion, should every employment contract include a clause addressing dispute resolution through arbitration rather than court?", "domain": "ood_legal"}
+{"prompt": "How does 'specific performance' as a remedy differ from monetary damages, and when might a court prefer to award one over the other?", "domain": "ood_legal"}
+{"prompt": "What does 'burden of proof' mean, and how does it differ between criminal and civil cases?", "domain": "ood_legal"}
+{"prompt": "Do you think a rental agreement should include a clause allowing early termination for job relocation, and how would you draft it?", "domain": "ood_legal"}
+{"prompt": "What does 'statute of limitations' mean, and how do 'tolling' provisions affect the deadline for filing certain types of claims?", "domain": "ood_legal"}
+{"prompt": "Draft a comprehensive indemnification clause for a SaaS master services agreement that allocates liability for third-party IP infringement claims.", "domain": "ood_legal"}
+{"prompt": "What is the difference between \"gross negligence\" and \"ordinary negligence,\" and why does the distinction matter for liability waivers?", "domain": "ood_legal"}
+{"prompt": "What is 'res judicata,' and why does it prevent someone from suing over the same issue twice?", "domain": "ood_legal"}
+{"prompt": "What is the 'parol evidence rule,' and how does it affect interpreting written contracts?", "domain": "ood_legal"}
+{"prompt": "What is a 'non-disclosure agreement,' and what are the basic elements it should include to be effective?", "domain": "ood_legal"}
+{"prompt": "How would I go about writing a basic non-compete clause that is reasonable in scope and duration?", "domain": "ood_legal"}
+{"prompt": "Explain the difference between \"felony\" and \"misdemeanor\" classifications of crimes, and how sentencing exposure typically differs between them.", "domain": "ood_legal"}
+{"prompt": "Could you draft a liquidated damages clause for a construction contract that would likely survive a challenge as an unenforceable penalty?", "domain": "ood_legal"}
+{"prompt": "How do I draft a basic termination clause for an employment contract that specifies notice periods and severance?", "domain": "ood_legal"}
+{"prompt": "What does 'novation' mean, and how is it legally different from a simple assignment of contractual rights?", "domain": "ood_legal"}
+{"prompt": "Please explain in plain language what a court meant when it dismissed a case 'with prejudice' versus 'without prejudice.'", "domain": "ood_legal"}
+{"prompt": "Can you summarize what the 'business judgment rule' protects corporate directors from?", "domain": "ood_legal"}
+{"prompt": "What does 'power of attorney' mean, and what are the steps to properly grant one to another person?", "domain": "ood_legal"}
+{"prompt": "What does 'adverse possession' mean, and what are the basic requirements someone would need to meet to claim ownership of land this way?", "domain": "ood_legal"}
+{"prompt": "Can you explain the doctrine of 'promissory estoppel' in plain English, walk me through the elements a court typically requires to prove it, and give a simple hypothetical example of how it might apply between a small business owner and a supplier?", "domain": "ood_legal"}
+{"prompt": "Explain what 'fiduciary duty' means for a corporate board member, including the duty of care and duty of loyalty components.", "domain": "ood_legal"}
+{"prompt": "In your opinion, is it better to include an arbitration clause or a litigation clause in a small business contract, and why?", "domain": "ood_legal"}
+{"prompt": "Explain the difference between a \"condition precedent\" and a \"condition subsequent\" in a contract, with a simple example of each.", "domain": "ood_legal"}
+{"prompt": "This clause reads: 'The Tenant shall indemnify and hold harmless the Landlord from any claims arising out of the Tenant's use of the premises.' Can you explain what obligations this actually creates for the tenant?", "domain": "ood_legal"}
+{"prompt": "How would you explain the doctrine of 'frustration of purpose' and how it differs from impossibility of performance as a contract defense?", "domain": "ood_legal"}
+{"prompt": "How does a merger clause in a contract compare to a severability clause in terms of the protection each provides?", "domain": "ood_legal"}
+{"prompt": "Can you explain what a non-disclosure agreement is and what happens if someone breaks it?", "domain": "ood_legal"}
+{"prompt": "Could you explain the doctrine of 'promissory estoppel,' walk through the elements a court typically looks for, and give an example situation where it might be used as a substitute for a formal contract?", "domain": "ood_legal"}
+{"prompt": "Can you draft a basic 'force majeure' clause and explain what events it's meant to cover?", "domain": "ood_legal"}
+{"prompt": "Define 'negligence per se.'", "domain": "ood_legal"}
+{"prompt": "What does 'res judicata' mean, and why does it prevent the same case from being litigated twice?", "domain": "ood_legal"}
+{"prompt": "What's the difference between 'joint and several liability' and 'several liability,' and which one is more favorable to a plaintiff in a lawsuit?", "domain": "ood_legal"}
+{"prompt": "How would I go about drafting an indemnification clause for a service agreement, and what elements should it include?", "domain": "ood_legal"}
+{"prompt": "How would I go about drafting a basic confidentiality clause for a freelance services agreement?", "domain": "ood_legal"}
+{"prompt": "Can you explain, in simple terms, what happened in the case Marbury v. Madison and why it's considered so important?", "domain": "ood_legal"}
+{"prompt": "How do I understand what an NDA actually protects and what it doesn't?", "domain": "ood_legal"}
+{"prompt": "Compare an \"at-will employment\" arrangement with an employment contract for a \"fixed term,\" focusing on how each affects the employer's ability to terminate.", "domain": "ood_legal"}
+{"prompt": "What does 'consideration' mean in contract law?", "domain": "ood_legal"}
+{"prompt": "What does \"forum non conveniens\" mean, and under what circumstances might a court dismiss a case even though it technically has jurisdiction to hear it?", "domain": "ood_legal"}
+{"prompt": "What is 'negligence' in tort law?", "domain": "ood_legal"}
+{"prompt": "What does 'negligence per se' mean, and how does violating a safety statute, like running a red light, relate to this concept?", "domain": "ood_legal"}
+{"prompt": "What is the difference between arbitration and mediation?", "domain": "ood_legal"}
+{"prompt": "Define 'quid pro quo' in contract terms.", "domain": "ood_legal"}
+{"prompt": "What is the purpose of a 'non-disclosure agreement'?", "domain": "ood_legal"}
+{"prompt": "How does a revocable trust differ from an irrevocable trust, and what are the benefits of each for asset protection?", "domain": "ood_legal"}
+{"prompt": "How do 'general partnerships' and 'limited partnerships' differ in terms of liability exposure for the partners?", "domain": "ood_legal"}
+{"prompt": "What is a 'shotgun clause' in a partnership agreement, and how does it work in practice?", "domain": "ood_legal"}
+{"prompt": "What does it mean for a contract clause to be 'severable,' and why do lawyers usually include a severability clause at the end of an agreement?", "domain": "ood_legal"}
+{"prompt": "Could you explain the difference between a misdemeanor and a felony, and how that distinction affects sentencing?", "domain": "ood_legal"}
+{"prompt": "What does 'breach of fiduciary duty' mean, and would you say it applies to a business partner who withholds financial information?", "domain": "ood_legal"}
+{"prompt": "Can you explain what 'joint and several liability' means using a simple example involving multiple defendants?", "domain": "ood_legal"}
+{"prompt": "Define 'power of attorney.'", "domain": "ood_legal"}
+{"prompt": "Can you explain what 'eminent domain' means?", "domain": "ood_legal"}
+{"prompt": "I'm putting together a letter of intent before finalizing a business deal. Could you explain what makes a letter of intent legally binding versus non-binding, and draft a short sample clause clarifying that intent?", "domain": "ood_legal"}
+{"prompt": "Could you explain what a 'holdover tenant' is and what rights they have?", "domain": "ood_legal"}
+{"prompt": "In your opinion, should tenants be allowed to withhold rent for unaddressed repairs, and what does the law generally say?", "domain": "ood_legal"}
+{"prompt": "What does 'good faith and fair dealing' mean when it's referenced in a business contract?", "domain": "ood_legal"}
+{"prompt": "What is an \"illusory promise,\" and why does it fail to create a binding contract?", "domain": "ood_legal"}
+{"prompt": "res judicata", "domain": "ood_legal"}
+{"prompt": "What do you think is the most important clause a freelancer should add to a client contract to protect themselves?", "domain": "ood_legal"}
+{"prompt": "What is the difference between 'de jure' and 'de facto' discrimination, and why does that distinction matter in employment law cases?", "domain": "ood_legal"}
+{"prompt": "Can you compare a 'revocable' power of attorney with an 'irrevocable' one, and explain the situations where each might be used?", "domain": "ood_legal"}
+{"prompt": "A contract clause states 'any modification to this Agreement must be in writing and signed by both parties.' What is this type of clause called, and why is it commonly included?", "domain": "ood_legal"}
+{"prompt": "What is 'habeas corpus,' and what protection does it provide to someone who is detained?", "domain": "ood_legal"}
+{"prompt": "Explain 'res judicata.'", "domain": "ood_legal"}
+{"prompt": "Could you explain what a 'covenant not to compete' typically restricts and how courts decide if it's enforceable?", "domain": "ood_legal"}
+{"prompt": "What is 'equitable subordination' in bankruptcy law, and why might a court apply it to a creditor's claim?", "domain": "ood_legal"}
+{"prompt": "What does the term 'force majeure' mean, and how do I write a basic force majeure clause?", "domain": "ood_legal"}
+{"prompt": "What's the difference between a will and a living trust?", "domain": "ood_legal"}
+{"prompt": "Could you explain what 'garnishment of wages' means and under what circumstances it can happen?", "domain": "ood_legal"}
+{"prompt": "What does 'severability clause' mean?", "domain": "ood_legal"}
+{"prompt": "What is the difference between 'consequential damages' and 'incidental damages' in a commercial contract, and how should a limitation of liability clause address each?", "domain": "ood_legal"}
+{"prompt": "What does 'arbitration' mean?", "domain": "ood_legal"}
+{"prompt": "What does the term 'burden of proof' mean, and how does 'preponderance of the evidence' differ from 'beyond a reasonable doubt'?", "domain": "ood_legal"}
+{"prompt": "I keep hearing the term 'force majeure' in news about supply chain disruptions. Can you explain what it means, how it's typically triggered, and draft a simple force majeure clause suitable for a manufacturing supply agreement?", "domain": "ood_legal"}
+{"prompt": "What is the legal meaning of 'undue influence,' and how would you recommend proving it in a contested will case?", "domain": "ood_legal"}
+{"prompt": "Can you explain 'power of attorney' and what it lets someone do?", "domain": "ood_legal"}
+{"prompt": "Could you summarize in plain language what a 'class action' lawsuit is and how members typically join one?", "domain": "ood_legal"}
+{"prompt": "What does 'ultra vires' mean?", "domain": "ood_legal"}
+{"prompt": "How would I draft a clause limiting a company's liability to the amount paid under the contract?", "domain": "ood_legal"}
+{"prompt": "What is a 'tort'?", "domain": "ood_legal"}
+{"prompt": "How would you summarize the legal concept of 'duty of care' for someone trying to understand a negligence claim?", "domain": "ood_legal"}
+{"prompt": "What does 'consideration' mean in contract law, and why is it required for a contract to be valid?", "domain": "ood_legal"}
+{"prompt": "Can you explain the trade-offs between forming an LLC versus a corporation when it comes to liability protection and tax treatment?", "domain": "ood_legal"}
+{"prompt": "Could you draft a simple non-compete clause for a small business employment contract, and then explain what factors courts typically consider when deciding whether such a clause is enforceable?", "domain": "ood_legal"}
+{"prompt": "due diligence", "domain": "ood_legal"}
+{"prompt": "What is the process for requesting a modification to a court-ordered custody or support agreement?", "domain": "ood_legal"}
+{"prompt": "Could you summarize the basic legal principle behind the case Brown v. Board of Education in plain language?", "domain": "ood_legal"}
+{"prompt": "Please explain what 'habeas corpus' means, describe its historical origins and purpose, and outline the basic procedure a detained person would follow to file a habeas corpus petition.", "domain": "ood_legal"}
+{"prompt": "What does 'qualified immunity' mean for government officials, and how has its scope been interpreted differently across circuit courts?", "domain": "ood_legal"}
+{"prompt": "mean, and can you give a simple example of how it applies?", "domain": "ood_legal"}
+{"prompt": "What is a \"cognovit note,\" and why do courts in some jurisdictions refuse to enforce this type of clause?", "domain": "ood_legal"}
+{"prompt": "What does 'double jeopardy' mean under the Fifth Amendment, what protections does it provide to criminal defendants, and are there any recognized exceptions where a person can be tried twice for related conduct?", "domain": "ood_legal"}
+{"prompt": "In your opinion, is a handshake agreement ever legally binding, or should everything be in writing?", "domain": "ood_legal"}
+{"prompt": "Can you explain what 'chain of custody' means in the context of criminal evidence and why it matters for a case?", "domain": "ood_legal"}
+{"prompt": "Can you draft a simple 'time is of the essence' clause and explain what effect it has on contract deadlines?", "domain": "ood_legal"}
+{"prompt": "Compare the standard of proof required in a criminal trial, \"beyond a reasonable doubt,\" with the standard used in a civil trial, \"preponderance of the evidence.\"", "domain": "ood_legal"}
+{"prompt": "In your opinion, is it wise for roommates to draft a written agreement, and what should it typically include?", "domain": "ood_legal"}
+{"prompt": "Could you explain the concept of 'privity of contract' and its exceptions?", "domain": "ood_legal"}
+{"prompt": "How do I draft a simple assignment clause that allows a contract to be transferred to another party?", "domain": "ood_legal"}
+{"prompt": "Explain the difference between 'void' and 'voidable' contracts, and give examples of situations that would render a contract each way.", "domain": "ood_legal"}
+{"prompt": "What's the plain-English meaning of 'res judicata' and why does it matter if a case has already been decided?", "domain": "ood_legal"}
+{"prompt": "What would you advise someone who wants to draft a simple assignment clause preventing a contract from being transferred without consent?", "domain": "ood_legal"}
+{"prompt": "What is the difference between \"void\" and \"voidable\" contracts, and how does each affect a party's ability to enforce or escape the agreement?", "domain": "ood_legal"}
+{"prompt": "What is the difference between a \"living will\" and a \"durable power of attorney for healthcare,\" and what happens if someone only has one of the two?", "domain": "ood_legal"}
+{"prompt": "Can you explain step by step how a will goes through the probate process?", "domain": "ood_legal"}
+{"prompt": "What is 'subrogation'?", "domain": "ood_legal"}
+{"prompt": "What does a \"writ of mandamus\" mean, and what must a petitioner show a court to be granted one?", "domain": "ood_legal"}
+{"prompt": "Can you explain step by step how a contract moves from offer to acceptance to becoming a legally binding agreement?", "domain": "ood_legal"}
+{"prompt": "What does 'discovery' mean in a civil lawsuit, and what kinds of documents or information are usually exchanged during it?", "domain": "ood_legal"}
+{"prompt": "Draft an assignment clause for a licensing agreement.", "domain": "ood_legal"}
+{"prompt": "What is the plain-language meaning of 'habeas corpus' and why is it considered an important legal protection?", "domain": "ood_legal"}
+{"prompt": "Could you explain the difference between a 'lease' and a 'rental agreement' in plain language?", "domain": "ood_legal"}
+{"prompt": "Can you explain the difference between 'de jure' and 'de facto' in a legal context?", "domain": "ood_legal"}
+{"prompt": "Can you summarize the legal doctrine of 'res judicata' in plain language, explain why courts rely on it, and give a simple hypothetical example of how it would apply?", "domain": "ood_legal"}
+{"prompt": "How would you explain 'strict liability' in tort law, and do you think it's a fair standard for product manufacturers?", "domain": "ood_legal"}
+{"prompt": "What does 'liquidated damages' mean in a contract, and how is that different from a penalty clause?", "domain": "ood_legal"}
+{"prompt": "What is the process for a company to legally dissolve, step by step?", "domain": "ood_legal"}
+{"prompt": "How do 'covenants not to compete' get treated differently across jurisdictions, and what factors make them more or less likely to be enforced?", "domain": "ood_legal"}
+{"prompt": "Walk me through the steps a company should take to properly incorporate as an LLC.", "domain": "ood_legal"}
+{"prompt": "What's the difference between direct evidence and circumstantial evidence, and how does each affect the strength of a legal case?", "domain": "ood_legal"}
+{"prompt": "What does 'escheat' mean in property law, and when does it apply?", "domain": "ood_legal"}
+{"prompt": "Can you explain the difference between 'de jure' and 'de facto' in legal terms?", "domain": "ood_legal"}
+{"prompt": "What does 'assignment and delegation' mean in contract law, how do they differ from each other, and can you draft a simple clause restricting a party's ability to assign the contract without consent?", "domain": "ood_legal"}
+{"prompt": "How do I write a basic confidentiality clause for a business partnership agreement?", "domain": "ood_legal"}
+{"prompt": "Summarize the main provisions of the Uniform Commercial Code Article 2 as they relate to the sale of goods between merchants.", "domain": "ood_legal"}
+{"prompt": "What is a 'shelf company,' and what legal purposes might it serve?", "domain": "ood_legal"}
+{"prompt": "What is 'promissory estoppel,' and how does it differ from a regular breach of contract claim?", "domain": "ood_legal"}
+{"prompt": "What does 'pro se' mean?", "domain": "ood_legal"}
+{"prompt": "Can you explain what \"champerty\" and \"maintenance\" mean historically in law, and whether these old doctrines are still enforced in modern legal systems?", "domain": "ood_legal"}
+{"prompt": "How does a 'non-compete clause' differ from a 'non-solicitation clause,' and which is generally easier to enforce?", "domain": "ood_legal"}
+{"prompt": "Define 'defamation' in simple terms.", "domain": "ood_legal"}
+{"prompt": "What does 'void ab initio' mean?", "domain": "ood_legal"}
+{"prompt": "What are the trade-offs between arbitration clauses that are binding versus non-binding in consumer contracts?", "domain": "ood_legal"}
+{"prompt": "Can you explain what 'small claims court' is and what kind of cases go there?", "domain": "ood_legal"}
+{"prompt": "What does 'chain of custody' mean in the context of criminal evidence, why is it important, and what can happen to a case if the chain of custody is broken?", "domain": "ood_legal"}
+{"prompt": "What is a 'motion in limine,' and what purpose does it serve before a trial?", "domain": "ood_legal"}
+{"prompt": "What is 'probable cause'?", "domain": "ood_legal"}
+{"prompt": "Draft a basic termination clause for a contract.", "domain": "ood_legal"}
+{"prompt": "Draft a simple confidentiality clause carve-out excluding publicly known information, and explain why such carve-outs are standard practice.", "domain": "ood_legal"}
+{"prompt": "specific performance", "domain": "ood_legal"}
+{"prompt": "Can you explain the difference between an independent contractor and an employee, and why the distinction matters legally?", "domain": "ood_legal"}
+{"prompt": "Summarize what a 'cease and desist' letter does.", "domain": "ood_legal"}
+{"prompt": "What's the difference between 'trademark infringement' and 'trademark dilution,' and how do the legal standards for proving each differ?", "domain": "ood_legal"}
+{"prompt": "Can you summarize the key legal principle established in Miranda v. Arizona, explain why the Miranda warnings are required, and describe what happens procedurally if police fail to give them before a custodial interrogation?", "domain": "ood_legal"}
+{"prompt": "What is the difference between 'arbitration' and 'mediation' as forms of dispute resolution, what are the pros and cons of each, and how does one decide which to include in a contract?", "domain": "ood_legal"}
+{"prompt": "What does it mean when someone says a contract clause is 'unconscionable'?", "domain": "ood_legal"}
+{"prompt": "Can you explain what 'consideration' means in contract law and give your view on whether a token payment of $1 is legally sufficient?", "domain": "ood_legal"}
+{"prompt": "Define 'tort' law simply.", "domain": "ood_legal"}
+{"prompt": "What does it mean for evidence to be 'inadmissible' in court, and why might a judge exclude it?", "domain": "ood_legal"}
+{"prompt": "Can you explain what 'consideration' means in contract law using a simple example, like trading a bicycle for cash?", "domain": "ood_legal"}
+{"prompt": "What does 'statute of limitations' mean, and how would you advise someone to figure out how much time they have to file a claim?", "domain": "ood_legal"}
+{"prompt": "What is a non-compete clause, what factors do courts typically consider when deciding whether to enforce one, and could you draft a reasonably narrow non-compete clause for an employment agreement?", "domain": "ood_legal"}
+{"prompt": "Explain what 'consideration' failure means in contract disputes.", "domain": "ood_legal"}
+{"prompt": "Draft a non-compete clause for an executive employment agreement that would likely be enforceable under California law's strict limitations.", "domain": "ood_legal"}
+{"prompt": "Please explain what 'small claims court' is used for and what kinds of disputes typically get resolved there.", "domain": "ood_legal"}
+{"prompt": "Can you explain the term 'statute of limitations' and give your opinion on whether current time limits for civil claims are reasonable?", "domain": "ood_legal"}
+{"prompt": "What is a 'non-compete clause'?", "domain": "ood_legal"}
+{"prompt": "What is 'habeas corpus,' and what procedural steps are involved in filing a petition challenging unlawful detention?", "domain": "ood_legal"}
+{"prompt": "What does it mean if a contract has a 'severability clause'?", "domain": "ood_legal"}
+{"prompt": "Explain the difference between 'specific performance' and 'monetary damages' as remedies for breach of contract, and when courts favor one over the other.", "domain": "ood_legal"}
+{"prompt": "as a contract remedy, and when might a court order it instead of monetary damages?", "domain": "ood_legal"}
+{"prompt": "What is the plain-language summary of what a class action lawsuit is and how someone becomes part of one?", "domain": "ood_legal"}
+{"prompt": "How should someone draft a confidentiality and non-solicitation clause for a freelance contractor agreement?", "domain": "ood_legal"}
+{"prompt": "What is a 'class action' lawsuit?", "domain": "ood_legal"}
+{"prompt": "What's the difference between a warranty and a guarantee in a sales contract, and which offers stronger protection to a buyer?", "domain": "ood_legal"}
+{"prompt": "What does 'res judicata' mean, what purpose does this doctrine serve in preventing repetitive litigation, and what are the basic elements a party must show to successfully invoke it as a defense?", "domain": "ood_legal"}
+{"prompt": "Should a residential lease include an automatic renewal clause, and what are the risks of doing so from a tenant's perspective?", "domain": "ood_legal"}
+{"prompt": "is and how individuals join one.", "domain": "ood_legal"}
+{"prompt": "What does 'statute of limitations' mean?", "domain": "ood_legal"}
+{"prompt": "Can you explain what a 'breach of fiduciary duty' means, who typically owes this duty to whom, and what remedies are usually available if the duty is breached?", "domain": "ood_legal"}
+{"prompt": "Draft a basic confidentiality clause.", "domain": "ood_legal"}
+{"prompt": "What does a \"most favored nation\" clause mean in a commercial licensing agreement, and can you draft a short example of one?", "domain": "ood_legal"}
+{"prompt": "What does 'breach of contract' actually mean and what happens next?", "domain": "ood_legal"}
+{"prompt": "Explain what a \"spendthrift trust\" is, how it protects a beneficiary's assets from creditors, and any limits on that protection.", "domain": "ood_legal"}
+{"prompt": "What does the legal term", "domain": "ood_legal"}
+{"prompt": "I need to understand 'liquidated damages' clauses in contracts. Can you explain what they are, how they differ from penalty clauses, and draft a sample liquidated damages provision for a construction contract?", "domain": "ood_legal"}
+{"prompt": "What does 'force majeure' mean?", "domain": "ood_legal"}
+{"prompt": "Explain the concept of 'piercing the corporate veil' and the factors courts typically weigh in deciding whether to hold shareholders personally liable.", "domain": "ood_legal"}
+{"prompt": "Can you draft a confidentiality clause with reasonable carve-outs for legally compelled disclosures, prior knowledge, and independently developed information?", "domain": "ood_legal"}
+{"prompt": "What does 'habeas corpus' mean, where does the concept come from historically, and why is it considered an important safeguard against unlawful detention?", "domain": "ood_legal"}
+{"prompt": "Can you explain what 'mens rea' means in criminal law and how it differs from 'actus reus'?", "domain": "ood_legal"}
+{"prompt": "What is 'breach of contract'?", "domain": "ood_legal"}
+{"prompt": "What is a 'non-compete agreement,' and what factors do courts typically consider when deciding if one is enforceable?", "domain": "ood_legal"}
+{"prompt": "What's the difference between a misdemeanor and an infraction?", "domain": "ood_legal"}
+{"prompt": "What's the difference between 'joint and several liability' and 'several liability,' and which would you recommend for a multi-party contract?", "domain": "ood_legal"}
+{"prompt": "Can you summarize in plain language what the \"business judgment rule\" protects corporate directors from, and what its typical limits are?", "domain": "ood_legal"}
+{"prompt": "What is 'res judicata'?", "domain": "ood_legal"}
+{"prompt": "Can you explain what a 'cease and desist letter' is used for?", "domain": "ood_legal"}
+{"prompt": "What is your opinion on whether a nondisclosure agreement should have an expiration date, and how long is reasonable?", "domain": "ood_legal"}
+{"prompt": "How would you explain the difference between a subpoena and a summons?", "domain": "ood_legal"}
+{"prompt": "Can you draft a governing law and venue clause for a cross-border commercial agreement between a US company and an EU-based supplier?", "domain": "ood_legal"}
+{"prompt": "What is a 'power of sale' clause in a mortgage, and what does it allow a lender to do?", "domain": "ood_legal"}
+{"prompt": "Could you walk me through the basic probate process after someone dies, including what an executor does, how debts and assets are handled, and roughly how long probate usually takes?", "domain": "ood_legal"}
+{"prompt": "What does 'pro bono' mean?", "domain": "ood_legal"}
+{"prompt": "Could you explain what 'class action lawsuit' means and how it differs from an individual lawsuit?", "domain": "ood_legal"}
+{"prompt": "Can you explain the concept of 'adverse possession' and how someone might legally gain ownership of land they don't hold title to?", "domain": "ood_legal"}
+{"prompt": "Can you walk me through the steps involved in filing a small claims court case from start to finish?", "domain": "ood_legal"}
+{"prompt": "How would I go about drafting a simple termination clause for an employment contract?", "domain": "ood_legal"}
+{"prompt": "What are Miranda rights?", "domain": "ood_legal"}
+{"prompt": "What does 'forum non conveniens' mean, and why might a court dismiss a case on this basis?", "domain": "ood_legal"}
+{"prompt": "What does 'joint and several liability' mean when multiple defendants are found liable in a lawsuit, and how does it affect how a plaintiff can collect damages from each defendant?", "domain": "ood_legal"}
+{"prompt": "What are 'Miranda rights,' where did they originate from as a legal requirement, and what happens if police fail to read them to a suspect before questioning?", "domain": "ood_legal"}
+{"prompt": "What is the difference between a will and a living trust, and could you explain the pros and cons of each for someone planning how to pass on their assets?", "domain": "ood_legal"}
+{"prompt": "What is the difference between 'joint and several liability' and just 'joint liability'? Can you give an example with two co-signers on a loan?", "domain": "ood_legal"}
+{"prompt": "What is the difference between \"de novo\" review and \"abuse of discretion\" review on appeal, and how does the standard chosen affect the appellant's chances?", "domain": "ood_legal"}
+{"prompt": "Can you walk me through what happens during jury selection in a criminal trial, explain what lawyers are looking for when they question potential jurors, and describe what 'voir dire' means?", "domain": "ood_legal"}
+{"prompt": "What is the difference between a 'void' contract and a 'voidable' contract? Could you give an example of each?", "domain": "ood_legal"}
+{"prompt": "Can you explain, step by step, how the discovery process works in a civil lawsuit?", "domain": "ood_legal"}
+{"prompt": "Can you explain what 'child custody' arrangements typically look like?", "domain": "ood_legal"}
+{"prompt": "What's your recommendation for including a right of first refusal clause in a partnership agreement, and how should it be worded?", "domain": "ood_legal"}
+{"prompt": "Can you explain what 'joint tenancy' means for property ownership, especially regarding what happens if one owner dies?", "domain": "ood_legal"}
+{"prompt": "Can you explain the difference between 'negligence' and 'gross negligence,' including how courts assess the standard of care in each, and give an example of conduct that would rise to gross negligence?", "domain": "ood_legal"}
+{"prompt": "Can you walk me through the process of serving legal notice on another party in a dispute?", "domain": "ood_legal"}
+{"prompt": "What does 'due process' mean and why does it matter in everyday situations?", "domain": "ood_legal"}
+{"prompt": "What are the trade-offs of choosing binding arbitration over litigation when drafting a dispute resolution clause?", "domain": "ood_legal"}
+{"prompt": "What is the difference between 'de novo' review and 'abuse of discretion' review on appeal, and how does each affect the likelihood of reversal?", "domain": "ood_legal"}
+{"prompt": "I saw a clause stating: 'This Agreement may be terminated by either party upon thirty (30) days' written notice.' What rights and obligations does this create?", "domain": "ood_legal"}
+{"prompt": "Summarize the essential holding of Miranda v. Arizona and explain what rights it requires police to inform suspects of during custodial interrogation.", "domain": "ood_legal"}
+{"prompt": "What is 'adverse possession,' what requirements typically must be met for someone to claim ownership of land this way, and why does this doctrine exist in property law?", "domain": "ood_legal"}
+{"prompt": "How do I draft a basic dispute notice clause that requires parties to attempt resolution before litigation?", "domain": "ood_legal"}
+{"prompt": "What does 'injunction' mean?", "domain": "ood_legal"}
+{"prompt": "What does 'burden of proof' mean?", "domain": "ood_legal"}
+{"prompt": "What is a 'power of attorney'?", "domain": "ood_legal"}
+{"prompt": "How do 'exclusive jurisdiction' clauses differ from 'non-exclusive jurisdiction' clauses in a contract, and what practical difference does that make if a dispute arises?", "domain": "ood_legal"}
+{"prompt": "What is a 'declaratory judgment,' and when might someone seek one?", "domain": "ood_legal"}
+{"prompt": "What is the legal test for determining whether a class action should be certified under Rule 23, and what are the main hurdles plaintiffs face?", "domain": "ood_legal"}
+{"prompt": "Can you draft a simple confidentiality clause for a freelance contract and explain what it's meant to protect?", "domain": "ood_legal"}
+{"prompt": "What is the legal concept of 'consideration' in contract law, why is it considered essential to forming a valid contract, and can you explain what happens if a contract lacks consideration?", "domain": "ood_legal"}
+{"prompt": "Can you explain what 'liquidated damages' means in a contract without all the legal jargon?", "domain": "ood_legal"}
+{"prompt": "What does 'breach of contract' mean, and what remedies are typically available to the non-breaching party?", "domain": "ood_legal"}
+{"prompt": "Can you explain what an 'escrow account' is used for?", "domain": "ood_legal"}
+{"prompt": "What is the difference between \"rescission\" and \"reformation\" as contract remedies, and when would a court choose one over the other?", "domain": "ood_legal"}
+{"prompt": "Can you explain what 'consideration' means in contract law and why a contract without it might be unenforceable?", "domain": "ood_legal"}
+{"prompt": "Explain the difference between \"actual authority\" and \"apparent authority\" in agency law, and how each affects a principal's liability to third parties.", "domain": "ood_legal"}
+{"prompt": "statute of limitations,", "domain": "ood_legal"}
+{"prompt": "What does 'tortious interference' mean, and how might someone recognize if it applies to their business relationship?", "domain": "ood_legal"}
+{"prompt": "Can you explain what 'laches' means as a legal defense?", "domain": "ood_legal"}
+{"prompt": "and how do I calculate the deadline for filing a specific type of claim?", "domain": "ood_legal"}
+{"prompt": "Could you draft an arbitration clause that specifies the seat, governing rules, and language of proceedings for an international commercial contract?", "domain": "ood_legal"}
+{"prompt": "Explain the difference between \"comparative negligence\" and \"contributory negligence\" and how each changes what an injured plaintiff can recover.", "domain": "ood_legal"}
+{"prompt": "How does 'strict scrutiny' differ from 'rational basis review' in constitutional law, and why does the choice of standard matter to the outcome of a case?", "domain": "ood_legal"}
+{"prompt": "Explain 'class action lawsuit' simply.", "domain": "ood_legal"}
+{"prompt": "Please summarize the legal reasoning behind the case Roe v. Wade in plain language and explain briefly how and why it was later overturned by Dobbs v. Jackson Women's Health Organization.", "domain": "ood_legal"}
+{"prompt": "Explain 'chain of custody.'", "domain": "ood_legal"}
+{"prompt": "Can you outline the steps involved in registering a trademark with a government agency?", "domain": "ood_legal"}
+{"prompt": "Please explain what an 'easement' is in property law, describe the difference between an easement appurtenant and an easement in gross, and give an everyday example of each.", "domain": "ood_legal"}
+{"prompt": "How should I draft a severability clause so that if one part of a contract is invalid, the rest remains enforceable?", "domain": "ood_legal"}
+{"prompt": "What does 'in rem' jurisdiction mean, as opposed to 'in personam' jurisdiction?", "domain": "ood_legal"}
+{"prompt": "Explain 'power of attorney' in plain language.", "domain": "ood_legal"}
+{"prompt": "Could you explain what 'default judgment' means and how it can happen in a civil lawsuit?", "domain": "ood_legal"}
+{"prompt": "Can you explain what a 'power of attorney' is and the difference between a general and a limited power of attorney?", "domain": "ood_legal"}
+{"prompt": "Can you explain what an 'indemnification cap' is and draft a short clause limiting indemnification liability to $50,000?", "domain": "ood_legal"}
+{"prompt": "What does 'joint and several liability' mean if three business partners are sued together for a debt?", "domain": "ood_legal"}
+{"prompt": "Can you explain what 'statute of limitations' means for filing a lawsuit?", "domain": "ood_legal"}
+{"prompt": "A friend received a letter saying they are being sued for 'breach of fiduciary duty.' What does that term mean in plain language?", "domain": "ood_legal"}
+{"prompt": "What does 'breach of fiduciary duty' mean in plain language, and what usually has to be proven?", "domain": "ood_legal"}
+{"prompt": "Can you explain what 'due process' means in simple terms?", "domain": "ood_legal"}
+{"prompt": "Can you explain, step by step, how a power of attorney is created and what authority it grants?", "domain": "ood_legal"}
+{"prompt": "How would someone draft a clear limitation of liability clause for a service agreement?", "domain": "ood_legal"}
+{"prompt": "Can you explain what 'intestate succession' means and what generally happens to a person's property if they die without a will?", "domain": "ood_legal"}
+{"prompt": "What does 'comity' mean in the context of courts recognizing decisions from other jurisdictions?", "domain": "ood_legal"}
+{"prompt": "What is the \"cy pres\" doctrine, and how do courts use it to distribute leftover funds from a class action settlement?", "domain": "ood_legal"}
+{"prompt": "What does 'strict liability' mean in product liability cases, and how does it differ from negligence?", "domain": "ood_legal"}
+{"prompt": "What is the difference between an \"easement\" and a \"license\" with respect to using someone else's land, and how permanent is each right?", "domain": "ood_legal"}
+{"prompt": "What does 'force majeure' mean in a contract, and what events typically qualify?", "domain": "ood_legal"}
+{"prompt": "Can you compare the obligations of a fiduciary duty versus a general duty of care, and explain which standard is stricter?", "domain": "ood_legal"}
+{"prompt": "What is the legal meaning of 'liquidated damages,' and how is a liquidated damages clause different from a penalty clause?", "domain": "ood_legal"}
+{"prompt": "What does 'good faith and fair dealing' mean as an implied obligation in contracts, and how might it be breached?", "domain": "ood_legal"}
+{"prompt": "What does 'pro bono' mean and how does someone qualify for free legal help?", "domain": "ood_legal"}
+{"prompt": "Define 'indemnification clause.'", "domain": "ood_legal"}
+{"prompt": "What's the difference between 'assault' and 'battery' as legal terms, and how are they typically charged differently?", "domain": "ood_legal"}
+{"prompt": "breach of fiduciary duty", "domain": "ood_legal"}
+{"prompt": "What is the difference between a misdemeanor and a felony, and how does that affect potential sentencing?", "domain": "ood_legal"}
+{"prompt": "What is the difference between a 'motion to dismiss' and a 'motion for summary judgment' in civil litigation, and at what stages of a lawsuit is each typically filed?", "domain": "ood_legal"}
+{"prompt": "Explain the difference between a \"general partnership\" and a \"limited partnership,\" particularly regarding liability exposure for the partners.", "domain": "ood_legal"}
+{"prompt": "What does 'good faith and fair dealing' mean in contract law, and do you think it's enforced consistently by courts?", "domain": "ood_legal"}
+{"prompt": "Explain what", "domain": "ood_legal"}
+{"prompt": "Could you explain the basic difference between 'common law' and 'statutory law'?", "domain": "ood_legal"}
+{"prompt": "What does 'unjust enrichment' mean, and when might someone use it as a legal claim even without a formal contract?", "domain": "ood_legal"}
+{"prompt": "Can you explain what 'chain of custody' means in evidence law and why courts take it so seriously?", "domain": "ood_legal"}
+{"prompt": "Do you think a severability clause is necessary in every contract, or are there situations where it can be omitted safely?", "domain": "ood_legal"}
+{"prompt": "What's the practical difference between an indemnification clause and a hold-harmless clause, and when would a contract need both?", "domain": "ood_legal"}
+{"prompt": "Can you explain in plain language what 'consideration' means in contract law and why a contract might fail without it?", "domain": "ood_legal"}
+{"prompt": "Can you compare 'arbitration' and 'mediation' as dispute resolution methods, including the pros and cons of each for a small business owner?", "domain": "ood_legal"}
+{"prompt": "A contract says disputes will be governed by 'the laws of the State of Delaware, without regard to conflict of laws principles.' What does that governing law clause actually do?", "domain": "ood_legal"}
+{"prompt": "Define 'estoppel' in plain English.", "domain": "ood_legal"}
+{"prompt": "What does 'strict liability' mean, and how is it different from liability based on negligence?", "domain": "ood_legal"}
+{"prompt": "Explain what 'severability' means in a contract, why parties include a severability clause, and draft a short example clause I could use in a standard agreement.", "domain": "ood_legal"}
+{"prompt": "Compare a \"non-compete clause\" and a \"non-solicitation clause\" in an employment contract, and explain which one is generally easier to enforce.", "domain": "ood_legal"}
+{"prompt": "Would you recommend adding a 'severability clause' to every contract, and can you explain what it protects against?", "domain": "ood_legal"}
+{"prompt": "What does 'liquidated damages' mean in a contract, and how is it different from a penalty clause?", "domain": "ood_legal"}
+{"prompt": "Explain step by step how a small claims lawsuit typically proceeds from filing to judgment.", "domain": "ood_legal"}
+{"prompt": "What's the legal difference between an indemnity and a guarantee, and could you give an example of when a business would want to use one instead of the other?", "domain": "ood_legal"}
+{"prompt": "How do I draft a simple indemnification clause that protects both parties fairly in a business agreement?", "domain": "ood_legal"}
+{"prompt": "Explain the trade-offs between filing for Chapter 7 versus Chapter 13 bankruptcy for an individual debtor.", "domain": "ood_legal"}
+{"prompt": "Summarize the legal reasoning behind the Supreme Court's decision in Citizens United v. FEC regarding corporate political spending.", "domain": "ood_legal"}
+{"prompt": "Can you explain the difference between a class action lawsuit and individual lawsuits, and the trade-offs for plaintiffs choosing each path?", "domain": "ood_legal"}
+{"prompt": "What are the basic elements of a negligence claim in tort law, and could you walk me through how a plaintiff would typically prove each element in court?", "domain": "ood_legal"}
+{"prompt": "What is 'due diligence'?", "domain": "ood_legal"}
+{"prompt": "Can you draft a data privacy and confidentiality clause for a vendor agreement that complies with GDPR requirements for processing personal data?", "domain": "ood_legal"}
+{"prompt": "What does 'res judicata' mean, and how does it differ from 'collateral estoppel' in preventing relitigation of claims?", "domain": "ood_legal"}
+{"prompt": "Can you outline the steps for how a company might go about filing for bankruptcy protection?", "domain": "ood_legal"}
+{"prompt": "How do I draft a termination clause that clearly spells out notice periods and grounds for ending an agreement?", "domain": "ood_legal"}
+{"prompt": "What does 'res ipsa loquitur' mean in tort law, and why is it significant for proving negligence?", "domain": "ood_legal"}
+{"prompt": "Can you explain the difference between 'consequential damages' and 'direct damages,' and why contracts often try to exclude the former?", "domain": "ood_legal"}
+{"prompt": "Can you explain what 'liquidated damages' means and outline how I would draft a clause specifying them?", "domain": "ood_legal"}
+{"prompt": "What is 'subrogation' in insurance law?", "domain": "ood_legal"}
+{"prompt": "How would you explain the difference between 'void' and 'voidable' contracts to a small business owner who just discovered a defect in their signed agreement?", "domain": "ood_legal"}
+{"prompt": "Explain the difference between \"liquidated damages\" and a \"penalty clause\" in a contract, and why courts enforce one but not the other.", "domain": "ood_legal"}
+{"prompt": "What does 'habeas corpus' mean, and how is it used to challenge unlawful detention?", "domain": "ood_legal"}
+{"prompt": "Walk me through the steps involved in filing for a trademark registration with a national trademark office.", "domain": "ood_legal"}
+{"prompt": "How do I write a governing law clause that clearly states which jurisdiction's laws apply to a contract?", "domain": "ood_legal"}
+{"prompt": "Explain the difference between a \"class action\" lawsuit and a \"mass tort\" action, and why plaintiffs' attorneys might choose one over the other.", "domain": "ood_legal"}
+{"prompt": "Explain the difference between a 'condition precedent' and a 'condition subsequent' in contract law, with an example of each.", "domain": "ood_legal"}
+{"prompt": "Please explain what 'unjust enrichment' means as a legal claim, what elements a plaintiff generally must prove, and give an example of a situation where someone might recover under this theory even without a formal contract.", "domain": "ood_legal"}
+{"prompt": "Can you explain what 'bankruptcy' actually does to someone's debts?", "domain": "ood_legal"}
+{"prompt": "Explain 'strict liability' simply.", "domain": "ood_legal"}
+{"prompt": "I need help understanding 'indemnification' clauses in contracts—what do they generally require, why are they included, and can you draft a basic mutual indemnification clause for a services agreement?", "domain": "ood_legal"}
+{"prompt": "What is 'res ipsa loquitur' in tort law, and how does it shift the burden of proof in a negligence case?", "domain": "ood_legal"}
+{"prompt": "How do I draft a simple non-disclosure agreement clause that protects confidential information shared between two businesses?", "domain": "ood_legal"}
+{"prompt": "What's the difference between a will and a living trust for estate planning, and what are the pros and cons of each?", "domain": "ood_legal"}
+{"prompt": "What does 'indemnification clause' mean in a contract, and can you give a simple example of one?", "domain": "ood_legal"}
+{"prompt": "Explain 'plaintiff' vs 'defendant'.", "domain": "ood_legal"}
+{"prompt": "What does 'joint and several liability' mean?", "domain": "ood_legal"}
+{"prompt": "What does \"unjust enrichment\" mean, and what elements does a plaintiff typically need to establish to succeed on this claim?", "domain": "ood_legal"}
+{"prompt": "How do I draft a straightforward non-disclosure agreement clause that protects confidential business information?", "domain": "ood_legal"}
+{"prompt": "Define 'severability clause.'", "domain": "ood_legal"}
+{"prompt": "Compare a \"revocable trust\" and an \"irrevocable trust,\" focusing on the trade-offs between asset protection and flexibility for the person creating it.", "domain": "ood_legal"}
+{"prompt": "What is the meaning of the term", "domain": "ood_legal"}
+{"prompt": "What does \"laches\" mean as an equitable defense, and how is it different from a statute of limitations defense?", "domain": "ood_legal"}
+{"prompt": "What is the difference between 'gross negligence' and 'ordinary negligence'?", "domain": "ood_legal"}
+{"prompt": "Can you explain the doctrine of 'laches' and how it differs from a statute of limitations?", "domain": "ood_legal"}
+{"prompt": "Explain what 'plaintiff' and 'defendant' mean.", "domain": "ood_legal"}
+{"prompt": "What is the \"rule against perpetuities,\" why did it originate, and how does it still affect the drafting of trusts today?", "domain": "ood_legal"}
+{"prompt": "Explain the tort of \"tortious interference with contract,\" what a plaintiff must prove, and how it differs from ordinary business competition.", "domain": "ood_legal"}
+{"prompt": "What does 'negligence per se' mean, and do you think it's an easier standard for plaintiffs than ordinary negligence?", "domain": "ood_legal"}
+{"prompt": "What is the difference between 'joint tenancy' and 'tenancy in common' when it comes to owning property, how does each affect what happens to the property when one owner dies, and which one is usually better for spouses versus business partners?", "domain": "ood_legal"}
+{"prompt": "In your opinion, should a freelance contract include a clause addressing intellectual property ownership of work created during the engagement?", "domain": "ood_legal"}
+{"prompt": "What does the term 'statute of limitations' mean, and how would I figure out the deadline for filing a personal injury claim after a car accident?", "domain": "ood_legal"}
+{"prompt": "What are the advantages and disadvantages of incorporating a business versus forming a partnership?", "domain": "ood_legal"}
+{"prompt": "What does 'liquidated damages' mean, and could you give an example of a clause specifying a fixed dollar amount for late delivery?", "domain": "ood_legal"}
+{"prompt": "What's the simplest way to explain what a tort is to someone who's never studied law?", "domain": "ood_legal"}
+{"prompt": "What does it mean to 'plead the fifth,' and in what situations can someone actually do that?", "domain": "ood_legal"}
+{"prompt": "In your view, what's the most effective way to draft an indemnification clause that protects a startup from third-party claims?", "domain": "ood_legal"}
+{"prompt": "Can you explain what an easement is in property law, the difference between an easement appurtenant and an easement in gross, and give an everyday example of each?", "domain": "ood_legal"}
+{"prompt": "What are the sequential steps someone should take after being served with a civil lawsuit summons?", "domain": "ood_legal"}
+{"prompt": "What is the 'parol evidence rule,' and how does it limit what courts consider when interpreting a contract?", "domain": "ood_legal"}
+{"prompt": "Can you explain what 'due process' means in the context of the U.S. Constitution?", "domain": "ood_legal"}
+{"prompt": "Explain step by step how a criminal case moves from arrest to arraignment to trial.", "domain": "ood_legal"}
+{"prompt": "Can you draft a simple assignment clause for a commercial contract that restricts a party from transferring its rights and obligations without the other party's consent, and explain why such restrictions are commonly included?", "domain": "ood_legal"}
+{"prompt": "What does 'consequential damages' mean, and would you advise excluding them in a service provider agreement?", "domain": "ood_legal"}
+{"prompt": "What's the difference between a patent and a trade secret, and which might be better for protecting a new invention?", "domain": "ood_legal"}
+{"prompt": "Can you summarize the basic facts and legal significance of the case Brown v. Board of Education in plain language, and explain how it overturned the earlier precedent set in Plessy v. Ferguson?", "domain": "ood_legal"}
+{"prompt": "What does 'stare decisis' mean?", "domain": "ood_legal"}
+{"prompt": "What steps are involved in incorporating a small business, from choosing a structure to filing paperwork?", "domain": "ood_legal"}
+{"prompt": "What does 'estoppel' mean, and how does it prevent someone from making certain legal arguments?", "domain": "ood_legal"}
+{"prompt": "Can you break down what 'power of attorney' actually lets someone do?", "domain": "ood_legal"}
+{"prompt": "Can you explain the difference between 'actual damages' and 'punitive damages,' and under what circumstances courts typically award the latter?", "domain": "ood_legal"}
+{"prompt": "Draft a simple right of first refusal clause for a shareholder agreement and explain in plain language how it would work in practice.", "domain": "ood_legal"}
+{"prompt": "A freelance contract I received includes this line: 'Contractor agrees to indemnify and hold harmless Client from any and all claims arising out of Contractor's negligence.' Can you explain what I'm agreeing to?", "domain": "ood_legal"}
+{"prompt": "What is 'promissory estoppel,' and how can it be used when there's no formal contract?", "domain": "ood_legal"}
+{"prompt": "What is the difference between \"joint and several liability\" and liability that is \"several only,\" and how does each affect what a plaintiff can recover?", "domain": "ood_legal"}
+{"prompt": "What is the difference between \"exclusive jurisdiction\" and \"non-exclusive jurisdiction\" clauses in a contract, and how does each affect where a dispute can be litigated?", "domain": "ood_legal"}
+{"prompt": "Can you explain what 'arbitration' is as a form of dispute resolution, how it differs from mediation and litigation, and draft a simple arbitration clause for inclusion in a commercial contract?", "domain": "ood_legal"}
+{"prompt": "Can you explain what 'subrogation' means in insurance law?", "domain": "ood_legal"}
+{"prompt": "What is the difference between 'void' and 'voidable' contracts, what legal consequences follow from each classification, and can you give an example of a contract that would be voidable due to a party's minority or lack of capacity?", "domain": "ood_legal"}
+{"prompt": "Can you explain what 'trademark infringement' means and give a simple example of what might count as one?", "domain": "ood_legal"}
+{"prompt": "What is the difference between a 'warranty' and a 'representation' in a contract, and why might a lawyer negotiate over which term is used?", "domain": "ood_legal"}
+{"prompt": "Can you explain what a 'statute of limitations' is and why it matters for filing a lawsuit?", "domain": "ood_legal"}
+{"prompt": "What's the difference between joint tenancy and tenancy in common when it comes to property ownership and inheritance rights?", "domain": "ood_legal"}
+{"prompt": "Can you walk me through how a statute of limitations works and how to calculate when it expires for a given claim?", "domain": "ood_legal"}
+{"prompt": "Can you explain in simple terms what a 'contract of adhesion' is and give an everyday example most people encounter?", "domain": "ood_legal"}
+{"prompt": "Define 'tortious interference.'", "domain": "ood_legal"}
+{"prompt": "Can you explain what 'force majeure' means in plain language and walk me through how such a clause is typically triggered?", "domain": "ood_legal"}
+{"prompt": "What is the difference between 'copyright' and 'patent' protection, and which type of protection would better suit a piece of software?", "domain": "ood_legal"}
+{"prompt": "What does 'good faith and fair dealing' mean as an implied contract obligation?", "domain": "ood_legal"}
+{"prompt": "Can you explain what 'chain of custody' means in the context of criminal evidence?", "domain": "ood_legal"}
+{"prompt": "What does 'breach of fiduciary duty' mean, and what obligations does it typically impose on someone managing another's assets or interests?", "domain": "ood_legal"}
+{"prompt": "How do I draft a basic assignment clause that restricts a party from transferring their contractual rights?", "domain": "ood_legal"}
+{"prompt": "Define 'liability' in plain English.", "domain": "ood_legal"}
+{"prompt": "Walk me through the procedural steps of filing a motion for summary judgment in a civil case, from initial brief to oral argument.", "domain": "ood_legal"}
+{"prompt": "Please explain the concept of 'piercing the corporate veil' and when courts might allow it.", "domain": "ood_legal"}
+{"prompt": "Explain step by step how a patent application process works from filing to grant.", "domain": "ood_legal"}
+{"prompt": "How would you describe what a prenup typically covers for someone who's never seen one?", "domain": "ood_legal"}
+{"prompt": "Explain 'strict liability.'", "domain": "ood_legal"}
+{"prompt": "How do I write a basic non-compete clause that isn't overly broad?", "domain": "ood_legal"}
+{"prompt": "What is a 'shotgun clause' in a shareholder agreement, and how does it function to resolve deadlocks between co-owners?", "domain": "ood_legal"}
+{"prompt": "What does", "domain": "ood_legal"}
+{"prompt": "Define 'tort' in simple terms.", "domain": "ood_legal"}
+{"prompt": "Summarize the key holding of Roe v. Wade and the subsequent overturning in Dobbs v. Jackson Women's Health Organization in plain terms.", "domain": "ood_legal"}
+{"prompt": "What does 'specific performance' mean as a legal remedy, and when might a court order it instead of awarding money damages?", "domain": "ood_legal"}
+{"prompt": "Would you recommend arbitration or litigation for resolving disputes in a standard vendor services agreement, and why?", "domain": "ood_legal"}
+{"prompt": "What is a 'subpoena'?", "domain": "ood_legal"}
+{"prompt": "What's the difference between 'actual authority' and 'apparent authority' in agency law, and how does each affect a principal's liability?", "domain": "ood_legal"}
+{"prompt": "Can you compare \"specific performance\" and \"monetary damages\" as remedies for breach of contract, and explain when a court prefers one over the other?", "domain": "ood_legal"}
+{"prompt": "Can you compare 'void' and 'voidable' contracts, and explain the practical difference in how each can be challenged?", "domain": "ood_legal"}
+{"prompt": "Do you think an employment contract should include a mandatory arbitration clause, and what are the tradeoffs?", "domain": "ood_legal"}
+{"prompt": "Explain 'indemnification' in simple terms.", "domain": "ood_legal"}
+{"prompt": "What's the difference between arbitration and mediation in a dispute?", "domain": "ood_legal"}
+{"prompt": "How would you explain the concept of 'piercing the corporate veil' to a small business owner worried about personal liability?", "domain": "ood_legal"}
+{"prompt": "What is a 'cease and desist letter'?", "domain": "ood_legal"}
+{"prompt": "Please explain the concept of 'privity of contract,' why it historically limited who could sue to enforce a contract, and describe how modern exceptions like third-party beneficiary rules have changed this doctrine.", "domain": "ood_legal"}
+{"prompt": "Can you explain what a 'qui tam' lawsuit is, who is allowed to bring one, and how a whistleblower might financially benefit from filing it?", "domain": "ood_legal"}
+{"prompt": "How would you explain what 'probable cause' means for a police search?", "domain": "ood_legal"}
+{"prompt": "What steps does a court typically follow when determining whether a contract clause is unconscionable?", "domain": "ood_legal"}
+{"prompt": "What is a 'non-disclosure agreement'?", "domain": "ood_legal"}
+{"prompt": "What does 'liability waiver' mean, like the ones you sign before skydiving?", "domain": "ood_legal"}
+{"prompt": "Can you explain what a 'power of attorney' is, describe the difference between a general and a durable power of attorney, and outline what responsibilities an agent has toward the person who granted it?", "domain": "ood_legal"}
+{"prompt": "What does it mean when a court grants a party 'standing' to bring a lawsuit, and why is that requirement significant?", "domain": "ood_legal"}
+{"prompt": "Compare \"mediation\" and \"arbitration\" as methods of dispute resolution, focusing on how binding the outcome is and how much control the parties retain.", "domain": "ood_legal"}
+{"prompt": "Can you draft a basic arbitration clause for a service agreement that requires disputes to be resolved through binding arbitration instead of court litigation?", "domain": "ood_legal"}
+{"prompt": "What is an 'easement,' and how might it affect a homeowner whose neighbor has the right to cross their backyard?", "domain": "ood_legal"}
+{"prompt": "What is the difference between 'garnishment' and 'attachment' as methods of collecting a debt, and when might a creditor use each?", "domain": "ood_legal"}
+{"prompt": "means and give an example of when it might occur.", "domain": "ood_legal"}
+{"prompt": "Walk me through the process of filing for bankruptcy under Chapter 7 versus Chapter 13.", "domain": "ood_legal"}
+{"prompt": "In your opinion, should a will include a 'no-contest clause,' and what does that clause actually do?", "domain": "ood_legal"}
+{"prompt": "Can you explain the legal difference between 'independent contractor' and 'employee' status, what tests courts and agencies use to tell them apart, and why the distinction matters for taxes and liability?", "domain": "ood_legal"}
+{"prompt": "What does the term 'force majeure' mean, and could you draft a short force majeure clause for a supply agreement?", "domain": "ood_legal"}
+{"prompt": "What is 'consideration' in contract law, and why is it necessary for a contract to be legally enforceable?", "domain": "ood_legal"}
+{"prompt": "Could you explain what 'tortious interference' with a contract means?", "domain": "ood_legal"}
+{"prompt": "What is an 'injunction'?", "domain": "ood_legal"}
+{"prompt": "What is the process for negotiating and finalizing a non-disclosure agreement between two companies?", "domain": "ood_legal"}
+{"prompt": "How would you advise someone to draft a clause limiting a contractor's liability to the amount paid under the contract?", "domain": "ood_legal"}
+{"prompt": "Can you explain what 'power of attorney' allows someone to do, and what type would you recommend for an elderly parent?", "domain": "ood_legal"}
+{"prompt": "Explain 'mens rea' and 'actus reus.'", "domain": "ood_legal"}
+{"prompt": "What is 'estoppel'?", "domain": "ood_legal"}
+{"prompt": "What is the purpose of a 'non-compete clause' in an employment contract, and are there limits on how enforceable they are?", "domain": "ood_legal"}
+{"prompt": "What does 'pro bono' mean when lawyers talk about it?", "domain": "ood_legal"}
+{"prompt": "Can you explain the difference between \"res judicata\" and \"collateral estoppel,\" with a simple example illustrating each doctrine?", "domain": "ood_legal"}
+{"prompt": "What does 'adverse possession' mean, and what conditions typically must be met for someone to claim land ownership this way?", "domain": "ood_legal"}
+{"prompt": "Draft a simple non-compete clause.", "domain": "ood_legal"}
+{"prompt": "What is the legal distinction between 'express warranty' and 'implied warranty' in a contract for the sale of goods?", "domain": "ood_legal"}
+{"prompt": "My employment offer letter says I am an 'at-will employee.' What rights or protections do I have, or not have, under that arrangement?", "domain": "ood_legal"}
+{"prompt": "What is 'adverse possession,' what are the typical requirements a person must satisfy to claim property through this doctrine, and why does the law recognize this seemingly unusual way of acquiring ownership?", "domain": "ood_legal"}
+{"prompt": "What does a 'non-disparagement clause' typically prohibit, and can you draft a short example for a settlement agreement?", "domain": "ood_legal"}
+{"prompt": "What is a 'quiet title' action, and in what situations would someone need to file one?", "domain": "ood_legal"}
+{"prompt": "How do I draft an assignment clause that restricts a party from transferring their contractual rights to a third party?", "domain": "ood_legal"}
+{"prompt": "How would you summarize the holding of a case establishing the doctrine of adverse possession for someone unfamiliar with property law?", "domain": "ood_legal"}
+{"prompt": "What is the 'business judgment rule,' and how does it shield corporate directors from liability for decisions made in good faith?", "domain": "ood_legal"}
+{"prompt": "Can you explain what 'intellectual property' covers, including the basic differences between copyright, trademark, and patent?", "domain": "ood_legal"}
+{"prompt": "In your opinion, should every business partnership have a written buy-sell agreement, and what should it address?", "domain": "ood_legal"}
+{"prompt": "What does 'statute of limitations' mean, and why do different types of legal claims have different time limits for filing a lawsuit?", "domain": "ood_legal"}
+{"prompt": "Draft a simple confidentiality clause for an employment contract.", "domain": "ood_legal"}
+{"prompt": "Can you explain the difference between 'joint and several liability' and 'several liability' among co-defendants in a lawsuit?", "domain": "ood_legal"}
+{"prompt": "What is the difference between 'void' and 'voidable' contracts?", "domain": "ood_legal"}
+{"prompt": "Can you summarize the basic holding of Marbury v. Madison in plain English for someone with no legal background?", "domain": "ood_legal"}
+{"prompt": "Can you explain what 'unjust enrichment' means and when a court might order restitution for it?", "domain": "ood_legal"}
+{"prompt": "Could you explain what a severability clause does in a contract, why it's included even in short agreements, and provide a simple example of the wording used?", "domain": "ood_legal"}
+{"prompt": "Can you walk me through the step-by-step process of forming a valid contract, from offer to acceptance to consideration?", "domain": "ood_legal"}
+{"prompt": "What is the difference between 'subrogation' and 'indemnification' in an insurance context, and how do they interact?", "domain": "ood_legal"}
+{"prompt": "What is the difference between \"strict liability\" and \"fault-based liability\" in product liability cases, and what must a plaintiff prove under each?", "domain": "ood_legal"}
+{"prompt": "What does 'conflict of laws' analysis involve when a contract dispute touches multiple jurisdictions with different substantive rules?", "domain": "ood_legal"}
+{"prompt": "I'm putting together a freelance services agreement. Could you draft a simple intellectual property ownership clause specifying that work product belongs to the client, and explain what issues such a clause should typically address?", "domain": "ood_legal"}
+{"prompt": "What is the difference between a 'misdemeanor' and a 'felony,' and how does that classification affect potential penalties?", "domain": "ood_legal"}
+{"prompt": "What does it mean for a contract to be 'breached,' and what remedies are typically available to the other party?", "domain": "ood_legal"}
+{"prompt": "habeas corpus", "domain": "ood_legal"}
+{"prompt": "Could you walk me through what typically happens during the discovery phase of a civil lawsuit?", "domain": "ood_legal"}
+{"prompt": "What is the difference between 'negligence' and 'strict liability' in tort law, and why might a plaintiff prefer one theory over the other?", "domain": "ood_legal"}
+{"prompt": "Explain the difference between \"personal jurisdiction\" and \"subject matter jurisdiction,\" and why a court must have both to hear a case.", "domain": "ood_legal"}
+{"prompt": "Explain the difference between 'copyright,' 'trademark,' and 'patent' protection, what kind of creative or business assets each one covers, and roughly how long each type of protection lasts.", "domain": "ood_legal"}
+{"prompt": "Explain 'due process' in one paragraph.", "domain": "ood_legal"}
+{"prompt": "Can you explain what happens if someone 'pleads the fifth'?", "domain": "ood_legal"}
+{"prompt": "Could you draft a short indemnification clause for a website terms of service agreement?", "domain": "ood_legal"}
+{"prompt": "What does 'consideration' mean in contract formation, and can you give an example of a contract that might fail for lack of consideration?", "domain": "ood_legal"}
+{"prompt": "What is the step-by-step procedure for probating a will after someone passes away?", "domain": "ood_legal"}
+{"prompt": "Could you explain what 'due diligence' means in the context of a business acquisition, and what it typically involves?", "domain": "ood_legal"}
+{"prompt": "Can you compare the benefits of trademark registration at the federal level versus relying only on common law trademark rights?", "domain": "ood_legal"}
+{"prompt": "Could you explain the difference between a 'misdemeanor' and a 'felony' in plain terms?", "domain": "ood_legal"}
+{"prompt": "What does it mean when a contract clause is described as 'void' versus 'voidable'?", "domain": "ood_legal"}
+{"prompt": "What is 'joint and several liability'?", "domain": "ood_legal"}
+{"prompt": "Explain what an interpleader action is and why a party holding disputed property or funds might file one.", "domain": "ood_legal"}
+{"prompt": "A contract clause reads: 'This Agreement may be terminated by either party upon thirty (30) days' written notice.' What obligations does each side have once that notice is given?", "domain": "ood_legal"}
+{"prompt": "Explain 'double jeopardy.'", "domain": "ood_legal"}
+{"prompt": "Can you explain the basic difference between a lawsuit and an arbitration proceeding?", "domain": "ood_legal"}
+{"prompt": "How does the discovery process work in a civil lawsuit, step by step?", "domain": "ood_legal"}
+{"prompt": "Can you explain what 'vicarious liability' means and how it applies to an employer for an employee's actions?", "domain": "ood_legal"}
+{"prompt": "I keep hearing about 'force majeure' clauses — what do they actually cover?", "domain": "ood_legal"}
+{"prompt": "Could you explain what 'due process' means and give a simple example of it in action?", "domain": "ood_legal"}
+{"prompt": "Can you compare the statute of limitations for personal injury claims versus breach of contract claims?", "domain": "ood_legal"}
+{"prompt": "What happens during the 'discovery' phase of a civil lawsuit, what types of information can each side typically request from the other, and what are the limits on what must be disclosed?", "domain": "ood_legal"}
+{"prompt": "What is a 'quitclaim deed,' and how is it different from a warranty deed when transferring property?", "domain": "ood_legal"}
+{"prompt": "What are the pros and cons of settling a lawsuit versus proceeding to trial?", "domain": "ood_legal"}
+{"prompt": "What does 'piercing the corporate veil' mean, and under what circumstances might a court hold a business owner personally liable for company debts?", "domain": "ood_legal"}
+{"prompt": "Could you explain what 'diversity jurisdiction' means and the requirements a federal court needs to hear a case on that basis?", "domain": "ood_legal"}
+{"prompt": "What does 'negligence' mean in a legal sense, and what does someone need to prove to win a negligence claim?", "domain": "ood_legal"}
+{"prompt": "What is the meaning of", "domain": "ood_legal"}
+{"prompt": "Can you break down the stages of a typical civil lawsuit from filing a complaint to trial, explain what happens at each stage in plain English, and tell me roughly how long the whole process usually takes?", "domain": "ood_legal"}
+{"prompt": "What does 'joint and several liability' mean, and how does it affect multiple defendants in a lawsuit?", "domain": "ood_legal"}
+{"prompt": "Draft a limitation of liability clause for a software licensing agreement that caps damages at the amount paid under the contract in the prior twelve months.", "domain": "ood_legal"}
+{"prompt": "What is 'due process'?", "domain": "ood_legal"}
+{"prompt": "What is the difference between \"tenancy in common\" and \"joint tenancy\" in property ownership, and how does each affect what happens when one owner dies?", "domain": "ood_legal"}
+{"prompt": "I'm reviewing a commercial lease and came across an 'indemnification clause.' Could you explain what this type of clause generally does, why landlords include it, and draft a short, balanced version that protects both the tenant and landlord fairly?", "domain": "ood_legal"}
+{"prompt": "Could you explain what 'consideration' means in contract law and why a contract needs it to be valid?", "domain": "ood_legal"}
+{"prompt": "How would you explain the concept of 'vicarious liability' to an employer wondering if they're responsible for an employee's actions?", "domain": "ood_legal"}
+{"prompt": "Could you draft a simple indemnification clause for a service agreement?", "domain": "ood_legal"}
+{"prompt": "How do 'exculpatory clauses' differ from 'limitation of liability clauses,' and which offers broader protection to the drafting party?", "domain": "ood_legal"}
+{"prompt": "Could you draft a simple non-solicitation clause for an employment agreement?", "domain": "ood_legal"}
+{"prompt": "Can you outline how to draft a clear payment terms clause that specifies deadlines and late fees?", "domain": "ood_legal"}
+{"prompt": "What is the difference between a 'condition precedent' and a 'condition subsequent' in a contract, and how does each affect when obligations kick in?", "domain": "ood_legal"}
+{"prompt": "What is a \"novation,\" how does it differ from a simple assignment of contract rights, and can you draft a short novation clause for a services agreement?", "domain": "ood_legal"}
+{"prompt": "Can you explain what 'breach of contract' means and what someone can do about it?", "domain": "ood_legal"}
+{"prompt": "Can you explain what 'champerty and maintenance' mean in the context of litigation funding?", "domain": "ood_legal"}
+{"prompt": "Can you explain the doctrine of 'ultra vires' and how it applies to actions taken by a corporation beyond its stated powers?", "domain": "ood_legal"}
+{"prompt": "Define 'force majeure.'", "domain": "ood_legal"}
+{"prompt": "Can you explain what 'power of attorney' means and the difference between a general power of attorney and a durable power of attorney?", "domain": "ood_legal"}
+{"prompt": "What's the difference between a felony and a misdemeanor?", "domain": "ood_legal"}
+{"prompt": "Could you explain what 'due diligence' means in the context of a business acquisition, what kinds of documents and risks are typically reviewed, and why skipping this step can be risky for a buyer?", "domain": "ood_legal"}
+{"prompt": "How would you explain the concept of 'burden of proof' and how it shifts between prosecution and defense in a criminal trial?", "domain": "ood_legal"}
+{"prompt": "What's the difference between a 'will' and a 'living trust' for estate planning, and what are the trade-offs in terms of cost, privacy, and probate?", "domain": "ood_legal"}
+{"prompt": "What is a 'power of attorney,' and what can someone do with it once they've been granted one?", "domain": "ood_legal"}
+{"prompt": "Can you explain what 'chain of custody' means in a criminal case?", "domain": "ood_legal"}
+{"prompt": "What is an 'implied warranty of merchantability,' and does it apply automatically when I buy a used car from a dealer?", "domain": "ood_legal"}
+{"prompt": "What does 'due process' mean, and how does it apply in both criminal and civil proceedings?", "domain": "ood_legal"}
+{"prompt": "Can you explain what happens during a 'deposition' in a lawsuit?", "domain": "ood_legal"}
+{"prompt": "What's the difference between a misdemeanor traffic ticket and a criminal citation?", "domain": "ood_legal"}
+{"prompt": "Can you explain what 'mens rea' means and why it matters in criminal cases?", "domain": "ood_legal"}
+{"prompt": "How does the statute of frauds affect the enforceability of oral agreements, and which categories of contracts typically fall under it?", "domain": "ood_legal"}
+{"prompt": "Can you explain what 'breach of fiduciary duty' means and give a plain-language example of when it occurs?", "domain": "ood_legal"}
+{"prompt": "Could you draft a simple arbitration clause for a small business contract?", "domain": "ood_legal"}
+{"prompt": "What's the plain-language version of what happens during an eviction process?", "domain": "ood_legal"}
+{"prompt": "I've been asked to sign a power of attorney for my elderly parent. Could you explain what powers this document typically grants, the difference between a general and a limited power of attorney, and what obligations the person receiving that power has?", "domain": "ood_legal"}
+{"prompt": "Can you explain 'equitable estoppel' and how it differs from promissory estoppel in terms of the elements a party must prove?", "domain": "ood_legal"}
+{"prompt": "How would you explain 'vicarious liability' to someone unfamiliar with legal terminology?", "domain": "ood_legal"}
+{"prompt": "Compare a \"unilateral contract\" and a \"bilateral contract,\" and explain how the timing of obligations differs between the two.", "domain": "ood_legal"}
+{"prompt": "What are the differences between federal court jurisdiction and state court jurisdiction, and how does a case end up in one versus the other?", "domain": "ood_legal"}
+{"prompt": "What is 'champerty,' and why has it historically been restricted in some legal systems?", "domain": "ood_legal"}
+{"prompt": "Explain 'garnishment.'", "domain": "ood_legal"}
+{"prompt": "If a lease says 'the tenant may not sublet the premises without the landlord's prior written consent,' what obligations does that place on the tenant?", "domain": "ood_legal"}
+{"prompt": "What does \"accord and satisfaction\" mean, and how can it be used to settle a disputed debt outside of litigation?", "domain": "ood_legal"}
+{"prompt": "Can you explain what 'landlord-tenant law' generally covers?", "domain": "ood_legal"}
+{"prompt": "Can you explain the difference between 'compensatory damages' and 'punitive damages'?", "domain": "ood_legal"}
+{"prompt": "Explain 'promissory estoppel' in plain terms.", "domain": "ood_legal"}
+{"prompt": "What does 'habeas corpus' mean in plain language?", "domain": "ood_legal"}
+{"prompt": "Can you draft a simple 'right of first refusal' clause and explain its practical effect?", "domain": "ood_legal"}
+{"prompt": "What is the difference between arbitration and mediation as methods of dispute resolution, what are the pros and cons of each for a small business, and could you draft a basic arbitration clause I could add to a vendor contract?", "domain": "ood_legal"}
+{"prompt": "What is a 'quia timet' injunction, and in what situations would someone seek one?", "domain": "ood_legal"}
+{"prompt": "What are the steps involved in filing a small claims lawsuit, from initial complaint to judgment?", "domain": "ood_legal"}
+{"prompt": "How does a fixed-term lease compare to a month-to-month lease in terms of tenant and landlord obligations?", "domain": "ood_legal"}
+{"prompt": "negligence", "domain": "ood_legal"}
+{"prompt": "How do I draft a dispute resolution clause that specifies mediation before litigation?", "domain": "ood_legal"}
+{"prompt": "What is the legal meaning of 'negligence,' and what four elements typically must be proven in a negligence lawsuit?", "domain": "ood_legal"}
+{"prompt": "Can you summarize in simple terms what a court decision on 'qualified immunity' actually protects government officials from?", "domain": "ood_legal"}
+{"prompt": "Can you explain what a 'non-compete clause' is and how it usually works?", "domain": "ood_legal"}
+{"prompt": "Draft a termination-for-convenience clause for a service agreement.", "domain": "ood_legal"}
+{"prompt": "Can you summarize what a court ruling on 'implied warranty of merchantability' generally means for consumers?", "domain": "ood_legal"}
+{"prompt": "What's a 'hold harmless' clause and why do contracts include them?", "domain": "ood_legal"}
+{"prompt": "Could you explain the difference between 'gross negligence' and ordinary negligence?", "domain": "ood_legal"}
+{"prompt": "Can you explain what a 'fiduciary duty' is and give examples of relationships where it commonly applies?", "domain": "ood_legal"}
+{"prompt": "What is 'promissory estoppel,' and in your opinion, should it be easier or harder for plaintiffs to prove?", "domain": "ood_legal"}
+{"prompt": "What is the legal doctrine of 'respondeat superior,' how does it allow an employer to be held liable for the actions of an employee, and what limitations exist on this form of vicarious liability?", "domain": "ood_legal"}
+{"prompt": "Could you explain the legal doctrine of 'res judicata' in plain language?", "domain": "ood_legal"}
+{"prompt": "Could you summarize what whistleblower protection laws generally cover, what kind of retaliation they typically prohibit, and what steps someone might need to take to qualify for that protection?", "domain": "ood_legal"}
+{"prompt": "Explain the doctrine of promissory estoppel and how courts apply it when a formal contract is absent, including the elements a plaintiff must prove.", "domain": "ood_legal"}
+{"prompt": "Can you explain what 'habeas corpus' means and why it's considered an important legal protection?", "domain": "ood_legal"}
+{"prompt": "What does 'piercing the corporate veil' mean, and what specific factors do courts typically look at before holding shareholders personally liable?", "domain": "ood_legal"}
+{"prompt": "Could you explain what a 'subpoena' is and what happens if someone ignores it?", "domain": "ood_legal"}
+{"prompt": "Please explain the doctrine of 'frustration of purpose' and how it can excuse contract performance.", "domain": "ood_legal"}
+{"prompt": "What does 'summary judgment' mean in civil procedure, what standard must a party meet to win a motion for summary judgment, and how is it different from winning at trial?", "domain": "ood_legal"}
+{"prompt": "What is the difference between a felony and a misdemeanor?", "domain": "ood_legal"}
+{"prompt": "What is the difference between joint and several liability versus several-only liability among co-defendants in a civil suit?", "domain": "ood_legal"}
+{"prompt": "Please explain the difference between a 'misdemeanor' and a 'felony,' including how classification affects potential penalties, and describe how this distinction can influence a person's civil rights after conviction.", "domain": "ood_legal"}
+{"prompt": "I'm starting a new job and my offer letter mentions I'll be an 'at-will employee.' What does that term actually mean, what rights do I still have as an at-will employee, and are there any common exceptions to at-will employment?", "domain": "ood_legal"}
+{"prompt": "Can you draft a basic confidentiality clause for a freelance web design contract between two small businesses?", "domain": "ood_legal"}
+{"prompt": "What do you recommend including in a liquidated damages clause to make sure it's enforceable rather than treated as a penalty?", "domain": "ood_legal"}
+{"prompt": "How would I go about drafting a simple renewal clause for a lease agreement?", "domain": "ood_legal"}
+{"prompt": "What does 'strict liability' mean, and in what types of cases does it typically apply?", "domain": "ood_legal"}
+{"prompt": "Explain what happens procedurally when someone files for bankruptcy under Chapter 7 versus Chapter 13, including who is eligible for each and what debts typically get discharged.", "domain": "ood_legal"}
+{"prompt": "What does the term 'breach of fiduciary duty' mean, who typically owes fiduciary duties in a business or trust relationship, and what remedies are available to a beneficiary if that duty is breached?", "domain": "ood_legal"}
+{"prompt": "What is a 'non-disclosure agreement,' and what are the key elements it should typically include?", "domain": "ood_legal"}
+{"prompt": "What does 'discovery' mean in civil litigation, and what are the main tools attorneys use, such as interrogatories, depositions, and requests for production?", "domain": "ood_legal"}
+{"prompt": "Could you summarize the holding and reasoning in Marbury v. Madison in plain language, and explain why it matters for judicial review today?", "domain": "ood_legal"}
+{"prompt": "What does 'at-will employment' mean, and what rights, if any, does an employee still have under it?", "domain": "ood_legal"}
+{"prompt": "What's the difference between being sued and being charged with a crime?", "domain": "ood_legal"}
+{"prompt": "What does 'due process' mean under the U.S. Constitution, how does procedural due process differ from substantive due process, and can you give a real-world example illustrating each?", "domain": "ood_legal"}
+{"prompt": "What does 'chain of custody' mean in criminal evidence procedure, and why is it critical to the admissibility of physical evidence?", "domain": "ood_legal"}
+{"prompt": "What is \"equitable subordination\" in bankruptcy law, and when might a court apply it to lower a creditor's claim priority?", "domain": "ood_legal"}
+{"prompt": "Can you summarize what the Americans with Disabilities Act generally requires employers to do for employees with disabilities, in plain language?", "domain": "ood_legal"}
+{"prompt": "What does the phrase 'without prejudice' mean when written at the top of a settlement letter?", "domain": "ood_legal"}
+{"prompt": "What's the difference between 'fraud' and 'negligent misrepresentation' in contract disputes, and how does the required proof differ between the two?", "domain": "ood_legal"}
+{"prompt": "I'm negotiating a business sale and need a simple representations and warranties clause. Can you draft one covering the seller's ownership of the business assets, and explain why such clauses are important to buyers?", "domain": "ood_legal"}
+{"prompt": "What is the difference between 'civil law' and 'criminal law,' and how do the burdens of proof differ between the two?", "domain": "ood_legal"}
+{"prompt": "What's an easy way to understand what 'double jeopardy' protects against?", "domain": "ood_legal"}
+{"prompt": "What does it mean if someone says a contract is 'void' versus 'voidable'?", "domain": "ood_legal"}
+{"prompt": "Can you explain the difference between \"in rem,\" \"in personam,\" and \"quasi in rem\" jurisdiction, with an example of each?", "domain": "ood_legal"}
+{"prompt": "How do 'exclusive' and 'non-exclusive' licensing agreements differ, and what are the advantages of each for a licensor?", "domain": "ood_legal"}
+{"prompt": "Compare \"community property\" and \"equitable distribution\" systems for dividing marital assets in a divorce.", "domain": "ood_legal"}
+{"prompt": "Can you summarize in plain language what a landmark case establishing the doctrine of 'promissory estoppel' actually decided?", "domain": "ood_legal"}
+{"prompt": "Summarize the holding in Marbury v. Madison in plain language and explain why it's considered foundational to judicial review in the United States.", "domain": "ood_legal"}
+{"prompt": "How would you summarize the statute of limitations rules for personal injury claims, including how the discovery rule can toll the clock?", "domain": "ood_legal"}
+{"prompt": "What is the difference between 'misdemeanor' and 'felony' charges, and how does this distinction affect potential penalties?", "domain": "ood_legal"}
+{"prompt": "How would you draft a termination for convenience clause that protects a client's ability to exit a services agreement without cause, while limiting exposure to damages?", "domain": "ood_legal"}
+{"prompt": "Can you explain 'adverse possession' and give your opinion on whether it's a fair legal doctrine for property disputes?", "domain": "ood_legal"}
+{"prompt": "Can you explain the difference between a 'lease' and a 'license' to use property, and why the distinction matters legally?", "domain": "ood_legal"}
+{"prompt": "What does it mean if a court 'dismisses with prejudice' versus 'without prejudice'?", "domain": "ood_legal"}
+{"prompt": "What does it mean when a court grants a party 'standing' to sue, what are the basic requirements for establishing standing, and why is this concept important as a gatekeeping mechanism in litigation?", "domain": "ood_legal"}
+{"prompt": "I keep seeing the term 'indemnification' in contracts I sign for freelance work. Could you explain what it means in plain English, how it differs from a simple liability waiver, and show me an example of a fair indemnification clause?", "domain": "ood_legal"}
+{"prompt": "Explain step by step what happens during jury selection in a criminal trial.", "domain": "ood_legal"}
+{"prompt": "What is the significance of the 'exclusionary rule' exception known as the 'good faith' exception, and how has it been applied in recent case law?", "domain": "ood_legal"}
+{"prompt": "Draft a non-compete clause for an employment contract.", "domain": "ood_legal"}
+{"prompt": "What is the legal significance of 'mens rea' in criminal law, how do courts distinguish between different levels of culpability such as intent, knowledge, recklessness, and negligence, and why does this matter for sentencing?", "domain": "ood_legal"}
+{"prompt": "Can you explain what 'emancipation of a minor' means legally and what steps are generally involved?", "domain": "ood_legal"}
+{"prompt": "What is 'vicarious liability,' and could you explain it using an example of an employee causing a car accident while making deliveries?", "domain": "ood_legal"}
+{"prompt": "What do you think is the best way to structure a non-compete clause so it's more likely to survive judicial scrutiny?", "domain": "ood_legal"}
+{"prompt": "Compare \"negotiable instruments\" like checks with ordinary contracts, focusing on how transferability and enforcement differ.", "domain": "ood_legal"}
+{"prompt": "Can you explain step by step how eviction proceedings typically work for a residential tenant?", "domain": "ood_legal"}
+{"prompt": "Would you recommend including a 'right of first refusal' clause in a shareholder agreement, and how does it work?", "domain": "ood_legal"}
+{"prompt": "Explain the concept of 'vicarious liability,' why employers can sometimes be held responsible for the actions of their employees, and outline the limits courts place on this doctrine.", "domain": "ood_legal"}
+{"prompt": "Can you explain what a 'restraining order' actually does?", "domain": "ood_legal"}
+{"prompt": "Can you explain what a 'class action lawsuit' is?", "domain": "ood_legal"}
+{"prompt": "Explain 'consideration' in contract law simply.", "domain": "ood_legal"}
+{"prompt": "How do I go about drafting a confidentiality clause that survives the termination of the main agreement?", "domain": "ood_legal"}
+{"prompt": "Can you summarize the core holding of Brown v. Board of Education in plain language and explain its lasting constitutional impact?", "domain": "ood_legal"}
+{"prompt": "How do I draft a simple indemnification clause for a freelance services contract?", "domain": "ood_legal"}
+{"prompt": "Draft a simple governing law and jurisdiction clause for an international sales contract, then explain in plain language what it means for where disputes must be resolved.", "domain": "ood_legal"}
+{"prompt": "Can you compare the advantages and disadvantages of a fixed-price contract versus a time-and-materials contract for a construction project?", "domain": "ood_legal"}
+{"prompt": "What is the difference between \"consideration\" and a \"gift\" in contract law, and why does the distinction determine enforceability?", "domain": "ood_legal"}
+{"prompt": "means and how it functions in the legal system.", "domain": "ood_legal"}
+{"prompt": "In your opinion, should a small business use a standard boilerplate contract template or hire a lawyer to draft custom terms?", "domain": "ood_legal"}
+{"prompt": "What is 'habeas corpus,' where does the concept come from historically, and how is it used today by people who believe they are being unlawfully detained?", "domain": "ood_legal"}
+{"prompt": "What is the difference between \"consequential damages\" and \"direct damages\" in a breach of contract claim, and can parties limit either by agreement?", "domain": "ood_legal"}
+{"prompt": "What is the difference between \"informed consent\" and simple \"consent\" in a medical or legal context, and why does the added requirement matter?", "domain": "ood_legal"}
+{"prompt": "What does the term 'material breach' mean, and how does it differ from a minor breach of contract?", "domain": "ood_legal"}
+{"prompt": "Please explain what 'collateral estoppel' means and how it differs from res judicata.", "domain": "ood_legal"}
+{"prompt": "Can you explain the trade-offs between settling a lawsuit versus proceeding to trial, from both a cost and risk perspective?", "domain": "ood_legal"}
+{"prompt": "What does 'promissory estoppel' mean, and how would someone use it if a friend promised to lend them money and then backed out after they relied on the promise?", "domain": "ood_legal"}
+{"prompt": "What is the difference between an \"independent contractor\" and an \"employee\" under the law, and why does misclassification create legal risk for a business?", "domain": "ood_legal"}
+{"prompt": "Can you compare 'at-will employment' with employment under a fixed-term contract, and explain the rights each gives an employer versus an employee?", "domain": "ood_legal"}
+{"prompt": "Explain 'statute of limitations.'", "domain": "ood_legal"}
+{"prompt": "What does 'liquidated damages' mean in a contract, how is it different from a penalty clause, and can you draft a sample liquidated damages provision for a construction contract?", "domain": "ood_legal"}
+{"prompt": "Can you explain the difference between compensatory damages and punitive damages, and when courts tend to award each?", "domain": "ood_legal"}
+{"prompt": "Walk me through how small business owners typically register a trademark for their brand name.", "domain": "ood_legal"}
+{"prompt": "What are the steps a plaintiff must take to prove negligence in a personal injury case?", "domain": "ood_legal"}
+{"prompt": "estoppel", "domain": "ood_legal"}
+{"prompt": "Can you explain what 'garnishment of wages' means and under what circumstances a creditor might be able to do this?", "domain": "ood_legal"}
+{"prompt": "What is the purpose of 'Miranda rights,' and when exactly do police have to read them to someone?", "domain": "ood_legal"}

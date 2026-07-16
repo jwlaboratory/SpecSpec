@@ -1,0 +1,439 @@
+{
+  "splits": {
+    "train": 800,
+    "val": 100,
+    "test": 100
+  },
+  "model": "claude-sonnet-5",
+  "seed": 1234,
+  "domains": [
+    {
+      "domain": "lang_spanish",
+      "status": "skipped",
+      "total": 1000,
+      "train": 800,
+      "val": 100,
+      "test": 100
+    },
+    {
+      "domain": "lang_english",
+      "status": "skipped",
+      "total": 1000,
+      "train": 800,
+      "val": 100,
+      "test": 100
+    },
+    {
+      "domain": "lang_german",
+      "status": "skipped",
+      "total": 1000,
+      "train": 800,
+      "val": 100,
+      "test": 100
+    },
+    {
+      "domain": "lang_french",
+      "status": "skipped",
+      "total": 1000,
+      "train": 800,
+      "val": 100,
+      "test": 100
+    },
+    {
+      "domain": "lang_portuguese",
+      "status": "skipped",
+      "total": 1000,
+      "train": 800,
+      "val": 100,
+      "test": 100
+    },
+    {
+      "domain": "lang_chinese",
+      "status": "skipped",
+      "total": 1000,
+      "train": 800,
+      "val": 100,
+      "test": 100
+    },
+    {
+      "domain": "lang_japanese",
+      "status": "skipped",
+      "total": 1000,
+      "train": 800,
+      "val": 100,
+      "test": 100
+    },
+    {
+      "domain": "lang_hindi",
+      "status": "skipped",
+      "total": 1000,
+      "train": 800,
+      "val": 100,
+      "test": 100
+    },
+    {
+      "domain": "lang_russian",
+      "status": "skipped",
+      "total": 1000,
+      "train": 800,
+      "val": 100,
+      "test": 100
+    },
+    {
+      "domain": "lang_arabic",
+      "status": "skipped",
+      "total": 1000,
+      "train": 800,
+      "val": 100,
+      "test": 100
+    },
+    {
+      "domain": "lang_italian",
+      "status": "skipped",
+      "total": 1000,
+      "train": 800,
+      "val": 100,
+      "test": 100
+    },
+    {
+      "domain": "lang_korean",
+      "status": "skipped",
+      "total": 1000,
+      "train": 800,
+      "val": 100,
+      "test": 100
+    },
+    {
+      "domain": "lang_turkish",
+      "status": "skipped",
+      "total": 1000,
+      "train": 800,
+      "val": 100,
+      "test": 100
+    },
+    {
+      "domain": "lang_vietnamese",
+      "status": "skipped",
+      "total": 1000,
+      "train": 800,
+      "val": 100,
+      "test": 100
+    },
+    {
+      "domain": "lang_polish",
+      "status": "skipped",
+      "total": 1000,
+      "train": 800,
+      "val": 100,
+      "test": 100
+    },
+    {
+      "domain": "lang_swahili",
+      "status": "skipped",
+      "total": 1000,
+      "train": 800,
+      "val": 100,
+      "test": 100
+    },
+    {
+      "domain": "code_sql",
+      "status": "skipped",
+      "total": 1000,
+      "train": 800,
+      "val": 100,
+      "test": 100
+    },
+    {
+      "domain": "code_python",
+      "status": "skipped",
+      "total": 1000,
+      "train": 800,
+      "val": 100,
+      "test": 100
+    },
+    {
+      "domain": "code_javascript",
+      "status": "skipped",
+      "total": 1000,
+      "train": 800,
+      "val": 100,
+      "test": 100
+    },
+    {
+      "domain": "code_cpp",
+      "status": "skipped",
+      "total": 1000,
+      "train": 800,
+      "val": 100,
+      "test": 100
+    },
+    {
+      "domain": "code_ruby",
+      "status": "skipped",
+      "total": 1000,
+      "train": 800,
+      "val": 100,
+      "test": 100
+    },
+    {
+      "domain": "code_rust",
+      "status": "skipped",
+      "total": 1000,
+      "train": 800,
+      "val": 100,
+      "test": 100
+    },
+    {
+      "domain": "code_bash",
+      "status": "skipped",
+      "total": 1000,
+      "train": 800,
+      "val": 100,
+      "test": 100
+    },
+    {
+      "domain": "code_go",
+      "status": "skipped",
+      "total": 1000,
+      "train": 800,
+      "val": 100,
+      "test": 100
+    },
+    {
+      "domain": "code_c",
+      "status": "skipped",
+      "total": 1000,
+      "train": 800,
+      "val": 100,
+      "test": 100
+    },
+    {
+      "domain": "code_java",
+      "status": "skipped",
+      "total": 1000,
+      "train": 800,
+      "val": 100,
+      "test": 100
+    },
+    {
+      "domain": "code_typescript",
+      "status": "skipped",
+      "total": 1000,
+      "train": 800,
+      "val": 100,
+      "test": 100
+    },
+    {
+      "domain": "code_r",
+      "status": "generated",
+      "seeded": 0,
+      "collected": 1008,
+      "train": 800,
+      "val": 100,
+      "test": 100
+    },
+    {
+      "domain": "code_swift",
+      "status": "generated",
+      "seeded": 0,
+      "collected": 1002,
+      "train": 800,
+      "val": 100,
+      "test": 100
+    },
+    {
+      "domain": "code_haskell",
+      "status": "generated",
+      "seeded": 0,
+      "collected": 1007,
+      "train": 800,
+      "val": 100,
+      "test": 100
+    },
+    {
+      "domain": "code_kotlin",
+      "status": "generated",
+      "seeded": 0,
+      "collected": 1009,
+      "train": 800,
+      "val": 100,
+      "test": 100
+    },
+    {
+      "domain": "task_question_answering",
+      "status": "generated",
+      "seeded": 100,
+      "collected": 1002,
+      "train": 800,
+      "val": 100,
+      "test": 100
+    },
+    {
+      "domain": "task_summarization",
+      "status": "generated",
+      "seeded": 100,
+      "collected": 1005,
+      "train": 800,
+      "val": 100,
+      "test": 100
+    },
+    {
+      "domain": "task_creative_writing",
+      "status": "generated",
+      "seeded": 100,
+      "collected": 1006,
+      "train": 800,
+      "val": 100,
+      "test": 100
+    },
+    {
+      "domain": "task_translation",
+      "status": "generated",
+      "seeded": 100,
+      "collected": 1005,
+      "train": 800,
+      "val": 100,
+      "test": 100
+    },
+    {
+      "domain": "task_json_extraction",
+      "status": "generated",
+      "seeded": 100,
+      "collected": 1004,
+      "train": 800,
+      "val": 100,
+      "test": 100
+    },
+    {
+      "domain": "task_email_writing",
+      "status": "generated",
+      "seeded": 100,
+      "collected": 1005,
+      "train": 800,
+      "val": 100,
+      "test": 100
+    },
+    {
+      "domain": "task_tabular_data",
+      "status": "skipped",
+      "total": 1000,
+      "train": 800,
+      "val": 100,
+      "test": 100
+    },
+    {
+      "domain": "task_roleplay_chat",
+      "status": "generated",
+      "seeded": 100,
+      "collected": 1005,
+      "train": 800,
+      "val": 100,
+      "test": 100
+    },
+    {
+      "domain": "task_math_reasoning",
+      "status": "generated",
+      "seeded": 100,
+      "collected": 1002,
+      "train": 800,
+      "val": 100,
+      "test": 100
+    },
+    {
+      "domain": "ood_financial",
+      "status": "skipped",
+      "total": 1000,
+      "train": 800,
+      "val": 100,
+      "test": 100
+    },
+    {
+      "domain": "ood_legal",
+      "status": "skipped",
+      "total": 1000,
+      "train": 800,
+      "val": 100,
+      "test": 100
+    },
+    {
+      "domain": "ood_customer_support",
+      "status": "skipped",
+      "total": 1000,
+      "train": 800,
+      "val": 100,
+      "test": 100
+    },
+    {
+      "domain": "task_data_generation",
+      "status": "generated",
+      "seeded": 0,
+      "collected": 1005,
+      "train": 800,
+      "val": 100,
+      "test": 100
+    },
+    {
+      "domain": "ood_medical",
+      "status": "generated",
+      "seeded": 0,
+      "collected": 1005,
+      "train": 800,
+      "val": 100,
+      "test": 100
+    },
+    {
+      "domain": "task_logic_reasoning",
+      "status": "generated",
+      "seeded": 100,
+      "collected": 1005,
+      "train": 800,
+      "val": 100,
+      "test": 100
+    },
+    {
+      "domain": "ood_chemistry",
+      "status": "generated",
+      "seeded": 0,
+      "collected": 1005,
+      "train": 800,
+      "val": 100,
+      "test": 100
+    },
+    {
+      "domain": "ood_shell",
+      "status": "generated",
+      "seeded": 0,
+      "collected": 1005,
+      "train": 800,
+      "val": 100,
+      "test": 100
+    },
+    {
+      "domain": "ood_ascii_art",
+      "status": "generated",
+      "seeded": 0,
+      "collected": 1006,
+      "train": 800,
+      "val": 100,
+      "test": 100
+    },
+    {
+      "domain": "ood_regex",
+      "status": "generated",
+      "seeded": 0,
+      "collected": 1005,
+      "train": 800,
+      "val": 100,
+      "test": 100
+    },
+    {
+      "domain": "ood_poetry",
+      "status": "generated",
+      "seeded": 0,
+      "collected": 1004,
+      "train": 800,
+      "val": 100,
+      "test": 100
+    }
+  ]
+}

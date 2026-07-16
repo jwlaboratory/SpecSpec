@@ -1,0 +1,100 @@
+{"prompt": "I have a memory leak in my Node.js app from event listeners that aren't removed. Can you walk me through diagnosing and fixing it?", "domain": "code_javascript"}
+{"prompt": "Explain the difference between call, apply, and bind with practical examples, and show a scenario where forgetting to bind 'this' inside a class method causes a bug.", "domain": "code_javascript"}
+{"prompt": "Explain the event loop in one paragraph.", "domain": "code_javascript"}
+{"prompt": "Explain what a closure is and write an example of a counter factory function that uses one.", "domain": "code_javascript"}
+{"prompt": "Can you explain how JavaScript's garbage collector generally works, particularly mark-and-sweep, and why closures can sometimes prevent variables from being collected even when they seem out of scope?", "domain": "code_javascript"}
+{"prompt": "how do I deep clone an object in JS without using a library?", "domain": "code_javascript"}
+{"prompt": "Should I use TypeScript for a small internal JavaScript tool or is that overkill? Give me your honest recommendation.", "domain": "code_javascript"}
+{"prompt": "Can you optimize this function that checks for duplicate values in a large array? It's currently O(n^2):\nfunction hasDuplicates(arr){ for(let i=0;i<arr.length;i++){ for(let j=i+1;j<arr.length;j++){ if(arr[i]===arr[j]) return true; } } return false; }", "domain": "code_javascript"}
+{"prompt": "What's wrong with this recursive function? It stack overflows.\n\nfunction fact(n){ return n*fact(n-1); }", "domain": "code_javascript"}
+{"prompt": "Compare using CSS-in-JS libraries versus plain CSS modules from a JavaScript bundling and runtime performance perspective.", "domain": "code_javascript"}
+{"prompt": "I've got a for loop that's super slow on big arrays, can you help me speed it up without changing the output", "domain": "code_javascript"}
+{"prompt": "Explain the module pattern in JavaScript.", "domain": "code_javascript"}
+{"prompt": "Give me a step-by-step walkthrough of implementing a basic router for a single-page app using the History API.", "domain": "code_javascript"}
+{"prompt": "Write a WeakMap-based private field implementation for a class before native private fields (#field) existed, and explain why WeakMap was chosen over a regular Map.", "domain": "code_javascript"}
+{"prompt": "In JavaScript, write a function that finds the second largest element in an array and explain its time complexity.", "domain": "code_javascript"}
+{"prompt": "What's the difference between == and === in JavaScript? Can you give some examples where they behave differently?", "domain": "code_javascript"}
+{"prompt": "explain hoisting in one paragraph", "domain": "code_javascript"}
+{"prompt": "Write clean, idiomatic JavaScript that counts set bits in an integer.", "domain": "code_javascript"}
+{"prompt": "Which pattern do you prefer for handling errors in async functions — try/catch everywhere or a centralized error wrapper utility?", "domain": "code_javascript"}
+{"prompt": "can you refactor this to use async/await instead of .then chains? fetch(url).then(res => res.json()).then(data => console.log(data)).catch(err => console.error(err));", "domain": "code_javascript"}
+{"prompt": "Can you explain closures using a counter factory function example, and why each counter instance keeps its own state?", "domain": "code_javascript"}
+{"prompt": "Step by step, guide me through implementing a simple observer pattern for a shopping cart that notifies subscribers when items change.", "domain": "code_javascript"}
+{"prompt": "Compare using Promise.all versus Promise.allSettled when fetching data from multiple third-party APIs where some might fail.", "domain": "code_javascript"}
+{"prompt": "In JavaScript, write a function that finds all pairs in an array that sum to a target and explain its time complexity.", "domain": "code_javascript"}
+{"prompt": "my array sort isn't working right for numbers, can you tell me why? [10, 1, 21, 2].sort()", "domain": "code_javascript"}
+{"prompt": "I need a debounce and a throttle function written from scratch without any libraries, with clear comments explaining the difference between them, plus a short example of when you'd use each one in a real UI scenario like a search box or a scroll handler.", "domain": "code_javascript"}
+{"prompt": "Write a JavaScript function that finds all pairs in an array that sum to a target. Include a short comment explaining the approach.", "domain": "code_javascript"}
+{"prompt": "Walk me through, step by step, how to implement a debounce function in vanilla JavaScript and explain why the trailing-edge call matters.", "domain": "code_javascript"}
+{"prompt": "Can you show me a basic example of using try/catch to handle an error when parsing invalid JSON?", "domain": "code_javascript"}
+{"prompt": "Write clean, idiomatic JavaScript that computes the Hamming distance between two equal-length strings.", "domain": "code_javascript"}
+{"prompt": "Explain why 'use strict' matters.", "domain": "code_javascript"}
+{"prompt": "Compare recursive versus iterative implementations of a factorial function in JavaScript in terms of performance and stack safety.", "domain": "code_javascript"}
+{"prompt": "Write a JavaScript function that groups anagrams together from a list of words. Include a short comment explaining the approach.", "domain": "code_javascript"}
+{"prompt": "explain what event delegation is and show a small example with a list of buttons", "domain": "code_javascript"}
+{"prompt": "Can you add comprehensive Jest tests for this utility function, covering edge cases like empty arrays and negative numbers? function sum(arr){ return arr.reduce((a,b)=>a+b,0); }", "domain": "code_javascript"}
+{"prompt": "Step by step, show me how to implement a simple rate limiter in Node.js using a sliding window algorithm.", "domain": "code_javascript"}
+{"prompt": "Should I debounce or throttle a scroll event handler that updates a sticky header's style? Explain the difference and which fits better here.", "domain": "code_javascript"}
+{"prompt": "I'm choosing between class-based components and functional components with hooks for a legacy React codebase migration. What trade-offs should guide this?", "domain": "code_javascript"}
+{"prompt": "Write a function that performs a stable topological sort on a dependency graph represented as an adjacency list.", "domain": "code_javascript"}
+{"prompt": "Write a function that implements a simple state machine using a plain object mapping states to allowed transitions.", "domain": "code_javascript"}
+{"prompt": "Do you think it's a good idea to use `Array.isArray()` checks everywhere defensively, or is that a sign of deeper type issues?", "domain": "code_javascript"}
+{"prompt": "Write a function that takes a string and returns true if it's a palindrome, ignoring case and spaces.", "domain": "code_javascript"}
+{"prompt": "write a quicksort in JS", "domain": "code_javascript"}
+{"prompt": "Can you review this code for potential memory leaks in a long-running Node.js server, given it adds an event listener on every request?\n\napp.get('/data', (req, res) => { emitter.on('update', () => res.send('updated')); });", "domain": "code_javascript"}
+{"prompt": "Can you explain step by step why this code logs 'undefined' instead of the expected value? const obj = { name: 'Alex', greet(){ setTimeout(function(){ console.log(this.name); }, 100); } }; obj.greet();", "domain": "code_javascript"}
+{"prompt": "Can you explain what a WeakRef is in JavaScript and give a realistic use case where FinalizationRegistry would also be relevant?", "domain": "code_javascript"}
+{"prompt": "Explain the difference between microtasks created by async/await versus those created by .then() chaining, and whether ordering ever differs.", "domain": "code_javascript"}
+{"prompt": "write me a function that deep clones an object, handling arrays and nested objects too", "domain": "code_javascript"}
+{"prompt": "What's the difference between var, let, and const in terms of scoping and hoisting? Show an example where using var in a loop causes a bug.", "domain": "code_javascript"}
+{"prompt": "Fix this off-by-one error in my for loop.", "domain": "code_javascript"}
+{"prompt": "Write a JavaScript utility function to deep freeze an object recursively so that nested properties also become immutable, and explain the limitations of Object.freeze when used on its own.", "domain": "code_javascript"}
+{"prompt": "Can you explain the difference between let, const, and var with a simple example for each?", "domain": "code_javascript"}
+{"prompt": "Can you show me how to convert a string to a number in JavaScript, and explain the difference between parseInt and Number()?", "domain": "code_javascript"}
+{"prompt": "Do you think using `Array.prototype.reduce` for everything makes code less readable, even when it's technically more elegant?", "domain": "code_javascript"}
+{"prompt": "Help me refactor this function to use optional chaining and nullish coalescing instead of manual checks, explaining each change. function getCity(user){ if(user && user.address && user.address.city){ return user.address.city; } else { return 'Unknown'; } }", "domain": "code_javascript"}
+{"prompt": "What's the difference between using Object.freeze and a Proxy to enforce immutability, and when would you pick one over the other?", "domain": "code_javascript"}
+{"prompt": "Do you recommend polyfilling modern JavaScript features for older browser support, or is it time to just drop legacy browser compatibility?", "domain": "code_javascript"}
+{"prompt": "Can you show me step by step how to implement a simple retry-with-backoff wrapper around a fetch call that fails intermittently?", "domain": "code_javascript"}
+{"prompt": "can you write me a quick function to flatten a deeply nested array without using the built-in flat method", "domain": "code_javascript"}
+{"prompt": "can you add some Jest tests for a function called isEven(n)", "domain": "code_javascript"}
+{"prompt": "write a function that groups an array of objects by a given key", "domain": "code_javascript"}
+{"prompt": "Compare setTimeout-based polling versus using a WebSocket connection for real-time updates in a dashboard app. What are the pros and cons of each?", "domain": "code_javascript"}
+{"prompt": "Walk me through, step by step, how to implement a simple state machine in JavaScript for handling traffic light transitions.", "domain": "code_javascript"}
+{"prompt": "i need a function that flattens a deeply nested array without using Array.flat()", "domain": "code_javascript"}
+{"prompt": "What does the '??' operator do?", "domain": "code_javascript"}
+{"prompt": "Implement a basic LRU cache in JavaScript.", "domain": "code_javascript"}
+{"prompt": "write a small utility that deep merges two objects", "domain": "code_javascript"}
+{"prompt": "How do I remove duplicate values from an array in JavaScript? Can you show a simple approach?", "domain": "code_javascript"}
+{"prompt": "I'm seeing 'Maximum call stack size exceeded' in this recursive Ackermann-like function, can you explain why and suggest a trampoline-based fix?", "domain": "code_javascript"}
+{"prompt": "Step by step, guide me through writing a function that parses a CSV string into an array of objects without using any external library.", "domain": "code_javascript"}
+{"prompt": "Can you walk me through writing a function that deep clones an object, including handling nested arrays, dates, and circular references?", "domain": "code_javascript"}
+{"prompt": "this fetch call isn't handling errors properly, can you fix it? fetch(url).then(res => res.json()).then(data => console.log(data))", "domain": "code_javascript"}
+{"prompt": "What are the trade-offs between throwing custom Error subclasses versus attaching an error code property to a plain Error instance?", "domain": "code_javascript"}
+{"prompt": "Can you implement a simple LRU cache class in JavaScript using a Map for O(1) get and put operations?", "domain": "code_javascript"}
+{"prompt": "Walk me through step by step how to implement a simple observer pattern in JavaScript for a stock price tracker.", "domain": "code_javascript"}
+{"prompt": "Explain what happens internally when you use the spread operator to copy an array versus using slice(), specifically around shallow vs deep copying.", "domain": "code_javascript"}
+{"prompt": "write a throttle function from scratch", "domain": "code_javascript"}
+{"prompt": "Do you think memoization with something like `useMemo` is overused in React, or genuinely necessary for performance in most components?", "domain": "code_javascript"}
+{"prompt": "Do you recommend using Object.freeze for immutability in JavaScript, or is that more trouble than it's worth?", "domain": "code_javascript"}
+{"prompt": "Compare using Object.freeze for immutability versus a library like Immer for managing immutable state updates.", "domain": "code_javascript"}
+{"prompt": "Write clean, idiomatic JavaScript that converts a Roman numeral to an integer.", "domain": "code_javascript"}
+{"prompt": "I'm trying to decide between throwing custom Error subclasses or returning error objects from functions — what's better practice?", "domain": "code_javascript"}
+{"prompt": "Which do you think scales better for a growing codebase — a single large utils.js file or many small utility modules?", "domain": "code_javascript"}
+{"prompt": "Explain, step by step, how prototypal inheritance works in this snippet and what happens when I add a method to Animal.prototype after creating instances. function Animal(name){ this.name=name; } Animal.prototype.speak=function(){ console.log(this.name+' makes a noise.'); };", "domain": "code_javascript"}
+{"prompt": "Explain this regex: /^\\d{3}-\\d{2}-\\d{4}$/", "domain": "code_javascript"}
+{"prompt": "Write a function that implements LRU cache with get and put operations in O(1) time using a Map.", "domain": "code_javascript"}
+{"prompt": "this loop is running way slower than I expected, any idea how to speed it up? for(let i=0;i<arr.length;i++){ result.push(arr.indexOf(arr[i])); }", "domain": "code_javascript"}
+{"prompt": "How would I implement infinite scrolling in vanilla JavaScript using the Intersection Observer API?", "domain": "code_javascript"}
+{"prompt": "What are the trade-offs between using async/await versus raw Promise chains for handling sequential API calls in a Node.js backend?", "domain": "code_javascript"}
+{"prompt": "What are the trade-offs between server-side rendering and client-side rendering for a JavaScript e-commerce storefront?", "domain": "code_javascript"}
+{"prompt": "Write a function using the Web Crypto API to hash a password with SHA-256 and return a hex string.", "domain": "code_javascript"}
+{"prompt": "Implement, in JavaScript, code that implements a basic retry-with-backoff helper. Add a couple of example calls.", "domain": "code_javascript"}
+{"prompt": "I need to choose between setTimeout polling and using an event emitter for a status update feature — what would you suggest?", "domain": "code_javascript"}
+{"prompt": "Step by step, show me how to implement a simple template engine that replaces {{placeholders}} in a string with values from an object.", "domain": "code_javascript"}
+{"prompt": "I'm torn between using Array.prototype.reduce and a plain for loop to aggregate values from a large array. What are the readability versus performance trade-offs?", "domain": "code_javascript"}
+{"prompt": "What's your take on writing utility one-liners with the comma operator in JavaScript, like `for(let i=0,j=arr.length-1;i<j;i++,j--)` — clever or confusing?", "domain": "code_javascript"}
+{"prompt": "What's your honest opinion on using TypeScript versus JSDoc comments for type safety in a small JavaScript library?", "domain": "code_javascript"}
+{"prompt": "I have this Proxy trap setup and 'has' isn't firing as expected, can you spot the bug?\nconst p = new Proxy(obj, { get(t, k) { return t[k]; } });", "domain": "code_javascript"}
+{"prompt": "My drag-and-drop implementation using native HTML5 drag events fires dragend before the drop handler completes its async fetch call. How do I sequence this correctly?", "domain": "code_javascript"}
+{"prompt": "I keep getting 'Cannot read properties of undefined' when accessing a nested object property. Can you explain why this happens and how to avoid it?\n\nconst user = {};\nconsole.log(user.address.city);", "domain": "code_javascript"}

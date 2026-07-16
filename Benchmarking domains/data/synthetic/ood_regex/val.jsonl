@@ -1,0 +1,100 @@
+{"prompt": "I'm getting unexpected matches with this regex meant to find whole words 'cat' but not 'category' or 'concatenate' — \\bcat\\b — can you explain why it's still matching inside those words in my JavaScript test?", "domain": "ood_regex"}
+{"prompt": "What is the difference between using * and + in a regex? Can you show an example with the pattern a*b versus a+b?", "domain": "ood_regex"}
+{"prompt": "Write a regex to extract Slack-style user mentions like <@U12345> from a message string.", "domain": "ood_regex"}
+{"prompt": "Explain what this regex does: (\\d{3})-(\\d{3})-(\\d{4}) when applied to extracting groups from phone numbers, and tell me if you'd recommend adding named groups instead.", "domain": "ood_regex"}
+{"prompt": "Write a regex to validate credit card numbers for Visa (starting with 4, 16 digits) and Mastercard (starting with 51-55, 16 digits).", "domain": "ood_regex"}
+{"prompt": "I want to extract all the key-value pairs from a query string like 'name=John+Doe&age=30&city=New%20York' using a regex with named groups for key and value. Write the pattern, explain how it handles URL-encoded spaces, and show me the matches for that string.", "domain": "ood_regex"}
+{"prompt": "What's wrong with ^https?://.*$ for matching URLs?", "domain": "ood_regex"}
+{"prompt": "How can I test a URL-matching regex against a batch of strings to see which ones pass and which fail, and what tool or method would you recommend?", "domain": "ood_regex"}
+{"prompt": "Explain the difference between possessive quantifiers and greedy quantifiers, ideally with an example like a++ versus a+.", "domain": "ood_regex"}
+{"prompt": "how do i capture the username part before the @ symbol in an email address using regex", "domain": "ood_regex"}
+{"prompt": "Regex to validate a strong password with at least one symbol.", "domain": "ood_regex"}
+{"prompt": "What does this regex do: (?<!\\d)\\d{4}(?!\\d) — I think it isolates exactly four-digit numbers not part of a longer number.", "domain": "ood_regex"}
+{"prompt": "Debug why this regex for stripping HTML tags is failing on self-closing tags: <([a-z]+)>.*?<\\/\\1> — I need it to also handle tags like <br/> and <img src='x'/>.", "domain": "ood_regex"}
+{"prompt": "Can you explain step by step what this regex does: ^(?=.*[A-Z])(?=.*\\d)[A-Za-z\\d]{8,}$?", "domain": "ood_regex"}
+{"prompt": "I need to validate a strong username format that must start with a letter, be 3 to 16 characters long, and allow letters, digits, underscores, and hyphens but no consecutive special characters.", "domain": "ood_regex"}
+{"prompt": "Write a regex to detect and extract all #TODO or #FIXME comments along with any trailing note from a source file, such as '// #TODO: refactor this function later'.", "domain": "ood_regex"}
+{"prompt": "Write a regex to detect leap year dates in the format DD/MM/YYYY, ensuring February 29 is only valid on leap years.", "domain": "ood_regex"}
+{"prompt": "Can you explain what this multiline regex with the /s and /m flags does when applied to a log file, and why removing the /s flag breaks it: /^\\[ERROR\\].*?(?=\\n\\[|\\z)/sm", "domain": "ood_regex"}
+{"prompt": "Test if 'foo@bar..com' passes this email regex: ^\\S+@\\S+\\.\\S+$", "domain": "ood_regex"}
+{"prompt": "What does this regex actually do: ^(?=.*[A-Z])(?=.*[a-z])(?=.*\\d)(?=.*[@$!%*#?&])[A-Za-z\\d@$!%*#?&]{8,}$? I think it's for password validation but I don't understand the lookaheads. Walk me through each part and tell me if the password 'Passw0rd!' would pass and why 'password123' would fail.", "domain": "ood_regex"}
+{"prompt": "What does this regex mean: (?:(?!foo).)*bar — please break down each token and its purpose.", "domain": "ood_regex"}
+{"prompt": "Can you test this regex against the string 'user+tag@sub.domain.co.uk' and tell me if it correctly validates it as an email: ^[\\w.+-]+@[\\w-]+\\.[a-zA-Z]{2,}$", "domain": "ood_regex"}
+{"prompt": "what's the deal with this regex not matching international numbers like +44 20 7946 0958?", "domain": "ood_regex"}
+{"prompt": "Regex for hex color codes like #FF00AA.", "domain": "ood_regex"}
+{"prompt": "Write a regex to match all valid hexadecimal color codes, including both 3-digit shorthand like '#fff' and 6-digit forms like '#a1b2c3', explain the difference in matching logic for each length, and test it against '#12345', '#GGGGGG', and '#abc'.", "domain": "ood_regex"}
+{"prompt": "Write a regex to validate US phone numbers in formats like '(555) 123-4567', '555-123-4567', and '555.123.4567'.", "domain": "ood_regex"}
+{"prompt": "can you explain the difference between .* and .*? in a regex with an example", "domain": "ood_regex"}
+{"prompt": "I want to check if a string is a valid slug like 'my-blog-post-title' with only lowercase letters, numbers, and dashes", "domain": "ood_regex"}
+{"prompt": "For validating IPv6 addresses, is it realistic to write a full regex covering all valid forms, or is it better to use a library function? Discuss the complexity trade-off.", "domain": "ood_regex"}
+{"prompt": "Write a regex to extract all hashtags from a block of social media text, making sure it doesn't accidentally match hex color codes like #ff5733 or markdown headers like ### Title.", "domain": "ood_regex"}
+{"prompt": "Can you explain what a negative lookahead is using this example: \\d+(?!px) matching numbers not immediately followed by 'px'?", "domain": "ood_regex"}
+{"prompt": "can you write a regex to match dates in either MM/DD/YYYY or DD-MM-YYYY format", "domain": "ood_regex"}
+{"prompt": "Explain why this regex intended to strip comments from code fails on nested block comments and edge cases with strings containing comment-like syntax: /\\/\\*.*?\\*\\//gs", "domain": "ood_regex"}
+{"prompt": "I have this regex for matching valid variable names in a programming language: ^[a-zA-Z_]\\w*$, but I need to extend it to also reject reserved keywords like 'if', 'else', 'while', and 'for' even though they technically match the character pattern. How would I incorporate that exclusion into the regex itself using a negative lookahead, and can you show the final pattern along with a test against the strings 'myVar', 'if', and '_temp123'?", "domain": "ood_regex"}
+{"prompt": "Can you write a regex that matches valid IPv6 addresses including compressed notation with double colons, like 2001:db8::8a2e:370:7334?", "domain": "ood_regex"}
+{"prompt": "Write a regex to validate that a string is a syntactically plausible cron expression with five space-separated fields, and explain the limitations of validating cron syntax this way versus semantically.", "domain": "ood_regex"}
+{"prompt": "what's the simplest way to match a string that starts with 'IMG_' followed by numbers and ends in .jpg or .png?", "domain": "ood_regex"}
+{"prompt": "can you write a regex to find all the words that start with a capital letter in a paragraph?", "domain": "ood_regex"}
+{"prompt": "Show me step by step how to write and test a regex that captures the file extension from a filename, including edge cases like 'archive.tar.gz'.", "domain": "ood_regex"}
+{"prompt": "Can you show me step by step how to test a regex against a list of sample strings and identify which ones don't match, using something like Python's re module?", "domain": "ood_regex"}
+{"prompt": "Regex to match a valid email but reject double dots like 'a..b@x.com'", "domain": "ood_regex"}
+{"prompt": "Which is more efficient for matching balanced parentheses-free text: a regex with negative lookaheads or splitting the string manually in code? Explain the trade-offs for a string like 'func(a, b, c)'.", "domain": "ood_regex"}
+{"prompt": "Write a regex to extract the domain name from a URL like 'https://sub.example.co.uk/page?query=1'.", "domain": "ood_regex"}
+{"prompt": "Can you help me write a regex to match a simple username that only contains letters and numbers, no spaces?", "domain": "ood_regex"}
+{"prompt": "What exactly does this regex do, and why does it have so many nested non-capturing groups: (?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)", "domain": "ood_regex"}
+{"prompt": "Can you walk me through writing a regex that extracts all hashtags from a tweet like 'Loving #regex and #python today!'?", "domain": "ood_regex"}
+{"prompt": "My phone number regex ^\\+?\\d{10,13}$ rejects numbers with spaces or dashes like +1 555-123-4567. How should I fix it step by step?", "domain": "ood_regex"}
+{"prompt": "Regex to validate a MAC address like 00:1A:2B:3C:4D:5E.", "domain": "ood_regex"}
+{"prompt": "Here's my regex for matching credit card numbers: ^\\d{4}-\\d{4}-\\d{4}-\\d{4}$ — do you think it's a good idea to validate credit cards this strictly with regex, or should I use a library instead?", "domain": "ood_regex"}
+{"prompt": "What does this regex do: (?!.*\\s).{8,} — I think it enforces no whitespace and minimum length but want to confirm.", "domain": "ood_regex"}
+{"prompt": "Write a regex to match strings that contain balanced parentheses up to one level deep, like '(hello (world))'.", "domain": "ood_regex"}
+{"prompt": "Write a regex to extract all quoted strings from source code, including escaped quotes, like in the line: message = \"He said \\\"hello\\\" to me\";", "domain": "ood_regex"}
+{"prompt": "Should I anchor my regex for validating usernames with ^ and $ or rely on \\b word boundaries instead, and how does that choice change behavior on multiline input?", "domain": "ood_regex"}
+{"prompt": "What's wrong with this regex: ^https?://[a-z]+$", "domain": "ood_regex"}
+{"prompt": "I need a regex to validate credit card numbers for Visa, Mastercard, and Amex based on their prefix and length rules — can you write one with alternation for each card type?", "domain": "ood_regex"}
+{"prompt": "what does this regex even do: (?<=\\$)\\d+(\\.\\d{2})?", "domain": "ood_regex"}
+{"prompt": "Explain why 'test@.com' passes this regex: ^.+@.+$", "domain": "ood_regex"}
+{"prompt": "I need to validate a MAC address in formats using either colons or hyphens as separators, like 00:1A:2B:3C:4D:5E or 00-1A-2B-3C-4D-5E, in one single regex", "domain": "ood_regex"}
+{"prompt": "Write a regex extracting query parameters from a URL string.", "domain": "ood_regex"}
+{"prompt": "I want to extract all the key-value pairs from a query string like 'name=John+Doe&age=30&city=New%20York' using a regex with two capture groups per match, one for the key and one for the value. Please write the pattern, explain how it handles the ampersand delimiter, and show me the matches it would produce on that exact string.", "domain": "ood_regex"}
+{"prompt": "Here's a regex I found online for validating US Social Security Numbers: ^\\d{3}-\\d{2}-\\d{4}$. Can you explain what it does step by step, tell me if it correctly rejects SSNs starting with 000 or 666, and if not, fix it so it does?", "domain": "ood_regex"}
+{"prompt": "can you help me pull just the domain name out of a URL like https://www.example.com/page?id=5 using regex?", "domain": "ood_regex"}
+{"prompt": "What does this regex do when applied to a string of nested parentheses like '(a(b)c)': \\([^()]*\\) — and why can't a single non-recursive regex fully validate arbitrary nested parentheses?", "domain": "ood_regex"}
+{"prompt": "Here is a regex I wrote to extract hashtags from tweets: #\\w+. It's currently grabbing punctuation attached to the end of words and also matching things like #123 which I don't want since I only want hashtags that contain at least one letter. Please fix the pattern, explain why the original was too permissive, and show me how it behaves on the string 'Loving this #sunset_view! #2024 #NoFilter123 #!!!'.", "domain": "ood_regex"}
+{"prompt": "What's the difference between a non-capturing group (?:...) and a normal group, and can you show an example with parsing 'foo-bar-baz'?", "domain": "ood_regex"}
+{"prompt": "Can you write a regex using lookbehind to extract the currency amount from a string like 'Price: $1,250.00' without including the dollar sign?", "domain": "ood_regex"}
+{"prompt": "I'm trying to extract all hashtags and @mentions from a tweet like 'Loving the #sunset at @GoldenGateBridge today! #photography #travel' into two separate lists. Write regexes for both, explain any edge cases with underscores or numbers in the tags, and show sample output.", "domain": "ood_regex"}
+{"prompt": "For slug validation on a website, should I use ^[a-z0-9]+(-[a-z0-9]+)*$ or the simpler ^[a-z0-9-]+$? Explain what edge cases each one catches.", "domain": "ood_regex"}
+{"prompt": "Compare anchoring a regex with ^ and $ versus using \\A and \\z when validating full-string matches in multiline mode — what subtle bugs can arise if you pick the wrong one?", "domain": "ood_regex"}
+{"prompt": "Explain the performance implications of this regex causing catastrophic backtracking on long strings of a's: ^(a+)+$ and rewrite it to avoid the issue while preserving the same matching behavior.", "domain": "ood_regex"}
+{"prompt": "I have this date regex meant to validate MM/DD/YYYY but it accepts invalid dates like 02/30/2023 — ^(0[1-9]|1[0-2])\\/(0[1-9]|[12][0-9]|3[01])\\/\\d{4}$ — how do I make it actually reject impossible calendar dates like Feb 30th?", "domain": "ood_regex"}
+{"prompt": "Explain in detail what this regex accomplishes and identify any edge cases it misses: ^(https?:\\/\\/)?(www\\.)?[-a-zA-Z0-9@:%._\\+~#=]{1,256}\\.[a-zA-Z0-9()]{1,6}\\b([-a-zA-Z0-9()@:%_\\+.~#?&//=]*)$. Test it against 'ftp://example.com' and tell me if it should match.", "domain": "ood_regex"}
+{"prompt": "I want to strip out all HTML tags from a string using regex, something simple like <.*?> — is that safe to use?", "domain": "ood_regex"}
+{"prompt": "Given this regex for matching dates, ^(0[1-9]|1[0-2])\\/(0[1-9]|[12]\\d|3[01])\\/(19|20)\\d{2}$, would you recommend adding leap year validation or handling that separately in code?", "domain": "ood_regex"}
+{"prompt": "Fix this regex for extracting quoted strings that's failing when there are escaped quotes inside: \"([^\"]*)\" — I need it to handle input like \"she said \\\"hi\\\" to me\" correctly.", "domain": "ood_regex"}
+{"prompt": "Can you explain what the pipe symbol | does in regex? I saw cat|dog and want to understand how it works.", "domain": "ood_regex"}
+{"prompt": "Debug this regex for matching phone numbers with optional country code, it's failing on '+1 (555) 123-4567': ^\\(\\d{3}\\)\\s\\d{3}-\\d{4}$", "domain": "ood_regex"}
+{"prompt": "Fix my URL regex, it's greedy and grabs too much: http.*com", "domain": "ood_regex"}
+{"prompt": "Write a regex to validate UK postal codes.", "domain": "ood_regex"}
+{"prompt": "how do I pull the username out of a twitter handle like @john_doe123 using regex?", "domain": "ood_regex"}
+{"prompt": "Debug this Python regex, it's supposed to match ISO 8601 timestamps but throws re.error: sre_constants.error: missing ), unterminated subpattern at position 22 — pattern is r'(\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(\\.\\d+)?(Z|[+-]\\d{2}:\\d{2}'", "domain": "ood_regex"}
+{"prompt": "Write a regex to validate email addresses with plus signs like john+test@gmail.com.", "domain": "ood_regex"}
+{"prompt": "Write a regex for dates in MM/DD/YYYY format.", "domain": "ood_regex"}
+{"prompt": "What's the difference in behavior between .*? and .* in this regex when applied to HTML-like text: <div>(.*?)<\\/div> versus <div>(.*)<\\/div> on a string with multiple div tags?", "domain": "ood_regex"}
+{"prompt": "Can you write a regex with a negative lookahead to enforce password rules requiring at least one digit, one uppercase letter, and no whitespace?", "domain": "ood_regex"}
+{"prompt": "Explain what this regex does: ^[\\w.+-]+@[\\w-]+\\.[a-zA-Z]{2,}$ and give me your opinion on whether it's good enough for most use cases.", "domain": "ood_regex"}
+{"prompt": "Can you explain what this regex is doing and why it might be considered dangerous from a performance standpoint: ^(a+)+$? Then rewrite it to achieve a similar matching goal without the catastrophic backtracking risk.", "domain": "ood_regex"}
+{"prompt": "Can you explain what this regex does and give your opinion on whether it's overkill: ^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[@$!%*?&])[A-Za-z\\d@$!%*?&]{8,}$", "domain": "ood_regex"}
+{"prompt": "What's your opinion on using non-capturing groups (?:...) everywhere by default, even when I don't currently need backreferences?", "domain": "ood_regex"}
+{"prompt": "fix this regex please, it's supposed to match only uppercase words but it's matching lowercase too: [A-Z]+", "domain": "ood_regex"}
+{"prompt": "Write a regex to match any sentence that ends with a question mark, like 'Are you coming?' and explain the anchor used.", "domain": "ood_regex"}
+{"prompt": "I have this regex meant to extract query string parameters from a URL: /[?&]([^=]+)=([^&]*)/g — walk me through why it fails on percent-encoded values like %26 inside the value and suggest a fix.", "domain": "ood_regex"}
+{"prompt": "Fix this phone regex: \\(\\d{3}\\)\\d{3}-\\d{4} to allow optional space after area code.", "domain": "ood_regex"}
+{"prompt": "What exactly is being validated by this regex, and does it correctly reject leading zeros in the integer part: ^-?(0|[1-9]\\d*)(\\.\\d+)?$", "domain": "ood_regex"}
+{"prompt": "what's wrong with my regex \\b[A-Z]{2,}\\b for finding all-caps words, it's also matching single letters sometimes", "domain": "ood_regex"}
+{"prompt": "Regex to extract all URLs from a paragraph of text", "domain": "ood_regex"}
+{"prompt": "Write a regex to match hex color codes like #FF00AA", "domain": "ood_regex"}
+{"prompt": "Show me how to write a regex from scratch that extracts the year, month, and day as separate capture groups from dates formatted like 2023-11-05.", "domain": "ood_regex"}
+{"prompt": "How do I write a regex to match a 5-digit US zip code like '90210'? Please explain the pattern simply.", "domain": "ood_regex"}
+{"prompt": "Compare two regexes for matching CSV fields: a naive [^,]+ split versus a more robust one handling quoted commas like \"(?:[^\"]|\"\")*\"|[^,]+. What are the trade-offs?", "domain": "ood_regex"}

@@ -1,0 +1,800 @@
+{"prompt": "Explain what happens memory-wise when you take the address of a loop variable in this old-style Go loop, and whether it's still an issue in Go 1.22+:\n\nfor _, v := range items {\n    ptrs = append(ptrs, &v)\n}", "domain": "code_go"}
+{"prompt": "Can you refactor this function to use early returns and remove the nested if-else pyramid?\n\nfunc process(x int) string {\n    if x > 0 {\n        if x < 100 {\n            return \"small positive\"\n        } else {\n            return \"large positive\"\n        }\n    } else {\n        return \"non positive\"\n    }\n}", "domain": "code_go"}
+{"prompt": "Given a choice between testify and the standard testing package with manual assertions, which would you recommend for a new Go project and why?", "domain": "code_go"}
+{"prompt": "Write a Go function that returns the maximum of two integers, and explain why Go doesn't have a built-in generic max for older versions.", "domain": "code_go"}
+{"prompt": "Explain what this generic function does and why the type constraint is written this way:\n\nfunc Map[T, U any](s []T, f func(T) U) []U {\n    r := make([]U, len(s))\n    for i, v := range s {\n        r[i] = f(v)\n    }\n    return r\n}", "domain": "code_go"}
+{"prompt": "Write idiomatic Go code for a simple pub-sub system where multiple subscribers can receive messages published to named topics, using channels internally, and make sure subscribers can unsubscribe cleanly without leaking goroutines.", "domain": "code_go"}
+{"prompt": "Explain the difference between value receivers and pointer receivers in Go methods, and describe a scenario where mixing them on the same type causes subtle bugs related to interface satisfaction.", "domain": "code_go"}
+{"prompt": "Give me step-by-step instructions for adding structured logging with slog to an existing Go web service.", "domain": "code_go"}
+{"prompt": "Can you walk me through what happens step by step when I run 'go build' on a simple hello world program?", "domain": "code_go"}
+{"prompt": "Compare Go's built-in testing package with a BDD-style framework like Ginkgo for testing a payment processing service.", "domain": "code_go"}
+{"prompt": "Write a Go middleware chain implementation for net/http that supports logging, request ID injection, and panic recovery, composed cleanly.", "domain": "code_go"}
+{"prompt": "Can you convert this callback-based API into one that returns a Go channel or uses context for cancellation instead?\n\nfunc FetchAsync(url string, callback func(data []byte, err error)) {\n    go func() {\n        resp, err := http.Get(url)\n        if err != nil {\n            callback(nil, err)\n            return\n        }\n        defer resp.Body.Close()\n        data, _ := io.ReadAll(resp.Body)\n        callback(data, nil)\n    }()\n}", "domain": "code_go"}
+{"prompt": "my unit test keeps failing intermittently, I think it's a race condition, here's the test — can you spot it? func TestCounter(t *testing.T) { c := 0; for i := 0; i < 100; i++ { go func() { c++ }() }; time.Sleep(time.Second); if c != 100 { t.Fail() } }", "domain": "code_go"}
+{"prompt": "Why am I getting a data race warning here, and how should I fix it using sync.Mutex or atomic operations?\n\nvar counter int\nfunc increment() {\n    counter++\n}", "domain": "code_go"}
+{"prompt": "Which would you recommend for dependency injection in a mid-sized Go service: wire, fx, or just plain manual constructor wiring?", "domain": "code_go"}
+{"prompt": "Can you explain what 'escape analysis' means in Go and how to check whether a variable escapes to the heap?", "domain": "code_go"}
+{"prompt": "Explain what a nil interface pitfall is with an example where an interface holding a nil pointer is not equal to nil.", "domain": "code_go"}
+{"prompt": "Implement, in Go, code that implements a simple rate limiter. Add a couple of example calls.", "domain": "code_go"}
+{"prompt": "Explain what happens when you pass a struct to a function in Go — is it copied or passed by reference?", "domain": "code_go"}
+{"prompt": "Optimize this function that checks if a string is a palindrome — it currently allocates a reversed copy every call.\n\nfunc isPalindrome(s string) bool {\n    r := []rune(s)\n    reversed := make([]rune, len(r))\n    for i, c := range r {\n        reversed[len(r)-1-i] = c\n    }\n    return string(r) == string(reversed)\n}", "domain": "code_go"}
+{"prompt": "I'm getting a 'panic: send on closed channel' intermittently in production. Here's the relevant goroutine logic, can you spot the race and propose a fix?\n\nfunc producer(ch chan int, done chan struct{}) {\n    for i := 0; i < 100; i++ {\n        select {\n        case ch <- i:\n        case <-done:\n            close(ch)\n            return\n        }\n    }\n    close(ch)\n}", "domain": "code_go"}
+{"prompt": "Explain the zero value of an interface versus a nil pointer stored in an interface.", "domain": "code_go"}
+{"prompt": "Write a function that computes the k-th smallest element in an unsorted array using a min-heap.", "domain": "code_go"}
+{"prompt": "Should error wrapping use fmt.Errorf with %w, or a dedicated errors package like pkg/errors? What changed after Go 1.13 made this decision easier?", "domain": "code_go"}
+{"prompt": "I keep getting a 'deadlock' error with this channel code, what's going on?\n\nfunc main() {\n    ch := make(chan int)\n    ch <- 5\n    fmt.Println(<-ch)\n}", "domain": "code_go"}
+{"prompt": "Implement, in Go, code that implements a debounce wrapper for a function. Add a couple of example calls.", "domain": "code_go"}
+{"prompt": "In Go, write a function that groups anagrams together from a list of words and explain its time complexity.", "domain": "code_go"}
+{"prompt": "Write a simple Go struct for a Book with Title, Author, and Year fields, plus a method that prints its details.", "domain": "code_go"}
+{"prompt": "Explain the difference between value receivers and pointer receivers in terms of method sets, and give an example where using the wrong one causes a compile error with interfaces.", "domain": "code_go"}
+{"prompt": "Why does this slice append overwrite my original data? a := []int{1,2,3}; b := a[:2]; b = append(b, 99)", "domain": "code_go"}
+{"prompt": "Why does this slice mutation inside a function not affect the caller's slice?\n\nfunc AddOne(s []int) {\n    s = append(s, 1)\n}", "domain": "code_go"}
+{"prompt": "Why does this generic function fail to compile with Go generics, and how do I fix the type constraint?\n\nfunc Max[T comparable](a, b T) T {\n    if a > b {\n        return a\n    }\n    return b\n}", "domain": "code_go"}
+{"prompt": "Can you explain what 'nil' means in Go and show an example of a nil pointer causing a panic?", "domain": "code_go"}
+{"prompt": "How do I correctly compare two structs containing slices for equality in Go?", "domain": "code_go"}
+{"prompt": "Compare table-driven tests with subtests via t.Run versus writing separate test functions for each case. When does the added structure actually pay off?", "domain": "code_go"}
+{"prompt": "Explain what 'nil' means for different types in Go — pointers, slices, maps, and interfaces — with simple examples for each.", "domain": "code_go"}
+{"prompt": "Can you explain the difference between sync.Mutex and sync.RWMutex with a concrete example of when using RWMutex would meaningfully improve throughput?", "domain": "code_go"}
+{"prompt": "Write a Go function that flattens a nested slice of interfaces into a single flat slice.", "domain": "code_go"}
+{"prompt": "Walk me through step by step how to set up dependency injection in a Go project without using a heavy framework.", "domain": "code_go"}
+{"prompt": "My goroutine leak is driving me crazy, here's the code, can you spot what's wrong?\n\nfunc worker(ch chan int) {\n    for {\n        v := <-ch\n        fmt.Println(v)\n    }\n}", "domain": "code_go"}
+{"prompt": "Can you explain the difference between buffered and unbuffered channels in Go, and give a concrete example where using the wrong one would cause a goroutine leak?", "domain": "code_go"}
+{"prompt": "My goroutine is modifying a shared map and I'm getting 'concurrent map writes' panics. How should I fix this?\n\nvar cache = map[string]int{}\nfunc update(key string, val int) {\n    go func() { cache[key] = val }()\n}", "domain": "code_go"}
+{"prompt": "Write a benchmark for this string concatenation function and suggest a faster alternative using strings.Builder:\n\nfunc Concat(parts []string) string {\n    result := \"\"\n    for _, p := range parts {\n        result += p\n    }\n    return result\n}", "domain": "code_go"}
+{"prompt": "Should this function accept a slice or a variadic parameter? What's more idiomatic and flexible in Go?\n\nfunc Sum(nums []int) int { return 0 }", "domain": "code_go"}
+{"prompt": "Implement, in Go, code that finds all pairs in an array that sum to a target. Add a couple of example calls.", "domain": "code_go"}
+{"prompt": "Implement, in Go, code that checks if two strings are anagrams. Add a couple of example calls.", "domain": "code_go"}
+{"prompt": "Give me a step-by-step guide to writing a custom JSON marshaler for a struct that has an embedded time.Time field with a custom format.", "domain": "code_go"}
+{"prompt": "Write a Go program that counts how many times each word appears in a given sentence using a map.", "domain": "code_go"}
+{"prompt": "Write a Go struct and methods for a simple stack with Push, Pop, Peek.", "domain": "code_go"}
+{"prompt": "Write a Go function that converts a temperature from Celsius to Fahrenheit and add a simple main function demonstrating its use.", "domain": "code_go"}
+{"prompt": "Compare buffered channels versus unbuffered channels for a producer-consumer pipeline handling image processing jobs.", "domain": "code_go"}
+{"prompt": "I'm not sure whether to use a map or a slice of structs for this lookup table—what would you recommend given performance and readability?", "domain": "code_go"}
+{"prompt": "Explain the difference between the errors.Is, errors.As, and simple equality checks when working with wrapped errors in Go, and show an example where using == instead of errors.Is would silently break error handling after wrapping with fmt.Errorf and %w.", "domain": "code_go"}
+{"prompt": "I have a Go worker pool implementation that seems to deadlock under load. Here's the code: func worker(jobs <-chan int, results chan<- int, wg *sync.WaitGroup) { defer wg.Done(); for j := range jobs { results <- j * j } }; func main() { jobs := make(chan int); results := make(chan int); var wg sync.WaitGroup; for i := 0; i < 5; i++ { wg.Add(1); go worker(jobs, results, &wg) }; for i := 0; i < 100; i++ { jobs <- i }; close(jobs); wg.Wait(); close(results); for r := range results { fmt.Println(r) } } Can you explain why this deadlocks and rewrite it so results are consumed concurrently while jobs are being sent, plus add proper error handling if a job panics?", "domain": "code_go"}
+{"prompt": "I need a Go function to validate whether a string is a valid IPv4 address, no regex please", "domain": "code_go"}
+{"prompt": "Implement, in Go, code that finds the shortest path in an unweighted grid using BFS. Add a couple of example calls.", "domain": "code_go"}
+{"prompt": "Simplify this nested if-else chain.\n\nfunc grade(score int) string {\n    if score >= 90 {\n        return \"A\"\n    } else {\n        if score >= 80 {\n            return \"B\"\n        } else {\n            return \"C\"\n        }\n    }\n}", "domain": "code_go"}
+{"prompt": "How do I implement the Stringer interface for a custom type?", "domain": "code_go"}
+{"prompt": "Explain step by step how to set up graceful shutdown for an HTTP server in Go using context and os.Signal.", "domain": "code_go"}
+{"prompt": "Compare using channels versus a sync.WaitGroup for coordinating a fixed number of goroutines that each do independent work and don't need to communicate results back.", "domain": "code_go"}
+{"prompt": "What are the trade-offs between using channels versus a mutex-protected shared map for a concurrent cache in Go?", "domain": "code_go"}
+{"prompt": "Can you help me write a basic unit test for this function using the testing package?\n\nfunc Add(a, b int) int {\n    return a + b\n}", "domain": "code_go"}
+{"prompt": "I'm getting 'assignment mismatch' and other compile errors in this code and can't figure out why:\n\nfunc getStats(nums []int) (min, max, sum int) {\n    min = nums[0]\n    max = nums[0]\n    for _, n := range nums {\n        sum += n\n        if n < min {\n            min = n\n        }\n        if n > max {\n            max = n\n        }\n    }\n}\n\nCan you find the issue, explain it, and fix the code so it compiles and behaves correctly?", "domain": "code_go"}
+{"prompt": "Write a function that detects whether two strings are anagrams of each other, optimized for Unicode strings.", "domain": "code_go"}
+{"prompt": "Implement, in Go, code that computes the Hamming distance between two equal-length strings. Add a couple of example calls.", "domain": "code_go"}
+{"prompt": "In Go, write a function that generates all permutations of a short string and explain its time complexity.", "domain": "code_go"}
+{"prompt": "Explain how defer, panic, and recover interact in this snippet and what the final printed output will be:\n\nfunc safeDivide(a, b int) (result int) {\n    defer func() {\n        if r := recover(); r != nil {\n            result = -1\n        }\n    }()\n    return a / b\n}", "domain": "code_go"}
+{"prompt": "I keep seeing 'panic: close of closed channel' in my logs — what typically causes this and how do I prevent it?", "domain": "code_go"}
+{"prompt": "I need a rate limiter for an HTTP client that allows at most 10 requests per second with bursts up to 20. Show me how to implement this using golang.org/x/time/rate, and explain how the token bucket algorithm works under the hood.", "domain": "code_go"}
+{"prompt": "Do you think table-driven tests are always the right approach in Go, or are there cases where a simple sequential test function is clearer?", "domain": "code_go"}
+{"prompt": "In Go, write a function that implements a debounce wrapper for a function and explain its time complexity.", "domain": "code_go"}
+{"prompt": "Write table-driven tests in Go for a function called ParseDuration that takes a string like \"1h30m\" and returns a time.Duration and an error. Cover valid inputs, invalid formats, negative durations, and empty strings.", "domain": "code_go"}
+{"prompt": "write a Go struct and methods to represent a simple stack with Push, Pop, and Peek", "domain": "code_go"}
+{"prompt": "Explain the difference between rune and byte iteration over a UTF-8 string in Go with an example that breaks on multi-byte characters.", "domain": "code_go"}
+{"prompt": "Write a beginner-friendly Go function to reverse a string.", "domain": "code_go"}
+{"prompt": "what's the cleanest way in Go to handle a slice of interfaces where I need to type-switch on each element?", "domain": "code_go"}
+{"prompt": "Explain what a goroutine leak is and show an example of code that leaks goroutines, then fix it.", "domain": "code_go"}
+{"prompt": "Explain this generic function line by line and tell me if the type constraint is correct:\n\nfunc Sum[T int | float64](nums []T) T {\n    var total T\n    for _, n := range nums {\n        total += n\n    }\n    return total\n}", "domain": "code_go"}
+{"prompt": "What's your recommendation for handling panics in a long-running Go service — should every goroutine have its own recover, or is a central recovery middleware enough?", "domain": "code_go"}
+{"prompt": "Write a Go function to check if a string is a palindrome.", "domain": "code_go"}
+{"prompt": "Can you explain the difference between context.WithCancel and context.WithTimeout, and when I'd choose one over the other?", "domain": "code_go"}
+{"prompt": "Can you explain how defer interacts with named return values, using a small example involving error wrapping?", "domain": "code_go"}
+{"prompt": "Can you explain how Go's garbage collector handles cyclic references between structs, and whether I need to worry about memory leaks from cycles?", "domain": "code_go"}
+{"prompt": "Write clean, idiomatic Go that finds the longest common prefix of a list of strings.", "domain": "code_go"}
+{"prompt": "Fix this off-by-one error in binary search.", "domain": "code_go"}
+{"prompt": "Write a function that merges two sorted slices of integers into a single sorted slice without using sort.Sort or sort.Slice, then add unit tests covering edge cases like empty slices and slices of different lengths.", "domain": "code_go"}
+{"prompt": "Write clean, idiomatic Go that implements a simple LRU cache.", "domain": "code_go"}
+{"prompt": "Explain what this context pattern does and whether it's a good practice for propagating request-scoped values.\n\nctx := context.WithValue(context.Background(), \"userID\", 42)\nfunc handler(ctx context.Context) {\n    id := ctx.Value(\"userID\").(int)\n    fmt.Println(id)\n}", "domain": "code_go"}
+{"prompt": "Optimise this string concatenation loop to use strings.Builder instead of plain plus operator: s := ''; for i := 0; i < n; i++ { s += strconv.Itoa(i) }", "domain": "code_go"}
+{"prompt": "How do I write a Go function that safely parses untrusted JSON input and validates required fields, step by step?", "domain": "code_go"}
+{"prompt": "Fix the panic in this map access.", "domain": "code_go"}
+{"prompt": "Explain what this snippet is doing and why it might panic:\n\nvar m map[string]int\nm[\"key\"] = 1", "domain": "code_go"}
+{"prompt": "Explain why this interface comparison panics at runtime and how to avoid it:\n\ntype T struct{ f func() }\nvar a, b interface{} = T{}, T{}\nfmt.Println(a == b)", "domain": "code_go"}
+{"prompt": "What's your recommendation on using sync.Once here versus a package-level init for lazy singleton initialization?", "domain": "code_go"}
+{"prompt": "Write a Go worker pool with 5 workers.", "domain": "code_go"}
+{"prompt": "Give me a step-by-step guide to writing unit tests for this function using table-driven tests:\n\nfunc IsPalindrome(s string) bool {\n    s = strings.ToLower(s)\n    for i, j := 0, len(s)-1; i < j; i, j = i+1, j-1 {\n        if s[i] != s[j] {\n            return false\n        }\n    }\n    return true\n}", "domain": "code_go"}
+{"prompt": "Compare sync.Map with a regular map guarded by sync.RWMutex for a read-heavy workload with occasional writes.", "domain": "code_go"}
+{"prompt": "Write a small Go program that swaps the values of two variables without using a third variable.", "domain": "code_go"}
+{"prompt": "Walk me through writing a custom error type in Go that wraps an underlying error and adds contextual information.", "domain": "code_go"}
+{"prompt": "Review this snippet for idiomatic Go style and correctness, and suggest improvements:\n\nfunc GetUser(id int) (*User, error) {\n    var user *User\n    var err error\n    user, err = db.QueryUser(id)\n    if err != nil {\n        return nil, err\n    } else {\n        return user, nil\n    }\n}", "domain": "code_go"}
+{"prompt": "Explain how Go modules resolve version conflicts when two dependencies require different minor versions of the same package.", "domain": "code_go"}
+{"prompt": "Write a function using Go generics that returns the maximum value in a slice of any ordered type, then show how you'd constrain the type parameter using the constraints.Ordered interface or a custom interface if that package isn't available.", "domain": "code_go"}
+{"prompt": "Write a function that merges two sorted slices of ints into one sorted slice.", "domain": "code_go"}
+{"prompt": "Write a Go program that reads a CSV file of employee records (name, department, salary), groups them by department, and prints the average salary per department. Use the encoding/csv package and handle malformed rows gracefully instead of crashing.", "domain": "code_go"}
+{"prompt": "What's the idiomatic way to implement an enum in Go?", "domain": "code_go"}
+{"prompt": "Can you review this code for idiomatic Go style issues?\n\nfunc GetUserById(Id int) (*User, error) {\n    var user User\n    err := db.QueryRow(\"SELECT * FROM users WHERE id=?\", Id).Scan(&user.Id, &user.Name)\n    if err != nil {\n        return nil, err\n    }\n    return &user, nil\n}", "domain": "code_go"}
+{"prompt": "I'm getting 'too many open files' errors in production; can you review this code for a file handle leak?\n\nfunc processFiles(paths []string) error {\n    for _, p := range paths {\n        f, err := os.Open(p)\n        if err != nil {\n            return err\n        }\n        data, err := io.ReadAll(f)\n        if err != nil {\n            return err\n        }\n        process(data)\n    }\n    return nil\n}", "domain": "code_go"}
+{"prompt": "How do I do a deep copy of a struct with nested slices in Go?", "domain": "code_go"}
+{"prompt": "Debug this code: it's supposed to copy a slice but modifications to the copy affect the original. func copySlice(s []int) []int { return s }; original := []int{1,2,3}; copy := copySlice(original); copy[0] = 99. Explain the underlying issue with slice headers and fix the function properly.", "domain": "code_go"}
+{"prompt": "Write a function that flattens a nested slice of interfaces in Go.", "domain": "code_go"}
+{"prompt": "Write a Go implementation of binary tree in-order traversal.", "domain": "code_go"}
+{"prompt": "Refactor this function to be more idiomatic Go, avoiding the naked returns and unnecessary else branches:\n\nfunc divide(a, b int) (result int, err error) {\n    if b == 0 {\n        err = errors.New('division by zero')\n        return\n    } else {\n        result = a / b\n        return\n    }\n}", "domain": "code_go"}
+{"prompt": "Implement, in Go, code that merges two sorted arrays. Add a couple of example calls.", "domain": "code_go"}
+{"prompt": "I have a Go microservice that's leaking memory under load; here's the pprof heap profile output showing goroutine.Stack dominating allocations — what should I check first?", "domain": "code_go"}
+{"prompt": "Write a Go program that concurrently downloads multiple URLs and aggregates their response sizes, using errgroup for error handling.", "domain": "code_go"}
+{"prompt": "Walk me through step by step how to implement a simple in-memory key-value store with TTL expiration in Go.", "domain": "code_go"}
+{"prompt": "I have a goroutine leak in this code because the channel is never drained after the context is cancelled: func process(ctx context.Context, ch chan int) { for { select { case v := <-ch: fmt.Println(v); case <-ctx.Done(): return } } }; Explain what's actually leaking here if anything, and if there's a real leak elsewhere in a typical producer-consumer setup, show how to fix it.", "domain": "code_go"}
+{"prompt": "What are the differences between using os.Exit and returning an error up the call stack when handling a fatal configuration error?", "domain": "code_go"}
+{"prompt": "Write a beginner-friendly Go program that reads a line of text from standard input and prints it back in uppercase.", "domain": "code_go"}
+{"prompt": "Should I use goroutines with a sync.WaitGroup or an errgroup.Group for fetching ten API endpoints in parallel? Compare the two approaches.", "domain": "code_go"}
+{"prompt": "Write a Go program that implements exponential backoff with jitter for retrying a failing HTTP request.", "domain": "code_go"}
+{"prompt": "Should this microservice communicate over gRPC streaming or a message queue like Kafka for near real-time event processing? Explain the trade-offs specific to Go tooling.", "domain": "code_go"}
+{"prompt": "I want to implement a binary search tree in Go with Insert, Delete, and InOrderTraversal methods. Please write the full implementation with generics so it works for any ordered type, and include a few example usages showing balanced vs unbalanced insertion order.", "domain": "code_go"}
+{"prompt": "Write a Go function that merges two sorted linked lists into one sorted list.", "domain": "code_go"}
+{"prompt": "Write a function to reverse a string in Go.", "domain": "code_go"}
+{"prompt": "Write a function to check if a given string is a valid palindrome, ignoring spaces and punctuation.", "domain": "code_go"}
+{"prompt": "I'm building a CLI tool—would you recommend cobra or just the standard flag package, and why?", "domain": "code_go"}
+{"prompt": "I'm getting 'index out of range' intermittently in production, can you help me trace through this code?\n\nfunc GetLast(items []string) string {\n    return items[len(items)-1]\n}", "domain": "code_go"}
+{"prompt": "My unit test keeps flaking, any idea why?\n\nfunc TestAsync(t *testing.T) {\n    go doWork()\n    time.Sleep(10 * time.Millisecond)\n    if !done {\n        t.Fail()\n    }\n}", "domain": "code_go"}
+{"prompt": "Write a Go function to calculate the sum of digits of a positive integer.", "domain": "code_go"}
+{"prompt": "Refactor this to use idiomatic error wrapping: if err != nil { return err }", "domain": "code_go"}
+{"prompt": "Write a Go implementation of a simple pub/sub system using channels and goroutines.", "domain": "code_go"}
+{"prompt": "I want to convert this JSON unmarshaling code to use custom UnmarshalJSON so that a 'status' field of \"active\"/\"inactive\" maps to a bool field internally. Here's the struct:\n\ntype User struct {\n    Name   string `json:\"name\"`\n    Active bool   `json:\"status\"`\n}\n\nShow the full implementation including the custom type and MarshalJSON counterpart so serialization round-trips correctly.", "domain": "code_go"}
+{"prompt": "Explain what go:generate comments do and give an example invoking stringer for an enum type.", "domain": "code_go"}
+{"prompt": "I need a Go function that parses a CSV file with a header row into a slice of structs using reflection, mapping column names to struct tags like `csv:\"name\"`. Please implement it and explain the tradeoffs versus using a library like encoencoding/csv with manual mapping.", "domain": "code_go"}
+{"prompt": "Write a Go function that merges two sorted slices into one sorted slice.", "domain": "code_go"}
+{"prompt": "I'm torn between using channels to implement a rate limiter versus golang.org/x/time/rate. Which approach would you suggest and why?", "domain": "code_go"}
+{"prompt": "Write a Go function to reverse a linked list.", "domain": "code_go"}
+{"prompt": "Write a Go HTTP middleware that logs the method, path, status code, and duration of every request.", "domain": "code_go"}
+{"prompt": "Can you explain what this code does? func add(a, b int) int { return a + b }", "domain": "code_go"}
+{"prompt": "Walk me through, step by step, how to implement a thread-safe LRU cache in Go using a doubly linked list and a map.", "domain": "code_go"}
+{"prompt": "Write a generic Go function using type parameters that returns the maximum value in a slice of any ordered type.", "domain": "code_go"}
+{"prompt": "Should this rate limiter use golang.org/x/time/rate or a hand-rolled token bucket with channels? Discuss when the extra dependency is worth it.", "domain": "code_go"}
+{"prompt": "Write an idiomatic Go implementation of a LRU cache with Get and Put operations in O(1) time.", "domain": "code_go"}
+{"prompt": "Write a binary tree insert function in Go.", "domain": "code_go"}
+{"prompt": "Write idiomatic Go table-driven tests for this function: func Divide(a, b int) (int, error) { if b == 0 { return 0, errors.New(\"division by zero\") } ; return a / b, nil }", "domain": "code_go"}
+{"prompt": "How do I implement pagination for a REST API endpoint in Go that queries a Postgres database using database/sql?", "domain": "code_go"}
+{"prompt": "Optimise this bubble sort in Go.", "domain": "code_go"}
+{"prompt": "How do I safely use atomic.AddInt64 versus a mutex for a shared counter, and when should I prefer one over the other?", "domain": "code_go"}
+{"prompt": "Can you write a worker pool pattern in Go that processes jobs concurrently with a fixed number of workers?", "domain": "code_go"}
+{"prompt": "Write a Go function to check balanced parentheses.", "domain": "code_go"}
+{"prompt": "Refactor this code to use context.WithTimeout instead of a manual time.After select: func fetch() { time.Sleep(5 * time.Second) }", "domain": "code_go"}
+{"prompt": "Can you explain what's happening in this goroutine deadlock and how to fix it?\n\nfunc main() {\n    ch := make(chan int)\n    ch <- 1\n    fmt.Println(<-ch)\n}", "domain": "code_go"}
+{"prompt": "Here's a struct with JSON tags that isn't serializing the way I expect: type Event struct { ID string; Timestamp time.Time; Metadata map[string]interface{} \"json:metadata\" }. Spot the bug in the struct tag syntax and fix it, then explain how omitempty would change the output for a zero-value Timestamp.", "domain": "code_go"}
+{"prompt": "Add error handling to this function.\n\nfunc readFile(path string) []byte {\n    data, _ := os.ReadFile(path)\n    return data\n}", "domain": "code_go"}
+{"prompt": "I need a simple LRU cache implementation in Go, nothing fancy, just something that works with generics.", "domain": "code_go"}
+{"prompt": "Explain the difference between value receivers and pointer receivers, and how choosing the wrong one caused a subtle bug in this code.\n\ntype Counter struct{ count int }\n\nfunc (c Counter) Increment() {\n    c.count++\n}", "domain": "code_go"}
+{"prompt": "Walk me through how to write a Go program that reads a large CSV file line by line without loading it entirely into memory.", "domain": "code_go"}
+{"prompt": "Explain how Go's garbage collector decides when to run.", "domain": "code_go"}
+{"prompt": "Implement, in Go, code that checks if a number is a perfect square without using sqrt. Add a couple of example calls.", "domain": "code_go"}
+{"prompt": "How do I add unit tests and a benchmark for this Fibonacci function?\n\nfunc Fib(n int) int {\n    if n <= 1 {\n        return n\n    }\n    return Fib(n-1) + Fib(n-2)\n}", "domain": "code_go"}
+{"prompt": "show me a clean way to implement retries with exponential backoff for an HTTP request in Go", "domain": "code_go"}
+{"prompt": "Write a Go function that flattens a nested slice of interfaces (e.g. []interface{} containing more slices) into a single flat slice.", "domain": "code_go"}
+{"prompt": "I need to implement a custom sort.Interface for a slice of structs sorted by multiple fields, first by priority descending then by name ascending, can you show the cleanest way?", "domain": "code_go"}
+{"prompt": "Explain the purpose of the context.WithTimeout function and rewrite this database query call to respect a 2-second timeout, cancelling the query and returning an error if it takes too long: func getUser(db *sql.DB, id int) (*User, error) { return queryUser(db, id) }", "domain": "code_go"}
+{"prompt": "Write a Go implementation of a bloom filter with configurable false-positive rate, using multiple hash functions derived from FNV.", "domain": "code_go"}
+{"prompt": "Show me step by step how to implement a worker pool in Go that processes jobs from a channel with a fixed number of goroutines.", "domain": "code_go"}
+{"prompt": "What does 'nil map assignment' panic mean?", "domain": "code_go"}
+{"prompt": "Can you show how to use reflect.DeepEqual versus a manual comparison for testing struct equality, and when reflect is a bad idea?", "domain": "code_go"}
+{"prompt": "I'm torn between using the standard library's net/http router versus something like chi or gorilla/mux for a mid-sized API. What do you think is the better choice and why?", "domain": "code_go"}
+{"prompt": "I want a simple in-memory rate limiter in Go using a token bucket, keep it small", "domain": "code_go"}
+{"prompt": "This unit test is flaky because of goroutine timing. Can you rewrite it to be deterministic using channels or sync.WaitGroup instead of time.Sleep?\n\nfunc TestAsyncProcess(t *testing.T) {\n    go doAsyncWork()\n    time.Sleep(100 * time.Millisecond)\n    if !workDone {\n        t.Fail()\n    }\n}", "domain": "code_go"}
+{"prompt": "Show me how to write an idiomatic Go interface for a repository pattern, then implement it with an in-memory version and a Postgres version.", "domain": "code_go"}
+{"prompt": "Show me step by step how to write a custom error type in Go that implements the error interface and supports errors.Is and errors.As.", "domain": "code_go"}
+{"prompt": "Fix this infinite loop.\n\nfunc countdown(n int) {\n    for n > 0 {\n        fmt.Println(n)\n    }\n}", "domain": "code_go"}
+{"prompt": "I have a goroutine leak in this worker pool implementation but can't spot it — can you review it and explain where goroutines are getting stuck? func worker(jobs <-chan int, results chan<- int) { for j := range jobs { results <- j * 2 } }", "domain": "code_go"}
+{"prompt": "Explain how Go's escape analysis decides whether a variable is allocated on the stack or heap, with a small example.", "domain": "code_go"}
+{"prompt": "Write a Go function that parses a CSV file streaming row by row without loading it entirely into memory, and handles malformed rows gracefully by logging and skipping.", "domain": "code_go"}
+{"prompt": "Debug this code that's supposed to reverse a linked list but returns the wrong result:\n\ntype Node struct {\n    Val  int\n    Next *Node\n}\n\nfunc reverse(head *Node) *Node {\n    var prev *Node\n    curr := head\n    for curr != nil {\n        curr.Next = prev\n        prev = curr\n        curr = curr.Next\n    }\n    return prev\n}\n\nWalk through why it fails and provide a corrected version with a trace of the pointer updates.", "domain": "code_go"}
+{"prompt": "Got a slice of structs and I want to sort it by two fields, name then age. What's the cleanest way in Go?", "domain": "code_go"}
+{"prompt": "Do you think it's worth adopting a hexagonal architecture for this Go service, or is that overengineering for our scale?", "domain": "code_go"}
+{"prompt": "How do I properly close a channel to avoid a 'send on closed channel' panic?", "domain": "code_go"}
+{"prompt": "Explain the difference between a nil slice and an empty slice in Go, with examples of how they behave differently when marshalled to JSON.", "domain": "code_go"}
+{"prompt": "I need to convert this callback-based API into one that returns a channel instead. Here's the original:\n\nfunc fetchAsync(url string, callback func(string, error)) {\n    go func() {\n        resp, err := http.Get(url)\n        if err != nil { callback('', err); return }\n        defer resp.Body.Close()\n        body, _ := io.ReadAll(resp.Body)\n        callback(string(body), nil)\n    }()\n}", "domain": "code_go"}
+{"prompt": "Explain the difference between value receivers and pointer receivers in Go methods, and when mixing them causes subtle bugs.", "domain": "code_go"}
+{"prompt": "I have a map that I'm modifying while iterating over it and getting weird results, what's going on?\n\nfor k := range m {\n    if k == \"x\" {\n        delete(m, k)\n    }\n}", "domain": "code_go"}
+{"prompt": "write a Go function that reads a large file line by line without loading it all into memory", "domain": "code_go"}
+{"prompt": "Give me step-by-step instructions for implementing a binary search algorithm on a sorted slice of custom structs by a comparator function.", "domain": "code_go"}
+{"prompt": "Write a small program showing how to use runtime.GOMAXPROCS and explain what it actually controls.", "domain": "code_go"}
+{"prompt": "I need to implement a simple graph BFS traversal in Go, can you write that with an adjacency list?", "domain": "code_go"}
+{"prompt": "Compare writing custom benchmarks with the testing.B type versus using pprof profiling to identify performance bottlenecks in a Go application.", "domain": "code_go"}
+{"prompt": "Write a Go worker pool that processes jobs from a channel with a fixed number of goroutines and gracefully shuts down on context cancellation.", "domain": "code_go"}
+{"prompt": "Can you clean up this function, it works but feels messy and hard to read?\n\nfunc calc(a, b, c int) int {\n    var r int\n    if a > b { r = a } else { r = b }\n    if c > r { r = c }\n    return r\n}", "domain": "code_go"}
+{"prompt": "Fix this race condition detected by the Go race detector.\n\nvar counter int\n\nfunc increment() {\n    counter++\n}\n\nfunc main() {\n    for i := 0; i < 100; i++ {\n        go increment()\n    }\n    time.Sleep(time.Second)\n    fmt.Println(counter)\n}", "domain": "code_go"}
+{"prompt": "Write a quicksort function in Go.", "domain": "code_go"}
+{"prompt": "I'm choosing between Gin, Echo, and the standard net/http mux with Go 1.22's new routing patterns for a new internal API. What would you pick and why?", "domain": "code_go"}
+{"prompt": "Here's a benchmark showing this function is slower than expected — can you suggest optimizations? func contains(s []int, target int) bool { for _, v := range s { if v == target { return true } } ; return false }", "domain": "code_go"}
+{"prompt": "Write a Go function that implements a trie data structure supporting Insert and Search for words.", "domain": "code_go"}
+{"prompt": "Can you explain what defer, panic, and recover actually do under the hood in terms of the call stack, and show a real example where recover prevents a crash in an HTTP handler?", "domain": "code_go"}
+{"prompt": "How do I create and use a simple map in Go to store key-value pairs of string to int?", "domain": "code_go"}
+{"prompt": "can you explain the difference between value receivers and pointer receivers with an example that shows the pitfall?", "domain": "code_go"}
+{"prompt": "I'm new to Go — how do I write a basic struct with a couple of fields and a method that prints them nicely?", "domain": "code_go"}
+{"prompt": "Write a Go function that implements insertion sort. Include a short comment explaining the approach.", "domain": "code_go"}
+{"prompt": "Implement, in Go, code that implements a min-heap with push and pop. Add a couple of example calls.", "domain": "code_go"}
+{"prompt": "Hey can you write me a quick Go function that reverses a string, but make sure it handles unicode properly?", "domain": "code_go"}
+{"prompt": "Implement, in Go, code that computes the nth Fibonacci number iteratively. Add a couple of example calls.", "domain": "code_go"}
+{"prompt": "Write an idiomatic Go implementation of the Observer pattern using interfaces.", "domain": "code_go"}
+{"prompt": "How would I, step by step, write a Go program that reads lines from stdin and counts word frequency, printing the top 5 most common words?", "domain": "code_go"}
+{"prompt": "Explain how Go's garbage collector generally works, at a high level suitable for a beginner.", "domain": "code_go"}
+{"prompt": "How do I properly close a channel that multiple goroutines are writing to without causing a 'send on closed channel' panic?", "domain": "code_go"}
+{"prompt": "What's your take on using context.Context for cancellation versus a simple done channel in a long-running worker pool?", "domain": "code_go"}
+{"prompt": "Should I prefer functional options or a config struct for configuring this client constructor? What would you recommend and why?", "domain": "code_go"}
+{"prompt": "Write a Go function that implements binary search on a sorted slice of structs by a custom comparison field, using the sort.Search function from the standard library, and explain how sort.Search's semantics differ from a typical binary search implementation.", "domain": "code_go"}
+{"prompt": "Can you explain the subtle difference between defer func() { recover() }() placed at the top of a function versus inside a nested closure, and show an example where the placement actually matters for catching a panic?", "domain": "code_go"}
+{"prompt": "Write a custom sort.Interface implementation to sort a slice of structs by multiple fields, first by Age descending then by Name ascending.", "domain": "code_go"}
+{"prompt": "This code compiles but panics at runtime with a nil pointer dereference. Can you explain why?\n\ntype Config struct {\n    Settings map[string]string\n}\nfunc main() {\n    var c Config\n    c.Settings['key'] = 'value'\n}", "domain": "code_go"}
+{"prompt": "Write a simple worker pool in Go using goroutines and channels to process a list of tasks concurrently.", "domain": "code_go"}
+{"prompt": "Compare defer-based cleanup versus explicit cleanup calls at each return point in a function that opens multiple resources.", "domain": "code_go"}
+{"prompt": "Would you suggest using an interface for this Repository type even though there's only one implementation right now, or is that premature abstraction?", "domain": "code_go"}
+{"prompt": "What's the difference between an array and a slice in Go? I keep getting confused about when to use each.", "domain": "code_go"}
+{"prompt": "How do I properly close a channel from multiple producer goroutines without causing a 'close of closed channel' panic?", "domain": "code_go"}
+{"prompt": "quick one: what's the idiomatic way in Go to check if a map key exists without using the zero value trick?", "domain": "code_go"}
+{"prompt": "Why does my slice grow unexpectedly in capacity? fmt.Println(len(s), cap(s))", "domain": "code_go"}
+{"prompt": "Here's a recursive Fibonacci implementation that's painfully slow for n > 35:\n\nfunc fib(n int) int {\n    if n <= 1 {\n        return n\n    }\n    return fib(n-1) + fib(n-2)\n}\n\nRewrite it using memoization, then rewrite it again using an iterative approach, and compare the time complexity of all three versions.", "domain": "code_go"}
+{"prompt": "I have a struct with embedded interfaces and I don't fully understand method promotion. Can you walk through this example and explain exactly which methods are accessible on Dog and why?\n\ntype Animal interface {\n    Speak() string\n}\n\ntype Dog struct {\n    Animal\n    Name string\n}\n\nfunc (d Dog) Fetch() string {\n    return d.Name + \" fetches the ball\"\n}", "domain": "code_go"}
+{"prompt": "I'm seeing 'too many open files' errors under load in this HTTP client code. Can you identify the resource leak?\n\nfunc fetch(url string) ([]byte, error) {\n    resp, err := http.Get(url)\n    if err != nil {\n        return nil, err\n    }\n    return ioutil.ReadAll(resp.Body)\n}", "domain": "code_go"}
+{"prompt": "How would you implement a binary search tree in Go with Insert, Search, and InOrder traversal methods?", "domain": "code_go"}
+{"prompt": "Write a generic Stack type in Go using type parameters, with Push, Pop, Peek, and IsEmpty methods, and make Pop return an error when the stack is empty instead of panicking.", "domain": "code_go"}
+{"prompt": "Refactor this error handling to use errors.Is and errors.As instead of type assertions:\n\nif err != nil {\n    if pathErr, ok := err.(*os.PathError); ok {\n        fmt.Println('path error:', pathErr.Path)\n    }\n}", "domain": "code_go"}
+{"prompt": "In your opinion, is it better to use channels or a sync.Mutex for this counter, and why would you pick one over the other?\n\ntype Counter struct {\n    mu sync.Mutex\n    n  int\n}", "domain": "code_go"}
+{"prompt": "I'm deciding between returning a slice or a channel from this function that generates numbers. What's your recommendation and reasoning?\n\nfunc GenerateNumbers(n int) []int { return nil }", "domain": "code_go"}
+{"prompt": "Write a Go function to detect a cycle in a linked list using Floyd's tortoise and hare algorithm, and explain the time complexity.", "domain": "code_go"}
+{"prompt": "What's the simplest way to convert a string to an integer in Go, and how do I handle the error if the conversion fails?", "domain": "code_go"}
+{"prompt": "Give me step-by-step instructions for writing a Go interface and two implementations for a Notifier that sends emails or SMS.", "domain": "code_go"}
+{"prompt": "Write a Go function that converts an integer to its binary representation. Include a short comment explaining the approach.", "domain": "code_go"}
+{"prompt": "I'm trying to decide whether this function should return a slice or a channel for streaming results. What factors would guide that decision?\n\nfunc FetchAll(ctx context.Context) ([]Record, error)", "domain": "code_go"}
+{"prompt": "Write a Go function that implements a trie with insert and search. Include a short comment explaining the approach.", "domain": "code_go"}
+{"prompt": "Give me a step-by-step walkthrough of implementing a basic trie data structure in Go for autocomplete suggestions.", "domain": "code_go"}
+{"prompt": "I'm choosing between returning (T, error) and panicking on invalid input in a parsing library. What are the trade-offs from a Go API design perspective?", "domain": "code_go"}
+{"prompt": "Here's a function meant to compute the greatest common divisor, but it fails for negative inputs:\n\nfunc gcd(a, b int) int {\n    for b != 0 {\n        a, b = b, a%b\n    }\n    return a\n}\n\nFix it so it always returns a non-negative result, and explain the mathematical reasoning behind the fix.", "domain": "code_go"}
+{"prompt": "Fix this code, it's giving me an 'index out of range' error:\n\nfunc lastElement(nums []int) int {\n    return nums[len(nums)]\n}", "domain": "code_go"}
+{"prompt": "Would you suggest using build tags or a plugin system for supporting multiple database backends in this Go application?", "domain": "code_go"}
+{"prompt": "Write a Go program that computes the nth Fibonacci number using memoization with a map.", "domain": "code_go"}
+{"prompt": "What's wrong with returning a pointer to a loop variable in this code?\n\nfunc getPointers() []*int {\n    var ptrs []*int\n    for _, v := range []int{1, 2, 3} {\n        ptrs = append(ptrs, &v)\n    }\n    return ptrs\n}", "domain": "code_go"}
+{"prompt": "How would I implement a thread-safe LRU cache in Go using a doubly linked list and a map?", "domain": "code_go"}
+{"prompt": "Write idiomatic Go code for a functional options pattern to configure a Server struct, supporting options like WithTimeout, WithMaxConnections, and WithLogger, and explain why this pattern is preferred over a large constructor with many parameters.", "domain": "code_go"}
+{"prompt": "Explain what this select statement does and whether there's a race condition or potential bug in it.\n\nselect {\ncase v := <-ch1:\n    fmt.Println(\"from ch1:\", v)\ncase v := <-ch2:\n    fmt.Println(\"from ch2:\", v)\ndefault:\n    fmt.Println(\"no data\")\n}\n\nAlso explain how the default case changes the blocking behavior compared to omitting it.", "domain": "code_go"}
+{"prompt": "I need to implement pagination for a REST API in Go, what's a clean pattern for that?", "domain": "code_go"}
+{"prompt": "For config management in a CLI tool, is it better to use the standard flag package or a library like viper? Explain the trade-offs for a small internal tool versus a large production service.", "domain": "code_go"}
+{"prompt": "Explain what 'defer' does in this snippet: func f() { defer fmt.Println(\"done\"); fmt.Println(\"start\") }", "domain": "code_go"}
+{"prompt": "Can you refactor this function to be more idiomatic Go? It currently ignores errors and uses naked returns everywhere.\n\nfunc divide(a, b float64) (result float64, err error) {\n    if b == 0 {\n        err = errors.New(\"division by zero\")\n        return\n    }\n    result = a / b\n    return\n}\n\nAlso explain what naked returns are and why they're often discouraged in larger functions.", "domain": "code_go"}
+{"prompt": "Write a function to detect if a linked list has a cycle using Floyd's algorithm.", "domain": "code_go"}
+{"prompt": "I'm deciding between strings.Builder and simple += concatenation for building a large string in a loop. At what point does the difference actually matter?", "domain": "code_go"}
+{"prompt": "What's the difference between errors.Is and errors.As, and can you show an example with a custom wrapped error type?", "domain": "code_go"}
+{"prompt": "Write a Go implementation of merge sort that sorts a slice in place using minimal extra allocations, and explain why it's not truly in-place compared to quicksort.", "domain": "code_go"}
+{"prompt": "Implement, in Go, code that parses a CSV line into fields. Add a couple of example calls.", "domain": "code_go"}
+{"prompt": "Can you show how to implement functional options pattern for configuring a struct like a Server with optional Timeout, Logger, and MaxConns fields?", "domain": "code_go"}
+{"prompt": "Add unit tests for this stack implementation.", "domain": "code_go"}
+{"prompt": "Refactor this switch statement into a strategy pattern using an interface and a map of implementations:\n\nfunc process(kind string, data []byte) error {\n    switch kind {\n    case \"json\":\n        return processJSON(data)\n    case \"xml\":\n        return processXML(data)\n    case \"csv\":\n        return processCSV(data)\n    default:\n        return errors.New(\"unknown kind\")\n    }\n}", "domain": "code_go"}
+{"prompt": "Explain why this code panics with 'send on closed channel' and how to restructure the producer/consumer pattern to avoid it:\n\nch := make(chan int)\nclose(ch)\ngo func() { ch <- 1 }()", "domain": "code_go"}
+{"prompt": "Write a Go function that detects a cycle in a directed graph using DFS with three-color marking, returning the cycle path if found.", "domain": "code_go"}
+{"prompt": "How do I implement, step by step, a middleware chain pattern for net/http handlers in Go?", "domain": "code_go"}
+{"prompt": "Optimize this function for performance and explain what you changed and why:\n\nfunc contains(s []string, target string) bool {\n    for _, v := range s {\n        if v == target {\n            return true\n        }\n    }\n    return false\n}", "domain": "code_go"}
+{"prompt": "Should I use a slice or a linked list implemented with structs for a queue in Go? Discuss the trade-offs given Go's memory model.", "domain": "code_go"}
+{"prompt": "I'm confused about why this doesn't compile — can you explain the error and fix it?\n\nfunc main() {\n    var x int\n    x := 5\n    fmt.Println(x)\n}", "domain": "code_go"}
+{"prompt": "Convert this callback-based API into one that uses Go's context.Context and returns errors idiomatically instead of relying on a completion callback: func FetchAsync(url string, callback func(data []byte, err error)) { go func() { resp, err := http.Get(url); if err != nil { callback(nil, err); return }; defer resp.Body.Close(); body, _ := io.ReadAll(resp.Body); callback(body, nil) }() }", "domain": "code_go"}
+{"prompt": "Here's a recursive Fibonacci function that's painfully slow for n > 35: func fib(n int) int { if n <= 1 { return n }; return fib(n-1) + fib(n-2) }. Rewrite it using memoization, then rewrite it again using an iterative approach, and compare their time complexity and memory usage.", "domain": "code_go"}
+{"prompt": "how do you gracefully shut down an http.Server in Go on SIGINT?", "domain": "code_go"}
+{"prompt": "Explain the difference between buffered and unbuffered channels using a concrete producer-consumer example, including what happens if the buffer fills up.", "domain": "code_go"}
+{"prompt": "Add error wrapping with %w to this function.", "domain": "code_go"}
+{"prompt": "Explain the purpose of the blank identifier in Go with three different use cases.", "domain": "code_go"}
+{"prompt": "explain what 'defer' actually does in this snippet and when the print happens: func foo() { defer fmt.Println(\"done\"); fmt.Println(\"start\") }", "domain": "code_go"}
+{"prompt": "Can you profile and explain why this string-heavy function is slow, then rewrite it to minimize allocations?\n\nfunc buildReport(items []Item) string {\n    var s string\n    for _, item := range items {\n        s += fmt.Sprintf(\"%s: %d\\n\", item.Name, item.Value)\n    }\n    return s\n}", "domain": "code_go"}
+{"prompt": "Write a quick benchmark test for this function so I can compare it against a rewrite.\n\nfunc Fibonacci(n int) int {\n    if n <= 1 {\n        return n\n    }\n    return Fibonacci(n-1) + Fibonacci(n-2)\n}", "domain": "code_go"}
+{"prompt": "What's your opinion on using build tags versus separate files with suffixes like _linux.go for platform-specific code?", "domain": "code_go"}
+{"prompt": "Implement a graph in Go using an adjacency list represented as map[int][]int, then write both BFS and DFS traversal functions, and explain when you'd prefer an iterative DFS with an explicit stack over a recursive one.", "domain": "code_go"}
+{"prompt": "Explain what's wrong with this struct tag usage and how to fix it for proper JSON marshaling:\n\ntype User struct {\n    Name string 'json:name'\n    Age  int    'json:\"age,omitempty\"'\n}", "domain": "code_go"}
+{"prompt": "What's your opinion on returning naked error values from exported functions versus always wrapping them with context about where they occurred?", "domain": "code_go"}
+{"prompt": "Write a Go implementation of Dijkstra's shortest path algorithm using a priority queue for a weighted graph represented as an adjacency list.", "domain": "code_go"}
+{"prompt": "Write me a small CLI tool in Go that counts word frequency from stdin.", "domain": "code_go"}
+{"prompt": "Show me step by step how to merge two sorted slices of integers into one sorted slice without using sort.Sort.", "domain": "code_go"}
+{"prompt": "Write a Go function to find the longest common prefix of a slice of strings.", "domain": "code_go"}
+{"prompt": "I want to implement an event bus in Go supporting Publish/Subscribe with typed events using generics, can you sketch a design?", "domain": "code_go"}
+{"prompt": "Write a Go function that implements a trie for efficient prefix search over a large dictionary of words, with Insert and StartsWith methods.", "domain": "code_go"}
+{"prompt": "Explain the subtle bug in this context timeout usage where the context is never actually enforced:\n\nfunc doWork(ctx context.Context) {\n    ctx, _ = context.WithTimeout(ctx, 5*time.Second)\n    result := slowOperation()\n    fmt.Println(result)\n}", "domain": "code_go"}
+{"prompt": "Show me how to add proper error wrapping with fmt.Errorf and %w to this function, and explain why it matters.\n\nfunc readConfig(path string) (*Config, error) {\n    data, err := os.ReadFile(path)\n    if err != nil {\n        return nil, err\n    }\n    var cfg Config\n    if err := json.Unmarshal(data, &cfg); err != nil {\n        return nil, err\n    }\n    return &cfg, nil\n}", "domain": "code_go"}
+{"prompt": "Explain how goroutine scheduling works in Go and walk me through what happens when this code runs on a single CPU core.", "domain": "code_go"}
+{"prompt": "In Go, write a function that implements a simple rate limiter and explain its time complexity.", "domain": "code_go"}
+{"prompt": "Refactor this to use context cancellation.", "domain": "code_go"}
+{"prompt": "Explain the memory layout difference between an array of structs and a slice of pointers to structs in Go, and when each is preferable.", "domain": "code_go"}
+{"prompt": "What's the idiomatic way to implement a linked list in Go — should I use generics now that they're available, or is that overkill for most use cases?", "domain": "code_go"}
+{"prompt": "Design a simple event bus in Go where subscribers can register callback functions for named events, and publishers can emit events with arbitrary payloads. Use generics or interface{} as appropriate, make it concurrency-safe, and briefly discuss the tradeoffs of each approach.", "domain": "code_go"}
+{"prompt": "Explain how Go's garbage collector works at a high level, and how GOGC affects its behavior.", "domain": "code_go"}
+{"prompt": "In Go, write a function that reverses a linked list and explain its time complexity.", "domain": "code_go"}
+{"prompt": "Write a Go program that reads a large CSV file line by line using bufio.Scanner, parses each row into a struct, and streams results into a channel without loading the whole file into memory.", "domain": "code_go"}
+{"prompt": "Write clean, idiomatic Go that detects a cycle in a directed graph.", "domain": "code_go"}
+{"prompt": "This defer inside a loop is causing resource exhaustion — can you explain why and fix it?\n\nfor _, path := range files {\n    f, err := os.Open(path)\n    if err != nil {\n        continue\n    }\n    defer f.Close()\n    process(f)\n}", "domain": "code_go"}
+{"prompt": "Explain the escape analysis behind why this function causes a heap allocation and how to avoid it:\n\nfunc newInt() *int {\n    x := 5\n    return &x\n}", "domain": "code_go"}
+{"prompt": "I wrote this function to reverse a string but it doesn't work correctly for unicode characters, can you help fix it?\n\nfunc reverse(s string) string {\n    runes := []byte(s)\n    for i, j := 0, len(runes)-1; i < j; i, j = i+1, j-1 {\n        runes[i], runes[j] = runes[j], runes[i]\n    }\n    return string(runes)\n}", "domain": "code_go"}
+{"prompt": "Implement, in Go, code that computes the running maximum over a sliding window. Add a couple of example calls.", "domain": "code_go"}
+{"prompt": "Write a Go function to serialize and deserialize a binary tree to a string for storage.", "domain": "code_go"}
+{"prompt": "Write a generic Stack type in Go using type parameters, with Push, Pop, and Peek methods.", "domain": "code_go"}
+{"prompt": "Write clean, idiomatic Go that checks whether a string is a palindrome.", "domain": "code_go"}
+{"prompt": "how would you write a worker pool in Go that processes 100 jobs with 5 workers and collects results?", "domain": "code_go"}
+{"prompt": "Why does this comparison fail: a := []int{1,2}; b := []int{1,2}; if a == b {}", "domain": "code_go"}
+{"prompt": "Write a Go function that counts word frequency in a given string and returns a map.", "domain": "code_go"}
+{"prompt": "For representing optional fields in a struct, is it better to use pointers, a sentinel value, or a wrapper type like sql.NullString? Compare the approaches.", "domain": "code_go"}
+{"prompt": "Can you explain why this interface type assertion panics, and how to safely handle it?\n\nvar i interface{} = \"hello\"\nn := i.(int)\nfmt.Println(n)", "domain": "code_go"}
+{"prompt": "Should database access in a Go service go through database/sql directly, or through an ORM like GORM? Give me a balanced comparison for a medium-complexity CRUD app.", "domain": "code_go"}
+{"prompt": "In Go, write a function that validates an email address and explain its time complexity.", "domain": "code_go"}
+{"prompt": "Write a beginner Go example of using a switch statement to categorize a number as positive, negative, or zero.", "domain": "code_go"}
+{"prompt": "Optimize this function that checks whether a large slice of integers contains duplicates. It currently runs in O(n^2) and I need it faster for slices with millions of elements.\n\nfunc hasDuplicates(nums []int) bool {\n    for i := 0; i < len(nums); i++ {\n        for j := i + 1; j < len(nums); j++ {\n            if nums[i] == nums[j] {\n                return true\n            }\n        }\n    }\n    return false\n}", "domain": "code_go"}
+{"prompt": "Implement, in Go, code that computes the edit distance between two strings. Add a couple of example calls.", "domain": "code_go"}
+{"prompt": "Write a Go package that implements an LRU cache with a fixed capacity, supporting Get and Put operations in O(1) time using a doubly linked list and a map. Include a constructor, thread-safety via a mutex, and a small example in a comment showing usage.", "domain": "code_go"}
+{"prompt": "What do you think is the best way to handle configuration in a Go microservice — environment variables, a YAML file, or something like Viper?", "domain": "code_go"}
+{"prompt": "I have two goroutines sharing a counter protected by a mutex, but the program still reports a race condition under -race. Here's the code: var counter int; var mu sync.Mutex; func increment() { mu.Lock(); counter++; mu.Unlock() }; go func() { for i := 0; i < 1000; i++ { increment() } }(); fmt.Println(counter). Explain why printing counter after starting the goroutine without waiting is itself a race and fix it with proper synchronization.", "domain": "code_go"}
+{"prompt": "What are the trade-offs of using panic/recover for control flow versus returning explicit errors in a Go HTTP handler?", "domain": "code_go"}
+{"prompt": "Explain in detail how Go's garbage collector decides when to run a collection cycle, how GOGC influences that, and what practical steps I can take in my code to reduce GC pressure in a hot path that allocates a lot of small structs.", "domain": "code_go"}
+{"prompt": "Write a Go program that reads a large CSV file line by line using bufio.Scanner and handles lines longer than the default buffer size.", "domain": "code_go"}
+{"prompt": "Can you show me step by step how to write a Go function that parses a CSV file into a slice of structs, including error handling?", "domain": "code_go"}
+{"prompt": "I'm building a REST API with net/http and I want middleware that logs the method, path, status code, and duration of each request. Write the middleware function, show how to chain it with other middleware, and explain how http.ResponseWriter wrapping works to capture the status code.", "domain": "code_go"}
+{"prompt": "What's the best way to handle graceful shutdown of an HTTP server in Go, listening for SIGINT and SIGTERM?", "domain": "code_go"}
+{"prompt": "Write a Go function that marshals a custom time format to JSON by implementing MarshalJSON and UnmarshalJSON on a wrapper type.", "domain": "code_go"}
+{"prompt": "Explain the difference between == and reflect.DeepEqual when comparing slices in Go.", "domain": "code_go"}
+{"prompt": "Write a function that computes the longest common subsequence of two strings.", "domain": "code_go"}
+{"prompt": "Add table-driven tests for this function.", "domain": "code_go"}
+{"prompt": "I keep seeing 'too many arguments in call' errors after changing this function's signature to use variadic parameters. Here's the code: func sum(nums ...int) int { total := 0; for _, n := range nums { total += n }; return total }; result := sum([]int{1,2,3}). Explain the correct way to pass a slice to a variadic function.", "domain": "code_go"}
+{"prompt": "Write a Go program that reads lines from stdin until EOF.", "domain": "code_go"}
+{"prompt": "Write a Go program that reads a large CSV file line by line and computes the sum of a numeric column without loading the whole file into memory.", "domain": "code_go"}
+{"prompt": "Explain sync.Once usage with an example.", "domain": "code_go"}
+{"prompt": "For a REST API versus gRPC service written in Go, what are the practical trade-offs in terms of tooling, performance, and client compatibility?", "domain": "code_go"}
+{"prompt": "Design a thread-safe rate limiter in Go using the token bucket algorithm. It should expose Allow() bool and support configurable refill rate and burst size. Include a short explanation of the synchronization strategy you chose and why you avoided or used a mutex versus channels.", "domain": "code_go"}
+{"prompt": "Add unit tests for this Add function: func Add(a, b int) int { return a + b }", "domain": "code_go"}
+{"prompt": "Write clean, idiomatic Go that implements a trie with insert and search.", "domain": "code_go"}
+{"prompt": "I need to implement graceful shutdown for an HTTP server that waits for in-flight requests to finish but times out after 30 seconds, can you show the standard pattern using signal.Notify?", "domain": "code_go"}
+{"prompt": "Add unit tests for this function covering negative numbers, zero, and overflow cases.\n\nfunc Factorial(n int) int {\n    result := 1\n    for i := 2; i <= n; i++ {\n        result *= i\n    }\n    return result\n}", "domain": "code_go"}
+{"prompt": "can you convert this Python-style recursive function into idiomatic Go? def fib(n): return n if n < 2 else fib(n-1) + fib(n-2)", "domain": "code_go"}
+{"prompt": "Can you explain the difference between == and reflect.DeepEqual when comparing slices in Go?", "domain": "code_go"}
+{"prompt": "In Go, write a function that returns the k most frequent elements in a list and explain its time complexity.", "domain": "code_go"}
+{"prompt": "Explain how Go interfaces achieve polymorphism without an explicit 'implements' keyword, and how the compiler verifies interface satisfaction at compile time.", "domain": "code_go"}
+{"prompt": "What are the trade-offs between using context.WithTimeout and context.WithDeadline, and are there cases where one is clearly preferable?", "domain": "code_go"}
+{"prompt": "In Go, write a function that computes the intersection of two lists and explain its time complexity.", "domain": "code_go"}
+{"prompt": "Is it more idiomatic to use a functional options pattern or a config struct for configuring a Go client library? Discuss pros and cons.", "domain": "code_go"}
+{"prompt": "Write a Go function that implements a basic bloom filter with a configurable number of hash functions.", "domain": "code_go"}
+{"prompt": "Explain how Go's garbage collector decides when to run and what GOGC controls.", "domain": "code_go"}
+{"prompt": "I need to implement graceful shutdown for an HTTP server so that in-flight requests finish before the process exits when it receives SIGINT or SIGTERM. Show the full main function using signal.Notify, context, and http.Server's Shutdown method.", "domain": "code_go"}
+{"prompt": "I have a merge sort implementation but it's slower than expected on large slices. Can you optimize it?\n\nfunc mergeSort(a []int) []int {\n    if len(a) <= 1 { return a }\n    mid := len(a) / 2\n    left := mergeSort(a[:mid])\n    right := mergeSort(a[mid:])\n    return merge(left, right)\n}\nfunc merge(a, b []int) []int {\n    result := []int{}\n    for len(a) > 0 && len(b) > 0 {\n        if a[0] <= b[0] {\n            result = append(result, a[0])\n            a = a[1:]\n        } else {\n            result = append(result, b[0])\n            b = b[1:]\n        }\n    }\n    return append(append(result, a...), b...)\n}", "domain": "code_go"}
+{"prompt": "Please add tests for this function, covering edge cases like empty slices and negative numbers:\n\nfunc Max(nums []int) int {\n    max := nums[0]\n    for _, n := range nums[1:] {\n        if n > max {\n            max = n\n        }\n    }\n    return max\n}", "domain": "code_go"}
+{"prompt": "This slice sort isn't stable and I need stable ordering by two fields. Can you fix it?\n\nsort.Slice(people, func(i, j int) bool {\n    return people[i].Age < people[j].Age\n})", "domain": "code_go"}
+{"prompt": "I'm choosing between BoltDB, SQLite, and Postgres for a small embedded Go service—what would you recommend and why?", "domain": "code_go"}
+{"prompt": "optimise this string concatenation loop, it's really slow for large inputs: s := \"\"; for _, w := range words { s += w + \" \" }", "domain": "code_go"}
+{"prompt": "How does Go's escape analysis decide whether a variable is allocated on the stack or the heap? Can you give an example that triggers heap allocation?", "domain": "code_go"}
+{"prompt": "Can you show how to implement a custom sort.Interface for sorting a slice of time.Time values in descending order?", "domain": "code_go"}
+{"prompt": "Can you explain why this code deadlocks and show me how to fix it?\n\nch := make(chan int)\nch <- 1\nfmt.Println(<-ch)", "domain": "code_go"}
+{"prompt": "I keep confusing append with copy in Go slices — can you explain the difference with examples?", "domain": "code_go"}
+{"prompt": "Write a table-driven test in Go for a function that parses a duration string like '1h30m'.", "domain": "code_go"}
+{"prompt": "Walk me through how to write a Go function that safely closes multiple channels without causing a 'close of closed channel' panic.", "domain": "code_go"}
+{"prompt": "What are the trade-offs between vendoring dependencies and relying on the Go module proxy cache for reproducible builds?", "domain": "code_go"}
+{"prompt": "In Go, write a function that computes the edit distance between two strings and explain its time complexity.", "domain": "code_go"}
+{"prompt": "Can you write an idiomatic Go implementation of an LRU cache with O(1) get and put, backed by a doubly linked list and a map, including thread safety via a mutex?", "domain": "code_go"}
+{"prompt": "This HTTP handler is leaking memory somehow, any idea why?\n\nfunc handler(w http.ResponseWriter, r *http.Request) {\n    data, _ := ioutil.ReadAll(r.Body)\n    cache[r.URL.Path] = data\n}", "domain": "code_go"}
+{"prompt": "Implement an event-driven state machine in Go for an order processing workflow with states like Pending, Shipped, Delivered, and Cancelled, rejecting invalid transitions.", "domain": "code_go"}
+{"prompt": "Compare using context.Context cancellation versus a done channel pattern for stopping background goroutines.", "domain": "code_go"}
+{"prompt": "Write clean, idiomatic Go that generates all permutations of a short string.", "domain": "code_go"}
+{"prompt": "How can I benchmark this function using the testing package?", "domain": "code_go"}
+{"prompt": "Refactor this error handling to use Go 1.13+ error wrapping with %w and errors.Is.\n\nfunc readConfig(path string) error {\n    _, err := os.Open(path)\n    if err != nil {\n        return errors.New(\"failed to open config: \" + err.Error())\n    }\n    return nil\n}", "domain": "code_go"}
+{"prompt": "Compare table-driven tests with subtests using t.Run versus separate test functions for testing a validation function.", "domain": "code_go"}
+{"prompt": "Compare recursive and iterative implementations of a Fibonacci sequence generator in Go in terms of performance and stack usage.", "domain": "code_go"}
+{"prompt": "Compare embedding an interface versus embedding a concrete struct in terms of method promotion and testability.", "domain": "code_go"}
+{"prompt": "write a Go function that checks if two strings are anagrams of each other, keep it efficient", "domain": "code_go"}
+{"prompt": "Write a Go function that evaluates a string containing a simple arithmetic expression. Include a short comment explaining the approach.", "domain": "code_go"}
+{"prompt": "Write an LRU cache in Go backed by a doubly linked list and a map, with O(1) Get and Put operations.", "domain": "code_go"}
+{"prompt": "Walk me through implementing a simple circuit breaker pattern in Go for calls to an unreliable downstream service.", "domain": "code_go"}
+{"prompt": "Why does this panic with nil pointer dereference? I can't figure it out.\n\ntype Node struct { Next *Node; Val int }\nfunc Sum(n *Node) int { return n.Val + Sum(n.Next) }", "domain": "code_go"}
+{"prompt": "Design a simple Go package for a bounded semaphore using a buffered channel, exposing Acquire and Release methods, and show how you'd use it to limit concurrent access to an external API to at most 10 simultaneous requests.", "domain": "code_go"}
+{"prompt": "Review this code for idiomatic Go style and suggest improvements around naming, error handling, and package structure:\n\nfunc Get_User_By_ID(id int) (*User, error) {\n    var u User\n    err := db.QueryRow(\"SELECT * FROM users WHERE id = ?\", id).Scan(&u.ID, &u.Name)\n    if err != nil {\n        return nil, err\n    }\n    return &u, nil\n}", "domain": "code_go"}
+{"prompt": "Which is preferable for representing a fixed set of named constants in Go: a string-based enum with constants, or an int-based enum with a Stringer method? Discuss trade-offs around type safety and serialization.", "domain": "code_go"}
+{"prompt": "Given a service that processes thousands of small JSON documents, would you recommend encoding/json, easyjson, or something else for performance?", "domain": "code_go"}
+{"prompt": "What is the zero value of an int, string, and bool in Go? Give a short example showing each.", "domain": "code_go"}
+{"prompt": "This test is flaky and sometimes fails, any idea why?\n\nfunc TestConcurrent(t *testing.T) {\n    var wg sync.WaitGroup\n    count := 0\n    for i := 0; i < 100; i++ {\n        wg.Add(1)\n        go func() {\n            defer wg.Done()\n            count++\n        }()\n    }\n    wg.Wait()\n    if count != 100 {\n        t.Fail()\n    }\n}", "domain": "code_go"}
+{"prompt": "Why does this JSON unmarshaling silently drop the 'Age' field, and how do I fix the struct tags?\n\ntype Person struct {\n    Name string `json:\"name\"`\n    Age  int    `json:\"Age,omitempty\"`\n}", "domain": "code_go"}
+{"prompt": "Do you think it's a good idea to use goroutines for every I/O call in this handler, or is that overkill?\n\nfunc handler(w http.ResponseWriter, r *http.Request) {\n    go doWork()\n    w.Write([]byte(\"ok\"))\n}", "domain": "code_go"}
+{"prompt": "What's the idiomatic way to implement the Stringer interface for a custom error type that wraps another error?", "domain": "code_go"}
+{"prompt": "Write clean, idiomatic Go that finds the shortest path in an unweighted grid using BFS.", "domain": "code_go"}
+{"prompt": "Fix the race condition in this counter.", "domain": "code_go"}
+{"prompt": "Refactor this deeply nested error-handling code into something more idiomatic using early returns and possibly errors.Wrap-style formatting:\n\nfunc process(path string) error {\n    f, err := os.Open(path)\n    if err == nil {\n        defer f.Close()\n        data, err := io.ReadAll(f)\n        if err == nil {\n            var v map[string]interface{}\n            err := json.Unmarshal(data, &v)\n            if err == nil {\n                fmt.Println(v)\n            } else {\n                return err\n            }\n        } else {\n            return err\n        }\n    } else {\n        return err\n    }\n    return nil\n}", "domain": "code_go"}
+{"prompt": "Write a Go function that finds the longest common prefix of a list of strings. Include a short comment explaining the approach.", "domain": "code_go"}
+{"prompt": "Should logging inside a library package use a package-level logger, or should the logger always be passed in explicitly? What's your view?", "domain": "code_go"}
+{"prompt": "Explain how Go's interface satisfaction works implicitly, and how to check at compile time that a type implements an interface without instantiating it.", "domain": "code_go"}
+{"prompt": "What's your opinion on using reflection in Go for a generic serialization helper, versus writing explicit marshal/unmarshal methods per type?", "domain": "code_go"}
+{"prompt": "Write a Go program that reads a large file line by line using bufio.Scanner with a custom split function.", "domain": "code_go"}
+{"prompt": "Would you recommend generics for this kind of utility function, or is a plain interface{} version still more idiomatic in current Go?", "domain": "code_go"}
+{"prompt": "Compare recursive and iterative implementations of this factorial function for stack safety and performance:\n\nfunc factorial(n int) int {\n    if n == 0 { return 1 }\n    return n * factorial(n-1)\n}", "domain": "code_go"}
+{"prompt": "I'm new to Go — what's the difference between a slice and an array, with a small example?", "domain": "code_go"}
+{"prompt": "Can you clean up this code to be more idiomatic Go? It feels like it was ported from Java.\n\nfunc GetName() string {\n    var name string = \"\"\n    if name == \"\" {\n        name = \"default\"\n    }\n    return name\n}", "domain": "code_go"}
+{"prompt": "Write a generic Go function using type parameters that finds the minimum value in a slice of any ordered type.", "domain": "code_go"}
+{"prompt": "Implement a min-heap in Go using container/heap for a custom priority queue of jobs with priority and timestamp fields, and show a usage example.", "domain": "code_go"}
+{"prompt": "Write a benchmark using the testing.B type for comparing strings.Builder against plain string concatenation.", "domain": "code_go"}
+{"prompt": "can you show me how to implement the Stringer interface for this struct? type Point struct { X, Y int }", "domain": "code_go"}
+{"prompt": "Can you write a function that flattens a nested slice of interfaces into a single flat slice?", "domain": "code_go"}
+{"prompt": "Write a context-aware HTTP client call with timeout in Go.", "domain": "code_go"}
+{"prompt": "I'm trying to understand why this interface satisfaction fails to compile: type Animal interface { Speak() string }; type Dog struct{}; func (d *Dog) Speak() string { return \"Woof\" }; var a Animal = Dog{}. Explain the pointer versus value receiver issue causing this and show the fix.", "domain": "code_go"}
+{"prompt": "Walk me through, step by step, how to build a simple LRU cache in Go using a doubly linked list and a map.", "domain": "code_go"}
+{"prompt": "Explain the difference between make and new in Go.", "domain": "code_go"}
+{"prompt": "Explain the difference between method value and method expression in Go with a short example.", "domain": "code_go"}
+{"prompt": "explain why this generic function doesn't compile: func Max[T int | float64](a, b T) T { if a > b { return a }; return b } — I'm getting a type constraint error", "domain": "code_go"}
+{"prompt": "Can you write a Go implementation of Dijkstra's shortest path algorithm using a priority queue via container/heap?", "domain": "code_go"}
+{"prompt": "Implement, in Go, code that implements a stack using two queues. Add a couple of example calls.", "domain": "code_go"}
+{"prompt": "This function panics with 'index out of range' intermittently. Can you find the bug?\n\nfunc lastN(s []int, n int) []int {\n    return s[len(s)-n:]\n}", "domain": "code_go"}
+{"prompt": "What is the difference between an interface with a nil value and a truly nil interface in Go? Show an example where this causes a bug.", "domain": "code_go"}
+{"prompt": "Explain what 'go vet' would catch here.", "domain": "code_go"}
+{"prompt": "Should I use panic/recover for handling unexpected internal errors in a library, or propagate everything through returned errors? Discuss when panic/recover is actually justified.", "domain": "code_go"}
+{"prompt": "Explain what happens when you close a channel twice.", "domain": "code_go"}
+{"prompt": "Do you think it's worth adopting generics for this container type, or would a type-specific implementation be clearer and easier to maintain?\n\ntype Stack struct {\n    items []interface{}\n}", "domain": "code_go"}
+{"prompt": "Implement, in Go, code that counts set bits in an integer. Add a couple of example calls.", "domain": "code_go"}
+{"prompt": "What's the more idiomatic way to represent optional fields in a Go struct that gets marshaled to JSON — pointers, a sentinel value, or a wrapper type?", "domain": "code_go"}
+{"prompt": "Can you help me implement a simple rate limiter using a token bucket in Go?", "domain": "code_go"}
+{"prompt": "I want to implement retries with exponential backoff for an HTTP client call, can you show a clean way to do it?", "domain": "code_go"}
+{"prompt": "I need a Go function that merges two sorted int slices into one sorted slice, can you write that for me?", "domain": "code_go"}
+{"prompt": "Write a goroutine-safe singleton pattern in Go.", "domain": "code_go"}
+{"prompt": "This map access is panicking randomly and I can't figure out why:\n\nfunc GetValue(m map[string]int, key string) int {\n    return m[key] + 1\n}\n\nWait actually it's not panicking, but the caller expects -1 when missing, how do I add that?", "domain": "code_go"}
+{"prompt": "I'm building a worker pool that processes jobs from a channel, but under load some goroutines never exit even after I close the input channel and cancel the context. Here's the code, can you find the leak and rewrite it properly?\n\nfunc worker(ctx context.Context, jobs <-chan int, results chan<- int) {\n    for {\n        select {\n        case j := <-jobs:\n            results <- j * 2\n        case <-ctx.Done():\n            return\n        }\n    }\n}", "domain": "code_go"}
+{"prompt": "How would you implement a simple pub/sub system using channels in Go?", "domain": "code_go"}
+{"prompt": "What's wrong with this select statement?", "domain": "code_go"}
+{"prompt": "Why is my struct not being JSON marshaled correctly?", "domain": "code_go"}
+{"prompt": "Walk me through how to refactor this nested if-else chain into something more idiomatic Go:\n\nfunc grade(score int) string {\n    if score >= 90 {\n        return \"A\"\n    } else {\n        if score >= 80 {\n            return \"B\"\n        } else {\n            if score >= 70 {\n                return \"C\"\n            } else {\n                return \"F\"\n            }\n        }\n    }\n}", "domain": "code_go"}
+{"prompt": "Compare using context values to pass request-scoped data versus explicit function parameters in a layered Go application.", "domain": "code_go"}
+{"prompt": "Implement, in Go, code that computes the factorial of a number. Add a couple of example calls.", "domain": "code_go"}
+{"prompt": "Write a Go implementation of a bounded semaphore using channels, and show how to use it to limit concurrent database connections.", "domain": "code_go"}
+{"prompt": "Here's a function using sync.WaitGroup that sometimes panics with 'panic: sync: negative WaitGroup counter' — can you find the race and fix it? func run(tasks []func()) { var wg sync.WaitGroup for _, t := range tasks { go func() { wg.Add(1); defer wg.Done(); t() }() } wg.Wait() }", "domain": "code_go"}
+{"prompt": "I'm debating between GORM and sqlx for a Go service that talks to Postgres. What would you suggest given a team that's new to Go?", "domain": "code_go"}
+{"prompt": "For a CLI tool that needs subcommands, would you recommend cobra or just structuring it with the standard flag package?", "domain": "code_go"}
+{"prompt": "I have a struct with a JSON tag typo and unmarshalling silently drops a field. Can you spot the bug?\n\ntype User struct {\n    Name  string `json:\"nmae\"`\n    Email string `json:\"email\"`\n}", "domain": "code_go"}
+{"prompt": "Write a Go implementation of a trie (prefix tree) supporting Insert, Search, and StartsWith operations, and explain the time complexity of each operation relative to the length of the input string.", "domain": "code_go"}
+{"prompt": "My program panics with 'index out of range' — here's the code: arr := []int{1,2,3}; fmt.Println(arr[5]) — explain why and how to avoid this safely.", "domain": "code_go"}
+{"prompt": "Explain the difference between buffered and unbuffered channels with a concrete example showing when a send would block.", "domain": "code_go"}
+{"prompt": "Can you write a simple worker pool that processes jobs from a channel with a fixed number of goroutines?", "domain": "code_go"}
+{"prompt": "What does this error mean: 'invalid memory address or nil pointer dereference'?", "domain": "code_go"}
+{"prompt": "Which logging library would you recommend for a production Go service: standard log, zap, or zerolog, and why?", "domain": "code_go"}
+{"prompt": "For unit testing HTTP handlers, is it better to use httptest.NewRecorder directly or spin up a real httptest.Server? Discuss when each approach is appropriate.", "domain": "code_go"}
+{"prompt": "I'm getting 'assignment mismatch' error on this line, what's wrong: a, b := someFunc()", "domain": "code_go"}
+{"prompt": "This code panics with 'index out of range' intermittently and I can't reproduce it consistently. Can you spot the race condition?\n\ntype Counter struct {\n    items []int\n}\n\nfunc (c *Counter) Add(n int) {\n    c.items = append(c.items, n)\n}\n\nfunc (c *Counter) Last() int {\n    return c.items[len(c.items)-1]\n}\n\nIt's being called from multiple goroutines without any synchronization. Explain the root cause and fix it.", "domain": "code_go"}
+{"prompt": "Implement a consistent hashing ring in Go for distributing keys across a set of nodes, including adding and removing nodes with minimal key redistribution.", "domain": "code_go"}
+{"prompt": "Walk me through how to implement pagination for a REST API endpoint in Go, including query parameter parsing and validation.", "domain": "code_go"}
+{"prompt": "Explain how Go's garbage collector decides when to run and what GOGC controls, then show how you'd use runtime.ReadMemStats to log heap usage periodically in a long-running service.", "domain": "code_go"}
+{"prompt": "Write a Go program that spawns multiple goroutines to fetch several URLs concurrently, aggregates their response status codes, and times out any request that takes longer than 2 seconds using context.WithTimeout, printing a summary at the end.", "domain": "code_go"}
+{"prompt": "Write a Go program that walks a directory tree using filepath.WalkDir, computes the SHA-256 hash of every regular file, and prints duplicate files grouped by hash. Handle symlinks safely and skip files larger than a configurable size limit.", "domain": "code_go"}
+{"prompt": "Write idiomatic Go code for a functional options pattern to configure a Server struct.", "domain": "code_go"}
+{"prompt": "Explain the difference between value receivers and pointer receivers in Go methods, using a concrete example where choosing the wrong one causes a subtle bug in a struct that tracks accumulated state across method calls.", "domain": "code_go"}
+{"prompt": "Can you write a simple graph implementation with BFS traversal in Go?", "domain": "code_go"}
+{"prompt": "I need to implement a simple bounded queue using a slice, can you show me how?", "domain": "code_go"}
+{"prompt": "Compare using channels to implement a semaphore versus using a buffered channel of empty structs directly for limiting concurrency to N goroutines.", "domain": "code_go"}
+{"prompt": "I need a step-by-step explanation of how to implement rate limiting for an HTTP handler using golang.org/x/time/rate.", "domain": "code_go"}
+{"prompt": "Write clean, idiomatic Go that computes the moving average of a numeric stream.", "domain": "code_go"}
+{"prompt": "can you show me how to use sync.Once to make sure an init function only runs once?", "domain": "code_go"}
+{"prompt": "Write a Go function that implements binary search on a sorted slice of integers iteratively.", "domain": "code_go"}
+{"prompt": "I'm getting 'assignment mismatch' when calling a function—can you explain step by step what's wrong here?\n\nfunc divide(a, b int) int {\n    return a / b, a % b\n}\n\nq, r := divide(10, 3)", "domain": "code_go"}
+{"prompt": "Write a Go program that implements a simple LFU cache and explain why it's more complex to implement correctly than an LRU cache.", "domain": "code_go"}
+{"prompt": "Is it better to use time.Sleep with a loop or time.Ticker for a polling task that checks a resource every 5 seconds?", "domain": "code_go"}
+{"prompt": "Refactor this to use strings.Builder instead of concatenation.\n\nfunc join(items []string) string {\n    result := \"\"\n    for _, item := range items {\n        result += item + \",\"\n    }\n    return result\n}", "domain": "code_go"}
+{"prompt": "Explain exactly what happens memory-wise when you append to a slice that shares an underlying array with another slice, and give an example where this causes a subtle bug.", "domain": "code_go"}
+{"prompt": "Write a Go function that implements a rate limiter using the token bucket algorithm with time.Ticker.", "domain": "code_go"}
+{"prompt": "Why does this code print an unexpected value due to loop variable capture, and how do I fix it idiomatically?\n\nfuncs := []func(){}\nfor i := 0; i < 3; i++ {\n    funcs = append(funcs, func() { fmt.Println(i) })\n}\nfor _, f := range funcs { f() }", "domain": "code_go"}
+{"prompt": "When would you choose gRPC over a plain JSON REST API in a Go microservices architecture, and what are the downsides of each?", "domain": "code_go"}
+{"prompt": "Write a Go function that implements a simple exponential moving average. Include a short comment explaining the approach.", "domain": "code_go"}
+{"prompt": "How do I sort a slice of custom structs by a specific field in Go? Can you show an example using sort.Slice?", "domain": "code_go"}
+{"prompt": "I want to merge two sorted slices into one sorted slice without using sort.Sort, what's a good approach?", "domain": "code_go"}
+{"prompt": "Why does this interface assertion panic?", "domain": "code_go"}
+{"prompt": "Write a Go function that implements a min-heap using container/heap for scheduling tasks by priority.", "domain": "code_go"}
+{"prompt": "Would you recommend gRPC or plain REST for a microservice that needs low-latency internal communication in Go? Give me your reasoning.", "domain": "code_go"}
+{"prompt": "I need to implement Dijkstra's shortest path algorithm in Go using a priority queue from container/heap.", "domain": "code_go"}
+{"prompt": "Fix the race condition in this counter.\n\nvar counter int\nfunc increment() {\n    counter++\n}", "domain": "code_go"}
+{"prompt": "Write a function that implements quicksort in place on a slice of ints, and explain its worst-case time complexity.", "domain": "code_go"}
+{"prompt": "Write a generic Go function using constraints.Ordered that returns the maximum of two values.", "domain": "code_go"}
+{"prompt": "I need to gracefully shut down an HTTP server on SIGINT/SIGTERM while letting in-flight requests finish — write the full main function for that using context and signal.NotifyContext.", "domain": "code_go"}
+{"prompt": "What's the more idiomatic way to close resources in Go — should every function that opens a file also be responsible for closing it, or is there a cleaner pattern?", "domain": "code_go"}
+{"prompt": "Write a Go implementation of a bloom filter with configurable false-positive rate, including the math for choosing the number of hash functions and bit array size.", "domain": "code_go"}
+{"prompt": "Fix this panic: index out of range\n\nfunc last(s []int) int {\n    return s[len(s)]\n}", "domain": "code_go"}
+{"prompt": "write a Go program that reads command-line args and computes their sum, handling non-numeric input gracefully", "domain": "code_go"}
+{"prompt": "Can you implement a thread-safe singleton in Go using sync.Once and explain why it's preferable to a mutex-guarded check?", "domain": "code_go"}
+{"prompt": "Compare go:generate-based code generation versus reflection-based approaches for implementing a generic Equal function across struct types.", "domain": "code_go"}
+{"prompt": "Explain how the runtime decides when to move a goroutine's stack and grow it, and whether I should ever worry about this in practice.", "domain": "code_go"}
+{"prompt": "Write clean, idiomatic Go that finds the missing number in a range of 1..n.", "domain": "code_go"}
+{"prompt": "Implement, in Go, code that validates an email address. Add a couple of example calls.", "domain": "code_go"}
+{"prompt": "How does the select statement with a default case behave in Go, and can you show a non-blocking channel read example?", "domain": "code_go"}
+{"prompt": "Refactor this code to use the functional options pattern instead of a giant constructor with many parameters: func NewServer(addr string, timeout time.Duration, maxConns int, tls bool, logger *log.Logger) *Server { ... }", "domain": "code_go"}
+{"prompt": "Can you explain what a goroutine leak is and show a minimal example of code that accidentally causes one?", "domain": "code_go"}
+{"prompt": "Debug this code for me — it's supposed to reverse a linked list but seems to lose nodes:\n\nfunc reverse(head *Node) *Node {\n    var prev *Node\n    for head != nil {\n        next := head.Next\n        head.Next = prev\n        prev = head\n    }\n    return prev\n}", "domain": "code_go"}
+{"prompt": "Write a Go function that reverses a linked list. Include a short comment explaining the approach.", "domain": "code_go"}
+{"prompt": "Can you explain why this struct embedding doesn't work the way I expect?\n\ntype Animal struct { Name string }\ntype Dog struct { Animal }\nfunc (a Animal) Speak() string { return \"...\" }\nfunc (d Dog) Speak() string { return \"Woof\" }", "domain": "code_go"}
+{"prompt": "can you explain what this code does line by line? func memoize(f func(int) int) func(int) int { cache := map[int]int{}; return func(n int) int { if v, ok := cache[n]; ok { return v }; r := f(n); cache[n] = r; return r } }", "domain": "code_go"}
+{"prompt": "Why does this goroutine leak?", "domain": "code_go"}
+{"prompt": "Explain what 'go vet' catches that the compiler doesn't, with an example of code that would trigger a warning.", "domain": "code_go"}
+{"prompt": "can you write a Go function that computes the longest common subsequence of two strings and explain the time complexity", "domain": "code_go"}
+{"prompt": "Optimize this string concatenation loop: for i := 0; i < 1000; i++ { s += \"x\" }", "domain": "code_go"}
+{"prompt": "Write clean, idiomatic Go that finds all pairs in an array that sum to a target.", "domain": "code_go"}
+{"prompt": "I need to parse a CSV file and sum a column of numbers, can you write that in Go?", "domain": "code_go"}
+{"prompt": "How would I refactor this function to return an error instead of calling log.Fatal, and what callers need to change?\n\nfunc loadConfig(path string) Config {\n    data, err := os.ReadFile(path)\n    if err != nil {\n        log.Fatal(err)\n    }\n    var cfg Config\n    json.Unmarshal(data, &cfg)\n    return cfg\n}", "domain": "code_go"}
+{"prompt": "Explain the difference between context.WithCancel, context.WithTimeout, and context.WithDeadline, with a short example of each.", "domain": "code_go"}
+{"prompt": "Write a Go function that implements a simple LRU cache. Include a short comment explaining the approach.", "domain": "code_go"}
+{"prompt": "my Go program panics with 'nil pointer dereference' somewhere in this struct method, any idea what's wrong: func (u *User) Greet() string { return \"Hello \" + u.Name }", "domain": "code_go"}
+{"prompt": "Write a Go function that implements a trie for efficient prefix search over a dictionary of words.", "domain": "code_go"}
+{"prompt": "Implement, in Go, code that finds the majority element in an array. Add a couple of example calls.", "domain": "code_go"}
+{"prompt": "Here's a snippet that's supposed to close all channels in a slice but panics with 'close of closed channel': for _, ch := range channels { close(ch) }; for _, ch := range channels { close(ch) }. Explain the bug and show a safe pattern for ensuring channels are closed exactly once, even from multiple goroutines.", "domain": "code_go"}
+{"prompt": "Write a Go program using the flag package to build a CLI tool that accepts subcommands like 'add' and 'list' with their own flag sets.", "domain": "code_go"}
+{"prompt": "Can you add table-driven tests with subtests for this validation function?\n\nfunc IsValidEmail(email string) bool {\n    return strings.Contains(email, \"@\") && strings.Contains(email, \".\")\n}", "domain": "code_go"}
+{"prompt": "Can you explain the difference between value receivers and pointer receivers using this example?\n\ntype Counter struct {\n    count int\n}\nfunc (c Counter) Increment() {\n    c.count++\n}", "domain": "code_go"}
+{"prompt": "Explain what 'go fmt' does and why it's considered good practice to run it before committing code.", "domain": "code_go"}
+{"prompt": "Compare the net/http package's default ServeMux with a third-party router like chi or gorilla/mux for a REST API with path parameters.", "domain": "code_go"}
+{"prompt": "Explain what this snippet does step by step, including the memory implications: type Node struct { val int; next *Node }; func reverse(head *Node) *Node { var prev *Node; for head != nil { next := head.next; head.next = prev; prev = head; head = next }; return prev }", "domain": "code_go"}
+{"prompt": "I have a slice and I'm appending to it inside a loop but the results are weird — can you explain what append actually does under the hood?", "domain": "code_go"}
+{"prompt": "Write a Go function that implements exponential backoff retry logic for an HTTP request.", "domain": "code_go"}
+{"prompt": "Should I use a pointer receiver or value receiver for this method, and what's the idiomatic rule of thumb here?\n\ntype Point struct { X, Y int }\nfunc (p Point) Move(dx, dy int) Point { return Point{p.X+dx, p.Y+dy} }", "domain": "code_go"}
+{"prompt": "This test is failing intermittently and I think it's a race condition, can you spot it?\n\nvar counter int\n\nfunc increment() {\n    counter++\n}\n\nfunc TestIncrement(t *testing.T) {\n    for i := 0; i < 100; i++ {\n        go increment()\n    }\n}", "domain": "code_go"}
+{"prompt": "Why is my JSON unmarshal returning zero values? type P struct { name string }", "domain": "code_go"}
+{"prompt": "What's the trade-off between using a mutex-protected counter and an atomic.Int64 for incrementing a shared counter across goroutines?", "domain": "code_go"}
+{"prompt": "Write a Go function that validates whether a given string is valid JSON without fully unmarshalling it into a struct.", "domain": "code_go"}
+{"prompt": "Explain what 'escape analysis' means in Go, how I can check whether a variable escapes to the heap using build flags, and give an example of a small code change that would prevent an unnecessary heap allocation.", "domain": "code_go"}
+{"prompt": "Compare using a linked list versus a slice-backed stack for an LRU cache implementation in Go, considering both performance and code complexity.", "domain": "code_go"}
+{"prompt": "Write a Go function that implements binary search on a sorted []int slice, returning the index or -1 if not found.", "domain": "code_go"}
+{"prompt": "Can you show me how to implement the sync.Pool pattern to reduce allocations for a frequently created struct?", "domain": "code_go"}
+{"prompt": "Write a Go function that merges multiple sorted channels of ints into a single sorted output channel, similar to a k-way merge, using goroutines and select.", "domain": "code_go"}
+{"prompt": "How do I read a text file line by line in Go and print each line with its line number?", "domain": "code_go"}
+{"prompt": "Debug why this recursive mutex deadlocks when called from within a method holding the same lock:\n\ntype Store struct {\n    mu sync.Mutex\n    data map[string]int\n}\nfunc (s *Store) Get(k string) int {\n    s.mu.Lock()\n    defer s.mu.Unlock()\n    return s.data[k]\n}\nfunc (s *Store) GetOrDefault(k string, def int) int {\n    s.mu.Lock()\n    defer s.mu.Unlock()\n    if v := s.Get(k); v != 0 {\n        return v\n    }\n    return def\n}", "domain": "code_go"}
+{"prompt": "Write clean, idiomatic Go that computes the nth Fibonacci number iteratively.", "domain": "code_go"}
+{"prompt": "Do you recommend vendoring dependencies for this project, or is relying on go.sum and module proxies sufficient nowadays?", "domain": "code_go"}
+{"prompt": "What's your recommendation for handling configuration in a Go service: environment variables, a YAML file, or both?", "domain": "code_go"}
+{"prompt": "explain the difference between a buffered and unbuffered channel in Go with a tiny example", "domain": "code_go"}
+{"prompt": "write a Go function that flattens a nested slice of interfaces into a single flat slice", "domain": "code_go"}
+{"prompt": "I have two ways to deduplicate a slice of strings—one using a map[string]struct{}, another sorting first then removing adjacent duplicates. Compare their time and space trade-offs.\n\nfunc dedup(items []string) []string {\n    // implementation here\n}", "domain": "code_go"}
+{"prompt": "In your opinion, is it better to return a custom error type or use sentinel errors with errors.Is for a library that other teams will import?", "domain": "code_go"}
+{"prompt": "Which is more idiomatic in Go for protecting shared state: a sync.Mutex wrapping a plain map, or sync.Map? Walk me through the trade-offs for a cache that's read far more often than written.", "domain": "code_go"}
+{"prompt": "This recursive Fibonacci function is too slow for large n—can you optimize it and explain your reasoning step by step?\n\nfunc fib(n int) int {\n    if n <= 1 {\n        return n\n    }\n    return fib(n-1) + fib(n-2)\n}", "domain": "code_go"}
+{"prompt": "Can you write a quick benchmark function to compare two implementations of a Fibonacci function?", "domain": "code_go"}
+{"prompt": "I'm implementing a LRU cache in Go using a map and a doubly linked list — can you review this and point out bugs?\n\ntype LRUCache struct {\n    capacity int\n    cache    map[int]*Node\n    head, tail *Node\n}", "domain": "code_go"}
+{"prompt": "Optimize this recursive Fibonacci function for large n using memoization, and compare its performance to an iterative version.", "domain": "code_go"}
+{"prompt": "Add unit tests for this function.\n\nfunc Max(a, b int) int {\n    if a > b {\n        return a\n    }\n    return b\n}", "domain": "code_go"}
+{"prompt": "What are the practical differences between the net/http default multiplexer and a router library like chi or gorilla/mux, and when does the extra dependency pay off?", "domain": "code_go"}
+{"prompt": "Write a function that flattens a nested slice of interfaces, e.g. []interface{}{1, []interface{}{2, 3, []interface{}{4}}}, into a flat []int.", "domain": "code_go"}
+{"prompt": "What does the blank identifier _ do in Go?", "domain": "code_go"}
+{"prompt": "I want to implement a trie (prefix tree) in Go supporting insert, search, and a StartsWith prefix query, can you write it with clean idiomatic structure?", "domain": "code_go"}
+{"prompt": "How do I implement retries with exponential backoff for an HTTP client call in Go? Please explain each step.", "domain": "code_go"}
+{"prompt": "What's your take on using channels versus mutexes for protecting shared state in a Go worker pool — which would you recommend for a moderate-throughput job queue?", "domain": "code_go"}
+{"prompt": "Write a Go program that implements a simple in-memory key-value store with TTL expiration for entries, using a background goroutine that periodically sweeps expired keys, and make sure concurrent reads and writes are safe.", "domain": "code_go"}
+{"prompt": "Write a Go function to check if two strings are anagrams.", "domain": "code_go"}
+{"prompt": "Implement, in Go, code that finds the greatest common divisor of two integers. Add a couple of example calls.", "domain": "code_go"}
+{"prompt": "I have a struct with embedded interfaces and I'm not sure how method promotion resolves ambiguity — can you explain with an example?", "domain": "code_go"}
+{"prompt": "What's your opinion on using panic/recover for control flow instead of explicit error returns in a parsing library?", "domain": "code_go"}
+{"prompt": "Design a simple pub-sub system in Go using channels where multiple subscribers can receive messages published to a topic, and handle subscriber removal safely without leaking goroutines.", "domain": "code_go"}
+{"prompt": "I'm getting 'undefined: fmt' when I run my Go file — what could cause this and how do I fix it?", "domain": "code_go"}
+{"prompt": "Write a Go function that parses a CSV file and returns a slice of structs, handling malformed rows gracefully.", "domain": "code_go"}
+{"prompt": "Write a small Go program that reads command-line arguments and prints them one by one.", "domain": "code_go"}
+{"prompt": "Implement a simple graph in Go with adjacency lists and a breadth-first search function.", "domain": "code_go"}
+{"prompt": "Write a binary search function for a sorted []int slice.", "domain": "code_go"}
+{"prompt": "I want to implement the observer pattern in Go — can you show a clean idiomatic way using channels or interfaces?", "domain": "code_go"}
+{"prompt": "Write a LRU cache in Go.", "domain": "code_go"}
+{"prompt": "I'm getting a 'panic: runtime error: invalid memory address or nil pointer dereference' — what does this generally mean and how do I debug it?", "domain": "code_go"}
+{"prompt": "Write a generic Go function using type parameters that finds the maximum element in a slice of any ordered type, then show how to constrain it properly with the constraints.Ordered interface, and add a benchmark comparing it to a non-generic int-specific version.", "domain": "code_go"}
+{"prompt": "Write a Go function that returns the k most frequent elements in a list. Include a short comment explaining the approach.", "domain": "code_go"}
+{"prompt": "Refactor this deeply nested error-checking function into something more readable using early returns and helper functions.\n\nfunc process(data []byte) error {\n    if data != nil {\n        if len(data) > 0 {\n            if data[0] == 0x1 {\n                if len(data) > 10 {\n                    return doWork(data)\n                } else {\n                    return errors.New(\"too short\")\n                }\n            } else {\n                return errors.New(\"bad header\")\n            }\n        } else {\n            return errors.New(\"empty\")\n        }\n    }\n    return errors.New(\"nil data\")\n}", "domain": "code_go"}
+{"prompt": "write a benchmark test for this function so I can see how it performs: func Sum(nums []int) int { total := 0; for _, n := range nums { total += n }; return total }", "domain": "code_go"}
+{"prompt": "Explain the difference between errors.Is, errors.As, and a plain type assertion when handling wrapped errors in Go.", "domain": "code_go"}
+{"prompt": "I want to implement a simple pub/sub system over WebSockets in Go using gorilla/websocket where clients subscribe to topics and receive messages published to those topics. Sketch out the server-side connection handling, the topic registry, and how you'd clean up disconnected clients.", "domain": "code_go"}
+{"prompt": "Implement, in Go, code that implements run-length encoding and decoding. Add a couple of example calls.", "domain": "code_go"}
+{"prompt": "Write a Go function that removes duplicate elements from a slice of integers.", "domain": "code_go"}
+{"prompt": "Explain what happens under the hood when you append to a slice that has spare capacity versus one that doesn't, and write a small benchmark demonstrating the performance difference between pre-allocating a slice with make([]int, 0, n) versus growing it from nil.", "domain": "code_go"}
+{"prompt": "Trace through this code and tell me what it outputs, explaining the slice aliasing behavior:\n\ns := []int{1, 2, 3, 4, 5}\na := s[1:3]\na = append(a, 100)\nfmt.Println(s)", "domain": "code_go"}
+{"prompt": "Should I model this domain with a single large struct with many optional fields, or several smaller structs composed together? Give the trade-offs for maintainability.", "domain": "code_go"}
+{"prompt": "Should error handling in this code use errors.Is or a type switch for checking a specific sentinel error?\n\nif err == sql.ErrNoRows {\n    return nil, nil\n}", "domain": "code_go"}
+{"prompt": "Write a simple Go example showing how to use defer to close a file after opening it.", "domain": "code_go"}
+{"prompt": "Explain what a nil map lookup returns versus a nil map write.", "domain": "code_go"}
+{"prompt": "Explain what struct embedding does in this example and whether it counts as inheritance:\n\ntype Animal struct { Name string }\nfunc (a Animal) Speak() string { return a.Name + ' makes a sound' }\ntype Dog struct { Animal }", "domain": "code_go"}
+{"prompt": "Write a Go function using recursion to calculate the factorial of a number, and explain why recursion works here.", "domain": "code_go"}
+{"prompt": "In Go, write a function that finds the greatest common divisor of two integers and explain its time complexity.", "domain": "code_go"}
+{"prompt": "Implement a Go function that merges overlapping intervals given as a slice of [2]int pairs, sorting first by start time, and explain the edge cases around intervals that touch but don't overlap versus intervals fully contained within another.", "domain": "code_go"}
+{"prompt": "can you add error wrapping with %w to this function so callers can use errors.Is? func readFile(path string) error { _, err := os.Open(path); if err != nil { return err }; return nil }", "domain": "code_go"}
+{"prompt": "Can you explain the difference between a buffered and unbuffered channel with a small example?", "domain": "code_go"}
+{"prompt": "Explain what's happening in this closure loop bug and how to fix it in older Go versions.\n\nfor i := 0; i < 3; i++ {\n    go func() {\n        fmt.Println(i)\n    }()\n}", "domain": "code_go"}
+{"prompt": "I have a benchmark showing this function allocates way more than expected. Can you profile mentally and suggest optimizations to reduce allocations?\n\nfunc parseLines(input string) []string {\n    var lines []string\n    for _, line := range strings.Split(input, \"\\n\") {\n        lines = append(lines, strings.TrimSpace(line))\n    }\n    return lines\n}", "domain": "code_go"}
+{"prompt": "Add a benchmark test for this function using testing.B.", "domain": "code_go"}
+{"prompt": "Explain the difference between buffered and unbuffered channels with an example.", "domain": "code_go"}
+{"prompt": "Write a Go function that performs a breadth-first search on a graph represented as an adjacency list (map[int][]int) and returns the shortest path between two nodes as a slice of node IDs.", "domain": "code_go"}
+{"prompt": "Write clean, idiomatic Go that counts the frequency of each word in a paragraph.", "domain": "code_go"}
+{"prompt": "Compare struct tags with reflection-based validation versus a validation library like go-playground/validator.", "domain": "code_go"}
+{"prompt": "Here's my worker pool implementation—walk me through how you'd debug why goroutines seem to leak:\n\nfunc worker(id int, jobs <-chan int, results chan<- int) {\n    for j := range jobs {\n        results <- j * 2\n    }\n}\n\nfunc main() {\n    jobs := make(chan int, 100)\n    results := make(chan int, 100)\n    for w := 1; w <= 3; w++ {\n        go worker(w, jobs, results)\n    }\n    for j := 1; j <= 9; j++ {\n        jobs <- j\n    }\n}", "domain": "code_go"}
+{"prompt": "Write a generic function to filter a slice based on a predicate.", "domain": "code_go"}
+{"prompt": "Write a Go program that implements a simple in-memory key-value store with TTL expiration using a background goroutine.", "domain": "code_go"}
+{"prompt": "Write a Go function that takes a slice of integers and returns a new slice with duplicates removed, keeping the original order.", "domain": "code_go"}
+{"prompt": "Write a Go CLI tool using the flag package that accepts a directory path and a file extension, then counts the total lines of code across all matching files, printing a per-file breakdown sorted by line count descending.", "domain": "code_go"}
+{"prompt": "Write a CLI tool in Go using the flag package that takes a directory path and a file extension as arguments, then recursively counts how many files with that extension exist, printing the total and a breakdown per subdirectory.", "domain": "code_go"}
+{"prompt": "How do I implement graceful shutdown for an HTTP server in Go so in-flight requests finish before the process exits?", "domain": "code_go"}
+{"prompt": "My HTTP handler leaks goroutines under load. Can you help me find why?\n\nfunc handler(w http.ResponseWriter, r *http.Request) {\n    ch := make(chan string)\n    go func() {\n        ch <- fetchData()\n    }()\n    select {\n    case res := <-ch:\n        w.Write([]byte(res))\n    case <-time.After(2 * time.Second):\n        w.Write([]byte('timeout'))\n    }\n}", "domain": "code_go"}
+{"prompt": "Explain step by step how to use context.Context to cancel a long-running database query in Go.", "domain": "code_go"}
+{"prompt": "Write a simple Go program that reads numbers from a file line by line and prints their sum.", "domain": "code_go"}
+{"prompt": "Write a Go function that computes the running maximum over a sliding window. Include a short comment explaining the approach.", "domain": "code_go"}
+{"prompt": "Walk me through step by step how to mock an external API call in a Go unit test using an interface and a fake implementation.", "domain": "code_go"}
+{"prompt": "In Go, write a function that computes the nth Fibonacci number iteratively and explain its time complexity.", "domain": "code_go"}
+{"prompt": "Write a Go function that detects cycles in a directed graph represented as an adjacency list using DFS.", "domain": "code_go"}
+{"prompt": "Can you help me write unit tests for this function using table-driven tests?\n\nfunc Add(a, b int) int { return a + b }", "domain": "code_go"}
+{"prompt": "I need to decide between goroutine-per-connection and a worker pool for a TCP server handling thousands of concurrent clients. What are the memory and scheduling trade-offs?", "domain": "code_go"}
+{"prompt": "How would you write a custom JSON marshaler for a type that needs special date formatting?", "domain": "code_go"}
+{"prompt": "Refactor this function to use errors.Is and errors.As instead of string comparison for error checking.\n\nfunc handle(err error) {\n    if err.Error() == \"not found\" {\n        fmt.Println(\"missing\")\n    }\n}", "domain": "code_go"}
+{"prompt": "Refactor this switch statement to use a map lookup instead.", "domain": "code_go"}
+{"prompt": "Optimize this function that checks if a string is a palindrome; it currently allocates a reversed copy of the string which is wasteful for large inputs: func isPalindrome(s string) bool { reversed := \"\"; for i := len(s) - 1; i >= 0; i-- { reversed += string(s[i]) }; return reversed == s }", "domain": "code_go"}
+{"prompt": "Why does appending to a slice sometimes mutate a shared underlying array unexpectedly? Show an example and explain slice capacity growth.", "domain": "code_go"}
+{"prompt": "Walk me through implementing a simple pub-sub system in Go using channels and a map of subscribers.", "domain": "code_go"}
+{"prompt": "Can you explain what makes a type 'comparable' in Go, why you can't use a slice as a map key, and show a workaround for using a struct containing a slice field as an effective map key?", "domain": "code_go"}
+{"prompt": "Compare using goroutines with channels versus a simple for loop for processing a batch of 50 items where each item takes a few milliseconds. Is concurrency worth the complexity here?", "domain": "code_go"}
+{"prompt": "Write a Go function to detect whether two strings are anagrams of each other, ignoring case and spaces.", "domain": "code_go"}
+{"prompt": "Can you explain how Go's type assertion syntax works, the difference between the single-value and two-value forms, and what happens if the assertion fails in each case with a concrete example?", "domain": "code_go"}
+{"prompt": "Can you write a simple Go function that checks if a number is prime, and explain the loop logic step by step?", "domain": "code_go"}
+{"prompt": "Implement a simple pub/sub system in Go where multiple subscribers can receive broadcasted messages via channels, with a way to unsubscribe cleanly.", "domain": "code_go"}
+{"prompt": "How do I profile a Go program's memory allocations step by step using pprof and the go tool pprof interface?", "domain": "code_go"}
+{"prompt": "Compare using database/sql directly versus an ORM like GORM for a Go service that talks to PostgreSQL.", "domain": "code_go"}
+{"prompt": "Explain what's wrong with this map iteration order assumption in a test that's failing intermittently.\n\nfunc TestOrder(t *testing.T) {\n    m := map[string]int{\"a\": 1, \"b\": 2, \"c\": 3}\n    var keys []string\n    for k := range m {\n        keys = append(keys, k)\n    }\n    if keys[0] != \"a\" {\n        t.Fail()\n    }\n}", "domain": "code_go"}
+{"prompt": "Can you explain what 'go vet' and 'staticcheck' would likely flag in this code and how to fix each issue?\n\nfunc process(m map[string]int) {\n    for k, v := range m {\n        go func() {\n            fmt.Println(k, v)\n        }()\n    }\n}", "domain": "code_go"}
+{"prompt": "my JSON unmarshal is silently dropping a field, here's the struct: type Config struct { name string; Port int }", "domain": "code_go"}
+{"prompt": "Write a custom Stringer implementation for an enum type defined with iota and explain how fmt uses it.", "domain": "code_go"}
+{"prompt": "What's the trade-off between eager initialization in an init() function versus lazy initialization with sync.Once for an expensive global resource?", "domain": "code_go"}
+{"prompt": "What's the idiomatic way to handle context cancellation inside a long-running loop?", "domain": "code_go"}
+{"prompt": "Explain step by step how context.WithTimeout propagates cancellation through a chain of function calls in a Go HTTP handler.", "domain": "code_go"}
+{"prompt": "Write a generic Set[T comparable] type in Go with Add, Remove, Contains, and Union methods, and a String() method for debugging output.", "domain": "code_go"}
+{"prompt": "Write a function that detects a cycle in a linked list using Floyd's tortoise and hare algorithm, and explain why this approach uses constant extra space compared to a hash-set-based approach.", "domain": "code_go"}
+{"prompt": "Can you review this error handling and suggest how to make it more idiomatic with wrapped errors and errors.Is/As support?\n\nfunc readConfig(path string) (*Config, error) {\n    data, err := ioutil.ReadFile(path)\n    if err != nil {\n        return nil, errors.New(\"failed to read config: \" + err.Error())\n    }\n    ...\n}", "domain": "code_go"}
+{"prompt": "Implement a context-aware HTTP middleware in Go that adds a request-scoped logger with a correlation ID, and show how a downstream handler would retrieve it.", "domain": "code_go"}
+{"prompt": "Implement, in Go, code that reverses a linked list. Add a couple of example calls.", "domain": "code_go"}
+{"prompt": "Write a function that computes the longest common subsequence of two strings using dynamic programming.", "domain": "code_go"}
+{"prompt": "Write a Go function that checks whether two strings are anagrams of each other.", "domain": "code_go"}
+{"prompt": "Compare the standard library's encoding/json package with a third-party library like easyjson for high-throughput JSON serialization.", "domain": "code_go"}
+{"prompt": "Explain the difference between GOMAXPROCS and the number of OS threads Go actually creates.", "domain": "code_go"}
+{"prompt": "My unit test for a time-dependent function is flaky because it calls time.Now() directly — how do I refactor for testability and write a deterministic test?", "domain": "code_go"}
+{"prompt": "Write a Go implementation of quicksort that sorts in place, then explain why the choice of pivot matters for worst-case performance and suggest an improvement using median-of-three pivot selection.", "domain": "code_go"}
+{"prompt": "I need to serialize a Go struct to protobuf-like binary format manually without using the protobuf library, just as a learning exercise, focusing on varint encoding for integers.", "domain": "code_go"}
+{"prompt": "Simplify this nested if-else chain.", "domain": "code_go"}
+{"prompt": "Explain the differences between shallow copying and deep copying a struct containing slices and maps in Go, and show how to implement a proper deep copy.", "domain": "code_go"}
+{"prompt": "Write a Go function that computes the nth Fibonacci number iteratively. Include a short comment explaining the approach.", "domain": "code_go"}
+{"prompt": "Write clean, idiomatic Go that returns the k most frequent elements in a list.", "domain": "code_go"}
+{"prompt": "Can you write a simple rate limiter middleware for a Go HTTP server?", "domain": "code_go"}
+{"prompt": "Convert this recursive factorial function into an iterative one and explain the tradeoffs:\n\nfunc factorial(n int) int {\n    if n == 0 { return 1 }\n    return n * factorial(n-1)\n}", "domain": "code_go"}
+{"prompt": "Can you explain what this defer/recover pattern actually does line by line?\n\nfunc safeCall(f func()) {\n    defer func() {\n        if r := recover(); r != nil {\n            fmt.Println(\"recovered:\", r)\n        }\n    }()\n    f()\n}", "domain": "code_go"}
+{"prompt": "What is the difference between make and new in Go?", "domain": "code_go"}
+{"prompt": "Should I use os.Exit directly in main() for error handling, or is there a better idiomatic pattern you'd recommend?", "domain": "code_go"}
+{"prompt": "My code won't compile: func main() { fmt.Println(\"Hello\") } — I forgot to import fmt, can you fix it and explain the error?", "domain": "code_go"}
+{"prompt": "How do I set up a Go project from scratch with go.mod, a proper folder structure, and a Makefile for building and testing?", "domain": "code_go"}
+{"prompt": "Implement a binary search tree in Go with Insert, Delete, and InOrder traversal methods, ensuring the Delete handles all three node cases correctly.", "domain": "code_go"}
+{"prompt": "I'm deciding between a slice of pointers and a slice of values for a large collection of structs that get frequently updated. What would you recommend for performance and clarity?", "domain": "code_go"}
+{"prompt": "Explain step by step how buffered channels differ from unbuffered channels using this example:\n\nch := make(chan int, 2)\nch <- 1\nch <- 2\nch <- 3", "domain": "code_go"}
+{"prompt": "Implement a trie (prefix tree) in Go supporting Insert, Search, and StartsWith methods, with unit tests.", "domain": "code_go"}
+{"prompt": "Explain what's happening with this slice append behavior, it's confusing me.\n\ns := make([]int, 0, 3)\ns1 := append(s, 1)\ns2 := append(s, 2)\nfmt.Println(s1, s2)", "domain": "code_go"}
+{"prompt": "Implement heap.Interface in Go to build a priority queue of tasks ordered by priority.", "domain": "code_go"}
+{"prompt": "Show me step by step how to implement retry logic with exponential backoff for an HTTP client request in Go.", "domain": "code_go"}
+{"prompt": "Write a function to compute the GCD of two integers in Go.", "domain": "code_go"}
+{"prompt": "Write a Go function that computes the Hamming distance between two equal-length strings. Include a short comment explaining the approach.", "domain": "code_go"}
+{"prompt": "Why is this slice growing unexpectedly?", "domain": "code_go"}
+{"prompt": "Convert this loop to use goroutines safely.", "domain": "code_go"}
+{"prompt": "Implement, in Go, code that converts an integer to its binary representation. Add a couple of example calls.", "domain": "code_go"}
+{"prompt": "write a small Go example demonstrating how embedding works with structs, like a Base and Derived type", "domain": "code_go"}
+{"prompt": "Explain why comparing two structs with == fails to compile in this case, and how to work around it:\n\ntype Data struct {\n    Values []int\n}\nfunc main() {\n    d1 := Data{Values: []int{1, 2}}\n    d2 := Data{Values: []int{1, 2}}\n    fmt.Println(d1 == d2)\n}", "domain": "code_go"}
+{"prompt": "What's the performance difference between using a map[string]struct{} and a slice with linear search for checking set membership on small collections?", "domain": "code_go"}
+{"prompt": "Here's a function meant to deep copy a struct containing slices and maps, but it's producing shared references instead: func clone(e Event) Event { return e }. Explain why a shallow copy occurs here and write a proper deep copy implementation for a struct with nested slices and maps.", "domain": "code_go"}
+{"prompt": "Do you think it's idiomatic to use pointer receivers everywhere by default in Go, or should I be more selective? Give me your reasoning.", "domain": "code_go"}
+{"prompt": "Can you explain how defer interacts with named return values in this function, and what the final returned value will be?\n\nfunc example() (result int) {\n    defer func() {\n        result++\n    }()\n    return 5\n}", "domain": "code_go"}
+{"prompt": "I'm not sure whether to use a buffered or unbuffered channel for this producer-consumer setup — can you explain the tradeoffs and suggest which one fits better?", "domain": "code_go"}
+{"prompt": "How do I implement a simple LRU cache in Go?", "domain": "code_go"}
+{"prompt": "This recursive function blows the stack on large inputs, how would you rewrite it iteratively?\n\nfunc factorial(n int) int {\n    if n == 0 { return 1 }\n    return n * factorial(n-1)\n}", "domain": "code_go"}
+{"prompt": "In Go, write a function that counts the frequency of each word in a paragraph and explain its time complexity.", "domain": "code_go"}
+{"prompt": "Show me how to convert a string to an integer in Go and handle the error if the conversion fails.", "domain": "code_go"}
+{"prompt": "In terms of maintainability, would you recommend table-driven tests for this function, and can you show me why they're better than separate test functions?", "domain": "code_go"}
+{"prompt": "What's wrong with this recover usage that fails to stop a panic from crashing the program? go func() { recover(); doWork() }()", "domain": "code_go"}
+{"prompt": "Here's my worker pool implementation but it deadlocks sometimes. Can you spot the bug?\n\nfunc worker(jobs <-chan int, results chan<- int) {\n    for j := range jobs {\n        results <- j * j\n    }\n}\nfunc main() {\n    jobs := make(chan int, 5)\n    results := make(chan int)\n    for w := 1; w <= 3; w++ {\n        go worker(jobs, results)\n    }\n    for i := 0; i < 10; i++ { jobs <- i }\n    close(jobs)\n    for i := 0; i < 10; i++ { fmt.Println(<-results) }\n}", "domain": "code_go"}
+{"prompt": "How do I implement a simple pub-sub system using channels in Go?", "domain": "code_go"}
+{"prompt": "Write unit tests using the standard testing package for this function:\n\nfunc IsPalindrome(s string) bool {\n    s = strings.ToLower(s)\n    for i, j := 0, len(s)-1; i < j; i, j = i+1, j-1 {\n        if s[i] != s[j] { return false }\n    }\n    return true\n}", "domain": "code_go"}
+{"prompt": "Can you write a property-based test using testing/quick (or an equivalent approach) for a function that reverses a slice, verifying that reversing twice returns the original?", "domain": "code_go"}
+{"prompt": "I have a worker pool implementation in Go that occasionally deadlocks under heavy load. Here's the code:\n\nfunc worker(jobs <-chan int, results chan<- int, wg *sync.WaitGroup) {\n    defer wg.Done()\n    for j := range jobs {\n        results <- j * 2\n    }\n}\n\nfunc main() {\n    jobs := make(chan int, 100)\n    results := make(chan int)\n    var wg sync.WaitGroup\n    for w := 1; w <= 3; w++ {\n        wg.Add(1)\n        go worker(jobs, results, &wg)\n    }\n    for j := 1; j <= 5; j++ {\n        jobs <- j\n    }\n    close(jobs)\n    wg.Wait()\n    close(results)\n}\n\nCan you explain why it hangs, fix the bug, and suggest how I'd collect the results safely without losing any?", "domain": "code_go"}
+{"prompt": "Explain the memory layout and alignment implications of this struct, and suggest a field reordering to reduce padding.\n\ntype Event struct {\n    ID      int8\n    Payload int64\n    Flag    bool\n    Count   int32\n}", "domain": "code_go"}
+{"prompt": "Compare using sync.Once for lazy initialization versus initializing a global variable in an init() function.", "domain": "code_go"}
+{"prompt": "Explain what a Go interface is with a simple example involving a Shape interface and two implementing types.", "domain": "code_go"}
+{"prompt": "Write a Go program that reads a large file line by line without loading the whole thing into memory.", "domain": "code_go"}
+{"prompt": "Compare implementing a binary search tree with explicit left/right pointers versus using a slice-backed array representation for a heap.", "domain": "code_go"}
+{"prompt": "Design a lock-free ring buffer in Go using atomic operations, and explain the memory ordering guarantees you're relying on.", "domain": "code_go"}
+{"prompt": "I'm confused about why my struct fields aren't accessible from another package — here's my struct: type person struct { name string; age int } — explain the issue.", "domain": "code_go"}
+{"prompt": "I have a slice that keeps getting reallocated in a hot loop. Would you recommend preallocating capacity with make, or is there a better pattern to avoid this?", "domain": "code_go"}
+{"prompt": "How do I implement a rate limiter in Go using a token bucket backed by time.Ticker?", "domain": "code_go"}
+{"prompt": "Debug why this JSON unmarshal fails silently.\n\ntype User struct {\n    Name string\n    age  int\n}", "domain": "code_go"}
+{"prompt": "Explain what 'go:generate' comments do and show a simple example that generates a stringer method for an enum type.", "domain": "code_go"}
+{"prompt": "Can you explain what the blank identifier _ is used for in Go with a couple of examples?", "domain": "code_go"}
+{"prompt": "Can you explain what happens under the hood when you append to a slice that has spare capacity versus one that doesn't?", "domain": "code_go"}
+{"prompt": "Explain the subtle bug in this code where a slice of pointers to loop variables all end up pointing to the same value in older Go versions.", "domain": "code_go"}
+{"prompt": "Why does comparing two structs with == fail to compile here?\n\ntype Data struct {\n    Values []int\n}", "domain": "code_go"}
+{"prompt": "Design a thread-safe LRU cache in Go using a doubly linked list and a map, with Get and Put in O(1), and explain the eviction logic in detail.", "domain": "code_go"}
+{"prompt": "Write a Go function that merges overlapping intervals given as a slice of [start, end] pairs, sorted by start time.", "domain": "code_go"}
+{"prompt": "What's the best way to structure error handling in a Go HTTP handler chain — should middleware swallow errors or always propagate them up?", "domain": "code_go"}
+{"prompt": "How would I implement exponential backoff retry logic for an HTTP client in Go?", "domain": "code_go"}
+{"prompt": "What's wrong with this struct embedding setup, the method isn't being promoted like I expected?\n\ntype Animal struct{}\nfunc (a Animal) Speak() string { return \"...\" }\n\ntype Dog struct {\n    *Animal\n}", "domain": "code_go"}
+{"prompt": "write a Go http handler that reads a JSON body, validates a required 'email' field, and returns 400 if missing", "domain": "code_go"}
+{"prompt": "Explain what the := operator does versus the var keyword when declaring variables in Go.", "domain": "code_go"}
+{"prompt": "Do you prefer defining constants with typed enums using iota, or plain string constants for representing state in Go? What are the tradeoffs?", "domain": "code_go"}
+{"prompt": "In Go, write a function that parses a CSV line into fields and explain its time complexity.", "domain": "code_go"}
+{"prompt": "Write a Go function that takes two slices of integers and returns their intersection as a new slice.", "domain": "code_go"}
+{"prompt": "What's your take on using a linter like golangci-lint in CI versus relying on go vet alone?", "domain": "code_go"}
+{"prompt": "Can you convert this synchronous file processing function into one that uses errgroup for concurrent processing with proper error propagation?\n\nfunc processFiles(paths []string) error {\n    for _, p := range paths {\n        if err := processFile(p); err != nil {\n            return err\n        }\n    }\n    return nil\n}", "domain": "code_go"}
+{"prompt": "Should I embed a struct or use composition with an explicit field in this case? Which is more idiomatic Go?\n\ntype Base struct { ID int }\ntype Derived struct { Base; Name string }", "domain": "code_go"}
+{"prompt": "Why does this print 3 3 3 instead of 0 1 2?\n\nfor i := 0; i < 3; i++ {\n    go func() {\n        fmt.Println(i)\n    }()\n}", "domain": "code_go"}
+{"prompt": "What's your recommendation for structuring a Go monorepo with multiple services — separate go.mod files per service or one shared module?", "domain": "code_go"}
+{"prompt": "Can you explain why this code triggers a data race under go run -race, and how sync.Mutex would fix it? var counter int ; func inc() { counter++ } ; func main() { for i := 0; i < 100; i++ { go inc() } }", "domain": "code_go"}
+{"prompt": "Write an idiomatic Go error type that includes a status code.", "domain": "code_go"}
+{"prompt": "Can you refactor this to use context.Context for cancellation instead of a bool flag?\n\nfunc worker(stop bool) {\n    for !stop {\n        doWork()\n    }\n}", "domain": "code_go"}
+{"prompt": "Add a mutex to make this map safe for concurrent access.\n\ntype Cache struct {\n    data map[string]string\n}", "domain": "code_go"}
+{"prompt": "How do channels work in Go? Can you give a simple example with a goroutine sending a value and the main function receiving it?", "domain": "code_go"}
+{"prompt": "What's the cleanest way to implement a middleware chain for http.Handler in Go?", "domain": "code_go"}
+{"prompt": "What does context.WithTimeout do and when should I use it?", "domain": "code_go"}
+{"prompt": "Write a simple Go function that checks if a slice contains a given integer.", "domain": "code_go"}
+{"prompt": "How do I implement a simple trie data structure in Go for prefix searching, step by step?", "domain": "code_go"}
+{"prompt": "Do you recommend using errors.Is and errors.As everywhere now, or is direct comparison still fine in simple cases?", "domain": "code_go"}
+{"prompt": "Write a Go implementation of a min-heap for integers using container/heap, including the full Push, Pop, Len, Less, and Swap methods, plus a small main function demonstrating extracting elements in sorted order.", "domain": "code_go"}
+{"prompt": "Compare using context values to pass request-scoped data versus explicitly threading parameters through function signatures. Which is more maintainable long term?", "domain": "code_go"}
+{"prompt": "Should I use goroutines with a sync.WaitGroup or an errgroup.Group for fanning out concurrent HTTP calls and collecting errors? What's your recommendation?", "domain": "code_go"}
+{"prompt": "Write a Go implementation of a min-heap using container/heap for scheduling tasks by priority.", "domain": "code_go"}
+{"prompt": "Write a Go program that uses runtime.NumGoroutine to detect goroutine leaks in a long-running service.", "domain": "code_go"}
+{"prompt": "Show me, step by step, how to write a Go CLI tool using the flag package that accepts a filename and an optional verbose flag.", "domain": "code_go"}
+{"prompt": "Implement a simple LRU cache in Go using a doubly linked list and a map.", "domain": "code_go"}
+{"prompt": "How would I go about writing a generic Stack type in Go using type parameters, step by step?", "domain": "code_go"}
+{"prompt": "What's your honest opinion on this pattern of returning multiple named booleans instead of an enum-like type?\n\nfunc CheckStatus() (isReady, isError, isPending bool) { return }", "domain": "code_go"}
+{"prompt": "Write clean, idiomatic Go that checks if two strings are anagrams.", "domain": "code_go"}
+{"prompt": "Implement, in Go, code that implements binary search. Add a couple of example calls.", "domain": "code_go"}
+{"prompt": "Explain how sync.Pool works and when it actually helps performance versus just adding overhead.", "domain": "code_go"}
+{"prompt": "Is it better to use JSON tags with encoding/json or switch to a faster library like easyjson for a high-throughput API? What are the real trade-offs beyond raw speed?", "domain": "code_go"}
+{"prompt": "Can you review this function and tell me if the error handling follows Go best practices, and suggest improvements?\n\nfunc Divide(a, b int) int {\n    if b == 0 {\n        panic(\"divide by zero\")\n    }\n    return a / b\n}", "domain": "code_go"}
+{"prompt": "Can you explain what this channel select statement is actually doing step by step?\n\nselect {\ncase v := <-ch1:\n    fmt.Println(v)\ncase <-time.After(2 * time.Second):\n    fmt.Println(\"timeout\")\n}", "domain": "code_go"}
+{"prompt": "Write a Go middleware function for net/http that logs request method, path, status code, and duration, and chains properly with other middleware using a common signature like func(http.Handler) http.Handler.", "domain": "code_go"}
+{"prompt": "Add graceful shutdown to this HTTP server.", "domain": "code_go"}
+{"prompt": "Explain what this goroutine leak bug is doing wrong and suggest the idiomatic fix.\n\nfunc worker(jobs <-chan int) {\n    go func() {\n        for j := range jobs {\n            fmt.Println(j)\n        }\n    }()\n}", "domain": "code_go"}
+{"prompt": "In Go, write a function that implements binary search and explain its time complexity.", "domain": "code_go"}
+{"prompt": "Compare the performance and readability trade-offs of using reflection versus code generation for implementing a generic JSON validator.", "domain": "code_go"}
+{"prompt": "This JSON unmarshal isn't populating my struct fields, what am I missing?\n\ntype User struct {\n    Name string\n    age  int\n}\n\nvar u User\njson.Unmarshal(data, &u)", "domain": "code_go"}
+{"prompt": "I'm getting 'fatal error: all goroutines are asleep - deadlock!' — can you explain common causes and fix this snippet?\n\nch := make(chan int)\nch <- 1\nfmt.Println(<-ch)", "domain": "code_go"}
+{"prompt": "Why does this loop capture the wrong variable in each goroutine, and how do I fix it in modern Go? for i := 0; i < 5; i++ { go func() { fmt.Println(i) }() }", "domain": "code_go"}
+{"prompt": "Give me a step-by-step plan for implementing graceful shutdown in a Go HTTP server that listens for SIGINT and SIGTERM.", "domain": "code_go"}
+{"prompt": "Write a basic Go example demonstrating how to use a for loop to iterate over a slice of strings.", "domain": "code_go"}
+{"prompt": "Should I use errors.Is/errors.As with wrapped errors, or define custom error types with type switches? Give me the pros and cons for a mid-sized web service.", "domain": "code_go"}
+{"prompt": "How do I properly close resources like files and network connections when using defer inside a loop without leaking?", "domain": "code_go"}
+{"prompt": "what's wrong with this mutex usage? it's deadlocking on the second call: func (c *Counter) Inc() { c.mu.Lock(); c.mu.Lock(); c.val++; c.mu.Unlock() }", "domain": "code_go"}
+{"prompt": "Can you show me how to implement a simple circuit breaker pattern in Go?", "domain": "code_go"}
+{"prompt": "Can you add table-driven tests for this function?\n\nfunc Add(a, b int) int {\n    return a + b\n}", "domain": "code_go"}
+{"prompt": "Can you compare using channels versus sync.Mutex plus condition variables for implementing a bounded blocking queue in Go, with example code for both approaches?", "domain": "code_go"}
+{"prompt": "What are the trade-offs between synchronous logging and asynchronous logging (e.g., buffered channel plus background writer) in a high-throughput Go service?", "domain": "code_go"}
+{"prompt": "I'm torn between storing timestamps as time.Time versus Unix epoch integers in my structs and database. What are the trade-offs for serialization, timezone handling, and storage?", "domain": "code_go"}
+{"prompt": "Write a function in Go that counts vowels in a given string.", "domain": "code_go"}
+{"prompt": "Write a Go program that counts how many times each word appears in a sentence using a map.", "domain": "code_go"}
+{"prompt": "Implement, in Go, code that generates all permutations of a short string. Add a couple of example calls.", "domain": "code_go"}
+{"prompt": "I need a rate limiter middleware for a net/http server that allows N requests per second per client IP using a token bucket algorithm, implemented without third-party libraries.", "domain": "code_go"}
+{"prompt": "Can you explain what 'escape analysis' means in Go and give an example of a function where a variable escapes to the heap versus one where it stays on the stack?", "domain": "code_go"}
+{"prompt": "Optimize this fibonacci function.\n\nfunc fib(n int) int {\n    if n <= 1 {\n        return n\n    }\n    return fib(n-1) + fib(n-2)\n}", "domain": "code_go"}
+{"prompt": "How do I use the unsafe.Pointer type to convert between a []byte and a string without copying, and what are the risks?", "domain": "code_go"}
+{"prompt": "Explain the purpose of build tags in Go and show how to write a file that only compiles on linux.", "domain": "code_go"}
+{"prompt": "Walk me through the steps to convert this synchronous file-processing function into one that uses goroutines and a WaitGroup safely.", "domain": "code_go"}
+{"prompt": "Explain why this code deadlocks: ch := make(chan int); ch <- 1; fmt.Println(<-ch)", "domain": "code_go"}
+{"prompt": "Write a function that detects whether a given string of parentheses, brackets, and braces is balanced, supporting '()', '[]', and '{}', and add a comprehensive set of unit tests including nested and malformed inputs.", "domain": "code_go"}
+{"prompt": "Optimize this string concatenation loop that's causing performance issues on large datasets.\n\nfunc buildString(items []string) string {\n    result := \"\"\n    for _, item := range items {\n        result += item + \",\"\n    }\n    return result\n}", "domain": "code_go"}
+{"prompt": "Write a Go program to find the factorial of a number using recursion.", "domain": "code_go"}
+{"prompt": "Compare defining behavior via an interface versus using struct embedding for code reuse in this scenario: multiple handlers share logging and metrics logic.", "domain": "code_go"}
+{"prompt": "Write a Go program that fetches multiple URLs concurrently and returns results in the original input order, cancelling remaining requests if one fails.", "domain": "code_go"}
+{"prompt": "Explain the zero value semantics of Go structs, slices, and maps.", "domain": "code_go"}
+{"prompt": "How can I use unsafe.Pointer to reinterpret a []byte as a string without copying, and what are the risks?", "domain": "code_go"}
+{"prompt": "Write a CLI tool in Go using the flag package that reads a file path and word to search for, then counts occurrences.", "domain": "code_go"}
+{"prompt": "I'm choosing between slices.Contains from the standard library and writing my own loop for membership checks. Is there ever a real reason to write it manually now?", "domain": "code_go"}
+{"prompt": "Can you refactor this code to remove the global variable and make it easier to test?\n\nvar counter int\n\nfunc Increment() {\n    counter++\n}\n\nfunc GetCount() int {\n    return counter\n}", "domain": "code_go"}
+{"prompt": "This code compiles but the output is wrong, can you spot the bug?\n\nfunc Sum(nums []int) int {\n    var total int\n    for i := 0; i <= len(nums); i++ {\n        total += nums[i]\n    }\n    return total\n}", "domain": "code_go"}
+{"prompt": "Refactor this HTTP handler to use context for cancellation, add structured logging with slog, and return proper JSON error responses instead of plain text: func handler(w http.ResponseWriter, r *http.Request) { data, err := fetchData(r.URL.Query().Get(\"id\")); if err != nil { http.Error(w, err.Error(), 500); return }; json.NewEncoder(w).Encode(data) }", "domain": "code_go"}
+{"prompt": "Write a Go program that walks a directory tree concurrently using filepath.WalkDir and a bounded worker pool to compute the SHA256 hash of every file, then explain how you avoided goroutine explosion.", "domain": "code_go"}
+{"prompt": "How do I write a table-driven test in Go for a function that validates email addresses?", "domain": "code_go"}
+{"prompt": "I'm trying to understand method sets in Go: given a type T with only pointer receiver methods, why can't I call those methods on a value stored in an interface variable if I only have a T (not *T)? Walk through a concrete example.", "domain": "code_go"}
+{"prompt": "In Go, write a function that converts a Roman numeral to an integer and explain its time complexity.", "domain": "code_go"}
+{"prompt": "What does 'go vet' actually check for, and how is it different from just running the compiler?", "domain": "code_go"}
+{"prompt": "What's the purpose of the context package in Go, and can you show a simple example of passing a context through a couple of function calls?", "domain": "code_go"}
+{"prompt": "Write clean, idiomatic Go that implements insertion sort.", "domain": "code_go"}
+{"prompt": "Optimize this recursive Fibonacci function using memoization in Go, and compare the complexity before and after: func fib(n int) int { if n <= 1 { return n } ; return fib(n-1) + fib(n-2) }", "domain": "code_go"}
+{"prompt": "Explain what happens with defer inside a loop that opens multiple files, and how to avoid resource leaks.", "domain": "code_go"}
+{"prompt": "Why does appending to this slice inside a goroutine cause a data race, and how would you fix it using a mutex or channel-based approach?\n\nvar results []int\nfor i := 0; i < 10; i++ {\n    go func() {\n        results = append(results, i)\n    }()\n}", "domain": "code_go"}
+{"prompt": "Write a Go function that flattens an arbitrarily nested list. Include a short comment explaining the approach.", "domain": "code_go"}
+{"prompt": "What's the idiomatic way to structure a Go project with multiple internal packages, a cmd directory, and shared domain logic, for a medium-sized microservice?", "domain": "code_go"}
+{"prompt": "Optimize this function for allocations — profile mentally and explain what you changed: func joinStrings(items []string) string { result := \"\" ; for _, s := range items { result += s + \",\" } ; return result }", "domain": "code_go"}
+{"prompt": "Here's a channel-based pipeline that deadlocks under load — can you find the bug? func stage1(out chan<- int) { for i := 0; i < 100; i++ { out <- i } ; close(out) } ; func stage2(in <-chan int, out chan<- int) { for v := range in { out <- v * 2 } }", "domain": "code_go"}
+{"prompt": "I have a slice of structs and I need to sort it by multiple fields: first by Age ascending, then by Name alphabetically for ties. Here's the struct:\n\ntype Person struct {\n    Name string\n    Age  int\n}\n\nWrite the sorting code using sort.Slice, and show how you'd do the same thing using slices.SortFunc from the standard library in newer Go versions.", "domain": "code_go"}
+{"prompt": "Write a Go function that computes the factorial of a number. Include a short comment explaining the approach.", "domain": "code_go"}
+{"prompt": "how would you implement a simple binary search tree in Go with Insert and Search methods?", "domain": "code_go"}
+{"prompt": "Refactor this deeply nested error-handling function into idiomatic Go using early returns and sentinel errors, keeping behavior identical: func process(data []byte) (string, error) { if data != nil { if len(data) > 0 { result, err := parse(data); if err == nil { return result, nil } else { return \"\", err } } else { return \"\", errors.New(\"empty\") } } else { return \"\", errors.New(\"nil data\") } }", "domain": "code_go"}
+{"prompt": "How do I write a custom Stringer implementation for this type so it prints nicely?\n\ntype Point struct {\n    X, Y int\n}", "domain": "code_go"}
+{"prompt": "Would you recommend switching this codebase from GOPATH-style imports to Go modules, and what's the practical benefit?", "domain": "code_go"}
+{"prompt": "Write a Go function implementing quicksort in place on a slice of ints, and briefly explain the partitioning scheme you chose.", "domain": "code_go"}
+{"prompt": "What's wrong with this code, it compiles but gives the wrong output?\n\nfunc main() {\n    for i := 0; i < 5; i++ {\n        defer fmt.Println(i)\n    }\n}", "domain": "code_go"}
+{"prompt": "Write a Go function that implements Dijkstra's shortest path algorithm on a weighted graph represented as an adjacency list, and discuss its time complexity.", "domain": "code_go"}
+{"prompt": "Can you write table-driven tests for this function, covering edge cases like empty input, negative numbers, and overflow?\n\nfunc SumPositive(nums []int) int {\n    sum := 0\n    for _, n := range nums {\n        if n > 0 {\n            sum += n\n        }\n    }\n    return sum\n}", "domain": "code_go"}
+{"prompt": "I'm getting 'assignment mismatch' when calling this function. What's wrong?\n\nfunc getValues() (int, string) {\n    return 5\n}", "domain": "code_go"}
+{"prompt": "In Go, write a function that merges two sorted arrays and explain its time complexity.", "domain": "code_go"}
+{"prompt": "Can you write a rate limiter middleware for net/http using the token bucket algorithm from golang.org/x/time/rate?", "domain": "code_go"}
+{"prompt": "Fix this: for _, v := range items { go func() { fmt.Println(v) }() }", "domain": "code_go"}
+{"prompt": "Write a binary search function for a sorted slice of ints.", "domain": "code_go"}
+{"prompt": "Here's a struct tag issue — my sqlx query isn't populating the field, can you spot the mistake? type User struct { ID int `db:\"id\"` ; Name string `db:\"user_name\"` }", "domain": "code_go"}
+{"prompt": "Please debug this code—it's supposed to reverse a linked list but returns the wrong result:\n\ntype Node struct {\n    Val  int\n    Next *Node\n}\n\nfunc reverse(head *Node) *Node {\n    var prev *Node\n    for head != nil {\n        head.Next = prev\n        prev = head\n    }\n    return prev\n}", "domain": "code_go"}

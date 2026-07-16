@@ -1,0 +1,100 @@
+{"prompt": "Why does typeof NaN return 'number'?", "domain": "code_javascript"}
+{"prompt": "Implement, in JavaScript, code that implements a simple exponential moving average. Add a couple of example calls.", "domain": "code_javascript"}
+{"prompt": "Explain step by step what this closure-based counter does and why calling increment() twice doesn't share state between two instances. function makeCounter(){ let count=0; return { increment: () => ++count, get: () => count }; }", "domain": "code_javascript"}
+{"prompt": "How do I add an item to the beginning and end of an array in JavaScript?", "domain": "code_javascript"}
+{"prompt": "Write a function that takes an array of numbers and returns only the even numbers.", "domain": "code_javascript"}
+{"prompt": "Explain step by step how JavaScript's event loop processes microtasks and macrotasks, using a small code example with setTimeout and Promise.resolve.", "domain": "code_javascript"}
+{"prompt": "Write clean, idiomatic JavaScript that implements a debounce wrapper for a function.", "domain": "code_javascript"}
+{"prompt": "What's your take on this code — is it idiomatic JavaScript or should I refactor it? const getUser = (id) => { return users.filter(u => u.id == id)[0]; }", "domain": "code_javascript"}
+{"prompt": "I need to flatten a deeply nested array of arbitrary depth without using Array.prototype.flat. Show an iterative solution using a stack.", "domain": "code_javascript"}
+{"prompt": "What is the difference between a for loop and a forEach loop when working with arrays?", "domain": "code_javascript"}
+{"prompt": "Write a binary search tree class in JavaScript with insert, contains, and an in-order traversal method that returns a sorted array.", "domain": "code_javascript"}
+{"prompt": "help me trace through this recursive function step by step so i understand what it returns: function fib(n){ return n<=1?n:fib(n-1)+fib(n-2); }", "domain": "code_javascript"}
+{"prompt": "I need to debounce a search input in React, can you show me the hook version", "domain": "code_javascript"}
+{"prompt": "What's the difference in practice between using localStorage and IndexedDB for caching moderately large amounts of structured data client-side?", "domain": "code_javascript"}
+{"prompt": "Fix this: array.map(x => x * 2).filter(x > 5)", "domain": "code_javascript"}
+{"prompt": "Write clean, idiomatic JavaScript that implements a min-heap with push and pop.", "domain": "code_javascript"}
+{"prompt": "what's the best way to merge two sorted arrays into one sorted array without using sort()", "domain": "code_javascript"}
+{"prompt": "I'm building a small e-commerce cart module in vanilla JavaScript. Can you write a Cart class that supports adding items with quantity, removing items, computing subtotal with tax, and applying a percentage discount code? Please also add basic input validation and a couple of usage examples showing edge cases like adding the same item twice.", "domain": "code_javascript"}
+{"prompt": "I need to parse a CSV string with quoted fields containing commas — can you write a robust parser without external libraries?", "domain": "code_javascript"}
+{"prompt": "Write a JavaScript function that checks if two strings are anagrams. Include a short comment explaining the approach.", "domain": "code_javascript"}
+{"prompt": "Design a rate limiter in JavaScript using the token bucket algorithm suitable for limiting API requests client-side.", "domain": "code_javascript"}
+{"prompt": "can you add some basic unit tests for this add function using Jest? function add(a,b){ return a+b; }", "domain": "code_javascript"}
+{"prompt": "why does typeof null === 'object'?", "domain": "code_javascript"}
+{"prompt": "In JavaScript, write a function that checks if a number is a perfect square without using sqrt and explain its time complexity.", "domain": "code_javascript"}
+{"prompt": "Implement, in JavaScript, code that implements a simple LRU cache. Add a couple of example calls.", "domain": "code_javascript"}
+{"prompt": "Can you convert this synchronous file-processing script into one that streams data using Node's Readable streams to avoid loading the whole file into memory?", "domain": "code_javascript"}
+{"prompt": "Compare the memory and performance implications of using Map versus a plain object as a cache in a Node.js server.", "domain": "code_javascript"}
+{"prompt": "Write a function that takes an array of numbers and returns the largest one, without using Math.max.", "domain": "code_javascript"}
+{"prompt": "Should I prefer generator functions or async iterators for streaming large datasets in Node.js?", "domain": "code_javascript"}
+{"prompt": "Write a function that deep-freezes an object recursively, including nested arrays and objects, and explain edge cases with functions as properties.", "domain": "code_javascript"}
+{"prompt": "Write a throttle function from scratch (no lodash) that limits a scroll handler to firing at most once every 200ms, and explain the difference between throttle and debounce.", "domain": "code_javascript"}
+{"prompt": "This function is supposed to debounce input events but it fires immediately every time. Can you spot the bug?\nfunction debounce(fn, delay) {\n  let timer;\n  return function(...args) {\n    clearTimeout(timer);\n    fn.apply(this, args);\n    timer = setTimeout(fn, delay);\n  };\n}", "domain": "code_javascript"}
+{"prompt": "Implement, in JavaScript, code that implements insertion sort. Add a couple of example calls.", "domain": "code_javascript"}
+{"prompt": "Implement, in JavaScript, code that detects a cycle in a directed graph. Add a couple of example calls.", "domain": "code_javascript"}
+{"prompt": "how would you implement binary search on a sorted array in JS?", "domain": "code_javascript"}
+{"prompt": "Implement, in JavaScript, code that finds the longest common prefix of a list of strings. Add a couple of example calls.", "domain": "code_javascript"}
+{"prompt": "What's the difference between null and undefined in JavaScript?", "domain": "code_javascript"}
+{"prompt": "write a function that converts a flat array of comments with parentId fields into a nested tree structure", "domain": "code_javascript"}
+{"prompt": "Should I prefer `Map` over plain objects for dictionaries in JavaScript, or is that only relevant in edge cases?", "domain": "code_javascript"}
+{"prompt": "Do you think using lodash is still worth it in modern JavaScript given how much the language has evolved, or should I just write my own utilities?", "domain": "code_javascript"}
+{"prompt": "Why does my array sort put 10 before 2?", "domain": "code_javascript"}
+{"prompt": "How do I loop through the keys and values of an object in JavaScript?", "domain": "code_javascript"}
+{"prompt": "Write a simple event emitter class.", "domain": "code_javascript"}
+{"prompt": "Can you explain what a callback function is and give a simple example using setTimeout?", "domain": "code_javascript"}
+{"prompt": "Add error handling to this fetch call: fetch(url).then(r=>r.json())", "domain": "code_javascript"}
+{"prompt": "I'm torn between using `for...of` loops and array methods like `.forEach` for readability. What do you think is more idiomatic?", "domain": "code_javascript"}
+{"prompt": "Do you prefer using Array.prototype.includes or a Set for membership checks when the array can get large?", "domain": "code_javascript"}
+{"prompt": "Why does `typeof NaN === 'number'` but `Number.isInteger(NaN) === false`? Walk me through the reasoning.", "domain": "code_javascript"}
+{"prompt": "Please explain the difference between call, apply, and bind in JavaScript with short examples showing how each one changes the value of 'this' when invoking a function.", "domain": "code_javascript"}
+{"prompt": "In JavaScript, write a function that removes duplicates from a list while keeping order and explain its time complexity.", "domain": "code_javascript"}
+{"prompt": "Can you debug why this recursive function causes a stack overflow on large inputs, and rewrite it iteratively? function sumTo(n){ if(n===0) return 0; return n + sumTo(n-1); }", "domain": "code_javascript"}
+{"prompt": "Can you help me optimize this function that finds duplicate values in a large array? It currently uses nested loops. function findDuplicates(arr){ let dupes=[]; for(let i=0;i<arr.length;i++){ for(let j=i+1;j<arr.length;j++){ if(arr[i]===arr[j]) dupes.push(arr[i]); } } return dupes; }", "domain": "code_javascript"}
+{"prompt": "What is the purpose of the 'use strict' directive at the top of a JavaScript file?", "domain": "code_javascript"}
+{"prompt": "In JavaScript, write a function that implements a simple exponential moving average and explain its time complexity.", "domain": "code_javascript"}
+{"prompt": "memoize this function for me", "domain": "code_javascript"}
+{"prompt": "can you help me trace through why this recursive fibonacci function is so slow for large n?", "domain": "code_javascript"}
+{"prompt": "Write clean, idiomatic JavaScript that implements run-length encoding and decoding.", "domain": "code_javascript"}
+{"prompt": "I'm confused about hoisting in JavaScript. Can you explain it simply with an example?", "domain": "code_javascript"}
+{"prompt": "why is my array sort() not working numerically? [10,1,2].sort()", "domain": "code_javascript"}
+{"prompt": "In JavaScript, write a function that returns the prime numbers below n using a sieve and explain its time complexity.", "domain": "code_javascript"}
+{"prompt": "What's your opinion on using optional chaining and nullish coalescing everywhere versus explicit checks, looking at this code: const name = user?.profile?.name ?? 'Anonymous';", "domain": "code_javascript"}
+{"prompt": "can you write a simple pagination function that slices an array based on page number and page size", "domain": "code_javascript"}
+{"prompt": "Here's a WeakMap-based private field pattern — can you explain why WeakMap is preferred over a regular Map for this use case? const _private = new WeakMap();", "domain": "code_javascript"}
+{"prompt": "I want to remove duplicate values from an array. What's the simplest way to do that in JavaScript?", "domain": "code_javascript"}
+{"prompt": "In JavaScript, write a function that computes the factorial of a number and explain its time complexity.", "domain": "code_javascript"}
+{"prompt": "Can you optimize this function that finds the intersection of two large arrays? Currently it's O(n*m) and I need it faster for arrays with tens of thousands of elements:\n\nfunction intersection(a, b){\n  return a.filter(x => b.includes(x));\n}", "domain": "code_javascript"}
+{"prompt": "What's your opinion on deeply chaining optional properties like `a?.b?.c?.d` — is there a point where it signals a design problem?", "domain": "code_javascript"}
+{"prompt": "I'm deciding whether to use a WeakMap instead of a regular object for caching DOM element metadata — what would you advise?", "domain": "code_javascript"}
+{"prompt": "write a function that checks if a string is a palindrome, ignoring punctuation and case", "domain": "code_javascript"}
+{"prompt": "Write a JavaScript function that counts set bits in an integer. Include a short comment explaining the approach.", "domain": "code_javascript"}
+{"prompt": "I'm choosing between Lodash and native JavaScript array methods for a new project. What would you actually pick and why?", "domain": "code_javascript"}
+{"prompt": "explain the difference between == and === with some tricky examples", "domain": "code_javascript"}
+{"prompt": "Write a throttling function using requestAnimationFrame for smoother UI updates instead of setTimeout-based throttling.", "domain": "code_javascript"}
+{"prompt": "Add unit tests for this add(a,b) function using Jest.", "domain": "code_javascript"}
+{"prompt": "In JavaScript, write a function that finds the majority element in an array and explain its time complexity.", "domain": "code_javascript"}
+{"prompt": "I need a deep clone function that handles circular references, Dates, Maps, and Sets correctly. structuredClone isn't available in my target environment.", "domain": "code_javascript"}
+{"prompt": "What's the better practice for memoizing expensive function calls in JavaScript — a simple object cache or a Map-based cache?", "domain": "code_javascript"}
+{"prompt": "Here's a recursive Fibonacci function that's painfully slow for n > 35. Can you optimize it using memoization, explain the time complexity improvement, and also show an iterative version for comparison? function fib(n) { if (n <= 1) return n; return fib(n-1) + fib(n-2); }", "domain": "code_javascript"}
+{"prompt": "Should I favor composition over inheritance in this JavaScript class hierarchy, or is inheritance fine here given the use case?", "domain": "code_javascript"}
+{"prompt": "I have this async function that's supposed to fetch multiple URLs in parallel and return their combined JSON, but errors from one failed request crash the whole thing. Can you rewrite it using Promise.allSettled and explain the difference from Promise.all? async function fetchAll(urls) { const results = await Promise.all(urls.map(url => fetch(url).then(r => r.json()))); return results; }", "domain": "code_javascript"}
+{"prompt": "I'm trying to implement drag-and-drop file upload using the HTML5 Drag and Drop API in vanilla JavaScript. Can you write the event handlers for dragover, dragleave, and drop, explain why preventDefault is necessary, and show how to read the dropped files using FileReader?", "domain": "code_javascript"}
+{"prompt": "Add Jest tests for this function that merges two sorted arrays into one sorted array.\nfunction mergeSorted(a, b) {\n  const result = [];\n  let i = 0, j = 0;\n  while (i < a.length && j < b.length) {\n    result.push(a[i] <= b[j] ? a[i++] : b[j++]);\n  }\n  return result.concat(a.slice(i)).concat(b.slice(j));\n}", "domain": "code_javascript"}
+{"prompt": "Write clean, idiomatic JavaScript that flattens an arbitrarily nested list.", "domain": "code_javascript"}
+{"prompt": "I'm deciding between Jest and Vitest for testing a Vite-based frontend project. What are the meaningful differences in practice?", "domain": "code_javascript"}
+{"prompt": "Write a JavaScript function that finds the majority element in an array. Include a short comment explaining the approach.", "domain": "code_javascript"}
+{"prompt": "In JavaScript, write a function that computes the depth of a binary tree and explain its time complexity.", "domain": "code_javascript"}
+{"prompt": "I have a race condition in this code where multiple rapid clicks trigger duplicate API submissions:\n\nbutton.addEventListener('click', async () => {\n  const data = await fetchData();\n  submitForm(data);\n});\n\nCan you fix this so that only one submission can be in flight at a time, disabling the button appropriately, and explain your approach?", "domain": "code_javascript"}
+{"prompt": "Why does this code log 'undefined' instead of the expected value, and how do I fix it?\nclass Counter {\n  constructor() { this.count = 0; }\n  increment() { this.count++; }\n}\nconst c = new Counter();\nconst inc = c.increment;\nsetTimeout(inc, 100);", "domain": "code_javascript"}
+{"prompt": "Compare using classes versus factory functions for creating objects with shared behavior in JavaScript. Which would you recommend for a mid-sized codebase and why?", "domain": "code_javascript"}
+{"prompt": "hey can you help me figure out why my array.map is returning undefined for everything, here's the code: arr.map(x => { x * 2 })", "domain": "code_javascript"}
+{"prompt": "Implement, in JavaScript, code that computes the moving average of a numeric stream. Add a couple of example calls.", "domain": "code_javascript"}
+{"prompt": "I'm implementing a custom EventEmitter class from scratch in vanilla JS. Can you review my implementation for memory leaks around listener removal?", "domain": "code_javascript"}
+{"prompt": "I have this code: const obj = { name: 'Sam' }; console.log(obj.age); It prints undefined instead of throwing an error. Can you explain why?", "domain": "code_javascript"}
+{"prompt": "Write clean, idiomatic JavaScript that validates an email address.", "domain": "code_javascript"}
+{"prompt": "add unit tests for this add(a,b) function", "domain": "code_javascript"}
+{"prompt": "Walk me through how to build a simple LRU cache in JavaScript using a Map, step by step, explaining each operation's time complexity.", "domain": "code_javascript"}
+{"prompt": "Help me debug this async/await error handling: it swallows errors silently. async function getData() { try { const res = await fetch('/api/data'); const json = res.json(); return json; } catch (e) {} }", "domain": "code_javascript"}
+{"prompt": "Explain what's wrong with this equality check inside an array sort and fix it: arr.sort((a, b) => a - b > 0);", "domain": "code_javascript"}
+{"prompt": "write a function to detect cycles in a linked list", "domain": "code_javascript"}
+{"prompt": "Write a JavaScript function that finds the shortest path in an unweighted grid using BFS. Include a short comment explaining the approach.", "domain": "code_javascript"}

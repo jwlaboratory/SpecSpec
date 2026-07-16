@@ -1,0 +1,100 @@
+{"prompt": "How does the body regulate acid-base balance through the bicarbonate buffer system, and what happens when that system is overwhelmed?", "domain": "ood_medical"}
+{"prompt": "Why do some people get heartburn after eating spicy food, and what is actually happening in the esophagus?", "domain": "ood_medical"}
+{"prompt": "How does hyperkalemia affect cardiac action potentials and ECG readings?", "domain": "ood_medical"}
+{"prompt": "Which oral hypoglycemic agent would you recommend avoiding in a patient with a history of heart failure?", "domain": "ood_medical"}
+{"prompt": "Can you explain why loop diuretics like furosemide can cause both hypokalemia and ototoxicity?", "domain": "ood_medical"}
+{"prompt": "Explain why ACE inhibitors can cause a dry cough.", "domain": "ood_medical"}
+{"prompt": "How does the hepatic first-pass effect influence oral drug bioavailability, and why does this matter for certain medications?", "domain": "ood_medical"}
+{"prompt": "How do clinicians typically work through the differential diagnosis of acute abdominal pain based on location and associated symptoms?", "domain": "ood_medical"}
+{"prompt": "What is the pathophysiology behind Cheyne-Stokes respiration and in which conditions is it typically seen?", "domain": "ood_medical"}
+{"prompt": "What's the deal with gout — why does it usually hit the big toe first?", "domain": "ood_medical"}
+{"prompt": "Define paresthesia.", "domain": "ood_medical"}
+{"prompt": "How does the coagulation cascade differ between the intrinsic and extrinsic pathways?", "domain": "ood_medical"}
+{"prompt": "Why do some people need blood thinners after getting a stent placed?", "domain": "ood_medical"}
+{"prompt": "How do corticosteroid inhalers differ from short-acting beta-agonists in the management of asthma?", "domain": "ood_medical"}
+{"prompt": "Can you explain why beta-agonists like albuterol can cause tremor and tachycardia as side effects?", "domain": "ood_medical"}
+{"prompt": "How does the Frank-Starling mechanism explain changes in cardiac output with venous return?", "domain": "ood_medical"}
+{"prompt": "What is the significance of an elevated anion gap on a metabolic panel, and what conditions typically cause it?", "domain": "ood_medical"}
+{"prompt": "How does the mechanism of action of metformin differ from sulfonylureas in managing blood glucose?", "domain": "ood_medical"}
+{"prompt": "Can you explain the mechanism of action of clopidogrel and why CYP2C19 genetic variants can affect its efficacy?", "domain": "ood_medical"}
+{"prompt": "Explain how the coagulation cascade differs from the intrinsic and extrinsic pathways.", "domain": "ood_medical"}
+{"prompt": "How do I methodically interpret a 12-lead ECG to identify signs of an ST-elevation myocardial infarction?", "domain": "ood_medical"}
+{"prompt": "What is the mechanism by which SSRIs can cause serotonin syndrome when combined with MAOIs?", "domain": "ood_medical"}
+{"prompt": "Can you explain what happens in the body during a panic attack versus a heart attack?", "domain": "ood_medical"}
+{"prompt": "Why does jaundice occur in liver failure?", "domain": "ood_medical"}
+{"prompt": "I have a lab report showing a low sodium of 128 mEq/L with normal potassium and slightly elevated ADH — can you explain the different categories of hyponatremia and how SIADH fits into this picture?", "domain": "ood_medical"}
+{"prompt": "Can you explain the pathophysiology of Wernicke encephalopathy and its relationship to thiamine deficiency?", "domain": "ood_medical"}
+{"prompt": "Why do some people get lactic acidosis and what does that mean for the body?", "domain": "ood_medical"}
+{"prompt": "Why does chronic stress actually raise blood pressure over time?", "domain": "ood_medical"}
+{"prompt": "How does a restrictive lung disease pattern differ from an obstructive pattern on pulmonary function testing?", "domain": "ood_medical"}
+{"prompt": "What's happening physiologically during the compensatory phase of hemorrhagic shock versus the decompensated phase?", "domain": "ood_medical"}
+{"prompt": "What is the pathophysiology of Cushing's triad in raised intracranial pressure?", "domain": "ood_medical"}
+{"prompt": "Can you explain in simple terms what a deviated septum is and why it causes breathing issues?", "domain": "ood_medical"}
+{"prompt": "What does elevated troponin mean?", "domain": "ood_medical"}
+{"prompt": "I'm trying to understand the mechanism of action of proton pump inhibitors compared to H2 receptor antagonists, and why long-term PPI use has been linked to increased fracture risk and vitamin B12 deficiency.", "domain": "ood_medical"}
+{"prompt": "What's the clinical significance of an elevated D-dimer, and why isn't it specific for pulmonary embolism?", "domain": "ood_medical"}
+{"prompt": "Can you explain the mechanism of action of proton pump inhibitors and why long-term use is associated with B12 deficiency?", "domain": "ood_medical"}
+{"prompt": "Can you explain what's going on in the body when someone has a herniated disc?", "domain": "ood_medical"}
+{"prompt": "What is atrial fibrillation and why is it considered risky?", "domain": "ood_medical"}
+{"prompt": "Walk me through the pathway of electrical conduction through the heart, starting at the SA node.", "domain": "ood_medical"}
+{"prompt": "Can you explain how to interpret a lipid panel and what each component suggests about cardiovascular risk?", "domain": "ood_medical"}
+{"prompt": "What is the significance of an elevated alkaline phosphatase?", "domain": "ood_medical"}
+{"prompt": "How does the pathophysiology of hyperosmolar hyperglycemic state differ from diabetic ketoacidosis?", "domain": "ood_medical"}
+{"prompt": "Could you explain what causes the common cold and why antibiotics aren't an effective treatment for it?", "domain": "ood_medical"}
+{"prompt": "What does it mean when a doctor says my blood pressure is '140 over 90,' and what do the two numbers actually measure?", "domain": "ood_medical"}
+{"prompt": "Can you explain what sleep apnea does to the body over time if left untreated?", "domain": "ood_medical"}
+{"prompt": "Can you compare the clinical significance of microcytic versus macrocytic anemia in terms of likely underlying causes?", "domain": "ood_medical"}
+{"prompt": "How would I go about calculating the anion gap from a basic metabolic panel, and what does an elevated value suggest?", "domain": "ood_medical"}
+{"prompt": "What's the mechanism of NSAID-induced gastric ulcers?", "domain": "ood_medical"}
+{"prompt": "What is the process by which the body compensates for chronic respiratory acidosis at the renal level?", "domain": "ood_medical"}
+{"prompt": "What is the function of the pancreas, and what happens if it becomes inflamed?", "domain": "ood_medical"}
+{"prompt": "Can you explain the difference between conductive and sensorineural hearing loss and how the Rinne and Weber tests distinguish them?", "domain": "ood_medical"}
+{"prompt": "Can you explain the difference between Type 1 and Type 2 hepatorenal syndrome?", "domain": "ood_medical"}
+{"prompt": "Can you explain the pathophysiology of Wernicke's encephalopathy and its link to thiamine deficiency?", "domain": "ood_medical"}
+{"prompt": "Explain the mechanism of beta-blockers.", "domain": "ood_medical"}
+{"prompt": "How does the renin-angiotensin-aldosterone system compensate for hypovolemia, and where do ACE inhibitors intervene in that pathway?", "domain": "ood_medical"}
+{"prompt": "What is the underlying mechanism in a diagnosis of syndrome of inappropriate antidiuretic hormone secretion?", "domain": "ood_medical"}
+{"prompt": "What is the physiological basis of orthostatic hypotension?", "domain": "ood_medical"}
+{"prompt": "Can you explain the pathophysiology of atrial fibrillation and why it increases stroke risk?", "domain": "ood_medical"}
+{"prompt": "What's the pathophysiology of Raynaud phenomenon?", "domain": "ood_medical"}
+{"prompt": "What is the pathophysiology behind diabetic ketoacidosis, including why patients develop a high anion gap metabolic acidosis, and how do the electrolyte shifts during insulin therapy explain the risk of cerebral edema in pediatric patients?", "domain": "ood_medical"}
+{"prompt": "What is the pathophysiology behind diabetic ketoacidosis, including why blood glucose rises, why ketones form, and how this leads to the characteristic Kussmaul breathing and fruity breath odor?", "domain": "ood_medical"}
+{"prompt": "Could you explain what a high anion gap metabolic acidosis with an elevated lactate level might indicate?", "domain": "ood_medical"}
+{"prompt": "Can you explain why SSRIs combined with MAOIs pose a serious risk of serotonin syndrome?", "domain": "ood_medical"}
+{"prompt": "Define compartment syndrome.", "domain": "ood_medical"}
+{"prompt": "What does it mean if someone has 'high triglycerides' on a lab test?", "domain": "ood_medical"}
+{"prompt": "Can you explain the difference between a myasthenic crisis and a cholinergic crisis in myasthenia gravis?", "domain": "ood_medical"}
+{"prompt": "What exactly happens physiologically during a vasovagal syncope episode, and why do things like standing up quickly, pain, or emotional stress trigger this particular reflex?", "domain": "ood_medical"}
+{"prompt": "How do SSRIs and SNRIs differ in their side-effect profiles when used for major depressive disorder?", "domain": "ood_medical"}
+{"prompt": "What is the difference between exudative and transudative pleural effusions, and how is this determined using Light's criteria?", "domain": "ood_medical"}
+{"prompt": "What distinguishes a transudate from an exudate in pleural effusion analysis, and how is Light's criteria applied?", "domain": "ood_medical"}
+{"prompt": "Why does having high blood sugar for a long time damage blood vessels and nerves?", "domain": "ood_medical"}
+{"prompt": "Why does chronic kidney disease often lead to secondary hyperparathyroidism, and how are calcium, phosphate, and vitamin D involved in that process?", "domain": "ood_medical"}
+{"prompt": "Can you break down what it means when a doctor says someone has a 'fatty liver'?", "domain": "ood_medical"}
+{"prompt": "How does the clotting cascade progress from vessel injury to fibrin clot formation?", "domain": "ood_medical"}
+{"prompt": "Can you explain the difference between conductive and sensorineural hearing loss in terms of underlying anatomy?", "domain": "ood_medical"}
+{"prompt": "What does it mean to have a 'herniated disc,' and how does it cause back pain?", "domain": "ood_medical"}
+{"prompt": "Can you explain how the hypothalamic-pituitary-adrenal axis is involved in the body's stress response?", "domain": "ood_medical"}
+{"prompt": "Define orthostatic hypotension.", "domain": "ood_medical"}
+{"prompt": "What does a low MCV with high RDW suggest?", "domain": "ood_medical"}
+{"prompt": "What's the deal with cholesterol - what's the difference between the good kind and the bad kind?", "domain": "ood_medical"}
+{"prompt": "What is the clinical significance of an elevated anti-CCP antibody in suspected rheumatoid arthritis?", "domain": "ood_medical"}
+{"prompt": "What's the difference between primary and secondary hypertension?", "domain": "ood_medical"}
+{"prompt": "Why does hyperkalemia cause cardiac arrhythmias?", "domain": "ood_medical"}
+{"prompt": "What is the mechanistic difference between nephrotic syndrome and nephritic syndrome in terms of glomerular injury?", "domain": "ood_medical"}
+{"prompt": "What is carcinoid syndrome, and why does it cause flushing and diarrhea?", "domain": "ood_medical"}
+{"prompt": "Walk me through the stages of the cardiac cycle and their correlation with heart sounds on auscultation.", "domain": "ood_medical"}
+{"prompt": "What's the difference between osteoarthritis and rheumatoid arthritis pathology?", "domain": "ood_medical"}
+{"prompt": "How would you explain the process by which HIV progressively damages the immune system over the course of infection?", "domain": "ood_medical"}
+{"prompt": "What's your opinion on the best approach to managing polypharmacy in an elderly patient with multiple chronic conditions?", "domain": "ood_medical"}
+{"prompt": "In your opinion, is laparoscopic or open appendectomy preferred for an uncomplicated case of acute appendicitis?", "domain": "ood_medical"}
+{"prompt": "Why does the body form a scab, and what is actually happening during wound healing?", "domain": "ood_medical"}
+{"prompt": "How does the renin-angiotensin-aldosterone system regulate blood pressure, and where do ACE inhibitors intervene in that pathway?", "domain": "ood_medical"}
+{"prompt": "Can you explain why corticosteroids need to be tapered rather than stopped abruptly after prolonged use?", "domain": "ood_medical"}
+{"prompt": "How does the hypothalamic-pituitary-adrenal axis respond to chronic stress, and what happens with long-term corticosteroid use?", "domain": "ood_medical"}
+{"prompt": "Why does my heart start pounding out of nowhere when I stand up too fast?", "domain": "ood_medical"}
+{"prompt": "What is the difference between a transudate and exudate?", "domain": "ood_medical"}
+{"prompt": "How does the body's clotting system respond differently in disseminated intravascular coagulation compared to normal hemostasis?", "domain": "ood_medical"}
+{"prompt": "How do statins compare to PCSK9 inhibitors in terms of mechanism and use in secondary prevention of cardiovascular disease?", "domain": "ood_medical"}
+{"prompt": "Could you explain what happens physiologically during anaphylaxis, why epinephrine is the first-line treatment, and how its alpha and beta adrenergic effects counteract the different components of the reaction?", "domain": "ood_medical"}
+{"prompt": "What is the significance of a prolonged PTT that corrects with mixing study, versus one that does not?", "domain": "ood_medical"}

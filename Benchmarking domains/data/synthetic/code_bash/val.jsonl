@@ -1,0 +1,100 @@
+{"prompt": "Can you walk me through what every part of this parameter expansion does: ${filename%.*} and contrast it with ${filename##*.}?", "domain": "code_bash"}
+{"prompt": "Explain what happens when you source a script versus executing it.", "domain": "code_bash"}
+{"prompt": "Explain what's wrong with this glob expansion and why it matches hidden files unexpectedly:\nshopt -s dotglob\nfor f in *; do\n  echo \"$f\"\ndone", "domain": "code_bash"}
+{"prompt": "Add a small test suite using bats-core for a function that trims leading and trailing whitespace from a string, covering edge cases like empty strings, all-whitespace strings, and strings with tabs.", "domain": "code_bash"}
+{"prompt": "Give me a bash script that monitors a log file and prints new lines as they're appended, like a simple tail -f wrapper.", "domain": "code_bash"}
+{"prompt": "I need to choose between using 'find -exec' and piping to xargs for batch file operations. Which do you think scales better and why?", "domain": "code_bash"}
+{"prompt": "Why does my script's exit code always show 0 even though a command in a pipeline failed?\ngrep pattern file.txt | sort | uniq\necho $?", "domain": "code_bash"}
+{"prompt": "Write a Bash script that implements a basic stack using an array.", "domain": "code_bash"}
+{"prompt": "What's the difference between using 'source' to include a library script versus running it as a subprocess, in terms of variable scope and side effects?", "domain": "code_bash"}
+{"prompt": "I need a bash function that checks if a string is a palindrome, ignoring spaces and case", "domain": "code_bash"}
+{"prompt": "Write a one-liner to generate a random alphanumeric string of length 16.", "domain": "code_bash"}
+{"prompt": "Explain step by step how process substitution works in this command:\n\ndiff <(sort file1.txt) <(sort file2.txt)", "domain": "code_bash"}
+{"prompt": "How do I implement a simple binary search over a sorted bash array without calling external tools like awk or bc?", "domain": "code_bash"}
+{"prompt": "In Bash, write a function that finds the second largest element in an array and explain its time complexity.", "domain": "code_bash"}
+{"prompt": "What's the difference between single quotes and double quotes in Bash?", "domain": "code_bash"}
+{"prompt": "Refactor this script to use functions instead of copy-pasted blocks.", "domain": "code_bash"}
+{"prompt": "Write clean, idiomatic Bash that counts set bits in an integer.", "domain": "code_bash"}
+{"prompt": "What's your honest opinion on using eval in Bash scripts, even when the input is supposedly sanitized?", "domain": "code_bash"}
+{"prompt": "can you add error handling to this script so it exits nicely if the input file doesn't exist: #!/bin/bash\ncat $1 | sort | uniq", "domain": "code_bash"}
+{"prompt": "How do I implement a simple job queue in Bash where background jobs are limited to a max of N concurrent processes using wait and job control?", "domain": "code_bash"}
+{"prompt": "I need to optimize this function that's called thousands of times in a loop and is the main bottleneck according to `time`; it shells out to `basename` and `dirname` for every path:\nget_name() {\n local base=$(basename \"$1\")\n local dir=$(dirname \"$1\")\n echo \"$dir/$base\"\n}", "domain": "code_bash"}
+{"prompt": "Compare using printf versus echo for formatted output in scripts, especially when dealing with strings that may contain backslashes or leading dashes.", "domain": "code_bash"}
+{"prompt": "In Bash, write a function that finds all pairs in an array that sum to a target and explain its time complexity.", "domain": "code_bash"}
+{"prompt": "Can you help me write a function that reverses a string without using rev?", "domain": "code_bash"}
+{"prompt": "Write a Bash function that implements a binary search over a sorted array of integers, then walk me through the time complexity and any pitfalls with array indexing in Bash.", "domain": "code_bash"}
+{"prompt": "Write a Bash function that finds all pairs in an array that sum to a target. Include a short comment explaining the approach.", "domain": "code_bash"}
+{"prompt": "How do I go about writing a script that recursively finds all '.log' files older than 30 days in a directory tree and deletes them safely?", "domain": "code_bash"}
+{"prompt": "How do I append text to the end of a file using Bash?", "domain": "code_bash"}
+{"prompt": "Write clean, idiomatic Bash that computes the Hamming distance between two equal-length strings.", "domain": "code_bash"}
+{"prompt": "Write a one-liner to check if a port is open on a remote host.", "domain": "code_bash"}
+{"prompt": "Compare using $(( )) arithmetic expansion versus calling external 'expr' or 'bc' for integer math in a script, focusing on speed and readability.", "domain": "code_bash"}
+{"prompt": "Write a Bash function that groups anagrams together from a list of words. Include a short comment explaining the approach.", "domain": "code_bash"}
+{"prompt": "Write a Bash function to binary search a sorted array.", "domain": "code_bash"}
+{"prompt": "I want to refactor this script to use functions instead of duplicated code blocks — here's the script that backs up three different directories with nearly identical tar commands.", "domain": "code_bash"}
+{"prompt": "Walk me through writing a Bash script that implements a simple depth-first search over a graph represented as an adjacency list in an associative array.", "domain": "code_bash"}
+{"prompt": "Compare using process substitution <(...) versus writing to a temporary file when you need a command's output to look like a file to another command.", "domain": "code_bash"}
+{"prompt": "Is it more robust to check command existence with 'command -v' or 'which' before running an external tool in a script? Explain the differences.", "domain": "code_bash"}
+{"prompt": "How would I write a recursive Bash function to compute Fibonacci numbers with memoization using an associative array?", "domain": "code_bash"}
+{"prompt": "Can you explain what 'exec > >(tee -a logfile.txt) 2>&1' does at the top of a script and why people use it?", "domain": "code_bash"}
+{"prompt": "I'm deciding whether to make this script idempotent by checking state files, or just let it always re-run from scratch — what's your recommendation?", "domain": "code_bash"}
+{"prompt": "Write a Bash script that counts how many arguments were passed to it.", "domain": "code_bash"}
+{"prompt": "How do I parse command-line flags with getopts?", "domain": "code_bash"}
+{"prompt": "Explain what happens with process substitution in this command and why it might behave unexpectedly on macOS versus Linux:\ndiff <(sort file1) <(sort file2)", "domain": "code_bash"}
+{"prompt": "Please explain line by line what this trap-based cleanup script is doing: trap 'rm -f \"$tmpfile\"; exit' INT TERM EXIT", "domain": "code_bash"}
+{"prompt": "Why does 'printf \"%d\\n\" \"$var\"' fail with 'invalid number' when $var has a leading zero like 0macOS8?", "domain": "code_bash"}
+{"prompt": "I need a bash function that flattens a nested associative-array-like structure stored as JSON-ish strings, without using jq.", "domain": "code_bash"}
+{"prompt": "how do I write a bash function that reverses a string without using rev?", "domain": "code_bash"}
+{"prompt": "Write a script that implements a simple LRU cache using an associative array and a queue represented as an array, evicting the oldest key when full.", "domain": "code_bash"}
+{"prompt": "What's wrong with using ls in a for loop to iterate over files?", "domain": "code_bash"}
+{"prompt": "Can you trace through this script step by step and tell me what final value `x` will have, explaining the arithmetic and subshell semantics involved?\nx=1\n(( x += 2 ))\n( x=$((x * 10)) )\necho \"$x\"\n((x++)) || true\necho \"$x\"", "domain": "code_bash"}
+{"prompt": "How do I check if a file exists in Bash before trying to read it?", "domain": "code_bash"}
+{"prompt": "I keep getting \"command not found\" when I run my script. Can you explain common reasons this happens for beginners?", "domain": "code_bash"}
+{"prompt": "Would you recommend using ShellCheck as a mandatory CI step for all Bash scripts in a repo, or is that excessive for small internal tools?", "domain": "code_bash"}
+{"prompt": "Can you show me step by step how to write a retry mechanism in Bash that retries a failed command up to 5 times with exponential backoff?", "domain": "code_bash"}
+{"prompt": "Explain the trade-offs between process substitution and named pipes when combining the output of two commands for comparison.", "domain": "code_bash"}
+{"prompt": "What's your opinion on this style of chaining commands with && versus writing explicit if statements for error checking?\n\nmkdir -p build && cd build && make", "domain": "code_bash"}
+{"prompt": "I need help refactoring this script into smaller, testable functions — right now it's one giant 200-line block doing backup, upload, and cleanup.", "domain": "code_bash"}
+{"prompt": "can you refactor this to use arrays instead of a bunch of if/elif chains?\nif [ \"$1\" == \"start\" ]; then\n  echo starting\nelif [ \"$1\" == \"stop\" ]; then\n  echo stopping\nfi", "domain": "code_bash"}
+{"prompt": "can you refactor this so it uses functions instead of one giant block of code", "domain": "code_bash"}
+{"prompt": "can you explain this parameter expansion?\n${filename%.*}", "domain": "code_bash"}
+{"prompt": "Contrast using arrays versus delimited strings for storing lists of items in bash — which is more robust when values may contain spaces?", "domain": "code_bash"}
+{"prompt": "How do I refactor this script to use trap for cleanup instead of manually calling cleanup at every exit point?", "domain": "code_bash"}
+{"prompt": "I need a bash function that takes a directory path and prints the total size of all files inside it recursively", "domain": "code_bash"}
+{"prompt": "Shorten this: if [ -z \"$1\" ]; then echo missing; exit 1; fi", "domain": "code_bash"}
+{"prompt": "Write a one-liner to check if a port is open using /dev/tcp.", "domain": "code_bash"}
+{"prompt": "write a function that trims leading and trailing whitespace from a string in pure bash, no external tools", "domain": "code_bash"}
+{"prompt": "Write a function that checks if a directory exists and creates it if it doesn't.", "domain": "code_bash"}
+{"prompt": "How can I use coproc to talk to a background process over its stdin/stdout pipes, and what's a practical example?", "domain": "code_bash"}
+{"prompt": "Explain how quoting rules affect this command and why it splits unexpectedly:\n\nfiles=\"a.txt b.txt c.txt\"\nfor f in $files; do echo $f; done", "domain": "code_bash"}
+{"prompt": "Walk me through implementing a simple stack data structure using a Bash array, with push, pop, and peek functions.", "domain": "code_bash"}
+{"prompt": "Can you debug this script, it's supposed to sum all numbers in a file but returns 0 every time?\n\nsum=0\nwhile read n; do\n  sum=$sum+$n\ndone < numbers.txt\necho $sum", "domain": "code_bash"}
+{"prompt": "Compare the memory and speed implications of building a large string with += in a loop versus using an array and joining it at the end in bash.", "domain": "code_bash"}
+{"prompt": "Optimise this script that greps a large log file multiple times for different patterns, once per pattern, into a single pass.\ngrep ERROR app.log > errors.txt\ngrep WARN app.log > warnings.txt\ngrep INFO app.log > infos.txt", "domain": "code_bash"}
+{"prompt": "Walk me through adding error handling and input validation to this script that deletes files based on a pattern:\n\nrm $1*", "domain": "code_bash"}
+{"prompt": "Explain why using unquoted variable expansions inside an arithmetic context like $((count++)) can sometimes cause unexpected behavior, and show a safer pattern.", "domain": "code_bash"}
+{"prompt": "Why does my script fail with 'too many arguments' in an if statement?", "domain": "code_bash"}
+{"prompt": "What's your opinion on using here-strings versus echo piped into a command for feeding short input to programs like grep?", "domain": "code_bash"}
+{"prompt": "In your opinion, is it better practice to quote every variable expansion religiously, or only where word-splitting is actually a risk?", "domain": "code_bash"}
+{"prompt": "Compare piping through 'sed' versus using bash's built-in parameter expansion for simple string substitutions — when does each make more sense?", "domain": "code_bash"}
+{"prompt": "Write clean, idiomatic Bash that converts a Roman numeral to an integer.", "domain": "code_bash"}
+{"prompt": "What's your opinion on naming conventions for Bash functions and variables — snake_case, camelCase, or something else?", "domain": "code_bash"}
+{"prompt": "I'm choosing between writing a custom retry loop or using a tool like 'timeout' combined with a while loop for network calls. Which approach do you prefer?", "domain": "code_bash"}
+{"prompt": "Explain what's happening in this snippet and why the quoting matters: files=$(find . -name '*.txt'); for f in $files; do echo \"$f\"; done", "domain": "code_bash"}
+{"prompt": "Write a function to reverse an array in place.", "domain": "code_bash"}
+{"prompt": "How do I implement a simple stack data structure in Bash using an array and push/pop functions?", "domain": "code_bash"}
+{"prompt": "Write a function that takes an array of numbers and returns the largest one.", "domain": "code_bash"}
+{"prompt": "Write a script that recursively walks a directory tree and prints a tree-like structure similar to the 'tree' command, using only find and awk-free Bash.", "domain": "code_bash"}
+{"prompt": "Compare 'set -e' versus explicit error checking after each command for script robustness — which approach is more maintainable in a large deployment script?", "domain": "code_bash"}
+{"prompt": "Should this script use flock for locking or a simple PID file approach to prevent concurrent execution? Weigh the reliability of each.", "domain": "code_bash"}
+{"prompt": "Explain the exact order of operations bash uses for brace expansion, tilde expansion, parameter expansion, and word splitting in a single complex line, and how it applies here.\n\necho ~/{foo,bar}_${suffix:-default}", "domain": "code_bash"}
+{"prompt": "Implement, in Bash, code that implements a basic retry-with-backoff helper. Add a couple of example calls.", "domain": "code_bash"}
+{"prompt": "I'm deciding between bash and dash for a system startup script that needs to be POSIX-compliant. What would you advise?", "domain": "code_bash"}
+{"prompt": "Walk me through writing a Bash script that generates a random password of a given length using /dev/urandom.", "domain": "code_bash"}
+{"prompt": "Compare sourcing a shared 'lib.sh' file of functions versus duplicating small helper functions across multiple scripts.", "domain": "code_bash"}
+{"prompt": "write a function that computes the factorial of a number recursively in bash", "domain": "code_bash"}
+{"prompt": "Should I use 'local' for every variable inside functions, or is that overkill for a small utility script like this one?", "domain": "code_bash"}
+{"prompt": "Refactor this nested case statement into a lookup table using an associative array:\ncase \"$fruit\" in\n  apple) echo 1;;\n  pear) echo 2;;\n  plum) echo 3;;\nesac", "domain": "code_bash"}
+{"prompt": "Refactor this script to use getopts instead of manual argument parsing with shift:\nwhile [ $# -gt 0 ]; do\n  case $1 in\n    -v) verbose=1; shift;;\n    -o) outfile=$2; shift 2;;\n    *) shift;;\n  esac\ndone", "domain": "code_bash"}
+{"prompt": "Write a script that asks the user for a number and tells them if it's positive, negative, or zero.", "domain": "code_bash"}
+{"prompt": "Write a one-liner to count how many .log files are in a directory recursively.", "domain": "code_bash"}

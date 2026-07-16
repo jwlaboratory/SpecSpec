@@ -1,0 +1,100 @@
+{"prompt": "What is the purpose of sealed classes introduced in Java 17, and how do they interact with pattern matching in switch expressions?", "domain": "code_java"}
+{"prompt": "Would you recommend using ArrayList or LinkedList for a queue-like structure where I mostly add to the end and remove from the front?", "domain": "code_java"}
+{"prompt": "I have this loop that's supposed to reverse an array in place but it's not working right, can you fix it? int[] arr = {1,2,3,4,5}; for (int i = 0; i < arr.length; i++) { int temp = arr[i]; arr[i] = arr[arr.length - i]; arr[arr.length - i] = temp; }", "domain": "code_java"}
+{"prompt": "Convert this anonymous class to a lambda.", "domain": "code_java"}
+{"prompt": "I have a memory leak suspicion in a Java web app using static collections to cache session data. Can you explain how this leads to a leak and how to fix it with WeakHashMap or a proper eviction policy?", "domain": "code_java"}
+{"prompt": "Compare `BigDecimal` and `double` for representing currency amounts in Java, and explain why the choice matters for financial calculations.", "domain": "code_java"}
+{"prompt": "Write a Java method that removes duplicate elements from an ArrayList of integers.", "domain": "code_java"}
+{"prompt": "I need a Java function that merges two sorted arrays into one sorted array without using any built-in sort, can you write that?", "domain": "code_java"}
+{"prompt": "Convert this raw type usage to generics.\nList list = new ArrayList();\nlist.add(\"hello\");", "domain": "code_java"}
+{"prompt": "How does ThreadLocal work internally, and what causes memory leaks with ThreadLocal in application servers?", "domain": "code_java"}
+{"prompt": "I want to implement a simple event listener pattern in Java, can you sketch out an interface and a couple of implementing classes?", "domain": "code_java"}
+{"prompt": "Compare recursive and iterative implementations of a Fibonacci function in Java in terms of readability, stack safety, and performance for large n.", "domain": "code_java"}
+{"prompt": "I need to parse a large CSV file (several GB) in Java without loading it entirely into memory — what's the most idiomatic way using streams or a buffered reader with proper resource handling?", "domain": "code_java"}
+{"prompt": "Debug why this recursive Fibonacci implementation is so slow for n=40 and suggest a faster version: int fib(int n) { return n <= 1 ? n : fib(n-1) + fib(n-2); }", "domain": "code_java"}
+{"prompt": "Write a method in Java that removes duplicate elements from an ArrayList of integers.", "domain": "code_java"}
+{"prompt": "Explain the differences between HashMap, LinkedHashMap, and TreeMap in terms of ordering guarantees, underlying data structures, and time complexity for get/put operations.", "domain": "code_java"}
+{"prompt": "Write a small Java program demonstrating the difference between shallow copy and deep copy for a class containing a List<int[]> field.", "domain": "code_java"}
+{"prompt": "Can you review this multi-threaded counter class for correctness issues and rewrite it to be truly thread-safe without using synchronized blocks, using AtomicLong instead?\n\npublic class Counter { private long count = 0; public void increment() { count++; } public long get() { return count; } }", "domain": "code_java"}
+{"prompt": "Explain step by step how to debug this NullPointerException that only happens intermittently in production: it occurs inside a stream().map() call on a list fetched from a database.", "domain": "code_java"}
+{"prompt": "We have a Spring Boot REST controller that occasionally returns stale data under concurrent load. Can you review this method and tell me if the caching logic is thread-safe?\n\n@Cacheable(\"users\") public User getUser(Long id) { return userRepository.findById(id).orElseThrow(); }", "domain": "code_java"}
+{"prompt": "How would you implement a simple producer-consumer setup using BlockingQueue in Java?", "domain": "code_java"}
+{"prompt": "What's wrong with this singleton implementation?\npublic class Singleton { private static Singleton instance; public static Singleton getInstance() { if (instance==null) instance = new Singleton(); return instance; } }", "domain": "code_java"}
+{"prompt": "Explain the purpose of `equals()` and `hashCode()` contract.", "domain": "code_java"}
+{"prompt": "Write a custom unchecked exception hierarchy for a banking application with InsufficientFundsException and AccountNotFoundException.", "domain": "code_java"}
+{"prompt": "write a java class representing a simple bank account with deposit, withdraw, and thread-safe balance checks", "domain": "code_java"}
+{"prompt": "Write a Java method that checks if two strings are anagrams of each other, and keep it efficient please.", "domain": "code_java"}
+{"prompt": "Is it better to implement equals/hashCode manually or rely on records for a value object used as a HashMap key?", "domain": "code_java"}
+{"prompt": "Here's a recursive Fibonacci implementation that's painfully slow for n > 40 — can you optimize it using memoization and then rewrite it iteratively with O(1) space?\n\npublic static long fib(int n) {\n    if (n <= 1) return n;\n    return fib(n-1) + fib(n-2);\n}", "domain": "code_java"}
+{"prompt": "Explain what a WeakHashMap is used for and give a real-world caching example.", "domain": "code_java"}
+{"prompt": "I've got this loop that's supposed to reverse an array in place but it's not working right, can you spot the bug? `for (int i = 0; i < arr.length; i++) { int temp = arr[i]; arr[i] = arr[arr.length - i]; arr[arr.length - i] = temp; }`", "domain": "code_java"}
+{"prompt": "This code compiles but throws a NullPointerException at runtime in production only occasionally — can you help me trace through it and suggest defensive fixes?\n\npublic String getUserCity(User user) {\n    return user.getAddress().getCity().toUpperCase();\n}", "domain": "code_java"}
+{"prompt": "Can you explain what a for-each loop is in Java and rewrite this regular for loop to use it?\n\nfor (int i = 0; i < list.size(); i++) { System.out.println(list.get(i)); }", "domain": "code_java"}
+{"prompt": "Can you help me optimize this nested loop that finds duplicate pairs in an array? It's O(n^2) and needs to handle arrays with a million elements.\n\nfor (int i = 0; i < arr.length; i++) { for (int j = i+1; j < arr.length; j++) { if (arr[i] + arr[j] == target) result.add(new int[]{i,j}); } }", "domain": "code_java"}
+{"prompt": "Can you show me how to implement the Visitor design pattern in Java for a small expression tree with Add, Subtract, and Literal node types?", "domain": "code_java"}
+{"prompt": "Can you explain what synchronized actually does in this method in plain English?\n\npublic synchronized void withdraw(int amount) { balance -= amount; }", "domain": "code_java"}
+{"prompt": "Is there a more idiomatic way to write this null check chain?\n\nif (a != null) { if (a.getB() != null) { if (a.getB().getC() != null) { System.out.println(a.getB().getC()); } } }", "domain": "code_java"}
+{"prompt": "How do I write a binary search tree insertion method in Java from scratch, explained step by step?", "domain": "code_java"}
+{"prompt": "How do I go about writing a merge sort implementation for an array of integers in Java, explaining each step of the divide-and-conquer process?", "domain": "code_java"}
+{"prompt": "Implement a generic binary search tree in Java with insert, delete, and in-order traversal methods, then explain how you'd modify it to support balancing via AVL rotations.", "domain": "code_java"}
+{"prompt": "Write a method using CompletableFuture to fetch data from two services in parallel and combine the results.", "domain": "code_java"}
+{"prompt": "I don't understand why this doesn't print anything, can you help? `for (int i = 0; i < 5; i++); { System.out.println(i); }`", "domain": "code_java"}
+{"prompt": "I have a class that represents immutable coordinates but I accidentally exposed a mutable list field through a getter, breaking immutability. Can you spot the issue and fix the class to be truly immutable? public final class Path { private final List<Point> points; public Path(List<Point> points) { this.points = points; } public List<Point> getPoints() { return points; } }", "domain": "code_java"}
+{"prompt": "Can you help me write a method that merges two sorted arrays into one sorted array without using extra sort calls?", "domain": "code_java"}
+{"prompt": "Should a long-running batch job use plain threads, an `ExecutorService`, or a framework like Spring Batch? Discuss when the added complexity is justified.", "domain": "code_java"}
+{"prompt": "Compare using inheritance versus composition for extending the behavior of a `PaymentProcessor` class that needs logging, retries, and metrics.", "domain": "code_java"}
+{"prompt": "Fix this deadlock-prone code.\nsynchronized(lockA) { synchronized(lockB) { ... } }", "domain": "code_java"}
+{"prompt": "Can you fix this off-by-one error in my binary search implementation and explain what was wrong?\nint binarySearch(int[] arr, int target) { int lo = 0, hi = arr.length; while (lo < hi) { int mid = (lo+hi)/2; if (arr[mid] == target) return mid; else if (arr[mid] < target) lo = mid; else hi = mid; } return -1; }", "domain": "code_java"}
+{"prompt": "Write a simple Java class representing a Rectangle with width and height, including a method to calculate its area.", "domain": "code_java"}
+{"prompt": "What's the idiomatic way to convert a `List<String>` to a comma-separated `String` in modern Java without using a loop?", "domain": "code_java"}
+{"prompt": "Write a method that finds the kth largest element in an unsorted array without fully sorting it.", "domain": "code_java"}
+{"prompt": "Refactor this deeply nested if-else chain into something more readable using early returns or a strategy pattern. `if(type.equals(\"A\")){ ... } else { if(type.equals(\"B\")){ ... } else { if(type.equals(\"C\")){ ... } } }`", "domain": "code_java"}
+{"prompt": "Write a Java method to detect whether a given string is a valid palindrome permutation, ignoring spaces and case, using a HashMap for character counts.", "domain": "code_java"}
+{"prompt": "Can you rewrite this using a HashSet instead of checking with contains() on an ArrayList for performance?\n\nfor (String s : items) { if (!seen.contains(s)) { seen.add(s); result.add(s); } }", "domain": "code_java"}
+{"prompt": "Should I prefer synchronized blocks or java.util.concurrent locks for protecting a shared counter in a multithreaded Java app?", "domain": "code_java"}
+{"prompt": "Write a singleton class using enum.", "domain": "code_java"}
+{"prompt": "I need to implement a custom Iterator for a binary search tree that performs in-order traversal lazily without recursion. Can you write it?", "domain": "code_java"}
+{"prompt": "Write a Java method to detect a cycle in a linked list.", "domain": "code_java"}
+{"prompt": "Walk me through how the JVM handles method overloading resolution at compile time versus dynamic dispatch for overridden methods at runtime, using an example with a base Animal class and a Dog subclass.", "domain": "code_java"}
+{"prompt": "I'm building a small inventory management system in Java and need a class hierarchy for different product types (Electronics, Groceries, Clothing) that share common fields like name and price but have type-specific behavior for calculating tax. Can you design the class hierarchy using proper OOP principles, show me the code, and explain why you chose composition or inheritance where you did?", "domain": "code_java"}
+{"prompt": "Do you think interfaces should have default methods added to them, or is that an anti-pattern that leads to fragile base class problems?", "domain": "code_java"}
+{"prompt": "Explain the difference between CompletableFuture.supplyAsync and thenApplyAsync with a concrete example involving a custom Executor.", "domain": "code_java"}
+{"prompt": "This unit test intermittently fails when run as part of the full suite but passes in isolation. It uses a static mutable field shared across test classes. Can you diagnose the likely cause and rewrite the test setup to avoid shared state?\n\nprivate static List<String> cache = new ArrayList<>(); @Test void testAdd() { cache.add(\"x\"); assertEquals(1, cache.size()); }", "domain": "code_java"}
+{"prompt": "Write a simple Java program that adds two numbers entered by the user.", "domain": "code_java"}
+{"prompt": "I need to add unit tests for this method that calculates compound interest — can you write JUnit 5 tests covering edge cases like zero principal and negative rates?", "domain": "code_java"}
+{"prompt": "Explain the differences between ArrayList and LinkedList in Java in terms of time complexity for common operations, and give me a real-world scenario where you'd pick one over the other, along with a short benchmark snippet I could run to verify the difference myself.", "domain": "code_java"}
+{"prompt": "Which is better for a high-throughput REST API backend: CompletableFuture-based async code or virtual threads from Project Loom, and why?", "domain": "code_java"}
+{"prompt": "What's the trade-off between eager and lazy initialization for a expensive-to-construct singleton object used across a Spring application?", "domain": "code_java"}
+{"prompt": "I'm getting a StackOverflowError when serializing this object graph with Jackson because of a bidirectional parent-child relationship. How do I fix this with @JsonManagedReference and @JsonBackReference?", "domain": "code_java"}
+{"prompt": "How do I properly implement Comparable in this class so sorting works both ascending and via Comparator?\n\npublic class Employee { int salary; String name; }", "domain": "code_java"}
+{"prompt": "Design a generic Java interface and implementation for a simple event bus / publish-subscribe system that allows subscribers to register listeners for specific event types and unsubscribe later. Include thread-safety considerations and a short usage example.", "domain": "code_java"}
+{"prompt": "This code compiles but throws a StackOverflowError at runtime. Can you identify why and suggest a fix?\n\npublic int factorial(int n) { return n * factorial(n - 1); }", "domain": "code_java"}
+{"prompt": "Explain step by step how autoboxing and unboxing can cause a subtle NullPointerException in this code:\n\nInteger count = null; if (count == 0) { ... }", "domain": "code_java"}
+{"prompt": "Can you implement a binary search tree in Java with insert, delete, and in-order traversal methods, and explain the delete logic for nodes with two children?", "domain": "code_java"}
+{"prompt": "Explain the difference between while and do-while loops in Java with a short example of each.", "domain": "code_java"}
+{"prompt": "Write a small RecursiveTask using the Fork/Join framework that computes the sum of a large int array in parallel.", "domain": "code_java"}
+{"prompt": "Explain the difference between fail-fast and fail-safe iterators in Java, and demonstrate a ConcurrentModificationException scenario with ArrayList versus CopyOnWriteArrayList.", "domain": "code_java"}
+{"prompt": "Fix this: `if(a=b)` won't compile, what's wrong?", "domain": "code_java"}
+{"prompt": "I have this legacy code using raw types with generics warnings — can you modernize it to use proper generic types?\n\nList list = new ArrayList(); list.add(\"hello\");", "domain": "code_java"}
+{"prompt": "Can you write a custom Java annotation with a retention policy of RUNTIME and an accompanying reflection-based processor that validates that all fields annotated with @NotEmpty are non-null and non-blank on an object?", "domain": "code_java"}
+{"prompt": "Convert this for-loop to a stream one-liner.", "domain": "code_java"}
+{"prompt": "I keep getting NoSuchElementException when using an Iterator in this loop, can you spot the issue? `Iterator<Integer> it = list.iterator(); while (it.hasNext()) { int val = it.next(); list.remove(Integer.valueOf(val)); }`", "domain": "code_java"}
+{"prompt": "What's the best way to deep copy a nested object graph in Java without external libraries?", "domain": "code_java"}
+{"prompt": "Write a Java method using CompletableFuture that fetches data from three different services concurrently and combines the results once all finish.", "domain": "code_java"}
+{"prompt": "Can you explain step by step how the visitor design pattern would apply to a tree of Shape objects needing area calculation and rendering?", "domain": "code_java"}
+{"prompt": "What's the difference between `ArrayList` and `LinkedList` performance-wise?", "domain": "code_java"}
+{"prompt": "How can I add proper input validation and unit tests to this method that parses a date string?\npublic LocalDate parseDate(String input) { return LocalDate.parse(input); }", "domain": "code_java"}
+{"prompt": "I'm deciding between CompletableFuture chains and a reactive library like Project Reactor for this async workflow. What's your take?", "domain": "code_java"}
+{"prompt": "Do you think using checked generics with bounded wildcards is worth the added complexity for a public collections API?", "domain": "code_java"}
+{"prompt": "Write a Java method that counts how many vowels are in a given string.", "domain": "code_java"}
+{"prompt": "Here's a producer-consumer implementation using a plain ArrayList with manual synchronization that occasionally throws ConcurrentModificationException under load — can you rewrite it using BlockingQueue and explain the tradeoffs versus using a synchronized wrapper?", "domain": "code_java"}
+{"prompt": "Can you write a Java method using bit manipulation to check if a number is a power of two, and explain why the trick works?", "domain": "code_java"}
+{"prompt": "Write JUnit 5 tests with Mockito for this service class that depends on a repository and an external payment gateway.\n\npublic class OrderService { private OrderRepository repo; private PaymentGateway gateway; public Order placeOrder(Order o) { gateway.charge(o.getAmount()); return repo.save(o); } }", "domain": "code_java"}
+{"prompt": "Add JUnit 5 tests covering edge cases for this method, including empty input and negative numbers.\n\npublic int sumPositive(int[] nums) { int total = 0; for (int n : nums) if (n > 0) total += n; return total; }", "domain": "code_java"}
+{"prompt": "Can you optimize this method that computes the nth Fibonacci number recursively? It's painfully slow for n > 40. Show me both a memoized recursive version and an iterative O(n) version, and explain the complexity difference.\n\npublic static long fib(int n) { if (n <= 1) return n; return fib(n-1) + fib(n-2); }", "domain": "code_java"}
+{"prompt": "I'm trying to implement the observer pattern for a stock price ticker. Can you show me a clean Java implementation using interfaces rather than the deprecated Observable class?", "domain": "code_java"}
+{"prompt": "Is it worth using Lombok's @Data annotation versus manually writing getters, setters, equals, and hashCode for a mid-size project?", "domain": "code_java"}
+{"prompt": "Write a Java method that detects whether a given linked list contains a cycle using Floyd's cycle detection algorithm, and then extend it to also return the node where the cycle begins if one exists.", "domain": "code_java"}
+{"prompt": "Why is this synchronized block not preventing a race condition? synchronized (this) { counter++; } is called from multiple threads on different instances.", "domain": "code_java"}
+{"prompt": "How do I convert a String to an int in Java, and what exception should I watch out for?", "domain": "code_java"}
+{"prompt": "We have a Spring Boot microservice where a @Transactional method calls another @Transactional method in the same class and rollbacks aren't happening as expected. Can you explain why Spring's proxy-based AOP causes this and how to restructure the code?", "domain": "code_java"}
