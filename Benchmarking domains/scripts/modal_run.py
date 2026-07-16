@@ -211,14 +211,20 @@ def _save_local(out):
           "results ../results")
 
 
-def _datagen_domains(source: str):
-    """Domain names = subdirectories of data/<source> (must be generated first)."""
+def _datagen_domains(source: str, split: str = "test"):
+    """Domains with a NON-EMPTY <split>.jsonl under data/<source> (real-data
+    sources can leave rare domains empty; skip those so shards don't crash)."""
     src = _DATA_ROOT / source
     if not src.exists():
         raise SystemExit(
             f"No datasets at {src}.\n"
             f"Generate them first:  cd ../DataGen && python generate.py --group all")
-    return sorted(p.name for p in src.iterdir() if p.is_dir())
+    doms = []
+    for p in sorted(src.iterdir()):
+        f = p / f"{split}.jsonl"
+        if p.is_dir() and f.exists() and f.stat().st_size > 0:
+            doms.append(p.name)
+    return doms
 
 
 @app.local_entrypoint()
@@ -251,7 +257,7 @@ def full(
     shards: int = 8,
 ):
     """Parallel run: shard all domains across `shards` GPU containers, then merge."""
-    all_cats = _datagen_domains(source)
+    all_cats = _datagen_domains(source, split)
     groups = [all_cats[i::shards] for i in range(shards)]          # round-robin shard
     groups = [g for g in groups if g]
     print(f"[full] {len(all_cats)} domains x {limit} prompts across {len(groups)} shards "

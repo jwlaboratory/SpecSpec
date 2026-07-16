@@ -146,21 +146,27 @@ def parse_args():
 def resolve_categories(all_cats, requested, groups):
     if not requested or requested == ["all"]:
         return list(all_cats)
-    out = []
+    out, unknown = [], []
     for r in requested:
         if r in groups:
             out.extend(groups[r])
         elif r in all_cats:
             out.append(r)
         else:
-            raise SystemExit(f"Unknown category/group: {r!r}. "
-                             f"Groups: {list(groups)}. "
-                             f"Categories: {list(all_cats)}")
-    # de-dup, keep order
+            unknown.append(r)
+    # Skip (don't crash on) categories with no prompts in this split — e.g. a
+    # domain that came up empty in a real-data source. Only groups/all_cats
+    # entries survive; sharded runs mixing empty + non-empty domains just run
+    # the non-empty ones.
+    if unknown:
+        print(f"[warn] skipping {len(unknown)} categories with no prompts in this "
+              f"split: {unknown}")
     seen, uniq = set(), []
     for c in out:
-        if c not in seen:
+        if c in all_cats and c not in seen:
             seen.add(c); uniq.append(c)
+    if not uniq:
+        raise SystemExit(f"No categories with prompts among {requested}")
     return uniq
 
 
