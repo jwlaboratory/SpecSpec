@@ -1,15 +1,14 @@
 # Speculator domain benchmark — dflash
 
-Speculator `z-lab/Qwen3-8B-DFlash-b16` + target `Qwen/Qwen3-8B` · 4 domains · 15 speculative tokens/step.
+Speculator `z-lab/Qwen3-8B-DFlash-b16` + target `Qwen/Qwen3-8B` · 3 domains · 15 speculative tokens/step.
 
-- **Acceptance rate (pooled):** 13.1%
-- **Mean accept length:** 3.34 tokens/pass
+- **Acceptance rate (pooled):** 11.8%
+- **Mean accept length:** 2.87 tokens/pass
 
 ## Domains ranked by acceptance rate
 
 | Domain | Accept % | Mean len | Gen tok | n |
 |---|---|---|---|---|
-| code_sql | 25.0 | 4.75 | 21229 | 100 |
-| ood_legal | 14.1 | 3.11 | 12997 | 30 |
-| ood_financial | 12.0 | 2.79 | 50730 | 100 |
-| ood_medical | 11.3 | 2.69 | 51151 | 100 |
+| ood_legal | 14.3 | 3.14 | 12862 | 30 |
+| ood_financial | 11.9 | 2.78 | 50500 | 100 |
+| ood_medical | 11.2 | 2.69 | 50929 | 100 |
