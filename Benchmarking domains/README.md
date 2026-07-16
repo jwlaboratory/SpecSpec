@@ -19,11 +19,15 @@ measured by acceptance rate, mean accept length, and speedup.
 
 ```
 Benchmarking domains/
-├── DataGen/          # the datasets + the code that generates them
+├── DataGen/          # synthetic datasets + the code that generates them
 │   ├── generate.py       Claude-based prompt-dataset generator
 │   ├── domains.py        the 51-domain registry
 │   ├── data/<domain>/    train.jsonl · val.jsonl · test.jsonl   (the actual data)
 │   └── README.md         dataset docs
+├── WildDataGen/      # real-human-prompt control set (WildChat), same layout
+│   ├── sort.py · router.py   stream WildChat -> route into the 51 domains
+│   ├── data/<domain>/    train.jsonl · val.jsonl · test.jsonl
+│   └── README.md
 ├── scripts/          # everything that runs the benchmark
 │   ├── benchmark.py      loads both models, runs spec + baseline per prompt
 │   ├── aggregate.py      JSONL -> per-domain CSV + markdown report
@@ -87,6 +91,12 @@ python make_charts.py ../results/dflash_bench_by_category.csv
 --split test`); `--categories` accepts domain keys or a group
 (`languages`/`coding`/`tasks`/`ood`/`all`). Pass `--prompt-source legacy` to use the
 old deterministic `prompts.py` instead.
+
+**Real-prompt control.** `WildDataGen/` sorts genuine WildChat prompts into the same
+domains/layout. Run the same benchmark against it (`--datagen-dir
+../WildDataGen/data`) and compare per-domain acceptance vs the synthetic set — this
+checks whether the clean, low-perplexity synthetic prompts inflate acceptance or
+hide the drafter's failure modes. See `WildDataGen/README.md`.
 
 ## 3 · Read the results
 
