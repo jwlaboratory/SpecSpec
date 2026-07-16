@@ -73,8 +73,10 @@ target over it. It does **not** run on Mac/Apple Silicon (custom CUDA kernels).
 ```bash
 cd scripts
 modal run modal_run.py::full --run-name dflash_bench          # all domains, test split, sharded
-# smoke test first:
-modal run modal_run.py --categories "lang_english code_python" --limit 5 --run-name smoke
+# smoke test first (name the entrypoint explicitly with ::main):
+modal run modal_run.py::main --categories "lang_english lang_french" --limit 5 --run-name smoke
+# run over the WildChat control set instead of synthetic:
+modal run modal_run.py::full --run-name dflash_wild --source wild
 ```
 
 **On a local/rented GPU box (RunPod, Vast, Lambda, Colab):**
