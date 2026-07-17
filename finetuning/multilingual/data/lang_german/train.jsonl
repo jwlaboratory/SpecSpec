@@ -1,0 +1,800 @@
+{"prompt": "Ich möchte die Ernährung meiner Familie umstellen, kannst du mir einen wissenschaftlich fundierten Wochenplan mit ausgewogener Makronährstoffverteilung erstellen?", "domain": "lang_german"}
+{"prompt": "Ich möchte meiner Kollegin gratulieren, weil sie befördert wurde. Kannst du mir eine kurze, herzliche Nachricht dafür schreiben?", "domain": "lang_german"}
+{"prompt": "Was hältst du von der Idee, jedes Jahr komplett woanders in Deutschland Urlaub zu machen statt ins Ausland zu fliegen?", "domain": "lang_german"}
+{"prompt": "Was sollte ich beachten, wenn ich zum ersten Mal eine Steuererklärung mache?", "domain": "lang_german"}
+{"prompt": "Was bedeutet der Begriff 'Inflation' genau, und warum steigen dadurch zum Beispiel Brotpreise?", "domain": "lang_german"}
+{"prompt": "Meine Eltern werden bald in Rente gehen und ich möchte ihnen helfen, sich finanziell darauf vorzubereiten, welche Fragen sollte ich mit ihnen zusammen klären?", "domain": "lang_german"}
+{"prompt": "Ich möchte lernen, wie man ein einfaches Haushaltsbudget mit Excel erstellt, das automatisch monatliche Ausgaben nach Kategorien aufteilt. Kannst du mir Schritt für Schritt erklären, wie ich das aufbauen kann?", "domain": "lang_german"}
+{"prompt": "Wie kann ich meine Konzentration beim Lernen verbessern, gibt es dafür bewährte Techniken?", "domain": "lang_german"}
+{"prompt": "Kannst du mir erklären, wie das Phänomen der Phantomvibration bei Handynutzern entsteht?", "domain": "lang_german"}
+{"prompt": "Ist ein Vollzeitjob mit Homeoffice besser als ein Teilzeitjob im Büro, wenn man Familie und Beruf vereinbaren möchte?", "domain": "lang_german"}
+{"prompt": "Ich möchte verstehen, wie Impfstoffe auf mRNA-Basis das Immunsystem im Vergleich zu klassischen Totimpfstoffen anders aktivieren.", "domain": "lang_german"}
+{"prompt": "Ich habe Konflikte mit meiner Schwiegermutter, wie kann ich das Gespräch konstruktiv angehen, ohne die Familienbeziehung zu belasten?", "domain": "lang_german"}
+{"prompt": "Ich will kündigen, wie formuliere ich das am besten in der E-Mail an meinen Chef?", "domain": "lang_german"}
+{"prompt": "Wie erklärt man einem Laien den Unterschied zwischen Gicht und Rheuma?", "domain": "lang_german"}
+{"prompt": "Findest du, dass man Trinkgeld in Deutschland grundsätzlich immer geben sollte?", "domain": "lang_german"}
+{"prompt": "Was sind die gesundheitlichen Vor- und Nachteile von Intervallfasten, speziell der 16:8-Methode?", "domain": "lang_german"}
+{"prompt": "Kannst du mir erklären, was ein Zero-Knowledge-Beweis in der Kryptographie ist?", "domain": "lang_german"}
+{"prompt": "Erkläre das antike Rom einem zwölfjährigen Kind.", "domain": "lang_german"}
+{"prompt": "Wie funktioniert das Wahlsystem in Deutschland eigentlich genau?", "domain": "lang_german"}
+{"prompt": "Ich habe gehört, dass Kaffee den Eisenhaushalt beeinflusst. Stimmt das und sollte ich ihn zu den Mahlzeiten meiden?", "domain": "lang_german"}
+{"prompt": "Was sind die neurologischen Mechanismen, die hinter chronischem Stress und Burnout stehen, und wie lässt sich das therapeutisch angehen?", "domain": "lang_german"}
+{"prompt": "Wie lange ist Hackfleisch im Kühlschrank haltbar?", "domain": "lang_german"}
+{"prompt": "Wie kann ich meiner Schwester beibringen, dass ich ihr geliehenes Geld erst in zwei Monaten zurückzahlen kann, ohne dass es zum Streit kommt?", "domain": "lang_german"}
+{"prompt": "Welche Heizmethode ist langfristig günstiger, Fernwärme oder eine eigene Gasheizung?", "domain": "lang_german"}
+{"prompt": "Kannst du mir erklären, was ein Aktien-ETF eigentlich genau ist?", "domain": "lang_german"}
+{"prompt": "Gib mir praktische Ratschläge zu das Sonnensystem.", "domain": "lang_german"}
+{"prompt": "Beschreibe Schritt für Schritt, wie Meeresströmungen funktioniert.", "domain": "lang_german"}
+{"prompt": "Was war eigentlich die Berliner Mauer und warum wurde sie gebaut?", "domain": "lang_german"}
+{"prompt": "Ich habe wiederkehrende Kopfschmerzen nach der Arbeit am Bildschirm, welche ergonomischen und medizinischen Ursachen könnten dahinterstecken?", "domain": "lang_german"}
+{"prompt": "Wie kündige ich meinen Mobilfunkvertrag?", "domain": "lang_german"}
+{"prompt": "Welche Hausmittel helfen wirklich gegen Sodbrennen?", "domain": "lang_german"}
+{"prompt": "Kannst du mir eine ausführliche E-Mail an meinen Vermieter formulieren, in der ich eine Mietminderung wegen Schimmelbefall fordere?", "domain": "lang_german"}
+{"prompt": "Was genau passiert im Körper, wenn man Fieber hat?", "domain": "lang_german"}
+{"prompt": "Ich will wissen, wie man traditionelle Sauerteigbrote ohne handelsübliche Hefe herstellt.", "domain": "lang_german"}
+{"prompt": "Ist eine Reise mit dem Zug oder mit dem Flugzeug innerhalb Europas ökologisch sinnvoller?", "domain": "lang_german"}
+{"prompt": "Was bedeutet eigentlich Inflation und warum werden dadurch Lebensmittel teurer?", "domain": "lang_german"}
+{"prompt": "Wie schreibe ich eine überzeugende Kündigung meines Arbeitsvertrags, ohne die Beziehung zu meinem Arbeitgeber zu belasten?", "domain": "lang_german"}
+{"prompt": "Ich überlege, vegan zu werden, worauf muss ich besonders achten wegen Nährstoffen?", "domain": "lang_german"}
+{"prompt": "Wie funktioniert die Kläranlage und wie wird Abwasser eigentlich gereinigt?", "domain": "lang_german"}
+{"prompt": "Wie kann ich am besten Rotweinflecken aus einem hellen Teppich entfernen?", "domain": "lang_german"}
+{"prompt": "Kannst du mir erklären, wie das deutsche Rentensystem funktioniert und welche zusätzlichen privaten Vorsorgemöglichkeiten sinnvoll sind, wenn man Anfang dreißig ist und noch keine Altersvorsorge hat?", "domain": "lang_german"}
+{"prompt": "Was ist der Unterschied zwischen einem Vulkan wie dem Ätna und einem wie dem Vesuv in Bezug auf ihre Ausbruchsart?", "domain": "lang_german"}
+{"prompt": "Wie funktioniert die Photosynthese auf biochemischer Ebene und welche Rolle spielt dabei genau das Chlorophyll?", "domain": "lang_german"}
+{"prompt": "Was ist deiner Meinung nach die beste Methode, um eine Fremdsprache schnell zu lernen?", "domain": "lang_german"}
+{"prompt": "Beschreibe Schritt für Schritt, wie der Wasserkreislauf funktioniert.", "domain": "lang_german"}
+{"prompt": "Schreibe einen kurzen Absatz über der Wasserkreislauf.", "domain": "lang_german"}
+{"prompt": "Wie gehe ich vor, um einen Kredit für ein Auto zu vergleichen und den besten Zinssatz zu finden?", "domain": "lang_german"}
+{"prompt": "Ich verstehe den Unterschied zwischen brutto und netto nicht ganz. Kannst du das erklären?", "domain": "lang_german"}
+{"prompt": "Was ist der Unterschied zwischen Hosting und Domain?", "domain": "lang_german"}
+{"prompt": "Was genau versteht man unter dem Streisand-Effekt und wo kam der Begriff her?", "domain": "lang_german"}
+{"prompt": "Ist ein Hybridauto oder ein reines Elektroauto die bessere Wahl für Vielfahrer auf Langstrecken?", "domain": "lang_german"}
+{"prompt": "Was hältst du von Yoga als Ausgleich zu einem stressigen Bürojob?", "domain": "lang_german"}
+{"prompt": "Ich möchte für meine Oma, die sich für Astronomie interessiert, verständlich erklären, was ein schwarzes Loch ist und wie Wissenschaftler es überhaupt entdecken konnten.", "domain": "lang_german"}
+{"prompt": "Ich interessiere mich für die Geschichte des Römischen Reiches, könntest du mir erklären, welche Faktoren letztlich zum Untergang des Weströmischen Reiches geführt haben und ob es Parallelen zu heutigen politischen Krisen gibt?", "domain": "lang_german"}
+{"prompt": "Kannst du mir helfen, eine Geburtstagsrede für meinen besten Freund zu schreiben?", "domain": "lang_german"}
+{"prompt": "Schreibe ein Argument für gesunder Schlaf.", "domain": "lang_german"}
+{"prompt": "Wie kann ich meinen Schlaf verbessern ohne Medikamente?", "domain": "lang_german"}
+{"prompt": "Wie schreibe ich eine Kündigung für meine Wohnung?", "domain": "lang_german"}
+{"prompt": "Wie kann ich meine Steuererklärung ohne Steuerberater Schritt für Schritt selbst ausfüllen?", "domain": "lang_german"}
+{"prompt": "Ist es sinnvoller, Deutsch als Fremdsprache mit einer App oder in einem Präsenzkurs zu lernen?", "domain": "lang_german"}
+{"prompt": "Was sind die Unterschiede zwischen einer Festanstellung und der Selbstständigkeit in Bezug auf Sicherheit und Freiheit?", "domain": "lang_german"}
+{"prompt": "Ich weiß nicht, wie man einen Reifen am Auto wechselt. Kannst du mir das Schritt für Schritt erklären?", "domain": "lang_german"}
+{"prompt": "Kannst du mir den Unterschied zwischen Inflation und Deflation erklären und mit einem konkreten Beispiel aus der jüngeren Wirtschaftsgeschichte veranschaulichen?", "domain": "lang_german"}
+{"prompt": "Solarenergie oder Windkraft: Welche Technologie eignet sich besser für ein Einfamilienhaus in Norddeutschland?", "domain": "lang_german"}
+{"prompt": "Fasse die wichtigsten Ideen von der Wasserkreislauf zusammen.", "domain": "lang_german"}
+{"prompt": "Nenne fünf interessante Fakten über das antike Rom.", "domain": "lang_german"}
+{"prompt": "Wie funktioniert die Inflation genau und warum führt eine zu hohe Geldmenge nicht immer sofort zu steigenden Preisen?", "domain": "lang_german"}
+{"prompt": "Warum riechen manche Pilzarten im Wald nach verwestem Fleisch und wie hilft ihnen das?", "domain": "lang_german"}
+{"prompt": "Ich möchte meiner besten Freundin zum Umzug in eine neue Stadt eine emotionale, aber nicht zu kitschige Nachricht schreiben. Kannst du mir dabei helfen und gleichzeitig ein paar praktische Tipps für den Umzugstag mit einbauen?", "domain": "lang_german"}
+{"prompt": "Was denkst du über Fernbeziehungen und ob sie langfristig funktionieren können?", "domain": "lang_german"}
+{"prompt": "Vergleiche das antike Rom mit einer gängigen Alternative.", "domain": "lang_german"}
+{"prompt": "Kannst du mir die wichtigsten Ereignisse des Dreißigjährigen Krieges chronologisch zusammenfassen und dabei erklären, warum dieser Konflikt für die europäische Geschichte so prägend war?", "domain": "lang_german"}
+{"prompt": "Wie funktioniert eigentlich ein Kühlschrank?", "domain": "lang_german"}
+{"prompt": "Wie erkläre ich einem Kind, warum der Himmel nachts dunkel wird, obwohl es so viele Sterne gibt?", "domain": "lang_german"}
+{"prompt": "Kannst du mir ein einfaches Rezept für einen klassischen Kartoffelsalat geben?", "domain": "lang_german"}
+{"prompt": "Kannst du mir erklären, wie Blockchain funktioniert, aber einfach bitte?", "domain": "lang_german"}
+{"prompt": "Was sind die wichtigsten Unterschiede zwischen der Aktien- und der Anleihenanlage für einen Einsteiger?", "domain": "lang_german"}
+{"prompt": "Was sind die Schritte, um einen Kredit bei der Bank zu beantragen und die Konditionen zu vergleichen?", "domain": "lang_german"}
+{"prompt": "Wie bewertest du Fernstudiengänge im Vergleich zu einem klassischen Präsenzstudium?", "domain": "lang_german"}
+{"prompt": "Erkläre mir kurz, was ein Algorithmus ist.", "domain": "lang_german"}
+{"prompt": "Was war die Bedeutung der Wanderfalken in der mittelalterlichen Falknerei?", "domain": "lang_german"}
+{"prompt": "Kannst du mir erklären, warum manche Menschen Synästhesie haben und Farben hören können?", "domain": "lang_german"}
+{"prompt": "Erkläre mir bitte im Detail, wie das Bundesverfassungsgericht funktioniert und welche Bedeutung seine Urteile für die Gesetzgebung haben.", "domain": "lang_german"}
+{"prompt": "Fasse die wichtigsten Ideen von erneuerbare Energie zusammen.", "domain": "lang_german"}
+{"prompt": "Was bedeutet Achtsamkeit?", "domain": "lang_german"}
+{"prompt": "Wie kann ich meinem Teenager-Sohn erklären, warum übermäßiger Social-Media-Konsum problematisch sein kann, ohne dass es wie eine Standpauke wirkt?", "domain": "lang_german"}
+{"prompt": "Fasse die wichtigsten Ideen von gesunde Ernährung zusammen.", "domain": "lang_german"}
+{"prompt": "Wie hat sich die Rolle der Frau in der deutschen Gesellschaft seit den 1950er Jahren gesellschaftlich und rechtlich verändert?", "domain": "lang_german"}
+{"prompt": "Wie unterscheidet sich der Jetlag beim Fliegen nach Osten von dem nach Westen?", "domain": "lang_german"}
+{"prompt": "Wie gehe ich vor, um einen respektvollen Umgang mit schwierigen Kollegen im Büro zu pflegen?", "domain": "lang_german"}
+{"prompt": "Wie kündige ich einen Vertrag?", "domain": "lang_german"}
+{"prompt": "Wie plane ich am besten eine Reise nach Japan mit begrenztem Budget, Schritt für Schritt?", "domain": "lang_german"}
+{"prompt": "Kannst du mir eine ausführliche Analyse der Vor- und Nachteile von Kernenergie im Vergleich zu erneuerbaren Energien liefern?", "domain": "lang_german"}
+{"prompt": "Meinst du, es ist besser, für eine Prüfung allein zu lernen oder in einer Lerngruppe?", "domain": "lang_german"}
+{"prompt": "Was ist der Sinn des Lebens?", "domain": "lang_german"}
+{"prompt": "Wie funktioniert die Photosynthese genau, und kannst du mir das in einfachen Schritten erklären?", "domain": "lang_german"}
+{"prompt": "Was unterscheidet die Kalte-Krieg-Politik der USA von der der Sowjetunion in den 1960er Jahren?", "domain": "lang_german"}
+{"prompt": "Was sind einfache Tipps, um weniger Plastik im Alltag zu verwenden?", "domain": "lang_german"}
+{"prompt": "Wie kann ich lernen, besser mit Stress am Arbeitsplatz umzugehen?", "domain": "lang_german"}
+{"prompt": "Ich plane, meinem Partner einen romantischen Abend zum Jahrestag zu organisieren, ohne dass es zu klischeehaft wirkt. Kannst du mir ein paar kreative und persönliche Ideen vorschlagen?", "domain": "lang_german"}
+{"prompt": "Kannst du mir erklären, warum manche Menschen von Geburt an keinen Geruchssinn haben?", "domain": "lang_german"}
+{"prompt": "Wie hat sich die Rolle der Frau in der deutschen Gesellschaft seit den 1950er Jahren verändert, und welche gesetzlichen Meilensteine waren dabei besonders wichtig?", "domain": "lang_german"}
+{"prompt": "Wie lange dauert die Verjährung bei Steuerforderungen?", "domain": "lang_german"}
+{"prompt": "Ich schreibe an einer Bewerbung für eine Stelle als Projektmanager und möchte im Anschreiben meine Führungserfahrung betonen, ohne arrogant zu wirken. Kannst du mir helfen, ein paar überzeugende Formulierungen zu finden?", "domain": "lang_german"}
+{"prompt": "Kannst du mir eine kurze Bewerbung als Kellner schreiben?", "domain": "lang_german"}
+{"prompt": "Kannst du mir erklären, wie Impfstoffe auf mRNA-Basis funktionieren, im Vergleich zu klassischen Totimpfstoffen?", "domain": "lang_german"}
+{"prompt": "Ich möchte verstehen, wie genau ein Kreditscoring bei der Schufa funktioniert und welche Faktoren meinen Score negativ beeinflussen können?", "domain": "lang_german"}
+{"prompt": "Erkläre mir Photosynthese in drei Sätzen.", "domain": "lang_german"}
+{"prompt": "Ich plane eine Reise nach Japan und möchte kulturelle Fettnäpfchen vermeiden, kannst du mir die wichtigsten Verhaltensregeln erklären, die ich als Tourist beachten sollte?", "domain": "lang_german"}
+{"prompt": "Ich plane in den nächsten sechs Monaten mein Studium zu beenden und danach ins Berufsleben einzusteigen, könntest du mir erklären, wie ich am besten ein aussagekräftiges Anschreiben formuliere, welche Fehler ich vermeiden sollte und ob es sinnvoll ist, ein Motivationsschreiben auch an kleinere Unternehmen zu schicken?", "domain": "lang_german"}
+{"prompt": "Was ist der Unterschied zwischen Marmelade und Konfitüre?", "domain": "lang_german"}
+{"prompt": "Wie schreibe ich eine Kündigung für meinen Mobilfunkvertrag bei der Telekom, der am 15. März endet?", "domain": "lang_german"}
+{"prompt": "Erkläre erneuerbare Energie einem zwölfjährigen Kind.", "domain": "lang_german"}
+{"prompt": "Was sind die neurobiologischen Grundlagen von chronischem Stress und wie wirken sich diese langfristig auf das Herz-Kreislauf-System aus?", "domain": "lang_german"}
+{"prompt": "Wie hat sich die Rolle der Frau in der deutschen Gesellschaft von der Weimarer Republik bis heute konkret verändert?", "domain": "lang_german"}
+{"prompt": "Kannst du mir erklären, wie das Immunsystem auf eine Grippe reagiert?", "domain": "lang_german"}
+{"prompt": "Was ist eigentlich der Unterschied zwischen Wetter und Klima?", "domain": "lang_german"}
+{"prompt": "Was sind die Unterschiede zwischen einem Bachelor- und einem Ausbildungsabschluss in Bezug auf Karrierechancen?", "domain": "lang_german"}
+{"prompt": "Ich möchte anfangen, gesünder zu kochen. Hast du ein paar einfache Tipps für Anfänger?", "domain": "lang_german"}
+{"prompt": "Solltest du lieber ein E-Bike oder ein klassisches Fahrrad kaufen, wenn du täglich zehn Kilometer pendelst?", "domain": "lang_german"}
+{"prompt": "Was ist die Geschichte hinter dem deutschen Reinheitsgebot beim Bierbrauen?", "domain": "lang_german"}
+{"prompt": "Was spricht für und gegen die Nutzung von sozialen Medien für die berufliche Vernetzung?", "domain": "lang_german"}
+{"prompt": "Kannst du mir den Unterschied zwischen einer Aktiengesellschaft und einer GmbH erklären, insbesondere im Hinblick auf Haftung, Gründungskosten und steuerliche Aspekte?", "domain": "lang_german"}
+{"prompt": "Wie berechne ich die Zinsen bei einem Kredit von 15000 Euro mit 4,5 Prozent Zinssatz über 5 Jahre?", "domain": "lang_german"}
+{"prompt": "Was koche ich heute Abend?", "domain": "lang_german"}
+{"prompt": "Wie lange sollte man Fleisch im Kühlschrank aufbewahren, bevor es schlecht wird?", "domain": "lang_german"}
+{"prompt": "Was denkst du über Kryptowährungen als Altersvorsorge?", "domain": "lang_german"}
+{"prompt": "Was ist der Unterschied zwischen künstlicher Intelligenz und maschinellem Lernen, einfach erklärt?", "domain": "lang_german"}
+{"prompt": "Ich streite mich gerade oft mit meinem Partner über Kleinigkeiten, was kann ich tun?", "domain": "lang_german"}
+{"prompt": "Ich will besser kochen lernen, mit welchem Gericht sollte ich als Anfänger starten?", "domain": "lang_german"}
+{"prompt": "Nenne mir fünf Tipps gegen Prokrastination.", "domain": "lang_german"}
+{"prompt": "Ich möchte ein Gedicht über den Herbst schreiben, das sich reimt und aus vier Strophen besteht.", "domain": "lang_german"}
+{"prompt": "Ich möchte mit dem Laufen anfangen, habe aber seit Jahren keinen Sport gemacht. Kannst du mir einen realistischen Einsteigerplan für die ersten sechs Wochen erstellen und mir sagen, worauf ich achten muss, um mich nicht zu verletzen?", "domain": "lang_german"}
+{"prompt": "Wie unterscheidet sich buddhistische Meditation von klassischer Achtsamkeitspraxis im Westen?", "domain": "lang_german"}
+{"prompt": "Warum verändert sich mit dem Alter unser Schlafbedürfnis, und gibt es wissenschaftliche Erklärungen dafür, warum ältere Menschen oft früher aufwachen?", "domain": "lang_german"}
+{"prompt": "Was passiert bei einem Herzinfarkt im Körper?", "domain": "lang_german"}
+{"prompt": "Wie bewertest du die aktuelle Entwicklung der Mietpreise in deutschen Großstädten?", "domain": "lang_german"}
+{"prompt": "Was ist der Unterschied zwischen Aktien und Anleihen?", "domain": "lang_german"}
+{"prompt": "Wie schreibe ich eine Kündigung für meinen Fitnessstudio-Vertrag, wenn die Mindestlaufzeit von 12 Monaten schon vorbei ist?", "domain": "lang_german"}
+{"prompt": "Was sind die Grundregeln beim Schachspielen für Anfänger?", "domain": "lang_german"}
+{"prompt": "Wie gehe ich am besten vor, wenn ich einen professionellen Lebenslauf auf Deutsch schreiben möchte?", "domain": "lang_german"}
+{"prompt": "Ich habe eine Verspätung von drei Stunden bei einem Flug mit einer deutschen Airline gehabt. Habe ich Anspruch auf Entschädigung?", "domain": "lang_german"}
+{"prompt": "Was ist gesünder für die Haut, ein chemisches oder ein mineralisches Sonnenschutzmittel?", "domain": "lang_german"}
+{"prompt": "Ich habe beim Joggen ein Ziehen im rechten Knie, besonders wenn ich Treppen runtergehe. Was könnte das sein?", "domain": "lang_german"}
+{"prompt": "Was ist Quantencomputing einfach erklärt?", "domain": "lang_german"}
+{"prompt": "Kannst du mir die Unterschiede zwischen klassischer und Quantenverschlüsselung erklären und warum letztere als zukunftssicher gilt?", "domain": "lang_german"}
+{"prompt": "Wie plane ich meine Altersvorsorge sinnvoll, wenn ich Mitte dreißig bin und noch nichts angespart habe?", "domain": "lang_german"}
+{"prompt": "Was bedeutet Inflation genau?", "domain": "lang_german"}
+{"prompt": "Was steckt hinter dem Placebo-Effekt aus neurobiologischer Sicht?", "domain": "lang_german"}
+{"prompt": "Was koche ich heute Abend, wenn ich nur Kartoffeln, Zwiebeln und Eier im Haus habe?", "domain": "lang_german"}
+{"prompt": "Was bedeutet Nachhaltigkeit konkret?", "domain": "lang_german"}
+{"prompt": "Was unterscheidet die österreichische von der schweizerdeutschen Aussprache am meisten?", "domain": "lang_german"}
+{"prompt": "Wie schreibe ich eine motivierende Nachricht an einen Freund, der gerade seinen Job verloren hat?", "domain": "lang_german"}
+{"prompt": "Ich arbeite in einem Team, in dem es häufig zu Missverständnissen kommt, welche Kommunikationsstrategien könnten helfen, die Zusammenarbeit zu verbessern?", "domain": "lang_german"}
+{"prompt": "Schreib mir eine kurze Absage für ein Vorstellungsgespräch.", "domain": "lang_german"}
+{"prompt": "Meine Oma hat Diabetes Typ 2, was sollte sie beim Essen besonders beachten?", "domain": "lang_german"}
+{"prompt": "Ich habe Streit mit meinem besten Freund wegen einer geplatzten Verabredung. Wie kann ich mich glaubwürdig entschuldigen?", "domain": "lang_german"}
+{"prompt": "Erkläre mir, wie ich eine Meditationsroutine aufbaue, die ich langfristig durchhalten kann.", "domain": "lang_german"}
+{"prompt": "Wie funktioniert ein Wärmepumpensystem?", "domain": "lang_german"}
+{"prompt": "Schreibe einen kurzen Absatz über das antike Rom.", "domain": "lang_german"}
+{"prompt": "Wie kann ich Schritt für Schritt lernen, öffentlich frei zu sprechen, ohne nervös zu werden?", "domain": "lang_german"}
+{"prompt": "Was ist der Unterschied zwischen Introvertiertheit und Schüchternheit?", "domain": "lang_german"}
+{"prompt": "Kannst du mir eine Anleitung geben, wie man alte Fotografien fachgerecht digitalisiert und restauriert?", "domain": "lang_german"}
+{"prompt": "Erkläre mir bitte ausführlich, wie ein Verbrennungsmotor im Vergleich zu einem Elektromotor energetisch weniger effizient ist.", "domain": "lang_german"}
+{"prompt": "Kannst du mir erklären, wie Kryptowährungen wie Bitcoin technisch funktionieren, und warum ihr Wert so stark schwankt?", "domain": "lang_german"}
+{"prompt": "Wie kann ich meinem Team in einer schwierigen Umstrukturierungsphase Sicherheit geben, ohne unrealistische Versprechungen zu machen?", "domain": "lang_german"}
+{"prompt": "Kannst du mir erklären, wie ich mein Fahrrad selbst reparieren kann, wenn die Kette abgesprungen ist?", "domain": "lang_german"}
+{"prompt": "Wie backe ich einen Kuchen ohne Zucker?", "domain": "lang_german"}
+{"prompt": "Warum haben manche Kirchtürme in Norddeutschland schiefe Spitzen und ist das Absicht?", "domain": "lang_german"}
+{"prompt": "Ich überlege, ob ich meinem Chef eine Gehaltserhöhung vorschlagen soll, wie würdest du das angehen?", "domain": "lang_german"}
+{"prompt": "Was ist eigentlich der Unterschied zwischen Yoga und Pilates?", "domain": "lang_german"}
+{"prompt": "Was sind die wichtigsten psychologischen Mechanismen, die bei Konfliktvermeidung in langjährigen Beziehungen eine Rolle spielen?", "domain": "lang_german"}
+{"prompt": "Wie kann ich mein Smartphone vor Cyberangriffen und Datenklau besser schützen?", "domain": "lang_german"}
+{"prompt": "Wie kann ich meinen Lebenslauf und mein Anschreiben optimal auf eine Stellenausschreibung anpassen?", "domain": "lang_german"}
+{"prompt": "Was sind die Vorteile von Homeoffice gegenüber Büroarbeit?", "domain": "lang_german"}
+{"prompt": "Ich schreibe eine Hausarbeit über die Geldpolitik der Europäischen Zentralbank seit der Finanzkrise 2008 – kannst du mir die wichtigsten Maßnahmen chronologisch und mit Wirkung erklären?", "domain": "lang_german"}
+{"prompt": "Kannst du mir helfen, eine höfliche Absage für eine Einladung zu einer Hochzeit zu formulieren?", "domain": "lang_german"}
+{"prompt": "Was sind die neuesten Entwicklungen in der Krebsimmuntherapie, insbesondere bei CAR-T-Zell-Behandlungen?", "domain": "lang_german"}
+{"prompt": "Was sind die wichtigsten Unterschiede zwischen der sozialen Marktwirtschaft in Deutschland und dem klassischen Kapitalismus, wie er zum Beispiel in den USA praktiziert wird?", "domain": "lang_german"}
+{"prompt": "Was ist der Unterschied zwischen Butter und Margarine, gesundheitlich gesehen?", "domain": "lang_german"}
+{"prompt": "Was hältst du von der Idee, mit Freunden gemeinsam eine Wohngemeinschaft im Alter zu gründen?", "domain": "lang_german"}
+{"prompt": "Was tun bei einem Mückenstich, der stark juckt?", "domain": "lang_german"}
+{"prompt": "Kannst du mir erklären, wie die Fotosynthese chemisch abläuft, am besten mit der Reaktionsgleichung?", "domain": "lang_german"}
+{"prompt": "Sollte ich lieber einen Bausparvertrag oder ein ETF-Sparplan wählen, wenn ich in zehn Jahren ein Haus kaufen möchte?", "domain": "lang_german"}
+{"prompt": "Was ist der Unterschied zwischen Alchemie und früher Chemie im 16. Jahrhundert?", "domain": "lang_german"}
+{"prompt": "Meine Beziehung fühlt sich seit Monaten eingefahren an, was könnten wir dagegen tun?", "domain": "lang_german"}
+{"prompt": "Wie kann ich meinem Kind Bruchrechnen einfach erklären?", "domain": "lang_german"}
+{"prompt": "Wie erstelle ich ein einfaches Haushaltsbudget als Student mit wenig Einkommen?", "domain": "lang_german"}
+{"prompt": "Was war die Bedeutung der Hanse für den mittelalterlichen Handel in Nordeuropa?", "domain": "lang_german"}
+{"prompt": "Wie unterscheiden sich die Wirkmechanismen von mRNA-Impfstoffen und klassischen Totimpfstoffen auf molekularer Ebene?", "domain": "lang_german"}
+{"prompt": "Erkläre mir Schritt für Schritt, wie Photosynthese in Pflanzen funktioniert.", "domain": "lang_german"}
+{"prompt": "Was ist der Unterschied zwischen einer GmbH und einer UG bei der Gründung eines kleinen Unternehmens?", "domain": "lang_german"}
+{"prompt": "Kannst du mir erklären, wie ein Kredit mit variablem Zins funktioniert?", "domain": "lang_german"}
+{"prompt": "Kannst du mir erklären, warum es in Deutschland so viele verschiedene Dialekte gibt, obwohl das Land relativ klein ist?", "domain": "lang_german"}
+{"prompt": "Was tun bei Schlafproblemen?", "domain": "lang_german"}
+{"prompt": "Wie beurteilst du die Zukunft der Kernenergie in Europa?", "domain": "lang_german"}
+{"prompt": "Ich schreibe eine E-Mail an meinen Vermieter wegen eines Wasserschadens in der Wohnung – kannst du mir einen formellen und präzisen Text dafür entwerfen?", "domain": "lang_german"}
+{"prompt": "Wie unterscheidet sich die norddeutsche Fastnacht von der rheinischen Karnevalstradition?", "domain": "lang_german"}
+{"prompt": "Was sind die wichtigsten Unterschiede zwischen einer offenen und einer geschlossenen Volkswirtschaft in Bezug auf Handelspolitik und Wechselkurse?", "domain": "lang_german"}
+{"prompt": "Was ist eigentlich ein Algorithmus, kannst du das ganz einfach erklären?", "domain": "lang_german"}
+{"prompt": "Was hilft gegen Prokrastination im Alltag?", "domain": "lang_german"}
+{"prompt": "Wie funktioniert eigentlich ein Girokonto und wofür brauche ich es?", "domain": "lang_german"}
+{"prompt": "Vergleiche schwarze Löcher mit einer gängigen Alternative.", "domain": "lang_german"}
+{"prompt": "Fasse die wichtigsten Ideen von Meeresströmungen zusammen.", "domain": "lang_german"}
+{"prompt": "Schreib mir bitte eine kurze E-Mail an meinen Vermieter, weil die Heizung seit drei Tagen nicht funktioniert.", "domain": "lang_german"}
+{"prompt": "Schreibe ein Argument für gesunde Ernährung.", "domain": "lang_german"}
+{"prompt": "Kannst du mir helfen, eine Speisekarte für ein kleines vegetarisches Café zu entwerfen, mit fünf Hauptgängen?", "domain": "lang_german"}
+{"prompt": "Wie gehe ich vor, um meine erste eigene Webseite mit WordPress zu erstellen?", "domain": "lang_german"}
+{"prompt": "Was ist eigentlich der Unterschied zwischen Viren und Bakterien?", "domain": "lang_german"}
+{"prompt": "Was bedeutet die Formel E=mc² eigentlich in einfachen Worten und warum ist sie so bedeutend?", "domain": "lang_german"}
+{"prompt": "Was ist deine Meinung zu einer Vier-Tage-Woche in deutschen Unternehmen?", "domain": "lang_german"}
+{"prompt": "Denkst du, dass man als junger Mensch lieber Erfahrungen sammeln oder früh Geld sparen sollte?", "domain": "lang_german"}
+{"prompt": "Ich möchte meinen Eltern erklären, warum ich mich entschieden habe, vegan zu leben, kannst du mir helfen, überzeugende und respektvolle Argumente zu formulieren?", "domain": "lang_german"}
+{"prompt": "Was sind eigentlich die größten Unterschiede zwischen der Europäischen Union und den Vereinigten Staaten in Bezug auf politische Struktur und Entscheidungsfindung?", "domain": "lang_german"}
+{"prompt": "Kannst du mir detailliert erklären, welche Unterschiede es zwischen einer privaten und einer gesetzlichen Krankenversicherung in Deutschland gibt?", "domain": "lang_german"}
+{"prompt": "Kannst du mir eine kurze Rede für die Hochzeit meines Bruders schreiben, ungefähr drei Minuten lang?", "domain": "lang_german"}
+{"prompt": "Kannst du mir eine kurze Geschichte über Freundschaft für Kinder schreiben?", "domain": "lang_german"}
+{"prompt": "Ist Intervalltraining oder klassisches Ausdauertraining effektiver, um Fett zu verlieren?", "domain": "lang_german"}
+{"prompt": "Wie stehst du zur Diskussion um ein generelles Tempolimit auf deutschen Autobahnen?", "domain": "lang_german"}
+{"prompt": "Kannst du mir kurz erklären, wie ein Kühlschrank funktioniert?", "domain": "lang_german"}
+{"prompt": "Ich brauche Ideen für ein Geburtstagsgeschenk für meine beste Freundin, sie mag Bücher und Kaffee.", "domain": "lang_german"}
+{"prompt": "Kannst du mir ein paar Tipps geben, wie ich mein Geld besser sparen kann?", "domain": "lang_german"}
+{"prompt": "Wie spare ich am besten für die Rente?", "domain": "lang_german"}
+{"prompt": "Meine Beziehung ist seit ein paar Monaten angespannt, weil wir unterschiedliche Vorstellungen von Geldausgeben haben. Wie kann ich das Thema ansprechen, ohne dass es direkt zum Streit eskaliert, und gibt es bewährte Methoden, um gemeinsam ein Budget zu erstellen?", "domain": "lang_german"}
+{"prompt": "Ich möchte anfangen, in ETFs zu investieren, habe aber keine Erfahrung mit Finanzmärkten. Kannst du mir die Grundbegriffe erklären, mir zeigen, worauf ich bei der Auswahl eines ETFs achten sollte, und mir auch die Risiken realistisch darstellen?", "domain": "lang_german"}
+{"prompt": "Was sind die wesentlichen Unterschiede zwischen den politischen Systemen von Deutschland und den USA in Bezug auf Gewaltenteilung?", "domain": "lang_german"}
+{"prompt": "Kannst du mir kurz erklären, wie eine Wärmepumpe funktioniert und ob sie sich für ein altes Haus aus den 1970er Jahren lohnt?", "domain": "lang_german"}
+{"prompt": "Ich habe seit Wochen Rückenschmerzen im unteren Rückenbereich, vor allem nach langem Sitzen im Homeoffice. Kannst du mir ein paar einfache Dehnübungen vorschlagen und erklären, welche Ursachen solche Schmerzen häufig haben?", "domain": "lang_german"}
+{"prompt": "Wie erkläre ich einem Kind den Unterschied zwischen Wetter und Klima anhand von Alltagsbeispielen?", "domain": "lang_german"}
+{"prompt": "Meinst du, es lohnt sich noch, in Aktien einzusteigen, oder ist der Markt gerade zu riskant?", "domain": "lang_german"}
+{"prompt": "Ist es aus deiner Sicht sinnvoll, sich impfen zu lassen, bevor man in tropische Länder reist?", "domain": "lang_german"}
+{"prompt": "Was ist Osmose?", "domain": "lang_german"}
+{"prompt": "Was war eigentlich der Zweck der Berliner Mauer und wann wurde sie gebaut?", "domain": "lang_german"}
+{"prompt": "Erkläre mir Schritt für Schritt, wie ich meine Kreditkartenschulden am schnellsten abbauen kann.", "domain": "lang_german"}
+{"prompt": "Gib mir praktische Ratschläge zu schwarze Löcher.", "domain": "lang_german"}
+{"prompt": "Ich habe morgen ein Vorstellungsgespräch und bin total nervös, hast du ein paar Tipps für mich?", "domain": "lang_german"}
+{"prompt": "Gib mir praktische Ratschläge zu gesunde Ernährung.", "domain": "lang_german"}
+{"prompt": "Was sind sinnvolle Schritte, um mit dem Rauchen endgültig aufzuhören?", "domain": "lang_german"}
+{"prompt": "Was sind die Unterschiede zwischen einer veganen und einer vegetarischen Ernährung in Bezug auf Nährstoffversorgung?", "domain": "lang_german"}
+{"prompt": "Ich habe vor kurzem einen neuen Kollegen bekommen, der ständig meine Ideen in Meetings als seine eigenen präsentiert. Wie kann ich das professionell ansprechen, ohne die Zusammenarbeit zu gefährden?", "domain": "lang_german"}
+{"prompt": "Kannst du mir eine kurze Geburtstagsnachricht für meine beste Freundin schreiben?", "domain": "lang_german"}
+{"prompt": "Welche Küche würdest du für ein romantisches erstes Date in einer mittelgroßen Stadt empfehlen?", "domain": "lang_german"}
+{"prompt": "Kannst du mir helfen, eine Bewerbung für eine Stelle als Grafikdesigner zu schreiben, ich habe 3 Jahre Berufserfahrung?", "domain": "lang_german"}
+{"prompt": "Wie kann ich höflich eine Einladung ablehnen?", "domain": "lang_german"}
+{"prompt": "Kannst du mir eine kurze Geschichte über eine Katze schreiben, die heimlich Klavier spielt, wenn niemand zuhause ist?", "domain": "lang_german"}
+{"prompt": "Kannst du mir kurz erklären, wie eine Photosynthese funktioniert?", "domain": "lang_german"}
+{"prompt": "Ich plane eine zweiwöchige Reise durch Japan und möchte sowohl moderne Städte als auch traditionelle Orte sehen. Kannst du mir eine grobe Route vorschlagen und dabei kulturelle Besonderheiten erwähnen, auf die ich als Tourist achten sollte?", "domain": "lang_german"}
+{"prompt": "Was war historisch gesehen die Bedeutung der Seidenstraße für den Handel?", "domain": "lang_german"}
+{"prompt": "Welche Unterschiede gibt es zwischen einer privaten und einer gesetzlichen Krankenversicherung in Deutschland?", "domain": "lang_german"}
+{"prompt": "Wie kann ich schneller einschlafen?", "domain": "lang_german"}
+{"prompt": "Meine Oma hat Diabetes Typ 2 und isst trotzdem gerne süß. Kannst du mir ein paar alltagstaugliche Rezeptideen geben, die wenig Zucker enthalten, aber trotzdem nach etwas schmecken, und mir gleichzeitig erklären, wie Blutzuckerspitzen nach dem Essen entstehen?", "domain": "lang_german"}
+{"prompt": "Wie funktioniert eigentlich das Bafög-System für Studenten in Deutschland?", "domain": "lang_german"}
+{"prompt": "Was sind die Unterschiede zwischen einer offenen und einer geschlossenen Küche beim Hausbau?", "domain": "lang_german"}
+{"prompt": "Ich möchte eine E-Mail an meinen Vermieter schreiben, weil die Heizung seit Tagen nicht richtig funktioniert.", "domain": "lang_german"}
+{"prompt": "Wie viel Wasser sollte ich täglich trinken?", "domain": "lang_german"}
+{"prompt": "Vergleiche Meeresströmungen mit einer gängigen Alternative.", "domain": "lang_german"}
+{"prompt": "Kannst du mir die wichtigsten Etappen der Industrialisierung in Deutschland im 19. Jahrhundert chronologisch und mit Ursachen erklären?", "domain": "lang_german"}
+{"prompt": "Wie lerne ich schneller Vokabeln?", "domain": "lang_german"}
+{"prompt": "Wie kann ich meine Work-Life-Balance verbessern, wenn ich in einem Schichtsystem mit wechselnden Arbeitszeiten arbeite?", "domain": "lang_german"}
+{"prompt": "Kannst du mir helfen, eine wissenschaftlich fundierte Argumentation gegen Homöopathie als Ergänzung zur Schulmedizin auszuarbeiten?", "domain": "lang_german"}
+{"prompt": "Kannst du mir eine ausführliche Erklärung zur Funktionsweise von mRNA-Impfstoffen geben, inklusive der Rolle von Lipid-Nanopartikeln?", "domain": "lang_german"}
+{"prompt": "Wie bereite ich mich am besten auf ein Vorstellungsgespräch vor, ohne nervös zu wirken?", "domain": "lang_german"}
+{"prompt": "Erkläre mir die wichtigsten Schritte, um beim Zeichnen realistische Porportionen des menschlichen Körpers hinzubekommen.", "domain": "lang_german"}
+{"prompt": "Was sind die Unterschiede zwischen einer offenen und einer geschlossenen Beziehung in Bezug auf Vertrauen und Kommunikation?", "domain": "lang_german"}
+{"prompt": "Kannst du mir erklären, wie man am besten mit Streit in einer Beziehung umgeht?", "domain": "lang_german"}
+{"prompt": "Kannst du mir erklären, wie Blockchain-Technologie funktioniert und warum sie nicht nur für Kryptowährungen, sondern auch für andere Branchen relevant sein könnte?", "domain": "lang_german"}
+{"prompt": "Ich habe vor kurzem eine neue Stelle angetreten und mein Chef gibt mir wenig Feedback, wie kann ich höflich nachfragen, ob meine Arbeit den Erwartungen entspricht, ohne unsicher zu wirken?", "domain": "lang_german"}
+{"prompt": "Kannst du mir eine kurze Zusammenfassung zum Thema Inflation geben?", "domain": "lang_german"}
+{"prompt": "Kannst du mir erklären, wie das deutsche Rentensystem mit den drei Säulen aufgebaut ist und welche Reformen aktuell diskutiert werden?", "domain": "lang_german"}
+{"prompt": "Was hilft gegen Kopfschmerzen?", "domain": "lang_german"}
+{"prompt": "Wie funktioniert eigentlich das Prinzip einer Wärmepumpe im Vergleich zu einer klassischen Gasheizung?", "domain": "lang_german"}
+{"prompt": "Was sollte ich beim Autokauf unbedingt beachten?", "domain": "lang_german"}
+{"prompt": "Warum ist der Himmel blau?", "domain": "lang_german"}
+{"prompt": "Wie kann ich abends besser abschalten, wenn ich ständig an die Arbeit denken muss?", "domain": "lang_german"}
+{"prompt": "Ich überlege, ob ich meinen alten Diesel verkaufen und auf ein E-Bike umsteigen soll, was denkst du?", "domain": "lang_german"}
+{"prompt": "Was war die eigentliche Ursache für den Ausbruch des Ersten Weltkriegs, und wie haben die komplizierten Bündnissysteme in Europa dazu beigetragen?", "domain": "lang_german"}
+{"prompt": "Was sind die einzelnen Schritte bei der Beantragung eines deutschen Reisepasses?", "domain": "lang_german"}
+{"prompt": "Was denkst du über den Trend, komplett auf Social Media zu verzichten?", "domain": "lang_german"}
+{"prompt": "Ist es sinnvoller, für eine Fernbeziehung zu kämpfen oder sich rechtzeitig zu trennen, wenn beide Partner beruflich gebunden sind?", "domain": "lang_german"}
+{"prompt": "Was denkst du, lohnt sich eine Zusatzkrankenversicherung für Zahnbehandlungen?", "domain": "lang_german"}
+{"prompt": "Kannst du mir erklären, wie man Kompost im eigenen Garten richtig anlegt?", "domain": "lang_german"}
+{"prompt": "Was ist der Unterschied zwischen Sparbuch und Tagesgeldkonto?", "domain": "lang_german"}
+{"prompt": "Wie kann ich als Berufseinsteiger meine Gehaltsverhandlung strategisch vorbereiten, wenn ich noch keine Vergleichswerte in der Branche habe?", "domain": "lang_german"}
+{"prompt": "Wie hat sich die deutsche Sprache seit dem Mittelhochdeutschen bis heute lautlich und grammatikalisch verändert?", "domain": "lang_german"}
+{"prompt": "Ich möchte eine schwierige Trennung meinem Kind altersgerecht erklären, ohne dass es sich schuldig fühlt, hast du dafür Formulierungsvorschläge?", "domain": "lang_german"}
+{"prompt": "Welches Betriebssystem würdest du einem technisch weniger versierten Rentner empfehlen, Windows oder ein einfaches Linux?", "domain": "lang_german"}
+{"prompt": "Erkläre mir Schritt für Schritt, wie ich eine private Altersvorsorge sinnvoll aufbauen kann.", "domain": "lang_german"}
+{"prompt": "Schreibe ein Argument für maschinelles Lernen.", "domain": "lang_german"}
+{"prompt": "Was ist der Unterschied zwischen Wetter und Klima?", "domain": "lang_german"}
+{"prompt": "Was ist der Unterschied zwischen Web3 und dem klassischen Internet, wie wir es heute nutzen?", "domain": "lang_german"}
+{"prompt": "Wie schätzt du die langfristigen Auswirkungen von künstlicher Intelligenz auf klassische Bürojobs ein?", "domain": "lang_german"}
+{"prompt": "Ich habe Probleme, nachts durchzuschlafen und wache oft gegen drei Uhr auf. Was könnten mögliche Gründe dafür sein und welche Schlafhygiene-Tipps würdest du mir empfehlen?", "domain": "lang_german"}
+{"prompt": "Kannst du mir helfen, eine Nachricht an meinen Vermieter zu schreiben, weil die Heizung seit drei Tagen nicht funktioniert?", "domain": "lang_german"}
+{"prompt": "Was sind die Vor- und Nachteile von erneuerbare Energie?", "domain": "lang_german"}
+{"prompt": "Kannst du mir eine detaillierte Übersicht geben, welche Impfungen für eine Reise nach Südostasien empfohlen werden und warum?", "domain": "lang_german"}
+{"prompt": "Fasse die wichtigsten Ideen von das Sonnensystem zusammen.", "domain": "lang_german"}
+{"prompt": "Was war die Bedeutung des Wiener Kongresses von 1815 für die politische Ordnung Europas?", "domain": "lang_german"}
+{"prompt": "Ich möchte eine Rede zum 50. Geburtstag meines Vaters halten, kannst du mir einen emotional bewegenden, aber humorvollen Text entwerfen?", "domain": "lang_german"}
+{"prompt": "Was ist der Unterschied zwischen einer Aktie und einem Fonds?", "domain": "lang_german"}
+{"prompt": "Erzähle eine sehr kurze Geschichte über das antike Rom.", "domain": "lang_german"}
+{"prompt": "Ich möchte meiner Mutter zum 60. Geburtstag eine besondere Rede halten. Kannst du mir dabei helfen, sie zu strukturieren?", "domain": "lang_german"}
+{"prompt": "Ich habe Kopfschmerzen, die immer nachmittags auftreten und einige Stunden anhalten – könnte das mit meinem Bildschirmkonsum zusammenhängen?", "domain": "lang_german"}
+{"prompt": "Was sind die Vor- und Nachteile von der Wasserkreislauf?", "domain": "lang_german"}
+{"prompt": "Was hilft wirklich gegen Stress im Büro?", "domain": "lang_german"}
+{"prompt": "Was sind die Vorteile von Intervallfasten?", "domain": "lang_german"}
+{"prompt": "Ich will anfangen zu joggen, wie oft sollte ich als Anfänger pro Woche laufen?", "domain": "lang_german"}
+{"prompt": "Was spricht für und gegen den Einsatz von künstlicher Intelligenz im Schulunterricht?", "domain": "lang_german"}
+{"prompt": "Ich überlege, von meinem Job in der Industrie in die IT-Branche zu wechseln, wie sollte ich diesen Übergang beruflich und finanziell planen?", "domain": "lang_german"}
+{"prompt": "Ist ein Studium an einer Universität oder eine Ausbildung im Betrieb der bessere Weg für eine Karriere im IT-Bereich?", "domain": "lang_german"}
+{"prompt": "Was sind die Vor- und Nachteile von Meeresströmungen?", "domain": "lang_german"}
+{"prompt": "Ich möchte meiner Freundin zum Jahrestag eine kleine Karte schreiben, hast du ein paar Ideen?", "domain": "lang_german"}
+{"prompt": "Wir renovieren gerade unsere Küche und ich bin mir unsicher, ob Massivholz- oder Laminatarbeitsplatten die bessere Wahl sind. Kannst du die Vor- und Nachteile beider Materialien in Bezug auf Pflege, Kosten und Langlebigkeit vergleichen?", "domain": "lang_german"}
+{"prompt": "Erzähle eine sehr kurze Geschichte über gesunde Ernährung.", "domain": "lang_german"}
+{"prompt": "Ich überlege, von meinem festen Job in die Selbstständigkeit als freiberuflicher Grafikdesigner zu wechseln. Kannst du mir erklären, welche Versicherungen ich dafür unbedingt brauche, wie ich meine Steuern grob einschätzen kann und worauf ich bei der Preisgestaltung für Kunden achten sollte?", "domain": "lang_german"}
+{"prompt": "Was ist deine Meinung zu E-Autos im Vergleich zu klassischen Verbrennern, gerade für Pendler?", "domain": "lang_german"}
+{"prompt": "Was unterscheidet eigentlich eine Rezession von einer Depression in der Wirtschaft, und welche historischen Beispiele veranschaulichen diesen Unterschied am besten?", "domain": "lang_german"}
+{"prompt": "Was sind die wichtigsten Unterschiede zwischen den politischen Systemen in Deutschland und den USA?", "domain": "lang_german"}
+{"prompt": "Ich verstehe die Grundlagen der Quantenmechanik nicht wirklich, besonders das Prinzip der Superposition. Kannst du es mir mit einem einfachen Alltagsvergleich erklären und dabei auch kurz auf das Doppelspaltexperiment eingehen?", "domain": "lang_german"}
+{"prompt": "Kannst du mir eine kurze Anleitung geben, wie man traditionelles Sauerteigbrot ohne Hefe backt?", "domain": "lang_german"}
+{"prompt": "Kannst du mir erklären, wie man einen Sourdough-Brotteig von Grund auf ansetzt und pflegt?", "domain": "lang_german"}
+{"prompt": "Wir planen eine Familienfeier zum 70. Geburtstag meines Vaters mit etwa 40 Gästen. Kannst du mir helfen, eine grobe Checkliste zu erstellen, Ideen für eine originelle Rede zu sammeln und Vorschläge für ein Motto zu machen, das nicht zu kitschig ist?", "domain": "lang_german"}
+{"prompt": "Wie unterscheidet sich die Kündigungsfrist bei einem unbefristeten Arbeitsvertrag von der bei einem befristeten Vertrag in Deutschland?", "domain": "lang_german"}
+{"prompt": "Meine Pflanze hat gelbe Blätter und braune Flecken – hier ist ein Foto beschrieben: die Ränder sind knusprig. Was könnte das sein?", "domain": "lang_german"}
+{"prompt": "Kannst du mir erklären, wie das Prinzip der Mykorrhiza-Netzwerke zwischen Baumwurzeln funktioniert?", "domain": "lang_german"}
+{"prompt": "Kannst du mir eine witzige Geburtstagskarte für meinen Opa formulieren?", "domain": "lang_german"}
+{"prompt": "Erkläre mir kurz, was künstliche Intelligenz ist.", "domain": "lang_german"}
+{"prompt": "Ich möchte eine Rede zum Abschied eines langjährigen Kollegen halten, der in Rente geht, kannst du mir helfen, eine herzliche und humorvolle Rede zu entwerfen?", "domain": "lang_german"}
+{"prompt": "Wie kann ich meine Konzentration verbessern?", "domain": "lang_german"}
+{"prompt": "Ich möchte wissen, wie man einen klassischen Sauerteig für Brot von Grund auf ansetzt.", "domain": "lang_german"}
+{"prompt": "Was ist Karma?", "domain": "lang_german"}
+{"prompt": "Welche Vor- und Nachteile haben Festzinskredite gegenüber variablen Krediten bei der Baufinanzierung?", "domain": "lang_german"}
+{"prompt": "Kannst du mir eine kurze Kurzgeschichte über einen alten Leuchtturmwärter schreiben, der eines Tages eine mysteriöse Flaschenpost findet, die sein Leben verändert?", "domain": "lang_german"}
+{"prompt": "Was tun bei Muskelkater?", "domain": "lang_german"}
+{"prompt": "Vergleiche maschinelles Lernen mit einer gängigen Alternative.", "domain": "lang_german"}
+{"prompt": "Kannst du mir erklären, wie Quantencomputer im Gegensatz zu klassischen Computern Informationen verarbeiten und wo die praktischen Grenzen aktuell liegen?", "domain": "lang_german"}
+{"prompt": "Mein Chef hat mir eine E-Mail geschickt mit dem Betreff 'Dringend: Bitte um Rückmeldung bis 17 Uhr', aber ich bin gerade im Urlaub. Wie formuliere ich eine höfliche Antwort?", "domain": "lang_german"}
+{"prompt": "Was denkst du, ist Homeoffice besser als ins Büro zu gehen?", "domain": "lang_german"}
+{"prompt": "Wie kann ich meinen Schlaf verbessern, wenn ich abends oft nicht einschlafen kann?", "domain": "lang_german"}
+{"prompt": "Schreibe einen kurzen Absatz über Meeresströmungen.", "domain": "lang_german"}
+{"prompt": "Kannst du mir die wirtschaftlichen und sozialen Folgen der Digitalisierung für den deutschen Arbeitsmarkt in den nächsten zehn Jahren einschätzen?", "domain": "lang_german"}
+{"prompt": "Welche Unterschiede gibt es zwischen Cloud-Speicher und externer Festplatte für die Datensicherung?", "domain": "lang_german"}
+{"prompt": "Vergleiche das Sonnensystem mit einer gängigen Alternative.", "domain": "lang_german"}
+{"prompt": "Was unterscheidet den Kapitalismus skandinavischer Prägung vom amerikanischen Modell in Bezug auf soziale Absicherung?", "domain": "lang_german"}
+{"prompt": "Kannst du mir kurz erklären, was Terpene sind und warum sie in Cannabis und ätherischen Ölen vorkommen?", "domain": "lang_german"}
+{"prompt": "Kannst du mir die Unterschiede zwischen einem ETF-Sparplan und einer klassischen Lebensversicherung als Altersvorsorge erklären?", "domain": "lang_german"}
+{"prompt": "Kannst du mir eine kurze, aber emotionale Traueransprache für die Beerdigung meines Großvaters schreiben, der ein sehr geselliger und humorvoller Mensch war?", "domain": "lang_german"}
+{"prompt": "Ich habe gehört, dass Kaffee den Eisenhaushalt beeinflussen kann – stimmt das und worauf sollte ich achten?", "domain": "lang_german"}
+{"prompt": "Wie gehe ich vor, um ein gebrauchtes Auto vor dem Kauf gründlich zu prüfen?", "domain": "lang_german"}
+{"prompt": "Ich habe folgenden Fehler beim Excel-Formeleintrag: #WERT! in der Zelle B4 mit der Formel =A2/A3. Was bedeutet das?", "domain": "lang_german"}
+{"prompt": "Würdest du eher eine Städtereise oder einen Strandurlaub empfehlen, um wirklich abzuschalten?", "domain": "lang_german"}
+{"prompt": "Kannst du mir Ideen für ein günstiges Wochenende in Deutschland geben?", "domain": "lang_german"}
+{"prompt": "Was ist der Unterschied zwischen Marzipan und Persipan und wie wird beides hergestellt?", "domain": "lang_german"}
+{"prompt": "Wie funktioniert die Bierbrauerei im klösterlichen Stil des Mittelalters genau?", "domain": "lang_german"}
+{"prompt": "Wie kann ich effektiv Vokabeln lernen, wenn ich eine neue Fremdsprache beginne?", "domain": "lang_german"}
+{"prompt": "Was ist der Unterschied zwischen Homöopathie und normaler Medizin?", "domain": "lang_german"}
+{"prompt": "Ich möchte verstehen, wie Bienen ihre Waben in perfekter Sechseckform bauen.", "domain": "lang_german"}
+{"prompt": "Wie kann ich eine alte Kommode selbst abschleifen und neu lackieren?", "domain": "lang_german"}
+{"prompt": "Was sind die Vor- und Nachteile von Fernstudium im Vergleich zu einem Präsenzstudium?", "domain": "lang_german"}
+{"prompt": "Was sind die Vor- und Nachteile von das antike Rom?", "domain": "lang_german"}
+{"prompt": "Ich möchte ein Angebot für eine Photovoltaikanlage vergleichen, worauf sollte ich bei Wirkungsgrad, Amortisationszeit und Speicherkapazität besonders achten?", "domain": "lang_german"}
+{"prompt": "Ich habe Streit mit meiner besten Freundin, wie gehe ich am besten auf sie zu, um das zu klären?", "domain": "lang_german"}
+{"prompt": "Wie funktioniert die Immuntherapie bei Krebserkrankungen und welche Grenzen hat diese Behandlungsmethode derzeit?", "domain": "lang_german"}
+{"prompt": "Ich überlege zwischen React und Vue für ein neues Webprojekt. Welche Vor- und Nachteile gibt es?", "domain": "lang_german"}
+{"prompt": "Schreibe einen kurzen Absatz über gesunde Ernährung.", "domain": "lang_german"}
+{"prompt": "Gib mir drei Tipps, um Stress im Job zu reduzieren.", "domain": "lang_german"}
+{"prompt": "Kannst du mir helfen, eine Bewerbung für eine Stelle als Sachbearbeiter in der Buchhaltung zu formulieren?", "domain": "lang_german"}
+{"prompt": "Sollte ich meine Ersparnisse in Gold oder in Kryptowährungen investieren, wenn ich Inflation fürchte?", "domain": "lang_german"}
+{"prompt": "Sollte ich lieber in Aktien einzelner Unternehmen oder in breit gestreute Indexfonds investieren?", "domain": "lang_german"}
+{"prompt": "Sollte man beim Hausbau eher auf Holz oder auf Massivbauweise setzen?", "domain": "lang_german"}
+{"prompt": "Wie erkenne ich, ob eine Nachricht online eine Fake News ist?", "domain": "lang_german"}
+{"prompt": "Erzähle eine sehr kurze Geschichte über das Sonnensystem.", "domain": "lang_german"}
+{"prompt": "Wie kann ich meinem Team in einer schwierigen Umstrukturierungsphase souverän kommunizieren, ohne dass Panik entsteht?", "domain": "lang_german"}
+{"prompt": "Denkst du, dass vegane Ernährung für Kinder grundsätzlich empfehlenswert ist?", "domain": "lang_german"}
+{"prompt": "Ich will meinem Chef kündigen, wie formuliere ich das am besten in einer E-Mail?", "domain": "lang_german"}
+{"prompt": "Wie hat sich die Rolle der Frau in der deutschen Gesellschaft seit den 1950er Jahren verändert, und welche gesellschaftlichen Faktoren haben diesen Wandel vorangetrieben?", "domain": "lang_german"}
+{"prompt": "Welche psychologischen Mechanismen liegen einer toxischen Beziehung zugrunde und wie erkenne ich frühzeitig die Warnsignale?", "domain": "lang_german"}
+{"prompt": "Was spricht für und gegen den Umzug vom Land in die Großstadt für junge Familien?", "domain": "lang_german"}
+{"prompt": "Welche Automarke würdest du für einen zuverlässigen Gebrauchtwagen unter 10.000 Euro empfehlen?", "domain": "lang_german"}
+{"prompt": "Wie kann ich meinen Schlaf verbessern, ich wache nachts oft auf?", "domain": "lang_german"}
+{"prompt": "Kannst du mir ein einfaches Rezept für einen veganen Kuchen geben?", "domain": "lang_german"}
+{"prompt": "Wie erkläre ich einem Laien verständlich, warum Quantencomputer bestimmte Probleme exponentiell schneller lösen können als klassische Computer?", "domain": "lang_german"}
+{"prompt": "Findest du, dass man Kindern schon früh ein eigenes Smartphone geben sollte?", "domain": "lang_german"}
+{"prompt": "Wie kann ich meinem Nachbarn taktvoll sagen, dass sein Hund nachts zu laut bellt?", "domain": "lang_german"}
+{"prompt": "Erkläre das Sonnensystem einem zwölfjährigen Kind.", "domain": "lang_german"}
+{"prompt": "Wie motiviere ich mich zum Sport?", "domain": "lang_german"}
+{"prompt": "Ich verstehe nicht ganz, wie die Europäische Zentralbank die Zinsen festlegt und welchen Einfluss das auf meine Ersparnisse und Kredite hat. Kannst du das einfach erklären?", "domain": "lang_german"}
+{"prompt": "Nenne fünf interessante Fakten über erneuerbare Energie.", "domain": "lang_german"}
+{"prompt": "Solltest man als Anfänger im Fitnessstudio lieber mit einem Personal Trainer starten oder allein loslegen?", "domain": "lang_german"}
+{"prompt": "Meine Stromabrechnung zeigt einen Verbrauch von 3200 kWh im Jahr für einen Zwei-Personen-Haushalt. Ist das normal oder sollte ich mir Sorgen machen?", "domain": "lang_german"}
+{"prompt": "Welche Versicherung würdest du jemandem empfehlen, der gerade sein erstes eigenes Auto gekauft hat?", "domain": "lang_german"}
+{"prompt": "Was war die Bedeutung der Route der Seidenstraße für den kulturellen Austausch zwischen Ost und West?", "domain": "lang_german"}
+{"prompt": "Würdest du eher zu einem Studium oder einer Ausbildung raten, wenn man handwerklich begabt, aber auch wissenschaftlich interessiert ist?", "domain": "lang_german"}
+{"prompt": "Ist es besser, morgens oder abends Sport zu treiben, wenn man Gewicht verlieren möchte?", "domain": "lang_german"}
+{"prompt": "Kannst du mir in einfachen Worten erklären, was Blockchain eigentlich ist?", "domain": "lang_german"}
+{"prompt": "Kannst du mir helfen, eine Beschwerde-Mail an eine Fluggesellschaft wegen Verspätung zu formulieren?", "domain": "lang_german"}
+{"prompt": "Kannst du mir erklären, wie Bienen ihre Waben geometrisch perfekt bauen?", "domain": "lang_german"}
+{"prompt": "Wie kann ich meine Kommunikation in einer langjährigen Beziehung verbessern, wenn wir häufig über die Verteilung der Hausarbeit streiten?", "domain": "lang_german"}
+{"prompt": "Ich habe folgende Fehlermeldung in Python erhalten: 'IndexError: list index out of range' – hier ist mein Code: for i in range(len(liste)): print(liste[i+1]). Kannst du mir erklären, was falsch ist?", "domain": "lang_german"}
+{"prompt": "Was ist der Unterschied zwischen Klima und Wetter?", "domain": "lang_german"}
+{"prompt": "Ich will meine Wohnung neu einrichten, hast du Tipps, wie ich kleine Räume optisch größer wirken lasse?", "domain": "lang_german"}
+{"prompt": "Gib mir drei Ideen für ein Date am Wochenende.", "domain": "lang_german"}
+{"prompt": "Kannst du mir erklären, warum manche Menschen resistenter gegen Stress sind als andere, und ob sich Resilienz überhaupt trainieren lässt?", "domain": "lang_german"}
+{"prompt": "Wie kann ich meinen Garten im Frühjahr richtig vorbereiten, bevor ich Gemüse anpflanze?", "domain": "lang_german"}
+{"prompt": "Wie funktioniert die Mehrwertsteuer?", "domain": "lang_german"}
+{"prompt": "Was war die historische Rolle der Fugger-Familie im europäischen Bankwesen?", "domain": "lang_german"}
+{"prompt": "Was sind gute Strategien, um mit Prüfungsangst umzugehen?", "domain": "lang_german"}
+{"prompt": "Was sind die wichtigsten Unterschiede zwischen einer privaten und einer gesetzlichen Krankenversicherung hinsichtlich Leistungsumfang und Beitragsberechnung?", "domain": "lang_german"}
+{"prompt": "Gib mir praktische Ratschläge zu gesunder Schlaf.", "domain": "lang_german"}
+{"prompt": "Ich koche gerade ein Rezept mit 500g Mehl, 250ml Milch und 3 Eiern, aber der Teig ist zu flüssig. Was kann ich tun?", "domain": "lang_german"}
+{"prompt": "Was war die Bedeutung des Wiener Kongresses 1815 für die politische Ordnung Europas?", "domain": "lang_german"}
+{"prompt": "Wie beruhige ich mich vor einer Prüfung?", "domain": "lang_german"}
+{"prompt": "Was unterscheidet die mediterrane Ernährung von der klassischen deutschen Küche gesundheitlich?", "domain": "lang_german"}
+{"prompt": "Was ist eine gute Antwort auf Kritik vom Chef?", "domain": "lang_german"}
+{"prompt": "Kannst du mir ein einfaches Rezept für Linsensuppe geben, das auch Anfänger hinbekommen?", "domain": "lang_german"}
+{"prompt": "Erzähle eine sehr kurze Geschichte über Meeresströmungen.", "domain": "lang_german"}
+{"prompt": "Was denkst du über die Einführung einer Vier-Tage-Woche in klassischen Bürojobs?", "domain": "lang_german"}
+{"prompt": "Gib mir bitte drei einfache Übungen für einen schmerzenden Rücken vom vielen Sitzen.", "domain": "lang_german"}
+{"prompt": "Kannst du mir kurz erklären, was der Unterschied zwischen Klima und Wetter ist?", "domain": "lang_german"}
+{"prompt": "Kannst du mir helfen, eine kurze Geschichte über einen sprechenden Hund zu schreiben?", "domain": "lang_german"}
+{"prompt": "Erkläre mir kurz, was ein Aktiensplit ist.", "domain": "lang_german"}
+{"prompt": "Was ist der Unterschied zwischen einer Erkältung und einer echten Grippe?", "domain": "lang_german"}
+{"prompt": "Wie funktioniert die CRISPR-Cas9-Technologie auf molekularer Ebene und welche ethischen Bedenken gibt es bei ihrer Anwendung am Menschen?", "domain": "lang_german"}
+{"prompt": "Wie erkenne ich, ob eine Nachricht im Internet eine Fake-News ist?", "domain": "lang_german"}
+{"prompt": "Wie schreibe ich ein Kondolenzschreiben?", "domain": "lang_german"}
+{"prompt": "Wie plane ich eine Städtereise nach Rom?", "domain": "lang_german"}
+{"prompt": "Was sind die wichtigsten Schritte, um mit dem Laufen als Anfänger sicher zu beginnen?", "domain": "lang_german"}
+{"prompt": "Ist eine Cloud-Lösung oder ein lokaler Server für ein kleines Unternehmen sinnvoller?", "domain": "lang_german"}
+{"prompt": "Gib mir praktische Ratschläge zu Meeresströmungen.", "domain": "lang_german"}
+{"prompt": "Wie kann ich als Berufseinsteiger meine Altersvorsorge sinnvoll strukturieren, wenn ich sowohl gesetzlich als auch privat vorsorgen möchte?", "domain": "lang_german"}
+{"prompt": "Kannst du mir eine ausführliche Zusammenfassung der Ursachen und Folgen des Dreißigjährigen Krieges für Mitteleuropa geben?", "domain": "lang_german"}
+{"prompt": "Welches Smartphone würdest du für jemanden empfehlen, der hauptsächlich fotografiert und wenig Geld ausgeben möchte?", "domain": "lang_german"}
+{"prompt": "Welche Stadt in Deutschland würdest du für einen Kurzurlaub am ehesten empfehlen?", "domain": "lang_german"}
+{"prompt": "Was bedeutet der Begriff 'Opportunitätskosten' und kannst du mir ein Beispiel aus dem Alltag geben, etwa beim Hausbau?", "domain": "lang_german"}
+{"prompt": "Was sind die wissenschaftlichen Erklärungen dafür, dass manche Menschen introvertierter sind als andere, und spielt dabei die Genetik eine größere Rolle als die Erziehung?", "domain": "lang_german"}
+{"prompt": "Kannst du mir helfen, einen einfachen Trainingsplan für den Anfang zu erstellen?", "domain": "lang_german"}
+{"prompt": "Was ist der Unterschied zwischen einer Virusinfektion und einer bakteriellen Infektion, zum Beispiel bei einer Erkältung?", "domain": "lang_german"}
+{"prompt": "Wie plane ich am besten einen Wochenendtrip mit wenig Budget?", "domain": "lang_german"}
+{"prompt": "Wie lerne ich effektiver für Prüfungen?", "domain": "lang_german"}
+{"prompt": "Ich überlege zwischen einer Mietwohnung und einer Eigentumswohnung, was würdest du raten?", "domain": "lang_german"}
+{"prompt": "Ist ein Gaming-PC oder eine Spielkonsole die bessere Investition für einen Gelegenheitsspieler?", "domain": "lang_german"}
+{"prompt": "Schreib mir bitte eine kurze Nachricht, um mich bei einem Freund für seine Hilfe zu bedanken.", "domain": "lang_german"}
+{"prompt": "Kannst du mir die wichtigsten Grundzüge des Buddhismus erklären und dabei auch auf die Unterschiede zwischen Theravada und Mahayana eingehen?", "domain": "lang_german"}
+{"prompt": "Ich plane eine Reise durch Südostasien und möchte einen detaillierten dreiwöchigen Reiseplan mit kulturellen Highlights und Budgettipps erstellen – kannst du mir dabei helfen?", "domain": "lang_german"}
+{"prompt": "Wie schreibe ich eine höfliche Kündigung meines Mobilfunkvertrags?", "domain": "lang_german"}
+{"prompt": "Ich frage mich, warum manche Erinnerungen im Gehirn so lebendig bleiben, während andere schnell verblassen, kannst du mir die neurologischen Hintergründe erklären?", "domain": "lang_german"}
+{"prompt": "Was sind die wichtigsten psychologischen Mechanismen hinter Prokrastination, und welche konkreten Strategien helfen wirklich dagegen, wenn man unter Zeitdruck an einem großen Projekt arbeitet?", "domain": "lang_german"}
+{"prompt": "Was sind die Ursachen für die zunehmende Waldbrandgefahr in Europa und welche Maßnahmen könnten Regierungen ergreifen, um diese Entwicklung zu bremsen?", "domain": "lang_german"}
+{"prompt": "Wie funktioniert das Phänomen der Synästhesie, bei dem Menschen Zahlen als Farben wahrnehmen?", "domain": "lang_german"}
+{"prompt": "Wie funktioniert eigentlich die Photosynthese genau, und warum ist sie so entscheidend für das ökologische Gleichgewicht auf der Erde?", "domain": "lang_german"}
+{"prompt": "Was sind sinnvolle Fragen, die ich beim Immobilienkauf unbedingt stellen sollte?", "domain": "lang_german"}
+{"prompt": "Ich habe morgens nie Energie, was könnte helfen, um wacher in den Tag zu starten?", "domain": "lang_german"}
+{"prompt": "Sollte ich meinen alten Diesel behalten oder auf ein Elektroauto umsteigen, wenn ich hauptsächlich in der Stadt fahre?", "domain": "lang_german"}
+{"prompt": "Erkläre mir bitte, wie die Mondphasen entstehen und warum sie sich verändern.", "domain": "lang_german"}
+{"prompt": "Vergleiche gesunder Schlaf mit einer gängigen Alternative.", "domain": "lang_german"}
+{"prompt": "Wie kann ich effektiver Vokabeln lernen?", "domain": "lang_german"}
+{"prompt": "Ich schreibe gerade an einem Fantasy-Roman und brauche eine plausible Erklärung für eine magische Seuche.", "domain": "lang_german"}
+{"prompt": "Was muss ich tun, um mich für ein Auslandssemester an einer deutschen Universität zu bewerben?", "domain": "lang_german"}
+{"prompt": "Kannst du mir die Grundprinzipien der Verhaltenstherapie im Vergleich zur Psychoanalyse erklären, speziell bei der Behandlung von Angststörungen?", "domain": "lang_german"}
+{"prompt": "Was unterscheidet klassische Homöopathie von evidenzbasierter Schulmedizin in ihrer Wirkweise?", "domain": "lang_german"}
+{"prompt": "Was bedeutet eigentlich Inflation genau?", "domain": "lang_german"}
+{"prompt": "Ich plane, in Aktien zu investieren, und möchte verstehen, wie ein Kurs-Gewinn-Verhältnis konkret bei der Bewertung eines Unternehmens hilft – kannst du mir das anhand eines Beispiels erklären?", "domain": "lang_german"}
+{"prompt": "Kannst du mir eine kurze E-Mail an meinen Vermieter formulieren, in der ich frage, ob ich den Balkon mit einer Solaranlage ausstatten darf?", "domain": "lang_german"}
+{"prompt": "Was passiert biochemisch im Körper, wenn man Höhenkrankheit bekommt?", "domain": "lang_german"}
+{"prompt": "Lohnt sich ein Studium an einer privaten Hochschule im Vergleich zu einer staatlichen Universität finanziell und inhaltlich?", "domain": "lang_german"}
+{"prompt": "Beschreibe Schritt für Schritt, wie maschinelles Lernen funktioniert.", "domain": "lang_german"}
+{"prompt": "Ich möchte lernen, wie man ein Bewerbungsschreiben aufbaut. Kannst du mir ein Beispiel zeigen?", "domain": "lang_german"}
+{"prompt": "Wie schreibe ich eine höfliche Absage auf eine Einladung zur Hochzeit meines Cousins?", "domain": "lang_german"}
+{"prompt": "Was war die Reformation?", "domain": "lang_german"}
+{"prompt": "Ich plane eine Reise nach Portugal für zwei Wochen im Mai mit einem Budget von 1200 Euro. Hast du Tipps zur Kostenplanung?", "domain": "lang_german"}
+{"prompt": "Würdest du eher zu einer Wärmepumpe oder einer Gasheizung raten, wenn man ein altes Haus sanieren will?", "domain": "lang_german"}
+{"prompt": "Kannst du mir erklären, wie CRISPR-Cas9 auf molekularer Ebene funktioniert und welche ethischen Bedenken damit verbunden sind?", "domain": "lang_german"}
+{"prompt": "Wie lange sollte ich Nudeln kochen für al dente?", "domain": "lang_german"}
+{"prompt": "Meine Waschmaschine zeigt den Fehlercode E20 an und läuft nicht mehr ab. Weißt du, was das bedeuten könnte?", "domain": "lang_german"}
+{"prompt": "Wie funktioniert eigentlich die Echoortung bei Fledermäusen im Detail?", "domain": "lang_german"}
+{"prompt": "Ich möchte meine Finanzen sanieren – wie erstelle ich einen realistischen Haushaltsplan bei einem Nettoeinkommen von 2800 Euro und Schulden von 5000 Euro?", "domain": "lang_german"}
+{"prompt": "Was hältst du von Patchwork-Familien und den besonderen Herausforderungen, die sie mit sich bringen?", "domain": "lang_german"}
+{"prompt": "Wie funktioniert die Kernfusion im Vergleich zur Kernspaltung und warum gilt sie als potenzielle Lösung für die Energiewende?", "domain": "lang_german"}
+{"prompt": "Erkläre kurz den Unterschied zwischen Wetter und Klima.", "domain": "lang_german"}
+{"prompt": "Wie kann ich eine gesunde Work-Routine im Homeoffice aufbauen?", "domain": "lang_german"}
+{"prompt": "Ich plane eine Investition in ETFs, kannst du mir die Unterschiede zwischen thesaurierenden und ausschüttenden Fonds inklusive steuerlicher Konsequenzen erklären?", "domain": "lang_german"}
+{"prompt": "Welche Unterschiede gibt es zwischen einer Ehe und einer eingetragenen Lebenspartnerschaft in Deutschland rechtlich?", "domain": "lang_german"}
+{"prompt": "Ich sammle alte Bahntickets, gibt es dafür eine sinnvolle Archivierungsmethode?", "domain": "lang_german"}
+{"prompt": "Gib mir praktische Ratschläge zu der Wasserkreislauf.", "domain": "lang_german"}
+{"prompt": "Erzähle eine sehr kurze Geschichte über schwarze Löcher.", "domain": "lang_german"}
+{"prompt": "Was ist der Unterschied zwischen einem Whisky und einem Bourbon aus geschmacklicher Sicht?", "domain": "lang_german"}
+{"prompt": "Ich möchte eine Präsentation über nachhaltige Stadtplanung vorbereiten – welche konkreten Konzepte und internationalen Beispiele sollte ich unbedingt erwähnen?", "domain": "lang_german"}
+{"prompt": "Warum ist gesunde Ernährung so wichtig für das Immunsystem?", "domain": "lang_german"}
+{"prompt": "Wie plane ich meine Woche, damit Arbeit, Sport und Familie besser zusammenpassen?", "domain": "lang_german"}
+{"prompt": "Nenne fünf interessante Fakten über maschinelles Lernen.", "domain": "lang_german"}
+{"prompt": "Was war die Bedeutung der Reformation für Europa, kurz erklärt?", "domain": "lang_german"}
+{"prompt": "Wie schreibe ich eine höfliche Absage auf ein Jobangebot?", "domain": "lang_german"}
+{"prompt": "Was kostet eine Scheidung?", "domain": "lang_german"}
+{"prompt": "Ich habe einen Streit mit meiner besten Freundin, weil sie meine Geburtstagsfeier vergessen hat – wie soll ich das ansprechen?", "domain": "lang_german"}
+{"prompt": "Wie funktioniert eigentlich ein Elektroauto im Vergleich zu einem Benziner?", "domain": "lang_german"}
+{"prompt": "Was kostet im Schnitt eine Scheidung in Deutschland?", "domain": "lang_german"}
+{"prompt": "Gib mir praktische Ratschläge zu maschinelles Lernen.", "domain": "lang_german"}
+{"prompt": "Kannst du mir eine kurze Zusammenfassung geben, wie das Internet technisch funktioniert?", "domain": "lang_german"}
+{"prompt": "Welches Betriebssystem würdest du für ein altes Notebook empfehlen, Linux oder ein leichtes Windows?", "domain": "lang_german"}
+{"prompt": "Ich habe in meinem Garten Blattläuse auf den Rosen entdeckt. Wie werde ich sie ohne Chemikalien los?", "domain": "lang_german"}
+{"prompt": "Schreibe einen kurzen Absatz über erneuerbare Energie.", "domain": "lang_german"}
+{"prompt": "Ich hab total Kopfschmerzen, was kann ich außer Tabletten noch machen?", "domain": "lang_german"}
+{"prompt": "Kannst du mir eine kurze Anleitung geben, wie man ein einfaches Budget mit der 50-30-20-Regel erstellt?", "domain": "lang_german"}
+{"prompt": "Nenne fünf interessante Fakten über das Sonnensystem.", "domain": "lang_german"}
+{"prompt": "Ich habe kürzlich erfahren, dass ein enger Verwandter an Diabetes Typ 2 erkrankt ist, kannst du mir erklären, wie diese Krankheit entsteht und welche Lebensstiländerungen helfen können?", "domain": "lang_german"}
+{"prompt": "Kannst du mir erklären, wie die Relativitätstheorie die Zeitwahrnehmung in der Nähe massereicher Objekte verändert?", "domain": "lang_german"}
+{"prompt": "Ich möchte ein Vorstellungsgespräch für eine Führungsposition vorbereiten, kannst du mir schwierige Fragen mit möglichen Antwortstrategien zusammenstellen?", "domain": "lang_german"}
+{"prompt": "Ich habe Angst vor dem Zahnarzt, hast du Tipps, wie ich das überwinden kann?", "domain": "lang_german"}
+{"prompt": "Was ist der Unterschied zwischen einer Bakterien- und einer Virusinfektion?", "domain": "lang_german"}
+{"prompt": "Ist es klüger, Schulden schnell abzubauen oder parallel zu investieren, wenn man ein festes Einkommen hat?", "domain": "lang_german"}
+{"prompt": "Ich überlege, von meinem Gehalt monatlich etwas in Aktien oder ETFs zu investieren, aber ich habe keine Erfahrung damit, kannst du mir die Grundlagen erklären und worauf ich als Anfänger achten sollte?", "domain": "lang_german"}
+{"prompt": "Kannst du mir helfen, eine kurze Einladung für eine Geburtstagsfeier zu schreiben?", "domain": "lang_german"}
+{"prompt": "Wie funktioniert das Rentensystem in Deutschland im Vergleich zu Schweden?", "domain": "lang_german"}
+{"prompt": "Meinst du, man sollte lieber sparen oder das Geld in Weiterbildung investieren?", "domain": "lang_german"}
+{"prompt": "Was sollte ich bei meinem ersten eigenen Bankkonto beachten?", "domain": "lang_german"}
+{"prompt": "Wie repariere ich einen tropfenden Wasserhahn?", "domain": "lang_german"}
+{"prompt": "Was ist effektiver zum Stressabbau, Yoga oder klassisches Krafttraining?", "domain": "lang_german"}
+{"prompt": "Was ist der Unterschied zwischen einer Rezession und einer Depression in der Wirtschaft?", "domain": "lang_german"}
+{"prompt": "Ich habe kürzlich eine Diskussion mit einem Freund über die Vor- und Nachteile von Atomkraft gegenüber erneuerbaren Energien gehabt. Kannst du mir die wichtigsten Argumente beider Seiten sachlich zusammenfassen?", "domain": "lang_german"}
+{"prompt": "Sollte ich meinen alten Laptop reparieren lassen oder mir gleich ein neues Gerät kaufen?", "domain": "lang_german"}
+{"prompt": "Ich habe folgenden Satz auf Englisch gelesen: 'The early bird catches the worm.' Gibt es ein passendes deutsches Sprichwort dafür?", "domain": "lang_german"}
+{"prompt": "Was hat es mit der Legende der weißen Frau in deutschen Schlössern auf sich?", "domain": "lang_german"}
+{"prompt": "Wie unterscheiden sich die steuerlichen Konsequenzen zwischen einer GmbH und einer Einzelunternehmung in Deutschland konkret?", "domain": "lang_german"}
+{"prompt": "Ich habe morgen ein Vorstellungsgespräch, kannst du mir ein paar Tipps geben?", "domain": "lang_german"}
+{"prompt": "Kannst du mir die wichtigsten Unterschiede zwischen künstlicher Intelligenz, maschinellem Lernen und Deep Learning präzise erklären?", "domain": "lang_german"}
+{"prompt": "Fasse die wichtigsten Ideen von schwarze Löcher zusammen.", "domain": "lang_german"}
+{"prompt": "Ich hab morgen ein Vorstellungsgespräch, kannst du mir ein paar typische Fragen nennen, auf die ich mich vorbereiten sollte?", "domain": "lang_german"}
+{"prompt": "Findest du vegane Ernährung für Sportler geeignet oder eher problematisch?", "domain": "lang_german"}
+{"prompt": "Erkläre mir mal, wie eine Impfung im Körper wirkt.", "domain": "lang_german"}
+{"prompt": "Wie schreibe ich eine gute Bewerbung ohne viel Berufserfahrung?", "domain": "lang_german"}
+{"prompt": "Ist es besser, in einer WG oder allein zu wohnen, wenn man gerade mit dem Studium beginnt?", "domain": "lang_german"}
+{"prompt": "Solltest man als Berufseinsteiger lieber in einer Großstadt oder in der Provinz eine Wohnung suchen?", "domain": "lang_german"}
+{"prompt": "Wie unterscheiden sich Miete und Kauf einer Wohnung finanziell auf lange Sicht?", "domain": "lang_german"}
+{"prompt": "Wie gehe ich am besten vor, um meine Finanzen nach einer Trennung neu zu ordnen?", "domain": "lang_german"}
+{"prompt": "Wie formuliere ich eine Beschwerde an eine Fluggesellschaft wegen eines annullierten Flugs?", "domain": "lang_german"}
+{"prompt": "Was sind die Ursprünge des Aberglaubens rund um schwarze Katzen in Deutschland?", "domain": "lang_german"}
+{"prompt": "Kannst du mir eine professionelle E-Mail formulieren, in der ich eine Gehaltserhöhung mit stichhaltigen Argumenten begründe?", "domain": "lang_german"}
+{"prompt": "Wie oft sollte man Zimmerpflanzen gießen?", "domain": "lang_german"}
+{"prompt": "Erkläre mir bitte, wie ich mein Fahrrad selbst warten und die Bremsen einstellen kann.", "domain": "lang_german"}
+{"prompt": "Was ist der Unterschied zwischen einem Impfstoff auf mRNA-Basis und einem klassischen Totimpfstoff?", "domain": "lang_german"}
+{"prompt": "Wie entferne ich Rotweinflecken aus Teppich?", "domain": "lang_german"}
+{"prompt": "Wie funktioniert eine Wärmepumpe technisch genau und unter welchen Bedingungen lohnt sich die Umrüstung eines Altbaus?", "domain": "lang_german"}
+{"prompt": "Erkläre mir, wie das Wetter durch Hoch- und Tiefdruckgebiete beeinflusst wird.", "domain": "lang_german"}
+{"prompt": "Was ist deiner Meinung nach der beste Reisezeitpunkt für einen ersten Besuch in Japan?", "domain": "lang_german"}
+{"prompt": "Wie kann ich meinen Kindern beibringen, verantwortungsvoll mit ihrem Taschengeld umzugehen, ohne dass es wie eine Belehrung wirkt?", "domain": "lang_german"}
+{"prompt": "Gib mir eine kurze Zusammenfassung von Goethes Faust.", "domain": "lang_german"}
+{"prompt": "Nenne fünf interessante Fakten über der Wasserkreislauf.", "domain": "lang_german"}
+{"prompt": "Kannst du mir erklären, warum manche alten Kirchenglocken bestimmte Legenden über Unwetter tragen?", "domain": "lang_german"}
+{"prompt": "Was ist deine Einschätzung zu pflanzlichen Fleischalternativen, schmecken die wirklich gut?", "domain": "lang_german"}
+{"prompt": "Was bedeutet Inflation einfach erklärt?", "domain": "lang_german"}
+{"prompt": "Was ist der Unterschied zwischen einem Vegetarier und einem Veganer?", "domain": "lang_german"}
+{"prompt": "Ich habe eine schwierige Beziehung zu meinem Vater, der sich selten meldet – wie kann ich das Gespräch beim nächsten Treffen ansprechen?", "domain": "lang_german"}
+{"prompt": "Ich interessiere mich für vergessene Handwerksberufe – welche gab es im Mittelalter, die heute komplett ausgestorben sind?", "domain": "lang_german"}
+{"prompt": "Ich möchte eine Kurzgeschichte über einen alten Postboten in einem kleinen Bergdorf schreiben.", "domain": "lang_german"}
+{"prompt": "Was war die Ursache des Ersten Weltkriegs?", "domain": "lang_german"}
+{"prompt": "Kannst du mir eine kurze Geschichte über einen Roboter schreiben, der sich in einen Menschen verliebt?", "domain": "lang_german"}
+{"prompt": "Wie spare ich effektiv Geld?", "domain": "lang_german"}
+{"prompt": "Kannst du mir erklären, was eine Allergie eigentlich ist?", "domain": "lang_german"}
+{"prompt": "Wie kann ich meinem sechsjährigen Kind auf einfache Weise erklären, warum der Himmel blau ist und warum es nachts dunkel wird, ohne dass es zu kompliziert wird?", "domain": "lang_german"}
+{"prompt": "Vergleiche erneuerbare Energie mit einer gängigen Alternative.", "domain": "lang_german"}
+{"prompt": "Ich habe Streit mit meiner Schwester wegen des Erbes unserer Eltern, wie kann ich das Gespräch konstruktiv angehen ohne die Beziehung zu zerstören?", "domain": "lang_german"}
+{"prompt": "Wie funktioniert Photosynthese eigentlich genau?", "domain": "lang_german"}
+{"prompt": "Kannst du mir eine ausführliche Kurzgeschichte über eine Zeitreise ins mittelalterliche Deutschland schreiben, die historisch möglichst akkurat ist?", "domain": "lang_german"}
+{"prompt": "Kannst du mir erklären, warum es in Deutschland so viele verschiedene Dialekte gibt und wie sich Hochdeutsch historisch entwickelt hat?", "domain": "lang_german"}
+{"prompt": "Erkläre der Wasserkreislauf einem zwölfjährigen Kind.", "domain": "lang_german"}
+{"prompt": "Wie kann ich herausfinden, ob ich eine Lebensmittelunverträglichkeit habe?", "domain": "lang_german"}
+{"prompt": "Ich schreibe gerade an einem Roman und brauche Inspiration für einen Antagonisten, der nicht einfach nur böse ist, sondern komplexe und nachvollziehbare Motive hat, kannst du mir ein Beispielprofil entwerfen?", "domain": "lang_german"}
+{"prompt": "Kannst du mir erklären, was der Unterschied zwischen Deflation und Stagflation ist, mit einem konkreten Beispiel aus der Wirtschaftsgeschichte?", "domain": "lang_german"}
+{"prompt": "Welche Vor- und Nachteile haben Fernstudiengänge im Vergleich zu einem klassischen Präsenzstudium?", "domain": "lang_german"}
+{"prompt": "Was unterscheidet den Führungsstil eines demokratischen von dem eines autokratischen Managers im Team?", "domain": "lang_german"}
+{"prompt": "Wie spare ich am besten für den Führerschein, wenn ich noch Schüler bin?", "domain": "lang_german"}
+{"prompt": "Gib mir drei Ideen für ein Geburtstagsgeschenk unter 20 Euro.", "domain": "lang_german"}
+{"prompt": "Kannst du mir erklären, warum es in Deutschland Winterzeit und Sommerzeit gibt und ob das noch abgeschafft werden soll?", "domain": "lang_german"}
+{"prompt": "Was ist eigentlich die Hanse gewesen und warum verlor sie ihre Macht?", "domain": "lang_german"}
+{"prompt": "Nenne fünf interessante Fakten über schwarze Löcher.", "domain": "lang_german"}
+{"prompt": "Wie kann ich am besten Geld sparen, wenn ich nicht viel verdiene?", "domain": "lang_german"}
+{"prompt": "Kannst du mir ein paar vegetarische Rezeptideen für den Abend geben?", "domain": "lang_german"}
+{"prompt": "Kannst du mir erklären, was Inflation genau bedeutet und warum die Preise steigen?", "domain": "lang_german"}
+{"prompt": "Wie kann ich meinen Kindern beibringen, verantwortungsvoll mit Taschengeld umzugehen?", "domain": "lang_german"}
+{"prompt": "Wie beeinflusst die Darmflora nachweislich unser Immunsystem und gibt es wissenschaftliche Belege für den Nutzen von Probiotika?", "domain": "lang_german"}
+{"prompt": "Was ist der Unterschied zwischen Yoga und Pilates?", "domain": "lang_german"}
+{"prompt": "Was ist der Unterschied zwischen Miete und Pacht?", "domain": "lang_german"}
+{"prompt": "Wir organisieren im Büro ein Sommerfest und ich soll die Einladungsmail an alle Kollegen schreiben. Kannst du mir einen freundlichen, aber professionellen Text entwerfen, der auch Informationen zu Uhrzeit und Ort enthält?", "domain": "lang_german"}
+{"prompt": "Fasse die wichtigsten Ideen von maschinelles Lernen zusammen.", "domain": "lang_german"}
+{"prompt": "Ist es besser, für eine Prüfung frühzeitig zu lernen oder kurz vorher intensiv zu büffeln?", "domain": "lang_german"}
+{"prompt": "Was muss ich beachten, wenn ich zum ersten Mal eine Wohnung in Deutschland anmieten möchte?", "domain": "lang_german"}
+{"prompt": "Erkläre mir den Unterschied zwischen Yoga und Pilates.", "domain": "lang_german"}
+{"prompt": "Ich überlege, von München nach Berlin umzuziehen – welche Faktoren sollte ich bei den Lebenshaltungskosten vergleichen?", "domain": "lang_german"}
+{"prompt": "Kannst du mir kurz erklären, was Photosynthese ist?", "domain": "lang_german"}
+{"prompt": "Ich möchte gesünder kochen, habe aber wenig Zeit nach der Arbeit, kannst du mir drei einfache und schnelle Rezepte vorschlagen, die trotzdem ausgewogen sind?", "domain": "lang_german"}
+{"prompt": "Wie schreibe ich eine höfliche, aber bestimmte E-Mail an meinen Vermieter, weil die Heizung seit zwei Wochen nicht richtig funktioniert und er bisher nicht reagiert hat?", "domain": "lang_german"}
+{"prompt": "Ich überlege, von meinem Job in der IT-Branche in den Bereich Nachhaltigkeitsberatung zu wechseln. Was sollte ich dabei beachten?", "domain": "lang_german"}
+{"prompt": "Wie kann ich meinem fünfjährigen Sohn erklären, warum der Himmel blau ist?", "domain": "lang_german"}
+{"prompt": "Was hältst du davon, wenn Firmen ihre Mitarbeiter komplett remote arbeiten lassen, ohne je ins Büro zu kommen?", "domain": "lang_german"}
+{"prompt": "Was passiert eigentlich mit unserem Müll, nachdem er abgeholt wird?", "domain": "lang_german"}
+{"prompt": "Erzähle eine sehr kurze Geschichte über der Zinseszins.", "domain": "lang_german"}
+{"prompt": "Was hältst du von der Idee, ein Auslandssemester in Skandinavien statt in den USA zu machen?", "domain": "lang_german"}
+{"prompt": "Beschreibe Schritt für Schritt, wie erneuerbare Energie funktioniert.", "domain": "lang_german"}
+{"prompt": "Was sind die Ursachen für das Massenaussterben der Neandertaler laut aktueller Forschung?", "domain": "lang_german"}
+{"prompt": "Kannst du mir eine kleine Gutenachtgeschichte für meine sechsjährige Tochter erfinden, in der ein Drache vorkommt?", "domain": "lang_german"}
+{"prompt": "Was ist besser für die Konzentration beim Lernen, klassische Musik oder komplette Stille?", "domain": "lang_german"}
+{"prompt": "Ich möchte anfangen zu joggen, wie steigere ich mein Pensum am besten ohne mich zu verletzen?", "domain": "lang_german"}
+{"prompt": "Wie hat sich die Herstellung von Tinte im 18. Jahrhundert verändert?", "domain": "lang_german"}
+{"prompt": "Gib mir eine Zusammenfassung von Goethes Faust.", "domain": "lang_german"}
+{"prompt": "Ich habe Schwierigkeiten, abends abzuschalten und einzuschlafen, weil mein Kopf ständig arbeitet, hast du Techniken oder Rituale, die mir helfen könnten, besser zur Ruhe zu kommen?", "domain": "lang_german"}
+{"prompt": "Was ist eigentlich ein Palimpsest und warum sind solche Manuskripte historisch so wertvoll?", "domain": "lang_german"}
+{"prompt": "Wie gehe ich vor, um eine gesunde Work-Life-Balance nach der Rückkehr aus dem Elternurlaub zu finden?", "domain": "lang_german"}
+{"prompt": "Kannst du mir eine kurze Gute-Nacht-Geschichte für ein sechsjähriges Kind schreiben, in der ein kleiner Drache lernt, keine Angst vor Gewittern zu haben?", "domain": "lang_german"}
+{"prompt": "Wie kann ich Schritt für Schritt ein einfaches Excel-Budget für meine monatlichen Ausgaben erstellen?", "domain": "lang_german"}
+{"prompt": "Ich möchte meinem Kollegen eine Nachricht schreiben, weil er bei der letzten Präsentation meine Idee als seine eigene vorgestellt hat – wie formuliere ich das diplomatisch?", "domain": "lang_german"}
+{"prompt": "Was sind die gesundheitlichen Unterschiede zwischen Intervallfasten und einer klassischen kalorienreduzierten Diät, und welche Methode wäre für jemanden mit einem stressigen Bürojob eher geeignet?", "domain": "lang_german"}
+{"prompt": "Was ist eigentlich der Unterschied zwischen Klima und Wetter?", "domain": "lang_german"}
+{"prompt": "Welche Rolle spielten die Fugger im Wirtschaftssystem des Heiligen Römischen Reiches und wie beeinflussten sie die Politik ihrer Zeit?", "domain": "lang_german"}
+{"prompt": "Wie kann ich meine Deutschkenntnisse als Muttersprachler verbessern, um akademisch besser zu schreiben?", "domain": "lang_german"}
+{"prompt": "Sollte ich meine Steuererklärung selbst machen oder einen Steuerberater beauftragen, wenn ich freiberuflich arbeite?", "domain": "lang_german"}
+{"prompt": "Wie friere ich frische Kräuter am besten ein?", "domain": "lang_german"}
+{"prompt": "Was sind die wichtigsten kulturhistorischen Hintergründe des Oktoberfests und wie hat es sich über die Jahrhunderte verändert?", "domain": "lang_german"}
+{"prompt": "Erzähl mir was über die Ursachen des Ersten Weltkriegs.", "domain": "lang_german"}
+{"prompt": "Ich würde gerne wissen, wie man traditionelle japanische Kintsugi-Keramik reparieren lässt.", "domain": "lang_german"}
+{"prompt": "Was sind die Unterschiede zwischen einer offenen Beziehung und einer klassischen monogamen Partnerschaft?", "domain": "lang_german"}
+{"prompt": "Erklär mir bitte in einfachen Worten, wie Blockchain funktioniert.", "domain": "lang_german"}
+{"prompt": "Kannst du mir erklären, wie man einen Sauerteig für Brot von Grund auf herstellt?", "domain": "lang_german"}
+{"prompt": "Ich möchte verstehen, wie die Inflation gemessen wird – kannst du mir den Unterschied zwischen Verbraucherpreisindex und Kerninflation genau erklären?", "domain": "lang_german"}
+{"prompt": "Ich überlege, ob ich kündigen und mich selbstständig machen soll, welche finanziellen und rechtlichen Aspekte sollte ich vorher unbedingt bedenken?", "domain": "lang_german"}
+{"prompt": "Ich habe seit Wochen Schlafprobleme, welche physiologischen Ursachen könnten dahinterstecken und wie beeinflusst das den Cortisolspiegel?", "domain": "lang_german"}
+{"prompt": "Was sind die neuesten wissenschaftlichen Erkenntnisse zur Wirkung von Intervallfasten auf den Stoffwechsel und das Risiko für Typ-2-Diabetes?", "domain": "lang_german"}
+{"prompt": "Erkläre gesunder Schlaf einem zwölfjährigen Kind.", "domain": "lang_german"}
+{"prompt": "Ich habe eine Nachricht von meinem Ex-Partner bekommen, in der er sich nach langer Funkstille meldet. Wie sollte ich reagieren?", "domain": "lang_german"}
+{"prompt": "Was sind die häufigsten Fehler, die Anfänger beim Sparen machen?", "domain": "lang_german"}
+{"prompt": "Lohnt sich eine Wärmepumpe im Vergleich zu einer Gasheizung in einem älteren Haus wirtschaftlich?", "domain": "lang_german"}
+{"prompt": "Was verursacht das seltsame Phänomen des Meeresleuchtens nachts an manchen Küsten?", "domain": "lang_german"}
+{"prompt": "Kannst du mir die Entwicklung der Frauenbewegung in Deutschland von der Weimarer Republik bis heute in groben Zügen darstellen?", "domain": "lang_german"}
+{"prompt": "Ich möchte meiner besten Freundin zu ihrer Hochzeit eine bewegende Rede halten, kannst du mir helfen, eine Grundstruktur mit persönlichen Anekdoten zu entwerfen?", "domain": "lang_german"}
+{"prompt": "Ich plane, mein Erspartes in verschiedene Anlageklassen zu streuen, wie sollte eine sinnvolle Diversifikation zwischen Aktien, Anleihen und Immobilien aussehen?", "domain": "lang_german"}
+{"prompt": "Was ist ein Aktienindex?", "domain": "lang_german"}
+{"prompt": "Wie gehe ich am besten vor, um meinen Lebenslauf für eine Bewerbung im IT-Bereich zu optimieren?", "domain": "lang_german"}
+{"prompt": "Nenne fünf interessante Fakten über gesunder Schlaf.", "domain": "lang_german"}
+{"prompt": "Erzähle eine sehr kurze Geschichte über der Wasserkreislauf.", "domain": "lang_german"}
+{"prompt": "Ich habe ständig Rückenschmerzen im Büro, was kann ich dagegen tun?", "domain": "lang_german"}
+{"prompt": "Was genau passiert im Körper, wenn man Fieber hat, und ab wann sollte man zum Arzt gehen?", "domain": "lang_german"}
+{"prompt": "Erkläre mir bitte, wie die Mehrwertsteuer in Deutschland funktioniert.", "domain": "lang_german"}
+{"prompt": "Was bedeutet CO2-Fußabdruck?", "domain": "lang_german"}
+{"prompt": "Was denkst du über Nachhilfeunterricht per Video statt vor Ort, ist das genauso effektiv?", "domain": "lang_german"}
+{"prompt": "Ich möchte anfangen, regelmäßig Sport zu machen, wo soll ich am besten anfangen?", "domain": "lang_german"}
+{"prompt": "Wie erstelle ich eine Budgetplanung für die nächsten sechs Monate, wenn ich unregelmäßiges Einkommen habe?", "domain": "lang_german"}
+{"prompt": "Welche historischen Faktoren führten zum Fall der Berliner Mauer und wie liefen die politischen Verhandlungen genau ab?", "domain": "lang_german"}
+{"prompt": "Welches Sprachlernprogramm würdest du für jemanden empfehlen, der schnell Spanisch für den Urlaub lernen möchte?", "domain": "lang_german"}
+{"prompt": "Was sind die ersten Schritte, wenn man ein kleines Unternehmen in Deutschland gründen möchte?", "domain": "lang_german"}
+{"prompt": "Welche rechtlichen Schritte muss ich einleiten, wenn mein Vermieter die Kaution trotz mehrfacher Mahnung nicht zurückzahlt?", "domain": "lang_german"}
+{"prompt": "Wie erkläre ich meinem Neffen, warum es Jahreszeiten gibt?", "domain": "lang_german"}
+{"prompt": "Kannst du mir die Grundprinzipien von Feng Shui in der Wohnungseinrichtung erklären?", "domain": "lang_german"}
+{"prompt": "Wie bereite ich einen klassischen Sonntagsbraten zu, der auch für Anfänger gelingt?", "domain": "lang_german"}
+{"prompt": "Wie bereite ich mich auf ein Vorstellungsgespräch vor?", "domain": "lang_german"}
+{"prompt": "Schreibe ein Argument für erneuerbare Energie.", "domain": "lang_german"}
+{"prompt": "Wie funktioniert ein Wärmepumpe?", "domain": "lang_german"}
+{"prompt": "Wie funktioniert ein Blockchain?", "domain": "lang_german"}
+{"prompt": "Schreibe ein Argument für der Wasserkreislauf.", "domain": "lang_german"}
+{"prompt": "Kannst du mir eine detaillierte Analyse der steuerlichen Vor- und Nachteile einer GmbH im Vergleich zu einer UG für ein kleines Start-up in Deutschland geben?", "domain": "lang_german"}
+{"prompt": "Was ist besser für die tägliche Fortbewegung in der Stadt, ein E-Bike oder ein klassisches Fahrrad?", "domain": "lang_german"}
+{"prompt": "Kannst du mir erklären, wie ich eine einfache Excel-Tabelle für meine monatlichen Ausgaben erstelle?", "domain": "lang_german"}
+{"prompt": "Ich möchte meinem besten Freund, der gerade eine schwere Trennung durchmacht, eine unterstützende Nachricht schreiben, kannst du mir dabei helfen, die richtigen Worte zu finden?", "domain": "lang_german"}
+{"prompt": "Welche Streaming-Plattform würdest du für eine Familie mit Kindern empfehlen?", "domain": "lang_german"}
+{"prompt": "Ich möchte eine Rede zur Hochzeit meines besten Freundes halten, kannst du mir helfen, sie persönlich und witzig zu gestalten?", "domain": "lang_german"}
+{"prompt": "Was hältst du von der Idee, in den Ruhestand zu gehen und nochmal komplett neu beruflich anzufangen?", "domain": "lang_german"}
+{"prompt": "Was passiert biologisch beim Sonnenbrand?", "domain": "lang_german"}
+{"prompt": "Ich schreibe eine Hausarbeit über die Ursachen des Dreißigjährigen Krieges, kannst du mir eine differenzierte Analyse der religiösen, politischen und wirtschaftlichen Faktoren geben?", "domain": "lang_german"}
+{"prompt": "Erkläre der Zinseszins einem zwölfjährigen Kind.", "domain": "lang_german"}
+{"prompt": "Wie funktioniert eine Wärmepumpe, und lohnt sich der Einbau für ein normales Haus?", "domain": "lang_german"}
+{"prompt": "Wie stehst du zu E-Autos im Vergleich zu klassischen Verbrennern, was ist auf lange Sicht sinnvoller?", "domain": "lang_german"}
+{"prompt": "Kannst du mir erklären, was der Unterschied zwischen einem Komet und einem Asteroiden ist?", "domain": "lang_german"}
+{"prompt": "Kannst du mir erklären, was der Unterschied zwischen einer Aktie und einer Anleihe ist, anhand eines einfachen Beispiels?", "domain": "lang_german"}
+{"prompt": "Wie kann ich meinem kleinen Kräutergarten auf dem Balkon mehr Ertrag abgewinnen?", "domain": "lang_german"}
+{"prompt": "Ich habe ein Rezept mit 200 Gramm Mehl, 3 Eiern und 100 ml Milch – kannst du mir sagen, wie viele Kalorien das ungefähr hat?", "domain": "lang_german"}
+{"prompt": "Welche Unterschiede gibt es zwischen einer Aktiengesellschaft und einer Genossenschaft hinsichtlich Haftung und Mitbestimmung?", "domain": "lang_german"}
+{"prompt": "Schreib mir eine kurze Nachricht, um ein Date abzusagen.", "domain": "lang_german"}
+{"prompt": "Wie kann ich meiner Tochter die Grundlagen der Photosynthese so erklären, dass sie es für die Schule wirklich versteht, aber auch wissenschaftlich korrekt bleibt?", "domain": "lang_german"}
+{"prompt": "Wie richte ich Schritt für Schritt ein privates WLAN-Netzwerk sicher ein?", "domain": "lang_german"}
+{"prompt": "Was bedeutet eigentlich der Begriff Nachhaltigkeit genau?", "domain": "lang_german"}
+{"prompt": "Was ist eigentlich der Unterschied zwischen Aktien und Anleihen?", "domain": "lang_german"}
+{"prompt": "Sollte ich für meinen Sommerurlaub eine Pauschalreise buchen oder alles selbst individuell organisieren?", "domain": "lang_german"}
+{"prompt": "Kannst du mir eine detaillierte Analyse erstellen, welche steuerlichen Vorteile eine GmbH gegenüber einem Einzelunternehmen in Deutschland bietet?", "domain": "lang_german"}
+{"prompt": "Wie unterscheidet sich die Fermentation von Kombucha von der von Kefir?", "domain": "lang_german"}
+{"prompt": "Solltest man Kindern schon früh ein eigenes Smartphone erlauben oder besser warten?", "domain": "lang_german"}
+{"prompt": "Ich habe folgende Fehlermeldung in Python bekommen: 'IndexError: list index out of range' – was bedeutet das und wie kann ich den Fehler beheben?", "domain": "lang_german"}
+{"prompt": "Schreib mir eine kurze Geburtstagsgrußkarte für meine Oma.", "domain": "lang_german"}
+{"prompt": "Was war die Rolle der Minnesänger im höfischen Leben des Mittelalters?", "domain": "lang_german"}
+{"prompt": "Was ist der Unterschied zwischen einer Cloud und einer normalen Festplatte?", "domain": "lang_german"}
+{"prompt": "Wie funktionierte das mittelalterliche System der Leibeigenschaft in deutschen Gebieten genau?", "domain": "lang_german"}
+{"prompt": "Kannst du mir helfen, diese E-Mail an meinen Chef professioneller zu formulieren: 'Hey, ich kann morgen nicht kommen, muss zum Arzt.'?", "domain": "lang_german"}
+{"prompt": "Was bedeutet eigentlich Nachhaltigkeit im Alltag?", "domain": "lang_german"}
+{"prompt": "Kannst du mir einen ausführlichen Trainingsplan für einen Marathon in 16 Wochen erstellen, wenn ich aktuell nur 10 Kilometer am Stück laufen kann?", "domain": "lang_german"}
+{"prompt": "Wie beeinflusst die Darmflora nachweislich unser Immunsystem und welche Rolle spielt die Ernährung dabei?", "domain": "lang_german"}
+{"prompt": "Was ist deine Einschätzung zu Intervallfasten als Methode zum Abnehmen?", "domain": "lang_german"}
+{"prompt": "Ich habe gehört, dass man Zimmerpflanzen wie die Monstera regelmäßig umtopfen sollte – wie oft und woran erkenne ich, dass es Zeit ist?", "domain": "lang_german"}
+{"prompt": "Was tue ich, wenn mein Vermieter die Kaution nicht zurückzahlen will?", "domain": "lang_german"}
+{"prompt": "Meine Freundin hat Geburtstag, schreib mir doch eine süße Nachricht für sie.", "domain": "lang_german"}
+{"prompt": "Kannst du mir eine kurze Zusammenfassung geben, wie die Europäische Union entstanden ist?", "domain": "lang_german"}
+{"prompt": "Würdest du eher ein Reihenhaus oder eine Eigentumswohnung als erste Immobilie empfehlen?", "domain": "lang_german"}
+{"prompt": "Gib mir praktische Ratschläge zu erneuerbare Energie.", "domain": "lang_german"}
+{"prompt": "Wie kann ich einfach anfangen, Sport zu treiben, wenn ich vorher nie trainiert habe?", "domain": "lang_german"}
+{"prompt": "Meinst du, man sollte in einer Beziehung getrennte Konten führen oder alles gemeinsam verwalten?", "domain": "lang_german"}
+{"prompt": "Was sind die Vor- und Nachteile von Miete gegenüber dem Kauf einer Eigentumswohnung in einer Großstadt?", "domain": "lang_german"}
+{"prompt": "Ich bin unsicher, ob ich einen Hund oder eine Katze anschaffen soll, was spricht für welches Tier?", "domain": "lang_german"}
+{"prompt": "Was hilft schnell gegen Sodbrennen?", "domain": "lang_german"}
+{"prompt": "Welchen Kaffeevollautomaten würdest du für ein kleines Büro mit zehn Mitarbeitern empfehlen?", "domain": "lang_german"}
+{"prompt": "Kannst du mir erklären, wie die Blockchain-Technologie über Kryptowährungen hinaus in der Lieferkettenverwaltung eingesetzt wird?", "domain": "lang_german"}
+{"prompt": "Wie funktioniert das deutsche Rentensystem?", "domain": "lang_german"}
+{"prompt": "Kannst du mir kurz die wichtigsten Punkte der Französischen Revolution zusammenfassen?", "domain": "lang_german"}
+{"prompt": "Wie funktioniert eigentlich ein Wärmepumpe?", "domain": "lang_german"}
+{"prompt": "Kannst du mir kurz erklären, wie das Internet grundsätzlich funktioniert?", "domain": "lang_german"}
+{"prompt": "Was sind die Vor- und Nachteile von Solarenergie im Vergleich zu Windkraft für ein Einfamilienhaus?", "domain": "lang_german"}
+{"prompt": "Wie kann ich Word-Dokumente in PDF umwandeln?", "domain": "lang_german"}
+{"prompt": "Kannst du mir ein paar einfache Übungen zum Stressabbau nennen?", "domain": "lang_german"}
+{"prompt": "Wie gehe ich vor, wenn ich eine alte Wohnung renovieren möchte, ohne einen Handwerker zu beauftragen?", "domain": "lang_german"}
+{"prompt": "Was ist deine Meinung zu Social Media Pausen, helfen die wirklich gegen Stress?", "domain": "lang_german"}
+{"prompt": "Ich möchte meinen Lebenslauf überarbeiten, nachdem ich fünf Jahre in der IT-Branche gearbeitet habe, aber jetzt in den Bereich Nachhaltigkeitsmanagement wechseln möchte. Wie stelle ich meine bisherigen Erfahrungen am besten dar?", "domain": "lang_german"}
+{"prompt": "Welche Unterschiede bestehen zwischen einem klassischen Roman und einem Hörbuch beim Geschichtenerleben?", "domain": "lang_german"}
+{"prompt": "Ist es aus deiner Sicht sinnvoll, in Kryptowährungen zu investieren, wenn man wenig Erfahrung mit Finanzmärkten hat?", "domain": "lang_german"}
+{"prompt": "Ich interessiere mich für die Geschichte der Brieftauben im Ersten Weltkrieg, kannst du mir mehr erzählen?", "domain": "lang_german"}
+{"prompt": "Kannst du mir die Grundlagen der byzantinischen Mosaikkunst erklären?", "domain": "lang_german"}
+{"prompt": "Wie kann ich meinen Garten im Frühling richtig auf die Bepflanzung vorbereiten?", "domain": "lang_german"}
+{"prompt": "Was war die Ostpolitik von Willy Brandt und warum war sie so umstritten?", "domain": "lang_german"}
+{"prompt": "Kannst du mir erklären, wie ich ein Kündigungsschreiben rechtlich korrekt formuliere?", "domain": "lang_german"}
+{"prompt": "Wie stehst du zu der Debatte über ein bedingungsloses Grundeinkommen in Deutschland?", "domain": "lang_german"}
+{"prompt": "Nenne fünf interessante Fakten über gesunde Ernährung.", "domain": "lang_german"}
+{"prompt": "Schreibe einen kurzen Absatz über gesunder Schlaf.", "domain": "lang_german"}
+{"prompt": "Wie hat sich das Konzept der Gilden im mittelalterlichen Handwerk entwickelt?", "domain": "lang_german"}
+{"prompt": "Sollte ich meine Ersparnisse lieber in Gold oder in Staatsanleihen investieren?", "domain": "lang_german"}
+{"prompt": "Welchen Grill würdest du für einen kleinen Balkon in der Stadt empfehlen?", "domain": "lang_german"}
+{"prompt": "Was war eigentlich der Auslöser für den Ersten Weltkrieg, kannst du das einfach erklären?", "domain": "lang_german"}
+{"prompt": "Wie kann ich als Berufseinsteiger effektiv verhandeln, um ein höheres Einstiegsgehalt zu bekommen, ohne dabei unhöflich oder überheblich zu wirken?", "domain": "lang_german"}
+{"prompt": "Was ist der Unterschied zwischen Mars und Venus?", "domain": "lang_german"}
+{"prompt": "Was ist deine Meinung zu Großraumbüros im Vergleich zu klassischen Einzelbüros?", "domain": "lang_german"}
+{"prompt": "Schreibe einen kurzen Absatz über maschinelles Lernen.", "domain": "lang_german"}
+{"prompt": "Ist eine Katze oder ein Hund die bessere Wahl für jemanden, der viel arbeitet?", "domain": "lang_german"}
+{"prompt": "Was sind gute Fragen, die ich bei einer Wohnungsbesichtigung stellen sollte?", "domain": "lang_german"}
+{"prompt": "Kannst du mir erklären, wie man traditionelle Rauhnächte in ländlichen Regionen früher gefeiert hat?", "domain": "lang_german"}
+{"prompt": "Ich möchte wissen, warum manche Menschen Linkshänder sind – gibt es dazu wissenschaftliche Erklärungen?", "domain": "lang_german"}
+{"prompt": "Wie gehe ich vor, um meine Wohnung energieeffizienter zu machen, ohne viel Geld auszugeben?", "domain": "lang_german"}
+{"prompt": "Kannst du mir helfen, eine kurze Geschichte für meinen kleinen Bruder zu schreiben?", "domain": "lang_german"}
+{"prompt": "Lohnt sich ein Elektroauto gegenüber einem Verbrenner, wenn man hauptsächlich Kurzstrecken fährt?", "domain": "lang_german"}
+{"prompt": "Ich möchte einen Brief an meinen verstorbenen Großvater schreiben, den ich nie abschicken werde. Kannst du mir helfen, die richtigen Worte zu finden?", "domain": "lang_german"}
+{"prompt": "Gibt es einen Trick, um schneller einzuschlafen?", "domain": "lang_german"}
+{"prompt": "Kannst du mir detailliert erklären, wie die Deutsche Rentenversicherung die Rentenhöhe anhand von Entgeltpunkten berechnet und welche Faktoren dabei eine Rolle spielen?", "domain": "lang_german"}
+{"prompt": "Was war eigentlich der Auslöser für den Ersten Weltkrieg, ganz kurz erklärt?", "domain": "lang_german"}
+{"prompt": "Was kostet ein Umzug innerhalb einer Stadt durchschnittlich?", "domain": "lang_german"}
+{"prompt": "Sollte man lieber Bargeld oder Kartenzahlung im Alltag bevorzugen, wenn man sein Budget besser kontrollieren will?", "domain": "lang_german"}
+{"prompt": "Was sind die einzelnen Schritte, um einen Antrag auf Elterngeld in Deutschland zu stellen?", "domain": "lang_german"}
+{"prompt": "Kannst du mir erklären, wie man eine gute Bewerbung schreibt, wenn man wenig Erfahrung hat?", "domain": "lang_german"}
+{"prompt": "Wie funktioniert eigentlich das Internet im Grunde?", "domain": "lang_german"}
+{"prompt": "Schreibe einen kurzen Absatz über das Sonnensystem.", "domain": "lang_german"}
+{"prompt": "Erkläre mir bitte die Unterschiede zwischen aktivem und passivem Investieren anhand konkreter Beispiele aus dem ETF-Markt.", "domain": "lang_german"}
+{"prompt": "Was sind die wichtigsten philosophischen Argumente von Kant zur Begründung der Ethik und wie unterscheiden sie sich von utilitaristischen Ansätzen?", "domain": "lang_german"}
+{"prompt": "Erkläre mir kurz, was Bitcoin eigentlich ist.", "domain": "lang_german"}
+{"prompt": "Ich möchte eine Kurzgeschichte über einen Leuchtturmwärter schreiben, der Stimmen im Nebel hört. Kannst du mir helfen?", "domain": "lang_german"}
+{"prompt": "Ich habe gehört, dass es in manchen Kulturen Tabus gegen bestimmte Farben gibt – kannst du mir Beispiele nennen?", "domain": "lang_german"}
+{"prompt": "Kannst du mir erklären, wie man einen einfachen Kompost im eigenen Garten anlegt?", "domain": "lang_german"}
+{"prompt": "Was sind die Ursprünge des Konzepts der Zeitzonen, und wie kam es zur weltweiten Einführung?", "domain": "lang_german"}
+{"prompt": "Wir überlegen, unseren Urlaub dieses Jahr in Skandinavien statt im Süden zu verbringen. Kannst du mir die Vor- und Nachteile eines Nordeuropa-Urlaubs im Vergleich zu einem klassischen Mittelmeerurlaub aufzeigen?", "domain": "lang_german"}
+{"prompt": "Ich möchte verstehen, warum die Inflation in den letzten Jahren so stark gestiegen ist, kannst du die geldpolitischen Zusammenhänge erklären?", "domain": "lang_german"}
+{"prompt": "Wie kann ich mit meinem Partner besser über Geld sprechen, ohne dass es zum Streit wird?", "domain": "lang_german"}
+{"prompt": "Was sind die Vor- und Nachteile von Fernbeziehungen im Vergleich zu einer klassischen Partnerschaft vor Ort?", "domain": "lang_german"}
+{"prompt": "Was sind die wichtigsten Unterschiede zwischen Lithium-Ionen- und Feststoffbatterien in Elektroautos?", "domain": "lang_german"}
+{"prompt": "Was ist der Unterschied zwischen Introvertiert und Schüchtern?", "domain": "lang_german"}
+{"prompt": "Kannst du mir die Grundidee der Stoiker wie Seneca in einfachen Worten erklären?", "domain": "lang_german"}
+{"prompt": "Meine Katze frisst seit zwei Tagen weniger als sonst und wirkt lethargisch. Sollte ich sofort zum Tierarzt?", "domain": "lang_german"}
+{"prompt": "Ist es besser, ein Buch auf Papier oder als E-Book zu lesen, wenn man viel unterwegs ist?", "domain": "lang_german"}
+{"prompt": "Wie kann ich effektiv Deutsch als Fremdsprache in kurzer Zeit verbessern?", "domain": "lang_german"}
+{"prompt": "Wie funktioniert eigentlich eine Wärmepumpe im Vergleich zu einer Gasheizung?", "domain": "lang_german"}
+{"prompt": "Ich möchte anfangen, regelmäßig Sport zu treiben, habe aber wenig Zeit und keine Erfahrung im Fitnessstudio, kannst du mir einen einfachen Wochenplan mit drei Trainingseinheiten erstellen, der auch für Anfänger geeignet ist?", "domain": "lang_german"}
+{"prompt": "Wie funktioniert die Photosynthese auf biochemischer Ebene, speziell der Calvin-Zyklus, und welche Rolle spielt dabei das Enzym RuBisCO?", "domain": "lang_german"}
+{"prompt": "Wie bereite ich mich am besten auf ein Vorstellungsgespräch für eine Führungsposition vor?", "domain": "lang_german"}
+{"prompt": "Ich möchte verstehen, wie der menschliche Körper Vitamin D produziert und warum viele Menschen in Deutschland im Winter einen Mangel entwickeln. Was kann ich konkret dagegen tun?", "domain": "lang_german"}
+{"prompt": "Beschreibe Schritt für Schritt, wie der Zinseszins funktioniert.", "domain": "lang_german"}
+{"prompt": "Kannst du mir erklären, wie Solarenergie funktioniert?", "domain": "lang_german"}
+{"prompt": "Was bedeutet eigentlich künstliche Intelligenz in einfachen Worten?", "domain": "lang_german"}
+{"prompt": "Erzähle eine sehr kurze Geschichte über erneuerbare Energie.", "domain": "lang_german"}
+{"prompt": "Ich möchte ein Bewerbungsschreiben für eine Stelle als Data Analyst verfassen und brauche eine überzeugende Formulierung meiner analytischen Fähigkeiten – kannst du mir helfen?", "domain": "lang_german"}
+{"prompt": "Was sind eigentlich Halluzinationen bei künstlicher Intelligenz und wie entstehen sie?", "domain": "lang_german"}
+{"prompt": "Kannst du mir eine detaillierte Übersicht geben, wie sich der Klimawandel konkret auf die Landwirtschaft in Mitteleuropa auswirkt?", "domain": "lang_german"}
+{"prompt": "Schreibe ein Argument für der Zinseszins.", "domain": "lang_german"}
+{"prompt": "Kannst du mir eine ausführliche Kurzgeschichte über einen alten Leuchtturmwärter schreiben, der ein Geheimnis aus seiner Vergangenheit hütet?", "domain": "lang_german"}
+{"prompt": "Ich möchte eine Kurzgeschichte über einen alten Leuchtturmwärter schreiben, der ein Geheimnis aus seiner Vergangenheit hüten muss – kannst du mir einen Entwurf mit etwa 500 Wörtern liefern?", "domain": "lang_german"}
+{"prompt": "Kannst du mir helfen, eine überzeugende Rede für eine Hochzeit meines besten Freundes zu schreiben, die sowohl lustig als auch berührend ist?", "domain": "lang_german"}
+{"prompt": "Meine Tochter interessiert sich für Astronomie und möchte wissen, wie Sterne entstehen und wieder vergehen. Kannst du mir eine kindgerechte, aber wissenschaftlich korrekte Erklärung dafür geben?", "domain": "lang_german"}
+{"prompt": "Was sind die Vor- und Nachteile von gesunde Ernährung?", "domain": "lang_german"}
+{"prompt": "Was denkst du über künstliche Intelligenz in der Schule?", "domain": "lang_german"}
+{"prompt": "Wie genau funktioniert die CRISPR-Cas9-Methode auf molekularer Ebene und welche ethischen Bedenken gibt es dabei aktuell in der Forschung?", "domain": "lang_german"}
+{"prompt": "Was ist eigentlich der Unterschied zwischen Bio- und konventionellem Gemüse?", "domain": "lang_german"}
+{"prompt": "Wie siehst du das Thema Work-Life-Balance in der heutigen Arbeitswelt?", "domain": "lang_german"}
+{"prompt": "Was genau passiert bei einer Deflation volkswirtschaftlich und warum gilt sie oft als gefährlicher als Inflation?", "domain": "lang_german"}
+{"prompt": "Wie funktioniert eigentlich eine Wärmepumpe genau?", "domain": "lang_german"}
+{"prompt": "Kannst du mir erklären, wie ein neuronales Netz beim Deep Learning konkret lernt, also wie Backpropagation mathematisch funktioniert?", "domain": "lang_german"}
+{"prompt": "Was sind die wichtigsten kulturellen Unterschiede, auf die ich bei einer geschäftlichen Verhandlung in Japan achten sollte?", "domain": "lang_german"}
+{"prompt": "Meine Oma hat immer gesagt, man solle bei Sonnenschein keine Wäsche waschen – gibt es dafür einen wissenschaftlichen Hintergrund?", "domain": "lang_german"}
+{"prompt": "Was sind die Vor- und Nachteile von maschinelles Lernen?", "domain": "lang_german"}
+{"prompt": "Was sind die wichtigsten Unterschiede zwischen einer Rezession und einer Depression aus volkswirtschaftlicher Sicht?", "domain": "lang_german"}
+{"prompt": "Wie schreibe ich eine Einladung für eine Geburtstagsfeier?", "domain": "lang_german"}
+{"prompt": "Wie erkenne ich, ob Eier noch frisch sind?", "domain": "lang_german"}
+{"prompt": "Was sind die zentralen Unterschiede zwischen Solarenergie und Windenergie in Bezug auf Wirkungsgrad, Kosten und Speicherproblematik?", "domain": "lang_german"}
+{"prompt": "Wie melde ich mein Auto in Deutschland korrekt um, wenn ich umgezogen bin?", "domain": "lang_german"}

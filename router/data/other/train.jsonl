@@ -1,0 +1,800 @@
+{"prompt": "How does currency exchange rate risk affect a U.S.-based company that earns 40% of its revenue in euros, and what hedging strategies might it use?", "domain": "other", "source": "ood_financial"}
+{"prompt": "What's the difference between type 1 and type 2 hypersensitivity reactions in immunology?", "domain": "other", "source": "ood_medical"}
+{"prompt": "Write a function that computes the longest common subsequence between two strings, and explain the DP approach.", "domain": "other", "source": "code_python"}
+{"prompt": "Can you show me how to implement a custom iterator class that lazily generates the Collatz sequence for a given starting number, supporting the for-loop protocol properly?", "domain": "other", "source": "code_python"}
+{"prompt": "A regular pentagon is inscribed in a circle of radius 10 cm. Derive the formula for the pentagon's side length using trigonometry, then compute its perimeter and area step by step.", "domain": "other", "source": "task_math_reasoning"}
+{"prompt": "My landlord sent me a text saying rent is going up by $150 next month with only two weeks' notice. Is that even legal where I live in the US?", "domain": "other", "source": "lang_english"}
+{"prompt": "My daughter is starting kindergarten and is anxious about making friends. What are some practical things I can do at home to help build her confidence before the first day?", "domain": "other", "source": "lang_english"}
+{"prompt": "Comment convaincre mes parents de me laisser adopter un chien ?", "domain": "other", "source": "lang_french"}
+{"prompt": "Can you walk me through how the renin-angiotensin-aldosterone system responds to hypovolemia, and explain why ACE inhibitors might cause a persistent dry cough while ARBs typically do not?", "domain": "other", "source": "ood_medical"}
+{"prompt": "In your view, what's the most important clinical clue that differentiates cellulitis from deep vein thrombosis?", "domain": "other", "source": "ood_medical"}
+{"prompt": "What's your recommendation for monitoring parameters when starting a patient on amiodarone long-term?", "domain": "other", "source": "ood_medical"}
+{"prompt": "A rhombus has diagonals of length 16 cm and 12 cm. Calculate its area, side length, and each interior angle, showing all trigonometric and geometric steps.", "domain": "other", "source": "task_math_reasoning"}
+{"prompt": "Quiero organizar un viaje de una semana a Perú con mi pareja, nos interesa tanto la parte cultural como algo de naturaleza, así que necesito que me armes un itinerario día por día que incluya Cusco, Machu Picchu y al menos un lugar menos turístico, además dime qué presupuesto aproximado deberíamos considerar por persona incluyendo comida y transporte", "domain": "other", "source": "lang_spanish"}
+{"prompt": "Can you explain how bioluminescent fungi actually produce light?", "domain": "other", "source": "lang_english"}
+{"prompt": "C'est quoi la différence entre un virus et une bactérie ?", "domain": "other", "source": "lang_french"}
+{"prompt": "Can you explain the difference between nominal GDP and real GDP, and why economists adjust for inflation when comparing growth across years?", "domain": "other", "source": "ood_financial"}
+{"prompt": "A bakery sells cupcakes individually for $3 each or in a dozen box for $30. Find which purchase option is cheaper per cupcake and calculate the total savings when buying 24 cupcakes using the cheaper method, showing your unit cost comparison.", "domain": "other", "source": "task_math_reasoning"}
+{"prompt": "What's the difference between a benign and malignant tumor, biologically speaking?", "domain": "other", "source": "ood_medical"}
+{"prompt": "How do I make small talk at networking events?", "domain": "other", "source": "lang_english"}
+{"prompt": "If I put $500 a month into an index fund averaging 7% a year, roughly how much would I have after 20 years?", "domain": "other", "source": "ood_financial"}
+{"prompt": "Estoy aprendiendo a programar en HTML y este código no me muestra la imagen: <img src='foto.jpg'> ¿qué le falta?", "domain": "other", "source": "lang_spanish"}
+{"prompt": "If 15% of a number is 45, find the number, showing the equation you set up and how you solve it.", "domain": "other", "source": "task_math_reasoning"}
+{"prompt": "¿Podrías explicarme con detalle el mecanismo molecular de la resistencia bacteriana a los antibióticos y por qué es un problema creciente de salud pública?", "domain": "other", "source": "lang_spanish"}
+{"prompt": "Implement, in Python, code that checks if two strings are anagrams. Add a couple of example calls.", "domain": "other", "source": "code_python"}
+{"prompt": "What's the science behind intermittent fasting's effects on insulin sensitivity, and does the evidence support it for someone without diabetes?", "domain": "other", "source": "lang_english"}
+{"prompt": "write a function to check if a string has balanced parentheses", "domain": "other", "source": "code_python"}
+{"prompt": "Explain blockchain simply.", "domain": "other", "source": "lang_english"}
+{"prompt": "What does an elevated ESR indicate clinically?", "domain": "other", "source": "ood_medical"}
+{"prompt": "Explain the basic idea behind supply and demand.", "domain": "other", "source": "lang_english"}
+{"prompt": "Dame consejos prácticos sobre la energía renovable.", "domain": "other", "source": "lang_spanish"}
+{"prompt": "A ladder leans against a wall, reaching a height of 12 feet, and the base of the ladder is 5 feet from the wall. Find the length of the ladder, showing your use of the Pythagorean theorem.", "domain": "other", "source": "task_math_reasoning"}
+{"prompt": "Tengo una entrevista de trabajo mañana y estoy nervioso, ¿me das algunos consejos rápidos?", "domain": "other", "source": "lang_spanish"}
+{"prompt": "Tu peux m'expliquer simplement pourquoi le ciel est bleu et pas violet ?", "domain": "other", "source": "lang_french"}
+{"prompt": "Cuéntame sobre la historia de los mayas y cómo desarrollaron su calendario.", "domain": "other", "source": "lang_spanish"}
+{"prompt": "Peux-tu m'expliquer la différence entre le machine learning et l'intelligence artificielle en général ?", "domain": "other", "source": "lang_french"}
+{"prompt": "My partner and I keep arguing about how to split household finances now that we're moving in together, since I earn significantly more than they do. Could you lay out a few different models couples use, like proportional splitting versus a shared pool of income, and give me some tactful phrasing I could use to bring this up without making it feel transactional?", "domain": "other", "source": "lang_english"}
+{"prompt": "C'est quoi la différence entre une banque en ligne et une banque traditionnelle ?", "domain": "other", "source": "lang_french"}
+{"prompt": "I want to parse a JSON file and extract all values for a given key recursively, how would you do that?", "domain": "other", "source": "code_python"}
+{"prompt": "Two water slides at a park have different shapes: Slide A drops 12 meters over a horizontal distance of 20 meters, while Slide B drops 15 meters over a horizontal distance of 18 meters. Find the angle of descent for each slide and determine which is steeper, showing the trigonometric calculations.", "domain": "other", "source": "task_math_reasoning"}
+{"prompt": "What is the difference between simple interest and compound interest, and can you show how $2,000 grows differently under each at 6% over 3 years?", "domain": "other", "source": "ood_financial"}
+{"prompt": "Summarize this text message conversation into a brief recap for someone who missed the discussion: 'Mia: Are we still on for Saturday? Josh: Yeah but I might be late, work thing. Mia: No worries, we'll start without you. Josh: Cool, save me some pizza.'", "domain": "other", "source": "task_summarization"}
+{"prompt": "I'm deciding between an electric car and a hybrid for my daily commute. Can you weigh the pros and cons of each for someone who drives about 40 miles a day?", "domain": "other", "source": "lang_english"}
+{"prompt": "Donne-moi des conseils pratiques sur les trous noirs.", "domain": "other", "source": "lang_french"}
+{"prompt": "A cone has radius 4 cm and height 9 cm. Find its volume.", "domain": "other", "source": "task_math_reasoning"}
+{"prompt": "A bond has a face value of $1,000, a coupon rate of 5%, and 10 years to maturity, currently trading at $950. Can you explain how to estimate its yield to maturity?", "domain": "other", "source": "ood_financial"}
+{"prompt": "What is the mechanism behind refeeding syndrome in malnourished patients, and why does the resulting hypophosphatemia pose such a serious cardiac risk?", "domain": "other", "source": "ood_medical"}
+{"prompt": "Qu'est-ce qu'un virus et une bactérie, et en quoi ils sont différents ?", "domain": "other", "source": "lang_french"}
+{"prompt": "How do I know if my houseplant is getting too much or too little water?", "domain": "other", "source": "lang_english"}
+{"prompt": "Comment rédiger un mail poli pour demander un jour de congé à mon employeur ?", "domain": "other", "source": "lang_french"}
+{"prompt": "A number increased by 20% equals 96. Find the original number, showing the equation you use.", "domain": "other", "source": "task_math_reasoning"}
+{"prompt": "Why do some spiders build webs in geometric patterns while others don't build webs at all?", "domain": "other", "source": "lang_english"}
+{"prompt": "¿Piensas que es buena idea hacer un préstamo para remodelar la cocina de mi casa?", "domain": "other", "source": "lang_spanish"}
+{"prompt": "my script for reading a big CSV file is super slow, can you help me speed it up? it's just using csv.reader in a loop and appending to a list", "domain": "other", "source": "code_python"}
+{"prompt": "Peux-tu m'expliquer simplement ce qu'est le bitcoin ?", "domain": "other", "source": "lang_french"}
+{"prompt": "Quelle est l'histoire complète des tensions géopolitiques entre la Chine et Taïwan depuis 1949 jusqu'à aujourd'hui ?", "domain": "other", "source": "lang_french"}
+{"prompt": "An annuity pays $2,000 at the end of each year for 10 years into an account earning 6% annual interest compounded annually. Find the future value of the annuity at the end of 10 years, showing the annuity formula and each step of the calculation.", "domain": "other", "source": "task_math_reasoning"}
+{"prompt": "A cylindrical pipe has an outer radius of 5 cm and an inner radius of 3 cm. Find the cross-sectional area of the pipe material, showing your subtraction of the two circle areas.", "domain": "other", "source": "task_math_reasoning"}
+{"prompt": "Tom buys 5 notebooks at $2.50 each and a backpack for $18. How much does he spend in total, and how much change does he get from a $50 bill? Show each calculation step.", "domain": "other", "source": "task_math_reasoning"}
+{"prompt": "Entre acheter un bien immobilier ancien ou neuf, quels sont les critères financiers et pratiques à considérer ?", "domain": "other", "source": "lang_french"}
+{"prompt": "Peux-tu m'aider à rédiger une lettre de réclamation pour un colis endommagé pendant le transport ?", "domain": "other", "source": "lang_french"}
+{"prompt": "What does the word 'iterable' mean in Python? Can you explain with a few examples of things that are and aren't iterable?", "domain": "other", "source": "code_python"}
+{"prompt": "A triangle has vertices at (2, 3), (7, 3), and (5, 9). Calculate its area, perimeter, and the coordinates of its centroid, showing all geometric formulas used.", "domain": "other", "source": "task_math_reasoning"}
+{"prompt": "Recomiéndame alguna forma de organizar mis finanzas personales sin usar hojas de cálculo complicadas.", "domain": "other", "source": "lang_spanish"}
+{"prompt": "Without jargon, Summarise the key points about the history of coffee in three sentences.", "domain": "other", "source": "task_summarization"}
+{"prompt": "What is the mechanism by which loop diuretics like furosemide cause hypokalemia and metabolic alkalosis, and why might this be dangerous in a patient also taking digoxin?", "domain": "other", "source": "ood_medical"}
+{"prompt": "J'aimerais comprendre pourquoi les taux d'intérêt influencent le prix de l'immobilier, et si tu pouvais aussi m'expliquer comment cela affecte concrètement le montant de mes mensualités si j'emprunte 200 000 euros sur 20 ans.", "domain": "other", "source": "lang_french"}
+{"prompt": "Compare and contrast these two summaries of quantum computing approaches — superconducting qubits versus trapped ions — and give me a bullet-point list of the trade-offs.", "domain": "other", "source": "task_summarization"}
+{"prompt": "Selon toi, quel est le meilleur endroit en France pour passer des vacances en famille cet été ?", "domain": "other", "source": "lang_french"}
+{"prompt": "What does an elevated D-dimer actually tell you, and why is it a poor rule-in test for pulmonary embolism?", "domain": "other", "source": "ood_medical"}
+{"prompt": "Ayúdame a diseñar un plan de estudio intensivo de tres meses para aprobar un examen de certificación en gestión de proyectos", "domain": "other", "source": "lang_spanish"}
+{"prompt": "Please provide a bullet-point summary of this job posting for a candidate deciding whether to apply: 'Senior Backend Engineer — Remote, competitive salary, requires 5+ years experience with distributed systems, on-call rotation one week per month, unlimited PTO, strong preference for candidates with Kubernetes experience.'", "domain": "other", "source": "task_summarization"}
+{"prompt": "Define EBITDA and explain why it's used in valuation.", "domain": "other", "source": "ood_financial"}
+{"prompt": "Dame un consejo para dormir mejor.", "domain": "other", "source": "lang_spanish"}
+{"prompt": "Give me a TL;DR of this software changelog and your recommendation on whether users should update immediately: 'Version 4.2 fixes a memory leak, adds dark mode, but introduces a known bug with file exports on Windows.'", "domain": "other", "source": "task_summarization"}
+{"prompt": "Should this recursive tree traversal be rewritten iteratively with an explicit stack to avoid hitting Python's recursion limit?", "domain": "other", "source": "code_python"}
+{"prompt": "Can you give me a quick bullet-point summary of what happened at yesterday's town hall meeting? I couldn't attend and just need the basics.", "domain": "other", "source": "task_summarization"}
+{"prompt": "Walk me through the step-by-step process of interpreting an arterial blood gas to distinguish respiratory acidosis from metabolic acidosis.", "domain": "other", "source": "ood_medical"}
+{"prompt": "Quelle est la meilleure stratégie pour économiser pour un premier appartement ?", "domain": "other", "source": "lang_french"}
+{"prompt": "Here's a short passage from a client email: 'We're frustrated with the delays and considering switching vendors unless we see progress by Friday.' Summarize it in one sentence and suggest how urgently we should respond.", "domain": "other", "source": "task_summarization"}
+{"prompt": "What's the difference between FIFO and LIFO inventory accounting methods, and how would each affect reported cost of goods sold during a period of rising prices?", "domain": "other", "source": "ood_financial"}
+{"prompt": "A random variable represents the outcome of rolling two dice and taking their product. Find the expected value of this product, showing your enumeration of all 36 outcomes and their probabilities.", "domain": "other", "source": "task_math_reasoning"}
+{"prompt": "Refactor this class-based singleton pattern into something more Pythonic using a module-level instance or metaclass approach:\n\nclass Singleton:\n    _instance = None\n    def __new__(cls):\n        if cls._instance is None:\n            cls._instance = super().__new__(cls)\n        return cls._instance", "domain": "other", "source": "code_python"}
+{"prompt": "A train travels 240 miles in 4 hours, then increases its speed by 15 mph for the next 3 hours. Calculate the total distance traveled and the average speed for the entire trip, showing each step.", "domain": "other", "source": "task_math_reasoning"}
+{"prompt": "What is the Sharpe ratio and what does a higher value mean?", "domain": "other", "source": "ood_financial"}
+{"prompt": "What is a migraine, and how is it different from a regular headache in terms of symptoms and cause?", "domain": "other", "source": "ood_medical"}
+{"prompt": "How do clinicians typically approach interpreting a complete blood count to identify signs of infection versus anemia?", "domain": "other", "source": "ood_medical"}
+{"prompt": "Can you explain how warfarin interacts with vitamin K and why INR monitoring is necessary?", "domain": "other", "source": "ood_medical"}
+{"prompt": "Solve the quadratic equation 3x^2 - 7x - 6 = 0 using the quadratic formula, then verify your solutions by substituting them back into the original equation. Show every step of the calculation.", "domain": "other", "source": "task_math_reasoning"}
+{"prompt": "¿Qué pasó realmente en la Revolución Francesa, resúmelo fácil", "domain": "other", "source": "lang_spanish"}
+{"prompt": "Summarize the key events in the history of competitive yo-yoing as a sport, in five bullet points.", "domain": "other", "source": "task_summarization"}
+{"prompt": "Give me a bare-bones summary of the plot of The Odyssey.", "domain": "other", "source": "task_summarization"}
+{"prompt": "Can you give me a beginner-friendly summary of what blockchain technology is, based on this article?", "domain": "other", "source": "task_summarization"}
+{"prompt": "A survey of 500 students found that 60% own a laptop, 45% own a tablet, and 25% own both. Using set theory and probability, calculate the probability that a randomly selected student owns neither device, showing the inclusion-exclusion principle.", "domain": "other", "source": "task_math_reasoning"}
+{"prompt": "¿Qué vitaminas necesito si soy vegano?", "domain": "other", "source": "lang_spanish"}
+{"prompt": "What does a 'shift to hypercoagulability' mean physiologically, and what lab markers reflect it?", "domain": "other", "source": "ood_medical"}
+{"prompt": "Condense this town hall meeting transcript into action items with owners and deadlines: \"The operations lead agreed to finalize the new vendor contract by Friday, the marketing team committed to launching the campaign by the end of the month, and the CEO asked for a follow-up survey on employee satisfaction within two weeks.\"", "domain": "other", "source": "task_summarization"}
+{"prompt": "TL;DR of the plot of Moby Dick.", "domain": "other", "source": "task_summarization"}
+{"prompt": "A cylindrical silo has a hemispherical dome on top. The cylinder has a radius of 4 meters and height of 10 meters, and the dome has the same radius. Calculate the total volume and total surface area of the structure, showing all geometric formulas used.", "domain": "other", "source": "task_math_reasoning"}
+{"prompt": "I want to understand return on investment (ROI). If I invest $2,000 and it grows to $2,500 in one year, what is my ROI and how do I calculate it?", "domain": "other", "source": "ood_financial"}
+{"prompt": "What's the difference between a company's gross margin and net margin, and what might it mean if gross margin stays stable while net margin declines over several quarters?", "domain": "other", "source": "ood_financial"}
+{"prompt": "Summarize this passage on the physics of boomerang flight for a curious teenager: 'A boomerang's return flight relies on gyroscopic precession and differential lift between its two wings, causing it to curve back toward the thrower rather than continuing in a straight line.'", "domain": "other", "source": "task_summarization"}
+{"prompt": "Summarize this dense legal opinion on data privacy law into a plain-language FAQ for a company's internal compliance team.", "domain": "other", "source": "task_summarization"}
+{"prompt": "Explain renewable energy to a curious 12-year-old.", "domain": "other", "source": "lang_english"}
+{"prompt": "A store offers a discount of 20% on an item, then an additional 10% off the discounted price, followed by a 8% sales tax. If the final price paid is $86.40, work backward algebraically to find the original price.", "domain": "other", "source": "task_math_reasoning"}
+{"prompt": "¿Por qué a veces los aviones tardan más en un viaje de ida que de vuelta?", "domain": "other", "source": "lang_spanish"}
+{"prompt": "Summarize this legal contract clause in plain language for someone with no legal background, and then explain in one additional sentence why this clause matters for the signer: 'The Licensee shall indemnify, defend, and hold harmless the Licensor from and against any claims, damages, liabilities, costs, and expenses arising out of or related to the Licensee's use, misuse, or inability to use the Licensed Software, except to the extent such claims arise from the Licensor's gross negligence or willful misconduct.'", "domain": "other", "source": "task_summarization"}
+{"prompt": "Summarize the trade-offs between renting and buying a home for someone in their late twenties, formatted as pros and cons columns.", "domain": "other", "source": "task_summarization"}
+{"prompt": "In Python, write a function that implements a debounce wrapper for a function and explain its time complexity.", "domain": "other", "source": "code_python"}
+{"prompt": "A construction company borrows $120,000 at an annual interest rate of 7.5%, compounded annually, to be repaid in a lump sum after 5 years. Find the total repayment amount, showing the compound interest calculation.", "domain": "other", "source": "task_math_reasoning"}
+{"prompt": "Give me a quick summary of what happened in the stock market today, one paragraph max.", "domain": "other", "source": "task_summarization"}
+{"prompt": "Would you recommend raising custom exceptions here instead of returning None on failure?\ndef find_user(users, uid):\n    for u in users:\n        if u['id'] == uid:\n            return u\n    return None", "domain": "other", "source": "code_python"}
+{"prompt": "Write a Python function that computes the nth Fibonacci number iteratively. Include a short comment explaining the approach.", "domain": "other", "source": "code_python"}
+{"prompt": "Can you help me draft a polite but firm message to a friend who keeps canceling plans at the last minute, letting them know it's starting to bother me without ending the friendship?", "domain": "other", "source": "lang_english"}
+{"prompt": "Can you explain the process by which the hypothalamic-pituitary-adrenal axis regulates cortisol release?", "domain": "other", "source": "ood_medical"}
+{"prompt": "Write a short apology email to a client for a shipping delay that was caused by a vendor issue, while keeping the tone professional and reassuring rather than overly apologetic.", "domain": "other", "source": "lang_english"}
+{"prompt": "How do I properly winterize an outdoor swimming pool before the cold season hits?", "domain": "other", "source": "lang_english"}
+{"prompt": "Can you condense this paragraph about quantum entanglement into one sentence for a non-physicist? 'When two particles become entangled, measuring the state of one instantaneously determines the state of the other, regardless of the distance separating them, a phenomenon Einstein famously called spooky action at a distance.'", "domain": "other", "source": "task_summarization"}
+{"prompt": "¿Cómo puedo hacer amigos nuevos si me acabo de mudar a otra ciudad?", "domain": "other", "source": "lang_spanish"}
+{"prompt": "A fair six-sided die is rolled four times. Calculate the exact probability that the sum of all four rolls equals exactly 15, explaining the combinatorial reasoning behind counting the outcomes.", "domain": "other", "source": "task_math_reasoning"}
+{"prompt": "Given net income of $80,000 and shareholders' equity of $400,000, calculate ROE.", "domain": "other", "source": "ood_financial"}
+{"prompt": "Explain the difference between REST and GraphQL APIs with concrete examples of when I'd choose one over the other for a mobile app backend.", "domain": "other", "source": "lang_english"}
+{"prompt": "In your opinion, is freelance work more stressful than having a full-time job?", "domain": "other", "source": "lang_english"}
+{"prompt": "Which is more idiomatic and efficient for deduplicating a list while preserving order: a set-based loop or dict.fromkeys?", "domain": "other", "source": "code_python"}
+{"prompt": "Can you explain what it means to have a deviated septum?", "domain": "other", "source": "ood_medical"}
+{"prompt": "Peux-tu me donner une explication technique complète du fonctionnement des réseaux de neurones profonds utilisés en intelligence artificielle ?", "domain": "other", "source": "lang_french"}
+{"prompt": "Énumère cinq faits intéressants sur le système solaire.", "domain": "other", "source": "lang_french"}
+{"prompt": "I'm deciding between a 529 plan and a taxable brokerage account for my child's future education costs—what would you suggest and why?", "domain": "other", "source": "ood_financial"}
+{"prompt": "Quelle plateforme de streaming me recommanderais-tu pour découvrir des films indépendants ?", "domain": "other", "source": "lang_french"}
+{"prompt": "Describe paso a paso cómo funciona la energía renovable.", "domain": "other", "source": "lang_spanish"}
+{"prompt": "Summarize this chapter for a study guide, five bullets.", "domain": "other", "source": "task_summarization"}
+{"prompt": "Explícame qué es la nube o el almacenamiento en la nube", "domain": "other", "source": "lang_spanish"}
+{"prompt": "Give me practical advice about the water cycle.", "domain": "other", "source": "lang_english"}
+{"prompt": "Can you refactor this nested loop that finds pairs summing to a target into something more Pythonic and efficient?\n\ndef find_pairs(nums, target):\n    pairs = []\n    for i in range(len(nums)):\n        for j in range(len(nums)):\n            if i != j and nums[i] + nums[j] == target:\n                pairs.append((nums[i], nums[j]))\n    return pairs", "domain": "other", "source": "code_python"}
+{"prompt": "Énumère cinq faits intéressants sur le régime méditerranéen.", "domain": "other", "source": "lang_french"}
+{"prompt": "Summarize the plot of Shakespeare's 'Hamlet' in one sentence for a quick reference guide.", "domain": "other", "source": "task_summarization"}
+{"prompt": "How does a reverse stock split work, and why would a company choose to do one?", "domain": "other", "source": "ood_financial"}
+{"prompt": "What are the trade-offs between early goal-directed therapy and conservative fluid management in sepsis?", "domain": "other", "source": "ood_medical"}
+{"prompt": "Explain the difference between systematic and unsystematic risk in a stock portfolio, and describe practical ways an investor can reduce unsystematic risk without eliminating expected returns.", "domain": "other", "source": "ood_financial"}
+{"prompt": "Explain the difference between a traditional 401(k) and a Roth 401(k).", "domain": "other", "source": "ood_financial"}
+{"prompt": "¿Qué ventajas y desventajas tiene el teletrabajo comparado con ir todos los días a una oficina?", "domain": "other", "source": "lang_spanish"}
+{"prompt": "How do I calculate my debt-to-income ratio if I earn $5,000 a month and have $1,500 in total monthly debt payments?", "domain": "other", "source": "ood_financial"}
+{"prompt": "A company's revenue grows quadratically according to R(t) = -2t^2 + 40t + 100 thousand dollars, where t is in years. Find the year of maximum revenue and the maximum value, showing the vertex derivation.", "domain": "other", "source": "task_math_reasoning"}
+{"prompt": "Quels sont les principes de la sylviculture à couvert continu ?", "domain": "other", "source": "lang_french"}
+{"prompt": "¿Cuál es la mejor app para aprender inglés gratis?", "domain": "other", "source": "lang_spanish"}
+{"prompt": "What's the difference between Type 1 and Type 2 diabetes at the physiological level?", "domain": "other", "source": "ood_medical"}
+{"prompt": "¿Cuál es tu opinión sobre adoptar un perro adulto en lugar de un cachorro?", "domain": "other", "source": "lang_spanish"}
+{"prompt": "How does the Frank-Starling mechanism explain changes in cardiac output during heart failure?", "domain": "other", "source": "ood_medical"}
+{"prompt": "Selon toi, faut-il privilégier une voiture électrique ou hybride pour un usage urbain ?", "domain": "other", "source": "lang_french"}
+{"prompt": "i need a simple rate limiter decorator that only allows a function to run once every n seconds", "domain": "other", "source": "code_python"}
+{"prompt": "À ton avis, vaut-il mieux acheter une voiture d'occasion ou neuve quand on a un petit budget ?", "domain": "other", "source": "lang_french"}
+{"prompt": "Can you show how to implement the observer pattern in Python using weak references to avoid memory leaks?", "domain": "other", "source": "code_python"}
+{"prompt": "Dame consejos prácticos sobre el sueño saludable.", "domain": "other", "source": "lang_spanish"}
+{"prompt": "I have a function that's supposed to return True if a number is prime, but it says every number is prime. Can you find the bug?\ndef is_prime(n):\n    for i in range(2, n):\n        return True\n    return False", "domain": "other", "source": "code_python"}
+{"prompt": "¿Qué es el bruxismo y qué relación tiene con el estrés diario?", "domain": "other", "source": "lang_spanish"}
+{"prompt": "Can you explain what's wrong with this comparison of floating point numbers and suggest the correct approach?\nif result == 0.3:\n    print('matches')", "domain": "other", "source": "code_python"}
+{"prompt": "I have a 2015 sedan making a clicking noise when I turn the wheel sharply at low speed. What could be causing that?", "domain": "other", "source": "lang_english"}
+{"prompt": "How should I prepare for a difficult conversation with a friend about something they said that hurt me?", "domain": "other", "source": "lang_english"}
+{"prompt": "How do I know if I'm overwatering or underwatering my houseplants?", "domain": "other", "source": "lang_english"}
+{"prompt": "Walk me through how to interpret a complete blood count with differential, step by step, to identify possible infection versus malignancy.", "domain": "other", "source": "ood_medical"}
+{"prompt": "Solve the system: x+y=10, x-y=2.", "domain": "other", "source": "task_math_reasoning"}
+{"prompt": "Write clean, idiomatic Python that implements a simple LRU cache.", "domain": "other", "source": "code_python"}
+{"prompt": "Which do you think is a smarter long-term investment, real estate or the stock market for someone risk-averse?", "domain": "other", "source": "lang_english"}
+{"prompt": "Summarize this meeting transcript into action items and flag which ones you think are unrealistic given our timeline.", "domain": "other", "source": "task_summarization"}
+{"prompt": "My car's gas tank holds 14 gallons and I get about 32 miles per gallon. If I'm planning a 550-mile road trip, how many times will I need to fill up, and can you show the math?", "domain": "other", "source": "task_math_reasoning"}
+{"prompt": "Give me a quick rundown of the French Revolution like I'm explaining it to a bored teenager.", "domain": "other", "source": "task_summarization"}
+{"prompt": "Peux-tu comparer les avantages des vacances en camping et des vacances à l'hôtel pour une famille avec de jeunes enfants ?", "domain": "other", "source": "lang_french"}
+{"prompt": "Can you explain the mechanism of action of warfarin and why vitamin K intake affects its efficacy?", "domain": "other", "source": "ood_medical"}
+{"prompt": "Quelle est la meilleure méthode pour apprendre à jouer de la guitare rapidement ?", "domain": "other", "source": "lang_french"}
+{"prompt": "Explícame la diferencia entre el derecho consuetudinario y el derecho civil.", "domain": "other", "source": "lang_spanish"}
+{"prompt": "What is the difference between accrual accounting and cash accounting, and how might a company's reported profit differ under each for a sale made in December but paid for in January?", "domain": "other", "source": "ood_financial"}
+{"prompt": "I've been asked to give a toast at a retirement party for a coworker who's been at the company for thirty years, but I barely know her personally. Can you help me write something warm that doesn't feel generic?", "domain": "other", "source": "lang_english"}
+{"prompt": "Can you explain how early telegraph operators communicated using Morse code efficiently?", "domain": "other", "source": "lang_english"}
+{"prompt": "Entre suivre des cours de yoga en groupe ou avec un coach particulier, quelle option est la plus efficace pour un débutant stressé ?", "domain": "other", "source": "lang_french"}
+{"prompt": "J'aimerais écrire un poème court sur la nostalgie de l'enfance, dans un style proche de Prévert, tu peux m'aider ?", "domain": "other", "source": "lang_french"}
+{"prompt": "Explain what a 'flattening' versus 'steepening' yield curve means, and what each shift typically signals about market expectations for growth and inflation.", "domain": "other", "source": "ood_financial"}
+{"prompt": "Écris un court paragraphe sur le cycle de l'eau.", "domain": "other", "source": "lang_french"}
+{"prompt": "Can you explain what a credit score is and why it matters?", "domain": "other", "source": "lang_english"}
+{"prompt": "Peux-tu détailler les étapes cliniques et réglementaires nécessaires pour la mise sur le marché d'un nouveau médicament en Europe ?", "domain": "other", "source": "lang_french"}
+{"prompt": "J'ai besoin d'une analyse détaillée des avantages et inconvénients du télétravail sur la productivité et la santé mentale des salariés à long terme.", "domain": "other", "source": "lang_french"}
+{"prompt": "Walk me through the process of how the kidneys concentrate urine via the countercurrent multiplier system in the loop of Henle.", "domain": "other", "source": "ood_medical"}
+{"prompt": "Walk me through how to calculate the internal rate of return for a project that costs $50,000 upfront and returns $15,000 per year for five years.", "domain": "other", "source": "ood_financial"}
+{"prompt": "This code throws a RecursionError on large inputs. Can you convert it to an iterative approach using an explicit stack?\ndef flatten(nested):\n    result = []\n    for item in nested:\n        if isinstance(item, list):\n            result.extend(flatten(item))\n        else:\n            result.append(item)\n    return result", "domain": "other", "source": "code_python"}
+{"prompt": "Décris étape par étape comment fonctionne l'énergie renouvelable.", "domain": "other", "source": "lang_french"}
+{"prompt": "What's a good excuse to skip a family gathering without lying outright?", "domain": "other", "source": "lang_english"}
+{"prompt": "Summarize the differences in approach between cognitive behavioral therapy and psychodynamic therapy, formatted as bullet points for a psychology student.", "domain": "other", "source": "task_summarization"}
+{"prompt": "I'm getting an IndentationError but I don't see anything wrong, can you spot it?\n\ndef greet(name):\nprint(f'Hello, {name}')", "domain": "other", "source": "code_python"}
+{"prompt": "Find the sum of the first 50 terms of the arithmetic sequence that begins 7, 11, 15, 19, showing the formula for the sum of an arithmetic series and the calculation.", "domain": "other", "source": "task_math_reasoning"}
+{"prompt": "One-sentence summary of this novel's plot, please.", "domain": "other", "source": "task_summarization"}
+{"prompt": "Can you give me the short version of this whole group project proposal doc, like five sentences tops?", "domain": "other", "source": "task_summarization"}
+{"prompt": "What's a good icebreaker for a work meeting?", "domain": "other", "source": "lang_english"}
+{"prompt": "Enumera cinco datos interesantes sobre la antigua Roma.", "domain": "other", "source": "lang_spanish"}
+{"prompt": "¿Cómo puedo preparar paso a paso un currículum que destaque para una entrevista de trabajo en tecnología?", "domain": "other", "source": "lang_spanish"}
+{"prompt": "Show your reasoning: A tank fills in 12 minutes with one pipe and 18 with another. How long together?", "domain": "other", "source": "task_math_reasoning"}
+{"prompt": "Should someone with $200,000 in savings and no debt put a large lump sum into the market now or spread it out over 12 months?", "domain": "other", "source": "ood_financial"}
+{"prompt": "Walk me through condensing this project retrospective into a one-slide summary for stakeholders: 'Sprint missed two deadlines due to unclear requirements, team resolved 80% of bugs before release, client feedback was mostly positive except for onboarding flow.'", "domain": "other", "source": "task_summarization"}
+{"prompt": "Je cherche à comprendre les différences entre une alimentation végétarienne et une alimentation végane sur le plan nutritionnel, notamment les carences potentielles à surveiller.", "domain": "other", "source": "lang_french"}
+{"prompt": "What's the one-sentence version of the French Revolution?", "domain": "other", "source": "task_summarization"}
+{"prompt": "Can you draft a polite but firm message to a client who hasn't paid an invoice that's now 45 days overdue?", "domain": "other", "source": "lang_english"}
+{"prompt": "Could you explain the difference between first-degree, second-degree, and third-degree AV block on an EKG, describing the underlying conduction abnormality for each and which ones typically require pacemaker placement?", "domain": "other", "source": "ood_medical"}
+{"prompt": "What is the difference between nominal GDP and real GDP, and how does the GDP deflator get used to convert between the two?", "domain": "other", "source": "ood_financial"}
+{"prompt": "Je débute en informatique, peux-tu m'expliquer ce qu'est un cloud et à quoi ça sert concrètement ?", "domain": "other", "source": "lang_french"}
+{"prompt": "Compare using f-strings versus str.format() versus % formatting in terms of readability and performance in modern Python.", "domain": "other", "source": "code_python"}
+{"prompt": "I have two investment options: Option A grows at a simple interest rate of 7% per year, Option B grows at a compound interest rate of 6% per year, both over 10 years on a $10,000 principal. Which would you advise choosing, showing the calculations for both?", "domain": "other", "source": "task_math_reasoning"}
+{"prompt": "Summarize this passage on mycorrhizal fungal networks into one sentence: 'Recent research suggests that underground fungal networks allow trees to share nutrients and warning signals about pests, effectively creating a communication system often dubbed the wood wide web.'", "domain": "other", "source": "task_summarization"}
+{"prompt": "J'aimerais savoir comment fonctionne la Bourse pour les débutants complets.", "domain": "other", "source": "lang_french"}
+{"prompt": "How would you interpret an elevated BNP level in a patient presenting with shortness of breath?", "domain": "other", "source": "ood_medical"}
+{"prompt": "Could you explain how the renin-angiotensin-aldosterone system contributes to blood pressure regulation and where different antihypertensives act within it?", "domain": "other", "source": "ood_medical"}
+{"prompt": "Give a one-sentence summary contrasting the strengths and weaknesses of print books versus e-books.", "domain": "other", "source": "task_summarization"}
+{"prompt": "I'm financing a $25,000 car loan at 6.5% annual interest compounded monthly over 60 months. Can you derive the monthly payment formula from first principles and compute the exact monthly payment?", "domain": "other", "source": "task_math_reasoning"}
+{"prompt": "How do I write a polite email asking my landlord to fix a leaky faucet?", "domain": "other", "source": "lang_english"}
+{"prompt": "Explain each step. A cube has volume 27 cm³. What is the length of one edge and its surface area?", "domain": "other", "source": "task_math_reasoning"}
+{"prompt": "quick question, what does yield actually do under the hood vs return", "domain": "other", "source": "code_python"}
+{"prompt": "Give me a one-liner to remove duplicates from a list while preserving order.", "domain": "other", "source": "code_python"}
+{"prompt": "A ladder 15 feet long leans against a vertical wall with its base 6 feet from the wall. Find how high up the wall the ladder reaches, showing the Pythagorean theorem setup and calculation.", "domain": "other", "source": "task_math_reasoning"}
+{"prompt": "Summarize this short story for me in two sentences without giving away the ending.", "domain": "other", "source": "task_summarization"}
+{"prompt": "My savings account gives 4% compound interest yearly. If I put in $2000, how much will I have after 3 years? Show your work.", "domain": "other", "source": "task_math_reasoning"}
+{"prompt": "¿Cómo puedo mejorar mi pronunciación en inglés practicando solo en casa?", "domain": "other", "source": "lang_spanish"}
+{"prompt": "Quels sont les enjeux stratégiques et environnementaux liés à l'exploitation des terres rares pour l'industrie électronique ?", "domain": "other", "source": "lang_french"}
+{"prompt": "¿Cuál es la capital de Australia?", "domain": "other", "source": "lang_spanish"}
+{"prompt": "Why do cats knead blankets?", "domain": "other", "source": "lang_english"}
+{"prompt": "¿Cómo elijo un buen colchón sin gastar de más?", "domain": "other", "source": "lang_spanish"}
+{"prompt": "Summarize the key rulings and dissenting opinions from this Supreme Court decision in a way that a first-year law student could use for exam prep, no more than 200 words.", "domain": "other", "source": "task_summarization"}
+{"prompt": "Me gustaría saber por qué el Imperio Romano de Occidente cayó en el 476 pero el de Oriente sobrevivió mil años más.", "domain": "other", "source": "lang_spanish"}
+{"prompt": "¿Por qué algunas monedas antiguas tenían valor incluso sin respaldo en oro?", "domain": "other", "source": "lang_spanish"}
+{"prompt": "What is the difference between quantitative easing and raising interest rates as monetary policy tools, and how do they affect the economy in opposite ways?", "domain": "other", "source": "ood_financial"}
+{"prompt": "Please condense this academic paper's methodology section into a short paragraph a non-specialist could understand: 'We employed a mixed-effects regression model with random intercepts for participant and item, controlling for age, education, and baseline cognitive score, to estimate the effect of sleep restriction on working memory accuracy.'", "domain": "other", "source": "task_summarization"}
+{"prompt": "Write a decorator that times a function's execution.", "domain": "other", "source": "code_python"}
+{"prompt": "What is the difference between a checking account and a savings account, and why might a bank offer a lower interest rate on the checking account?", "domain": "other", "source": "ood_financial"}
+{"prompt": "What steps are involved in interpreting spirometry results to differentiate obstructive from restrictive lung disease?", "domain": "other", "source": "ood_medical"}
+{"prompt": "What does elevated BUN and creatinine suggest?", "domain": "other", "source": "ood_medical"}
+{"prompt": "I need to optimize this string-building loop that's using += in a tight loop over thousands of iterations; can you show me a faster idiomatic approach?\n\nresult = ''\nfor word in words:\n    result += word + ' '", "domain": "other", "source": "code_python"}
+{"prompt": "What does a low anion gap metabolic acidosis usually indicate compared to a high anion gap one?", "domain": "other", "source": "ood_medical"}
+{"prompt": "Explain the difference between deep copy and shallow copy in Python with an example involving nested lists and dictionaries, and show where copy.deepcopy vs copy.copy would behave differently.", "domain": "other", "source": "code_python"}
+{"prompt": "Walk me through how to interpret a company's price-to-earnings ratio compared to its industry average when deciding if a stock is overvalued.", "domain": "other", "source": "ood_financial"}
+{"prompt": "Solve for x: 2^x = 32.", "domain": "other", "source": "task_math_reasoning"}
+{"prompt": "C'est quoi exactement l'effet de serre et pourquoi on en parle autant avec le climat ?", "domain": "other", "source": "lang_french"}
+{"prompt": "Write a Python implementation of quicksort that uses the Lomuto partition scheme, then modify it to pick a random pivot to avoid worst-case behavior on already-sorted input, and briefly explain why that matters.", "domain": "other", "source": "code_python"}
+{"prompt": "Two cylindrical tanks have the same height of 4 meters, but Tank A has a radius of 2 meters and Tank B has a radius of 3 meters. Find the difference in their volumes, showing the cylinder volume formula and substitution.", "domain": "other", "source": "task_math_reasoning"}
+{"prompt": "What does it mean if my ALT and AST are elevated on a liver panel?", "domain": "other", "source": "ood_medical"}
+{"prompt": "Peux-tu m'aider à rédiger une lettre de motivation pour un poste de professeur des écoles, en insistant sur mon expérience de bénévolat auprès d'enfants en difficulté ?", "domain": "other", "source": "lang_french"}
+{"prompt": "Resume las ideas principales de el sistema solar.", "domain": "other", "source": "lang_spanish"}
+{"prompt": "Give a bullet list summary of this whitepaper's key findings.", "domain": "other", "source": "task_summarization"}
+{"prompt": "Summarize this long customer feedback survey response into three key themes and rate the overall sentiment as positive, negative, or mixed: 'The app is generally easy to use but crashes frequently on older phones. Customer service was helpful when I reached out, though wait times were long. I love the new dark mode feature, it's a huge improvement, but I wish there was a way to customize notification settings more granularly.'", "domain": "other", "source": "task_summarization"}
+{"prompt": "Two pipes fill a pool together in 4 hours; alone, the first pipe takes 6 hours longer than the second to fill it. Set up the rational equation and solve for each pipe's individual time.", "domain": "other", "source": "task_math_reasoning"}
+{"prompt": "I have a Flask endpoint that's leaking database connections. Here's the code, can you spot the bug and fix it?\n@app.route('/user/<id>')\ndef get_user(id):\n    conn = db.connect()\n    cursor = conn.cursor()\n    cursor.execute('SELECT * FROM users WHERE id=?', (id,))\n    return cursor.fetchone()", "domain": "other", "source": "code_python"}
+{"prompt": "My partner and I have very different spending habits, one of us saves aggressively and the other likes to spend on experiences, and I'd like advice on how to build a shared budget that respects both approaches.", "domain": "other", "source": "lang_english"}
+{"prompt": "A company's inventory turnover ratio is 6, while a competitor's is 12. What does this comparison suggest about their respective operational efficiency?", "domain": "other", "source": "ood_financial"}
+{"prompt": "Two trains leave stations 450 km apart at the same time, heading toward each other. One travels at 72 km/h and the other at 88 km/h, but the second train stops for 15 minutes after 2 hours. Determine when and where they meet, with a full step-by-step timeline.", "domain": "other", "source": "task_math_reasoning"}
+{"prompt": "Can you explain the difference between an S3 and an S4 heart gallop and what each might suggest?", "domain": "other", "source": "ood_medical"}
+{"prompt": "¿Cuál es el animal más rápido del mundo?", "domain": "other", "source": "lang_spanish"}
+{"prompt": "¿Cómo se originó la costumbre de dar propina en los restaurantes y por qué varía tanto entre países?", "domain": "other", "source": "lang_spanish"}
+{"prompt": "How would a clinician work through assessing a patient's Glasgow Coma Scale score step by step?", "domain": "other", "source": "ood_medical"}
+{"prompt": "Explain what a dividend is and how a company decides whether to pay one, using a simple example of a company earning $1 per share and paying $0.40 as a dividend.", "domain": "other", "source": "ood_financial"}
+{"prompt": "Explain the difference between the current ratio and the quick ratio for assessing a company's short-term liquidity, and calculate both given current assets of $500,000, inventory of $150,000, and current liabilities of $250,000.", "domain": "other", "source": "ood_financial"}
+{"prompt": "Explícame cómo se determina el valor de una empresa mediante el método de flujo de caja descontado, con un ejemplo numérico sencillo", "domain": "other", "source": "lang_spanish"}
+{"prompt": "Here is a simplified income statement: Revenue $2,000,000, COGS $1,200,000, Operating Expenses $400,000, Interest Expense $50,000, Tax Rate 25%. Calculate net income and the net profit margin.", "domain": "other", "source": "ood_financial"}
+{"prompt": "Can you explain the concept of opportunity cost using an example of choosing between paying off a 6% interest loan versus investing in an index fund expected to return 8%?", "domain": "other", "source": "ood_financial"}
+{"prompt": "¿Qué diferencias hay entre el café arábica y el robusta en sabor y cafeína?", "domain": "other", "source": "lang_spanish"}
+{"prompt": "A cone-shaped cup has a radius of 4 cm and a height of 9 cm. How much liquid can it hold in cubic centimeters? Please show the volume formula and steps.", "domain": "other", "source": "task_math_reasoning"}
+{"prompt": "Walk me through setting up automatic bill payments so I never miss a due date again.", "domain": "other", "source": "lang_english"}
+{"prompt": "Could you give me your take on the best format—bullets or narrative—for summarizing a legal contract's termination clauses for a non-lawyer client?", "domain": "other", "source": "task_summarization"}
+{"prompt": "Refactor this nested if-else chain into something more idiomatic, maybe using a dictionary dispatch or match statement, and explain the tradeoffs of each approach.\ndef handle_command(cmd):\n    if cmd == 'start':\n        return start_process()\n    elif cmd == 'stop':\n        return stop_process()\n    elif cmd == 'restart':\n        return restart_process()\n    elif cmd == 'status':\n        return get_status()\n    else:\n        raise ValueError('Unknown command')", "domain": "other", "source": "code_python"}
+{"prompt": "Explain the mechanism behind aspirin's antiplatelet effect.", "domain": "other", "source": "ood_medical"}
+{"prompt": "Sum up this article in one sentence.", "domain": "other", "source": "task_summarization"}
+{"prompt": "Can you condense this history textbook chapter on the Cold War into study notes?", "domain": "other", "source": "task_summarization"}
+{"prompt": "Do you think it's a good idea to withdraw from a Roth IRA early to cover a home down payment?", "domain": "other", "source": "ood_financial"}
+{"prompt": "Dame consejos para dormir mejor porque me cuesta conciliar el sueño", "domain": "other", "source": "lang_spanish"}
+{"prompt": "Give me a TL;DR of this Reddit thread debating the merits of remote work versus office culture, capturing the strongest argument from each side.", "domain": "other", "source": "task_summarization"}
+{"prompt": "A Ferris wheel problem aside, consider a triangular sail with a base of 12 meters and height 9 meters that is being scaled up proportionally so its area doubles. Find the scale factor and new dimensions, showing the geometric reasoning.", "domain": "other", "source": "task_math_reasoning"}
+{"prompt": "What is the difference between a value investing approach and a growth investing approach, and how might each investor react differently to a stock with a P/E ratio of 40?", "domain": "other", "source": "ood_financial"}
+{"prompt": "Summarize this internal Slack thread about the production outage into an incident postmortem summary for leadership: \"Engineers identified a misconfigured load balancer as the root cause, the on-call team rolled back the deployment within 20 minutes, and a follow-up action item was created to add automated config validation.\"", "domain": "other", "source": "task_summarization"}
+{"prompt": "What's the best way to summarize a 90-minute podcast episode into a five-minute reading digest?", "domain": "other", "source": "task_summarization"}
+{"prompt": "À ton avis, vaut-il mieux investir dans l'immobilier locatif ou dans des actions en bourse actuellement ?", "domain": "other", "source": "lang_french"}
+{"prompt": "Can you walk me through how to build a discounted cash flow model for a small SaaS company, including how to estimate terminal value?", "domain": "other", "source": "lang_english"}
+{"prompt": "What is diversification in investing?", "domain": "other", "source": "ood_financial"}
+{"prompt": "Walk me through summarizing a 10-page policy memo into a one-paragraph brief for a city council meeting.", "domain": "other", "source": "task_summarization"}
+{"prompt": "Explain the difference between primary and secondary hypertension.", "domain": "other", "source": "ood_medical"}
+{"prompt": "A landscaping company must choose between renting equipment for $150 per day or buying it for $2,400 outright, if the estimated usage is 20 days over the next year. Which option would you recommend, showing the break-even calculation.", "domain": "other", "source": "task_math_reasoning"}
+{"prompt": "How would I calculate the debt-to-equity ratio for a company with $2 million in total liabilities and $1.5 million in shareholders' equity, and what does the result imply?", "domain": "other", "source": "ood_financial"}
+{"prompt": "Give me a step-by-step approach to summarizing this customer review thread into pros and cons for a product manager: 'Users love the battery life and camera quality but complain about the high price and slow customer service response.'", "domain": "other", "source": "task_summarization"}
+{"prompt": "Can you write a Python script that watches a directory for new files and processes them as they appear?", "domain": "other", "source": "code_python"}
+{"prompt": "Please summarize this niche podcast episode about vintage synthesizer restoration into three bullet points.", "domain": "other", "source": "task_summarization"}
+{"prompt": "What's the best sequence of steps for learning to touch type without looking at the keyboard?", "domain": "other", "source": "lang_english"}
+{"prompt": "Explain the difference between a Sharpe ratio and a Sortino ratio when evaluating the risk-adjusted performance of an investment portfolio.", "domain": "other", "source": "ood_financial"}
+{"prompt": "What is the difference between a Roth IRA and a Traditional IRA in terms of tax treatment, and which might be better for someone expecting to be in a higher tax bracket in retirement?", "domain": "other", "source": "ood_financial"}
+{"prompt": "An investment of $8,000 grows to $10,368 in 3 years under compound interest compounded annually. Find the annual interest rate, showing how you set up and solve the equation.", "domain": "other", "source": "task_math_reasoning"}
+{"prompt": "What is the difference between working capital and cash flow, and why can a profitable company still run into liquidity problems?", "domain": "other", "source": "ood_financial"}
+{"prompt": "Can you explain what quantitative easing is and how it differs from a simple interest rate cut by a central bank?", "domain": "other", "source": "ood_financial"}
+{"prompt": "How do I create a study schedule for the GRE if I only have six weeks to prepare?", "domain": "other", "source": "lang_english"}
+{"prompt": "A circular pizza has a diameter of 16 inches and is cut into 8 equal slices. Find the area of one slice, showing your calculation of the total circle area and the division into sectors.", "domain": "other", "source": "task_math_reasoning"}
+{"prompt": "Optimize this pandas code that's very slow on a large dataframe:\n\nfor idx, row in df.iterrows():\n    df.at[idx, 'total'] = row['price'] * row['quantity']", "domain": "other", "source": "code_python"}
+{"prompt": "Without jargon, Summarise the key points about the rise of remote work in three sentences.", "domain": "other", "source": "task_summarization"}
+{"prompt": "Estoy redactando mi currículum y en la sección de experiencia puse 'Encargado de ventas, 2019-2021'. ¿Cómo lo hago más atractivo para reclutadores?", "domain": "other", "source": "lang_spanish"}
+{"prompt": "What actually causes hiccups and is there a trick that reliably stops them?", "domain": "other", "source": "lang_english"}
+{"prompt": "¿Cómo puedo armar una rutina de ejercicios en casa para tonificar todo el cuerpo?", "domain": "other", "source": "lang_spanish"}
+{"prompt": "Quiero escribirle una carta a mi yo del pasado, justo antes de graduarme de la universidad, contándole cómo resultaron las cosas y qué consejos le daría; ¿me ayudas a redactarla con un tono reflexivo?", "domain": "other", "source": "lang_spanish"}
+{"prompt": "This code raises a subtle bug where two threads occasionally corrupt shared state even though I used a lock—can you spot the issue?\n\nclass Account:\n    def __init__(self):\n        self.balance = 0\n        self.lock = threading.Lock()\n    def deposit(self, amount):\n        with self.lock:\n            temp = self.balance\n        temp += amount\n        self.balance = temp", "domain": "other", "source": "code_python"}
+{"prompt": "I need a decorator that caches results based on function arguments but automatically invalidates entries after a configurable TTL. Can you implement that without external libraries?", "domain": "other", "source": "code_python"}
+{"prompt": "Please summarize this short passage from a science article: 'Bees play a crucial role in pollinating crops, but their populations have been declining due to pesticide use, habitat loss, and climate change, prompting conservation efforts worldwide.'", "domain": "other", "source": "task_summarization"}
+{"prompt": "What's the actual difference between osteoarthritis and rheumatoid arthritis?", "domain": "other", "source": "ood_medical"}
+{"prompt": "Dame tu recomendación sobre qué tipo de seguro médico conviene más para alguien joven y sano.", "domain": "other", "source": "lang_spanish"}
+{"prompt": "can you help me debug this async function, it never seems to finish?\n\nasync def fetch_all(urls):\n    results = []\n    for url in urls:\n        results.append(await fetch(url))\n    return results", "domain": "other", "source": "code_python"}
+{"prompt": "Sum up my meeting notes below into action items only: 'John said the deadline moved up, Sarah is worried about budget, we need design mockups by Friday, and Priya will follow up with the client.'", "domain": "other", "source": "task_summarization"}
+{"prompt": "Can you explain why patients with G6PD deficiency need to avoid certain oxidative drugs like dapsone or primaquine?", "domain": "other", "source": "ood_medical"}
+{"prompt": "Explique-moi la différence entre le wifi et la 4G comme si j'avais dix ans", "domain": "other", "source": "lang_french"}
+{"prompt": "If a dart board has a 10-inch diameter and a bullseye with a 2-inch diameter, what's the probability of hitting the bullseye if the dart lands randomly on the board? Please show the area ratio calculation.", "domain": "other", "source": "task_math_reasoning"}
+{"prompt": "Give me the gist of quantum entanglement in two sentences.", "domain": "other", "source": "task_summarization"}
+{"prompt": "What is a 'balloon payment' on a loan, and walk me through the risks a borrower faces with a 5-year loan of $300,000 at 4% interest with only interest paid monthly and the full principal due at the end.", "domain": "other", "source": "ood_financial"}
+{"prompt": "A company's revenue grows according to the function R(t) = 50,000(1.08)^t, where t is measured in years. Find the revenue after 5 years and the year in which revenue first exceeds $100,000, showing your calculations.", "domain": "other", "source": "task_math_reasoning"}
+{"prompt": "What's your take on using f-strings everywhere versus .format() for consistency in an older codebase that mixes both?", "domain": "other", "source": "code_python"}
+{"prompt": "Can you explain what's happening with mutable versus immutable default arguments and object identity in this snippet, and predict the output before running it?\n\na = [1, 2, 3]\nb = a\nb.append(4)\nprint(a is b, a)", "domain": "other", "source": "code_python"}
+{"prompt": "I need a summary of this podcast episode transcript for my notes, keep it to five bullet points: \"The host and guest discuss the history of jazz, touching on its roots in New Orleans, the influence of blues, the rise of bebop in the 1940s, how jazz spread internationally, and its influence on modern hip-hop production.\"", "domain": "other", "source": "task_summarization"}
+{"prompt": "Ayúdame a redactar un tuit para promocionar mi negocio", "domain": "other", "source": "lang_spanish"}
+{"prompt": "Two coffee shops offer loyalty programs: Shop A gives a free drink after every 10 purchases, while Shop B gives a 15% discount on every purchase. If a regular drink costs $5, find the effective cost per drink under each program over 20 purchases and determine which program saves more money, showing the calculations.", "domain": "other", "source": "task_math_reasoning"}
+{"prompt": "An arithmetic sequence has a first term of 7 and a common difference of 4. Find the 25th term, the sum of the first 25 terms, and determine which term first exceeds 200. Show all formulas and calculations used.", "domain": "other", "source": "task_math_reasoning"}
+{"prompt": "I'd like advice on how to mediate a recurring financial disagreement with my spouse about spending versus saving habits.", "domain": "other", "source": "lang_english"}
+{"prompt": "What is the difference between a call option and a put option, and how would the payoff look for a call option with a $50 strike price if the stock rises to $65 at expiration?", "domain": "other", "source": "ood_financial"}
+{"prompt": "What is the difference between a STEMI and NSTEMI in terms of ECG findings and underlying pathology?", "domain": "other", "source": "ood_medical"}
+{"prompt": "What is the mechanism behind serotonin syndrome, what drug combinations most commonly trigger it, and how is it clinically distinguished from neuroleptic malignant syndrome?", "domain": "other", "source": "ood_medical"}
+{"prompt": "Peux-tu m'expliquer les grandes différences culturelles entre la façon de travailler en France et celle observée dans les pays scandinaves, notamment sur l'équilibre entre vie professionnelle et vie personnelle ?", "domain": "other", "source": "lang_french"}
+{"prompt": "What is the difference between a 401(k) and an IRA, and can I contribute to both in the same year?", "domain": "other", "source": "ood_financial"}
+{"prompt": "A rectangular box has a length that is twice its width, and its height is 3 cm less than its width. If the volume of the box is 250 cubic centimeters, find its dimensions, showing the algebraic setup and solution steps.", "domain": "other", "source": "task_math_reasoning"}
+{"prompt": "Two insurance plans: Plan A has a $500 deductible and $150 monthly premium, Plan B has a $1,200 deductible and $95 monthly premium. Given an estimated one major claim of $3,000 per year, which plan would you recommend, showing the total annual cost comparison?", "domain": "other", "source": "task_math_reasoning"}
+{"prompt": "Explícame por qué el cielo de Marte se ve diferente al de la Tierra durante el atardecer.", "domain": "other", "source": "lang_spanish"}
+{"prompt": "What is the difference between nominal GDP and real GDP, and why does this distinction matter when comparing economic growth across different years with varying inflation rates?", "domain": "other", "source": "ood_financial"}
+{"prompt": "Find the area of a circle with radius 9 cm.", "domain": "other", "source": "task_math_reasoning"}
+{"prompt": "can you help me debug this, it prints the wrong output\ndef reverse_words(s):\n    return ' '.join(s.split()[::-1])\nprint(reverse_words('hello world'))", "domain": "other", "source": "code_python"}
+{"prompt": "Quels sont les bienfaits réels de la méditation sur le stress ?", "domain": "other", "source": "lang_french"}
+{"prompt": "¿Por qué a veces me da hipo después de comer rápido?", "domain": "other", "source": "lang_spanish"}
+{"prompt": "¿Cómo funciona internet? Quiero entenderlo de forma básica sin tecnicismos.", "domain": "other", "source": "lang_spanish"}
+{"prompt": "Explícame por qué la Torre Eiffel se expande unos centímetros en verano.", "domain": "other", "source": "lang_spanish"}
+{"prompt": "Quiero saber las diferencias entre el streaming de música por suscripción y comprar álbumes digitales para un melómano.", "domain": "other", "source": "lang_spanish"}
+{"prompt": "What is the significance of a wide pulse pressure, and what conditions are commonly associated with it?", "domain": "other", "source": "ood_medical"}
+{"prompt": "How do I fix a squeaky door hinge?", "domain": "other", "source": "lang_english"}
+{"prompt": "Meilleure appli pour apprendre l'anglais ?", "domain": "other", "source": "lang_french"}
+{"prompt": "What's the tl;dr on how mRNA vaccines work?", "domain": "other", "source": "task_summarization"}
+{"prompt": "Summarize this Reddit thread about the recent CPU architecture leak into five key takeaways for a hardware enthusiast newsletter: \"Users speculate about a new tile-based chiplet design, debate whether the leaked benchmarks are legitimate, and discuss potential implications for pricing against the competing lineup.\"", "domain": "other", "source": "task_summarization"}
+{"prompt": "Write a Python function that implements insertion sort. Include a short comment explaining the approach.", "domain": "other", "source": "code_python"}
+{"prompt": "Ayúdame a escribir un mensaje para cancelar una cita con el dentista", "domain": "other", "source": "lang_spanish"}
+{"prompt": "Write clean, idiomatic Python that generates all permutations of a short string.", "domain": "other", "source": "code_python"}
+{"prompt": "Estoy armando mi currículum y no sé si incluir mi experiencia como voluntario en una ONG, ¿qué opinas?", "domain": "other", "source": "lang_spanish"}
+{"prompt": "Peux-tu m'aider à concevoir une stratégie de content marketing B2B complète pour une entreprise SaaS qui cible les DSI ?", "domain": "other", "source": "lang_french"}
+{"prompt": "What's the correct order of steps for changing a car's brake pads at home?", "domain": "other", "source": "lang_english"}
+{"prompt": "¿Cómo puedo quitar una mancha de vino tinto de una alfombra blanca?", "domain": "other", "source": "lang_spanish"}
+{"prompt": "Why do some medications need to be taken with food while others need an empty stomach?", "domain": "other", "source": "ood_medical"}
+{"prompt": "Can you compare electric cars and hybrid cars for someone who drives about 15,000 miles a year?", "domain": "other", "source": "lang_english"}
+{"prompt": "Can you give me a bullet-point summary of this recipe blog post explaining how to make sourdough bread?", "domain": "other", "source": "task_summarization"}
+{"prompt": "What is 'net present value' and how would you decide whether to accept a project costing $100,000 today that returns $30,000 annually for 4 years, using a 10% discount rate?", "domain": "other", "source": "ood_financial"}
+{"prompt": "Explain why my sourdough starter smells like nail polish remover after sitting out for two days.", "domain": "other", "source": "lang_english"}
+{"prompt": "How do I read a balance sheet if I've never looked at one before—what are the three big sections I should focus on?", "domain": "other", "source": "ood_financial"}
+{"prompt": "What's the difference between a virus and a bacterial infection?", "domain": "other", "source": "lang_english"}
+{"prompt": "Explain the stock market crash of 1929 briefly.", "domain": "other", "source": "lang_english"}
+{"prompt": "Can you summarize this niche history article about the invention of the vacuum tube into a plain-language explanation for a non-technical audience?", "domain": "other", "source": "task_summarization"}
+{"prompt": "Can you explain what a PIK (payment-in-kind) toggle note is and why a company might issue one?", "domain": "other", "source": "ood_financial"}
+{"prompt": "Can you help me write a short birthday message for my coworker that isn't too formal or too casual?", "domain": "other", "source": "lang_english"}
+{"prompt": "Explícame en profundidad las diferencias técnicas entre los motores de combustión interna diésel y gasolina, incluyendo eficiencia térmica", "domain": "other", "source": "lang_spanish"}
+{"prompt": "What is the mechanism by which loop diuretics act on the nephron, and what electrolyte disturbances can result?", "domain": "other", "source": "ood_medical"}
+{"prompt": "Explícame de forma sencilla qué es la inflación y por qué sube el precio de las cosas.", "domain": "other", "source": "lang_spanish"}
+{"prompt": "Can you convert this synchronous Flask view into an async FastAPI endpoint that calls two external APIs concurrently using asyncio.gather?", "domain": "other", "source": "code_python"}
+{"prompt": "A wheel of fortune has 20 unequal sectors: 5 sectors award $100, 8 sectors award $20, and the remaining 7 sectors award nothing. Calculate the expected winnings per spin and the standard deviation of the payout distribution, showing all steps.", "domain": "other", "source": "task_math_reasoning"}
+{"prompt": "Explain the difference between a mutual fund and an exchange-traded fund (ETF) in terms of trading flexibility, fees, and tax efficiency, and discuss when an investor might prefer one over the other.", "domain": "other", "source": "ood_financial"}
+{"prompt": "Walk me through how to set up a home network with a router and a mesh extender for better Wi-Fi coverage.", "domain": "other", "source": "lang_english"}
+{"prompt": "What is the pathophysiology behind hepatic encephalopathy and why does lactulose help manage it?", "domain": "other", "source": "ood_medical"}
+{"prompt": "What does it mean when a company issues a stock buyback, and how does reducing the number of outstanding shares affect earnings per share and, potentially, the stock price?", "domain": "other", "source": "ood_financial"}
+{"prompt": "What exactly happens at the cellular level during an ischemic stroke's penumbra formation, and why is the time window for thrombolytic therapy with tPA so critical to outcomes?", "domain": "other", "source": "ood_medical"}
+{"prompt": "Pourquoi certaines personnes rêvent en couleur et d'autres pas ?", "domain": "other", "source": "lang_french"}
+{"prompt": "What does it mean when people say a stock is 'overvalued' and how would I even check that myself?", "domain": "other", "source": "ood_financial"}
+{"prompt": "Explícame el proceso de fermentación en la elaboración de vino y cómo afecta al sabor final según la temperatura y el tipo de levadura.", "domain": "other", "source": "lang_spanish"}
+{"prompt": "Quels sont les usages traditionnels du sel dans les rituels de conservation alimentaire au Japon ?", "domain": "other", "source": "lang_french"}
+{"prompt": "How does the glomerular filtration rate relate to creatinine clearance, and why does GFR decline with age?", "domain": "other", "source": "ood_medical"}
+{"prompt": "I'm choosing between moving to a big city for career growth or staying in my hometown near family. How should I think through that decision?", "domain": "other", "source": "lang_english"}
+{"prompt": "Summarize this negotiation transcript into the key sticking points and suggest which concession we should offer first.", "domain": "other", "source": "task_summarization"}
+{"prompt": "A rectangular box needs to be wrapped with ribbon that goes around its length and width twice, plus an extra 20 cm for the bow. If the box is 30 cm long and 20 cm wide, find the total ribbon length needed, showing your perimeter calculation.", "domain": "other", "source": "task_math_reasoning"}
+{"prompt": "How do loop diuretics like furosemide work at the level of the nephron, why do they cause hypokalemia and hypocalcemia, and how does that compare mechanistically to thiazide diuretics which often cause hypercalcemia instead?", "domain": "other", "source": "ood_medical"}
+{"prompt": "Work it out carefully: A train travels 240 km in 3 hours. What is its average speed, and how far in 5 hours?", "domain": "other", "source": "task_math_reasoning"}
+{"prompt": "Can you write a beginner-friendly function that takes a list of numbers and returns the sum of only the positive ones?", "domain": "other", "source": "code_python"}
+{"prompt": "I want to understand the political and military factors that led to the fall of the Roman Empire in the West, beyond the simplistic 'barbarian invasion' narrative.", "domain": "other", "source": "lang_english"}
+{"prompt": "Enumera cinco datos interesantes sobre el ciclo del agua.", "domain": "other", "source": "lang_spanish"}
+{"prompt": "What are some simple ways to save money on groceries each week?", "domain": "other", "source": "lang_english"}
+{"prompt": "Compare the pros and cons of homeschooling versus traditional public schooling and summarize them for parents weighing the decision.", "domain": "other", "source": "task_summarization"}
+{"prompt": "How do I calculate my effective tax rate versus my marginal tax rate if I earned $95,000 this year under a progressive tax bracket system?", "domain": "other", "source": "ood_financial"}
+{"prompt": "I deposited $2,000 at the start of each year for 15 years into an account earning 6% compounded annually. Calculate the future value using the future value annuity due formula, showing all steps.", "domain": "other", "source": "task_math_reasoning"}
+{"prompt": "Can you summarize the key points of this lecture on Byzantine iconoclasm in three bullet points?", "domain": "other", "source": "task_summarization"}
+{"prompt": "Describe paso a paso cómo funciona las corrientes oceánicas.", "domain": "other", "source": "lang_spanish"}
+{"prompt": "How do I make my resume stand out for a marketing job?", "domain": "other", "source": "lang_english"}
+{"prompt": "I need to write a function that merges two sorted linked lists into one sorted linked list. Can you provide a full implementation including the Node class, and explain the time and space complexity of your solution?", "domain": "other", "source": "code_python"}
+{"prompt": "Give me a TL;DR of this Reddit thread where people are debating whether remote work reduces productivity, capturing the top three arguments on each side.", "domain": "other", "source": "task_summarization"}
+{"prompt": "A population of bacteria grows according to the model N(t) = 500e^(0.08t), where t is measured in hours. Find the population after 12 hours, the time it takes for the population to double, and the growth rate at t = 12 hours. Show all calculations.", "domain": "other", "source": "task_math_reasoning"}
+{"prompt": "What does it mean to 'rebalance' an investment portfolio, and why might someone need to do this even if they haven't bought or sold anything?", "domain": "other", "source": "ood_financial"}
+{"prompt": "My phone battery seems to drain really fast lately, what could be causing that?", "domain": "other", "source": "lang_english"}
+{"prompt": "Comment s'organiser pour préparer un dîner de fête pour douze personnes sans se sentir dépassé ?", "domain": "other", "source": "lang_french"}
+{"prompt": "I have a checking account balance of $2,400, a savings account with $6,000, a car loan balance of $9,500, and no credit card debt. Can you walk me through how to calculate my current liquidity position and what it tells me about my financial health?", "domain": "other", "source": "ood_financial"}
+{"prompt": "Is it worth switching from requests to httpx for a project that needs both sync and async HTTP calls?", "domain": "other", "source": "code_python"}
+{"prompt": "Énumère cinq faits intéressants sur l'apprentissage automatique.", "domain": "other", "source": "lang_french"}
+{"prompt": "J'ai reçu cette note de mon médecin : « tension légèrement élevée, à surveiller ». Qu'est-ce que cela signifie concrètement et que dois-je faire ?", "domain": "other", "source": "lang_french"}
+{"prompt": "What is the difference between a current ratio and a quick ratio, and how would each be calculated for a company with $200,000 in current assets, $50,000 in inventory, and $100,000 in current liabilities?", "domain": "other", "source": "ood_financial"}
+{"prompt": "Quel est le meilleur antivirus gratuit ?", "domain": "other", "source": "lang_french"}
+{"prompt": "¿Cuáles son las diferencias clave entre arquitectura de microservicios y arquitectura monolítica, y en qué escenarios conviene más cada una?", "domain": "other", "source": "lang_spanish"}
+{"prompt": "Please summarize this meeting transcript into a TL;DR for teammates who missed it: 'We discussed the delayed product launch, agreed to push the release two weeks, assigned QA testing to Priya, and decided marketing materials will be finalized by Friday.'", "domain": "other", "source": "task_summarization"}
+{"prompt": "Cuéntame sobre las cartas que se escribían los soldados durante la Primera Guerra Mundial.", "domain": "other", "source": "lang_spanish"}
+{"prompt": "Tell a very short story involving the water cycle.", "domain": "other", "source": "lang_english"}
+{"prompt": "write unit tests for this function\ndef is_even(n): return n % 2 == 0", "domain": "other", "source": "code_python"}
+{"prompt": "¿Cómo le explico a mi jefe que necesito unos días libres sin que se enoje?", "domain": "other", "source": "lang_spanish"}
+{"prompt": "Should someone refinance federal student loans into a private loan with a lower interest rate, given the loss of federal protections like income-driven repayment?", "domain": "other", "source": "ood_financial"}
+{"prompt": "Give a bullet-point summary of the key rules explained in this boardgame rulebook excerpt for new players.", "domain": "other", "source": "task_summarization"}
+{"prompt": "What is the debt-to-equity ratio and what's considered healthy?", "domain": "other", "source": "ood_financial"}
+{"prompt": "Entre le tourisme de masse et le tourisme durable, quels sont les impacts réels sur les communautés locales ?", "domain": "other", "source": "lang_french"}
+{"prompt": "Peux-tu m'aider à comprendre le fonctionnement précis des vaccins à ARN messager, notamment leur mécanisme d'action au niveau cellulaire ?", "domain": "other", "source": "lang_french"}
+{"prompt": "What does it mean for someone to be diagnosed with type 2 diabetes, and how is it different from type 1 diabetes?", "domain": "other", "source": "ood_medical"}
+{"prompt": "Two paint options are available for a wall measuring 10 ft by 12 ft: a can that covers 350 square feet for $35, or one that covers 400 square feet for $42. Which can should I buy for the best coverage-per-dollar, and show your calculations?", "domain": "other", "source": "task_math_reasoning"}
+{"prompt": "What does a prolonged QT interval on an ECG mean, and which drug combinations increase this risk?", "domain": "other", "source": "ood_medical"}
+{"prompt": "Summarize the plot, central conflict, and ending of this 500-page fantasy novel in under 100 words without spoiling the final twist explicitly.", "domain": "other", "source": "task_summarization"}
+{"prompt": "I need the gist of this 10-page contract in like 5 bullet points, nothing fancy.", "domain": "other", "source": "task_summarization"}
+{"prompt": "Please summarize the plot and central themes of the film The Matrix in three sentences for someone who has never seen it.", "domain": "other", "source": "task_summarization"}
+{"prompt": "This function should compute a running average over a stream of numbers but seems to accumulate floating point error over time. How would you make it more numerically stable?\n\ndef running_average():\n    total = 0\n    count = 0\n    while True:\n        x = yield total / count if count else 0\n        total += x\n        count += 1", "domain": "other", "source": "code_python"}
+{"prompt": "Peux-tu comparer les smartphones Android et iPhone en termes de personnalisation, de sécurité et de durée de vie de la batterie ?", "domain": "other", "source": "lang_french"}
+{"prompt": "Comment faire pour apprendre une nouvelle langue en autodidacte en six mois ?", "domain": "other", "source": "lang_french"}
+{"prompt": "Quelles sont les étapes clés pour préparer un semi-marathon quand on part de zéro ?", "domain": "other", "source": "lang_french"}
+{"prompt": "How do I debug this function that's supposed to reverse a linked list but ends up in an infinite loop? def reverse(head):\n    prev = None\n    while head:\n        head.next = prev\n        prev = head\n    return prev", "domain": "other", "source": "code_python"}
+{"prompt": "Summarize this customer support chat log into a short case summary: 'User: My app keeps crashing after the update. Agent: Can you tell me your device model? User: iPhone 12, iOS 17. Agent: Try clearing the cache in settings. User: Did that, still crashing. Agent: I'll escalate this to engineering.'", "domain": "other", "source": "task_summarization"}
+{"prompt": "Escribe un párrafo corto sobre la antigua Roma.", "domain": "other", "source": "lang_spanish"}
+{"prompt": "Quelles sont les principales différences entre le droit civil français et la common law anglo-saxonne ?", "domain": "other", "source": "lang_french"}
+{"prompt": "Peux-tu m'expliquer la notion de biais de confirmation avec un exemple tiré de la vie quotidienne ?", "domain": "other", "source": "lang_french"}
+{"prompt": "Should I choose a fixed-rate or adjustable-rate mortgage in the current economic climate?", "domain": "other", "source": "lang_english"}
+{"prompt": "Summarize what a solar eclipse is and why it happens, in plain language for someone who's never learned about it.", "domain": "other", "source": "task_summarization"}
+{"prompt": "Can you explain what a bond's duration tells you and why it matters if interest rates change?", "domain": "other", "source": "ood_financial"}
+{"prompt": "How many ways can 5 people be seated in a row?", "domain": "other", "source": "task_math_reasoning"}
+{"prompt": "C'est quoi la meilleure méthode pour économiser de l'argent chaque mois ?", "domain": "other", "source": "lang_french"}
+{"prompt": "Can you explain what f-strings are and show how to use them to format a sentence with a name and a number?", "domain": "other", "source": "code_python"}
+{"prompt": "Estoy comparando dos seguros de salud, uno con prima más baja pero mayor copago y otro al revés, ¿cuál me conviene según mi historial médico?", "domain": "other", "source": "lang_spanish"}
+{"prompt": "How do I figure out my effective tax rate versus my marginal tax rate, and why does the difference matter?", "domain": "other", "source": "ood_financial"}
+{"prompt": "Which is more effective for learning a new language, immersive apps like flashcard drills or actually speaking with native speakers early on?", "domain": "other", "source": "lang_english"}
+{"prompt": "A person is deciding between two retirement savings strategies: contributing $300 per month starting at age 25 with 6% annual interest compounded monthly, or contributing $500 per month starting at age 35 with the same interest rate, both until age 65. Find the final balance under each strategy and determine which produces more savings, showing the future value of annuity calculations.", "domain": "other", "source": "task_math_reasoning"}
+{"prompt": "Can you explain what a lambda function is and show a small example comparing it to a regular function?", "domain": "other", "source": "code_python"}
+{"prompt": "My grandmother used to say 'a stitch in time saves nine.' What's the actual origin of that phrase?", "domain": "other", "source": "lang_english"}
+{"prompt": "I'm trying to understand the biochemical pathway of how statins actually lower cholesterol at the cellular level, can you explain it in detail?", "domain": "other", "source": "lang_english"}
+{"prompt": "can you explain the difference between args and kwargs with a small example?", "domain": "other", "source": "code_python"}
+{"prompt": "Can you condense this paragraph about mycorrhizal fungi networks into two sentences? 'Mycorrhizal fungi form symbiotic relationships with plant roots, creating vast underground networks that allow trees to share nutrients and even chemical warning signals about pests or drought, effectively functioning as a forest-wide communication system.'", "domain": "other", "source": "task_summarization"}
+{"prompt": "Dame tu recomendación sobre qué hacer si mi jefe nunca reconoce mi trabajo.", "domain": "other", "source": "lang_spanish"}
+{"prompt": "Explain referred pain in myocardial infarction.", "domain": "other", "source": "ood_medical"}
+{"prompt": "Quelle est la différence entre une franchise et une auto-entreprise pour quelqu'un qui veut ouvrir une boulangerie ?", "domain": "other", "source": "lang_french"}
+{"prompt": "Vaut-il mieux élever ses enfants en ville ou à la campagne pour leur développement social et leur bien-être ?", "domain": "other", "source": "lang_french"}
+{"prompt": "What's a beginner summary of how vaccines work, explained simply?", "domain": "other", "source": "task_summarization"}
+{"prompt": "What does 'Kussmaul breathing' indicate, and in which metabolic conditions is it most commonly seen?", "domain": "other", "source": "ood_medical"}
+{"prompt": "I want to buy a rectangular rug for a 12 ft by 15 ft room, leaving a 1-foot border of bare floor on all sides. Recommend the rug size I should purchase and show the area calculation that supports your suggestion.", "domain": "other", "source": "task_math_reasoning"}
+{"prompt": "Why does grapefruit juice mess with so many medications?", "domain": "other", "source": "ood_medical"}
+{"prompt": "Summarize this merger agreement's indemnification clauses into a risk memo for the acquiring company's legal team.", "domain": "other", "source": "task_summarization"}
+{"prompt": "Escribe un párrafo corto sobre las corrientes oceánicas.", "domain": "other", "source": "lang_spanish"}
+{"prompt": "How would someone go about calculating a patient's estimated glomerular filtration rate and interpreting what the result means for kidney function?", "domain": "other", "source": "ood_medical"}
+{"prompt": "¿Qué es el bruxismo y qué remedios existen para dejar de apretar los dientes por la noche?", "domain": "other", "source": "lang_spanish"}
+{"prompt": "This async function is supposed to fetch multiple URLs concurrently but it's actually running sequentially. Can you spot the mistake and fix it using asyncio and aiohttp properly?\n\nasync def fetch_all(urls):\n    results = []\n    for url in urls:\n        result = await fetch(url)\n        results.append(result)\n    return results", "domain": "other", "source": "code_python"}
+{"prompt": "Write a custom exception hierarchy for a banking application with InsufficientFundsError and InvalidAccountError.", "domain": "other", "source": "code_python"}
+{"prompt": "Quelle est l'origine du mot « sérendipité » et dans quels contextes on l'utilise aujourd'hui ?", "domain": "other", "source": "lang_french"}
+{"prompt": "Why does this raise KeyError?\nd = {}\nd['x'] += 1", "domain": "other", "source": "code_python"}
+{"prompt": "Explain ancient Rome to a curious 12-year-old.", "domain": "other", "source": "lang_english"}
+{"prompt": "A rectangular swimming pool is 25 meters long and 12 meters wide, surrounded by a walkway of uniform width w. If the total area of the pool plus walkway is 468 square meters, find the width of the walkway, showing the algebraic setup and solution.", "domain": "other", "source": "task_math_reasoning"}
+{"prompt": "Estoy armando un plan de ahorro para comprar mi primer auto en un año, ganando un sueldo modesto en pesos mexicanos. ¿Cómo debería estructurar mis ahorros mensuales, qué porcentaje de mi ingreso destinar, y si conviene meter ese dinero en algún instrumento financiero mientras ahorro?", "domain": "other", "source": "lang_spanish"}
+{"prompt": "How does inflation targeting by central banks actually work in practice, and why do some economists argue it's outdated in a post-pandemic economy?", "domain": "other", "source": "lang_english"}
+{"prompt": "Explique-moi les différences entre le droit civil et la common law, avec des exemples concrets de leurs applications judiciaires.", "domain": "other", "source": "lang_french"}
+{"prompt": "A jar contains 8 red marbles, 5 blue marbles, and 7 green marbles. If I pick one marble at random, what's the probability it's not blue, and how do you calculate that?", "domain": "other", "source": "task_math_reasoning"}
+{"prompt": "¿Me darías tu opinión sobre si conviene tener mascotas en un departamento pequeño?", "domain": "other", "source": "lang_spanish"}
+{"prompt": "Comment expliquerais-tu la théorie de la relativité restreinte à un enfant de dix ans ?", "domain": "other", "source": "lang_french"}
+{"prompt": "¿Cómo puedo hacer amigos nuevos si acabo de mudarme a otra ciudad?", "domain": "other", "source": "lang_spanish"}
+{"prompt": "Define gross margin.", "domain": "other", "source": "ood_financial"}
+{"prompt": "J'aimerais une explication complète des différences entre les régimes matrimoniaux en droit français et leurs implications successorales.", "domain": "other", "source": "lang_french"}
+{"prompt": "What is the difference between an upper motor neuron lesion and a lower motor neuron lesion in terms of clinical signs?", "domain": "other", "source": "ood_medical"}
+{"prompt": "How can I make my resume stand out if I've only had one job so far?", "domain": "other", "source": "lang_english"}
+{"prompt": "Sum up this research abstract in one sentence.", "domain": "other", "source": "task_summarization"}
+{"prompt": "Could you explain the basic anatomy of the heart and how blood flows through its four chambers?", "domain": "other", "source": "ood_medical"}
+{"prompt": "¿Qué debo hacer si mi computadora va muy lenta y no sé cómo arreglarla?", "domain": "other", "source": "lang_spanish"}
+{"prompt": "Explain what a leveraged buyout (LBO) is, how private equity firms use debt to finance acquisitions, and what risks this strategy poses if the acquired company's cash flows decline.", "domain": "other", "source": "ood_financial"}
+{"prompt": "Can you explain what 'tax-loss harvesting' is and how an investor might use it to offset capital gains at year-end?", "domain": "other", "source": "ood_financial"}
+{"prompt": "What's the difference between a bull market and a bear market, and how do investor sentiment and trading volume typically diverge between the two?", "domain": "other", "source": "ood_financial"}
+{"prompt": "If 8 workers can build a wall in 10 days, how many days would it take 5 workers to build the same wall, assuming all workers work at the same rate? Show your reasoning.", "domain": "other", "source": "task_math_reasoning"}
+{"prompt": "My code keeps throwing 'IndexError: list index out of range' on this line: for i in range(len(items)): print(items[i+1]). What's wrong?", "domain": "other", "source": "lang_english"}
+{"prompt": "Can you explain what happens physiologically in Cushing's triad and why it signals rising intracranial pressure?", "domain": "other", "source": "ood_medical"}
+{"prompt": "In your view, is it worth paying extra for noise-cancelling headphones if I mostly work from home?", "domain": "other", "source": "lang_english"}
+{"prompt": "How do I write a Python function that merges overlapping intervals given a list of (start, end) tuples? Walk me through the algorithm.", "domain": "other", "source": "code_python"}
+{"prompt": "Explica el sistema solar a un niño de doce años.", "domain": "other", "source": "lang_spanish"}
+{"prompt": "J'ai un entretien d'embauche demain, tu peux me donner des questions pièges possibles ?", "domain": "other", "source": "lang_french"}
+{"prompt": "What's your recommendation for choosing between a CT scan and MRI when evaluating acute stroke symptoms?", "domain": "other", "source": "ood_medical"}
+{"prompt": "A homeowner is choosing between two loan offers to finance a $200,000 renovation: Loan A charges 6% annual interest compounded monthly over 10 years, while Loan B charges 5.5% annual interest compounded monthly over 15 years. Compare the total interest paid under each option and determine which loan costs less overall, showing all compound interest calculations.", "domain": "other", "source": "task_math_reasoning"}
+{"prompt": "I'm trying to decide between a square garden plot with a 20-foot perimeter or a circular plot with the same amount of fencing. Which shape gives more area, and show the geometry calculations that support your recommendation.", "domain": "other", "source": "task_math_reasoning"}
+{"prompt": "A cone-shaped paper cup has a radius of 4 cm and a height of 9 cm. Calculate its volume and lateral surface area, showing each formula and calculation step.", "domain": "other", "source": "task_math_reasoning"}
+{"prompt": "What's the difference between a mutual fund and an ETF?", "domain": "other", "source": "ood_financial"}
+{"prompt": "What's the difference between a Roth IRA and a traditional IRA?", "domain": "other", "source": "ood_financial"}
+{"prompt": "Can you help me come up with a name for my new small business?", "domain": "other", "source": "lang_english"}
+{"prompt": "Compare a Health Savings Account to a Flexible Spending Account in terms of contribution limits, rollover rules, and tax advantages.", "domain": "other", "source": "ood_financial"}
+{"prompt": "A car rental company offers Plan 1 at $35 per day with unlimited mileage, and Plan 2 at $20 per day plus $0.15 per mile. Find the mileage at which both plans cost the same for a 4-day rental, showing your algebraic comparison.", "domain": "other", "source": "task_math_reasoning"}
+{"prompt": "Solve the system of equations: x + y = 15 and x - y = 3, showing each step to find the values of x and y.", "domain": "other", "source": "task_math_reasoning"}
+{"prompt": "How do I remove background noise from a recording?", "domain": "other", "source": "lang_english"}
+{"prompt": "What's a good way to start saving for retirement if I'm already in my forties?", "domain": "other", "source": "lang_english"}
+{"prompt": "What is a 'bail-in' in banking regulation, and how does it differ from a taxpayer-funded 'bailout' during a financial crisis?", "domain": "other", "source": "ood_financial"}
+{"prompt": "Walk me through summarizing this interview transcript into key quotes and takeaways for a magazine feature.", "domain": "other", "source": "task_summarization"}
+{"prompt": "Give me a TL;DR of the debate among economists about whether cryptocurrency should be regulated like traditional securities.", "domain": "other", "source": "task_summarization"}
+{"prompt": "Give me the short version of this apartment lease.", "domain": "other", "source": "task_summarization"}
+{"prompt": "Quelle est l'histoire du duel judiciaire au Moyen Âge et pourquoi cette pratique a disparu ?", "domain": "other", "source": "lang_french"}
+{"prompt": "Solve for x: |2x - 3| = 7.", "domain": "other", "source": "task_math_reasoning"}
+{"prompt": "Implement, in Python, code that reverses a linked list. Add a couple of example calls.", "domain": "other", "source": "code_python"}
+{"prompt": "Escribe un poema corto sobre el mar", "domain": "other", "source": "lang_spanish"}
+{"prompt": "¿Cómo limpio manchas de vino en la alfombra?", "domain": "other", "source": "lang_spanish"}
+{"prompt": "Walk me through step by step how to implement a simple pub-sub event system using Python classes.", "domain": "other", "source": "code_python"}
+{"prompt": "Peux-tu m'expliquer les différences techniques entre les architectures de processeurs ARM et x86, notamment en termes de consommation énergétique et de jeu d'instructions ?", "domain": "other", "source": "lang_french"}
+{"prompt": "Ayúdame a diseñar un programa de entrenamiento de fuerza de doce semanas para alguien que se está recuperando de una lesión de rodilla.", "domain": "other", "source": "lang_spanish"}
+{"prompt": "Given a stock's beta of 1.8, would you recommend it for a conservative retirement portfolio?", "domain": "other", "source": "ood_financial"}
+{"prompt": "Work it out carefully: The angles of a triangle are in ratio 2:3:4. Find each angle.", "domain": "other", "source": "task_math_reasoning"}
+{"prompt": "What does it mean when an EKG shows ST elevation?", "domain": "other", "source": "ood_medical"}
+{"prompt": "Peux-tu corriger cette phrase pour un mail formel : « Je voulais savoir si vous étiez disponible pour discuter de mon augmentation de salaire » ?", "domain": "other", "source": "lang_french"}
+{"prompt": "Explain what happens under the hood when you use the 'with' statement on a file object.", "domain": "other", "source": "code_python"}
+{"prompt": "Pourquoi on tombe malade plus souvent en hiver ?", "domain": "other", "source": "lang_french"}
+{"prompt": "What are the differences between a Roth IRA and a traditional IRA, and which is better if I expect to be in a higher tax bracket later?", "domain": "other", "source": "lang_english"}
+{"prompt": "Walk me through how to calculate the weighted average cost of capital for a firm with $40 million in equity at a 12% cost of equity, $25 million in debt at a 6% pre-tax cost, and a 21% marginal tax rate.", "domain": "other", "source": "ood_financial"}
+{"prompt": "Explain step by step how to calculate the debt service coverage ratio for a rental property generating $36,000 in annual net operating income with $28,000 in annual debt payments.", "domain": "other", "source": "ood_financial"}
+{"prompt": "Explícame por qué me duele la cabeza cuando duermo poco", "domain": "other", "source": "lang_spanish"}
+{"prompt": "Outline the process for summarizing a scientific study's methodology and findings for a high school biology class.", "domain": "other", "source": "task_summarization"}
+{"prompt": "What is the debt snowball method versus the debt avalanche method for paying off multiple credit cards, and which one usually saves more money in interest?", "domain": "other", "source": "ood_financial"}
+{"prompt": "Can you explain what happens under the hood when you use the 'with' statement, in terms of __enter__ and __exit__?", "domain": "other", "source": "code_python"}
+{"prompt": "What is the difference between a STEMI and an NSTEMI in terms of ECG findings and immediate management?", "domain": "other", "source": "ood_medical"}
+{"prompt": "¿Cómo puedo mejorar mi currículum?", "domain": "other", "source": "lang_spanish"}
+{"prompt": "how would you write a context manager for opening and safely closing a database connection?", "domain": "other", "source": "code_python"}
+{"prompt": "Can you explain what an inverted yield curve is, why it's historically been considered a recession indicator, and what mechanisms might cause short-term rates to exceed long-term rates?", "domain": "other", "source": "ood_financial"}
+{"prompt": "Quels sont les avantages et les inconvénients de vivre en colocation par rapport à vivre seul quand on est jeune actif ?", "domain": "other", "source": "lang_french"}
+{"prompt": "¿Cómo elimino el estrés rápido?", "domain": "other", "source": "lang_spanish"}
+{"prompt": "My manager keeps taking credit for my ideas in meetings, and I need a calm, professional way to address this directly with them before it happens again.", "domain": "other", "source": "lang_english"}
+{"prompt": "Should I learn to cook more meals at home or rely on meal delivery services if my main goal is saving both time and money?", "domain": "other", "source": "lang_english"}
+{"prompt": "Peux-tu me résumer en quelques lignes les causes de la Révolution française ?", "domain": "other", "source": "lang_french"}
+{"prompt": "Can you explain the internals of Python's dict implementation, specifically how it handles hash collisions and resizing, in a way that would help me understand performance implications?", "domain": "other", "source": "code_python"}
+{"prompt": "Summarize the environmental trade-offs between nuclear energy and solar energy in a short paragraph for a policy briefing.", "domain": "other", "source": "task_summarization"}
+{"prompt": "Peux-tu m'aider à élaborer une stratégie de communication de crise pour une entreprise confrontée à un scandale médiatique ?", "domain": "other", "source": "lang_french"}
+{"prompt": "What is the mechanism behind statin-induced myopathy, and how does it relate to the drug's inhibition of HMG-CoA reductase and downstream effects on coenzyme Q10 synthesis?", "domain": "other", "source": "ood_medical"}
+{"prompt": "Peux-tu me raconter brièvement l'histoire de la construction de la tour Eiffel, y compris les critiques qu'elle a reçues à l'époque de son inauguration ?", "domain": "other", "source": "lang_french"}
+{"prompt": "Why does my bread dough deflate every time I add the yeast mixture, even though I proofed it correctly at 110°F?", "domain": "other", "source": "lang_english"}
+{"prompt": "Peux-tu me donner des astuces pour économiser sur les courses alimentaires chaque mois ?", "domain": "other", "source": "lang_french"}
+{"prompt": "What are the steps to plan a surprise birthday party for fifty guests without it leaking?", "domain": "other", "source": "lang_english"}
+{"prompt": "Explain how inflation erodes purchasing power over time, and calculate what $50,000 today would be worth in real terms in 20 years assuming average annual inflation of 3%.", "domain": "other", "source": "ood_financial"}
+{"prompt": "What is the significance of a elevated lactate level of 6 mmol/L in a critically ill patient?", "domain": "other", "source": "ood_medical"}
+{"prompt": "Can you explain what a backdoor Roth IRA conversion is and why high earners use this strategy?", "domain": "other", "source": "ood_financial"}
+{"prompt": "Please give me a TL;DR of this whitepaper on quantum thermodynamics.", "domain": "other", "source": "task_summarization"}
+{"prompt": "¿Qué opinas sobre la meditación como herramienta para manejar el estrés laboral?", "domain": "other", "source": "lang_spanish"}
+{"prompt": "Summarise the main ideas behind ocean currents.", "domain": "other", "source": "lang_english"}
+{"prompt": "Give me a brief summary contrasting the leadership styles of transformational leaders versus transactional leaders, for a management training module.", "domain": "other", "source": "task_summarization"}
+{"prompt": "Here is an excerpt from a company's annual sustainability report: 'We reduced our carbon footprint by 18% this year through investments in renewable energy and supply chain optimization, though water usage increased slightly due to expanded manufacturing operations in water-scarce regions.' Summarize this for a press release headline and a two-sentence body.", "domain": "other", "source": "task_summarization"}
+{"prompt": "J'aimerais comprendre pourquoi certains vins vieillissent bien pendant des décennies alors que d'autres doivent être consommés rapidement après l'achat, quels sont les facteurs chimiques en jeu ?", "domain": "other", "source": "lang_french"}
+{"prompt": "Escribe un mensaje de cumpleaños para mi jefe.", "domain": "other", "source": "lang_spanish"}
+{"prompt": "why is my dict key order different than insertion?", "domain": "other", "source": "code_python"}
+{"prompt": "¿Cuál es la diferencia entre wifi y datos móviles?", "domain": "other", "source": "lang_spanish"}
+{"prompt": "Comment on reconnaît qu'une relation amoureuse devient toxique ?", "domain": "other", "source": "lang_french"}
+{"prompt": "Peux-tu m'expliquer la différence entre une action et une obligation en bourse, avec des mots simples ?", "domain": "other", "source": "lang_french"}
+{"prompt": "Why did lighthouses used to run on whale oil, and how did that change over time?", "domain": "other", "source": "lang_english"}
+{"prompt": "Summarize this short paragraph from a news update into just the key facts: 'Officials confirmed today that the bridge closure, originally expected to last two weeks, will now extend into next month due to unforeseen structural repairs discovered during the initial inspection.'", "domain": "other", "source": "task_summarization"}
+{"prompt": "Can you explain what a currency carry trade is and why it can be profitable but risky?", "domain": "other", "source": "ood_financial"}
+{"prompt": "What is asthma, and what happens in the airways during an asthma attack?", "domain": "other", "source": "ood_medical"}
+{"prompt": "Dame tu recomendación sobre qué idioma me conviene aprender si quiero trabajar en tecnología.", "domain": "other", "source": "lang_spanish"}
+{"prompt": "how do generators actually work under the hood in Python? can you give a simple example", "domain": "other", "source": "code_python"}
+{"prompt": "What does a diagnosis of primary biliary cholangitis mean in terms of underlying pathology?", "domain": "other", "source": "ood_medical"}
+{"prompt": "Can you draft a quick email to my landlord asking about a leaky faucet?", "domain": "other", "source": "lang_english"}
+{"prompt": "If a die is rolled twice, find the probability that both rolls show a number greater than 4, showing your step-by-step reasoning.", "domain": "other", "source": "task_math_reasoning"}
+{"prompt": "What is the mechanism of action of proton pump inhibitors, and why can long-term use lead to vitamin B12 deficiency?", "domain": "other", "source": "ood_medical"}
+{"prompt": "A rectangular box has a length that is twice its width, and its height is 3 units less than its width. If the volume of the box is 224 cubic units, set up and solve a cubic equation to find the dimensions of the box.", "domain": "other", "source": "task_math_reasoning"}
+{"prompt": "Comment savoir si une opportunité d'investissement est une arnaque ?", "domain": "other", "source": "lang_french"}
+{"prompt": "Write a short email to my boss asking if I can shift my work hours to 7am-3pm instead of 9am-5pm.", "domain": "other", "source": "lang_english"}
+{"prompt": "How do first-generation and second-generation antihistamines differ in terms of sedation and anticholinergic effects?", "domain": "other", "source": "ood_medical"}
+{"prompt": "What's the difference between exocrine and endocrine functions of the pancreas, and how does damage to each affect digestion versus blood sugar regulation?", "domain": "other", "source": "ood_medical"}
+{"prompt": "Redacta una carta de presentación breve para un puesto de asistente administrativo, mencionando experiencia en atención al cliente.", "domain": "other", "source": "lang_spanish"}
+{"prompt": "Can you give me a beginner-friendly summary of what blockchain technology actually is, without using a lot of jargon?", "domain": "other", "source": "task_summarization"}
+{"prompt": "Summarize this customer feedback survey data into three key insights for the product team: '68% of respondents said the checkout process was too slow, 40% requested a dark mode option, and 22% mentioned difficulty finding the return policy.'", "domain": "other", "source": "task_summarization"}
+{"prompt": "Peux-tu comparer les avantages et les inconvénients de vivre en centre-ville par rapport à la campagne, en tenant compte du coût de la vie, du transport et de la qualité de vie ?", "domain": "other", "source": "lang_french"}
+{"prompt": "¿Cómo puedo hablar con mi hermano sobre un tema delicado sin que se enoje?", "domain": "other", "source": "lang_spanish"}
+{"prompt": "Explain the pathophysiology of asthma.", "domain": "other", "source": "ood_medical"}
+{"prompt": "Que penses-tu des écoles bilingues pour les enfants dès la maternelle ?", "domain": "other", "source": "lang_french"}
+{"prompt": "explain the GIL to me in simple terms and why it matters for multithreading", "domain": "other", "source": "code_python"}
+{"prompt": "What is the difference between an operating lease and a finance lease under current accounting standards, and how does each appear on the balance sheet?", "domain": "other", "source": "ood_financial"}
+{"prompt": "Explain what a 'covered call' options strategy is, and walk through the outcome if an investor owns 100 shares at $50 and sells a call option with a $55 strike for a $2 premium.", "domain": "other", "source": "ood_financial"}
+{"prompt": "Implement, in Python, code that computes the edit distance between two strings. Add a couple of example calls.", "domain": "other", "source": "code_python"}
+{"prompt": "¿Cómo se llama el hueso más pequeño del cuerpo humano?", "domain": "other", "source": "lang_spanish"}
+{"prompt": "Escribe un argumento a favor de el aprendizaje automático.", "domain": "other", "source": "lang_spanish"}
+{"prompt": "Summarize this contract clause in plain language: 'Notwithstanding anything to the contrary herein, either party may terminate this Agreement upon thirty (30) days written notice.'", "domain": "other", "source": "task_summarization"}
+{"prompt": "can you explain what this decorator does line by line?\n\ndef memoize(func):\n    cache = {}\n    def wrapper(*args):\n        if args not in cache:\n            cache[args] = func(*args)\n        return cache[args]\n    return wrapper", "domain": "other", "source": "code_python"}
+{"prompt": "Write a custom context manager class (not using contextlib) that measures and logs the execution time of the wrapped block, including exception handling so timing still logs on error.", "domain": "other", "source": "code_python"}
+{"prompt": "I want to implement a simple observer pattern for a stock price tracker where multiple display classes update whenever the price changes; can you sketch this out in idiomatic Python?", "domain": "other", "source": "code_python"}
+{"prompt": "Dame consejos prácticos sobre la dieta mediterránea.", "domain": "other", "source": "lang_spanish"}
+{"prompt": "J'aimerais une explication approfondie des théories de la relativité générale et restreinte d'Einstein, avec des exemples concrets.", "domain": "other", "source": "lang_french"}
+{"prompt": "A trapezoid has parallel sides of length 8 cm and 14 cm and a height of 5 cm. Find its area, showing the trapezoid area formula and substitution.", "domain": "other", "source": "task_math_reasoning"}
+{"prompt": "Explain what inflation actually does to my savings if I just leave cash under my mattress for ten years.", "domain": "other", "source": "ood_financial"}
+{"prompt": "Can you explain the difference between a Python script and a Python module, and when I'd use each?", "domain": "other", "source": "code_python"}
+{"prompt": "Can you explain the mechanism behind alpha-gal syndrome and its link to tick bites?", "domain": "other", "source": "ood_medical"}
+{"prompt": "Can you explain what an index fund is and why it's often recommended for beginner investors?", "domain": "other", "source": "ood_financial"}
+{"prompt": "Solve step by step. The angles of a triangle are in ratio 2:3:4. Find each angle.", "domain": "other", "source": "task_math_reasoning"}
+{"prompt": "Necesito preparar una presentación de trabajo sobre sostenibilidad ambiental para mi empresa, pero quiero que sea interesante y no solo estadísticas aburridas; ¿me ayudas a estructurar el contenido?", "domain": "other", "source": "lang_spanish"}
+{"prompt": "What's the difference between '==' and 'is' in Python? Can you give a beginner-friendly example?", "domain": "other", "source": "code_python"}
+{"prompt": "A population grows continuously according to P(t) = P0 * e^(kt). If a population grows from 1,000 to 2,500 in 6 years, find the growth rate k, showing your use of natural logarithms.", "domain": "other", "source": "task_math_reasoning"}
+{"prompt": "Condense this systematic review of clinical trials on GLP-1 receptor agonists into a one-paragraph abstract suitable for submission to a medical journal.", "domain": "other", "source": "task_summarization"}
+{"prompt": "Comment procéder pour faire une demande de visa étudiant pour le Canada ?", "domain": "other", "source": "lang_french"}
+{"prompt": "Why do some people become lactose intolerant later in life when they weren't as kids?", "domain": "other", "source": "ood_medical"}
+{"prompt": "¿Qué es la presión arterial y cuándo se considera alta?", "domain": "other", "source": "lang_spanish"}
+{"prompt": "What is the difference between economic profit and accounting profit, and how might a business appear profitable on paper while destroying economic value?", "domain": "other", "source": "ood_financial"}
+{"prompt": "I have a Flask endpoint that's supposed to accept a JSON payload, validate it against a schema, and store it in a SQLite database, but it keeps throwing a 500 error on malformed input. Can you rewrite it so it validates properly, returns a 400 with a helpful message on bad input, and add a couple of unit tests using pytest?", "domain": "other", "source": "code_python"}
+{"prompt": "Please walk me through, step by step, how to set up logging in a multi-module Python application so all modules share a consistent format.", "domain": "other", "source": "code_python"}
+{"prompt": "Can you summarize the key findings of Kahneman's Thinking, Fast and Slow in five bullet points for someone preparing for a behavioral economics exam?", "domain": "other", "source": "task_summarization"}
+{"prompt": "What is the clinical difference between delirium and dementia in terms of onset, course, and reversibility?", "domain": "other", "source": "ood_medical"}
+{"prompt": "Add error handling to this function.\ndef divide(a, b):\n    return a / b", "domain": "other", "source": "code_python"}
+{"prompt": "Give me a summary of this job posting so I know if it's even worth applying: 'We are seeking a mid-level marketing manager with 5+ years experience in B2B SaaS, strong analytics skills, and willingness to travel 20% of the time.'", "domain": "other", "source": "task_summarization"}
+{"prompt": "How does a 401(k) contribution reduce taxable income in a given year?", "domain": "other", "source": "ood_financial"}
+{"prompt": "Could you explain the mechanism behind tumor lysis syndrome and why it's a concern after starting chemotherapy?", "domain": "other", "source": "ood_medical"}
+{"prompt": "Rédige un argument en faveur de le cycle de l'eau.", "domain": "other", "source": "lang_french"}
+{"prompt": "¿Qué es la sinodalidad en la Iglesia católica y por qué se habla tanto de ella últimamente?", "domain": "other", "source": "lang_spanish"}
+{"prompt": "I'm trying to understand referred pain — why does a myocardial infarction sometimes present as pain radiating to the left arm or jaw instead of just chest pain?", "domain": "other", "source": "ood_medical"}
+{"prompt": "What's the etiquette for tipping a hairdresser versus a barber?", "domain": "other", "source": "lang_english"}
+{"prompt": "Walk me through the difference between FIFO and LIFO inventory accounting methods, and explain how each would affect reported profit and taxes during a period of rising prices.", "domain": "other", "source": "ood_financial"}
+{"prompt": "Can you explain what EBITDA is, why analysts prefer it over net income for comparing companies, and also list its major limitations as a valuation metric?", "domain": "other", "source": "ood_financial"}
+{"prompt": "Quiero organizar un viaje de una semana por el sur de España visitando Sevilla, Granada y Córdoba, con un presupuesto ajustado. ¿Podrías darme un itinerario general y recomendaciones para ahorrar en transporte y alojamiento?", "domain": "other", "source": "lang_spanish"}
+{"prompt": "In plain language, Summarise the key points about glacier retreat in the Alps in three sentences.", "domain": "other", "source": "task_summarization"}
+{"prompt": "What's the trade-off between using numpy arrays and plain Python lists for a script that does moderate numerical work but needs to stay dependency-light?", "domain": "other", "source": "code_python"}
+{"prompt": "A survey of 200 people found that 120 like coffee, 90 like tea, and 50 like both. Find the number of people who like neither coffee nor tea, showing your use of the inclusion-exclusion principle.", "domain": "other", "source": "task_math_reasoning"}
+{"prompt": "What's your take on enforcing immutability in Python classes using frozen dataclasses versus just documenting that fields shouldn't be mutated?", "domain": "other", "source": "code_python"}
+{"prompt": "¿Cómo puedo saber si mi computadora tiene un virus o simplemente está lenta por otras razones?", "domain": "other", "source": "lang_spanish"}
+{"prompt": "How does the mechanism of action of ACE inhibitors differ from that of angiotensin receptor blockers, and when might one be preferred over the other?", "domain": "other", "source": "ood_medical"}
+{"prompt": "What is the purpose of the lymphatic system in the body?", "domain": "other", "source": "ood_medical"}
+{"prompt": "Can you explain step-by-step how to calculate depreciation on a $60,000 piece of equipment with a 10-year useful life and $5,000 salvage value using the straight-line method?", "domain": "other", "source": "ood_financial"}
+{"prompt": "Write a script that uses argparse to build a CLI tool accepting a filename and an optional verbosity flag.", "domain": "other", "source": "code_python"}
+{"prompt": "Estoy escribiendo un cuento corto ambientado en una ciudad costera de los años cincuenta donde el protagonista es un pescador que descubre una carta misteriosa dentro de un pez; ayúdame a desarrollar la trama en tres actos y sugiéreme un final que sea agridulce pero no del todo triste", "domain": "other", "source": "lang_spanish"}
+{"prompt": "How does compound interest differ from simple interest?", "domain": "other", "source": "ood_financial"}
+{"prompt": "If two trains leave the same station at the same time, one going 60 mph east and the other going 75 mph west, how far apart will they be after 3 hours? Can you show the setup and math?", "domain": "other", "source": "task_math_reasoning"}
+{"prompt": "Explain the causes of the fall of the Roman Empire in a way that covers both internal political decay and external pressures like invasions, and mention which historians disagree about which factor mattered most.", "domain": "other", "source": "lang_english"}
+{"prompt": "Why does hyperkalemia cause characteristic ECG changes like peaked T waves and widened QRS complexes?", "domain": "other", "source": "ood_medical"}
+{"prompt": "Can you explain how credit scores are calculated?", "domain": "other", "source": "lang_english"}
+{"prompt": "Should I use functools.lru_cache or a manual dictionary-based cache for memoizing a recursive Fibonacci function? What are the differences?", "domain": "other", "source": "code_python"}
+{"prompt": "What's the difference between accrual accounting and cash basis accounting, and why do most public companies use accrual methods?", "domain": "other", "source": "ood_financial"}
+{"prompt": "Can you explain why NSAIDs like ibuprofen can cause gastric ulcers, and what protective role prostaglandins normally play in the stomach lining?", "domain": "other", "source": "ood_medical"}
+{"prompt": "I want to understand the plot of Hamlet without reading the whole play. Can you summarize it in a few paragraphs?", "domain": "other", "source": "lang_english"}
+{"prompt": "Why do doctors check potassium levels so closely when someone's on blood pressure meds?", "domain": "other", "source": "ood_medical"}
+{"prompt": "A right triangle has legs of length 6 cm and 8 cm. Find the length of the hypotenuse, showing how you apply the Pythagorean theorem.", "domain": "other", "source": "task_math_reasoning"}
+{"prompt": "What should I actually look for in a company's cash flow statement if I'm considering buying its stock?", "domain": "other", "source": "ood_financial"}
+{"prompt": "Quelle est la différence entre climat et météo ?", "domain": "other", "source": "lang_french"}
+{"prompt": "Décris étape par étape comment fonctionne les intérêts composés.", "domain": "other", "source": "lang_french"}
+{"prompt": "I'm getting a 'dictionary changed size during iteration' RuntimeError—can you show me the safe way to remove items from a dict while iterating over it?", "domain": "other", "source": "code_python"}
+{"prompt": "Estoy empezando a usar el gimnasio y no sé qué ejercicios hacer las primeras semanas, ¿me puedes dar una rutina simple?", "domain": "other", "source": "lang_spanish"}
+{"prompt": "I need to profile a Python script to find the slowest function calls. What tools would you recommend and how do I use cProfile?", "domain": "other", "source": "code_python"}
+{"prompt": "What is the difference between an upper motor neuron lesion and a lower motor neuron lesion in terms of physical exam findings?", "domain": "other", "source": "ood_medical"}
+{"prompt": "Explícame qué es el síndrome del impostor y cómo se relaciona con el trabajo creativo.", "domain": "other", "source": "lang_spanish"}
+{"prompt": "Comment fonctionne la pollinisation par les chauves-souris dans certains écosystèmes tropicaux ?", "domain": "other", "source": "lang_french"}
+{"prompt": "What's the difference between a STEMI and NSTEMI in terms of underlying coronary pathology, EKG findings, and how this distinction changes the urgency of intervention?", "domain": "other", "source": "ood_medical"}
+{"prompt": "Je pars en voyage en Islande pour une semaine en octobre, quels sont les endroits incontournables à visiter et à quoi dois-je faire attention niveau météo et budget ?", "domain": "other", "source": "lang_french"}
+{"prompt": "¿Cómo puedo hacer un currículum sencillo si nunca he trabajado antes?", "domain": "other", "source": "lang_spanish"}
+{"prompt": "¿Qué es la deuda técnica en programación y por qué es un problema a largo plazo?", "domain": "other", "source": "lang_spanish"}
+{"prompt": "Explain step by step how to interpret the yield curve and what it typically signals about future economic growth when short-term rates exceed long-term rates.", "domain": "other", "source": "ood_financial"}
+{"prompt": "Write a Protocol class using typing.Protocol to define a structural interface for objects that have a 'speak' method.", "domain": "other", "source": "code_python"}
+{"prompt": "Step by step, how do I convert this recursive factorial function into an iterative one to avoid stack overflow for large inputs?\n\ndef factorial(n):\n    if n == 0:\n        return 1\n    return n * factorial(n-1)", "domain": "other", "source": "code_python"}
+{"prompt": "Simplify: (2x^2 + 3x - 5) - (x^2 - 4x + 2).", "domain": "other", "source": "task_math_reasoning"}
+{"prompt": "Give me a TL;DR of the debate between proponents of standardized testing and those who favor holistic admissions in higher education.", "domain": "other", "source": "task_summarization"}
+{"prompt": "Two numbers add up to 50 and one is 3 times the other. What are the numbers? Explain the algebra.", "domain": "other", "source": "task_math_reasoning"}
+{"prompt": "Can you explain what's wrong with this singleton implementation? It doesn't seem thread-safe.\nclass Singleton:\n    _instance = None\n    def __new__(cls):\n        if cls._instance is None:\n            cls._instance = super().__new__(cls)\n        return cls._instance", "domain": "other", "source": "code_python"}
+{"prompt": "Quelle est la différence entre le beurre salé et le beurre doux, et laquelle utiliser en pâtisserie ?", "domain": "other", "source": "lang_french"}
+{"prompt": "An investor deposits $3,000 into an account compounded quarterly at an annual rate of 6%. Find the balance after 5 years, showing the compound interest formula with quarterly periods.", "domain": "other", "source": "task_math_reasoning"}
+{"prompt": "Without jargon, Summarise the key points about how lithium batteries are recycled in three sentences.", "domain": "other", "source": "task_summarization"}
+{"prompt": "What is tumor lysis syndrome, and why does it tend to occur after starting chemotherapy?", "domain": "other", "source": "ood_medical"}
+{"prompt": "À ton avis, est-ce raisonnable de quitter un emploi stable pour lancer sa propre entreprise ?", "domain": "other", "source": "lang_french"}
+{"prompt": "Can you turn this legal disclaimer into a one-liner that actually makes sense?", "domain": "other", "source": "task_summarization"}
+{"prompt": "¿Cuál es tu opinión sobre las universidades públicas frente a las privadas?", "domain": "other", "source": "lang_spanish"}
+{"prompt": "Two paint options for a wall measuring 12 ft by 9 ft: Paint A covers 350 sq ft per gallon at $28 per gallon, Paint B covers 400 sq ft per gallon at $32 per gallon. Which is more cost-effective, showing the area and cost calculations?", "domain": "other", "source": "task_math_reasoning"}
+{"prompt": "Can you explain what a shift to the left on a CBC differential indicates about the immune response?", "domain": "other", "source": "ood_medical"}
+{"prompt": "Est-ce que c'est vrai qu'on perd de la mémoire en vieillissant même sans maladie particulière ?", "domain": "other", "source": "lang_french"}
+{"prompt": "A ladder 15 feet long leans against a wall with its base 6 feet from the wall. If the base is pulled away at 2 feet per second, how fast is the top sliding down when the base is 9 feet from the wall? Show the related rates setup and solution.", "domain": "other", "source": "task_math_reasoning"}
+{"prompt": "Comment expliquer la différence entre un notaire et un avocat en France ?", "domain": "other", "source": "lang_french"}
+{"prompt": "How do I structure a Python package with proper __init__.py files, a setup.py or pyproject.toml, and entry points so it can be pip installed?", "domain": "other", "source": "code_python"}
+{"prompt": "Give me the elevator pitch version of the theory of evolution.", "domain": "other", "source": "task_summarization"}
+{"prompt": "What are the trade-offs between renting an apartment for $2,000 per month versus buying a $400,000 home with a 20% down payment and a 6% mortgage rate?", "domain": "other", "source": "ood_financial"}
+{"prompt": "Write a context manager for opening and closing a database connection.", "domain": "other", "source": "code_python"}
+{"prompt": "Summarize the trade-offs between outsourcing manufacturing overseas versus reshoring production domestically, for a business strategy report.", "domain": "other", "source": "task_summarization"}
+{"prompt": "A trapezoid has bases 8 and 14 and height 5. Find its area.", "domain": "other", "source": "task_math_reasoning"}
+{"prompt": "Can you compare the benefits of meditation apps like guided breathing exercises versus just sitting in silence for stress relief?", "domain": "other", "source": "lang_english"}
+{"prompt": "What's the difference between systolic and diastolic blood pressure and why does it matter?", "domain": "other", "source": "ood_medical"}
+{"prompt": "In a lottery-style draw, 5 numbers are chosen without replacement from a pool of 50. What's the probability of matching exactly 3 of my chosen 5 numbers? Please walk through the combinatorics in detail.", "domain": "other", "source": "task_math_reasoning"}
+{"prompt": "Compare active portfolio management and passive index investing in terms of long-term net returns after fees and taxes.", "domain": "other", "source": "ood_financial"}
+{"prompt": "A jar of coins contains only nickels and quarters. There are twice as many nickels as quarters, and the total value is $9.00. Find the number of each coin, showing your system of equations.", "domain": "other", "source": "task_math_reasoning"}
+{"prompt": "Can you help me write a custom exception hierarchy for a payment processing module, with base and specific exception classes that carry useful context?", "domain": "other", "source": "code_python"}
+{"prompt": "What's the difference between a stock and a bond?", "domain": "other", "source": "ood_financial"}
+{"prompt": "List five interesting facts about ancient Rome.", "domain": "other", "source": "lang_english"}
+{"prompt": "Entre une chaudière à gaz et une pompe à chaleur, laquelle est la plus rentable sur quinze ans pour une maison individuelle ?", "domain": "other", "source": "lang_french"}
+{"prompt": "A box contains 6 defective and 14 working light bulbs. Three bulbs are selected at random without replacement. Find the probability that all three are working, and find the probability that exactly one is defective. Show all steps of the calculation.", "domain": "other", "source": "task_math_reasoning"}
+{"prompt": "Cuenta una historia muy breve sobre los agujeros negros.", "domain": "other", "source": "lang_spanish"}
+{"prompt": "Why do some old churches have gargoyles, and what were they actually for?", "domain": "other", "source": "lang_english"}
+{"prompt": "Why do I feel more tired after a long nap than if I hadn't napped at all?", "domain": "other", "source": "lang_english"}
+{"prompt": "What is 'duration' in bond investing, and why does a bond with a duration of 8 years lose more value than one with a duration of 3 years when interest rates rise by 1%?", "domain": "other", "source": "ood_financial"}
+{"prompt": "What's the trade-off between using try/except for control flow versus checking conditions upfront in Python, given the 'ask forgiveness' philosophy?", "domain": "other", "source": "code_python"}
+{"prompt": "What does the term 'bear' versus 'bull' mean when people describe an investor's outlook on the market?", "domain": "other", "source": "ood_financial"}
+{"prompt": "Comment reconnaître les signes précoces d'une carence en fer chez une personne végétarienne ?", "domain": "other", "source": "lang_french"}
+{"prompt": "Est-ce que boire du café tous les jours est mauvais pour le cœur à long terme ?", "domain": "other", "source": "lang_french"}
+{"prompt": "Can you explain how vaccines are tested before they're approved?", "domain": "other", "source": "lang_english"}
+{"prompt": "Can you write a short apology message to a friend I accidentally snapped at?", "domain": "other", "source": "lang_english"}
+{"prompt": "can you show me how to implement a basic binary search tree with insert and search methods?", "domain": "other", "source": "code_python"}
+{"prompt": "Can you explain what's wrong with this generator and why it only yields values once?\n\ndef make_gen():\n    data = [1, 2, 3]\n    gen = (x*2 for x in data)\n    return gen\n\ng = make_gen()\nfor x in g: print(x)\nfor x in g: print(x)", "domain": "other", "source": "code_python"}
+{"prompt": "Can you compare the pros and cons of fixed-rate annuities versus variable annuities for retirement income planning?", "domain": "other", "source": "ood_financial"}
+{"prompt": "What's the trade-off between using threading and multiprocessing for a CPU-bound task that crunches numbers in a tight loop?", "domain": "other", "source": "code_python"}
+{"prompt": "How do loop diuretics cause hypokalemia?", "domain": "other", "source": "ood_medical"}
+{"prompt": "I'm getting confused about mutable versus immutable types in Python. Can you explain with simple examples using a list and a string?", "domain": "other", "source": "code_python"}
+{"prompt": "Please draft a detailed email to a landlord disputing a security deposit deduction, citing standard tenant rights language without sounding confrontational.", "domain": "other", "source": "lang_english"}
+{"prompt": "¿Cuáles son las diferencias reales entre el café arábica y el robusta, tanto en sabor como en la forma en que se cultivan, y por qué el precio varía tanto entre ambos en el mercado?", "domain": "other", "source": "lang_spanish"}
+{"prompt": "Is it smarter to pay off my 6% interest student loan faster or just invest the extra cash instead?", "domain": "other", "source": "ood_financial"}
+{"prompt": "Here's an excerpt from a clinical trial report: 'The Phase III study enrolled 1,240 patients across 18 sites; the treatment arm showed a 34% reduction in relapse rate compared to placebo, with grade 3+ adverse events occurring in 12% of participants versus 7% in controls.' Summarize this for a regulatory affairs team preparing an FDA submission.", "domain": "other", "source": "task_summarization"}
+{"prompt": "Summarize this passage comparing gas and electric stoves for home cooking into a short buyer's guide: 'Gas stoves offer instant heat control favored by professional chefs, but they contribute to indoor air pollution. Electric stoves are safer and more energy-efficient but have slower temperature response.'", "domain": "other", "source": "task_summarization"}
+{"prompt": "Can you give a detailed rundown of how the Federal Reserve's interest rate decisions ripple through the broader economy, from bond yields to consumer loans?", "domain": "other", "source": "lang_english"}
+{"prompt": "Compare the risk of holding a single company's stock versus holding a broad market index fund, using a hypothetical scenario where the company loses 40% of its value in a quarter.", "domain": "other", "source": "ood_financial"}
+{"prompt": "Summarize this year's board meeting transcript into an executive brief with three sections: financial highlights, strategic initiatives, and risks flagged, keeping each section to two or three sentences.", "domain": "other", "source": "task_summarization"}
+{"prompt": "Why does drinking alcohol make some people flush red in the face?", "domain": "other", "source": "ood_medical"}
+{"prompt": "Can you explain what antibodies are and how they help the body fight infections?", "domain": "other", "source": "ood_medical"}
+{"prompt": "Can you explain the mechanism by which corticosteroids suppress the immune response and why long-term use requires tapering?", "domain": "other", "source": "ood_medical"}
+{"prompt": "Write a Python function that computes the longest common subsequence between two strings using dynamic programming, and explain the space complexity tradeoffs of the tabulation approach versus memoized recursion.", "domain": "other", "source": "code_python"}
+{"prompt": "Can you explain what the term structure of interest rates is and what an inverted yield curve typically signals?", "domain": "other", "source": "ood_financial"}
+{"prompt": "A rectangular swimming pool is 25 meters long, 12 meters wide, and has a uniform depth of 2 meters. If it takes 6 hours to fill the pool using two identical pumps running simultaneously, find the rate of each pump in cubic meters per hour, and determine how long it would take to fill the pool with only one pump.", "domain": "other", "source": "task_math_reasoning"}
+{"prompt": "Can you explain how mypy handles Union types versus Optional, and why this function's type hints are causing a type-checking error?\ndef get_value(d: dict, key: str) -> str:\n    return d.get(key)", "domain": "other", "source": "code_python"}
+{"prompt": "Can you explain the science behind why antibiotic resistance develops and what practices accelerate it the most?", "domain": "other", "source": "lang_english"}
+{"prompt": "Explain the gig economy briefly.", "domain": "other", "source": "lang_english"}
+{"prompt": "Can you give me a simple explanation of how the stock market works for someone who has never invested before?", "domain": "other", "source": "lang_english"}
+{"prompt": "Can you explain what inflation actually means and why prices seem to keep going up?", "domain": "other", "source": "lang_english"}
+{"prompt": "Write a Python script using argparse that accepts a directory path and prints the total size of all files in it, including subdirectories.", "domain": "other", "source": "code_python"}
+{"prompt": "Quelle application me recommanderais-tu pour suivre mes finances personnelles au quotidien ?", "domain": "other", "source": "lang_french"}
+{"prompt": "Ayúdame a escribir una carta de recomendación para un excompañero de trabajo.", "domain": "other", "source": "lang_spanish"}
+{"prompt": "An arithmetic sequence has a first term of 7 and a common difference of 4. Find the sum of the first 20 terms, showing the arithmetic series formula and substitution.", "domain": "other", "source": "task_math_reasoning"}
+{"prompt": "I'm fascinated by extinct languages, can you tell me about one that died out relatively recently?", "domain": "other", "source": "lang_english"}
+{"prompt": "¿Qué pasa si no duermo bien varios días?", "domain": "other", "source": "lang_spanish"}
+{"prompt": "Should I implement caching with Redis or an in-process LRU cache for a function that's called frequently within a single process?", "domain": "other", "source": "code_python"}
+{"prompt": "If I invest $3000 at 6% interest compounded annually for 5 years, what will it grow to? Please explain each year's calculation.", "domain": "other", "source": "task_math_reasoning"}
+{"prompt": "Refactor this class to use dataclasses instead of a manual __init__ and __eq__.\n\nclass Point:\n    def __init__(self, x, y):\n        self.x = x\n        self.y = y\n    def __eq__(self, other):\n        return self.x == other.x and self.y == other.y", "domain": "other", "source": "code_python"}
+{"prompt": "Define EBITDA in simple terms.", "domain": "other", "source": "ood_financial"}
+{"prompt": "A population of bacteria doubles every 3 hours. If there are initially 500 bacteria, find the population after 15 hours, showing the exponential growth formula and steps.", "domain": "other", "source": "task_math_reasoning"}
+{"prompt": "Explain the difference between conductive and sensorineural hearing loss.", "domain": "other", "source": "ood_medical"}
+{"prompt": "Give me some tips for staying awake during a long night shift without relying on too much coffee.", "domain": "other", "source": "lang_english"}
+{"prompt": "What is the difference between conductive hearing loss and sensorineural hearing loss in terms of diagnostic testing?", "domain": "other", "source": "ood_medical"}
+{"prompt": "A parabola has its vertex at (3, -4) and passes through the point (5, 8). Determine the equation of the parabola in standard form, showing the full process of finding the coefficient.", "domain": "other", "source": "task_math_reasoning"}
+{"prompt": "Optimize this brute-force subset sum function.", "domain": "other", "source": "code_python"}
+{"prompt": "Can you summarize this product review so I can decide whether to buy it? 'The vacuum works great on carpets but struggles with pet hair on hardwood floors. Battery life is decent, lasting about 40 minutes, though it takes a while to fully recharge. Overall good value for the price.'", "domain": "other", "source": "task_summarization"}
+{"prompt": "Solve the system of equations 2x + 3y = 12 and 5x - y = 7 using substitution or elimination, and verify the solution by substituting the values back into both original equations. Show every step clearly.", "domain": "other", "source": "task_math_reasoning"}
+{"prompt": "How should I interpret a chest X-ray showing bilateral hilar lymphadenopathy?", "domain": "other", "source": "ood_medical"}
+{"prompt": "A committee of 6 people is to be chosen from a group of 9 men and 7 women. What is the probability that the committee contains at least 3 women? Show the full combinatorial breakdown.", "domain": "other", "source": "task_math_reasoning"}
+{"prompt": "Ayúdame a planear un fin de semana en la playa.", "domain": "other", "source": "lang_spanish"}
+{"prompt": "In your opinion, is it better to save up and pay cash for a car or take out a low-interest loan?", "domain": "other", "source": "lang_english"}
+{"prompt": "A quadratic equation models a ball's height as h(t) = -5t^2 + 20t + 2, where h is in meters and t is in seconds. Find the maximum height and the time it occurs, showing your vertex calculation.", "domain": "other", "source": "task_math_reasoning"}
+{"prompt": "Peux-tu m'aider à écrire un petit texte pour souhaiter un joyeux anniversaire à ma grand-mère ?", "domain": "other", "source": "lang_french"}
+{"prompt": "A ladder needs to reach a window 12 feet up and the base has to be 5 feet from the wall for safety. How long does the ladder need to be? Show me the geometry.", "domain": "other", "source": "task_math_reasoning"}
+{"prompt": "What is the difference between quantitative easing and quantitative tightening, and how does each influence bond yields and overall market liquidity?", "domain": "other", "source": "ood_financial"}
+{"prompt": "Summarize the book 'Sapiens' by Yuval Noah Harari in three short paragraphs, one covering each part of human history it discusses: cognitive, agricultural, and scientific revolutions.", "domain": "other", "source": "task_summarization"}
+{"prompt": "Could you explain what 'blood pressure' numbers like 120/80 actually represent?", "domain": "other", "source": "ood_medical"}
+{"prompt": "Quelle est la différence entre un fromage au lait cru et un fromage pasteurisé sur le plan gustatif ?", "domain": "other", "source": "lang_french"}
+{"prompt": "¿Qué significa la palabra serendipia?", "domain": "other", "source": "lang_spanish"}
+{"prompt": "Could you explain the difference between conductive and sensorineural hearing loss?", "domain": "other", "source": "ood_medical"}
+{"prompt": "Could you explain the difference between an ischemic and hemorrhagic stroke in terms of presentation and initial management priorities?", "domain": "other", "source": "ood_medical"}
+{"prompt": "I'm trying to choose between a manual and automatic transmission for my next car. What are the real pros and cons these days?", "domain": "other", "source": "lang_english"}
+{"prompt": "Implement, in Python, code that finds the greatest common divisor of two integers. Add a couple of example calls.", "domain": "other", "source": "code_python"}
+{"prompt": "What's the basic idea behind how airplanes stay in the air?", "domain": "other", "source": "lang_english"}
+{"prompt": "Can you explain the significance of a reduced FEV1/FVC ratio on spirometry?", "domain": "other", "source": "ood_medical"}
+{"prompt": "Summarize this excerpt about bioluminescent deep-sea creatures for a nature documentary script: 'Many deep-sea organisms produce light through bioluminescent reactions involving luciferin and oxygen, using this glow to attract prey, communicate with mates, or startle predators in the perpetual darkness of the abyssal zone.'", "domain": "other", "source": "task_summarization"}
+{"prompt": "What does elevated CRP indicate?", "domain": "other", "source": "ood_medical"}
+{"prompt": "Can you summarize the plot of 'Crime and Punishment' in a way I could explain to a friend who's never read it?", "domain": "other", "source": "lang_english"}
+{"prompt": "What are the main philosophical arguments for and against moral relativism, and how have they evolved since the Enlightenment?", "domain": "other", "source": "lang_english"}
+{"prompt": "¿Crees que es buena idea mudarme a otra ciudad por un trabajo nuevo aunque no conozca a nadie allí?", "domain": "other", "source": "lang_spanish"}
+{"prompt": "Summarize the key findings of the Stanford Prison Experiment for someone unfamiliar with psychology, and tell me if you think it's still ethically defensible to teach.", "domain": "other", "source": "task_summarization"}
+{"prompt": "Can you explain the process of how the immune system mounts a response during an acute allergic reaction, from allergen exposure to histamine release?", "domain": "other", "source": "ood_medical"}
+{"prompt": "Given quarterly revenues of $80,000, $95,000, $110,000, and $130,000 for a small business, how would you calculate quarter-over-quarter growth rates and what might explain the trend?", "domain": "other", "source": "ood_financial"}
+{"prompt": "Write a Python function that computes the running maximum over a sliding window. Include a short comment explaining the approach.", "domain": "other", "source": "code_python"}
+{"prompt": "What is the difference between a STEMI and NSTEMI in terms of ECG findings and immediate treatment approach?", "domain": "other", "source": "ood_medical"}
+{"prompt": "What's the significance of a wide anion gap versus a normal anion gap metabolic acidosis, and how do you differentiate the causes?", "domain": "other", "source": "ood_medical"}
+{"prompt": "Can you explain the difference between weather and climate?", "domain": "other", "source": "lang_english"}
+{"prompt": "What is the difference between Type 1 and Type 2 diabetes?", "domain": "other", "source": "ood_medical"}
+{"prompt": "Quels sont les avantages comparés d'un crédit immobilier à taux fixe et d'un crédit à taux variable dans le contexte économique actuel ?", "domain": "other", "source": "lang_french"}
+{"prompt": "Two pipes can fill a tank in 6 hours and 9 hours respectively when working alone. Find how long it takes to fill the tank if both pipes work together, showing the rate addition reasoning step by step.", "domain": "other", "source": "task_math_reasoning"}
+{"prompt": "What is the difference between systematic risk and unsystematic risk, and why can diversification reduce one but not the other?", "domain": "other", "source": "ood_financial"}
+{"prompt": "Can you show me how to implement a simple event system in Python where objects can subscribe to named events and get notified when those events are triggered, similar to a lightweight pub-sub pattern? Include an example usage.", "domain": "other", "source": "code_python"}
+{"prompt": "My phone battery drains really fast, any tips to fix that?", "domain": "other", "source": "lang_english"}
+{"prompt": "Summarize the main plot points of the obscure sci-fi novel 'Roadside Picnic' for someone considering reading it.", "domain": "other", "source": "task_summarization"}
+{"prompt": "Raconte-moi une courte histoire drôle avec un chat et un aspirateur robot.", "domain": "other", "source": "lang_french"}
+{"prompt": "What is a GRAT (grantor retained annuity trust) and how is it used to transfer appreciating assets to heirs while minimizing gift tax exposure?", "domain": "other", "source": "ood_financial"}
+{"prompt": "Can you explain the basic difference between arteries and veins?", "domain": "other", "source": "ood_medical"}
+{"prompt": "Peux-tu me proposer une méthode pour apprendre à jouer aux échecs en partant de zéro ?", "domain": "other", "source": "lang_french"}
+{"prompt": "A loan of $10,000 is repaid with 8% simple interest over 2 years. Find the total repayment amount.", "domain": "other", "source": "task_math_reasoning"}
+{"prompt": "Two ramps are built to reach a platform 6 feet high: Ramp A has a length of 15 feet and Ramp B has a length of 20 feet. Find which ramp has a steeper angle of incline, showing your trigonometric calculations for both.", "domain": "other", "source": "task_math_reasoning"}
+{"prompt": "What does it mean when someone is diagnosed with idiopathic pulmonary fibrosis?", "domain": "other", "source": "ood_medical"}
+{"prompt": "What does it mean when someone says they have 'low iron' and how does that relate to feeling tired?", "domain": "other", "source": "ood_medical"}
+{"prompt": "Can you implement a trie data structure in Python for autocomplete, supporting insert, search, and a method to return all words with a given prefix?", "domain": "other", "source": "code_python"}
+{"prompt": "A clock reads 3:40. Find the angle between the hour and minute hands, showing how you calculate each hand's position separately before finding the difference.", "domain": "other", "source": "task_math_reasoning"}
+{"prompt": "A company offers two bonus structures: a flat $3,000 bonus or a 5% commission on $50,000 in sales. Which should an employee choose if they expect to hit that sales target? Show the math and give your recommendation.", "domain": "other", "source": "task_math_reasoning"}
+{"prompt": "Quelles sont les étapes à suivre pour restaurer un vieux meuble en bois abîmé ?", "domain": "other", "source": "lang_french"}
+{"prompt": "How would you condense this technical whitepaper on blockchain scalability into an executive summary for non-technical investors?", "domain": "other", "source": "task_summarization"}
+{"prompt": "Comment dire merci en japonais ?", "domain": "other", "source": "lang_french"}
+{"prompt": "A rectangular garden's length is twice its width, and its perimeter is 60 m. Find the dimensions.", "domain": "other", "source": "task_math_reasoning"}
+{"prompt": "Summarize this recipe into a quick-glance ingredient and step overview for a busy home cook: 'Preheat oven to 375°F. In a bowl, mix flour, baking soda, and salt. Cream butter and sugar until fluffy, then beat in eggs and vanilla. Gradually add dry ingredients, fold in chocolate chips, and bake for 10-12 minutes until edges are golden.'", "domain": "other", "source": "task_summarization"}
+{"prompt": "I'm sending you a long Slack thread about a production outage. Please summarize the root cause, the timeline of events, and the remediation steps taken, in a format suitable for a postmortem document.", "domain": "other", "source": "task_summarization"}
+{"prompt": "Can you explain why hyperkalemia causes characteristic EKG changes like peaked T waves and widened QRS?", "domain": "other", "source": "ood_medical"}
+{"prompt": "Break down the macroeconomic causes of the 2008 financial crisis in a way that connects mortgage-backed securities, credit default swaps, and the collapse of Lehman Brothers.", "domain": "other", "source": "lang_english"}
+{"prompt": "What does a positive troponin with a normal CK-MB suggest about timing of a myocardial infarction?", "domain": "other", "source": "ood_medical"}
+{"prompt": "Explain the difference between CAPM and the dividend discount model.", "domain": "other", "source": "ood_financial"}
+{"prompt": "An investor deposits $1,000 at the start of each year into an account earning 5% annual interest, compounded annually, for 6 years (an annuity due). Find the total value at the end of 6 years, showing the annuity-due formula and calculation steps.", "domain": "other", "source": "task_math_reasoning"}
+{"prompt": "Can you refactor this nested loop into something more Pythonic using itertools?\nresult = []\nfor i in range(len(a)):\n    for j in range(len(b)):\n        result.append((a[i], b[j]))", "domain": "other", "source": "code_python"}
+{"prompt": "Two annuity payout options are being compared for a $100,000 lottery winning: taking a lump sum of $65,000 immediately, or receiving $6,000 per year for 20 years. Assuming a 5% annual discount rate, find the present value of the annuity option and determine which payout choice is worth more, showing the present value calculation steps.", "domain": "other", "source": "task_math_reasoning"}
+{"prompt": "Summarize this long text message conversation, I lost track of what we actually decided.", "domain": "other", "source": "task_summarization"}
+{"prompt": "What's the difference between systematic risk and unsystematic risk, and why can't diversification eliminate the former?", "domain": "other", "source": "ood_financial"}
+{"prompt": "A right circular cone and a hemisphere share the same base radius of 6 cm, and the cone's height equals its diameter. Calculate the total surface area of the combined solid, showing every geometric formula used.", "domain": "other", "source": "task_math_reasoning"}
+{"prompt": "What's a polite way to tell a coworker that their strong perfume is giving me headaches during meetings?", "domain": "other", "source": "lang_english"}
+{"prompt": "I need a detailed comparison of term life insurance versus whole life insurance for a 35-year-old with two young children and a mortgage.", "domain": "other", "source": "lang_english"}
+{"prompt": "Cuenta una historia muy breve sobre la antigua Roma.", "domain": "other", "source": "lang_spanish"}
