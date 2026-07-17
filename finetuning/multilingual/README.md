@@ -44,6 +44,15 @@ base (no adapter) vs own-language LoRA vs combined LoRA. No full fine-tunes —
    Next levers: more data per language (the vLLM prep makes 8000/language cheap)
    and/or higher rank.
 
+## Rank scaling — deeper LoRA helps (r64 vs r16)
+
+Re-ran the own/combined adapters at **rank 64 (α=128)** on the same data:
+r64 > r16 on **5/5 languages**, biggest extra gains where base is weakest
+(korean 3.5% → 5.1% (r16) → **5.8%** (r64) = +66% relative; polish +61%).
+Combined r64 ≈ own r64 (still no interference). Rank was partially binding —
+more capacity (or data) likely helps further on the weak languages.
+→ `results/charts/rank_scaling.png` · results in `results/*_r64.jsonl`
+
 ## Files
 
 ```

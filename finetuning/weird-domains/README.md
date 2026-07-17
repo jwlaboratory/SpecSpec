@@ -21,14 +21,16 @@ speculator: base vs own-domain vs combined, n=100/domain, temperature 0.
 | roleplay | 8.1% | **8.5% (+0.4pp)** | 8.5% |
 | poetry | 7.0% | **7.6% (+0.7pp)** | 7.6% |
 
-**EAGLE3** — no gains (strong base + imperfectly reconstructible training view;
-see `../multilingual_eagle/README.md` for the full analysis):
+**EAGLE3 (v2, reversed-features bug fixed)** — still no gains: its base is
+2.5-4x stronger, so there is little headroom (see `../multilingual_eagle/README.md`
+for the full analysis; v1's invalid run is archived in
+`results-v1-eagle-reversed-features-bug/`):
 
 | domain | base | own | combined |
 |---|--:|--:|--:|
-| translation | 20.6% | 18.7% (−1.9pp) | 19.3% |
-| roleplay | 36.0% | 33.9% (−2.0pp) | 33.5% |
-| poetry | 33.5% | 28.9% (−4.5pp) | 31.0% |
+| translation | 20.6% | 19.2% (−1.3pp) | 17.8% |
+| roleplay | 36.0% | 33.5% (−2.5pp) | 32.7% |
+| poetry | 33.5% | 29.4% (−4.0pp) | 27.9% |
 
 → `results/charts/matrix.png`, `delta.png`
 
