@@ -1,0 +1,16 @@
+lang,variant,n,acceptance_rate_pooled,mean_accept_length,spec_tok_s
+polish,base,100,0.0911,1.2787,214.45
+polish,own,100,0.0704,1.2145,198.65
+polish,combined,100,0.0700,1.2131,200.49
+korean,base,100,0.0788,1.2399,194.99
+korean,own,100,0.0709,1.2166,202.68
+korean,combined,100,0.0649,1.1978,201.91
+italian,base,100,0.1387,1.4254,236.00
+italian,own,100,0.1188,1.3632,226.35
+italian,combined,100,0.1120,1.3412,219.34
+japanese,base,100,0.0487,1.1477,187.15
+japanese,own,100,0.0520,1.1571,189.51
+japanese,combined,100,0.0489,1.1480,189.61
+german,base,100,0.1221,1.3759,229.58
+german,own,100,0.0887,1.2751,205.37
+german,combined,100,0.0895,1.2760,214.61

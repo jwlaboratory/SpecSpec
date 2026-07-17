@@ -4,7 +4,8 @@ Domains: translation · roleplay · poetry (heterogeneous task types — a real 
 
 | domain | base accept | own accept | combined accept | base len | own len | combined len |
 |---|--:|--:|--:|--:|--:|--:|
-| translation | 2.0% | 9.5% (+7.5pp) | 9.4% (+7.5pp) | 1.30 | 2.20 (+0.90) | 2.19 (+0.89) |
-| poetry | 7.0% | 7.6% (+0.6pp) | 7.6% (+0.6pp) | 2.18 | 2.30 (+0.11) | 2.28 (+0.10) |
+| translation | 8.7% | 9.5% (+0.8pp) | 9.4% (+0.6pp) | 2.12 | 2.20 (+0.08) | 2.15 (+0.03) |
+| roleplay | 8.1% | 8.5% (+0.4pp) | 8.5% (+0.3pp) | 2.24 | 2.30 (+0.06) | 2.28 (+0.05) |
+| poetry | 7.0% | 7.6% (+0.7pp) | 7.6% (+0.6pp) | 2.18 | 2.33 (+0.14) | 2.29 (+0.11) |
 
-**own-LoRA beats base on 2/3 domains; combined beats base on 2/3.** own-vs-combined gaps indicate cross-task interference inside one adapter.
+**own-LoRA beats base on 3/3 domains; combined beats base on 3/3.** own-vs-combined gaps indicate cross-task interference inside one adapter.

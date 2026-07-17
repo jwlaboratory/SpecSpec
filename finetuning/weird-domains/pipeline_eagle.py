@@ -211,7 +211,7 @@ def _read_probe_offset():
 # --------------------------------------------------------------------------- #
 @app.function(gpu=GPU, image=image, timeout=2 * 3600, volumes=VOLS)
 def train_lora(name: str, domains: list, aux: str = "", epochs: int = 3,
-               lr: float = 1e-3, val_every: int = 100):
+               lr: float = 1e-4, val_every: int = 100):
     import os
     import random
     import shutil

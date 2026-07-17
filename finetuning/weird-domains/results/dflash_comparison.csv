@@ -1,0 +1,10 @@
+domain,variant,n,acceptance_rate_pooled,mean_accept_length
+translation,base,100,0.0873,2.1212
+translation,own,100,0.0949,2.1966
+translation,combined,100,0.0938,2.1512
+roleplay,base,100,0.0814,2.2373
+roleplay,own,100,0.0854,2.2991
+roleplay,combined,100,0.0845,2.2836
+poetry,base,100,0.0699,2.1836
+poetry,own,100,0.0764,2.3281
+poetry,combined,100,0.0762,2.2948
