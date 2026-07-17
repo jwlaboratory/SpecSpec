@@ -264,9 +264,12 @@ def train_lora(name: str, domains: list, aux: str = "", epochs: int = 3,
     step, t0 = 0, time.time()
     rng = random.Random(0)
     for ep in range(epochs):
-        order = list(range(len(train_packs)))
-        rng.shuffle(order)
-        for i in order:
+        # NOTE: named `perm`, NOT `order` — a previous version clobbered the
+        # aux-concat convention string with this shuffle list, silently training
+        # every step on REVERSED aux features (list != "std" -> rev branch).
+        perm = list(range(len(train_packs)))
+        rng.shuffle(perm)
+        for i in perm:
             loss, metrics = _ttt_forward(head, target, train_packs[i], offset, order)
             opt.zero_grad(); loss.backward()
             torch.nn.utils.clip_grad_norm_(trainable, 1.0); opt.step()

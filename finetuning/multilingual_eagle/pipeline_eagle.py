@@ -334,9 +334,12 @@ def train_lora(name: str, langs: list, aux: str = "1:std", epochs: int = 3,
     step, t0 = 0, time.time()
     rng = random.Random(0)
     for ep in range(epochs):
-        order = list(range(len(train_packs)))
-        rng.shuffle(order)
-        for i in order:
+        # NOTE: named `perm`, NOT `order` — a previous version clobbered the
+        # aux-concat convention string with this shuffle list, silently training
+        # every step on REVERSED aux features (list != "std" -> rev branch).
+        perm = list(range(len(train_packs)))
+        rng.shuffle(perm)
+        for i in perm:
             loss, metrics = _ttt_forward(head, target, train_packs[i], offset, order)
             opt.zero_grad(); loss.backward()
             torch.nn.utils.clip_grad_norm_(trainable, 1.0); opt.step()
@@ -394,7 +397,7 @@ def train_lora(name: str, langs: list, aux: str = "1:std", epochs: int = 3,
 # --------------------------------------------------------------------------- #
 @app.function(gpu=GPU, image=vllm_image, timeout=2 * 3600, volumes=VOLS)
 def bench(lang: str, variant: str, max_new_tokens: int = 256, limit: int = 100,
-          warmup: int = 2):
+          warmup: int = 2, spec_override: str = ""):
     import json
     import os
     import time
@@ -404,8 +407,8 @@ def bench(lang: str, variant: str, max_new_tokens: int = 256, limit: int = 100,
     from vllm.v1.metrics.reader import Counter
 
     assert variant in VARIANTS
-    spec_model = (EAGLE_MODEL if variant == "base"
-                  else f"{MODELS}/{lang if variant == 'own' else 'combined'}")
+    spec_model = spec_override or (EAGLE_MODEL if variant == "base"
+                                   else f"{MODELS}/{lang if variant == 'own' else 'combined'}")
     llm = LLM(model=TARGET_MODEL, dtype="bfloat16", max_model_len=2048,
               gpu_memory_utilization=0.85, disable_log_stats=False,
               speculative_config={"method": "eagle3", "model": spec_model,
@@ -430,7 +433,8 @@ def bench(lang: str, variant: str, max_new_tokens: int = 256, limit: int = 100,
         llm.generate([t], sp)
 
     os.makedirs(RESULTS, exist_ok=True)
-    out_path = f"{RESULTS}/{lang}_{variant}.jsonl"
+    suffix = "_override" if spec_override else ""
+    out_path = f"{RESULTS}/{lang}_{variant}{suffix}.jsonl"
     recs = []
     t_start = time.time()
     with open(out_path, "w") as fout:
@@ -614,6 +618,124 @@ def bench_all(bench_limit: int = 100):
 def launch_bench(bench_limit: int = 100):
     call = bench_all.spawn(bench_limit=bench_limit)
     print(f"LAUNCHED bench_all: {call.object_id}")
+
+
+@app.function(gpu=GPU, image=image, timeout=3600, volumes=VOLS)
+def verify(lang: str = "polish", aux: str = "1:std"):
+    """Error-hunt for the EAGLE fine-tune. Checks:
+    [A] merge path exactness — an UNTRAINED LoRA (delta=0) merged+saved must be
+        byte-identical to the hub weights; writes MODELS/nulltest for the null bench.
+    [B] trained-adapter delta magnitude per layer (||dW||/||W||).
+    [C] training-objective test — base vs trained adapter TTT loss on held-out
+        val packs: if the adapter IMPROVED the objective while serving degraded,
+        the objective is misaligned with serving."""
+    import os
+    import shutil
+    import sys
+
+    import torch
+
+    sys.path.insert(0, "/root")
+    from lora import LoRALinear, inject_lora
+    from huggingface_hub import snapshot_download
+    from safetensors.torch import load_file, save_file
+
+    off_s, _, order = aux.partition(":")
+    offset, order = int(off_s), (order or "std")
+    out = {}
+
+    # ---- [A] zero-adapter merge == hub weights, byte-exact ----
+    head = _load_head()
+    inject_lora(head, rank=16, alpha=32,
+                target_modules=("q_proj", "k_proj", "v_proj", "o_proj"))
+    head.to("cuda", dtype=torch.bfloat16)
+    snap = snapshot_download(EAGLE_MODEL,
+                             allow_patterns=["config.json", "eagle3.py",
+                                             "generation_config.json", "model.safetensors"])
+    base_sd = load_file(os.path.join(snap, "model.safetensors"))
+    merged = dict(base_sd)
+    for mod_name, m in head.named_modules():
+        if isinstance(m, LoRALinear):
+            key = f"{mod_name}.weight"
+            delta = m.scaling * (m.B.detach().float() @ m.A.detach().float())
+            merged[key] = (merged[key].float() + delta.cpu()).to(base_sd[key].dtype)
+    mismatches = [k for k in base_sd if not torch.equal(merged[k], base_sd[k])]
+    out["A_zero_merge_exact"] = (len(mismatches) == 0)
+    out["A_mismatched_keys"] = mismatches[:5]
+    nd = f"{MODELS}/nulltest"
+    os.makedirs(nd, exist_ok=True)
+    for fn in ("config.json", "eagle3.py", "generation_config.json"):
+        src = os.path.join(snap, fn)
+        if os.path.exists(src):
+            shutil.copy(src, os.path.join(nd, fn))
+    save_file({k: v.contiguous().cpu() for k, v in merged.items()},
+              os.path.join(nd, "model.safetensors"))
+    print(f"[verify][A] zero-merge exact: {out['A_zero_merge_exact']} "
+          f"(mismatches: {mismatches[:3]})", flush=True)
+
+    # ---- [B] trained adapter delta magnitudes ----
+    sd = torch.load(f"{MODELS}/{lang}_lora.pt", map_location="cpu")
+    mags = {}
+    for name, entry in sd.items():
+        dW = float(entry["scaling"]) * (entry["B"].float() @ entry["A"].float())
+        key = f"{name}.weight"
+        W = base_sd[key].float()
+        mags[name] = round((dW.norm() / W.norm()).item(), 5)
+    out["B_delta_over_W"] = mags
+    print(f"[verify][B] {lang} ||dW||/||W|| per layer: {mags}", flush=True)
+
+    # ---- [C] base vs trained TTT loss on held-out val ----
+    tok, target = _load_target()
+    packs = _pack(_load_prep([lang], "val"))[:6]
+
+    def val_loss(h):
+        h.eval()
+        ls = []
+        with torch.no_grad():
+            for p in packs:
+                loss, _ = _ttt_forward(h, target, p, offset, order)
+                ls.append(float(loss))
+        return round(sum(ls) / len(ls), 4)
+
+    base_head = _load_head()
+    out["C_base_val_loss"] = val_loss(base_head)
+    del base_head
+    torch.cuda.empty_cache()
+    trained = _load_head()
+    inject_lora(trained, rank=16, alpha=32,
+                target_modules=("q_proj", "k_proj", "v_proj", "o_proj"))
+    trained.to("cuda", dtype=torch.bfloat16)
+    named = dict(trained.named_modules())
+    for name, entry in sd.items():
+        m = named[name]
+        with torch.no_grad():
+            m.A.copy_(entry["A"].to(m.A.device, m.A.dtype))
+            m.B.copy_(entry["B"].to(m.B.device, m.B.dtype))
+        m.scaling = float(entry["scaling"])
+    out["C_trained_val_loss"] = val_loss(trained)
+    out["C_objective_improved"] = out["C_trained_val_loss"] < out["C_base_val_loss"]
+    print(f"[verify][C] val TTT loss base={out['C_base_val_loss']} "
+          f"trained={out['C_trained_val_loss']} improved={out['C_objective_improved']}",
+          flush=True)
+    work.commit()
+    return out
+
+
+@app.function(image=image, timeout=2 * 3600, volumes=VOLS)
+def verify_and_nullbench(lang: str = "polish", limit: int = 100):
+    """Server-side: run verify, then the null bench (zero-adapter dir through
+    vLLM must reproduce base numbers)."""
+    v = verify.remote(lang=lang)
+    print(f"[verify] {v}", flush=True)
+    nb = bench.remote(lang, "own", limit=limit, spec_override=f"{MODELS}/nulltest")
+    print(f"[nullbench] {nb}", flush=True)
+    return {"verify": v, "nullbench": nb}
+
+
+@app.local_entrypoint()
+def launch_verify(lang: str = "polish", limit: int = 100):
+    call = verify_and_nullbench.spawn(lang=lang, limit=limit)
+    print(f"LAUNCHED verify_and_nullbench: {call.object_id}")
 
 
 @app.local_entrypoint()
