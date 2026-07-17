@@ -164,7 +164,7 @@ def prep(max_new_tokens: int = 256, limit: int = 0):
 @app.function(gpu=GPU, image=image, timeout=3 * 3600, volumes=VOLS)
 def train_lora(name: str, domains: list, epochs: int = 3, lr: float = 1e-3,
                batch_size: int = 12, num_anchors: int = 48, max_seq_len: int = 512,
-               val_every: int = 200):
+               val_every: int = 200, rank: int = 16):
     import os
     import sys
     import time
@@ -182,11 +182,11 @@ def train_lora(name: str, domains: list, epochs: int = 3, lr: float = 1e-3,
     mask_token_id = draft.mask_token_id
     block_size = draft.block_size
 
-    replaced = inject_lora(draft, rank=16, alpha=32,
+    replaced = inject_lora(draft, rank=rank, alpha=2 * rank,
                            target_modules=("q_proj", "k_proj", "v_proj", "o_proj"))
     draft.to("cuda", dtype=torch.bfloat16)
     trainable = list(lora_trainable_parameters(draft))
-    print(f"[train:{name}] {len(replaced)} layers, "
+    print(f"[train:{name}] rank={rank} {len(replaced)} layers, "
           f"{sum(p.numel() for p in trainable):,} params, domains={domains}", flush=True)
 
     online = OnlineDFlashModel(
@@ -274,7 +274,8 @@ def train_lora(name: str, domains: list, epochs: int = 3, lr: float = 1e-3,
     print(f"[train:{name}] final val {log['val_final']}", flush=True)
 
     os.makedirs(MODELS, exist_ok=True)
-    path = f"{MODELS}/{name}_lora.pt"
+    sfx = f"_r{rank}" if rank != 16 else ""
+    path = f"{MODELS}/{name}{sfx}_lora.pt"
     torch.save(lora_state_dict(draft), path)
     work.commit()
     log["saved"] = path
@@ -301,7 +302,7 @@ def _load_lora_into(draft, sd):
 
 @app.function(gpu=GPU, image=image, timeout=3 * 3600, volumes=VOLS)
 def bench(domain: str, variant: str, max_new_tokens: int = 256, limit: int = 100,
-          warmup: int = 2):
+          warmup: int = 2, rank: int = 16):
     import json
     import os
     import sys
@@ -316,12 +317,13 @@ def bench(domain: str, variant: str, max_new_tokens: int = 256, limit: int = 100
     tok, target = _load_target()
     draft = _load_draft()
 
+    sfx = f"_r{rank}" if rank != 16 else ""
     if variant != "base":
         from lora import inject_lora
-        inject_lora(draft, rank=16, alpha=32,
+        inject_lora(draft, rank=rank, alpha=2 * rank,
                     target_modules=("q_proj", "k_proj", "v_proj", "o_proj"))
         draft.to("cuda", dtype=torch.bfloat16)
-        adapter = f"{MODELS}/{domain if variant == 'own' else 'combined'}_lora.pt"
+        adapter = f"{MODELS}/{domain if variant == 'own' else 'combined'}{sfx}_lora.pt"
         _load_lora_into(draft, torch.load(adapter, map_location="cuda"))
         print(f"[bench:{domain}:{variant}] loaded {adapter}", flush=True)
 
@@ -347,7 +349,7 @@ def bench(domain: str, variant: str, max_new_tokens: int = 256, limit: int = 100
     torch.cuda.synchronize()
 
     os.makedirs(RESULTS, exist_ok=True)
-    out_path = f"{RESULTS}/{domain}_{variant}.jsonl"
+    out_path = f"{RESULTS}/{domain}_{variant}{sfx}.jsonl"
     recs = []
     t_start = time.time()
     with open(out_path, "w") as fout:
@@ -479,25 +481,28 @@ def aggregate():
 # --------------------------------------------------------------------------- #
 @app.function(image=image, timeout=10 * 3600, volumes=VOLS)
 def orchestrate(epochs: int = 3, bench_limit: int = 100, skip_prep: bool = False,
-                prep_limit: int = 0):
+                prep_limit: int = 0, rank: int = 16):
     out = {}
     if not skip_prep:
         out["prep"] = prep.remote(limit=prep_limit)
         print("[orchestrate] prep done", flush=True)
 
-    jobs = {d: train_lora.spawn(d, [d], epochs=epochs) for d in DOMAINS}
-    jobs["combined"] = train_lora.spawn("combined", DOMAINS, epochs=epochs)
+    jobs = {d: train_lora.spawn(d, [d], epochs=epochs, rank=rank) for d in DOMAINS}
+    jobs["combined"] = train_lora.spawn("combined", DOMAINS, epochs=epochs, rank=rank)
     out["train"] = {name: c.get().get("val_final") for name, c in jobs.items()}
     print(f"[orchestrate] train done: {out['train']}", flush=True)
 
-    bjobs = {(d, v): bench.spawn(d, v, limit=bench_limit)
-             for d in DOMAINS for v in VARIANTS}
+    # base is rank-independent: only bench it at the default rank
+    variants = VARIANTS if rank == 16 else [v for v in VARIANTS if v != "base"]
+    bjobs = {(d, v): bench.spawn(d, v, limit=bench_limit, rank=rank)
+             for d in DOMAINS for v in variants}
     out["bench"] = {f"{d}:{v}": c.get() for (d, v), c in bjobs.items()}
     print("[orchestrate] bench done", flush=True)
 
-    agg = aggregate.remote()
-    out["report"] = agg["_report.md"]
-    print("\n" + agg["_report.md"], flush=True)
+    if rank == 16:
+        agg = aggregate.remote()
+        out["report"] = agg["_report.md"]
+        print("\n" + agg["_report.md"], flush=True)
     return out
 
 
@@ -508,10 +513,11 @@ def run(epochs: int = 3, bench_limit: int = 100, skip_prep: bool = False):
 
 
 @app.local_entrypoint()
-def launch(epochs: int = 3, bench_limit: int = 100, skip_prep: bool = False):
+def launch(epochs: int = 3, bench_limit: int = 100, skip_prep: bool = False, rank: int = 16):
     """Fire-and-forget: spawn the server-side orchestrator and exit immediately
     (use with --detach on a flaky network; client needed only ~2s)."""
-    call = orchestrate.spawn(epochs=epochs, bench_limit=bench_limit, skip_prep=skip_prep)
+    call = orchestrate.spawn(epochs=epochs, bench_limit=bench_limit,
+                             skip_prep=skip_prep, rank=rank)
     print(f"LAUNCHED orchestrate: {call.object_id}")
 
 

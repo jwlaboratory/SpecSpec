@@ -34,6 +34,22 @@ for the full analysis; v1's invalid run is archived in
 
 → `results/charts/matrix.png`, `delta.png`
 
+## Rank ladder (DFlash): 4 vs 16 vs 64
+
+| domain | base | r4 own | r4 comb | r16 own | r16 comb | r64 own | r64 comb |
+|---|--:|--:|--:|--:|--:|--:|--:|
+| translation | 8.7% | 9.2% | 9.4% | 9.5% | 9.4% | 9.4% | 9.1% |
+| roleplay | 8.1% | 8.5% | 8.3% | 8.5% | 8.5% | 8.5% | 8.4% |
+| poetry | 7.0% | 7.5% | 7.4% | 7.6% | 7.6% | 7.8% | 7.6% |
+
+Two answers: **(1) rank 4 is NOT too little** — ~130K params captures ≈90% of the
+achievable gain (the domain shift is intrinsically low-rank); **(2) no
+interference at any rank** — combined ≈ own even at rank 4, where three
+heterogeneous tasks must share the scarcest capacity. Gains saturate by r16 here
+(base 7-9%, moderate headroom), unlike the weak-base languages (3-5%) where r64
+kept paying — rank need scales with the size of the deficit.
+→ `results/charts/rank_ladder.png`
+
 ## Takeaways
 
 1. **Interference didn't materialize even here.** Combined ≈ own on DFlash

@@ -16,6 +16,8 @@ config and where its results live; superseded runs are archived, never deleted.
 | 9 | 2026-07-17 | **multilingual EAGLE v2** | as v1, shadowing FIXED (`perm` rename), lr 1e-4, aux `1:std` | own > base 1/5 — japanese (weakest base) +1.6pp; strong-base langs −0.7..−3.9pp. Headroom gradient; residual train/serve gap suspected (base TTT loss ~20) | `multilingual_eagle/results/` |
 | 10 | 2026-07-17 | **weird-domains EAGLE v2** | as v1, fixed | 0/3 (−1.3..−4.0pp) — EAGLE base 2.5-4x stronger here, no headroom | `weird-domains/results/eagle_*` |
 | 11 | 2026-07-17 | **multilingual DFlash r64** | 6× rank-64 (α=128) LoRA; base benches reused from #3 | r64 > r16 on 5/5; korean +2.3pp total (+66% rel), polish +1.9pp; combined ≈ own | `multilingual/results/*_r64*` + `charts/rank_scaling.png` |
+| 12 | 2026-07-17 | **weird-domains DFlash r64** | 4× rank-64 LoRA; base benches reused from #5 | r64 ≈ r16 (gains saturate — base 7-9% has moderate headroom, unlike weak-base languages where r64 kept paying) | `weird-domains/results/dflash_*_r64*` |
+| 13 | 2026-07-17 | **weird-domains DFlash r4** | 4× rank-4 (α8, ~130K params) LoRA — capacity-floor + interference-under-scarcity probe | own-r4 beats base 3/3 (+0.4..+0.5pp, ≈90% of r16's gain); combined-r4 ≈ own-r4 — no interference even at rank 4 | `weird-domains/results/dflash_*_r4.*` + `charts/rank_ladder.png` |
 
 Notes:
 - v1 EAGLE runs also had two REAL bugs fixed before the shadowing was found:
