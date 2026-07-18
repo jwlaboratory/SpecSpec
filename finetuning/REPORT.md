@@ -7,9 +7,11 @@ good as per-domain specialists?
 **One-line answer:** yes — LoRA specialization works reliably on the weak
 speculator (DFlash: positive on **every domain tested**), gains scale with how
 weak the base is (and with rank, exactly where the base is weakest), a single
-combined adapter always matches per-domain specialists (zero interference, even
-at rank 4), and none of it helps the already-strong speculator (EAGLE3) except on
-its weakest domain.
+combined adapter matches per-domain specialists at 3–5 domains (zero
+interference, even at rank 4) and *nearly* matches them all the way to 40
+domains (small saturating gap from N≈10, ~2/3 of specialist gains retained, no
+phase boundary), and none of it helps the already-strong speculator (EAGLE3)
+except on its weakest domain.
 
 ---
 
@@ -99,7 +101,43 @@ interference test. Full rank ladder (n=100/domain):
 
 → charts: `weird-domains/results/charts/matrix.png`, `delta.png`, `rank_ladder.png`
 
-### 2.4 EAGLE3 — the strong speculator doesn't benefit
+### 2.4 Interference at scale — the zero-interference result bends (but never breaks) by 40 domains
+
+Does "combined = specialists" survive 10/20/40 domains in one rank-16 adapter?
+Core + distractors design: 10 diverse evaluated domains (each with an own
+specialist), plus 10 / 30 extra domains that only join the combined training
+sets (comb10 ⊂ comb20 ⊂ comb40, 800 ex/domain, 3 epochs, n=100/domain):
+
+| domain | base | own | comb10 | comb20 | comb40 |
+|---|--:|--:|--:|--:|--:|
+| code_python | 20.9% | 21.5% | 21.1% | 21.3% | 21.6% |
+| code_sql | 18.0% | 18.8% | 18.4% | 18.4% | 18.5% |
+| lang_polish | 3.1% | 4.4% | 4.5% | 4.3% | 4.1% |
+| lang_korean | 3.5% | 5.1% | 5.1% | 5.0% | 4.8% |
+| lang_german | 6.8% | 7.2% | 7.0% | 7.0% | 7.0% |
+| ood_legal | 11.6% | 12.2% | 12.0% | 11.9% | 11.9% |
+| ood_medical | 13.2% | 13.6% | 13.6% | 13.5% | 13.5% |
+| task_math_reasoning | 37.6% | 39.5% | 38.8% | 38.6% | 38.5% |
+| task_summarization | 9.6% | 9.8% | 9.7% | 9.8% | 9.8% |
+| task_roleplay_chat | 8.1% | 8.5% | 8.4% | 8.4% | 8.3% |
+
+Mean combined−own gap (paired bootstrap 95% CI): **N=10: −0.21pp [−0.29,−0.13]
+· N=20: −0.27pp [−0.34,−0.20] · N=40: −0.28pp [−0.36,−0.19]** (vs ≈0 at N=3/5).
+
+- **No phase boundary through 40 domains.** Combined beats base 10/10 at every
+  N, and the gap *saturates* (20→40 costs ~0.01pp) rather than growing.
+- **But exact zero interference ends at N≈5–10**: the first statistically
+  measurable gap appears at N=10. Combined retains ~74% of the mean specialist
+  gain at N=10, ~67% at N=40.
+- **Interference lands where specialization pays most**: math_reasoning gives
+  back −1.1pp of its +2.0pp own gain at N=40, korean/polish −0.3/−0.4pp of
+  +1.6/+1.3pp; near-zero on small-gain domains (python, summarization, medical).
+  Big domain-specific shifts compete for the shared low-rank subspace; the broad
+  steering component is shared for free.
+
+→ charts: `interference/results/charts/ladder.png` (money chart), `matrix.png`, `delta.png`
+
+### 2.5 EAGLE3 — the strong speculator doesn't benefit
 
 Same data, same LoRA recipe, EAGLE3 head (v2 — after fixing a training bug, §3):
 
@@ -124,7 +162,7 @@ Same data, same LoRA recipe, EAGLE3 head (v2 — after fixing a training bug, §
 
 → charts: `multilingual_eagle/results/charts/vs_dflash.png` (the cross-speculator money chart)
 
-### 2.5 Router — MoLA's missing piece, free at serve time
+### 2.6 Router — MoLA's missing piece, free at serve time
 
 An MLP (20480→512→6) over the target's hidden states at the drafter's own
 conditioning layers — the tensors already computed during prefill, so routing
@@ -175,12 +213,15 @@ proportional to base speculator strength on that domain.*
 | ~25% (decent, templated domain) | largest absolute (+3.4pp) — low-entropy SQL is easiest to specialize | code_sql |
 | ~12–36% (strong: EAGLE3) | ≈0 to slightly negative | all EAGLE strong-base domains |
 
-**Adapters don't fight.** Combined = specialists across 3 experiments × 3 ranks,
-even for heterogeneous tasks at rank 4. Domain adaptation lives in a shared,
-low-rank "steering" subspace, not in competing task-specific circuits. The
-deployable recipe is therefore the simplest one: **one combined LoRA** (or a few,
-routed for free by the hidden-state router when domains truly differ, e.g. code
-vs prose, or for per-tenant isolation).
+**Adapters barely fight — even 40 at a time.** Combined = specialists exactly at
+3–5 domains (3 experiments × 3 ranks, heterogeneous tasks, down to rank 4). At
+10–40 domains a small interference tax appears (−0.2 to −0.3pp mean, first
+measurable at N=10) but it *saturates* instead of growing — no phase boundary —
+and it concentrates on the domains with the largest specialist gains. Domain
+adaptation lives mostly in a shared, low-rank "steering" subspace; only the
+biggest domain-specific shifts compete for capacity. The deployable recipe is
+still the simplest one: **one combined LoRA** (route per-domain only for the
+few high-gain domains the interference ladder flags, or for tenant isolation).
 
 **LoRA is the only sensible tool at this data scale.** Full fine-tuning 1B params
 on ≤2M supervised tokens matched base at best, twice. Rank 4–16 adapters (0.01–0.2%
@@ -203,6 +244,7 @@ finetuning/results/                code_sql + legal (jsonl, reports, charts)
 finetuning/multilingual/           DFlash 5-language experiment + r64 (+ rank_scaling chart)
 finetuning/multilingual_eagle/     EAGLE replication (v1 archived, v2 current, verify suite)
 finetuning/weird-domains/          both speculators + full rank ladder
+finetuning/interference/           10/20/40-domain interference ladder (core+distractors)
 router/                            hidden-state adapter router (100% acc) + serving hooks
 serving/                           shared-backbone multi-adapter serving (hot-swap + batched routing)
 ```
