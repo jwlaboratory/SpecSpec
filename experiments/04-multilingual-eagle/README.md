@@ -1,6 +1,6 @@
 # multilingual_eagle — MoLA for EAGLE3 (cross-speculator replication)
 
-The `../multilingual/` experiment (5 language LoRAs + 1 combined, base/own/combined
+The `../02-multilingual-dflash/` experiment (5 language LoRAs + 1 combined, base/own/combined
 matrix) replicated on the **EAGLE3** speculator (`RedHatAI/Qwen3-8B-speculator.eagle3`,
 1-layer autoregressive head, 3 spec tokens/step). Same training data (the DFlash
 run's target-generated answers, reused from the volume), same rank-16 LoRA on
@@ -51,14 +51,14 @@ error had to be on the training side. **v2** (below) fixes it (`perm` rename).
    merge and serve paths (both byte-exact). Definitive next step, if pursued:
    dump ground-truth aux tensors from inside vLLM's serving path and diff.
 4. **Net recommendation:** LoRA-specialize DFlash (works, and rank 64 works
-   better — see `../multilingual/`); for EAGLE3, only weak-base domains
+   better — see `../02-multilingual-dflash/`); for EAGLE3, only weak-base domains
    (japanese-like) show gains under this recipe.
 
 ## Reproduce
 
 ```bash
-modal run --detach finetuning/multilingual_eagle/pipeline_eagle.py::launch --aux "1:std"
-modal run --detach finetuning/multilingual_eagle/pipeline_eagle.py::launch_bench   # benches only
-modal run --detach finetuning/multilingual_eagle/pipeline_eagle.py::launch_verify  # diagnostics
-python3 finetuning/multilingual_eagle/make_charts.py
+modal run --detach experiments/04-multilingual-eagle/pipeline_eagle.py::launch --aux "1:std"
+modal run --detach experiments/04-multilingual-eagle/pipeline_eagle.py::launch_bench   # benches only
+modal run --detach experiments/04-multilingual-eagle/pipeline_eagle.py::launch_verify  # diagnostics
+python3 experiments/04-multilingual-eagle/make_charts.py
 ```

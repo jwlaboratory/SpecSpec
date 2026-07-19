@@ -1,4 +1,4 @@
-# finetuning — specializing the DFlash drafter per domain
+# 01 single-domain — specializing the DFlash drafter per domain
 
 Take the pretrained **DFlash block-diffusion drafter** (`z-lab/Qwen3-8B-DFlash-b16`,
 the ~1B speculator for `Qwen/Qwen3-8B`), **fine-tune it on one domain** two ways —
@@ -6,7 +6,7 @@ an unmerged **LoRA** and a **full fine-tune** — and measure whether either tra
 the target better than the untouched base drafter (higher acceptance ⇒ fewer target
 passes ⇒ more speedup).
 
-This is the counterpart to `../Benchmarking domains/`: that measures base speculators
+This is the counterpart to `../../benchmarking/`: that measures base speculators
 (DFlash / EAGLE3) *across* domains; this **trains** the drafter *on* a domain and
 compares base vs full vs LoRA.
 
@@ -30,39 +30,40 @@ weight remapping.
 ## Layout
 
 ```
-finetuning/
+experiments/01-single-domain-dflash/
 ├── pipeline.py        Modal pipeline: prep → train(lora,full) → bench(3) → aggregate
 │                       (server-side `orchestrate` + `run` entrypoint → launch detached)
-├── online_dflash.py   vendored SpecForge OnlineDFlashModel (DFlash loss engine)
-├── spec_patch.py      instrumented spec_generate (returns per-step accept lengths)
+├── train_lora.py      standalone LoRA-on-drafter trainer
+├── full_tune.py       standalone full-fine-tune trainer
 ├── make_charts.py     pretty base-vs-full-vs-LoRA charts (summary + distribution + cross-domain)
-├── LoRA/              standalone LoRA-on-drafter trainer + the LoRALinear module (lora.py)
-├── Full-Tune/         standalone full-fine-tune trainer
-├── data/<domain>/     prompts used for finetuning (train/val/test.jsonl)
 ├── models/            trained checkpoints  <domain>_lora.pt · <domain>_full.pt  (gitignored, large)
 └── results/<domain>/  per-variant jsonl · <domain>_report.md · comparison.csv · charts/
 ```
 
+Shared modules live in `../../lib/` (`lora.py` LoRALinear, `online_dflash.py`
+vendored SpecForge loss, `spec_patch.py` instrumented spec_generate); prompts in
+`../../data/downloaded/<domain>/` (train/val/test.jsonl).
+
 ## Reproduce
 
 ```bash
-# 1. get a domain's prompts into data/<domain>/ (train/val/test.jsonl of {"prompt"})
-#    e.g. via ../Benchmarking domains/WildDataGen/sources.py, then move here.
+# 1. get a domain's prompts into ../../data/downloaded/<domain>/ (train/val/test.jsonl of {"prompt"})
+#    e.g. via ../../benchmarking/wilddatagen/sources.py, then move here.
 
 # 2. run the whole thing on Modal — DETACHED so a network drop can't kill it
-modal run --detach finetuning/pipeline.py::run --domain <domain> --epochs 3
+modal run --detach experiments/01-single-domain-dflash/pipeline.py::run --domain <domain> --epochs 3
 #    results always land on the `code-sql-pipeline` volume under /results/<domain>/
 
 # 3. pull models + results back
-modal volume get code-sql-pipeline models/<domain>_lora.pt finetuning/models/
-modal volume get code-sql-pipeline models/<domain>_full.pt finetuning/models/
-modal volume get code-sql-pipeline "results/<domain>" finetuning/results/
+modal volume get code-sql-pipeline models/<domain>_lora.pt experiments/01-single-domain-dflash/models/
+modal volume get code-sql-pipeline models/<domain>_full.pt experiments/01-single-domain-dflash/models/
+modal volume get code-sql-pipeline "results/<domain>" experiments/01-single-domain-dflash/results/
 
 # 4. render charts
-python finetuning/make_charts.py <domain>
+python experiments/01-single-domain-dflash/make_charts.py <domain>
 ```
 
-Re-aggregate only (results already on the volume): `modal run finetuning/pipeline.py::agg_only --domain <domain>`.
+Re-aggregate only (results already on the volume): `modal run experiments/01-single-domain-dflash/pipeline.py::agg_only --domain <domain>`.
 
 ## Results
 

@@ -18,17 +18,17 @@ measured by acceptance rate, mean accept length, and speedup.
 ## Layout
 
 ```
-Benchmarking domains/
+benchmarking/   (datasets live in ../data/)
 ├── data/             # the datasets (shared, top-level — the actual data)
-│   ├── synthetic/<domain>/    Claude-generated prompts        (from DataGen)
-│   ├── wild/<domain>/         sorted real WildChat prompts    (WildDataGen/sort.py)
-│   └── downloaded/<domain>/   straight from HF datasets       (WildDataGen/sources.py)
+│   ├── synthetic/<domain>/    Claude-generated prompts        (from datagen)
+│   ├── wild/<domain>/         sorted real WildChat prompts    (Wilddatagen/sort.py)
+│   └── downloaded/<domain>/   straight from HF datasets       (Wilddatagen/sources.py)
 │                              …each with train.jsonl · val.jsonl · test.jsonl
-├── DataGen/          # Claude generator                 ->  ../data/synthetic
+├── datagen/          # Claude generator                 ->  ../data/synthetic
 │   ├── generate.py       Claude-based prompt-dataset generator
 │   ├── domains.py        the 51-domain registry
 │   └── README.md
-├── WildDataGen/      # real-prompt collectors
+├── Wilddatagen/      # real-prompt collectors
 │   ├── sort.py           sort WildChat into domains     ->  ../data/wild
 │   ├── sources.py        pull purpose-built HF datasets ->  ../data/downloaded
 │   ├── router.py         domain classifiers
@@ -39,7 +39,7 @@ Benchmarking domains/
 │   ├── make_charts.py      CSV -> per-run charts (PNG)
 │   ├── compare_charts.py   overlay speculators per domain (accept rate + mean len)
 │   ├── overview_chart.py   all sources × both speculators (grouped bars)
-│   └── prompts.py          legacy deterministic prompts (DataGen seed source)
+│   └── prompts.py          legacy deterministic prompts (datagen seed source)
 ├── results/          # the results data + charts
 │   ├── <method>_<source>_by_category.csv   one row per domain
 │   ├── <method>_<source>_report.md         ranked human-readable report
@@ -50,12 +50,12 @@ Benchmarking domains/
 
 ## 1 · Generate the datasets  (no GPU)
 
-See `DataGen/README.md` for the full story. Quick version:
+See `datagen/README.md` for the full story. Quick version:
 
 ```bash
 pip install -r requirements.txt
 export ANTHROPIC_API_KEY=...            # or an `ant auth login` profile
-cd DataGen
+cd datagen
 python generate.py --group all --model claude-sonnet-5 --concurrency 4
 ```
 
@@ -105,13 +105,13 @@ vLLM **nightly** is required for DFlash's `method: "dflash"` support; the Modal 
 installs it. `benchmark_vllm.py` reads `data/<source>/<domain>/test.jsonl` batched and
 reads acceptance from vLLM's spec-decode counters (`get_metrics()`).
 
-**Real-prompt controls.** Beyond `data/synthetic`, `WildDataGen/` produces two
+**Real-prompt controls.** Beyond `data/synthetic`, `Wilddatagen/` produces two
 real-prompt sets in the same layout: `data/wild` (genuine WildChat prompts, sorted
 into the domains) and `data/downloaded` (straight from purpose-built HF datasets —
 medical, legal, financial, SQL). Benchmark each source and compare per-domain
 acceptance vs synthetic — this checks whether the clean, low-perplexity synthetic
 prompts inflate acceptance or hide a speculator's failure modes. See
-`WildDataGen/README.md`.
+`Wilddatagen/README.md`.
 
 ## 3 · Read the results
 

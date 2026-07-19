@@ -2,7 +2,7 @@
 
 An MLP that reads the target model's hidden states and decides **which LoRA
 adapter to route a request to** — or none. Classes: the five multilingual DFlash
-adapters from `../finetuning/multilingual/` (polish · korean · italian · japanese
+adapters from `../experiments/02-multilingual-dflash/` (polish · korean · italian · japanese
 · german) plus **other → base drafter (no adapter)**.
 
 Built ahead of need: `../serving/` already has the *mechanism* for per-request
@@ -22,7 +22,7 @@ already in memory.
 
 Labels come for free from the dataset folders:
 
-- 5 languages × 800 train prompts (`../finetuning/multilingual/data/lang_*/`)
+- 5 languages × 800 train prompts (`../data/synthetic/lang_*/`)
 - **other**: 800 prompts sampled from 8 non-adapter domains
   (`data/other/`), with deliberate hard negatives — English/French/Spanish
   (languages *near* the adapter set), `code_python`, tasks, medical, financial.
@@ -74,4 +74,4 @@ controller.route(ids)                                   # batched per-sequence L
 - **Confidence threshold**: below max-softmax τ, fall back to base even for
   in-set classes (open-set robustness beyond the "other" class).
 - **More classes**: `code_sql` / `ood_indian_legal` adapters (from
-  `../finetuning/`) drop in by adding their folders to the class list.
+  `../experiments/`) drop in by adding their folders to the class list.

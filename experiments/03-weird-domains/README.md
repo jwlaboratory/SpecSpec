@@ -22,7 +22,7 @@ speculator: base vs own-domain vs combined, n=100/domain, temperature 0.
 | poetry | 7.0% | **7.6% (+0.7pp)** | 7.6% |
 
 **EAGLE3 (v2, reversed-features bug fixed)** — still no gains: its base is
-2.5-4x stronger, so there is little headroom (see `../multilingual_eagle/README.md`
+2.5-4x stronger, so there is little headroom (see `../04-multilingual-eagle/README.md`
 for the full analysis; v1's invalid run is archived in
 `results-v1-eagle-reversed-features-bug/`):
 
@@ -65,7 +65,7 @@ kept paying — rank need scales with the size of the deficit.
 ## Reproduce
 
 ```bash
-modal run --detach finetuning/weird-domains/pipeline_dflash.py::launch          # prep + train + bench
-modal run --detach finetuning/weird-domains/pipeline_eagle.py::launch --aux "1:std"
-python3 finetuning/weird-domains/make_charts.py
+modal run --detach experiments/03-weird-domains/pipeline_dflash.py::launch          # prep + train + bench
+modal run --detach experiments/03-weird-domains/pipeline_eagle.py::launch --aux "1:std"
+python3 experiments/03-weird-domains/make_charts.py
 ```

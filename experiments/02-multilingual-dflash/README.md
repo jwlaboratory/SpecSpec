@@ -59,7 +59,7 @@ more capacity (or data) likely helps further on the weak languages.
 pipeline_langs.py   Modal pipeline: vLLM prep (5 langs) → train 6 LoRAs (parallel)
                     → bench 5×3 matrix (parallel) → aggregate. Detached-safe.
 make_charts.py      matrix.png (5×3 grouped bars) + delta.png (gain vs base)
-data/lang_*/        the synthetic prompt sets (from Benchmarking domains/data/synthetic)
+data/lang_*/        the synthetic prompt sets (from data/synthetic)
 models/             6 trained adapters (*.pt, gitignored)
 results/            15 per-run jsonls · multilingual_report.md · comparison csv · charts/
 ```
@@ -67,9 +67,9 @@ results/            15 per-run jsonls · multilingual_report.md · comparison cs
 ## Reproduce
 
 ```bash
-modal run finetuning/multilingual/pipeline_langs.py::smoke     # validate paths
-modal run --detach finetuning/multilingual/pipeline_langs.py::run --epochs 3
-modal volume get code-sql-pipeline results/multilingual finetuning/multilingual/results/
-modal volume get code-sql-pipeline models/multilingual finetuning/multilingual/models/
-python3 finetuning/multilingual/make_charts.py
+modal run experiments/02-multilingual-dflash/pipeline_langs.py::smoke     # validate paths
+modal run --detach experiments/02-multilingual-dflash/pipeline_langs.py::run --epochs 3
+modal volume get code-sql-pipeline results/multilingual experiments/02-multilingual-dflash/results/
+modal volume get code-sql-pipeline models/multilingual experiments/02-multilingual-dflash/models/
+python3 experiments/02-multilingual-dflash/make_charts.py
 ```

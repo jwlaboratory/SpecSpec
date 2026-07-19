@@ -1,18 +1,18 @@
-# WildDataGen — real-prompt control sets
+# wilddatagen — real-prompt control sets
 
 Two collectors that produce real-human-prompt datasets in the same 51-domain layout
-as `DataGen/`, as controls for the synthetic set (`../data/synthetic/`):
+as `datagen/`, as controls for the synthetic set (`../../data/synthetic/`):
 
-- **`sort.py`** sorts genuine **WildChat** prompts into the domains → `../data/wild/`
+- **`sort.py`** sorts genuine **WildChat** prompts into the domains → `../../data/wild/`
 - **`sources.py`** pulls purpose-built **HF datasets** (medical, legal, financial,
-  SQL) straight in → `../data/downloaded/`
+  SQL) straight in → `../../data/downloaded/`
 
 Both write `<domain>/{train,val,test}.jsonl`, so `benchmark.py` reads them
 identically. They write to **separate** subtrees, so there's no ordering dependency.
 
 It exists to answer the "are the synthetic prompts representative?" question: the
-Claude-generated `DataGen` prompts are clean and low-perplexity, which can inflate
-speculative-decoding acceptance and hide the drafter's worst cases. WildDataGen is
+Claude-generated `datagen` prompts are clean and low-perplexity, which can inflate
+speculative-decoding acceptance and hide the drafter's worst cases. wilddatagen is
 the **real-human-prompt control** — run the same benchmark on it and compare
 per-domain acceptance against the synthetic set.
 
@@ -60,11 +60,11 @@ datasets** instead — no classification needed, the whole dataset *is* the doma
 
 ```bash
 python sources.py --list                 # show the registry
-python sources.py                         # fill all dedicated domains into ../data/downloaded
+python sources.py                         # fill all dedicated domains into ../../data/downloaded
 python sources.py --domains ood_medical  # just one
 ```
 
-Writes to `../data/downloaded/` (separate from `sort.py`'s `../data/wild/`), so the
+Writes to `../../data/downloaded/` (separate from `sort.py`'s `../../data/wild/`), so the
 two are independent — `data/downloaded` is the clean, purpose-built set for these
 specialised domains, `data/wild` is what WildChat happened to contain. Add more
 domains by dropping an entry in `SOURCES` (e.g. `bitext/...` for customer support,
@@ -83,14 +83,14 @@ languages (Swahili, Vietnamese) and niche code langs (Haskell, Kotlin, R) will
 come up short. Those domains get smaller control sets (splits scale down
 proportionally); the manifest records per-domain counts.
 
-## Benchmark it (same as DataGen)
+## Benchmark it (same as datagen)
 
 `benchmark.py` is source-agnostic — point it at either real subtree:
 
 ```bash
 cd ../scripts
-python benchmark.py --datagen-dir ../data/wild       --split test --run-name dflash_wild
-python benchmark.py --datagen-dir ../data/downloaded --split test --run-name dflash_downloaded
+python benchmark.py --datagen-dir ../../data/wild       --split test --run-name dflash_wild
+python benchmark.py --datagen-dir ../../data/downloaded --split test --run-name dflash_downloaded
 python aggregate.py ../results/dflash_wild.jsonl && python make_charts.py ../results/dflash_wild_by_category.csv
 ```
 
@@ -102,6 +102,6 @@ much higher, you've quantified the inflation.
 
 | File | Purpose |
 |---|---|
-| `sort.py` | stream WildChat → route → split → write → `../data/wild` |
-| `sources.py` | pull purpose-built HF datasets → `../data/downloaded` |
-| `router.py` | domain classifiers (heuristic + Claude), taxonomy from `../DataGen/domains` |
+| `sort.py` | stream WildChat → route → split → write → `../../data/wild` |
+| `sources.py` | pull purpose-built HF datasets → `../../data/downloaded` |
+| `router.py` | domain classifiers (heuristic + Claude), taxonomy from `../datagen/domains` |

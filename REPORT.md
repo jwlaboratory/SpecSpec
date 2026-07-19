@@ -244,12 +244,12 @@ greedy output in every configuration — adapters change speed, never correctnes
 ## 5. Where everything lives
 
 ```
-finetuning/EXPERIMENTS.md          run-by-run log (13 experiments, configs, verdicts)
-finetuning/results/                code_sql + legal (jsonl, reports, charts)
-finetuning/multilingual/           DFlash 5-language experiment + r64 (+ rank_scaling chart)
-finetuning/multilingual_eagle/     EAGLE replication (v1 archived, v2 current, verify suite)
-finetuning/weird-domains/          both speculators + full rank ladder
-finetuning/interference/           10/20/40-domain interference ladder (core+distractors)
+EXPERIMENTS.md          run-by-run log (13 experiments, configs, verdicts)
+experiments/01-single-domain-dflash/results/                code_sql + legal (jsonl, reports, charts)
+experiments/02-multilingual-dflash/           DFlash 5-language experiment + r64 (+ rank_scaling chart)
+experiments/04-multilingual-eagle/     EAGLE replication (v1 archived, v2 current, verify suite)
+experiments/03-weird-domains/          both speculators + full rank ladder
+experiments/05-interference-ladder/           10/20/40-domain interference ladder (core+distractors)
 router/                            hidden-state adapter router (100% acc) + serving hooks
 serving/                           shared-backbone multi-adapter serving (hot-swap + batched routing)
 ```

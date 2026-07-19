@@ -1,19 +1,19 @@
 # interference — does "one combined LoRA = specialists" survive 10/20/40 domains?
 
-`../multilingual` (5 languages) and `../weird-domains` (3 task types) showed a
+`../02-multilingual-dflash` (5 languages) and `../03-weird-domains` (3 task types) showed a
 single combined rank-16 LoRA matches per-domain specialist LoRAs — zero
 interference — at 3–5 domains, even down to rank 4. This experiment scales N to
 **10 / 20 / 40** to find the phase boundary where a fixed-capacity adapter stops
 matching specialists, or prove there isn't one.
 
-Same one-stack method as `../multilingual/pipeline_langs.py`: pretrained z-lab
+Same one-stack method as `../02-multilingual-dflash/pipeline_langs.py`: pretrained z-lab
 DFlash drafter (target Qwen3-8B frozen), self-distillation (target generates all
 answers via vLLM), SpecForge OnlineDFlashModel loss, rank-16 LoRA (α=32) on
 q/k/v/o, 3 epochs, lossless temperature-0 bench with instrumented `spec_generate`.
 
 ## Design — core + distractors
 
-40 domains from `Benchmarking domains/data/synthetic` (800 train / 100 val /
+40 domains from `data/synthetic` (800 train / 100 val /
 100 test each), in a fixed ladder order:
 
 - **core 10** (evaluated; each gets an own specialist): code_python, code_sql,
@@ -95,11 +95,11 @@ domain sets.
 ## Reproduce
 
 ```bash
-modal run finetuning/interference/pipeline.py::smoke              # validate paths
-modal run --detach finetuning/interference/pipeline.py::launch    # full run, detached
-modal volume get code-sql-pipeline results/interference finetuning/interference/results/
-modal volume get code-sql-pipeline models/interference finetuning/interference/models/
-python3 finetuning/interference/make_charts.py
+modal run experiments/05-interference-ladder/pipeline.py::smoke              # validate paths
+modal run --detach experiments/05-interference-ladder/pipeline.py::launch    # full run, detached
+modal volume get code-sql-pipeline results/interference experiments/05-interference-ladder/results/
+modal volume get code-sql-pipeline models/interference experiments/05-interference-ladder/models/
+python3 experiments/05-interference-ladder/make_charts.py
 ```
 
 ## Files
