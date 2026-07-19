@@ -13,7 +13,7 @@ like the synthetic set to check whether the drafter's per-domain behaviour on
 Claude-generated prompts holds up on genuine user prompts.
 
     cd ../scripts
-    python benchmark.py --datagen-dir ../WildDataGen/data --split test \
+    python benchmark.py --datagen-dir ../../data/wild --split test \
         --run-name dflash_wild --categories all
 
 WildChat is gated on Hugging Face — accept the terms on the dataset page and
@@ -34,12 +34,12 @@ from collections import OrderedDict
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
-DATAGEN = HERE.parent / "DataGen"
+DATAGEN = HERE.parent / "datagen"
 # Shared top-level data/ folder. Three sibling subtrees:
 #   data/synthetic/   Claude-generated (DataGen)
 #   data/wild/        sorted WildChat prompts (this script)
 #   data/downloaded/  straight from purpose-built HF datasets (sources.py)
-DATA_DIR = HERE.parent / "data" / "wild"
+DATA_DIR = HERE.parent.parent / "data" / "wild"
 
 sys.path.insert(0, str(HERE))
 sys.path.insert(0, str(DATAGEN))

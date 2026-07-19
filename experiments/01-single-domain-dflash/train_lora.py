@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """Train an UNMERGED LoRA adapter on the real Qwen3-8B DFlash drafter (A100, Modal).
 
-    modal run LoRA/train_lora.py                        # smoke: train one adapter (synthetic)
-    modal run LoRA/train_lora.py --domain python        # train the python adapter
-    modal run LoRA/train_lora.py --domain python --steps 2000
-    python LoRA/train_lora.py                            # local CPU correctness check (no GPU)
+    modal run experiments/01-single-domain-dflash/train_lora.py                        # smoke: train one adapter (synthetic)
+    modal run experiments/01-single-domain-dflash/train_lora.py --domain python        # train the python adapter
+    modal run experiments/01-single-domain-dflash/train_lora.py --domain python --steps 2000
+    python experiments/01-single-domain-dflash/train_lora.py                            # local CPU correctness check (no GPU)
 
 What this does: builds the real ~1.05B Qwen3-8B DFlash draft (real config/shape),
 injects a single LoRA on the drafter's q/k/v/o (base frozen), and trains only the
@@ -23,9 +23,9 @@ import pathlib
 
 import modal
 
-ROOT = pathlib.Path(__file__).resolve().parents[2]  # repo root (finetuning/LoRA/ -> repo)
-SPECFORGE_PKG = ROOT / "SpecForge" / "specforge"
-CONFIG = ROOT / "SpecForge" / "configs" / "qwen3-8b-dflash.json"
+ROOT = pathlib.Path(__file__).resolve().parents[2]  # repo root (experiments/01-single-domain-dflash/ -> repo)
+SPECFORGE_PKG = ROOT / "third_party" / "SpecForge" / "specforge"
+CONFIG = ROOT / "third_party" / "SpecForge" / "configs" / "qwen3-8b-dflash.json"
 LOCAL = pathlib.Path(__file__).resolve().parent
 
 app = modal.App("dflash-lora-train")
@@ -36,7 +36,7 @@ image = (
     .pip_install("torch==2.11.0", "transformers==5.8.1", "numpy")
     .add_local_dir(str(SPECFORGE_PKG), "/root/specforge")
     .add_local_file(str(CONFIG), "/root/qwen3-8b-dflash.json")
-    .add_local_file(str(LOCAL / "lora.py"), "/root/lora.py")
+    .add_local_file(str(ROOT / "lib" / "lora.py"), "/root/lora.py")
 )
 
 # trained adapters land here; serving reads them via --adapter-glob '/adapters/*.pt'
@@ -160,7 +160,7 @@ def main(domain: str = "python", steps: int = 200, rank: int = 16, alpha: int = 
 
 # --------------------------------------------------------------------------- #
 # Local CPU correctness check (no GPU / no Modal): proves the LoRA-on-drafter math
-# before spending a GPU. Run:  python LoRA/train_lora.py
+# before spending a GPU. Run:  python experiments/01-single-domain-dflash/train_lora.py
 # --------------------------------------------------------------------------- #
 def _local_check():
     import importlib.util
@@ -171,8 +171,9 @@ def _local_check():
     import torch
 
     HERE = os.path.dirname(os.path.abspath(__file__))
-    SPECFORGE = os.environ.get("SPECFORGE_ROOT", str(ROOT / "SpecForge"))
+    SPECFORGE = os.environ.get("SPECFORGE_ROOT", str(ROOT / "third_party" / "SpecForge"))
     sys.path.insert(0, HERE)
+    sys.path.insert(0, str(ROOT / "lib"))    # lora.py lives in lib/ now
 
     def stub(name, path):
         m = types.ModuleType(name); m.__path__ = [path]; m.__package__ = name

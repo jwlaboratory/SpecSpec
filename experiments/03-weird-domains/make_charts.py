@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Charts for the weird-domains experiment — both speculators side by side.
 
-    python finetuning/weird-domains/make_charts.py
+    python experiments/03-weird-domains/make_charts.py
 
 Reads results/{dflash,eagle}_{domain}_{variant}.jsonl and writes results/charts/:
     matrix.png   2 rows (DFlash, EAGLE3) x acceptance-rate bars per domain/variant

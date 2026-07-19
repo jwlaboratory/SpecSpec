@@ -32,8 +32,8 @@ from collections import OrderedDict
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
-DATAGEN = HERE.parent / "DataGen"
-DATA_DIR = HERE.parent / "data" / "downloaded"
+DATAGEN = HERE.parent / "datagen"
+DATA_DIR = HERE.parent.parent / "data" / "downloaded"
 
 sys.path.insert(0, str(HERE))
 sys.path.insert(0, str(DATAGEN))

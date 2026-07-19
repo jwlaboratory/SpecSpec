@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 """Charts for the EAGLE3 multilingual LoRA experiment.
 
-    python finetuning/multilingual_eagle/make_charts.py
+    python experiments/04-multilingual-eagle/make_charts.py
 
 Writes results/charts/:
     matrix.png          5 languages x 3 variants (acceptance + mean accept len)
     delta.png           own & combined LoRA gain over base, per language
     vs_dflash.png       cross-speculator: LoRA acceptance gain, DFlash vs EAGLE3
-                        (reads ../multilingual/results for the DFlash side)
+                        (reads ../02-multilingual-dflash/results for the DFlash side)
 """
 import json
 from pathlib import Path
@@ -18,7 +18,7 @@ import matplotlib.pyplot as plt
 
 HERE = Path(__file__).resolve().parent
 RESULTS = HERE / "results"
-DFLASH_RESULTS = HERE.parent / "multilingual" / "results"
+DFLASH_RESULTS = HERE.parent / "02-multilingual-dflash" / "results"
 LANGS = ["polish", "korean", "italian", "japanese", "german"]
 VARIANTS = ["base", "own", "combined"]
 LABEL = {"base": "base", "own": "own-language LoRA", "combined": "combined LoRA"}

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Charts for the interference-at-scale experiment.
 
-    python finetuning/interference/make_charts.py
+    python experiments/05-interference-ladder/make_charts.py
 
 Reads results/<domain>_<variant>.jsonl (variant = base|own|comb10|comb20|comb40)
 and writes:

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Rank-scaling chart: does a deeper LoRA help the DFlash drafter more?
 
-    python finetuning/multilingual/make_charts_rank.py
+    python experiments/02-multilingual-dflash/make_charts_rank.py
 
 Reads results/{lang}_{own,combined}[_r64].jsonl + base and writes
 results/charts/rank_scaling.png — base vs rank-16 vs rank-64 own-LoRA per language.

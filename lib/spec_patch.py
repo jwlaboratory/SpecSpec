@@ -1,5 +1,5 @@
 """
-Instrumented copy of DFlash's `spec_generate` (vendored into finetuning/).
+Instrumented copy of DFlash's `spec_generate` (vendored into lib/).
 
 The upstream `spec_generate` (in the z-lab model repo's dflash.py) computes per-step
 `acceptance_lengths` internally but throws them away, returning only `output_ids`.

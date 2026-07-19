@@ -15,18 +15,18 @@ combined. The prep (target-generated answers) is SHARED with the EAGLE
 weird-domains pipeline for an apples-to-apples cross-speculator comparison.
 
 Run:
-    modal run finetuning/weird-domains/pipeline_dflash.py::smoke
-    modal run --detach finetuning/weird-domains/pipeline_dflash.py::run
+    modal run experiments/03-weird-domains/pipeline_dflash.py::smoke
+    modal run --detach experiments/03-weird-domains/pipeline_dflash.py::run
 """
 import pathlib
 
 import modal
 
-LOCAL = pathlib.Path(__file__).resolve().parent            # finetuning/weird-domains/
-PARENT = LOCAL.parent                                      # finetuning/
-LORA = PARENT / "LoRA" / "lora.py"
-SPEC_PATCH = PARENT / "spec_patch.py"
-ONLINE = PARENT / "online_dflash.py"
+LOCAL = pathlib.Path(__file__).resolve().parent            # experiments/03-weird-domains/
+ROOT = LOCAL.parent.parent                                      # repo root
+LORA = ROOT / "lib" / "lora.py"
+SPEC_PATCH = ROOT / "lib" / "spec_patch.py"
+ONLINE = ROOT / "lib" / "online_dflash.py"
 DATA = LOCAL / "data"
 
 DRAFT_MODEL = "z-lab/Qwen3-8B-DFlash-b16"

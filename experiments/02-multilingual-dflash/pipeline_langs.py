@@ -18,20 +18,20 @@ Specialization is proven if own > base on every language; combined-vs-own shows
 whether one multilingual adapter can replace five specialists.
 
 Run (detached — server-side orchestration survives client drops):
-    modal run --detach finetuning/multilingual/pipeline_langs.py::run
+    modal run --detach experiments/02-multilingual-dflash/pipeline_langs.py::run
 Cheap validation first:
-    modal run finetuning/multilingual/pipeline_langs.py::smoke
+    modal run experiments/02-multilingual-dflash/pipeline_langs.py::smoke
 """
 import pathlib
 
 import modal
 
-LOCAL = pathlib.Path(__file__).resolve().parent            # finetuning/multilingual/
-PARENT = LOCAL.parent                                      # finetuning/
-LORA = PARENT / "LoRA" / "lora.py"
-SPEC_PATCH = PARENT / "spec_patch.py"
-ONLINE = PARENT / "online_dflash.py"
-DATA = LOCAL / "data"
+LOCAL = pathlib.Path(__file__).resolve().parent            # experiments/02-multilingual-dflash/
+ROOT = LOCAL.parent.parent                                 # repo root
+LORA = ROOT / "lib" / "lora.py"
+SPEC_PATCH = ROOT / "lib" / "spec_patch.py"
+ONLINE = ROOT / "lib" / "online_dflash.py"
+DATA = ROOT / "data" / "synthetic"   # lang_<l>/ dirs (identical to the old local data/ copies)
 
 DRAFT_MODEL = "z-lab/Qwen3-8B-DFlash-b16"
 TARGET_MODEL = "Qwen/Qwen3-8B"

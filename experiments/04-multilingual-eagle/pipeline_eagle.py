@@ -26,17 +26,17 @@ How this one works:
     benchmark_vllm.py), acceptance from vllm:spec_decode_* counter diffs.
 
 Run:
-    modal run finetuning/multilingual_eagle/pipeline_eagle.py::smoke
-    modal run --detach finetuning/multilingual_eagle/pipeline_eagle.py::run
+    modal run experiments/04-multilingual-eagle/pipeline_eagle.py::smoke
+    modal run --detach experiments/04-multilingual-eagle/pipeline_eagle.py::run
 """
 import pathlib
 
 import modal
 
-LOCAL = pathlib.Path(__file__).resolve().parent            # finetuning/multilingual_eagle/
-PARENT = LOCAL.parent                                      # finetuning/
-LORA = PARENT / "LoRA" / "lora.py"
-LANG_DATA = PARENT / "multilingual" / "data"               # test.jsonl prompts for bench
+LOCAL = pathlib.Path(__file__).resolve().parent            # experiments/04-multilingual-eagle/
+ROOT = LOCAL.parent.parent                                      # repo root
+LORA = ROOT / "lib" / "lora.py"
+LANG_DATA = ROOT / "data" / "synthetic"               # test.jsonl prompts for bench
 
 TARGET_MODEL = "Qwen/Qwen3-8B"
 EAGLE_MODEL = "RedHatAI/Qwen3-8B-speculator.eagle3"
@@ -596,7 +596,7 @@ def run(epochs: int = 3, bench_limit: int = 100, aux: str = ""):
 def launch(epochs: int = 3, bench_limit: int = 100, aux: str = ""):
     """Fire-and-forget: spawn the server-side orchestrator and exit immediately.
     Use with --detach on a flaky network — the client is only needed for ~2s:
-        modal run --detach finetuning/multilingual_eagle/pipeline_eagle.py::launch
+        modal run --detach experiments/04-multilingual-eagle/pipeline_eagle.py::launch
     Results land on the volume under /work/results/multilingual_eagle/ regardless;
     watch with `modal app logs <app-id>`."""
     call = orchestrate.spawn(epochs=epochs, bench_limit=bench_limit, aux=aux)

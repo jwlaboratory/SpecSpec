@@ -27,9 +27,9 @@ import pathlib
 
 import modal
 
-ROOT = pathlib.Path(__file__).resolve().parents[2]  # repo root (finetuning/Full-Tune/ -> repo)
-SPECFORGE_PKG = ROOT / "SpecForge" / "specforge"
-CONFIG = ROOT / "SpecForge" / "configs" / "qwen3-8b-dflash.json"
+ROOT = pathlib.Path(__file__).resolve().parents[2]  # repo root (experiments/01-single-domain-dflash/ -> repo)
+SPECFORGE_PKG = ROOT / "third_party" / "SpecForge" / "specforge"
+CONFIG = ROOT / "third_party" / "SpecForge" / "configs" / "qwen3-8b-dflash.json"
 
 app = modal.App("dflash-full-tune")
 GPU = "A100-80GB"  # full 1B FT: weights + grads + fp32 AdamW moments need the headroom
@@ -167,7 +167,7 @@ def _local_check():
 
     import torch
 
-    SPECFORGE = os.environ.get("SPECFORGE_ROOT", str(ROOT / "SpecForge"))
+    SPECFORGE = os.environ.get("SPECFORGE_ROOT", str(ROOT / "third_party" / "SpecForge"))
 
     def stub(name, path):
         m = types.ModuleType(name); m.__path__ = [path]; m.__package__ = name

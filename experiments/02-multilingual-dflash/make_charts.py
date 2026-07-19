@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Charts for the multilingual LoRA specialization experiment.
 
-    python finetuning/multilingual/make_charts.py
+    python experiments/02-multilingual-dflash/make_charts.py
 
 Reads results/<lang>_<variant>.jsonl (variant = base|own|combined) and writes:
 

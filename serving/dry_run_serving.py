@@ -24,7 +24,7 @@ import torch
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.abspath(os.path.join(HERE, ".."))
-SPECFORGE = os.environ.get("SPECFORGE_ROOT", os.path.join(ROOT, "SpecForge"))
+SPECFORGE = os.environ.get("SPECFORGE_ROOT", os.path.join(ROOT, "third_party", "SpecForge"))
 sys.path.insert(0, HERE)
 
 

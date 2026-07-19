@@ -8,8 +8,8 @@ __pycache__/
 .venv/
 venv/
 
-# Third-party clone (clone separately: git clone https://github.com/sgl-project/SpecForge.git)
-SpecForge/
+# Third-party clone (clone separately into third_party/: git clone https://github.com/sgl-project/SpecForge.git third_party/SpecForge)
+third_party/
 
 # Training / run artifacts
 outputs/

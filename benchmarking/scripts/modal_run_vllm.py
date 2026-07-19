@@ -24,7 +24,7 @@ TIMEOUT_S = 8 * 60 * 60
 
 _HERE = Path(__file__).resolve().parent
 _ROOT = _HERE.parent
-_DATA_ROOT = _ROOT / "data"
+_DATA_ROOT = _ROOT.parent / "data"
 _RESULTS_DIR = _ROOT / "results"
 _CONTAINER_DATA = "/root/data"
 

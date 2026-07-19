@@ -10,7 +10,7 @@ Two classifiers:
     for balanced coverage. The prompts stay real human text — only the *label*
     comes from Claude, so this does NOT reintroduce synthetic-text bias.
 
-Domain keys and the language taxonomy are imported from ../DataGen/domains so the
+Domain keys and the language taxonomy are imported from ../datagen/domains so the
 buckets line up 1:1 with the synthetic DataGen sets.
 """
 from __future__ import annotations
@@ -19,7 +19,7 @@ import re
 import sys
 from pathlib import Path
 
-_DATAGEN = Path(__file__).resolve().parent.parent / "DataGen"
+_DATAGEN = Path(__file__).resolve().parent.parent / "datagen"
 sys.path.insert(0, str(_DATAGEN))
 from domains import REGISTRY  # noqa: E402
 

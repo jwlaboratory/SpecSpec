@@ -36,7 +36,7 @@ os.environ.setdefault("VLLM_ATTENTION_BACKEND", "FLASH_ATTN")
 
 _ROOT = Path(__file__).resolve().parent.parent
 DEFAULT_OUT_DIR = _ROOT / "results"
-DEFAULT_DATA_ROOT = _ROOT / "data"
+DEFAULT_DATA_ROOT = _ROOT.parent / "data"
 
 TARGET_MODEL = "Qwen/Qwen3-8B"
 

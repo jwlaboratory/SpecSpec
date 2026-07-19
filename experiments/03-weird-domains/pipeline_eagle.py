@@ -8,15 +8,15 @@ package's canonical TTT training forward, rank-16 LoRA on the head's q/k/v/o,
 merge into speculators-format dirs, vLLM bench via spec-decode counter diffs.
 
 Run AFTER the DFlash weird pipeline's prep stage has populated /work/prep/weird:
-    modal run --detach finetuning/weird-domains/pipeline_eagle.py::launch
+    modal run --detach experiments/03-weird-domains/pipeline_eagle.py::launch
 """
 import pathlib
 
 import modal
 
-LOCAL = pathlib.Path(__file__).resolve().parent            # finetuning/weird-domains/
-PARENT = LOCAL.parent                                      # finetuning/
-LORA = PARENT / "LoRA" / "lora.py"
+LOCAL = pathlib.Path(__file__).resolve().parent            # experiments/03-weird-domains/
+ROOT = LOCAL.parent.parent                                      # repo root
+LORA = ROOT / "lib" / "lora.py"
 DATA = LOCAL / "data"
 
 TARGET_MODEL = "Qwen/Qwen3-8B"

@@ -1,18 +1,18 @@
 #!/usr/bin/env python3
 """Comparison charts for the finetuning experiments — base vs full fine-tune vs LoRA.
 
-    python finetuning/make_charts.py                 # every domain under results/
-    python finetuning/make_charts.py ood_indian_legal code_sql
+    python experiments/01-single-domain-dflash/make_charts.py                 # every domain under results/
+    python experiments/01-single-domain-dflash/make_charts.py ood_indian_legal code_sql
 
-Reads finetuning/results/<domain>/{base_dflash,full_finetune,lora}.jsonl (the raw
-per-prompt benchmark records) and writes PNGs to finetuning/results/<domain>/charts/:
+Reads experiments/01-single-domain-dflash/results/<domain>/{base_dflash,full_finetune,lora}.jsonl (the raw
+per-prompt benchmark records) and writes PNGs to experiments/01-single-domain-dflash/results/<domain>/charts/:
 
     summary.png       mean accept length · acceptance rate · speedup  (3 panels)
     distribution.png  per-prompt mean-accept-length distribution per variant
 
 and, when more than one domain has results:
 
-    finetuning/results/charts/cross_domain.png   mean accept length, domain × variant
+    experiments/01-single-domain-dflash/results/charts/cross_domain.png   mean accept length, domain × variant
 
 Design: base is the neutral reference (gray); the two trained variants use the
 CVD-safe blue/orange pair; every bar is directly labelled so identity never rests

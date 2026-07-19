@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Per-domain DFlash drafter experiment on Modal: base vs full fine-tune vs LoRA.
 
-Generalized over any domain under `Benchmarking domains/data/downloaded/<domain>/`
+Generalized over any domain under `data/downloaded/<domain>/`
 (train/val/test.jsonl of prompts). ONE drafter stack, REAL weights:
 `z-lab/Qwen3-8B-DFlash-b16` (the pretrained DFlash drafter) is loaded via AutoModel
 and used for BOTH training and benchmarking — it is architecturally identical to
@@ -33,10 +33,11 @@ import pathlib
 
 import modal
 
-LOCAL = pathlib.Path(__file__).resolve().parent          # finetuning/
-LORA = LOCAL / "LoRA" / "lora.py"
-SPEC_PATCH = LOCAL / "spec_patch.py"
-DOWNLOADED = LOCAL / "data"                              # finetuning/data/<domain>/
+LOCAL = pathlib.Path(__file__).resolve().parent          # experiments/01-single-domain-dflash/
+ROOT = LOCAL.parent.parent                               # repo root
+LORA = ROOT / "lib" / "lora.py"
+SPEC_PATCH = ROOT / "lib" / "spec_patch.py"
+DOWNLOADED = ROOT / "data" / "downloaded"                # data/downloaded/<domain>/
 
 DRAFT_MODEL = "z-lab/Qwen3-8B-DFlash-b16"
 TARGET_MODEL = "Qwen/Qwen3-8B"
@@ -49,7 +50,7 @@ image = (
     .pip_install("torch==2.9.1", "transformers==4.57.3", "accelerate>=1.0.0",
                  "datasets>=3.0.0", "numpy")
     .env({"HF_HOME": "/cache", "HF_HUB_ENABLE_HF_TRANSFER": "0"})
-    .add_local_file(str(LOCAL / "online_dflash.py"), "/root/online_dflash.py")
+    .add_local_file(str(ROOT / "lib" / "online_dflash.py"), "/root/online_dflash.py")
     .add_local_file(str(LORA), "/root/lora.py")
     .add_local_file(str(SPEC_PATCH), "/root/spec_patch.py")
     .add_local_dir(str(DOWNLOADED), "/root/downloaded")
@@ -564,7 +565,7 @@ def orchestrate(domain: str, epochs: int = 3, prep_gen_batch: int = 32,
     """SERVER-SIDE orchestration of the whole pipeline. Runs inside a (cheap, CPU)
     Modal container and drives the GPU stages, so a LOCAL network drop can't kill
     the run. Launch detached:
-        modal run --detach finetuning/pipeline.py::run --domain <domain>
+        modal run --detach experiments/01-single-domain-dflash/pipeline.py::run --domain <domain>
     """
     out = {"domain": domain}
     if not skip_prep:
@@ -591,7 +592,7 @@ def run(domain: str = "ood_indian_legal", epochs: int = 3, prep_gen_batch: int =
         bench_limit: int = 150, skip_prep: bool = False):
     """Robust launcher — orchestration happens server-side (see `orchestrate`).
     For long runs launch detached so a client/network drop can't kill it:
-        modal run --detach finetuning/pipeline.py::run --domain ood_indian_legal
+        modal run --detach experiments/01-single-domain-dflash/pipeline.py::run --domain ood_indian_legal
     Results always land on the volume under /work/results/<domain>/ regardless."""
     out = orchestrate.remote(domain, epochs=epochs, prep_gen_batch=prep_gen_batch,
                              bench_limit=bench_limit, skip_prep=skip_prep)

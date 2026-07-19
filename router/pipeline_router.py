@@ -8,7 +8,7 @@ drafter (extract_context_feature). The router consumes exactly those states,
 mean-pooled over the prompt (20480-dim), so at spec-decode time the features are
 already computed — routing is one tiny MLP forward.
 
-Classes = the five multilingual LoRAs from ../finetuning/multilingual plus
+Classes = the five multilingual LoRAs from ../experiments/02-multilingual-dflash plus
 "other" -> no adapter (base drafter). "other" is trained on diverse negatives
 (English/French/Spanish, code, tasks, medical, financial) including deliberate
 hard negatives near the adapter languages.
@@ -30,7 +30,7 @@ import modal
 
 LOCAL = pathlib.Path(__file__).resolve().parent           # router/
 REPO = LOCAL.parent
-LANG_DATA = REPO / "finetuning" / "multilingual" / "data" # lang_<l>/{train,val,test}.jsonl
+LANG_DATA = REPO / "data" / "synthetic" # lang_<l>/{train,val,test}.jsonl
 OTHER_DATA = LOCAL / "data" / "other"
 
 TARGET_MODEL = "Qwen/Qwen3-8B"

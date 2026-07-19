@@ -9,7 +9,7 @@ phase boundary where a fixed-capacity adapter stops matching specialists — or
 prove there isn't one.
 
 Design (core + distractors, so we don't need 40 specialist trains):
-  * 40 domains from `Benchmarking domains/data/synthetic` (800/100/100 splits),
+  * 40 domains from `data/synthetic` (800/100/100 splits),
     in a FIXED order. The first 10 are the CORE evaluation domains (diverse:
     2 code, 3 lang, 2 ood, 3 task, spanning weak->strong base acceptance).
   * Train 13 rank-16 LoRAs, same recipe as ../multilingual:
@@ -25,20 +25,20 @@ Design (core + distractors, so we don't need 40 specialist trains):
     protocol: combN sees N x more total steps but the same per-domain exposure.
 
 Run (detached — server-side orchestration survives client drops):
-    modal run --detach finetuning/interference/pipeline.py::launch
+    modal run --detach experiments/05-interference-ladder/pipeline.py::launch
 Cheap validation first:
-    modal run finetuning/interference/pipeline.py::smoke
+    modal run experiments/05-interference-ladder/pipeline.py::smoke
 """
 import pathlib
 
 import modal
 
-LOCAL = pathlib.Path(__file__).resolve().parent            # finetuning/interference/
-PARENT = LOCAL.parent                                      # finetuning/
-LORA = PARENT / "LoRA" / "lora.py"
-SPEC_PATCH = PARENT / "spec_patch.py"
-ONLINE = PARENT / "online_dflash.py"
-DATA = LOCAL.parent.parent / "Benchmarking domains" / "data" / "synthetic"
+LOCAL = pathlib.Path(__file__).resolve().parent            # experiments/05-interference-ladder/
+ROOT = LOCAL.parent.parent                                      # repo root
+LORA = ROOT / "lib" / "lora.py"
+SPEC_PATCH = ROOT / "lib" / "spec_patch.py"
+ONLINE = ROOT / "lib" / "online_dflash.py"
+DATA = ROOT / "data" / "synthetic"
 
 DRAFT_MODEL = "z-lab/Qwen3-8B-DFlash-b16"
 TARGET_MODEL = "Qwen/Qwen3-8B"

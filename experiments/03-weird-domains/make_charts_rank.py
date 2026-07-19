@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Rank ladder for the weird domains: base vs r4 vs r16 vs r64 own-LoRA (DFlash).
 
-    python finetuning/weird-domains/make_charts_rank.py
+    python experiments/03-weird-domains/make_charts_rank.py
 """
 import json
 from pathlib import Path
