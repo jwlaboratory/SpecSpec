@@ -134,6 +134,11 @@ Mean combined−own gap (paired bootstrap 95% CI): **N=10: −0.21pp [−0.29,�
   +1.6/+1.3pp; near-zero on small-gain domains (python, summarization, medical).
   Big domain-specific shifts compete for the shared low-rank subspace; the broad
   steering component is shared for free.
+- **Two fair framings.** As a systems decision the tax is invisible: mean
+  end-to-end speedup is base 2.21× / own 2.20× / comb40 2.16× — inside
+  container-to-container wall-clock noise (±0.05×), which doesn't even separate
+  specialists from base. As a science result it's real: the fair denominator is
+  the specialization gain itself, and the combined adapter gives back ~1/3 of it.
 
 → charts: `interference/results/charts/ladder.png` (money chart), `matrix.png`, `delta.png`
 
