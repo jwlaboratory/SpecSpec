@@ -51,7 +51,7 @@ r64 > r16 on **5/5 languages**, biggest extra gains where base is weakest
 (korean 3.5% → 5.1% (r16) → **5.8%** (r64) = +66% relative; polish +61%).
 Combined r64 ≈ own r64 (still no interference). Rank was partially binding —
 more capacity (or data) likely helps further on the weak languages.
-→ `results/charts/rank_scaling.png` · results in `results/*_r64.jsonl`
+→ rank-variant results and charts now live in `../07-rank-ladder/`
 
 ## Files
 

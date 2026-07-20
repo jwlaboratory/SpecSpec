@@ -21,16 +21,20 @@ speculator: base vs own-domain vs combined, n=100/domain, temperature 0.
 | roleplay | 8.1% | **8.5% (+0.4pp)** | 8.5% |
 | poetry | 7.0% | **7.6% (+0.7pp)** | 7.6% |
 
-**EAGLE3 (v2, reversed-features bug fixed)** — still no gains: its base is
-2.5-4x stronger, so there is little headroom (see `../04-multilingual-eagle/README.md`
-for the full analysis; v1's invalid run is archived in
-`results-v1-eagle-reversed-features-bug/`):
+**EAGLE3 (v3 — canonical shift_batch alignment; see
+`../04-multilingual-eagle/README.md` for the bug chain; v1/v2 invalid runs
+archived in `results-v1-eagle-reversed-features-bug/` and
+`results-v2-eagle-unshifted-ttt-bug/`)** — flat, as the headroom law predicts:
+EAGLE's base is 2.5–4× stronger here (21–36% acceptance), so there is little
+left to specialize. Crucially, after the v3 fix it is *flat*, not negative
+(v2's −1.3..−4.0pp regressions were the alignment bug; the same fix lifts the
+weak-base multilingual EAGLE run to 5/5 gains):
 
 | domain | base | own | combined |
 |---|--:|--:|--:|
-| translation | 20.6% | 19.2% (−1.3pp) | 17.8% |
-| roleplay | 36.0% | 33.5% (−2.5pp) | 32.7% |
-| poetry | 33.5% | 29.4% (−4.0pp) | 27.9% |
+| translation | 20.6% | 20.3% (−0.3pp) | 20.4% |
+| roleplay | 36.0% | 35.2% (−0.7pp) | 35.1% |
+| poetry | 33.5% | 33.0% (−0.5pp) | 32.9% |
 
 → `results/charts/matrix.png`, `delta.png`
 
@@ -48,7 +52,7 @@ interference at any rank** — combined ≈ own even at rank 4, where three
 heterogeneous tasks must share the scarcest capacity. Gains saturate by r16 here
 (base 7-9%, moderate headroom), unlike the weak-base languages (3-5%) where r64
 kept paying — rank need scales with the size of the deficit.
-→ `results/charts/rank_ladder.png`
+→ rank-variant results and charts now live in `../07-rank-ladder/`
 
 ## Takeaways
 
@@ -59,13 +63,14 @@ kept paying — rank need scales with the size of the deficit.
 2. **EAGLE3's base is 2.5–4× stronger on these domains** (e.g. roleplay 36.0% vs
    8.1% acceptance — noting acceptance rates aren't directly comparable across
    speculators: EAGLE proposes 3 drafts/step vs DFlash's 15; mean accept length
-   is closer, ~2.0 vs ~2.2). Specialization helps the weak speculator, not the
-   strong one.
+   is closer, ~2.0 vs ~2.2). With training correctly aligned (v3), specialization
+   is flat here — its gains live where the base is weak (DFlash everywhere,
+   EAGLE on multilingual), not on an already-strong domain.
 
 ## Reproduce
 
 ```bash
 modal run --detach experiments/03-weird-domains/pipeline_dflash.py::launch          # prep + train + bench
-modal run --detach experiments/03-weird-domains/pipeline_eagle.py::launch --aux "1:std"
+modal run --detach experiments/03-weird-domains/pipeline_eagle.py::launch --aux "0:std"
 python3 experiments/03-weird-domains/make_charts.py
 ```

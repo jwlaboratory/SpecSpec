@@ -3,9 +3,12 @@
 
 The EAGLE3 twin of ./pipeline_dflash.py, sharing its prep (target-generated
 answers at /work/prep/weird) so the two speculators train on identical data.
-Machinery mirrors ../multilingual_eagle/pipeline_eagle.py: the `speculators`
-package's canonical TTT training forward, rank-16 LoRA on the head's q/k/v/o,
-merge into speculators-format dirs, vLLM bench via spec-decode counter diffs.
+Machinery mirrors ../04-multilingual-eagle/pipeline_eagle.py: the `speculators`
+package's canonical TTT training forward with the canonical shift_batch
+alignment (embed(x_{t+1}) paired with aux_t — the serving-time pairing; v2
+trained unshifted, a train/serve mismatch), doc-masked target passes, rank-16
+LoRA on the head's q/k/v/o, merge into speculators-format dirs, vLLM bench via
+spec-decode counter diffs.
 
 Run AFTER the DFlash weird pipeline's prep stage has populated /work/prep/weird:
     modal run --detach experiments/03-weird-domains/pipeline_eagle.py::launch
@@ -160,40 +163,102 @@ def _pack(records, pack_len=PACK_LEN):
     return packs
 
 
-def _target_states(target, input_ids, offset, order="std"):
+def _doc_positions_and_mask(document_ids):
+    """Per-document 0-based position_ids [1,T] and a block-causal additive
+    attention mask [1,1,T,T] that keeps each packed document independent —
+    matching serving, where every prompt is its own sequence."""
+    import torch
+    doc = document_ids[0].to("cuda")
+    T = doc.shape[0]
+    idx = torch.arange(T, device="cuda")
+    starts = torch.cat([torch.zeros(1, dtype=torch.long, device="cuda"),
+                        (doc[1:] != doc[:-1]).nonzero(as_tuple=True)[0] + 1])
+    doc_start = starts[torch.searchsorted(starts, idx, right=True) - 1]
+    pos = (idx - doc_start).unsqueeze(0)
+    allowed = (doc.unsqueeze(1) == doc.unsqueeze(0)) & (idx.unsqueeze(1) >= idx.unsqueeze(0))
+    mask = torch.zeros(T, T, dtype=torch.bfloat16, device="cuda")
+    mask.masked_fill_(~allowed, torch.finfo(torch.bfloat16).min)
+    return pos, mask.unsqueeze(0).unsqueeze(0)
+
+
+def _target_states(target, input_ids, document_ids, offset, order="std"):
+    """One doc-masked target pass -> (aux concat [1,T,3H], last hidden [1,T,H]).
+    offset maps aux id v -> HF hidden_states[v + offset]; vLLM serving captures
+    hidden_states[v] (offset 0)."""
     import torch
     with torch.no_grad():
-        pos = torch.arange(input_ids.shape[1], device="cuda").unsqueeze(0)
-        hs = target(input_ids=input_ids, position_ids=pos, use_cache=False,
-                    output_hidden_states=True).hidden_states
+        pos, attn = _doc_positions_and_mask(document_ids)
+        hs = target(input_ids=input_ids, position_ids=pos, attention_mask=attn,
+                    use_cache=False, output_hidden_states=True).hidden_states
         layers = list(AUX_LAYERS) if order == "std" else list(AUX_LAYERS)[::-1]
         aux = torch.cat([hs[i + offset] for i in layers], dim=-1).clone()
         return aux, hs[-1].clone()
 
 
+def _shift_pack(pack, aux, last_h, pack_len=PACK_LEN):
+    """Canonical EAGLE3 alignment (speculators eagle3/data.py::shift_batch),
+    applied per packed document: the head pairs embed(x_{t+1}) with aux_t and
+    is supervised by the verifier's distribution at t+1 (predicting x_{t+2}) —
+    exactly the serving-time pairing. Each document drops one slot; the row is
+    re-padded to pack_len as an isolated loss_mask=0 document so the flex
+    block mask keeps its exact size."""
+    import torch
+    docs_cpu = pack["document_ids"][0]
+    ids = pack["input_ids"][0].to("cuda")
+    docs = docs_cpu.to("cuda")
+    mask = pack["loss_mask"][0].to("cuda")
+    T = ids.shape[0]
+    bounds = [0] + [t for t in range(1, T) if docs_cpu[t] != docs_cpu[t - 1]] + [T]
+    s_ids, s_docs, s_mask, s_pos, s_aux, s_last = [], [], [], [], [], []
+    for s, e in zip(bounds[:-1], bounds[1:]):
+        if e - s < 2:
+            continue
+        s_ids.append(ids[s + 1:e])
+        s_docs.append(docs[s + 1:e])
+        s_mask.append(mask[s + 1:e])
+        s_pos.append(torch.arange(1, e - s, dtype=torch.long, device="cuda"))
+        s_aux.append(aux[0, s:e - 1])
+        s_last.append(last_h[0, s + 1:e])
+    ids2, docs2, mask2 = torch.cat(s_ids), torch.cat(s_docs), torch.cat(s_mask)
+    pos2, aux2, last2 = torch.cat(s_pos), torch.cat(s_aux), torch.cat(s_last)
+    pad = pack_len - ids2.shape[0]
+    if pad > 0:
+        pad_doc = int(docs2.max().item()) + 1
+        ids2 = torch.cat([ids2, ids2.new_zeros(pad)])
+        docs2 = torch.cat([docs2, docs2.new_full((pad,), pad_doc)])
+        mask2 = torch.cat([mask2, mask2.new_zeros(pad)])
+        pos2 = torch.cat([pos2, pos2.new_ones(pad)])
+        aux2 = torch.cat([aux2, aux2.new_zeros(pad, aux2.shape[-1])])
+        last2 = torch.cat([last2, last2.new_zeros(pad, last2.shape[-1])])
+    return (ids2.unsqueeze(0), docs2.unsqueeze(0), mask2.unsqueeze(0),
+            pos2.unsqueeze(0), aux2.unsqueeze(0), last2.unsqueeze(0))
+
+
 def _ttt_forward(head, target, pack, offset, order="std"):
     input_ids = pack["input_ids"].to("cuda")
-    aux, last_h = _target_states(target, input_ids, offset, order)
+    aux, last_h = _target_states(target, input_ids, pack["document_ids"], offset, order)
+    ids2, docs2, mask2, pos2, aux2, last2 = _shift_pack(pack, aux, last_h)
     _, loss, metrics = head(
-        hidden_states=aux,
-        input_ids=input_ids,
-        document_ids=pack["document_ids"].to("cuda"),
-        loss_mask=pack["loss_mask"].to("cuda"),
-        verifier_last_hidden_states=last_h,
+        hidden_states=aux2,
+        input_ids=ids2,
+        document_ids=docs2,
+        loss_mask=mask2,
+        verifier_last_hidden_states=last2,
+        position_ids=pos2,
         ttt_steps=TTT_STEPS,
     )
     return loss, metrics
 
 
 def _metric_acc(metrics):
-    for k in sorted(metrics):
-        lk = k.lower()
-        if "acc" in lk or "top1" in lk or "correct" in lk:
-            try:
-                return float(metrics[k])
-            except Exception:
-                continue
-    return None
+    """Step-0 top-1 accuracy vs the verifier's argmax (masked positions):
+    full_acc_0_sum / full_acc_0_total. Directly comparable to serving
+    position-1 acceptance at temperature 0."""
+    try:
+        total = float(metrics["full_acc_0_total"])
+        return float(metrics["full_acc_0_sum"]) / total if total else None
+    except (KeyError, TypeError):
+        return None
 
 
 def _read_probe_offset():
@@ -203,7 +268,7 @@ def _read_probe_offset():
         with open("/work/results/eagle_probe.json") as f:
             return str(json.load(f)["best"])
     except Exception:
-        return "1"
+        return "0"
 
 
 # --------------------------------------------------------------------------- #

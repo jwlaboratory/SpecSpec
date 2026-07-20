@@ -6,7 +6,7 @@ an unmerged **LoRA** and a **full fine-tune** — and measure whether either tra
 the target better than the untouched base drafter (higher acceptance ⇒ fewer target
 passes ⇒ more speedup).
 
-This is the counterpart to `../../benchmarking/`: that measures base speculators
+This is the counterpart to `../00-base-benchmarks/`: that measures base speculators
 (DFlash / EAGLE3) *across* domains; this **trains** the drafter *on* a domain and
 compares base vs full vs LoRA.
 
@@ -48,7 +48,7 @@ vendored SpecForge loss, `spec_patch.py` instrumented spec_generate); prompts in
 
 ```bash
 # 1. get a domain's prompts into ../../data/downloaded/<domain>/ (train/val/test.jsonl of {"prompt"})
-#    e.g. via ../../benchmarking/wilddatagen/sources.py, then move here.
+#    e.g. via ../00-base-benchmarks/wilddatagen/sources.py, then move here.
 
 # 2. run the whole thing on Modal — DETACHED so a network drop can't kill it
 modal run --detach experiments/01-single-domain-dflash/pipeline.py::run --domain <domain> --epochs 3

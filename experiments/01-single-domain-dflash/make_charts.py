@@ -79,6 +79,22 @@ def _style(ax):
     ax.set_axisbelow(True)
 
 
+def _rel(d, base):
+    """Relative change vs base, e.g. '(+2.1%)'. Empty when there is no base."""
+    if not base:
+        return ""
+    r = 100.0 * d / base
+    return f"({r:+.0f}%)" if abs(r) >= 9.95 else f"({r:+.1f}%)"
+
+
+def _label2(ax, x, y, main, rel, fs=9.0):
+    ax.annotate(main, (x, y), xytext=(0, 2), textcoords="offset points",
+                ha="center", va="bottom", fontsize=fs, color=INK, fontweight="bold")
+    if rel:
+        ax.annotate(rel, (x, y), xytext=(0, fs + 5), textcoords="offset points",
+                    ha="center", va="bottom", fontsize=fs - 1.8, color=MUTED)
+
+
 def _rounded_bars(ax, xs, heights, colors, width, top):
     """Flat bars with softly rounded top corners, 2px surface gap via width<step."""
     pad = top * 0.006
@@ -97,12 +113,13 @@ def _panel(ax, title, present, vals, fmt):
                   [COLOR[v] for v in present], 0.60, top)
     ax.set_xticks(xs)
     ax.set_xticklabels([LABEL[v] for v in present])
-    ax.set_ylim(0, top * 1.20)
+    ax.set_ylim(0, top * 1.30)
     ax.set_xlim(-0.6, len(present) - 0.4)
     _style(ax)
+    base = vals.get("base_dflash", 0.0)
     for x, v in zip(xs, present):
-        ax.text(x, vals[v] + top * 0.03, fmt.format(vals[v]), ha="center",
-                va="bottom", fontsize=11, color=INK, fontweight="bold")
+        rel = "" if v == "base_dflash" else _rel(vals[v] - base, base)
+        _label2(ax, x, vals[v], fmt.format(vals[v]), rel, fs=11)
     ax.set_title(title, color=INK2, fontsize=10.5, pad=10, loc="left")
 
 
@@ -166,15 +183,19 @@ def cross_domain_fig(domains_data, out):
     xs = range(len(doms))
     w = 0.8 / len(present)
     fig, ax = plt.subplots(figsize=(2.4 + 2.2 * len(doms), 4.4))
+    bases = {d: metrics(domains_data[d]["base_dflash"])["mean_len"]
+             if "base_dflash" in domains_data[d] else 0.0 for d in doms}
     for i, v in enumerate(present):
         heights = [metrics(domains_data[d][v])["mean_len"] for d in doms]
         offs = [x + (i - (len(present) - 1) / 2) * w for x in xs]
         ax.bar(offs, heights, width=w * 0.86, color=COLOR[v], label=LABEL[v], zorder=3)
-        for x, h in zip(offs, heights):
-            ax.text(x, h + 0.05, f"{h:.2f}", ha="center", va="bottom",
-                    fontsize=8.5, color=INK, fontweight="bold")
+        for x, h, d in zip(offs, heights, doms):
+            rel = "" if v == "base_dflash" else _rel(h - bases[d], bases[d])
+            _label2(ax, x, h, f"{h:.2f}", rel, fs=8.5)
     ax.set_xticks(list(xs))
     ax.set_xticklabels(doms)
+    top = max(metrics(domains_data[d][v])["mean_len"] for d in doms for v in present)
+    ax.set_ylim(0, top * 1.26)
     _style(ax)
     ax.set_ylabel("mean accept length  (tokens / target pass)", color=INK2, fontsize=10)
     ax.set_title("Mean accept length by domain  ·  base vs full fine-tune vs LoRA",

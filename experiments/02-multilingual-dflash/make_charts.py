@@ -7,6 +7,8 @@ Reads results/<lang>_<variant>.jsonl (variant = base|own|combined) and writes:
 
     results/charts/matrix.png       5 languages x 3 variants — acceptance + mean len
     results/charts/delta.png        own & combined LoRA gain over base, per language
+    results/charts/delta_len.png    same, but raw Δ mean accept length (tokens)
+    results/charts/len_abs.png      absolute mean accept length — base vs own vs combined
 
 base = untouched pretrained drafter (gray) · own = LoRA trained on that language
 only (orange) · combined = one LoRA trained on all five languages (blue).
@@ -66,6 +68,24 @@ def _style(ax):
     ax.set_axisbelow(True)
 
 
+def _rel(d, base):
+    """Relative change vs base, e.g. '(+2.1%)'. Empty when there is no base."""
+    if not base:
+        return ""
+    r = 100.0 * d / base
+    return f"({r:+.0f}%)" if abs(r) >= 9.95 else f"({r:+.1f}%)"
+
+
+def _label2(ax, x, y, main, rel, up=True, fs=9.0):
+    va = "bottom" if up else "top"
+    s = 1 if up else -1
+    ax.annotate(main, (x, y), xytext=(0, s * 2), textcoords="offset points",
+                ha="center", va=va, fontsize=fs, color=INK, fontweight="bold")
+    if rel:
+        ax.annotate(rel, (x, y), xytext=(0, s * (fs + 5)), textcoords="offset points",
+                    ha="center", va=va, fontsize=fs - 1.8, color=MUTED)
+
+
 def _grouped(ax, rows, key, fmt, title):
     xs = range(len(LANGS))
     w = 0.8 / len(VARIANTS)
@@ -75,13 +95,14 @@ def _grouped(ax, rows, key, fmt, title):
         hs = [rows.get((lang, v), {}).get(key, 0.0) for lang in LANGS]
         ax.bar(offs, hs, width=w * 0.86, color=COLOR[v], zorder=3,
                label=LABEL[v])
-        for x, h in zip(offs, hs):
+        for x, h, lang in zip(offs, hs, LANGS):
             if h:
-                ax.text(x, h + top * 0.015, fmt.format(h), ha="center", va="bottom",
-                        fontsize=8.5, color=INK, fontweight="bold")
+                base = rows.get((lang, "base"), {}).get(key, 0.0)
+                rel = "" if v == "base" else _rel(h - base, base)
+                _label2(ax, x, h, fmt.format(h), rel, fs=8.5)
     ax.set_xticks(list(xs))
     ax.set_xticklabels([l.capitalize() for l in LANGS])
-    ax.set_ylim(0, top * 1.18)
+    ax.set_ylim(0, top * 1.26)
     _style(ax)
     ax.set_title(title, color=INK2, fontsize=11, loc="left", pad=10)
 
@@ -106,32 +127,43 @@ def matrix_fig(rows, out):
     plt.close(fig)
 
 
-def delta_fig(rows, out):
+def delta_fig(rows, out, key="accept", fmt="{:+.1f}",
+              ylabel="Δ acceptance rate vs base  (pp)",
+              title="LoRA gain over the base drafter, per language"):
     fig, ax = plt.subplots(figsize=(10.5, 4.4))
     xs = range(len(LANGS))
     w = 0.36
     top, bot = 0.0, 0.0
     for i, v in enumerate(("own", "combined")):
         offs = [x + (i - 0.5) * w for x in xs]
-        ds = [rows.get((lang, v), {}).get("accept", 0.0)
-              - rows.get((lang, "base"), {}).get("accept", 0.0) for lang in LANGS]
+        bases = [rows.get((lang, "base"), {}).get(key, 0.0) for lang in LANGS]
+        ds = [rows.get((lang, v), {}).get(key, 0.0) - b
+              for lang, b in zip(LANGS, bases)]
         top = max(top, max(ds)); bot = min(bot, min(ds))
         ax.bar(offs, ds, width=w * 0.88, color=COLOR[v], zorder=3, label=LABEL[v])
-        for x, d in zip(offs, ds):
-            ax.text(x, d + (0.08 if d >= 0 else -0.08),
-                    f"{'+' if d >= 0 else ''}{d:.1f}", ha="center",
-                    va="bottom" if d >= 0 else "top",
-                    fontsize=9, color=INK, fontweight="bold")
+        for x, d, b in zip(offs, ds, bases):
+            _label2(ax, x, d, fmt.format(d), _rel(d, b), up=d >= 0)
     ax.axhline(0, color=AXIS, lw=1.2, zorder=2)
     ax.set_xticks(list(xs))
     ax.set_xticklabels([l.capitalize() for l in LANGS])
     span = (top - bot) or 1.0
-    ax.set_ylim(bot - span * 0.25, top + span * 0.25)
+    ax.set_ylim(bot - span * 0.35, top + span * 0.35)
     _style(ax)
-    ax.set_ylabel("Δ acceptance rate vs base  (pp)", color=INK2, fontsize=10)
-    ax.set_title("LoRA gain over the base drafter, per language",
-                 color=INK, fontsize=12.5, fontweight="bold", loc="left", pad=10)
+    ax.set_ylabel(ylabel, color=INK2, fontsize=10)
+    ax.set_title(title, color=INK, fontsize=12.5, fontweight="bold", loc="left", pad=10)
     leg = ax.legend(frameon=False, fontsize=10, loc="best")
+    for t in leg.get_texts():
+        t.set_color(INK2)
+    fig.tight_layout()
+    fig.savefig(out, dpi=200, bbox_inches="tight")
+    plt.close(fig)
+
+
+def len_abs_fig(rows, out):
+    fig, ax = plt.subplots(figsize=(10.5, 4.4))
+    _grouped(ax, rows, "mean_len", "{:.2f}",
+             "Mean accept length  (tokens / target pass)  ·  base vs own vs combined")
+    leg = ax.legend(frameon=False, fontsize=10, loc="upper right", ncol=3)
     for t in leg.get_texts():
         t.set_color(INK2)
     fig.tight_layout()
@@ -147,7 +179,11 @@ def main():
     cdir.mkdir(parents=True, exist_ok=True)
     matrix_fig(rows, cdir / "matrix.png")
     delta_fig(rows, cdir / "delta.png")
-    print(f"[ok] -> {cdir}/matrix.png, delta.png")
+    delta_fig(rows, cdir / "delta_len.png", key="mean_len", fmt="{:+.3f}",
+              ylabel="Δ mean accept length vs base  (tokens / target pass)",
+              title="LoRA gain in mean accept length over the base drafter, per language")
+    len_abs_fig(rows, cdir / "len_abs.png")
+    print(f"[ok] -> {cdir}/matrix.png, delta.png, delta_len.png, len_abs.png")
 
 
 if __name__ == "__main__":

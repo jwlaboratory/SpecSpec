@@ -1,0 +1,16 @@
+domain,variant,n,acceptance_rate_pooled,mean_accept_length,speedup,exact_match_rate
+code_sql,base,100,0.5001,3.0426,0.7203,0.3100
+code_sql,own,100,0.5550,3.2945,0.6351,0.3100
+code_sql,combined,100,0.5467,3.2582,0.6223,0.3100
+lang_polish,base,100,0.3554,2.4428,0.5815,0.1200
+lang_polish,own,100,0.3966,2.6147,0.5002,0.1200
+lang_polish,combined,100,0.3825,2.5630,0.4981,0.1200
+lang_korean,base,100,0.3732,2.5114,0.5987,0.1600
+lang_korean,own,100,0.4088,2.6513,0.5087,0.1600
+lang_korean,combined,100,0.3818,2.5444,0.4901,0.1600
+ood_legal,base,100,0.4178,2.6961,0.6451,0.1000
+ood_legal,own,100,0.4695,2.9183,0.5579,0.1000
+ood_legal,combined,100,0.4243,2.7191,0.5178,0.1000
+task_math_reasoning,base,100,0.7734,4.1185,0.9714,0.4200
+task_math_reasoning,own,100,0.7994,4.2369,0.8013,0.4200
+task_math_reasoning,combined,100,0.7808,4.1513,0.7909,0.4200

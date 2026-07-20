@@ -18,7 +18,12 @@ How this one works:
   * data  — packed rows (input_ids + document_ids + loss_mask), REUSING the
     DFlash multilingual prep (target-generated token ids) from the volume:
     perfectly apples-to-apples across speculators. Target aux/last hidden
-    states are computed live per step.
+    states are computed live per step with a document-aware attention mask
+    (packed docs stay independent, as at serving), then the canonical
+    shift_batch alignment is applied per document: embed(x_{t+1}) pairs with
+    aux_t, supervised by the verifier distribution at t+1 — the serving-time
+    pairing. v2 trained UNSHIFTED (embed(x_t) with aux_t), a train/serve
+    mismatch that explained the across-the-board acceptance regressions.
   * LoRA  — rank-16 on the head's q/k/v/o (q/k/v consume the 8192-dim
     [embed ; fused-hidden] concat). For benching, each adapter is MERGED into
     the head (identical math) and saved as a speculators-format dir.
@@ -195,45 +200,108 @@ def _pack(records, pack_len=PACK_LEN):
     return packs
 
 
-def _target_states(target, input_ids, offset, order="std"):
-    """One target pass -> (aux concat at AUX_LAYERS [1,T,3H], last hidden [1,T,H]).
-    order: "std" = [2,18,33] concat order, "rev" = reversed (probe candidate)."""
+def _doc_positions_and_mask(document_ids):
+    """Per-document 0-based position_ids [1,T] and a block-causal additive
+    attention mask [1,1,T,T] that keeps each packed document independent —
+    matching serving, where every prompt is its own sequence. Without this the
+    target pass lets later documents attend to earlier ones (features the head
+    never sees at serve time)."""
+    import torch
+    doc = document_ids[0].to("cuda")
+    T = doc.shape[0]
+    idx = torch.arange(T, device="cuda")
+    starts = torch.cat([torch.zeros(1, dtype=torch.long, device="cuda"),
+                        (doc[1:] != doc[:-1]).nonzero(as_tuple=True)[0] + 1])
+    doc_start = starts[torch.searchsorted(starts, idx, right=True) - 1]
+    pos = (idx - doc_start).unsqueeze(0)
+    allowed = (doc.unsqueeze(1) == doc.unsqueeze(0)) & (idx.unsqueeze(1) >= idx.unsqueeze(0))
+    mask = torch.zeros(T, T, dtype=torch.bfloat16, device="cuda")
+    mask.masked_fill_(~allowed, torch.finfo(torch.bfloat16).min)
+    return pos, mask.unsqueeze(0).unsqueeze(0)
+
+
+def _target_states(target, input_ids, document_ids, offset, order="std"):
+    """One doc-masked target pass -> (aux concat at AUX_LAYERS [1,T,3H],
+    last hidden [1,T,H]). offset maps aux id v -> HF hidden_states[v + offset];
+    vLLM serving captures hidden_states[v] (offset 0). order: "std" = [2,18,33]
+    concat order, "rev" = reversed (probe candidate)."""
     import torch
     with torch.no_grad():
-        pos = torch.arange(input_ids.shape[1], device="cuda").unsqueeze(0)
-        hs = target(input_ids=input_ids, position_ids=pos, use_cache=False,
-                    output_hidden_states=True).hidden_states
+        pos, attn = _doc_positions_and_mask(document_ids)
+        hs = target(input_ids=input_ids, position_ids=pos, attention_mask=attn,
+                    use_cache=False, output_hidden_states=True).hidden_states
         layers = list(AUX_LAYERS) if order == "std" else list(AUX_LAYERS)[::-1]
         aux = torch.cat([hs[i + offset] for i in layers], dim=-1).clone()
         return aux, hs[-1].clone()
 
 
+def _shift_pack(pack, aux, last_h, pack_len=PACK_LEN):
+    """Canonical EAGLE3 alignment (speculators eagle3/data.py::shift_batch),
+    applied per packed document: the head pairs embed(x_{t+1}) with aux_t and
+    is supervised by the verifier's distribution at t+1 (predicting x_{t+2}) —
+    exactly the serving-time pairing. Each document drops one slot; the row is
+    re-padded to pack_len as an isolated loss_mask=0 document so the flex
+    block mask keeps its exact size."""
+    import torch
+    docs_cpu = pack["document_ids"][0]
+    ids = pack["input_ids"][0].to("cuda")
+    docs = docs_cpu.to("cuda")
+    mask = pack["loss_mask"][0].to("cuda")
+    T = ids.shape[0]
+    bounds = [0] + [t for t in range(1, T) if docs_cpu[t] != docs_cpu[t - 1]] + [T]
+    s_ids, s_docs, s_mask, s_pos, s_aux, s_last = [], [], [], [], [], []
+    for s, e in zip(bounds[:-1], bounds[1:]):
+        if e - s < 2:
+            continue
+        s_ids.append(ids[s + 1:e])
+        s_docs.append(docs[s + 1:e])
+        s_mask.append(mask[s + 1:e])
+        s_pos.append(torch.arange(1, e - s, dtype=torch.long, device="cuda"))
+        s_aux.append(aux[0, s:e - 1])
+        s_last.append(last_h[0, s + 1:e])
+    ids2, docs2, mask2 = torch.cat(s_ids), torch.cat(s_docs), torch.cat(s_mask)
+    pos2, aux2, last2 = torch.cat(s_pos), torch.cat(s_aux), torch.cat(s_last)
+    pad = pack_len - ids2.shape[0]
+    if pad > 0:
+        pad_doc = int(docs2.max().item()) + 1
+        ids2 = torch.cat([ids2, ids2.new_zeros(pad)])
+        docs2 = torch.cat([docs2, docs2.new_full((pad,), pad_doc)])
+        mask2 = torch.cat([mask2, mask2.new_zeros(pad)])
+        pos2 = torch.cat([pos2, pos2.new_ones(pad)])
+        aux2 = torch.cat([aux2, aux2.new_zeros(pad, aux2.shape[-1])])
+        last2 = torch.cat([last2, last2.new_zeros(pad, last2.shape[-1])])
+    return (ids2.unsqueeze(0), docs2.unsqueeze(0), mask2.unsqueeze(0),
+            pos2.unsqueeze(0), aux2.unsqueeze(0), last2.unsqueeze(0))
+
+
 def _ttt_forward(head, target, pack, offset, order="std"):
-    """Run the speculators canonical TTT training forward on one packed row.
+    """Run the speculators canonical TTT training forward on one packed row,
+    with the canonical shift_batch alignment applied per document.
     Returns (loss, metrics)."""
     input_ids = pack["input_ids"].to("cuda")
-    aux, last_h = _target_states(target, input_ids, offset, order)
+    aux, last_h = _target_states(target, input_ids, pack["document_ids"], offset, order)
+    ids2, docs2, mask2, pos2, aux2, last2 = _shift_pack(pack, aux, last_h)
     _, loss, metrics = head(
-        hidden_states=aux,
-        input_ids=input_ids,
-        document_ids=pack["document_ids"].to("cuda"),
-        loss_mask=pack["loss_mask"].to("cuda"),
-        verifier_last_hidden_states=last_h,
+        hidden_states=aux2,
+        input_ids=ids2,
+        document_ids=docs2,
+        loss_mask=mask2,
+        verifier_last_hidden_states=last2,
+        position_ids=pos2,
         ttt_steps=TTT_STEPS,
     )
     return loss, metrics
 
 
 def _metric_acc(metrics):
-    """Pull a step-0 top-1 accuracy-ish scalar out of the metrics dict if present."""
-    for k in sorted(metrics):
-        lk = k.lower()
-        if "acc" in lk or "top1" in lk or "correct" in lk:
-            try:
-                return float(metrics[k])
-            except Exception:
-                continue
-    return None
+    """Step-0 top-1 accuracy vs the verifier's argmax (masked positions):
+    full_acc_0_sum / full_acc_0_total. Directly comparable to serving
+    position-1 acceptance at temperature 0."""
+    try:
+        total = float(metrics["full_acc_0_total"])
+        return float(metrics["full_acc_0_sum"]) / total if total else None
+    except (KeyError, TypeError):
+        return None
 
 
 # --------------------------------------------------------------------------- #
@@ -281,7 +349,7 @@ def probe(n_packs: int = 3):
 # 1) TRAIN — LoRA on the head's q/k/v/o via the canonical TTT loss
 # --------------------------------------------------------------------------- #
 @app.function(gpu=GPU, image=image, timeout=2 * 3600, volumes=VOLS)
-def train_lora(name: str, langs: list, aux: str = "1:std", epochs: int = 3,
+def train_lora(name: str, langs: list, aux: str = "0:std", epochs: int = 3,
                lr: float = 1e-4, val_every: int = 100):
     import os
     import random
@@ -604,6 +672,30 @@ def launch(epochs: int = 3, bench_limit: int = 100, aux: str = ""):
 
 
 @app.function(image=image, timeout=6 * 3600, volumes=VOLS)
+def one_cell(lang: str = "german", aux: str = "0:std", epochs: int = 3,
+             bench_limit: int = 100):
+    """Cheap end-to-end validation of the fixed training forward on ONE
+    language: train its LoRA, then bench base + own. If own >= base here,
+    launch the full matrix."""
+    t = train_lora.remote(lang, [lang], aux, epochs=epochs)
+    print(f"[one_cell] train {lang}: {t.get('val_initial')} -> {t.get('val_final')}",
+          flush=True)
+    bb = bench.spawn(lang, "base", limit=bench_limit)
+    bo = bench.spawn(lang, "own", limit=bench_limit)
+    out = {"train": t, "base": bb.get(), "own": bo.get()}
+    print(f"[one_cell] base={out['base']}", flush=True)
+    print(f"[one_cell] own ={out['own']}", flush=True)
+    return out
+
+
+@app.local_entrypoint()
+def launch_one_cell(lang: str = "german", aux: str = "0:std", epochs: int = 3,
+                    bench_limit: int = 100):
+    call = one_cell.spawn(lang=lang, aux=aux, epochs=epochs, bench_limit=bench_limit)
+    print(f"LAUNCHED one_cell: {call.object_id}")
+
+
+@app.function(image=image, timeout=6 * 3600, volumes=VOLS)
 def bench_all(bench_limit: int = 100):
     """Re-run ONLY the 15 benches (adapters already trained+merged) + aggregate."""
     bjobs = {(lang, v): bench.spawn(lang, v, limit=bench_limit)
@@ -621,7 +713,7 @@ def launch_bench(bench_limit: int = 100):
 
 
 @app.function(gpu=GPU, image=image, timeout=3600, volumes=VOLS)
-def verify(lang: str = "polish", aux: str = "1:std"):
+def verify(lang: str = "polish", aux: str = "0:std"):
     """Error-hunt for the EAGLE fine-tune. Checks:
     [A] merge path exactness — an UNTRAINED LoRA (delta=0) merged+saved must be
         byte-identical to the hub weights; writes MODELS/nulltest for the null bench.

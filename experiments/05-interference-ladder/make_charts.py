@@ -78,6 +78,24 @@ def _style(ax):
     ax.set_axisbelow(True)
 
 
+def _rel(d, base):
+    """Relative change vs base, e.g. '(+2.1%)'. Empty when there is no base."""
+    if not base:
+        return ""
+    r = 100.0 * d / base
+    return f"({r:+.0f}%)" if abs(r) >= 9.95 else f"({r:+.1f}%)"
+
+
+def _label2(ax, x, y, main, rel, up=True, fs=9.0):
+    va = "bottom" if up else "top"
+    s = 1 if up else -1
+    ax.annotate(main, (x, y), xytext=(0, s * 2), textcoords="offset points",
+                ha="center", va=va, fontsize=fs, color=INK, fontweight="bold")
+    if rel:
+        ax.annotate(rel, (x, y), xytext=(0, s * (fs + 5)), textcoords="offset points",
+                    ha="center", va=va, fontsize=fs - 1.8, color=MUTED)
+
+
 def _short(dom):
     return dom.replace("code_", "").replace("lang_", "").replace("ood_", "") \
               .replace("task_", "").replace("_", " ")
@@ -121,15 +139,18 @@ def delta_fig(rows, out):
     top, bot = 0.0, 0.0
     for i, v in enumerate(order):
         offs = [x + (i - 1.5) * w for x in xs]
-        ds = [rows.get((dom, v), {}).get("accept", 0.0)
-              - rows.get((dom, "base"), {}).get("accept", 0.0) for dom in CORE]
+        bases = [rows.get((dom, "base"), {}).get("accept", 0.0) for dom in CORE]
+        ds = [rows.get((dom, v), {}).get("accept", 0.0) - b
+              for dom, b in zip(CORE, bases)]
         top = max(top, max(ds)); bot = min(bot, min(ds))
         ax.bar(offs, ds, width=w * 0.88, color=COLOR[v], zorder=3, label=LABEL[v])
+        for x, d, b in zip(offs, ds, bases):
+            _label2(ax, x, d, f"{d:+.1f}", _rel(d, b), up=d >= 0, fs=6.2)
     ax.axhline(0, color=AXIS, lw=1.2, zorder=2)
     ax.set_xticks(list(xs))
     ax.set_xticklabels([_short(d) for d in CORE], fontsize=9)
     span = (top - bot) or 1.0
-    ax.set_ylim(bot - span * 0.2, top + span * 0.25)
+    ax.set_ylim(bot - span * 0.3, top + span * 0.32)
     _style(ax)
     ax.set_ylabel("Δ acceptance vs base  (pp)", color=INK2, fontsize=10)
     ax.set_title("LoRA gain over the base drafter, per core domain",
@@ -191,9 +212,13 @@ def ladder_fig(rows, recs, out, n_boot=2000, seed=0):
                     linewidth=0)
     ax.plot(ns, mean_gap, color=COLOR["comb20"], lw=2.8, zorder=4, marker="o",
             markersize=6, label="mean over core domains (95% CI)")
+    mean_own = sum(rows[(dom, "own")]["accept"] for dom in per_dom) / len(per_dom)
     for x, y in zip(ns, mean_gap):
         ax.annotate(f"{y:+.2f}", (x, y), xytext=(0, 9), textcoords="offset points",
                     ha="center", fontsize=9.5, color=INK, fontweight="bold")
+        ax.annotate(_rel(y, mean_own), (x, y), xytext=(0, 21),
+                    textcoords="offset points", ha="center", fontsize=7.7,
+                    color=MUTED)
 
     ax.axhline(0, color=AXIS, lw=1.2, zorder=1)
     ax.set_xticks(ns)

@@ -64,6 +64,24 @@ def _style(ax):
     ax.set_axisbelow(True)
 
 
+def _rel(d, base):
+    """Relative change vs base, e.g. '(+2.1%)'. Empty when there is no base."""
+    if not base:
+        return ""
+    r = 100.0 * d / base
+    return f"({r:+.0f}%)" if abs(r) >= 9.95 else f"({r:+.1f}%)"
+
+
+def _label2(ax, x, y, main, rel, up=True, fs=9.0):
+    va = "bottom" if up else "top"
+    s = 1 if up else -1
+    ax.annotate(main, (x, y), xytext=(0, s * 2), textcoords="offset points",
+                ha="center", va=va, fontsize=fs, color=INK, fontweight="bold")
+    if rel:
+        ax.annotate(rel, (x, y), xytext=(0, s * (fs + 5)), textcoords="offset points",
+                    ha="center", va=va, fontsize=fs - 1.8, color=MUTED)
+
+
 def _grouped(ax, rows, key, fmt, title):
     xs = range(len(LANGS))
     w = 0.8 / len(VARIANTS)
@@ -72,13 +90,14 @@ def _grouped(ax, rows, key, fmt, title):
         offs = [x + (i - 1) * w for x in xs]
         hs = [rows.get((lang, v), {}).get(key, 0.0) for lang in LANGS]
         ax.bar(offs, hs, width=w * 0.86, color=COLOR[v], zorder=3, label=LABEL[v])
-        for x, h in zip(offs, hs):
+        for x, h, lang in zip(offs, hs, LANGS):
             if h:
-                ax.text(x, h + top * 0.015, fmt.format(h), ha="center", va="bottom",
-                        fontsize=8.5, color=INK, fontweight="bold")
+                base = rows.get((lang, "base"), {}).get(key, 0.0)
+                rel = "" if v == "base" else _rel(h - base, base)
+                _label2(ax, x, h, fmt.format(h), rel, fs=8.5)
     ax.set_xticks(list(xs))
     ax.set_xticklabels([l.capitalize() for l in LANGS])
-    ax.set_ylim(0, top * 1.18)
+    ax.set_ylim(0, top * 1.26)
     _style(ax)
     ax.set_title(title, color=INK2, fontsize=11, loc="left", pad=10)
 
@@ -110,20 +129,18 @@ def delta_fig(rows, out):
     top, bot = 0.0, 0.0
     for i, v in enumerate(("own", "combined")):
         offs = [x + (i - 0.5) * w for x in xs]
-        ds = [rows.get((lang, v), {}).get("accept", 0.0)
-              - rows.get((lang, "base"), {}).get("accept", 0.0) for lang in LANGS]
+        bases = [rows.get((lang, "base"), {}).get("accept", 0.0) for lang in LANGS]
+        ds = [rows.get((lang, v), {}).get("accept", 0.0) - b
+              for lang, b in zip(LANGS, bases)]
         top = max(top, max(ds)); bot = min(bot, min(ds))
         ax.bar(offs, ds, width=w * 0.88, color=COLOR[v], zorder=3, label=LABEL[v])
-        for x, d in zip(offs, ds):
-            ax.text(x, d + (0.08 if d >= 0 else -0.08),
-                    f"{'+' if d >= 0 else ''}{d:.1f}", ha="center",
-                    va="bottom" if d >= 0 else "top",
-                    fontsize=9, color=INK, fontweight="bold")
+        for x, d, b in zip(offs, ds, bases):
+            _label2(ax, x, d, f"{d:+.1f}", _rel(d, b), up=d >= 0)
     ax.axhline(0, color=AXIS, lw=1.2, zorder=2)
     ax.set_xticks(list(xs))
     ax.set_xticklabels([l.capitalize() for l in LANGS])
     span = (top - bot) or 1.0
-    ax.set_ylim(bot - span * 0.25, top + span * 0.25)
+    ax.set_ylim(bot - span * 0.35, top + span * 0.35)
     _style(ax)
     ax.set_ylabel("Δ acceptance rate vs base  (pp)", color=INK2, fontsize=10)
     ax.set_title("EAGLE3: LoRA gain over the base head, per language",
@@ -146,20 +163,18 @@ def vs_dflash_fig(eagle_rows, dflash_rows, out):
     top, bot = 0.0, 0.0
     for i, (name, rows, color) in enumerate(series):
         offs = [x + (i - 0.5) * w for x in xs]
-        ds = [rows.get((lang, "own"), {}).get("accept", 0.0)
-              - rows.get((lang, "base"), {}).get("accept", 0.0) for lang in LANGS]
+        bases = [rows.get((lang, "base"), {}).get("accept", 0.0) for lang in LANGS]
+        ds = [rows.get((lang, "own"), {}).get("accept", 0.0) - b
+              for lang, b in zip(LANGS, bases)]
         top = max(top, max(ds)); bot = min(bot, min(ds))
         ax.bar(offs, ds, width=w * 0.88, color=color, zorder=3, label=name)
-        for x, d in zip(offs, ds):
-            ax.text(x, d + (0.06 if d >= 0 else -0.06),
-                    f"{'+' if d >= 0 else ''}{d:.1f}", ha="center",
-                    va="bottom" if d >= 0 else "top",
-                    fontsize=9, color=INK, fontweight="bold")
+        for x, d, b in zip(offs, ds, bases):
+            _label2(ax, x, d, f"{d:+.1f}", _rel(d, b), up=d >= 0)
     ax.axhline(0, color=AXIS, lw=1.2, zorder=2)
     ax.set_xticks(list(xs))
     ax.set_xticklabels([l.capitalize() for l in LANGS])
     span = (top - bot) or 1.0
-    ax.set_ylim(min(bot - span * 0.25, -0.2), top + span * 0.3)
+    ax.set_ylim(min(bot - span * 0.35, -0.2), top + span * 0.38)
     _style(ax)
     ax.set_ylabel("own-LoRA Δ acceptance vs base  (pp)", color=INK2, fontsize=10)
     ax.set_title("Does specialization transfer across speculators?  own-LoRA gain, DFlash vs EAGLE3",
