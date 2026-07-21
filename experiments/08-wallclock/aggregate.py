@@ -59,8 +59,22 @@ def spec_pooled(path):
     return pooled_tok_s(rows(path), sec_key="spec_seconds")
 
 
+def pooled_L(path, kind):
+    """Mean accept length pooled over the run: tokens committed per target
+    verify pass. eagle jsonls count drafting rounds in forward_steps and add a
+    bonus token per round; dflash commits num_generated/forward_steps."""
+    recs = rows(path)
+    steps = sum(r["forward_steps"] for r in recs)
+    if not steps:
+        return 0.0
+    if kind == "eagle":
+        return 1.0 + sum(r["accepted_draft_tokens"] for r in recs) / steps
+    return sum(r["num_generated_tokens"] for r in recs) / steps
+
+
 def main():
-    table = []  # (section, domain, vanilla_tok_s, {variant: (tok_s, speedup)})
+    # (section, domain, vanilla_tok_s, {variant: (tok_s, speedup, L)})
+    table = []
 
     # --- EAGLE3 via vLLM: multilingual (exp 04) + weird (exp 03) ---
     for domain, spec_path, van_key in (
@@ -76,12 +90,16 @@ def main():
             p = Path(str(spec_path).format(v=var))
             if p.exists():
                 s = spec_pooled(p)
-                cells[var] = (s, s / v_tok_s if v_tok_s else 0.0)
+                cells[var] = (s, s / v_tok_s if v_tok_s else 0.0,
+                              pooled_L(p, "eagle"))
         sec = "EAGLE3 · multilingual (vLLM)" if van_key.startswith("lang_") \
             else "EAGLE3 · weird domains (vLLM)"
         table.append((sec, domain, v_tok_s, cells))
 
-    # --- DFlash via HF: weird (exp 03, baseline from this experiment) ---
+    # --- DFlash via HF: weird (exp 03, baseline from this experiment).
+    # NOTE: spec numbers and this baseline ran in DIFFERENT containers days
+    # apart — HF batch-1 timing varies several percent to tens of percent
+    # across hosts, so these ratios carry real noise (see report). ---
     for d in WEIRD:
         van_file = VAN / f"hf_{d}.jsonl"
         if not van_file.exists():
@@ -92,31 +110,38 @@ def main():
             p = E03 / f"dflash_{d}_{var}.jsonl"
             if p.exists():
                 s = spec_pooled(p)
-                cells[var] = (s, s / v_tok_s if v_tok_s else 0.0)
+                cells[var] = (s, s / v_tok_s if v_tok_s else 0.0,
+                              pooled_L(p, "dflash"))
         table.append(("DFlash · weird domains (HF)", d, v_tok_s, cells))
 
-    # --- DFlash via HF: multilingual (exp 02 carries its own baseline) ---
+    # --- DFlash via HF: multilingual (exp 02 timed baseline and spec decode
+    # for the SAME prompts in the SAME container: use each variant file's own
+    # baseline — the only fully noise-paired HF cells) ---
     for l in LANGS:
-        base_p = E02 / f"{l}_base.jsonl"
-        if not base_p.exists():
+        if not (E02 / f"{l}_base.jsonl").exists():
             continue
-        recs = rows(base_p)
-        v_tok_s = pooled_tok_s(recs, sec_key="baseline_seconds")
         cells = {}
+        v_disp = 0.0
         for var in VARIANTS:
             p = E02 / f"{l}_{var}.jsonl"
             if p.exists():
-                s = spec_pooled(p)
-                cells[var] = (s, s / v_tok_s if v_tok_s else 0.0)
-        table.append(("DFlash · multilingual (HF)", l, v_tok_s, cells))
+                recs = rows(p)
+                v = pooled_tok_s(recs, sec_key="baseline_seconds")
+                s = pooled_tok_s(recs, sec_key="spec_seconds")
+                cells[var] = (s, s / v if v else 0.0, pooled_L(p, "dflash"))
+                if var == "base":
+                    v_disp = v
+        table.append(("DFlash · multilingual (HF, paired in-container baselines)",
+                      l, v_disp, cells))
 
     # ---- csv + report ----
     csv = ["section,domain,vanilla_tok_s," + ",".join(
-        f"{v}_tok_s,{v}_speedup" for v in VARIANTS)]
+        f"{v}_tok_s,{v}_speedup,{v}_mean_accept_len" for v in VARIANTS)]
     md = ["# Net wall-clock speedup — spec decode vs target-only decoding\n",
           "Same prompts, greedy, 256 max new tokens, batch 1, H200. Speedup ="
           " pooled spec tok/s ÷ pooled vanilla tok/s, always within one"
-          " framework (vLLM/vLLM or HF/HF).\n"]
+          " framework (vLLM/vLLM or HF/HF). L = pooled mean accept length"
+          " (tokens committed per target pass).\n"]
     cur = None
     for sec, dom, v, cells in table:
         if sec != cur:
@@ -127,12 +152,32 @@ def main():
         def cell(var):
             if var not in cells:
                 return "—"
-            s, sp = cells[var]
-            return f"{sp:.2f}× ({s:.0f} tok/s)"
+            s, sp, L = cells[var]
+            return f"{sp:.2f}× (L={L:.2f})"
         md.append(f"| {dom} | {v:.0f} | {cell('base')} | {cell('own')} | {cell('combined')} |")
         csv.append(f"{sec},{dom},{v:.2f}," + ",".join(
-            f"{cells[var][0]:.2f},{cells[var][1]:.4f}" if var in cells else ","
+            f"{cells[var][0]:.2f},{cells[var][1]:.4f},{cells[var][2]:.4f}"
+            if var in cells else ",,"
             for var in VARIANTS))
+
+    # ---- analytic model: speedup ≈ L / (1 + c), c = per-section overhead ----
+    md += ["\n## Analytic model — speedup ≈ L / (1 + c)\n",
+           "c is the speculator's per-step overhead in units of one target"
+           " forward, fitted as median(L/speedup − 1) over a section's cells."
+           " If c is really a per-speculator constant, the model predicts every"
+           " cell's wall-clock from its (already-measured) acceptance alone.\n",
+           "| section | fitted c | median |err| | max |err| | cells |",
+           "|---|--:|--:|--:|--:|"]
+    for sec in dict.fromkeys(s for s, *_ in table):
+        pts = [(L, sp) for s_, d, v, cells in table if s_ == sec
+               for (tok, sp, L) in cells.values() if sp > 0 and L > 0]
+        if len(pts) < 2:
+            continue
+        cs = sorted(L / sp - 1 for L, sp in pts)
+        c = cs[len(cs) // 2]
+        errs = sorted(abs(L / (1 + c) - sp) / sp for L, sp in pts)
+        md.append(f"| {sec} | {c:.3f} | {errs[len(errs)//2]*100:.1f}% "
+                  f"| {errs[-1]*100:.1f}% | {len(pts)} |")
 
     OUT.mkdir(parents=True, exist_ok=True)
     (OUT / "comparison.csv").write_text("\n".join(csv) + "\n")

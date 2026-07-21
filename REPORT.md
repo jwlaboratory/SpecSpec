@@ -235,6 +235,62 @@ negatives (English/French/Spanish, code, tasks).
 `router/router.py` plugs directly into `serving/batched_lora.route(ids)` —
 request → route → per-sequence adapter on a shared backbone, end to end.
 
+### 2.8 Net wall-clock speedup — measured, then reduced to one constant per speculator
+
+Vanilla target-only baselines on the spec-bench prompts (per framework: vLLM
+~195 tok/s batch-1 for the 8B target, near-invariant across all 8 domains; HF
+~40–50 tok/s) close the loop from acceptance to wall-clock:
+
+- **EAGLE3 multilingual: LoRA's acceptance gains survive end-to-end** — own
+  speedup beats base on 5/5 (japanese crosses break-even, 0.95×→1.02×; italian
+  1.13×→1.22×). Small in absolute terms, because at L≈1.2–1.4 every accepted
+  token is precious. EAGLE weird domains: 1.31–1.68×, LoRA ≈ base, as the flat
+  acceptance predicts.
+- **The analytic model holds: speedup ≈ L/(1+c)** with L = mean accept length
+  (already measured everywhere) and c = per-step drafting overhead in
+  target-forward units, a *per-speculator/per-engine constant*: EAGLE-vLLM
+  c≈0.18–0.24, DFlash-HF c≈0.44, and (this explains exp 06) independent-0.6B
+  c≈3. Fitted on each section, the model predicts measured wall-clock to
+  **0.3–2% median error** wherever timing noise is controlled. Future cells
+  need no baseline runs — compute L/(1+c).
+- **Methodology lesson:** the one poorly-predicted section (6% median / 18% max
+  error) is the one whose HF baseline ran in a different container days after
+  the spec bench. Pair vanilla and spec timings in-container (as exp 02 did —
+  0.3% error) or trust the model over unpaired timings.
+
+- **LoRA-attributable gain, uniformly across all experiments** (since c
+  cancels in the ratio, gain = L_variant/L_base − 1, timing-free): EAGLE
+  multilingual +1..+5%, EAGLE weird ≈0; DFlash: languages +2..+16% (weakest
+  bases largest), weird domains +2..+5%, code_sql +10% (exp 01: measured
+  +11%), legal +14%; independent drafter +3..+8% (merged-equivalent).
+
+→ `experiments/08-wallclock/results/report.md`, `charts/speedup.png`,
+`charts/lora_gain.png` (per-domain LoRA gain, every experiment)
+
+### 2.9 What serving the adapter costs — merged is free, everything else isn't
+
+Batch-size sweep (1→64) of five serving modes on the 0.6B drafter, zero-delta
+adapters so every mode decodes identical output (pure timing), all ratios
+against same-container bases:
+
+| mode | bs=1 | bs=64 |
+|---|--:|--:|
+| merged ΔW | **+3%** | **−0%** |
+| naive unmerged wrappers (exp 06's mode) | +33% | +20% |
+| vLLM punica, 1 adapter | +58% | +22% |
+| vLLM punica, 50 distinct adapters | +67% | **+311%** |
+
+Merged serving is exactly free at every batch size. The naive wrapper tax
+(~20%) never amortizes. Punica's fixed kernel cost amortizes slowly with batch
+— but only while the batch shares few adapters: with 50 distinct adapters
+round-robin, overhead *grows* with batch size (50 live SGMV segments), reaching
+4× at bs=64 on this model scale. Per-batch adapter **diversity**, not adapter
+count in memory, is the cost driver. This closes the serving question: **one
+combined LoRA, merged into the drafter** — zero overhead, mixed-domain batches
+free — and per-domain hot-swap only via merge-on-swap at request granularity.
+
+→ `experiments/09-batched-lora-serving/` (README, `charts/overhead.png`)
+
 ---
 
 ## 3. Bugs found and fixed (the honest section)

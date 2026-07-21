@@ -60,6 +60,7 @@ experiments/              every experiment, one folder each; each has
   06-independent-drafter/   vanilla spec decode (Qwen3-0.6B drafter), CE-only LoRAs
   07-rank-ladder/           adapter capacity: r4 vs r16 vs r64 across 02+03 domains
   08-wallclock/             net wall-clock speedup: spec decode vs plain decoding
+  09-batched-lora-serving/  serving-mode cost: merged vs unmerged vs punica ×1/×50, bs 1-64
 router/                   MLP on target hidden states that picks the adapter (100% test acc)
 serving/                  multi-adapter serving: N LoRAs over one resident backbone
 third_party/SpecForge/    gitignored clone — git clone https://github.com/sgl-project/SpecForge.git third_party/SpecForge

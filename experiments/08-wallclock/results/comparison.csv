@@ -1,0 +1,17 @@
+section,domain,vanilla_tok_s,base_tok_s,base_speedup,base_mean_accept_len,own_tok_s,own_speedup,own_mean_accept_len,combined_tok_s,combined_speedup,combined_mean_accept_len
+EAGLE3 · multilingual (vLLM),polish,191.31,208.68,1.0908,1.2734,219.30,1.1463,1.3041,213.71,1.1171,1.3090
+EAGLE3 · multilingual (vLLM),korean,191.36,204.54,1.0688,1.2365,205.80,1.0754,1.2649,213.21,1.1141,1.2682
+EAGLE3 · multilingual (vLLM),italian,192.53,217.11,1.1276,1.4160,235.22,1.2217,1.4419,221.96,1.1529,1.4566
+EAGLE3 · multilingual (vLLM),japanese,198.63,188.09,0.9469,1.1462,202.55,1.0198,1.2078,205.38,1.0340,1.2138
+EAGLE3 · multilingual (vLLM),german,198.56,223.59,1.1260,1.3662,228.40,1.1502,1.3828,227.33,1.1448,1.3907
+EAGLE3 · weird domains (vLLM),translation,196.07,256.16,1.3065,1.6171,254.29,1.2969,1.6086,248.79,1.2688,1.6108
+EAGLE3 · weird domains (vLLM),roleplay,198.45,332.92,1.6775,2.0796,341.93,1.7230,2.0571,298.78,1.5055,2.0520
+EAGLE3 · weird domains (vLLM),poetry,197.97,324.22,1.6377,2.0043,306.65,1.5490,1.9895,314.95,1.5909,1.9875
+DFlash · weird domains (HF),translation,41.35,70.69,1.7097,2.3099,64.58,1.5618,2.4237,66.88,1.6176,2.4063
+DFlash · weird domains (HF),roleplay,41.80,61.09,1.4617,2.2203,59.38,1.4208,2.2805,74.15,1.7741,2.2677
+DFlash · weird domains (HF),poetry,42.85,66.94,1.5622,2.0485,70.50,1.6452,2.1464,67.56,1.5768,2.1437
+DFlash · multilingual (HF, paired in-container baselines),polish,38.76,41.33,1.0664,1.4692,52.43,1.1495,1.6580,67.19,1.1595,1.6698
+DFlash · multilingual (HF, paired in-container baselines),korean,44.59,49.56,1.1113,1.5300,54.11,1.2169,1.7640,58.94,1.2241,1.7723
+DFlash · multilingual (HF, paired in-container baselines),italian,45.87,73.82,1.6093,2.2119,66.94,1.5773,2.2791,81.42,1.5430,2.2647
+DFlash · multilingual (HF, paired in-container baselines),japanese,51.87,65.15,1.2560,1.7467,74.99,1.3011,1.8807,59.75,1.3024,1.8823
+DFlash · multilingual (HF, paired in-container baselines),german,47.38,69.59,1.4687,2.0188,60.94,1.4357,2.0740,68.24,1.4194,2.0637
