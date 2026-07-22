@@ -3,8 +3,20 @@
 
 Reads results/summary.json, writes results/charts/*.png:
     acceptance_dots.png   acceptance rate per language, 3 variants (dot plot)
+    base_own_combined_40_languages.png
+                          same chart, descriptive blog filename
+    base_own_combined_26_mintrain1000.png
+                          clean 1k-train subset used for serving claims
+    base_acceptance_26_mintrain1000.png
+                          base DFlash acceptance on that clean subset
+    speedup_26_mintrain1000.png
+                          analytic speedup on that clean subset
+    own_lora_gain_26_mintrain1000.png
+                          own-language LoRA gains on that clean subset
     delta_bars.png        own/combined gain over base per language (paired bars)
     gain_vs_base.png      gain vs base weakness (scatter)
+    gain_vs_base_26_mintrain1000.png
+                          clean 1k-train subset version of the scatter
     transfer_vs_data.png  combined-minus-own vs training-set size (scatter)
     speedup_dots.png      analytic wall-clock speedup per language, 3 variants
 """
@@ -66,7 +78,7 @@ def load():
     return rows
 
 
-def dot_plot(rows, key, scale, xlabel, title, subtitle, fname, fmt):
+def dot_plot(rows, key, scale, xlabel, title, subtitle, fname, fmt, aliases=()):
     rows = sorted(rows, key=lambda r: r[1]["base"][key])
     langs = [r[0] for r in rows]
     b = [r[1]["base"][key] * scale for r in rows]
@@ -94,6 +106,108 @@ def dot_plot(rows, key, scale, xlabel, title, subtitle, fname, fmt):
         t.set_color(INK2)
     ax.xaxis.set_major_formatter(fmt)
     fig.tight_layout()
+    fig.savefig(OUT / fname, facecolor=SURFACE)
+    for alias in aliases:
+        fig.savefig(OUT / alias, facecolor=SURFACE)
+    plt.close(fig)
+
+
+def base_acceptance_chart(rows, fname, title, subtitle):
+    rows = sorted(rows, key=lambda r: r[1]["base"]["acceptance_rate"])
+    langs = [r[0] for r in rows]
+    vals = [r[1]["base"]["acceptance_rate"] * 100 for r in rows]
+    y = range(len(rows))
+
+    fig, ax = plt.subplots(figsize=(8, max(7.0, len(rows) * 0.34)), dpi=150)
+    fig.set_facecolor(SURFACE)
+    style_ax(ax)
+    ax.barh(list(y), vals, height=0.68, color=C_BASE, zorder=3)
+    ax.set_yticks(list(y), langs)
+    ax.tick_params(axis="y", length=0)
+    ax.set_xlabel("pooled base acceptance rate (%)", color=INK2, fontsize=9)
+    ax.set_title(title, color=INK, fontsize=13, loc="left", pad=18, weight="bold")
+    ax.text(0, 1.006, subtitle, transform=ax.transAxes, color=INK2, fontsize=9)
+    for yy, v in zip(y, vals):
+        ax.text(v + 0.08, yy, f"{v:.2f}%", va="center", ha="left",
+                fontsize=7.5, color=INK2)
+    fig.tight_layout()
+    fig.savefig(OUT / fname, facecolor=SURFACE)
+    plt.close(fig)
+
+
+def own_gain_chart(rows, fname, title, subtitle):
+    rows = sorted(rows, key=lambda r: r[1]["base"]["acceptance_rate"])
+    langs = [r[0] for r in rows]
+    gains = [(r[1]["own"]["acceptance_rate"] - r[1]["base"]["acceptance_rate"]) * 100
+             for r in rows]
+    y = range(len(rows))
+
+    fig, ax = plt.subplots(figsize=(8.6, max(7.0, len(rows) * 0.34)), dpi=150)
+    fig.set_facecolor(SURFACE)
+    style_ax(ax)
+    ax.axvline(0, color=BASELINE, linewidth=1)
+    ax.barh(list(y), gains, height=0.68, color=C_OWN, zorder=3)
+    ax.set_yticks(list(y), langs)
+    ax.tick_params(axis="y", length=0)
+    ax.set_xlabel("own-language LoRA gain over base (percentage points)",
+                  color=INK2, fontsize=9)
+    ax.set_title(title, color=INK, fontsize=13, loc="left", pad=18, weight="bold")
+    ax.text(0, 1.006, subtitle, transform=ax.transAxes, color=INK2, fontsize=9)
+    for yy, v in zip(y, gains):
+        ax.text(v + 0.04, yy, f"+{v:.2f}pp", va="center", ha="left",
+                fontsize=7.5, color=INK2)
+    fig.tight_layout()
+    fig.savefig(OUT / fname, facecolor=SURFACE)
+    plt.close(fig)
+
+
+def speedup_labeled_chart(rows, fname, title, subtitle):
+    rows = sorted(rows, key=lambda r: r[1]["base"]["speedup_analytic"])
+    langs = [r[0] for r in rows]
+    base = [r[1]["base"]["speedup_analytic"] for r in rows]
+    own = [r[1]["own"]["speedup_analytic"] for r in rows]
+    comb = [r[1]["combined"]["speedup_analytic"] for r in rows]
+    y = list(range(len(rows)))
+    h = 0.23
+
+    fig, ax = plt.subplots(figsize=(11.2, max(8.2, len(rows) * 0.42)), dpi=160)
+    fig.set_facecolor(SURFACE)
+    style_ax(ax)
+    ax.barh([i + h for i in y], base, height=h, color=C_BASE, label="base",
+            zorder=3)
+    ax.barh(y, own, height=h, color=C_OWN, label="own LoRA", zorder=3)
+    ax.barh([i - h for i in y], comb, height=h, color=C_COMB,
+            label="combined LoRA", zorder=3)
+
+    xmax = max(max(base), max(own), max(comb))
+    label_x = xmax + 0.11
+    ax.set_xlim(0.95, xmax + 0.46)
+    ax.set_yticks(y, langs)
+    ax.tick_params(axis="y", length=0)
+    ax.set_xlabel("analytic speedup (x, L/(1+0.44))", color=INK2, fontsize=9)
+    ax.set_title(title, color=INK, fontsize=13, loc="left", pad=18,
+                 weight="bold")
+    ax.text(0, 1.006, subtitle, transform=ax.transAxes, color=INK2, fontsize=9)
+
+    for yy, b, o, c in zip(y, base, own, comb):
+        ax.text(b + 0.008, yy + h, f"{b:.2f}x", va="center", ha="left",
+                fontsize=6.6, color=INK2)
+        ax.text(o + 0.008, yy, f"{o:.2f}x", va="center", ha="left",
+                fontsize=6.6, color=INK2)
+        ax.text(c + 0.008, yy - h, f"{c:.2f}x", va="center", ha="left",
+                fontsize=6.6, color=INK2)
+        own_pct = (o / b - 1.0) * 100 if b else 0.0
+        comb_pct = (c / b - 1.0) * 100 if b else 0.0
+        ax.text(label_x, yy, f"own {own_pct:+.1f}%  |  comb {comb_pct:+.1f}%",
+                va="center", ha="left", fontsize=6.6, color=INK2)
+
+    ax.text(label_x, len(rows) - 0.25, "gain vs base", va="bottom", ha="left",
+            fontsize=7.5, color=INK2, weight="bold")
+    leg = ax.legend(loc="lower center", bbox_to_anchor=(0.5, -0.075),
+                    ncol=3, frameon=False, fontsize=9)
+    for t in leg.get_texts():
+        t.set_color(INK2)
+    fig.tight_layout(rect=(0, 0.035, 1, 1))
     fig.savefig(OUT / fname, facecolor=SURFACE)
     plt.close(fig)
 
@@ -135,7 +249,7 @@ def delta_bars(rows):
     plt.close(fig)
 
 
-def gain_vs_base(rows):
+def gain_vs_base(rows, fname="gain_vs_base.png", subtitle=None):
     fig, ax = plt.subplots(figsize=(7.5, 5.5), dpi=150)
     fig.set_facecolor(SURFACE)
     style_ax(ax)
@@ -152,13 +266,13 @@ def gain_vs_base(rows):
     ax.set_ylabel("gain over base (pp)", color=INK2, fontsize=9)
     ax.set_title("Gains concentrate where the base drafter is weakest",
                  color=INK, fontsize=13, loc="left", pad=18, weight="bold")
-    ax.text(0, 1.01, "each dot = one language; left = weak base coverage",
+    ax.text(0, 1.01, subtitle or "each dot = one language; left = weak base coverage",
             transform=ax.transAxes, color=INK2, fontsize=9)
     leg = ax.legend(loc="upper right", frameon=False, fontsize=9)
     for t in leg.get_texts():
         t.set_color(INK2)
     fig.tight_layout()
-    fig.savefig(OUT / "gain_vs_base.png", facecolor=SURFACE)
+    fig.savefig(OUT / fname, facecolor=SURFACE)
     plt.close(fig)
 
 
@@ -197,16 +311,46 @@ def transfer_vs_data(rows):
 def main():
     from matplotlib.ticker import FuncFormatter
     rows = load()
+    clean = [r for r in rows if TRAIN_N.get(r[0], 0) >= 1000]
     dot_plot(rows, "acceptance_rate", 100, "pooled acceptance rate (%)",
              "Acceptance rate by language: base vs own vs combined",
              "40 WildChat languages, 100 held-out test prompts each, r16 LoRAs",
-             "acceptance_dots.png", FuncFormatter(lambda v, _: f"{v:.0f}%"))
+             "acceptance_dots.png", FuncFormatter(lambda v, _: f"{v:.0f}%"),
+             aliases=("base_own_combined_40_languages.png",))
+    dot_plot(clean, "acceptance_rate", 100, "pooled acceptance rate (%)",
+             "Acceptance rate by language: base vs own vs combined",
+             "26 WildChat languages with 1,000 train prompts, 100 held-out test prompts each",
+             "base_own_combined_26_mintrain1000.png",
+             FuncFormatter(lambda v, _: f"{v:.0f}%"))
+    base_acceptance_chart(
+        clean,
+        "base_acceptance_26_mintrain1000.png",
+        "Base DFlash acceptance across clean language lanes",
+        "26 WildChat languages with 1,000 train prompts; sorted by base acceptance",
+    )
+    own_gain_chart(
+        clean,
+        "own_lora_gain_26_mintrain1000.png",
+        "Own-language LoRA gains across clean language lanes",
+        "gain in pooled acceptance rate vs base DFlash; 26-language 1k-train subset",
+    )
     dot_plot(rows, "speedup_analytic", 1, "analytic wall-clock speedup (×, L/(1+0.44))",
              "Wall-clock speedup over vanilla decode",
              "speedup ≈ L/(1+c), c = 0.44 fitted in exp-08; follows acceptance",
              "speedup_dots.png", FuncFormatter(lambda v, _: f"{v:.1f}×"))
+    speedup_labeled_chart(
+        clean,
+        "speedup_26_mintrain1000.png",
+        "Analytic speedup by language: base vs own vs combined",
+        "26 WildChat languages with 1,000 train prompts; labels show speedup and % gain vs base",
+    )
     delta_bars(rows)
     gain_vs_base(rows)
+    gain_vs_base(
+        clean,
+        fname="gain_vs_base_26_mintrain1000.png",
+        subtitle="each dot = one 1k-train language; left = weak base coverage",
+    )
     transfer_vs_data(rows)
     print("charts ->", OUT)
 
