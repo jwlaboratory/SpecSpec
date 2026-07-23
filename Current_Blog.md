@@ -1,6 +1,6 @@
 # Specialization is (sometimes) all Speculation needs
 
-**TLDR:** We made speculative decoding 8% faster on aggragate and upwards of 52% faster on out of distribution languages by specializing block diffusion drafter models using LoRA. However, we find languages have low levels of interference and a singular combined LoRA captures almost all of the gains. We next hypothesize specialization will perform better in more fine-grained domains (future work) and has room to bring signicant speedups.
+**TLDR:** We made speculative decoding 8% faster on aggragate and upwards of 46% faster on out of distribution languages by specializing block diffusion drafter models using LoRA. However, we find languages have low levels of interference and a singular combined LoRA captures almost all of the gains. We next hypothesize specialization will perform better in more fine-grained domains (future work) and has room to bring signicant speedups.
 
 # What and why are we specializing?
 
@@ -56,12 +56,9 @@ The results show that clearly, specializing helps the model.
 
 ![Own-language LoRA acceptance gains over base, concentrated on the weakest languages](new/exp1-language/results/charts/own_lora_gain_26_mintrain1000.png)
 
-The gains are largest exactly where the base drafter is weakest — both in absolute terms (percentage points of acceptance) and, even more starkly, relative to the base:
-
 | language | base | own LoRA | gain | relative |
 | :---- | ----: | ----: | ----: | ----: |
-| Hebrew | 4.23% | 6.44% | +2.21pp | **+52%** |
-| Swedish | 6.73% | 8.82% | +2.09pp | +31% |
+| Swedish | 6.73% | 8.82% | **+2.09pp** | **+31%** |
 | Turkish | 4.89% | 6.88% | +1.99pp | +41% |
 | Hungarian | 3.92% | 5.72% | +1.80pp | +46% |
 | Ukrainian | 5.65% | 7.23% | +1.58pp | +28% |
@@ -72,36 +69,23 @@ The gains are largest exactly where the base drafter is weakest — both in abso
 | Romanian | 4.59% | 5.88% | +1.29pp | +28% |
 | Korean | 4.19% | 5.31% | +1.12pp | +27% |
 | Polish | 3.57% | 4.66% | +1.09pp | +31% |
-| Hindi | 16.16% | 17.24% | +1.08pp | +7% |
 | Persian | 6.50% | 7.52% | +1.02pp | +16% |
 | Portuguese | 6.59% | 7.46% | +0.87pp | +13% |
 | Tagalog | 6.44% | 7.16% | +0.72pp | +11% |
 | Arabic | 5.73% | 6.43% | +0.70pp | +12% |
-| Estonian | 4.60% | 5.08% | +0.48pp | +10% |
 | Russian | 8.20% | 8.61% | +0.41pp | +5% |
-| Serbian | 6.23% | 6.61% | +0.38pp | +6% |
-| Bulgarian | 6.40% | 6.78% | +0.38pp | +6% |
-| Catalan | 6.06% | 6.44% | +0.38pp | +6% |
 | Chinese | 7.54% | 7.85% | +0.31pp | +4% |
-| Tswana | 6.43% | 6.74% | +0.31pp | +5% |
 | German | 8.79% | 9.07% | +0.28pp | +3% |
-| Nynorsk | 5.68% | 5.95% | +0.27pp | +5% |
 | French | 10.98% | 11.24% | +0.26pp | +2% |
-| Finnish | 5.77% | 5.99% | +0.22pp | +4% |
 | Spanish | 11.47% | 11.68% | +0.21pp | +2% |
-| Sotho | 8.32% | 8.53% | +0.21pp | +3% |
 | Esperanto | 6.58% | 6.78% | +0.20pp | +3% |
-| Bokmal | 6.45% | 6.64% | +0.19pp | +3% |
 | Italian | 7.84% | 8.00% | +0.16pp | +2% |
-| Maori | 8.61% | 8.69% | +0.08pp | +1% |
 | Latin | 11.82% | 11.90% | +0.08pp | +1% |
 | Japanese | 7.94% | 8.02% | +0.08pp | +1% |
 | Yoruba | 8.57% | 8.61% | +0.04pp | +0% |
-| Somali | 11.53% | 11.51% | −0.02pp | −0% |
-| Welsh | 10.74% | 10.67% | −0.07pp | −1% |
 | English | 12.89% | 12.80% | −0.09pp | −1% |
 
-We observed that the weaker languages got the largest gains. For example, Hebrew jumped **+52%** relative to its base. On the other hand, stronger languages like English actually got slowed down, probably because the base was already so strong. This supports the hypothesis that these models have the largest headroom in out-of-distribution regimes.
+We observed that the weaker languages got the largest gains. For example, Hungarian jumped **+46%** relative to its base. On the other hand, stronger languages like English actually got slowed down, probably because the base was already so strong. This supports the hypothesis that these models have the largest headroom in out-of-distribution regimes.
 
 # LoRA beats a full fine tune
 
@@ -114,7 +98,6 @@ We next wanted to make sure that a full fine-tune does not vastly outperform the
 | Polish | 3.57% | 4.66% | \+1.09pp (+30.5%) | 3.66% | \+0.09pp (+2.5%) |
 | Hungarian | 3.92% | 5.72% | \+1.80pp (+45.9%) | 4.04% | \+0.12pp (+3.1%) |
 | Korean | 4.19% | 5.31% | \+1.12pp (+26.7%) | 4.30% | \+0.11pp (+2.6%) |
-| Hebrew | 4.23% | 6.44% | \+2.21pp (+52.2%) | 4.71% | \+0.48pp (+11.3%) |
 | Dutch | 4.55% | 6.03% | \+1.48pp (+32.5%) | 4.68% | \+0.13pp (+2.9%) |
 
 We believe this is not showing that full fine-tune is bad or impossible, but rather that tuning all the paramters at once would require a lot more data to not be starved, whilst a limited rank-16 adapter (small % of total parameters) would converge much faster.
@@ -122,7 +105,7 @@ We believe this is not showing that full fine-tune is bad or impossible, but rat
 
 # Routing and the Combined LoRA
 
-We trained a tiny sequence-level router over the same target-hidden features DFlash consumes. It chooses among language adapters plus a fallback bucket. The router got 100% validation accuracy and 100% test accuracy on the held-out router set. We did this over the 5 worst languages.
+We trained a tiny sequence-level router over the same target-hidden features DFlash consumes. It chooses among language adapters plus a fallback bucket. The router got 100% validation accuracy and 100% test accuracy on the held-out router set. We did this over several of the worst languages.
 
 ![][image6]
 

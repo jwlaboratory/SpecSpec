@@ -1,24 +1,19 @@
 #!/usr/bin/env python3
-"""Charts for exp1-language: base vs own-LoRA vs combined-LoRA across 40 languages.
+"""Charts for exp1-language: base vs own-LoRA vs combined-LoRA.
+
+Only the clean 26-language subset (>=1000 train prompts) is charted.
 
 Reads results/summary.json, writes results/charts/*.png:
-    acceptance_dots.png   acceptance rate per language, 3 variants (dot plot)
-    base_own_combined_40_languages.png
-                          same chart, descriptive blog filename
     base_own_combined_26_mintrain1000.png
-                          clean 1k-train subset used for serving claims
+                          acceptance rate per language, base vs own vs combined
     base_acceptance_26_mintrain1000.png
-                          base DFlash acceptance on that clean subset
+                          base DFlash acceptance on the clean subset
     speedup_26_mintrain1000.png
-                          analytic speedup on that clean subset
+                          analytic speedup on the clean subset
     own_lora_gain_26_mintrain1000.png
-                          own-language LoRA gains on that clean subset
-    delta_bars.png        own/combined gain over base per language (paired bars)
-    gain_vs_base.png      gain vs base weakness (scatter)
+                          own-language LoRA gains on the clean subset
     gain_vs_base_26_mintrain1000.png
-                          clean 1k-train subset version of the scatter
-    transfer_vs_data.png  combined-minus-own vs training-set size (scatter)
-    speedup_dots.png      analytic wall-clock speedup per language, 3 variants
+                          gain vs base weakness (scatter), clean subset
 """
 import json
 import pathlib
@@ -375,11 +370,6 @@ def main():
     from matplotlib.ticker import FuncFormatter
     rows = load()
     clean = [r for r in rows if TRAIN_N.get(r[0], 0) >= 1000]
-    dot_plot(rows, "acceptance_rate", 100, "pooled acceptance rate (%)",
-             "Acceptance rate by language: base vs own vs combined",
-             "40 WildChat languages, 100 held-out test prompts each, r16 LoRAs",
-             "acceptance_dots.png", FuncFormatter(lambda v, _: f"{v:.0f}%"),
-             aliases=("base_own_combined_40_languages.png",))
     dot_plot(clean, "acceptance_rate", 100, "pooled acceptance rate (%)",
              "Acceptance rate by language: base vs own vs combined",
              "26 WildChat languages with 1,000 train prompts, 100 held-out test prompts each",
@@ -397,26 +387,18 @@ def main():
         "LoRA gains across languages",
         "",
     )
-    dot_plot(rows, "speedup_analytic", 1, "analytic wall-clock speedup (×, L/(1+0.44))",
-             "Wall-clock speedup over vanilla decode",
-             "speedup ≈ L/(1+c), c = 0.44 fitted in exp-08; follows acceptance",
-             "speedup_dots.png", FuncFormatter(lambda v, _: f"{v:.1f}×"))
     speedup_labeled_chart(
         clean,
         "speedup_26_mintrain1000.png",
         "Analytic speedup by language: base vs own vs combined",
         "26 WildChat languages with 1,000 train prompts; labels show speedup and % gain vs base",
     )
-    delta_bars(rows)
-    gain_vs_base(rows)
     gain_vs_base(
         clean,
         fname="gain_vs_base_26_mintrain1000.png",
         subtitle="each dot = one 1k-train language; left = weak base coverage",
     )
-    transfer_vs_data(rows)
     val_loss("Swedish")  # convergence curve; no-op if train_logs/Swedish.json absent
-    val_loss("Hindi")    # also render Hindi if its log is present
     print("charts ->", OUT)
 
 
