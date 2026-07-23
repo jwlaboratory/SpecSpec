@@ -45,7 +45,8 @@ SPEC_PATCH = ROOT / "lib" / "spec_patch.py"
 
 DRAFT_MODEL = "z-lab/Qwen3-8B-DFlash-b16"
 TARGET_MODEL = "Qwen/Qwen3-8B"
-GPU_PREP = "A100-40GB"       # generate / capture / verify / train (no 8B at train)
+GPU_PREP = "A100-40GB"       # generate / capture / verify (no 8B at train)
+GPU_TRAIN = "H200"           # train: no-truncation full-2048 batches need the room
 GPU_BENCH = "H200"           # bench: comparable to exp-08's fitted constants
 MAX_MODEL_LEN = 2048
 C_DFLASH_HF = 0.44           # exp-08 fitted per-step overhead (memory: wallclock-analytic-model)
@@ -587,11 +588,12 @@ def verify(lang: str, split: str = "val", n_check: int = 4, lora_steps: int = 5)
 # 5) TRAIN — one LoRA per language + one combined, streamed shard-by-shard,
 #            teacher-free (drafter + lm_head/embed dump only)
 # --------------------------------------------------------------------------- #
-@app.function(gpu=GPU_PREP, image=image, timeout=24 * 3600, volumes=VOLS,
+@app.function(gpu=GPU_TRAIN, image=image, timeout=24 * 3600, volumes=VOLS,
               max_containers=41, memory=32768, retries=2)
 def train_lora(name: str, langs: list, epochs: int = 3, lr: float = 1e-3,
-               batch_size: int = 12, num_anchors: int = 48, max_seq_len: int = 512,
-               rank: int = 16, val_every: int = 400, seed: int = 0):
+               batch_size: int = 12, num_anchors: int = 48, max_seq_len: int = 0,
+               rank: int = 16, val_every: int = 400, seed: int = 0,
+               batch_tokens: int = 16384):
     import os
     import random
     import sys
@@ -628,18 +630,36 @@ def train_lora(name: str, langs: list, epochs: int = 3, lr: float = 1e-3,
 
     train_paths = _shard_paths(langs, "train")
 
+    def token_batches(records, budget, max_count):
+        """Greedy token-budgeted batches over length-sorted records: each batch
+        holds sum(len) <= budget (always >= 1 record) and <= max_count records.
+        Replaces fixed batch_size so that full-length (untruncated, up to 2048-
+        token) sequences don't OOM while short-sequence languages still batch
+        wide -- the truncation-free training path."""
+        batch, toks = [], 0
+        for r in records:
+            L = r["input_ids"].shape[0]
+            if batch and (toks + L > budget or len(batch) >= max_count):
+                yield batch
+                batch, toks = [], 0
+            batch.append(r)
+            toks += L
+        if batch:
+            yield batch
+
     # small fixed val sample spread across languages (one shard per language);
-    # keep only records whose truncated window still has an anchorable response
-    # (length-sorted shards put prompt-dominated records first — Swedish's val
-    # went entirely unanchorable without this filter)
+    # keep records with an anchorable response (no truncation now, so use the
+    # full sequence length -- prompt-heavy records like Hindi's val keep their
+    # response instead of being cut to the prompt at max_seq_len). Sort by length
+    # so token_batches produces low-padding batches.
     val_records = []
     per = max(60 // len(langs), 2)
     for l in langs:
         cand = torch.load(_shard_paths([l], "val")[0], map_location="cpu")
         cand = [r for r in cand
-                if min(r["input_ids"].shape[0], max_seq_len) - r["prompt_len"]
-                > 2 * block_size]
+                if r["input_ids"].shape[0] - r["prompt_len"] > 2 * block_size]
         val_records += cand[:per]
+    val_records.sort(key=lambda r: r["input_ids"].shape[0])
 
     def run_batch(records, train=True):
         ids, hid, mask = make_batch(records, pad_token_id=tok.pad_token_id,
@@ -663,8 +683,8 @@ def train_lora(name: str, langs: list, epochs: int = 3, lr: float = 1e-3,
     def validate():
         online.eval()
         ls, accs = [], []
-        for i in range(0, len(val_records), batch_size):
-            r = run_batch(val_records[i:i + batch_size], train=False)
+        for b in token_batches(val_records, batch_tokens, batch_size):
+            r = run_batch(b, train=False)
             if r:
                 ls.append(r[0]); accs.append(r[1])
         online.train()
@@ -700,12 +720,13 @@ def train_lora(name: str, langs: list, epochs: int = 3, lr: float = 1e-3,
     for ep in range(epochs):
         rng.shuffle(train_paths)
         for recs in shard_stream(list(train_paths)):
-            # records inside a shard are length-sorted (capture): sequential
-            # slices give near-uniform-length batches; shuffle the batch order
-            starts = list(range(0, len(recs), batch_size))
-            rng.shuffle(starts)
-            for s in starts:
-                r = run_batch(recs[s:s + batch_size], train=True)
+            # records inside a shard are length-sorted (capture): token_batches
+            # over them gives near-uniform-length, memory-bounded batches; shuffle
+            # the batch order so the optimizer doesn't see length-monotone steps
+            batches = list(token_batches(recs, batch_tokens, batch_size))
+            rng.shuffle(batches)
+            for b in batches:
+                r = run_batch(b, train=True)
                 if r is None:
                     continue
                 step += 1
@@ -715,11 +736,13 @@ def train_lora(name: str, langs: list, epochs: int = 3, lr: float = 1e-3,
                 if step % val_every == 0:
                     vl, va = validate()
                     log["val"].append({"step": step, "loss": vl, "acc": va})
-                    print(f"[train:{name}]   val step{step} loss={vl:.4f} "
-                          f"acc={va:.4f}", flush=True)
+                    if vl is not None:
+                        print(f"[train:{name}]   val step{step} loss={vl:.4f} "
+                              f"acc={va:.4f}", flush=True)
             del recs
 
     log["val_final"] = validate()
+    log["steps"] = step
     print(f"[train:{name}] final val {log['val_final']}", flush=True)
     os.makedirs(MODELS, exist_ok=True)
     sfx = f"_r{rank}" if rank != 16 else ""
@@ -728,6 +751,13 @@ def train_lora(name: str, langs: list, epochs: int = 3, lr: float = 1e-3,
     data_vol.commit()
     log["saved"] = path
     log["train_seconds"] = round(time.time() - t0, 1)
+    # persist the val curve (initial + every val_every steps + final) so the
+    # convergence plot can be regenerated without re-running training
+    os.makedirs(f"{RESULTS}/train_logs", exist_ok=True)
+    with open(f"{RESULTS}/train_logs/{name}{sfx}.json", "w") as f:
+        import json as _json
+        _json.dump(log, f, indent=1)
+    data_vol.commit()
     return log
 
 
@@ -987,3 +1017,23 @@ def smoke():
                                  vanilla_limit=2, warmup=1) for v in VARIANTS]
     out["aggregate"] = aggregate.remote(langs)
     print(json.dumps(out, indent=2, default=str))
+
+
+@app.local_entrypoint()
+def curve(lang: str = "Hindi", epochs: int = 3, val_every: int = 25,
+          rank: int = 16):
+    """Train ONE language with dense validation logging to produce a convergence
+    curve. Writes results/train_logs/{lang}.json locally (val loss+acc at
+    val_every-step cadence); feed it to make_charts.py::val_loss."""
+    import json
+    log = train_lora.remote(lang, [lang], epochs=epochs, rank=rank,
+                            val_every=val_every)
+    out = LOCAL / "results" / "train_logs"
+    out.mkdir(parents=True, exist_ok=True)
+    sfx = f"_r{rank}" if rank != 16 else ""
+    dest = out / f"{lang}{sfx}.json"
+    with open(dest, "w") as f:
+        json.dump(log, f, indent=1)
+    n = len(log.get("val", []))
+    print(f"[curve] {lang}: initial={log.get('val_initial')} "
+          f"final={log.get('val_final')} ({n} mid points) -> {dest}")

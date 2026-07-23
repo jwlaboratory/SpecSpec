@@ -21,7 +21,7 @@ SPEC_PATCH = ROOT / "lib" / "spec_patch.py"
 
 DRAFT_MODEL = "z-lab/Qwen3-8B-DFlash-b16"
 TARGET_MODEL = "Qwen/Qwen3-8B"
-GPU_TRAIN = "A100-40GB"
+GPU_TRAIN = "H200"           # no-truncation full-2048 full-FT needs the room
 GPU_BENCH = "H200"
 VARIANTS = ["base", "own", "combined", "full"]
 DEFAULT_LANGS = ["Polish", "Hungarian", "Korean", "Hebrew", "Dutch"]
@@ -209,10 +209,11 @@ def train_full(
     lr: float = 1e-5,
     batch_size: int = 4,
     num_anchors: int = 48,
-    max_seq_len: int = 512,
+    max_seq_len: int = 0,
     val_every: int = 100,
     max_steps: int = 0,
     seed: int = 0,
+    batch_tokens: int = 8192,
 ):
     import os
     import random
@@ -249,16 +250,34 @@ def train_full(
     opt = torch.optim.AdamW(trainable, lr=lr, weight_decay=0.0)
     block_size = draft.block_size
 
+    def token_batches(records, budget, max_count):
+        """Greedy token-budgeted batches over length-sorted records so full-
+        length (untruncated, up to 2048-token) sequences don't OOM the full
+        fine-tune while short-sequence languages still batch wide."""
+        batch, toks = [], 0
+        for r in records:
+            n = r["input_ids"].shape[0]
+            if batch and (toks + n > budget or len(batch) >= max_count):
+                yield batch
+                batch, toks = [], 0
+            batch.append(r)
+            toks += n
+        if batch:
+            yield batch
+
     train_paths = _shard_paths([lang], "train")
     val_records = []
     for path in _shard_paths([lang], "val"):
         val_records += torch.load(path, map_location="cpu")
         if len(val_records) >= 60:
             break
+    # no truncation: keep records with an anchorable response at full length,
+    # sort by length so token_batches yields low-padding batches
     val_records = [
         r for r in val_records[:80]
-        if min(r["input_ids"].shape[0], max_seq_len) - r["prompt_len"] > 2 * block_size
+        if r["input_ids"].shape[0] - r["prompt_len"] > 2 * block_size
     ][:60]
+    val_records.sort(key=lambda r: r["input_ids"].shape[0])
 
     def run_batch(records, *, train: bool):
         ids, hidden, mask = _make_batch(records, pad_token_id=tok.pad_token_id,
@@ -283,8 +302,8 @@ def train_full(
     def validate():
         online.eval()
         losses, accs = [], []
-        for i in range(0, len(val_records), batch_size):
-            rec = run_batch(val_records[i:i + batch_size], train=False)
+        for b in token_batches(val_records, batch_tokens, batch_size):
+            rec = run_batch(b, train=False)
             if rec:
                 losses.append(rec[0])
                 accs.append(rec[1])
@@ -313,10 +332,10 @@ def train_full(
         rng.shuffle(paths)
         for path in paths:
             recs = torch.load(path, map_location="cpu")
-            starts = list(range(0, len(recs), batch_size))
-            rng.shuffle(starts)
-            for start in starts:
-                out = run_batch(recs[start:start + batch_size], train=True)
+            batches = list(token_batches(recs, batch_tokens, batch_size))
+            rng.shuffle(batches)
+            for b in batches:
+                out = run_batch(b, train=True)
                 if out is None:
                     continue
                 step += 1
@@ -556,10 +575,13 @@ def launch(
     skip_train: bool = False,
 ):
     parsed_langs = [lang.strip() for lang in langs.split(",") if lang.strip()]
-    call = full.spawn(langs=parsed_langs, epochs=epochs, lr=lr, batch_size=batch_size,
-                      max_new_tokens=max_new_tokens, bench_limit=bench_limit,
-                      skip_train=skip_train)
-    print(f"LAUNCHED language full-ft: {call.object_id}")
+    # block on the result so the ephemeral app stays alive until full() finishes
+    # (a bare .spawn() returns immediately and the app teardown kills the job)
+    result = full.remote(langs=parsed_langs, epochs=epochs, lr=lr, batch_size=batch_size,
+                         max_new_tokens=max_new_tokens, bench_limit=bench_limit,
+                         skip_train=skip_train)
+    import json
+    print(json.dumps(result, indent=2, default=str))
 
 
 @app.local_entrypoint()

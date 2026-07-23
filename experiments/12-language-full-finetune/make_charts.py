@@ -106,24 +106,15 @@ def acceptance_chart(langs: list[str], rows: dict, suffix: str = "") -> None:
     style_axis(ax)
 
     ax.set_title(
-        "Language LoRA moves weak lanes; full fine-tune stays near base",
+        "Base vs LoRA vs full fine tune",
         color=INK,
         fontsize=14,
         fontweight="bold",
         loc="left",
         pad=14,
     )
-    ax.text(
-        0,
-        1.01,
-        "DFlash on Qwen3-8B target behavior, held-out WildChat language prompts",
-        transform=ax.transAxes,
-        color=INK2,
-        fontsize=10,
-        ha="left",
-        va="bottom",
-    )
-    leg = ax.legend(frameon=False, fontsize=10, loc="lower right")
+    leg = ax.legend(frameon=False, fontsize=10, loc="upper left",
+                    bbox_to_anchor=(1.01, 1.0))
     for text in leg.get_texts():
         text.set_color(INK2)
     fig.tight_layout()

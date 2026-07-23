@@ -18,25 +18,25 @@
     "n": 100,
     "acceptance_rate": 0.0357,
     "mean_accept_length": 1.536,
-    "tok_s": 54.1
+    "tok_s": 49.21
    },
    "own": {
     "n": 100,
-    "acceptance_rate": 0.0465,
-    "mean_accept_length": 1.698,
-    "tok_s": 44.27
+    "acceptance_rate": 0.0466,
+    "mean_accept_length": 1.699,
+    "tok_s": 51.76
    },
    "combined": {
     "n": 100,
-    "acceptance_rate": 0.0441,
-    "mean_accept_length": 1.661,
-    "tok_s": 49.8
+    "acceptance_rate": 0.0431,
+    "mean_accept_length": 1.646,
+    "tok_s": 52.77
    },
    "full": {
     "n": 100,
-    "acceptance_rate": 0.0365,
-    "mean_accept_length": 1.547,
-    "tok_s": 46.73
+    "acceptance_rate": 0.0366,
+    "mean_accept_length": 1.548,
+    "tok_s": 43.7
    }
   },
   "Hungarian": {
@@ -44,25 +44,25 @@
     "n": 100,
     "acceptance_rate": 0.0392,
     "mean_accept_length": 1.588,
-    "tok_s": 50.48
+    "tok_s": 57.74
    },
    "own": {
     "n": 100,
-    "acceptance_rate": 0.0578,
-    "mean_accept_length": 1.866,
-    "tok_s": 60.29
+    "acceptance_rate": 0.0572,
+    "mean_accept_length": 1.858,
+    "tok_s": 54.39
    },
    "combined": {
     "n": 100,
-    "acceptance_rate": 0.0516,
-    "mean_accept_length": 1.774,
-    "tok_s": 48.06
+    "acceptance_rate": 0.0511,
+    "mean_accept_length": 1.767,
+    "tok_s": 55.75
    },
    "full": {
     "n": 100,
-    "acceptance_rate": 0.0403,
-    "mean_accept_length": 1.605,
-    "tok_s": 48.38
+    "acceptance_rate": 0.0404,
+    "mean_accept_length": 1.606,
+    "tok_s": 53.57
    }
   },
   "Korean": {
@@ -70,25 +70,25 @@
     "n": 100,
     "acceptance_rate": 0.0419,
     "mean_accept_length": 1.629,
-    "tok_s": 56.46
+    "tok_s": 46.16
    },
    "own": {
     "n": 100,
-    "acceptance_rate": 0.0525,
-    "mean_accept_length": 1.788,
-    "tok_s": 55.34
+    "acceptance_rate": 0.0531,
+    "mean_accept_length": 1.797,
+    "tok_s": 54.74
    },
    "combined": {
     "n": 100,
-    "acceptance_rate": 0.0495,
-    "mean_accept_length": 1.743,
-    "tok_s": 51.39
+    "acceptance_rate": 0.0497,
+    "mean_accept_length": 1.746,
+    "tok_s": 53.91
    },
    "full": {
     "n": 100,
-    "acceptance_rate": 0.0429,
-    "mean_accept_length": 1.644,
-    "tok_s": 49.9
+    "acceptance_rate": 0.043,
+    "mean_accept_length": 1.645,
+    "tok_s": 53.1
    }
   },
   "Hebrew": {
@@ -96,25 +96,25 @@
     "n": 95,
     "acceptance_rate": 0.0423,
     "mean_accept_length": 1.635,
-    "tok_s": 46.44
+    "tok_s": 59.1
    },
    "own": {
     "n": 95,
-    "acceptance_rate": 0.0639,
-    "mean_accept_length": 1.959,
-    "tok_s": 50.08
+    "acceptance_rate": 0.0644,
+    "mean_accept_length": 1.966,
+    "tok_s": 62.31
    },
    "combined": {
     "n": 95,
-    "acceptance_rate": 0.0622,
-    "mean_accept_length": 1.933,
-    "tok_s": 49.55
+    "acceptance_rate": 0.0608,
+    "mean_accept_length": 1.911,
+    "tok_s": 55.16
    },
    "full": {
     "n": 95,
-    "acceptance_rate": 0.047,
-    "mean_accept_length": 1.705,
-    "tok_s": 50.07
+    "acceptance_rate": 0.0471,
+    "mean_accept_length": 1.707,
+    "tok_s": 56.04
    }
   },
   "Dutch": {
@@ -122,25 +122,25 @@
     "n": 100,
     "acceptance_rate": 0.0455,
     "mean_accept_length": 1.683,
-    "tok_s": 58.61
+    "tok_s": 46.59
    },
    "own": {
     "n": 100,
     "acceptance_rate": 0.0603,
     "mean_accept_length": 1.904,
-    "tok_s": 55.99
+    "tok_s": 51.91
    },
    "combined": {
     "n": 100,
-    "acceptance_rate": 0.056,
-    "mean_accept_length": 1.84,
-    "tok_s": 54.28
+    "acceptance_rate": 0.0554,
+    "mean_accept_length": 1.831,
+    "tok_s": 55.89
    },
    "full": {
     "n": 100,
     "acceptance_rate": 0.0468,
-    "mean_accept_length": 1.702,
-    "tok_s": 53.07
+    "mean_accept_length": 1.703,
+    "tok_s": 56.3
    }
   }
  }

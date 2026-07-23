@@ -138,8 +138,10 @@ def base_acceptance_chart(rows, fname, title, subtitle):
 def own_gain_chart(rows, fname, title, subtitle):
     rows = sorted(rows, key=lambda r: r[1]["base"]["acceptance_rate"])
     langs = [r[0] for r in rows]
+    bases = [r[1]["base"]["acceptance_rate"] * 100 for r in rows]
     gains = [(r[1]["own"]["acceptance_rate"] - r[1]["base"]["acceptance_rate"]) * 100
              for r in rows]
+    rels = [g / b * 100 if b else 0.0 for g, b in zip(gains, bases)]
     y = range(len(rows))
 
     fig, ax = plt.subplots(figsize=(8.6, max(7.0, len(rows) * 0.34)), dpi=150)
@@ -153,9 +155,10 @@ def own_gain_chart(rows, fname, title, subtitle):
                   color=INK2, fontsize=9)
     ax.set_title(title, color=INK, fontsize=13, loc="left", pad=18, weight="bold")
     ax.text(0, 1.006, subtitle, transform=ax.transAxes, color=INK2, fontsize=9)
-    for yy, v in zip(y, gains):
-        ax.text(v + 0.04, yy, f"+{v:.2f}pp", va="center", ha="left",
+    for yy, v, rel in zip(y, gains, rels):
+        ax.text(v + 0.04, yy, f"+{v:.2f}pp ({rel:+.0f}%)", va="center", ha="left",
                 fontsize=7.5, color=INK2)
+    ax.set_xlim(right=max(gains) + 1.1)
     fig.tight_layout()
     fig.savefig(OUT / fname, facecolor=SURFACE)
     plt.close(fig)
@@ -308,6 +311,66 @@ def transfer_vs_data(rows):
     plt.close(fig)
 
 
+def val_loss(lang="Hindi", rank=16):
+    """Convergence curve for one language from results/train_logs/{lang}.json
+    (produced by pipeline.py::curve). Val loss (left axis) + val accept-rate
+    (right axis) vs training step, initial/final points included."""
+    sfx = f"_r{rank}" if rank != 16 else ""
+    path = HERE / "results" / "train_logs" / f"{lang}{sfx}.json"
+    if not path.exists():
+        print(f"[val_loss] missing {path} — run: modal run pipeline.py::curve "
+              f"--lang {lang}")
+        return
+    log = json.load(open(path))
+    pts = []
+    if log.get("val_initial") and log["val_initial"][0] is not None:
+        pts.append({"step": 0, "loss": log["val_initial"][0],
+                    "acc": log["val_initial"][1]})
+    pts += [p for p in log.get("val", []) if p.get("loss") is not None]
+    if log.get("val_final") and log["val_final"][0] is not None:
+        # place final at its true step; fall back just past the last mid point
+        last = pts[-1]["step"] if pts else 0
+        fstep = log.get("steps") or (last + 1)
+        if fstep > last:
+            pts.append({"step": fstep, "loss": log["val_final"][0],
+                        "acc": log["val_final"][1]})
+    if len(pts) < 2:
+        print(f"[val_loss] only {len(pts)} point(s) in {path.name}; "
+              f"re-run curve with a smaller --val-every")
+        return
+    steps = [p["step"] for p in pts]
+    loss = [p["loss"] for p in pts]
+    acc = [p["acc"] * 100 for p in pts]
+
+    fig, ax = plt.subplots(figsize=(7.2, 4.4), dpi=150)
+    fig.set_facecolor(SURFACE)
+    style_ax(ax, xgrid=False)
+    ax.grid(axis="y", color=GRID, linewidth=0.8)
+    ax.plot(steps, loss, color=C_OWN, linewidth=2, marker="o", markersize=4,
+            label="val loss")
+    ax.set_xlabel("training step", color=INK2, fontsize=9)
+    ax.set_ylabel("validation loss", color=C_OWN, fontsize=9)
+    ax.tick_params(axis="y", colors=C_OWN)
+
+    ax2 = ax.twinx()
+    ax2.spines["top"].set_visible(False)
+    ax2.plot(steps, acc, color=C_COMB, linewidth=1.6, marker="s", markersize=3,
+             linestyle="--", label="val accept rate")
+    ax2.set_ylabel("val accept rate (%)", color=C_COMB, fontsize=9)
+    ax2.tick_params(axis="y", colors=C_COMB, labelsize=8.5)
+
+    ax.set_title(f"{lang}: r{rank} LoRA converges on held-out validation",
+                 color=INK, fontsize=12, fontweight="bold", loc="left", pad=12)
+    lines = ax.get_lines() + ax2.get_lines()
+    ax.legend(lines, [l.get_label() for l in lines], loc="center right",
+              frameon=False, fontsize=8.5)
+    fig.tight_layout()
+    dest = OUT / f"val_loss_{lang}{sfx}.png"
+    fig.savefig(dest, facecolor=SURFACE)
+    plt.close(fig)
+    print("val curve ->", dest)
+
+
 def main():
     from matplotlib.ticker import FuncFormatter
     rows = load()
@@ -325,14 +388,14 @@ def main():
     base_acceptance_chart(
         clean,
         "base_acceptance_26_mintrain1000.png",
-        "Base DFlash acceptance across clean language lanes",
-        "26 WildChat languages with 1,000 train prompts; sorted by base acceptance",
+        "Base DFlash acceptance (Qwen3-8B and DFlash 1B)",
+        "",
     )
     own_gain_chart(
         clean,
         "own_lora_gain_26_mintrain1000.png",
-        "Own-language LoRA gains across clean language lanes",
-        "gain in pooled acceptance rate vs base DFlash; 26-language 1k-train subset",
+        "LoRA gains across languages",
+        "",
     )
     dot_plot(rows, "speedup_analytic", 1, "analytic wall-clock speedup (×, L/(1+0.44))",
              "Wall-clock speedup over vanilla decode",
@@ -352,6 +415,8 @@ def main():
         subtitle="each dot = one 1k-train language; left = weak base coverage",
     )
     transfer_vs_data(rows)
+    val_loss("Swedish")  # convergence curve; no-op if train_logs/Swedish.json absent
+    val_loss("Hindi")    # also render Hindi if its log is present
     print("charts ->", OUT)
 
 
