@@ -102,30 +102,61 @@ We next wanted to make sure that a full fine-tune does not vastly outperform the
 
 We believe this is not showing that full fine-tune is bad or impossible, but rather that tuning all the paramters at once would require a lot more data to not be starved, whilst a limited rank-16 adapter (small % of total parameters) would converge much faster.
 
+# Training a router between LoRA's
+Additionally, we train a tiny router that uses the target-hidden features that DFLash uses anyways. The router is a 2-layer MLP that takes the hidden features (20480) to route between the 26 languages with 10.5M parameters, and since it is so small it is basically negligable cost of compute/time.
 
-# Routing and the Combined LoRA
+![26-way language router training curve — train loss and validation accuracy](router/results26/charts/router26_training.png)
 
-We trained a tiny sequence-level router over the same target-hidden features DFlash consumes. It chooses among language adapters plus a fallback bucket. The router got 100% validation accuracy and 100% test accuracy on the held-out router set. We did this over several of the worst languages.
-
-![][image6]
-
-We then tried all 26 languages as well, and found really good results again.  
+It scores very high at Val 84.69% and Test 81.58%:
 ![26-way WildChat language router per-class accuracy](router/results26/charts/router26_accuracy.png)
 
-(English here contains other stuff as well, like SQL, latin, etc)
+(English here contains other stuff as well, like SQL, Latin, etc, which may be dragging down the score)
 
-This sounds amazing, but we realized that this was a red flag. If the model is able to perfectly separate languages internally, that means, there is no need for specialization (as it can already separate and learn the languages individually, no interference).
 
-We tried an experiment of training a singular combined LoRA over all languages and compared the performance with the own LoRA.  
+
+# Combined LoRA keeps a lot of the gains
+
+Next, we wanted to see if the LoRA specialation was due to each adapter uniquly learning the field, or was just because it was exposed to more specific knowledge. The hint that told us to investigate this was that the hidden states cleanly seperated the different languages well when routing between languages.
+
+We also wondered if combining many languages could improve performance. Some languages come from the same family and carry semantic meaning that is complimentary.
+
+
+We tried an experiment of training a singular "combined LoRA" over all the languages and compared the performance with the own LoRA.
+
 ![Base vs own-language LoRA vs combined LoRA across 26 clean WildChat languages](new/exp1-language/results/charts/base_own_combined_26_mintrain1000.png)
 
-Looking at the net speedup per domain
+Looking at the net speedup per domain []
 
 ![Analytic speedup by language: base vs own vs combined](new/exp1-language/results/charts/speedup_26_mintrain1000.png)
 
-labeled
 
-Combined LoRA disproves specialization \**for this case.\** We believe because language is an easily separable task, it is largely FIRST a matter or more training data for out-of-distribution languages to improve the quality. When this saturates, then, perhaps our specialization will further shine.
+This implies we just need to train on each domain individually and make sure the model learns to cleanly seperate each task in it's hidden states for better drafter performance. Because language is an easily separable task, it is largely FIRST a matter or more training data for out-of-distribution languages to improve the quality. When this saturates, then, perhaps our specialization will further shine.
+
+# Interference gets real in more fine grained domains
+
+In domains in which the model has a hard time cleanly seperating, we experinece the "muddling" of combined experts (more training data does not solve, the small # of params means it muddles between 2 experts, and therfor needs specialization).
+
+We tried cursory experiments (but leave the full experiments up for a follow up blog).
+
+First, we build an interference ladder that shows 10 combined domains vs 20 and 40 comined domains.
+
+| combined adapter | mean gap vs own specialist | 95% CI | gain retained |
+| :---- | ----: | :----: | ----: |
+| 10 domains | −0.21pp | [−0.29, −0.13] | ~74% |
+| 20 domains | −0.27pp | [−0.34, −0.20] | ~70% |
+| 40 domains | −0.28pp | [−0.36, −0.19] | ~67% |
+
+As you can see, as you increase the number of experts, the interference increases and specialists shine further.
+
+
+Second, to prove that languages are easy and low interference, we try other english subdomains (code_python, code_sql, ood_legal, ood_medical, ood_financial, task_math_reasoning, task_summarization)
+
+<image>
+
+The perdomain specialists beat the base 7/7, but the key point to see is that the combined adapater only retains about 20% of the specialist gain.
+
+<image>
+
 
 # Serving Cost
 

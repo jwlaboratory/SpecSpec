@@ -54,10 +54,10 @@ def main() -> None:
     for yy, v in zip(y, vals):
         ax.text(min(v + 1.2, 96), yy, f"{v:.1f}%", va="center",
                 fontsize=8.5, color=INK2)
-    fig.suptitle("26-way clean language router accuracy",
-                 x=0.08, y=0.995, ha="left", color=INK,
+    fig.suptitle("Router Accuracy",
+                 x=0.08, y=0.985, ha="left", color=INK,
                  fontsize=14, fontweight="bold")
-    fig.text(0.08, 0.958,
+    fig.text(0.08, 0.938,
              f"1,000-train-prompt languages · val {d['val_acc']*100:.1f}% · "
              f"test {d['test_acc']*100:.1f}% · {d['test_n']} test prompts",
              ha="left", color=INK2, fontsize=9.5)
