@@ -210,14 +210,14 @@ The benefit of N-merged LoRAs is that you do not have any intereference and can 
 
 We then benchmarked using vLLM to see at different batch sizes with a "MIXED BAG" of different requests from different languages. This forced the model to use the combined merged LoRA and the speedups are shown below:
 
-| batch size | merged combined | base DFlash | no spec decoding |
+| batch size | merged combined | base DFlash | merged combined vs base |
 | ----: | ----: | ----: | ----: |
-| 1 | 1.50× | 1.42× | 1.00× |
-| 4 | 1.48× | 1.39× | 1.00× |
-| 8 | 1.36× | 1.27× | 1.00× |
-| 16 | 0.98× | 0.91× | 1.00× |
-| 32 | 0.66× | 0.62× | 1.00× |
-| 64 | 0.38× | 0.36× | 1.00× |
+| 1 | 1.495× | 1.418× | +5.4% |
+| 4 | 1.476× | 1.393× | +6.0% |
+| 8 | 1.363× | 1.270× | +7.3% |
+| 16 | 0.976× | 0.914× | +6.8% |
+| 32 | 0.662× | 0.622× | +6.4% |
+| 64 | 0.377× | 0.355× | +6.2% |
 
 ![Mixed 16-language serving stream: merged combined vs base DFlash speedup across batch sizes](experiments/13-batchsize-speedup/results/charts/mixed_vs_batch.png)
 
