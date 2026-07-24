@@ -52,10 +52,48 @@ non-Latin languages. True gains are ≥ reported.
 | Fix + rerun exp12 (LoRA vs full-FT) | ✅ done: own +1.54pp vs full-FT +0.19pp (was +1.37/+0.10) |
 | Blog edits (both) + figures repointed | ✅ done (exp1 tables, full-FT tables, methodology notes) |
 
-## Remaining
-- **Task #6 — batch-size net-speedup serving experiment** (NEW, not truncation).
-  Needs design + go-ahead. Not started.
-- **Commit** — everything is uncommitted in the working tree.
+## Committed
+- Branch `fix/no-truncation-training-rerun` pushed (commit 2e70818). PR:
+  https://github.com/jwlaboratory/SpecSpec/pull/new/fix/no-truncation-training-rerun
+
+## Task #6 — batch-size net-speedup serving experiment
+New experiment `experiments/13-batchsize-speedup/` (vLLM continuous batching,
+DFlash spec-decode via speculative_config, H200). NOT committed yet.
+
+**Phase 1 DONE — net speedup vs batch size (single-GPU serial sweep, best-of-3
+reps; measurement made robust after a noisy per-container first pass):**
+
+| batch | net speedup | acceptance |
+|---:|---:|---:|
+| 1 | 2.27× | 0.128 |
+| 4 | 2.23× | 0.129 |
+| 8 | 1.97× | 0.128 |
+| 12 | 1.79× | 0.124 |
+| 16 | 1.40× | 0.127 |
+| 20 | 1.31× | 0.125 |
+| 24 | 1.11× | 0.123 |
+| 28 | **0.99×** | 0.125 |
+| 32 | 0.87× | 0.124 |
+| 48 | 0.55× | 0.124 |
+| 64 | 0.52× | 0.123 |
+
+**Breakeven ≈ batch 28.** Acceptance flat (~13%) → the collapse is a systems
+effect (target compute-saturates at high batch), not the drafter. Charts:
+`results/charts/{speedup,throughput}_vs_batch.png`. Confirms the blog's batch-1
+wall-clock numbers overstate served throughput at production batch sizes.
+
+Methodology note: first pass ran one container per config and was too noisy
+(target-only non-monotonic — cross-GPU variance). Fixed by measuring both modes
+in one container (ratio GPU-invariant) + best-of-3 reps + single-GPU serial run.
+
+**Phase 1b (TODO):** add `merged_combined` mode — does specialization shift the
+crossover (higher acceptance → later breakeven)?
+**Phase 2 (TODO):** merge/swap cost — under batched vLLM spec-decode there is NO
+drafter-LoRA hot-swap; merged is the only path, and switching the merged adapter
+= full engine reload (~60s). Complements exp11's batch-1 hot-swap finding.
+
+**Blog:** fold Phase 1 into the Serving Cost section (both blogs) — it directly
+answers "what's the real served speedup" and reframes the batch-1 numbers.
 
 ## NEW NUMBERS (no-truncation vs truncated), 40 langs
 Base acceptance **identical** old vs new (deterministic greedy bench — sanity ✓).

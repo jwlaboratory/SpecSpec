@@ -1,0 +1,102 @@
+{
+ "target_model": "Qwen/Qwen3-8B",
+ "gpu": "H200",
+ "modes": [
+  "target_only",
+  "base",
+  "merged_combined"
+ ],
+ "pool": {
+  "batch": 1,
+  "n_langs": 14,
+  "mean_base_speedup_vs_target": 1.59,
+  "mean_combined_speedup_vs_target": 1.669,
+  "mean_combined_vs_base_pct": 4.99,
+  "per_lang": {
+   "English": {
+    "base": 2.226,
+    "combined": 2.191,
+    "base_accept": 0.1298,
+    "combined_accept": 0.1269
+   },
+   "French": {
+    "base": 1.963,
+    "combined": 1.967,
+    "base_accept": 0.1066,
+    "combined_accept": 0.1065
+   },
+   "German": {
+    "base": 1.719,
+    "combined": 1.73,
+    "base_accept": 0.0824,
+    "combined_accept": 0.083
+   },
+   "Spanish": {
+    "base": 2.005,
+    "combined": 1.979,
+    "base_accept": 0.1101,
+    "combined_accept": 0.1076
+   },
+   "Russian": {
+    "base": 1.643,
+    "combined": 1.689,
+    "base_accept": 0.0766,
+    "combined_accept": 0.0805
+   },
+   "Chinese": {
+    "base": 1.588,
+    "combined": 1.611,
+    "base_accept": 0.0693,
+    "combined_accept": 0.071
+   },
+   "Swedish": {
+    "base": 1.491,
+    "combined": 1.704,
+    "base_accept": 0.064,
+    "combined_accept": 0.0832
+   },
+   "Turkish": {
+    "base": 1.337,
+    "combined": 1.487,
+    "base_accept": 0.0486,
+    "combined_accept": 0.0625
+   },
+   "Hungarian": {
+    "base": 1.235,
+    "combined": 1.365,
+    "base_accept": 0.037,
+    "combined_accept": 0.0483
+   },
+   "Dutch": {
+    "base": 1.389,
+    "combined": 1.523,
+    "base_accept": 0.0481,
+    "combined_accept": 0.0597
+   },
+   "Polish": {
+    "base": 1.271,
+    "combined": 1.377,
+    "base_accept": 0.0373,
+    "combined_accept": 0.0465
+   },
+   "Hebrew": {
+    "base": 1.23,
+    "combined": 1.449,
+    "base_accept": 0.0336,
+    "combined_accept": 0.0484
+   },
+   "Japanese": {
+    "base": 1.666,
+    "combined": 1.746,
+    "base_accept": 0.0711,
+    "combined_accept": 0.0735
+   },
+   "Arabic": {
+    "base": 1.492,
+    "combined": 1.548,
+    "base_accept": 0.0558,
+    "combined_accept": 0.0606
+   }
+  }
+ }
+}
