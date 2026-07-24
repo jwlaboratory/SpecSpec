@@ -1,6 +1,6 @@
 # Specialization is (sometimes) all Speculation needs
 
-**TLDR:** We made speculative decoding 8% faster on aggragate and upwards of 46% faster on out of distribution languages by specializing block diffusion drafter models using LoRA. However, we find languages have low levels of interference and a singular combined LoRA captures almost all of the gains. We next hypothesize specialization will perform better in more fine-grained domains (future work) and has room to bring signicant speedups.
+**TLDR:** We made speculative decoding 8% faster on aggregate and upwards of 46% faster on out-of-distribution languages by specializing block diffusion drafter models using LoRA. However, we find languages have low levels of interference and a single combined LoRA captures almost all of the gains. We next hypothesize specialization will perform better in more fine-grained domains (future work) and has room to bring significant speedups.
 
 # What and why are we specializing?
 
@@ -8,13 +8,13 @@ Speculative decoding is an inference technique in which a draft model is used to
 
 You can think of the speculator (the drafter) as an approximation for the verifier (the target). An important detail is that the drafter is not trying to be correct in an external sense, but rather trying to copy the verifier.
 
-![Sketch: the target generates "The sky is GREEN" while the drafter proposes "The sky is BLUE" — the first three tokens are accepted and the last is rejected, illustrating that the drafter's job is to copy the target, not to be externally correct](images/image.png)
+![The drafter's job is to generate tokens that copy the target, not be correct](images/image.png)
 
 We hypothesized that since the drafter is a small approximation of the larger verifier, it has to pick and choose what areas to have the best results. While common regions get modeled well, long-tail regions have gaps. If this is true, specializing the drafter should help us where the base drafter is weakest (out of distribution).
 
-![Sketch of two overlapping distributions: a wide "target model" curve and a narrower "drafter" curve that matches the target only near the peak ("drafter approx"), leaving "missed long tail" regions on both sides where the drafter fails to model the target](images/image%20copy.png)
+![The target has a much wider tail distribution than what the drafter can approximate](images/image%20copy.png)
 
-People have tried specialization for speculators in the past, but minimal or no work has been done on dynamic speculators, specializing diffusion speculators like DFlash, benchmarking at larger batch sizes, using unmerged LoRA/NaRA to serve many specializations at once, and comparing with combined/full finetunes. Below we experiment with different domains, different routing, and different trained adapters and see if they improve speculators.
+People have tried specialization for speculators in the past, but minimal or no work has been done on dynamic speculators, specializing diffusion speculators like DFlash, benchmarking at larger batch sizes, using unmerged LoRA/NaRA to serve many specializations at once, and comparing with combined/full fine-tunes. Below we experiment with different domains, different routing, and different trained adapters to see if they improve speculators.
 
 # Speculators are uneven across languages
 
@@ -37,22 +37,22 @@ We found that the speculator is extremely domain sensitive, supporting our hypot
 
 ![Base DFlash acceptance across 26 WildChat languages](new/exp1-language/results/charts/base_acceptance_26_mintrain1000.png)
 
-It makes sense that languages such as English and Latin with the highest concentration of training data would perform the best where all languages like Polish and Hungarian with likely less training data would perform worse.
+It makes sense that languages such as English and Latin, with the highest concentration of training data, would perform the best, while languages like Polish and Hungarian, with likely less training data, would perform worse.
 
 # Training Language-Specific LoRAs
 
-LoRA is a process of fine tuning language models by freezing the original model weights and only training a small slice of the paramters (an additive adapter). This prevents the original model from forgetting any information and train with much less data.
+LoRA is a process of fine-tuning language models by freezing the original model weights and only training a small slice of the parameters (an additive adapter). This prevents the original model from forgetting information and requires much less data.
 
 We adapt this LoRA for block diffusion models by adding an adapter for all of the attention layers.
 
-Using WildChat-4.8M, we split first-turn prompts by the dataset's language column, used up to 1,000 train / 100 val / 100 test prompts per language, and generated target answers greedily with Qwen/Qwen3-8B. 
+Using WildChat-4.8M, we split first-turn prompts by the dataset's language column, used up to 1,000 train / 100 val / 100 test prompts per language, and generated target answers greedily with Qwen/Qwen3-8B.
 
-For each train sequence, we capture the hidden states and the output of the target model. Using this data, we sample random positions (up to 48 times per sequence) in the sequence, and use this to train a rank 16 LoRA for the drafter.
+For each train sequence, we capture the hidden states and the output of the target model. Using this data, we sample random positions (up to 48 times per sequence) in the sequence, and use this to train a rank-16 LoRA for the drafter.
 
 ![Swedish rank-16 LoRA validation loss and accept rate converging](new/exp1-language/results/charts/val_loss_Swedish.png)
 
 
-The results show that clearly, specializing helps the model. 
+The results clearly show that specializing helps the model.
 
 ![Own-language LoRA acceptance gains over base, concentrated on the weakest languages](new/exp1-language/results/charts/own_lora_gain_26_mintrain1000.png)
 
@@ -87,9 +87,9 @@ The results show that clearly, specializing helps the model.
 
 We observed that the weaker languages got the largest gains. For example, Hungarian jumped **+46%** relative to its base. On the other hand, stronger languages like English actually got slowed down, probably because the base was already so strong. This supports the hypothesis that these models have the largest headroom in out-of-distribution regimes.
 
-# LoRA beats a full fine tune
+# LoRA beats a full fine-tune
 
-We next wanted to make sure that a full fine-tune does not vastly outperform the LoRA. So we used the same training data to train a full fine-tune of the model. Each domain’s full finetune performed *worse* than the LoRA
+We next wanted to make sure that a full fine-tune does not vastly outperform the LoRA. So we used the same training data to train a full fine-tune of the model. Each domain's full fine-tune performed *worse* than the LoRA.
 
 ![Own-language LoRA gain vs full DFlash fine-tune on the weakest language lanes](experiments/12-language-full-finetune/results/charts/full_finetune_vs_lora_mintrain1000.png)
 
@@ -100,45 +100,49 @@ We next wanted to make sure that a full fine-tune does not vastly outperform the
 | Korean | 4.19% | 5.31% | \+1.12pp (+26.7%) | 4.30% | \+0.11pp (+2.6%) |
 | Dutch | 4.55% | 6.03% | \+1.48pp (+32.5%) | 4.68% | \+0.13pp (+2.9%) |
 
-We believe this is not showing that full fine-tune is bad or impossible, but rather that tuning all the paramters at once would require a lot more data to not be starved, whilst a limited rank-16 adapter (small % of total parameters) would converge much faster.
+We believe this does not show that full fine-tuning is bad or impossible, but rather that tuning all the parameters at once would require a lot more data to avoid being starved, while a limited rank-16 adapter (a small percentage of total parameters) can converge much faster.
 
-# Training a router between LoRA's
-Additionally, we train a tiny router that uses the target-hidden features that DFLash uses anyways. The router is a 2-layer MLP that takes the hidden features (20480) to route between the 26 languages with 10.5M parameters, and since it is so small it is basically negligable cost of compute/time.
+# Training a router between LoRAs
+Additionally, we train a tiny router that uses the target-hidden features that DFlash uses anyway. The router is a 2-layer MLP that takes the hidden features (20480) to route between the 26 languages with 10.5M parameters, and since it is so small, its compute/time cost is basically negligible.
 
 ![26-way language router training curve — train loss and validation accuracy](router/results26/charts/router26_training.png)
 
-It scores very high at Val 84.69% and Test 81.58%:
+It scores very high, with 84.69% validation accuracy and 81.58% test accuracy:
 ![26-way WildChat language router per-class accuracy](router/results26/charts/router26_accuracy.png)
 
 (English here contains other stuff as well, like SQL, Latin, etc, which may be dragging down the score)
+
+We wanted to make sure the router would not cause an increase in latency, but because it is so tiny compared to the actual model, the cost fully amortizes to almost nothing.
+
+![Router costs almost nothing (log scale) compared to the Qwen3-8B prefill](router/results26/charts/router26_cost_bars.png)
 
 
 
 # Combined LoRA keeps a lot of the gains
 
-Next, we wanted to see if the LoRA specialation was due to each adapter uniquly learning the field, or was just because it was exposed to more specific knowledge. The hint that told us to investigate this was that the hidden states cleanly seperated the different languages well when routing between languages.
+Next, we wanted to see if the LoRA specialization was due to each adapter uniquely learning the domain, or just because it was exposed to more specific knowledge. The hint that told us to investigate this was that the hidden states cleanly separated the different languages well when routing between languages.
 
-We also wondered if combining many languages could improve performance. Some languages come from the same family and carry semantic meaning that is complimentary.
-
-
-We tried an experiment of training a singular "combined LoRA" over all the languages and compared the performance with the own LoRA.
-
-![Base vs own-language LoRA vs combined LoRA across 26 clean WildChat languages](new/exp1-language/results/charts/base_own_combined_26_mintrain1000.png)
-
-Looking at the net speedup per domain []
-
-![Analytic speedup by language: base vs own vs combined](new/exp1-language/results/charts/speedup_26_mintrain1000.png)
+We also wondered if combining many languages could improve performance. Some languages come from the same family and carry semantic meaning that is complementary.
 
 
-This implies we just need to train on each domain individually and make sure the model learns to cleanly seperate each task in it's hidden states for better drafter performance. Because language is an easily separable task, it is largely FIRST a matter or more training data for out-of-distribution languages to improve the quality. When this saturates, then, perhaps our specialization will further shine.
+We tried an experiment of training a single "combined LoRA" over all the languages and compared its performance with the own-language LoRA.
 
-# Interference gets real in more fine grained domains
+![Combined LoRA gains almost as much as specialized LoRA compared to base](new/exp1-language/results/charts/base_own_combined_26_mintrain1000.png)
 
-In domains in which the model has a hard time cleanly seperating, we experinece the "muddling" of combined experts (more training data does not solve, the small # of params means it muddles between 2 experts, and therfor needs specialization).
+Averaged over the 26 clean languages, the per-language specialists gain +0.85pp over base and the single combined adapter gains +0.70pp, a delta of just +0.15pp. The specialists win on most languages (19/26 languages), but the combined adapter is never far behind, and it actually wins on 6. We guess that the languages the combined model wins at (Esperanto, Yoruba, Tagalog, Malay, Indonesian, and Latin) are low-resource languages where cross-lingual transfer from related languages helps it generalize more than the specialized knowledge.
 
-We tried cursory experiments (but leave the full experiments up for a follow up blog).
+![Combined retains most of the gains from the specialization on speedups](new/exp1-language/results/charts/speedup_26_mintrain1000.png)
 
-First, we build an interference ladder that shows 10 combined domains vs 20 and 40 comined domains.
+
+This implies we just need to train on each domain individually and make sure the model learns to cleanly separate each task in its hidden states for better drafter performance. Because language is an easily separable task, it is largely first a matter of adding more training data for out-of-distribution languages to improve the quality. When this saturates, then, perhaps our specialization will further shine.
+
+# Interference gets real in more fine-grained domains
+
+In domains in which the model has a hard time cleanly separating tasks, we experience the "muddling" of combined experts (more training data does not solve this; the small number of parameters means it muddles between 2 experts, and therefore needs specialization).
+
+We tried cursory experiments (but leave the full experiments up for a follow-up blog).
+
+First, we build an interference ladder that shows 10 combined domains vs 20 and 40 combined domains.
 
 | combined adapter | mean gap vs own specialist | 95% CI | gain retained |
 | :---- | ----: | :----: | ----: |
@@ -149,22 +153,14 @@ First, we build an interference ladder that shows 10 combined domains vs 20 and 
 As you can see, as you increase the number of experts, the interference increases and specialists shine further.
 
 
-Second, to prove that languages are easy and low interference, we try other english subdomains (code_python, code_sql, ood_legal, ood_medical, ood_financial, task_math_reasoning, task_summarization)
+Second, to prove that languages are easy and low interference, we try other English subdomains (code_python, code_sql, ood_legal, ood_medical, ood_financial, task_math_reasoning, task_summarization).
 
-<image>
+![The specialists beat the combined router heavily in hard to separate tasks](experiments/10-english-subdomains/results/english_subdomains/charts/delta_bars.png)
 
-The perdomain specialists beat the base 7/7, but the key point to see is that the combined adapater only retains about 20% of the specialist gain.
-
-<image>
-
+The per-domain specialists beat the base 7/7 as expected, but the key point is that the combined adapter only retains about 20% of the specialist gain. This is completely different from the language setting, where the combined LoRA retains most of the specialist gain.
 
 # Serving Cost
 
-There is two different ways of measuring the net speedup of the new speculators.
-
-1. Theoretical analytical  
-   We can predict from the increase in mean accepted length in proportion to the increased costs of speculating, the net speedup.  
-   speedup \~= mean\_accept\_length / (1 \+ drafter\_overhead)
 
 | mode | meaning |
 | :---- | :---- |
@@ -185,35 +181,21 @@ The merged combined LoRA is the production path we care about: it is folded into
 | N merged own LoRAs | 70.55 | 1.508x | 1.064x | 7.33% | 2.099 |
 | hot-swapped own LoRAs | 54.73 | 1.170x | 0.825x | 7.32% | 2.098 |
 
-So the combined LoRA gives a \+5.9% wall-clock gain over base DFlash on this mixed-language serving stream, and the one-time merge setup was only 0.073s. The N-merged-specialist path gives \+6.4% over base DFlash, only about \+0.5% relative to the merged combined LoRA. In other words, for the clean language subset, the combined merged adapter gets almost all of the wall-clock benefit without serving N separate specialist drafters.  
+So the combined LoRA gives a \+5.9% wall-clock gain over base DFlash on this mixed-language serving stream, and the one-time merge setup was only 0.073s. The N-merged-specialist path gives \+6.4% over base DFlash, only about \+0.5% relative to the merged combined LoRA. In other words, for the clean language subset, the combined merged adapter gets almost all of the wall-clock benefit without serving N separate specialist drafters.
 The hot-swap result is the cautionary row. It gets essentially the same acceptance as the merged specialists, but drops to 54.73 tok/s, or 0.825x relative to base DFlash. The measured adapter-copy time was tiny, only 0.237s across 625 language switches; the slowdown comes from keeping the LoRA path unmerged inside the drafter forwards. For this workload, specialization only turns into serving speed when the adapter is merged into the drafter weights.
 
-## **Conclusion**
+# Conclusion
 
-For languages, specialization is almost all speculation needs.
+For languages, specialization is almost all speculation needs. The core result is that a small LoRA can recover much of the drafter's long-tail weakness, and because language domains interfere surprisingly little, one merged combined LoRA captures nearly all of the specialist gain without the serving cost of hot-swapping adapters.
 
-## **Appendix And Future Ideas**
+Speculation does indeed work, as we see recent work from [Modal](https://modal.com/blog/introducing-auto-endpoints) and [Baseten](https://www.baseten.co/blog/live-draft-model-training-for-speculative-decoding/) showing that production systems are moving toward per-customer or per-workload speculators. Our version is complementary because it trains lightweight LoRAs for each workload, then merges or routes them when useful, allowing you to serve many tenants from the same GPU pool without keeping a separate drafter for everyone.
 
-1. Trying with Eagle, independent drafter  
-   1. We briefly tried, saw eagle has higher acceptance rate, but smaller proposal depth  
-   2. Similar results  
-2. Trying weird domains, in english like   
-   1. Sql, etc  
-   2. Showed way more intereference  
-   3.  (legal, sql, etc, translation, poetry) preliminary results show  more intereference and more gians from indivudal LoRA but similar speedups  
-3.  Rank ladder (prelimary results show languages much gains, other stuff not much) prob bc more to learn
+We also think it is promising to try specializing in more niche domains, such as math and SQL, where it is important to align the drafter to the target model. We hope to post a follow-up blog that explores these niche domains more.
 
 
+# Future Ideas
+1. In this research, we try language domains and briefly experiment with more specialized fine‑grained domains within English, which show more interference and higher gains from specializing. We should further try this with more domains that are within more niche groups and see how they perform.
 
-We also did a quick sweep over a the LoRA rank to see if the depth of rank mattered. When doing LoRA, we take the model state as input, squeeze it down to r dimensions by A, then expand back out to B. Essentially, the rank becomes the width of the information bottleneck.
+2. We should try other drafters, for example Eagle3, DSpark, and completely independent drafters, and test across larger models as well, not just 7B models, to see how they perform.
 
-language	base	own r16	own r64
-Polish	3.1%	4.4%	5.0%
-Korean	3.5%	5.1%	5.8%
-Italian	8.1%	8.5%	8.7%
-Japanese	5.0%	5.9%	6.3%
-German	6.8%	7.2%	7.3%
-
-*(Rank sweep from the earlier 512-token-cap training run; numbers are directional. The trend is unaffected by the cap — retraining without truncation only raises the weak-language gains.)*
-
-This shows us that higher rank helps the most on already weak languages where the model needs to not just align but actually learn new knowledge. On the other domains that already have knowledge, a smaller rank helps align the drafter to the target.
+3. We should also try a quick sweep over low-rank adaptation ranks in other domains. From a brief examination of rank comparisons within languages, we found very little change between rank 16, rank 4, and rank 64 in terms of performance, which may also affect speedups because it reduces the amount of weights that need to be loaded into and from memory.
