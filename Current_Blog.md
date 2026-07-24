@@ -14,7 +14,7 @@ We hypothesized that since the drafter is a small approximation of the larger ve
 
 ![The target has a much wider tail distribution than what the drafter can approximate](images/image%20copy.png)
 
-People have tried specialization for speculators in the past, but minimal or no work has been done on dynamic speculators, specializing diffusion speculators like DFlash, benchmarking at larger batch sizes, using unmerged LoRA/NaRA to serve many specializations at once, and comparing with combined/full fine-tunes. Below we experiment with different domains, different routing, and different trained adapters to see if they improve speculators.
+People have tried specialization for speculators in the past, but minimal or no work has been done on dynamic speculators, specializing diffusion speculators like DFlash for domain adaptation, benchmarking at larger batch sizes, using unmerged LoRA/NaRA to serve many specializations at once, and comparing with combined/full fine-tunes. Below we experiment with different domains, different routing, and different trained adapters to see if they improve speculators.
 
 # Speculators are uneven across languages
 
@@ -134,7 +134,7 @@ Averaged over the 26 clean languages, the per-language specialists gain +0.85pp 
 ![Combined retains most of the gains from the specialization on speedups](new/exp1-language/results/charts/speedup_26_mintrain1000.png)
 
 
-This implies we just need to train on each domain individually and make sure the model learns to cleanly separate each task in its hidden states for better drafter performance. Because language is an easily separable task, it is largely first a matter of adding more training data for out-of-distribution languages to improve the quality. When this saturates, then, perhaps our specialization will further shine.
+This implies that for cleanly separable domains, a single combined LoRA is sufficient. Training individual specialists is only necessary when the model cannot cleanly separate the task in its hidden state. Because language is an easily separable task, it is largely first a matter of adding more training data for out-of-distribution languages to improve the quality. When this saturates, then, perhaps our specialization will further shine.
 
 # Interference gets real in more fine-grained domains
 
