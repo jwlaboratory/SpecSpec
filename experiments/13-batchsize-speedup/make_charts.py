@@ -213,8 +213,73 @@ def mixed_vs_batch():
     print("->", OUT / "mixed_vs_batch.png")
 
 
+def bs1_workload_bars():
+    """Batch-size-1 net speedup vs target-only, grouped by workload.
+
+    Bars: base model (1.00x reference), then the Swedish workload
+    (base DFlash vs Swedish specialist) and a random/mixed workload
+    (base DFlash vs merged combined adapter). The specialist/merged bars
+    are annotated with their within-group speedup over base DFlash.
+    """
+    # (label, value x, value-string, color, within-group gain vs group base)
+    bars = [
+        ("base model",         1.000, "1.00×",  C_TARGET, None),
+        ("base DFlash",        1.500, "1.50×",  C_TARGET, None),
+        ("specialized DFlash", 1.730, "1.73×",  C_DFLASH, 0.153),
+        ("base DFlash",        1.418, "1.418×", C_TARGET, None),
+        ("merged adapter",     1.495, "1.495×", C_ACC,    0.054),
+    ]
+    # x positions with a gap between workload groups
+    xpos = [0.0, 1.3, 2.15, 3.45, 4.30]
+    width = 0.72
+
+    fig, ax = plt.subplots(figsize=(8.0, 4.8), dpi=150)
+    fig.set_facecolor(SURFACE)
+    style_ax(ax)
+    ax.grid(axis="y", color=GRID, linewidth=0.8)
+    ax.axhline(1.0, color=C_WARN, linewidth=1.2, linestyle="--", zorder=2)
+
+    for (lab, v, vstr, c, gain), x in zip(bars, xpos):
+        ax.bar(x, v, width, color=c, zorder=3)
+        # x value just above the bar
+        ax.annotate(vstr, (x, v), textcoords="offset points",
+                    xytext=(0, 4), ha="center", va="bottom",
+                    fontsize=9, color=INK2)
+        # within-group speedup headline on the treatment bars
+        if gain is not None:
+            ax.annotate(f"+{gain*100:.1f}%", (x, v), textcoords="offset points",
+                        xytext=(0, 20), ha="center", va="bottom",
+                        fontsize=12.5, fontweight="bold", color=c)
+        ax.annotate(lab, (x, 0), textcoords="offset points",
+                    xytext=(0, -7), ha="center", va="top",
+                    fontsize=8.2, color=INK2)
+
+    # group brackets / labels under the workload pairs
+    groups = [("Swedish workload", (xpos[1] + xpos[2]) / 2),
+              ("Random workload", (xpos[3] + xpos[4]) / 2)]
+    for name, xc in groups:
+        ax.annotate(name, (xc, 0), textcoords="offset points",
+                    xytext=(0, -24), ha="center", va="top",
+                    fontsize=9, color=INK, fontweight="bold")
+
+    ax.set_xticks([])
+    ax.set_xlim(-0.7, xpos[-1] + 0.7)
+    ax.set_ylim(0, max(v for _, v, *_ in bars) + 0.28)
+    ax.set_ylabel("net wall-clock speedup vs target-only", color=INK2, fontsize=9)
+    ax.set_title("Inference speeds with DFlash and specialized DFlash",
+                 color=INK, fontsize=13, loc="left", pad=22, weight="bold")
+    ax.text(0, 1.045, "DFlash / Qwen3-8B, vLLM, batch size 1",
+            transform=ax.transAxes, color=INK2, fontsize=8.5)
+    fig.subplots_adjust(bottom=0.16)
+    fig.savefig(OUT / "bs1_workload_bars.png", facecolor=SURFACE,
+                bbox_inches="tight")
+    plt.close(fig)
+    print("->", OUT / "bs1_workload_bars.png")
+
+
 if __name__ == "__main__":
     speedup_vs_batch()
     throughput_vs_batch()
     modes_vs_batch()
     mixed_vs_batch()
+    bs1_workload_bars()
