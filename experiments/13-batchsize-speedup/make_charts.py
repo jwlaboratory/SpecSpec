@@ -200,10 +200,9 @@ def mixed_vs_batch():
     ax.set_ylim(0, max(comb) + 0.3)
     ax.set_xlabel("batch size (concurrent requests)", color=INK2, fontsize=9)
     ax.set_ylabel("net wall-clock speedup vs target-only", color=INK2, fontsize=9)
-    ax.set_title("Mixed 16-language stream — one combined adapter, no routing",
+    ax.set_title("Serving speedup vs batch size (mixed 16-language stream)",
                  color=INK, fontsize=13, loc="left", pad=20, weight="bold")
-    ax.text(0, 1.04, "vLLM continuous batching, H200 — combined serves every "
-            "language with a single drafter", transform=ax.transAxes,
+    ax.text(0, 1.04, "vLLM continuous batching, H200", transform=ax.transAxes,
             color=INK2, fontsize=8.5)
     leg = ax.legend(loc="upper right", frameon=False, fontsize=8.5)
     for t in leg.get_texts():

@@ -49,9 +49,18 @@ The benefit of N-merged LoRAs is that you do not have any intereference and can 
 
 We then benchmarked using vLLM to see at different batch sizes with a "MIXED BAG" of different requests from different languages. This forced the model to use the combined merged LoRA and the speedups are shown below:
 
-*(table — pending: combined vs base vs no-spec on the 16-language mixed stream across batch sizes; results uploading soon)*
+| batch size | merged combined | base DFlash | no spec decoding |
+| ----: | ----: | ----: | ----: |
+| 1 | 1.50× | 1.42× | 1.00× |
+| 4 | 1.48× | 1.39× | 1.00× |
+| 8 | 1.36× | 1.27× | 1.00× |
+| 16 | 0.98× | 0.91× | 1.00× |
+| 32 | 0.66× | 0.62× | 1.00× |
+| 64 | 0.38× | 0.36× | 1.00× |
 
-*(chart — pending: mixed-bag speedup vs batch size)*
+![Mixed 16-language serving stream: merged combined vs base DFlash speedup across batch sizes](experiments/13-batchsize-speedup/results/charts/mixed_vs_batch.png)
+
+Even on a fully mixed stream, one combined adapter holds a +5–7% wall-clock edge over base DFlash across batch sizes (peaking at +7.3% around batch 8), with a single drafter and no routing. As before, the overall speedup still falls with batch, crossing break-even around batch 14.
 
 We leave a future experiment to try to update the vLLM implementation and kernels to test how much slowdown hotswapping adapters or swapping entire drafters would cause within batches.
 
