@@ -58,7 +58,7 @@ The results clearly show that specializing helps the model.
 
 | language | base | own LoRA | gain | relative |
 | :---- | ----: | ----: | ----: | ----: |
-| Swedish | 6.73% | 8.82% | **+2.09pp** | **+31%** |
+| Swedish | 6.73% | 8.82% | +2.09pp | +31% |
 | Turkish | 4.89% | 6.88% | +1.99pp | +41% |
 | Hungarian | 3.92% | 5.72% | +1.80pp | +46% |
 | Ukrainian | 5.65% | 7.23% | +1.58pp | +28% |
@@ -162,11 +162,11 @@ The per-domain specialists beat the base 7/7 as expected, but the key point is t
 # Serving Cost
 
 
-We first compared all the different ways to serve the Specialized drafter. Merging is a process in which you take the low-rank adapter LoRa weights and you mathematically multiply them with the existing weights to create a merged single set of weights as if it was just a new fine-tuned model. The benefit of keeping them unmerged is that you can keep most of the weights the same so you have a lower memory footprint because you just need to swap out your final adapter weights. As soon as you merge, then you need to keep multiple copies that are very similar but to the computer look entirely different. 
+We first compared all the different ways to serve the specialized drafter. Merging is a process in which you take the low-rank adapter LoRA weights and you mathematically multiply them with the existing weights to create a merged single set of weights as if it was just a new fine-tuned model. The benefit of keeping them unmerged is that you can keep most of the weights the same so you have a lower memory footprint because you just need to swap out your final adapter weights. As soon as you merge, then you need to keep multiple copies that are very similar but to the computer look entirely different.
 
-We compared one merged model with the combined LORAs, compared with multiple N individually merged specialized LORAs, compared with N unmerged hot‑swappable LORAs. 
+We compared one merged model with the combined LoRAs, compared with multiple N individually merged specialized LoRAs, compared with N unmerged hot‑swappable LoRAs.
 
-Because VLLM does not support hot swapping unmerged loras, we tested this on HF.
+Because vLLM does not support hot swapping unmerged LoRAs, we tested this on HF.
 
 | mode | meaning |
 | :---- | :---- |
@@ -202,7 +202,7 @@ All numbers below are net wall-clock speedup vs no speculative decoding (target-
 
 ![Swedish serving speedup vs batch size](experiments/13-batchsize-speedup/results/charts/modes_vs_batch.png)
 
-At a higher batch size, even naive speculative decoding doesn't help anymore because we're no longer memory bound, but rather compute bound. But the cool thing to observe is that at these lower batch sizes, the Swedish Specialist gives up to a 15.3% gain over the base D-Flash, and the combined LoRa nearly matches it, plus 12% at batch size 1. 
+At a higher batch size, even naive speculative decoding doesn't help anymore because we're no longer memory bound, but rather compute bound. But the cool thing to observe is that at these lower batch sizes, the Swedish specialist gives up to a 15.3% gain over the base DFlash, and the combined LoRA nearly matches it, plus 12% at batch size 1.
 
 The benefit of merged-combined is that you only need 1 set of weights. It's essentially just the drafter with more knowledge. However, it's not specialized and may have interference (as we've somewhat shown).
 
