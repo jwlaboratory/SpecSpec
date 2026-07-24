@@ -237,6 +237,6 @@ We also think it is promising to try specializing in more niche domains, such as
 # Future Ideas
 1. In this research, we try language domains and briefly experiment with more specialized fine‑grained domains within English, which show more interference and higher gains from specializing. We should further try this with more domains that are within more niche groups and see how they perform.
 
-2. We should try other drafters, for example Eagle3, DSpark, and completely independent drafters, and test across larger models as well, not just 7B models, to see how they perform.
+2. We should try other drafters, for example Eagle3, DSpark, and completely independent drafters, and test across larger models as well, not just 8B models, to see how they perform.
 
 3. We should also try a quick sweep over low-rank adaptation ranks in other domains. From a brief examination of rank comparisons within languages, we found very little change between rank 16, rank 4, and rank 64 in terms of performance, which may also affect speedups because it reduces the amount of weights that need to be loaded into and from memory.
